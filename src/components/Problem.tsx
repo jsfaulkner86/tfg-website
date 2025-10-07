@@ -4,29 +4,24 @@ import { Link2Off, DollarSign, Flame, Settings } from "lucide-react";
 const problemsData = [
   { 
     text: "Patient access gaps that quietly push new business to competitors",
-    icon: Link2Off,
-    keywords: ["Patient access gaps"]
+    icon: Link2Off
   },
   { 
     text: "Staff and provider turnover bleeding hundreds of thousands per year",
-    icon: DollarSign,
-    keywords: ["turnover bleeding"]
+    icon: DollarSign
   },
   { 
     text: "Workflows that exhaust clinicians and stall growth",
-    icon: Flame,
-    keywords: ["exhaust clinicians"]
+    icon: Flame
   },
   { 
     text: "Systems that look \"fine\" but silently erode profitability",
-    icon: Settings,
-    keywords: ["erode profitability"]
+    icon: Settings
   }
 ];
 
 const Problem = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -43,19 +38,8 @@ const Problem = () => {
       observer.observe(sectionRef.current);
     }
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => observer.disconnect();
   }, []);
-
-  const parallaxOffset = scrollY * 0.02;
 
   return (
     <section 
@@ -64,98 +48,78 @@ const Problem = () => {
       style={{
         paddingTop: '120px',
         paddingBottom: '100px',
-        background: `linear-gradient(180deg, rgba(113,141,169,0.7) 0%, #FFFFFF 100%)`,
-        transform: `translateY(${parallaxOffset}px)`,
-        transition: 'transform 0.1s ease-out'
+        background: 'linear-gradient(180deg, rgba(113,141,169,0.08) 0%, #FFFFFF 100%)'
       }}
     >
-      {/* Gold light flare overlay */}
-      <div 
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'linear-gradient(135deg, rgba(243,218,115,0.15) 0%, transparent 60%)',
-          mixBlendMode: 'screen'
-        }}
-      />
-
-      {/* Subtle shimmer particles overlay */}
+      {/* Subtle misty texture overlay - matching Who We Are */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(circle at 20% 30%, rgba(243,218,115,0.04) 0%, transparent 40%),
-            radial-gradient(circle at 80% 60%, rgba(243,218,115,0.03) 0%, transparent 40%),
-            radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05) 0%, transparent 50%)
+            radial-gradient(circle at 20% 30%, rgba(113,141,169,0.03) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(113,141,169,0.02) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.5) 0%, transparent 70%)
           `,
-          animation: 'shimmer 8s ease-in-out infinite',
-          opacity: 0.7
+          opacity: 0.6,
+          mixBlendMode: 'soft-light'
         }}
       />
 
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className={`text-center mb-20 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        {/* Header - matching Who We Are style */}
+        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 
-            className="text-6xl sm:text-7xl md:text-8xl font-playfair font-bold mb-8 uppercase" 
-            style={{ 
-              color: '#FFFFFF',
-              letterSpacing: '0.1em',
-              fontVariant: 'small-caps',
-              textShadow: '0 2px 10px rgba(0,0,0,0.3)'
-            }}
+            className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4" 
+            style={{ color: '#2C2C2C' }}
           >
             The Problem
           </h2>
           <div 
-            className="w-16 h-0.5 mx-auto mb-12" 
-            style={{ 
-              backgroundColor: '#F3DA73',
-              height: '2px'
-            }}
+            className="bg-[#F3DA73] mx-auto mb-8" 
+            style={{ width: '60px', height: '2px' }}
           />
-          <p className="text-2xl sm:text-3xl font-inter max-w-3xl mx-auto" style={{ lineHeight: '1.8', color: '#FFFFFF', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
-            Most practices aren't <span style={{ fontWeight: 700 }}>losing money</span> because they don't have enough patients. They're <span style={{ fontWeight: 700 }}>losing it</span> through <strong>hidden inefficiencies</strong> they can't see:
+          <p 
+            className="text-lg sm:text-xl font-inter max-w-3xl mx-auto" 
+            style={{ lineHeight: '1.75', color: '#444' }}
+          >
+            Most practices aren't <strong style={{ color: '#2C2C2C' }}>losing money</strong> because they don't have enough patients. They're <strong style={{ color: '#2C2C2C' }}>losing it</strong> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see:
           </p>
         </div>
 
-        <div className="space-y-7 max-w-3xl mx-auto">
+        {/* Problem boxes with elegant styling */}
+        <div className="space-y-6 max-w-4xl mx-auto">
           {problemsData.map((problem, index) => {
             const Icon = problem.icon;
             return (
               <div
                 key={index}
-                className={`group flex items-center gap-7 p-8 rounded-3xl transition-all duration-700 cursor-default ${
+                className={`group flex items-center gap-6 p-8 rounded-2xl transition-all duration-700 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ 
-                  transitionDelay: `${index * 200}ms`,
-                  backgroundColor: 'rgba(255,255,255,0.85)',
-                  boxShadow: '0 10px 25px rgba(113,141,169,0.25)',
-                  border: '1px solid rgba(243,218,115,0.4)',
-                  backdropFilter: 'blur(12px)'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-5px)';
-                  e.currentTarget.style.boxShadow = '0 15px 35px rgba(243,218,115,0.35), 0 0 30px rgba(243,218,115,0.15)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 10px 25px rgba(113,141,169,0.25)';
+                  transitionDelay: `${index * 150}ms`,
+                  backgroundColor: 'rgba(255,255,255,0.9)',
+                  boxShadow: '0 8px 25px rgba(0,0,0,0.08)',
+                  border: '1px solid rgba(243,218,115,0.25)',
+                  backdropFilter: 'blur(10px)'
                 }}
               >
                 <div 
                   className="flex-shrink-0"
                   style={{
-                    filter: 'drop-shadow(0 0 10px rgba(243,218,115,0.5))',
-                    animation: 'pulse-soft 4s ease-in-out infinite'
+                    filter: 'drop-shadow(0 2px 4px rgba(243,218,115,0.3))'
                   }}
                 >
                   <Icon 
-                    size={40} 
+                    size={28} 
                     color="#F3DA73" 
                     strokeWidth={1.5}
                   />
                 </div>
-                <p className="text-xl sm:text-2xl font-inter" style={{ color: '#2C2C2C', lineHeight: '1.7', fontWeight: 500 }}>
+                <p 
+                  className="text-lg sm:text-xl font-inter" 
+                  style={{ color: '#444', lineHeight: '1.7' }}
+                >
                   {problem.text}
                 </p>
               </div>
@@ -165,23 +129,20 @@ const Problem = () => {
 
         {/* Gold separator line */}
         <div 
-          className={`w-24 h-px bg-[#F3DA73] mx-auto mt-16 mb-12 transition-all duration-1000 delay-800 ${
+          className={`w-24 h-px bg-[#F3DA73] mx-auto mt-16 mb-12 transition-all duration-1000 delay-700 ${
             isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
           }`}
-          style={{ opacity: 0.6 }}
+          style={{ opacity: 0.5 }}
         />
 
-        <div className={`text-center transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-2xl sm:text-3xl font-inter font-semibold" style={{ color: '#2C2C2C', lineHeight: '1.7' }}>
-            Even top-performing groups are <strong style={{ color: '#2C2C2C' }}>leaking</strong>{' '}
-            <span 
-              className="transition-all duration-700"
-              style={{ 
-                color: '#F3DA73',
-                textShadow: '0 0 20px rgba(243,218,115,0.4)',
-                fontWeight: 700
-              }}
-            >
+        {/* Closing statement */}
+        <div className={`text-center transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <p 
+            className="text-xl sm:text-2xl font-inter font-semibold" 
+            style={{ color: '#2C2C2C', lineHeight: '1.7' }}
+          >
+            Even top-performing groups are leaking{' '}
+            <span style={{ color: '#F3DA73', fontWeight: 700 }}>
               six to seven figures annually
             </span>
             {' '}- without realizing it.

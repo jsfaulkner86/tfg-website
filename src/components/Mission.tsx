@@ -100,6 +100,7 @@ const Mission = () => {
                       src={johnHeadshot} 
                       alt="John Faulkner - Healthcare Growth Architect"
                       className="w-full h-full object-cover"
+                      style={{ transform: 'scaleX(-1)' }}
                     />
                   </div>
                 </div>

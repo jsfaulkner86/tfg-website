@@ -57,11 +57,14 @@ const Mission = () => {
           >
             <div>
               <h2 
-                className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
+                className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4"
                 style={{ color: '#2C2C2C' }}
               >
                 Who We Are
               </h2>
+              <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1' }}>
+                Built at the intersection of medicine, strategy, and innovation.
+              </p>
               <div 
                 className="bg-[#F3DA73]" 
                 style={{ width: '60px', height: '2px' }}
@@ -70,14 +73,24 @@ const Mission = () => {
             
             <div className="space-y-8 font-inter" style={{ lineHeight: '1.75', color: '#444' }}>
               <p className="text-base sm:text-lg">
-                We are a boutique healthcare advisory firm that helps specialty practices, women's health groups, fertility practices, and health tech innovators escape broken systems and build organizations that thrive.
+                We are a boutique healthcare advisory firm helping specialty practices, women's health groups, fertility clinics, and health tech innovators escape broken systems and build organizations that thrive.
               </p>
               <p className="text-base sm:text-lg">
-                Led by <strong style={{ color: '#2C2C2C' }}>John Faulkner</strong>, a Healthcare Growth Architect with 13+ years of experience, and <strong style={{ color: '#2C2C2C' }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we bring a rare combination of business strategy and clinical insight.
+                Led by <strong style={{ color: '#2C2C2C' }}>John Faulkner</strong>, a Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{ color: '#2C2C2C' }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
               </p>
               <p className="text-base sm:text-lg">
-                You're not hiring consultants. You're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
+                You're not hiring consultants — you're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
               </p>
+              <div className="mt-10 space-y-3 font-inter font-medium" style={{ color: '#2C2C2C' }}>
+                <p className="text-base sm:text-lg">
+                  We don't just analyze problems.<br />
+                  We rebuild systems.
+                </p>
+                <p className="text-base sm:text-lg">
+                  We don't just deliver reports.<br />
+                  We deliver results that last.
+                </p>
+              </div>
             </div>
           </div>
 

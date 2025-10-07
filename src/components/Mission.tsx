@@ -101,7 +101,7 @@ const Mission = () => {
           >
             <div className="flex flex-col gap-16 items-center">
               {/* John's Portrait */}
-              <div className="text-center">
+              <div className="text-center" style={{ marginTop: '16px' }}>
                 <div className="relative">
                   {/* Blue glow background */}
                   <div 
@@ -131,16 +131,16 @@ const Mission = () => {
                     />
                   </div>
                 </div>
-                <p className="font-inter text-sm font-medium" style={{ color: '#444' }}>
+                <p className="font-inter text-base font-semibold" style={{ color: '#2C2C2C' }}>
                   John Faulkner
                 </p>
-                <p className="font-inter text-xs" style={{ color: '#666' }}>
+                <p className="font-inter text-sm" style={{ color: '#5882A1' }}>
                   Healthcare Growth Architect, Co-Founder
                 </p>
               </div>
 
               {/* Nicole's Portrait */}
-              <div className="text-center">
+              <div className="text-center" style={{ marginTop: '16px' }}>
                 <div className="relative">
                   {/* Blue glow background */}
                   <div 
@@ -169,10 +169,10 @@ const Mission = () => {
                     />
                   </div>
                 </div>
-                <p className="font-inter text-sm font-medium" style={{ color: '#444' }}>
+                <p className="font-inter text-base font-semibold" style={{ color: '#2C2C2C' }}>
                   Dr. Nicole Faulkner
                 </p>
-                <p className="font-inter text-xs" style={{ color: '#666' }}>
+                <p className="font-inter text-sm" style={{ color: '#5882A1' }}>
                   Chief Clinical Officer, Co-Founder
                 </p>
               </div>

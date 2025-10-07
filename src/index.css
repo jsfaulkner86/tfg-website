@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 0 0% 15%;
+    --primary: 204 28% 40%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary-foreground: 204 28% 40%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 45 35% 60%;
+    --accent: 45 62% 56%;
     --accent-foreground: 0 0% 15%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,20 +39,21 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Custom tokens for Faulkner Group */
-    --charcoal: 0 0% 15%;
-    --champagne: 45 35% 60%;
-    --champagne-light: 45 40% 70%;
+    --faulkner-blue: 204 28% 40%;
+    --faulkner-blue-light: 204 28% 56%;
+    --faulkner-gold: 45 62% 56%;
+    --faulkner-gold-light: 45 62% 70%;
     --soft-gray: 0 0% 96%;
     --dark-gray: 0 0% 25%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 10% / 0.8), hsl(0 0% 20% / 0.6));
-    --gradient-cta: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 25%));
-    --gradient-accent: linear-gradient(135deg, hsl(45 35% 60%), hsl(45 40% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(204 28% 25% / 0.9), hsl(204 28% 35% / 0.8));
+    --gradient-cta: linear-gradient(135deg, hsl(204 28% 40%), hsl(204 28% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 62% 56%), hsl(45 62% 70%));
 
     /* Shadows */
-    --shadow-elegant: 0 20px 60px -15px hsl(0 0% 0% / 0.15);
-    --shadow-glow: 0 0 40px hsl(45 35% 60% / 0.2);
+    --shadow-elegant: 0 20px 60px -15px hsl(204 28% 40% / 0.2);
+    --shadow-glow: 0 0 40px hsl(45 62% 56% / 0.3);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

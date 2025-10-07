@@ -31,7 +31,7 @@ const Mission = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <h2 className="text-5xl md:text-6xl font-light tracking-tight text-foreground">
+            <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground">
               We unite clinical insight with modern growth systems.
             </h2>
             <p className="text-xl text-muted-foreground font-light leading-relaxed">

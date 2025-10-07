@@ -61,7 +61,7 @@ const Results = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-6">
+          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide mb-6">
             Results That Matter
           </h2>
           <p className="text-xl font-light opacity-90 max-w-3xl mx-auto">

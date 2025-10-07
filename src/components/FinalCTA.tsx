@@ -23,7 +23,7 @@ const FinalCTA = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10 animate-fade-in">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-semibold tracking-wide text-white">
           Ready to build a practice that thrives?
         </h2>
         

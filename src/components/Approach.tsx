@@ -52,7 +52,7 @@ const Approach = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-light tracking-tight text-foreground mb-6">
+          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
             Our Approach
           </h2>
           <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">

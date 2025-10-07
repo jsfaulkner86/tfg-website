@@ -19,9 +19,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
         <div className="max-w-5xl animate-fade-in">
-          <h1 className="mb-6 text-5xl font-display font-semibold tracking-wide text-white md:text-7xl lg:text-8xl uppercase">LESS CHAOS.  
-MORE CLARITY.  
-REAL GROWTH.</h1>
+          <h1 className="mb-6 text-5xl font-display font-semibold tracking-wide text-white md:text-7xl lg:text-8xl uppercase">
+            LESS CHAOS.<br />
+            MORE CLARITY.<br />
+            REAL GROWTH.
+          </h1>
           <p className="mb-12 text-xl font-normal text-white/90 md:text-2xl lg:text-3xl max-w-3xl mx-auto">
             We help healthcare leaders escape broken systems and build organizations that thrive.
           </p>

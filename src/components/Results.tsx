@@ -156,16 +156,16 @@ const Results = () => {
           <div 
             className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
             style={{
-              background: 'rgba(243,218,115,0.15)',
-              border: '2px solid rgba(243,218,115,0.4)',
+              background: '#FFFFFF',
+              border: '2px solid #D4B65D',
               boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
             <div className="relative z-10 text-center">
               <p 
-                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold italic"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 
-                  color: '#F3DA73', 
+                  color: '#718DA9', 
                   letterSpacing: '-0.02em', 
                   lineHeight: '1.4'
                 }}

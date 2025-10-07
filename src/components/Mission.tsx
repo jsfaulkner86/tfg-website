@@ -79,7 +79,7 @@ const Mission = () => {
                 Led by <strong style={{ color: '#2C2C2C' }}>John Faulkner</strong>, a Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{ color: '#2C2C2C' }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
               </p>
               <p className="text-base sm:text-lg">
-                You're not hiring consultants — you're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
+                You're not hiring consultants - you're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
               </p>
               <div className="mt-10 space-y-3 font-inter font-medium" style={{ color: '#2C2C2C' }}>
                 <p className="text-base sm:text-lg">

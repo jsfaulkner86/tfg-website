@@ -35,7 +35,7 @@ const Results = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-semibold tracking-wide mb-6">
             Why Work With Us
           </h2>
         </div>
@@ -49,7 +49,7 @@ const Results = () => {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <p className="text-xl font-light text-primary-foreground leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl font-light text-primary-foreground leading-relaxed">
                 {highlight}
               </p>
             </div>
@@ -57,7 +57,7 @@ const Results = () => {
         </div>
 
         <div className={`text-center mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-2xl font-medium text-accent italic">
+          <p className="text-xl sm:text-2xl font-medium text-accent italic">
             We don't just analyze. We architect organizations built to last.
           </p>
         </div>

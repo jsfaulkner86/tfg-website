@@ -43,10 +43,10 @@ const Problem = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
             The Problem
           </h2>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
             Most practices aren't losing money because they don't have enough patients. They're losing it through hidden inefficiencies they can't see:
           </p>
         </div>
@@ -61,7 +61,7 @@ const Problem = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <AlertIcon />
-              <p className="text-lg text-foreground font-light">
+              <p className="text-base sm:text-lg text-foreground font-light">
                 {problem}
               </p>
             </div>
@@ -69,7 +69,7 @@ const Problem = () => {
         </div>
 
         <div className={`mt-12 text-center transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-xl text-foreground font-medium">
+          <p className="text-lg sm:text-xl text-foreground font-medium">
             Even top-performing groups are leaking six to seven figures annually — without realizing it.
           </p>
         </div>

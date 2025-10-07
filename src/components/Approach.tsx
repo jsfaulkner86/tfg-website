@@ -36,16 +36,16 @@ const Approach = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
             The Growth Blueprint™
           </h2>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
             The Blueprint is the entry point — 30 days to clarity, guaranteed.
           </p>
         </div>
 
         <div className={`mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <h3 className="text-2xl font-medium text-foreground mb-8 text-center">
+          <h3 className="text-xl sm:text-2xl font-medium text-foreground mb-8 text-center">
             What you get:
           </h3>
           
@@ -59,7 +59,7 @@ const Approach = () => {
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
                 <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground font-light leading-relaxed">
+                <p className="text-base sm:text-lg text-foreground font-light leading-relaxed">
                   {benefit}
                 </p>
               </div>
@@ -68,7 +68,7 @@ const Approach = () => {
         </div>
 
         <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-2xl text-foreground font-medium italic">
+          <p className="text-xl sm:text-2xl text-foreground font-medium italic">
             This isn't theory. It's clarity, cash flow, and control — delivered fast.
           </p>
         </div>

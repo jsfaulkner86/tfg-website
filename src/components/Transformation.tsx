@@ -44,13 +44,13 @@ const Transformation = () => {
     >
       <div className="max-w-5xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
             The Transformation
           </h2>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed mb-6">
             The Growth Blueprint™ gives you clarity.
           </p>
-          <p className="text-xl text-foreground font-medium italic mb-6">
+          <p className="text-lg sm:text-xl text-foreground font-medium italic mb-6">
             But the Transformation is where the real magic happens.
           </p>
           <p className="text-lg text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
@@ -59,7 +59,7 @@ const Transformation = () => {
         </div>
 
         <div className={`mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className="text-xl text-muted-foreground font-light text-center mb-10">
+          <p className="text-lg sm:text-xl text-muted-foreground font-light text-center mb-10">
             Over 3–6 months, we integrate alongside your team to:
           </p>
           
@@ -78,7 +78,7 @@ const Transformation = () => {
                   <div className="mb-6 p-4 bg-accent/10 rounded-xl">
                     <Icon className="h-10 w-10 text-accent" />
                   </div>
-                  <p className="text-lg text-foreground font-light leading-relaxed">
+                  <p className="text-base sm:text-lg text-foreground font-light leading-relaxed">
                     {outcome.text}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const Transformation = () => {
         </div>
 
         <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-2xl text-foreground font-medium">
+          <p className="text-xl sm:text-2xl text-foreground font-medium">
             This is where practices stop bleeding time and money — and start thriving.
           </p>
         </div>

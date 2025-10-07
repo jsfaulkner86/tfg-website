@@ -23,11 +23,11 @@ const FinalCTA = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10 animate-fade-in">
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-semibold tracking-wide text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-semibold tracking-wide text-white">
           Ready to See What's Possible?
         </h2>
         
-        <p className="text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto">
+        <p className="text-lg sm:text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto">
           If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
         </p>
 

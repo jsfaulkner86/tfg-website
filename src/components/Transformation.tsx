@@ -40,57 +40,222 @@ const Transformation = () => {
   return (
     <section 
       ref={sectionRef}
-      className="py-32 px-6 bg-secondary"
+      className="px-6 relative overflow-hidden"
+      style={{
+        paddingTop: '100px',
+        paddingBottom: '80px',
+        background: 'linear-gradient(180deg, rgba(243,218,115,0.08) 0%, #FFFFFF 50%, rgba(113,141,169,0.08) 100%)'
+      }}
     >
-      <div className="max-w-5xl mx-auto">
+      {/* Sophisticated texture overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(circle at 70% 20%, rgba(113,141,169,0.06) 0%, transparent 50%),
+            radial-gradient(circle at 30% 80%, rgba(243,218,115,0.05) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.8) 0%, transparent 60%)
+          `,
+          opacity: 0.7,
+          mixBlendMode: 'soft-light'
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Refined header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
+          <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
+            background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.08))',
+            border: '1px solid rgba(113,141,169,0.3)'
+          }}>
+            <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#718DA9' }}>
+              The Journey Continues
+            </span>
+          </div>
+          
+          <h2 
+            className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
+            style={{ 
+              color: '#2C2C2C',
+              letterSpacing: '-0.03em',
+              lineHeight: '1.05'
+            }}
+          >
             The Transformation
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed mb-6">
-            The Growth Blueprint™ gives you clarity.
-          </p>
-          <p className="text-lg sm:text-xl text-foreground font-medium italic mb-6">
-            But the Transformation is where the real magic happens.
-          </p>
-          <p className="text-lg text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
-            Almost every client who completes the Blueprint chooses to continue because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
+          
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl font-inter font-light" style={{ 
+              color: '#5882A1', 
+              letterSpacing: '0.01em',
+              lineHeight: '1.6'
+            }}>
+              The Growth Blueprint™ gives you clarity.
+            </p>
+            <p className="text-xl sm:text-2xl font-playfair font-semibold italic" style={{ 
+              color: '#2C2C2C',
+              letterSpacing: '-0.01em'
+            }}>
+              But the Transformation is where the real magic happens.
+            </p>
+            <p className="text-base sm:text-lg font-inter font-light" style={{ 
+              color: '#5882A1', 
+              letterSpacing: '0.01em',
+              lineHeight: '1.7'
+            }}>
+              Almost every client who completes the Blueprint chooses to continue because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
+            </p>
+          </div>
+          
+          <div className="flex justify-center mt-6">
+            <div 
+              className="relative overflow-hidden rounded-full"
+              style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #718DA9, #F3DA73, #718DA9)' }}
+            >
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)',
+                  animation: 'shimmer 3s linear infinite'
+                }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Intro text */}
+        <div className={`mb-12 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p className="text-xl sm:text-2xl font-playfair font-semibold text-center mb-3" style={{ color: '#2C2C2C', letterSpacing: '-0.01em' }}>
+            Over 3–6 months, we integrate alongside your team to:
           </p>
         </div>
 
-        <div className={`mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className="text-lg sm:text-xl text-muted-foreground font-light text-center mb-10">
-            Over 3–6 months, we integrate alongside your team to:
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
+        {/* Luxury outcome cards */}
+        <div className={`mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {outcomes.map((outcome, index) => {
               const Icon = outcome.icon;
               
               return (
                 <div
                   key={index}
-                  className={`flex flex-col items-center text-center p-8 bg-background rounded-xl transition-all duration-500 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  className={`group relative transition-all duration-700 ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
                   }`}
-                  style={{ transitionDelay: `${index * 150}ms` }}
+                  style={{ transitionDelay: `${index * 150 + 400}ms` }}
                 >
-                  <div className="mb-6 p-4 bg-accent/10 rounded-xl">
-                    <Icon className="h-10 w-10 text-accent" />
+                  {/* Luxury card with blue theme */}
+                  <div
+                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.4)] h-full flex flex-col items-center text-center"
+                    style={{
+                      background: 'linear-gradient(135deg, #8BA5BB, #6D8BA1)',
+                      boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
+                      border: '1px solid rgba(255,255,255,0.15)',
+                      minHeight: '240px'
+                    }}
+                  >
+                    {/* Premium gradient accent line */}
+                    <div 
+                      className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
+                      style={{
+                        background: 'linear-gradient(90deg, #F3DA73 0%, rgba(255,255,255,0.6) 50%, #F3DA73 100%)',
+                        boxShadow: '0 2px 8px rgba(243,218,115,0.4)'
+                      }}
+                    />
+                    
+                    {/* Hover glow */}
+                    <div 
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
+                      style={{
+                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%)'
+                      }}
+                    />
+                    
+                    {/* Elegant edge highlight */}
+                    <div 
+                      className="absolute inset-0 rounded-2xl pointer-events-none"
+                      style={{
+                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -1px 1px rgba(0,0,0,0.1)'
+                      }}
+                    />
+                    
+                    {/* Icon with luxury styling */}
+                    <div 
+                      className="mb-6 w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                      style={{
+                        background: 'rgba(243,218,115,0.2)',
+                        border: '2px solid rgba(243,218,115,0.5)'
+                      }}
+                    >
+                      <Icon 
+                        size={32}
+                        strokeWidth={2}
+                        style={{ color: '#F3DA73' }}
+                      />
+                    </div>
+                    
+                    <p 
+                      className="text-base sm:text-lg font-inter font-medium leading-relaxed relative z-10"
+                      style={{ 
+                        color: '#FFFFFF',
+                        letterSpacing: '0.01em',
+                        lineHeight: '1.7'
+                      }}
+                    >
+                      {outcome.text}
+                    </p>
                   </div>
-                  <p className="text-base sm:text-lg text-foreground font-light leading-relaxed">
-                    {outcome.text}
-                  </p>
                 </div>
               );
             })}
           </div>
         </div>
 
-        <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-xl sm:text-2xl text-foreground font-medium">
-            This is where practices stop bleeding time and money and start thriving.
-          </p>
+        {/* Bottom statement with dramatic flair */}
+        <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div 
+            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-5xl"
+            style={{
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)',
+              border: '2px solid rgba(243,218,115,0.25)',
+              boxShadow: '0 15px 50px rgba(243,218,115,0.15)',
+              transition: 'all 0.6s ease'
+            }}
+          >
+            {/* Animated gradient border glow */}
+            <div 
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              style={{
+                background: 'linear-gradient(135deg, rgba(113,141,169,0.2), rgba(243,218,115,0.2))',
+                filter: 'blur(30px)'
+              }}
+            />
+            
+            {/* Shimmer effect */}
+            <div 
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%)',
+                backgroundSize: '200% 100%',
+                animation: 'shimmer 6s ease-in-out infinite'
+              }}
+            />
+            
+            <div className="relative z-10 text-center">
+              <p 
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
+                style={{ 
+                  color: '#718DA9', 
+                  letterSpacing: '-0.02em', 
+                  lineHeight: '1.4'
+                }}
+              >
+                This is where practices stop bleeding time and money and start thriving.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

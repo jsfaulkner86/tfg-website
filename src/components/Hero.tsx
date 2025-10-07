@@ -8,12 +8,11 @@ const Hero = () => {
     });
   };
   return <section className="relative h-screen w-full overflow-hidden pt-20">
-      {/* Background Video with Overlay */}
+      {/* Background Video */}
       <div className="absolute inset-0">
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover brightness-110">
           <source src="/hero-beach.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-[rgba(113,141,169,0.35)]" />
       </div>
 
       {/* Content */}

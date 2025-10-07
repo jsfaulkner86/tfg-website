@@ -48,28 +48,15 @@ const Results = () => {
       style={{
         paddingTop: '100px',
         paddingBottom: '80px',
-        background: 'linear-gradient(135deg, #718DA9 0%, #5882A1 100%)'
+        background: '#718DA9'
       }}
     >
-      {/* Sophisticated texture overlay */}
-      <div 
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: `
-            radial-gradient(circle at 20% 30%, rgba(243,218,115,0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 0%, transparent 50%)
-          `,
-          opacity: 0.6,
-          mixBlendMode: 'soft-light'
-        }}
-      />
-
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Refined header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
-            background: 'rgba(243,218,115,0.2)',
-            border: '1px solid rgba(243,218,115,0.5)'
+            background: 'rgba(243,218,115,0.15)',
+            border: '1px solid rgba(243,218,115,0.4)'
           }}>
             <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>
               The Difference
@@ -90,20 +77,12 @@ const Results = () => {
           <div className="flex justify-center">
             <div 
               className="relative overflow-hidden rounded-full"
-              style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, rgba(255,255,255,0.6), #F3DA73)' }}
-            >
-              <div 
-                className="absolute inset-0"
-                style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)',
-                  animation: 'shimmer 3s linear infinite'
-                }}
-              />
-            </div>
+              style={{ width: '80px', height: '3px', background: '#F3DA73' }}
+            />
           </div>
         </div>
 
-        {/* Luxury highlight cards */}
+        {/* Clean cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon;
@@ -115,50 +94,23 @@ const Results = () => {
                 }`}
                 style={{ transitionDelay: `${index * 200 + 300}ms` }}
               >
-                {/* Elegant card with white theme */}
+                {/* Clean white card */}
                 <div
-                  className="relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.3)] h-full flex flex-col"
+                  className="relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9))',
-                    backdropFilter: 'blur(20px)',
-                    WebkitBackdropFilter: 'blur(20px)',
-                    border: '2px solid rgba(243,218,115,0.6)',
-                    boxShadow: '0 15px 50px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.8)',
+                    background: '#FFFFFF',
+                    border: '2px solid rgba(243,218,115,0.5)',
+                    boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
                     minHeight: '240px'
                   }}
                 >
-                  {/* Premium gradient accent line */}
-                  <div 
-                    className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
-                    style={{
-                      background: 'linear-gradient(90deg, #F3DA73 0%, #718DA9 50%, #F3DA73 100%)',
-                      boxShadow: '0 2px 8px rgba(243,218,115,0.4)'
-                    }}
-                  />
-                  
-                  {/* Hover glow */}
-                  <div 
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
-                    style={{
-                      background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.15), transparent 50%)'
-                    }}
-                  />
-                  
-                  {/* Elegant edge highlight */}
-                  <div 
-                    className="absolute inset-0 rounded-2xl pointer-events-none"
-                    style={{
-                      boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.9), inset 0 -1px 1px rgba(0,0,0,0.02)'
-                    }}
-                  />
-                  
-                  {/* Icon with luxury styling */}
+                  {/* Icon with clean styling */}
                   <div className="mb-6">
                     <div 
                       className="w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.08))',
-                        border: '2px solid rgba(113,141,169,0.3)'
+                        background: 'rgba(113,141,169,0.1)',
+                        border: '2px solid rgba(113,141,169,0.25)'
                       }}
                     >
                       <Icon 
@@ -199,38 +151,16 @@ const Results = () => {
           })}
         </div>
 
-        {/* Bottom statement with dramatic flair */}
+        {/* Clean bottom statement */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-5xl"
+            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.2), rgba(243,218,115,0.1))',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '2px solid rgba(243,218,115,0.5)',
-              boxShadow: '0 15px 50px rgba(0,0,0,0.2)',
-              transition: 'all 0.6s ease'
+              background: 'rgba(243,218,115,0.15)',
+              border: '2px solid rgba(243,218,115,0.4)',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
-            {/* Animated gradient border glow */}
-            <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-              style={{
-                background: 'linear-gradient(135deg, rgba(243,218,115,0.3), rgba(255,255,255,0.2))',
-                filter: 'blur(30px)'
-              }}
-            />
-            
-            {/* Shimmer effect */}
-            <div 
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%)',
-                backgroundSize: '200% 100%',
-                animation: 'shimmer 6s ease-in-out infinite'
-              }}
-            />
-            
             <div className="relative z-10 text-center">
               <p 
                 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold italic"

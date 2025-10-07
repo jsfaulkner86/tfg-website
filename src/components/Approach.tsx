@@ -3,16 +3,24 @@ import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
   { 
+    type: 'text',
     text: "A 10-12 page bespoke playbook showing exactly where your practice is ",
     emphasis: "leaking money",
     suffix: " and how to stop it"
   },
   {
+    type: 'bullets',
     text: "A guarantee of at least ",
     emphasis: "six figures uncovered",
-    suffix: ", often $250K+, and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing."
+    bullets: [
+      "Often $250K+",
+      "In some cases, far more",
+      "One recent practice: $3 million in lost revenue",
+      "From processes already running but not optimizing"
+    ]
   },
   {
+    type: 'text',
     text: "And if we don't uncover at least six figures? ",
     emphasis: "We keep working with you at no cost",
     suffix: " until you do."
@@ -182,21 +190,59 @@ const Approach = () => {
                     </div>
 
                     <div className="relative z-10 text-center flex-1">
-                      <p 
-                        className="text-lg sm:text-xl font-inter font-medium leading-relaxed"
-                        style={{ 
-                          color: '#FFFFFF', 
-                          letterSpacing: '0.01em',
-                          lineHeight: '1.7',
-                          textShadow: '0 1px 2px rgba(0,0,0,0.1)'
-                        }}
-                      >
-                        {benefit.text}
-                        <span className="font-bold" style={{ color: '#F3DA73' }}>
-                          {benefit.emphasis}
-                        </span>
-                        {benefit.suffix}
-                      </p>
+                      {benefit.type === 'bullets' ? (
+                        <div>
+                          <p 
+                            className="text-lg sm:text-xl font-inter font-medium leading-relaxed mb-4"
+                            style={{ 
+                              color: '#FFFFFF', 
+                              letterSpacing: '0.01em',
+                              lineHeight: '1.7',
+                              textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+                            }}
+                          >
+                            {benefit.text}
+                            <span className="font-bold text-xl sm:text-2xl" style={{ color: '#F3DA73' }}>
+                              {benefit.emphasis}
+                            </span>
+                          </p>
+                          <div className="space-y-2 mt-4">
+                            {benefit.bullets.map((bullet, idx) => (
+                              <div key={idx} className="flex items-center justify-center gap-2">
+                                <div 
+                                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                  style={{ background: '#F3DA73' }}
+                                />
+                                <p 
+                                  className="text-base sm:text-lg font-inter"
+                                  style={{ 
+                                    color: '#FFFFFF',
+                                    letterSpacing: '0.01em'
+                                  }}
+                                >
+                                  {bullet}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <p 
+                          className="text-lg sm:text-xl font-inter font-medium leading-relaxed"
+                          style={{ 
+                            color: '#FFFFFF', 
+                            letterSpacing: '0.01em',
+                            lineHeight: '1.7',
+                            textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+                          }}
+                        >
+                          {benefit.text}
+                          <span className="font-bold" style={{ color: '#F3DA73' }}>
+                            {benefit.emphasis}
+                          </span>
+                          {benefit.suffix}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -6,7 +6,6 @@ import Approach from "@/components/Approach";
 import Transformation from "@/components/Transformation";
 import Results from "@/components/Results";
 import BottomVideo from "@/components/BottomVideo";
-import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
@@ -20,7 +19,6 @@ const Index = () => {
         <Transformation />
         <Results />
         <BottomVideo />
-        <FinalCTA />
       </main>
     </>
   );

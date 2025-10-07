@@ -96,15 +96,14 @@ const Problem = () => {
                 They're <strong style={{ color: '#2C2C2C' }}>losing it</strong> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
               </p>
               <div 
-                className="mt-8 p-6 rounded-xl"
+                className="mt-8 p-8 rounded-xl border-l-4"
                 style={{
-                  background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
-                  border: '2px solid rgba(113,141,169,0.3)',
-                  boxShadow: '0 12px 40px rgba(113,141,169,0.25)'
+                  backgroundColor: 'rgba(113,141,169,0.08)',
+                  borderLeftColor: '#718DA9'
                 }}
               >
-                <p className="text-lg sm:text-xl font-inter font-semibold leading-relaxed" style={{ color: '#2C2C2C' }}>
-                  Even top-performing groups leak <span className="block mt-2 text-2xl sm:text-3xl font-bold" style={{ color: '#718DA9' }}>six to seven figures annually</span> without realizing it.
+                <p className="text-xl sm:text-2xl font-inter leading-relaxed" style={{ color: '#2C2C2C' }}>
+                  Even top-performing groups leak <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>six to seven figures annually</strong> without realizing it.
                 </p>
               </div>
             </div>

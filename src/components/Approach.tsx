@@ -119,43 +119,54 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Compact luxury card */}
+                  {/* Luxury card with enhanced depth */}
                   <div
-                    className="relative p-8 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(113,141,169,0.2)] h-full flex flex-col"
+                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.25)] h-full flex flex-col"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7))',
-                      backdropFilter: 'blur(20px)',
-                      WebkitBackdropFilter: 'blur(20px)',
-                      border: '1px solid rgba(243,218,115,0.3)',
-                      boxShadow: '0 8px 30px rgba(113,141,169,0.1)'
+                      background: 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85))',
+                      backdropFilter: 'blur(30px)',
+                      WebkitBackdropFilter: 'blur(30px)',
+                      border: '1.5px solid rgba(243,218,115,0.4)',
+                      boxShadow: '0 15px 50px rgba(113,141,169,0.12), inset 0 1px 0 rgba(255,255,255,0.8)',
+                      position: 'relative'
                     }}
                   >
-                    {/* Gradient accent line */}
+                    {/* Premium gradient accent line - dual color */}
                     <div 
-                      className="absolute top-0 left-0 right-0 h-1 rounded-t-xl"
+                      className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
                       style={{
-                        background: 'linear-gradient(90deg, #F3DA73, #718DA9)'
+                        background: 'linear-gradient(90deg, #F3DA73 0%, #718DA9 50%, #F3DA73 100%)',
+                        boxShadow: '0 2px 8px rgba(243,218,115,0.3)'
                       }}
                     />
                     
-                    {/* Hover glow */}
+                    {/* Sophisticated hover glow with dual gradients */}
                     <div 
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-xl"
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
                       style={{
-                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.15), transparent 60%)'
+                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%), radial-gradient(circle at 50% 100%, rgba(113,141,169,0.1), transparent 50%)'
                       }}
                     />
                     
-                    {/* Number badge - centered at top */}
-                    <div className="flex justify-center mb-6">
+                    {/* Elegant edge highlight */}
+                    <div 
+                      className="absolute inset-0 rounded-2xl pointer-events-none"
+                      style={{
+                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.9), inset 0 -1px 1px rgba(0,0,0,0.02)'
+                      }}
+                    />
+                    
+                    {/* Luxury number badge with refined styling */}
+                    <div className="flex justify-center mb-8">
                       <div 
-                        className="w-14 h-14 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                        className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
                         style={{
-                          background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                          boxShadow: '0 6px 20px rgba(243,218,115,0.4)'
+                          background: 'linear-gradient(135deg, #F3DA73 0%, #E5C962 50%, #D4B65D 100%)',
+                          boxShadow: '0 8px 24px rgba(243,218,115,0.5), inset 0 1px 2px rgba(255,255,255,0.5), inset 0 -1px 2px rgba(0,0,0,0.1)',
+                          border: '1px solid rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-2xl font-playfair font-bold" style={{ color: '#2C2C2C' }}>
+                        <span className="text-2xl font-playfair font-bold" style={{ color: '#2C2C2C', textShadow: '0 1px 2px rgba(255,255,255,0.5)' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -167,7 +178,7 @@ const Approach = () => {
                         style={{ 
                           color: '#2C2C2C', 
                           letterSpacing: '0.01em',
-                          lineHeight: '1.7'
+                          lineHeight: '1.8'
                         }}
                       >
                         {benefit}

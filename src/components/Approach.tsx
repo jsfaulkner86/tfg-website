@@ -2,9 +2,21 @@ import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "A 10-12 page bespoke playbook showing exactly where your practice is leaking money and how to stop it",
-  "A guarantee of at least six figures uncovered, often $250K+, and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing.",
-  "And if we don't uncover at least six figures? We keep working with you at no cost until you do."
+  { 
+    text: "A 10-12 page bespoke playbook showing exactly where your practice is ",
+    emphasis: "leaking money",
+    suffix: " and how to stop it"
+  },
+  {
+    text: "A guarantee of at least ",
+    emphasis: "six figures uncovered",
+    suffix: ", often $250K+, and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing."
+  },
+  {
+    text: "And if we don't uncover at least six figures? ",
+    emphasis: "We keep working with you at no cost",
+    suffix: " until you do."
+  }
 ];
 
 const Approach = () => {
@@ -171,14 +183,19 @@ const Approach = () => {
 
                     <div className="relative z-10 text-center flex-1">
                       <p 
-                        className="text-base font-inter leading-relaxed"
+                        className="text-lg sm:text-xl font-inter font-medium leading-relaxed"
                         style={{ 
                           color: '#FFFFFF', 
                           letterSpacing: '0.01em',
-                          lineHeight: '1.8'
+                          lineHeight: '1.7',
+                          textShadow: '0 1px 2px rgba(0,0,0,0.1)'
                         }}
                       >
-                        {benefit}
+                        {benefit.text}
+                        <span className="font-bold" style={{ color: '#F3DA73' }}>
+                          {benefit.emphasis}
+                        </span>
+                        {benefit.suffix}
                       </p>
                     </div>
                   </div>

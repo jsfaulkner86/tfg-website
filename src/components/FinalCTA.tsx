@@ -24,26 +24,33 @@ const FinalCTA = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10 animate-fade-in">
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-display font-semibold tracking-wide text-white">
-          Ready to build a practice that thrives?
+          Ready to See What's Possible?
         </h2>
         
         <p className="text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto">
-          Let's discuss how we can transform your organization from chaos to clarity.
+          If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
         </p>
 
-        <Button 
-          onClick={scrollToContact}
-          variant="accent" 
-          size="lg" 
-          className="text-lg px-12 py-7 group animate-glow"
-        >
-          Schedule Your Strategy Call
-          <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-        </Button>
-
-        <p className="text-sm text-white/70 mt-8">
-          No obligation. Just a conversation about your vision.
-        </p>
+        <div className="space-y-4">
+          <Button 
+            onClick={scrollToContact}
+            variant="accent" 
+            size="lg" 
+            className="text-lg px-12 py-7 group animate-glow"
+          >
+            Book a Consultation
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
+          
+          <div className="space-y-2 text-white/90">
+            <p className="text-lg">
+              📩 <strong>John Faulkner</strong> – Co-Founder, Healthcare Growth Architect
+            </p>
+            <p className="text-lg">
+              📩 <strong>Dr. Nicole Faulkner</strong> – Co-Founder, Chief Clinical Officer
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

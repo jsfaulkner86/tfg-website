@@ -33,13 +33,16 @@ const Mission = () => {
           {/* Text Content */}
           <div className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground">
-              We unite clinical insight with modern growth systems.
+              Who We Are
             </h2>
             <p className="text-xl text-muted-foreground font-light leading-relaxed">
-              The Faulkner Group bridges the gap between healthcare expertise and strategic excellence. We bring clarity to complexity, transforming operational chaos into streamlined systems that drive sustainable growth.
+              We are a boutique healthcare advisory firm that helps specialty practices, women's health groups, fertility practices, and health tech innovators escape broken systems and build organizations that thrive.
             </p>
             <p className="text-xl text-muted-foreground font-light leading-relaxed">
-              Our approach is rooted in deep clinical understanding, elevated by cutting-edge business strategy and AI integration.
+              Led by <strong className="text-foreground">John Faulkner</strong> — a Healthcare Growth Architect with 13+ years of experience — and <strong className="text-foreground">Dr. Nicole Faulkner</strong> — a board-certified OB/GYN physician with over a decade of frontline practice — we bring a rare combination of business strategy and clinical insight.
+            </p>
+            <p className="text-xl text-muted-foreground font-light leading-relaxed">
+              You're not hiring consultants. You're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
             </p>
           </div>
 

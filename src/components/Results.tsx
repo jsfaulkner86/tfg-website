@@ -1,47 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 
-interface Metric {
-  value: number;
-  suffix: string;
-  label: string;
-}
-
-const metrics: Metric[] = [
-  { value: 70, suffix: "%", label: "Operational issues resolved within 3 months" },
-  { value: 15, suffix: "M+", label: "In lost revenue recovered" },
-  { value: 90, suffix: "%", label: "Client satisfaction rate" },
+const highlights = [
+  "$50M+ uncovered in lost revenue across hospitals, health centers, and specialty practices",
+  "13+ years of healthcare growth architecture + 10+ years of physician leadership",
+  "A boutique, high-touch approach that blends clinical insight with growth strategy"
 ];
 
 const Results = () => {
-  const [counts, setCounts] = useState<number[]>(metrics.map(() => 0));
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-          
-          metrics.forEach((metric, index) => {
-            const duration = 2000;
-            const steps = 60;
-            const increment = metric.value / steps;
-            let currentStep = 0;
-
-            const timer = setInterval(() => {
-              currentStep++;
-              if (currentStep <= steps) {
-                setCounts(prev => {
-                  const newCounts = [...prev];
-                  newCounts[index] = Math.min(Math.round(increment * currentStep), metric.value);
-                  return newCounts;
-                });
-              } else {
-                clearInterval(timer);
-              }
-            }, duration / steps);
-          });
+        if (entry.isIntersecting) {
+          setIsVisible(true);
         }
       },
       { threshold: 0.3 }
@@ -52,7 +25,7 @@ const Results = () => {
     }
 
     return () => observer.disconnect();
-  }, [hasAnimated]);
+  }, []);
 
   return (
     <section 
@@ -60,31 +33,33 @@ const Results = () => {
       ref={sectionRef}
       className="py-32 px-6 bg-primary text-primary-foreground"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+      <div className="max-w-5xl mx-auto">
+        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide mb-6">
-            Results That Matter
+            Why Work With Us
           </h2>
-          <p className="text-xl font-light opacity-90 max-w-3xl mx-auto">
-            We deliver measurable impact that transforms healthcare organizations.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12">
-          {metrics.map((metric, index) => (
-            <div 
+        <div className="space-y-8 max-w-3xl mx-auto">
+          {highlights.map((highlight, index) => (
+            <div
               key={index}
-              className="text-center space-y-4 animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className={`p-8 bg-primary-foreground/10 backdrop-blur-sm rounded-xl border border-primary-foreground/20 transition-all duration-500 ${
+                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+              }`}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="text-6xl md:text-7xl font-light text-accent">
-                {counts[index]}{metric.suffix}
-              </div>
-              <p className="text-xl font-light opacity-90">
-                {metric.label}
+              <p className="text-xl font-light text-primary-foreground leading-relaxed">
+                {highlight}
               </p>
             </div>
           ))}
+        </div>
+
+        <div className={`text-center mt-16 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <p className="text-2xl font-medium text-accent italic">
+            We don't just analyze. We architect organizations built to last.
+          </p>
         </div>
       </div>
     </section>

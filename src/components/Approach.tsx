@@ -1,38 +1,21 @@
 import { useEffect, useRef, useState } from "react";
-import { TrendingUp, Workflow, Users } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
-const pillars = [
-  {
-    icon: TrendingUp,
-    title: "Strategy & Growth Architecture",
-    description: "We design scalable systems that align with your vision, optimizing revenue streams and operational efficiency for long-term success."
-  },
-  {
-    icon: Workflow,
-    title: "Workflow Redesign & AI Integration",
-    description: "Transform outdated processes with intelligent automation and AI tools that enhance productivity while preserving the human element of care."
-  },
-  {
-    icon: Users,
-    title: "Leadership & Culture Alignment",
-    description: "Build cohesive teams and cultivate organizational cultures that empower leaders and drive exceptional patient outcomes."
-  }
+const benefits = [
+  "A 10–12 page bespoke playbook showing exactly where your practice is leaking money and how to stop it",
+  "A guarantee of at least six figures uncovered — often $250K+ — and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing.",
+  "And if we don't uncover at least six figures? We keep working with you at no cost until you do."
 ];
 
 const Approach = () => {
-  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Stagger the animation of each card
-          pillars.forEach((_, index) => {
-            setTimeout(() => {
-              setVisibleCards(prev => [...prev, index]);
-            }, index * 200);
-          });
+          setIsVisible(true);
         }
       },
       { threshold: 0.2 }
@@ -49,42 +32,45 @@ const Approach = () => {
     <section 
       id="approach"
       ref={sectionRef}
-      className="py-32 px-6 bg-secondary"
+      className="py-32 px-6 bg-background"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+      <div className="max-w-5xl mx-auto">
+        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-5xl md:text-6xl font-display font-semibold tracking-wide text-foreground mb-6">
-            Our Approach
+            The Growth Blueprint™
           </h2>
-          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto">
-            Three foundational pillars that transform healthcare organizations from fragmented to flourishing.
+          <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
+            The Blueprint is the entry point — 30 days to clarity, guaranteed.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {pillars.map((pillar, index) => {
-            const Icon = pillar.icon;
-            const isVisible = visibleCards.includes(index);
-            
-            return (
+        <div className={`mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <h3 className="text-2xl font-medium text-foreground mb-8 text-center">
+            What you get:
+          </h3>
+          
+          <div className="space-y-6">
+            {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className={`group p-8 bg-background rounded-2xl shadow-lg hover:shadow-elegant transition-all duration-500 cursor-pointer ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                className={`flex items-start gap-4 p-6 bg-secondary rounded-xl transition-all duration-500 ${
+                  isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                 }`}
+                style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <div className="mb-6 inline-flex p-4 bg-accent/10 rounded-xl group-hover:bg-accent/20 transition-all duration-300">
-                  <Icon className="h-8 w-8 text-accent" />
-                </div>
-                <h3 className="text-2xl font-medium text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
-                  {pillar.title}
-                </h3>
-                <p className="text-lg text-muted-foreground font-light leading-relaxed">
-                  {pillar.description}
+                <CheckCircle2 className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground font-light leading-relaxed">
+                  {benefit}
                 </p>
               </div>
-            );
-          })}
+            ))}
+          </div>
+        </div>
+
+        <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <p className="text-2xl text-foreground font-medium italic">
+            This isn't theory. It's clarity, cash flow, and control — delivered fast.
+          </p>
         </div>
       </div>
     </section>

@@ -250,7 +250,7 @@ const Approach = () => {
               <p 
                 className="text-xl sm:text-2xl md:text-3xl font-playfair font-semibold"
                 style={{ 
-                  color: '#2C2C2C', 
+                  color: '#718DA9', 
                   letterSpacing: '-0.01em',
                   lineHeight: '1.4'
                 }}

@@ -81,7 +81,7 @@ const Approach = () => {
             letterSpacing: '0.01em',
             lineHeight: '1.6'
           }}>
-            The Blueprint is the entry point: <span style={{ color: '#2C2C2C', fontWeight: 600 }}>30 days to clarity, guaranteed.</span>
+            The Blueprint is the entry point: 30 days to clarity, guaranteed.
           </p>
           
           <div className="flex justify-center">

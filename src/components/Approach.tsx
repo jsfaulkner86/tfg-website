@@ -170,7 +170,7 @@ const Approach = () => {
             />
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold italic relative z-10"
-              style={{ color: '#2C2C2C', letterSpacing: '-0.01em', lineHeight: '1.4' }}
+              style={{ color: '#718DA9', letterSpacing: '-0.01em', lineHeight: '1.4' }}
             >
               This isn't theory. It's clarity, cash flow, and control — delivered fast.
             </p>

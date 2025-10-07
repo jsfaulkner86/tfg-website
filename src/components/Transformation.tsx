@@ -144,60 +144,36 @@ const Transformation = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 400}ms` }}
                 >
-                  {/* Luxury card with blue theme */}
+                  {/* Clean white card with gold border */}
                   <div
-                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.4)] h-full flex flex-col items-center text-center"
+                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col items-center text-center"
                     style={{
-                      background: 'linear-gradient(135deg, #8BA5BB, #6D8BA1)',
-                      boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
-                      border: '2px solid rgba(243,218,115,0.6)',
+                      background: '#FFFFFF',
+                      border: '2.5px solid #D4B65D',
+                      boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
                       minHeight: '240px'
                     }}
                   >
-                    {/* Premium gradient accent line */}
-                    <div 
-                      className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
-                      style={{
-                        background: 'linear-gradient(90deg, #F3DA73 0%, rgba(255,255,255,0.6) 50%, #F3DA73 100%)',
-                        boxShadow: '0 2px 8px rgba(243,218,115,0.4)'
-                      }}
-                    />
                     
-                    {/* Hover glow */}
-                    <div 
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
-                      style={{
-                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%)'
-                      }}
-                    />
-                    
-                    {/* Elegant edge highlight */}
-                    <div 
-                      className="absolute inset-0 rounded-2xl pointer-events-none"
-                      style={{
-                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -1px 1px rgba(0,0,0,0.1)'
-                      }}
-                    />
-                    
-                    {/* Icon with luxury styling */}
+                    {/* Icon */}
                     <div 
                       className="mb-6 w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                       style={{
-                        background: 'rgba(243,218,115,0.2)',
-                        border: '2px solid rgba(243,218,115,0.5)'
+                        background: 'rgba(113,141,169,0.1)',
+                        border: '2px solid rgba(113,141,169,0.25)'
                       }}
                     >
                       <Icon 
                         size={32}
                         strokeWidth={2}
-                        style={{ color: '#F3DA73' }}
+                        style={{ color: '#718DA9' }}
                       />
                     </div>
                     
                     <p 
                       className="text-base sm:text-lg font-inter font-medium leading-relaxed relative z-10"
                       style={{ 
-                        color: '#FFFFFF',
+                        color: '#2C2C2C',
                         letterSpacing: '0.01em',
                         lineHeight: '1.7'
                       }}
@@ -214,34 +190,13 @@ const Transformation = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-6xl"
+            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '2px solid rgba(243,218,115,0.25)',
-              boxShadow: '0 15px 50px rgba(243,218,115,0.15)',
-              transition: 'all 0.6s ease'
+              background: 'rgba(243,218,115,0.08)',
+              border: '2.5px solid #D4B65D',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
-            {/* Animated gradient border glow */}
-            <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-              style={{
-                background: 'linear-gradient(135deg, rgba(113,141,169,0.2), rgba(243,218,115,0.2))',
-                filter: 'blur(30px)'
-              }}
-            />
-            
-            {/* Shimmer effect */}
-            <div 
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%)',
-                backgroundSize: '200% 100%',
-                animation: 'shimmer 6s ease-in-out infinite'
-              }}
-            />
             
             <div className="relative z-10 text-center flex items-center justify-center">
               <p 

@@ -162,23 +162,21 @@ const Problem = () => {
                       transitionDelay: `${index * 200 + 400}ms`
                     }}
                   >
-                    {/* Glassmorphism card */}
+                    {/* Clean white card with gold border */}
                     <div 
-                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_40px_rgba(113,141,169,0.15)]"
+                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
                       style={{
-                        background: 'rgba(255,255,255,0.4)',
-                        backdropFilter: 'blur(12px)',
-                        WebkitBackdropFilter: 'blur(12px)',
-                        border: '1px solid rgba(243,218,115,0.2)',
-                        boxShadow: '0 4px 20px rgba(113,141,169,0.08)'
+                        background: '#FFFFFF',
+                        border: '2.5px solid #D4B65D',
+                        boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
                       }}
                     >
                       {/* Golden accent dot on connecting line */}
                       <div 
-                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(243,218,115,0.8)]"
+                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transition-all duration-300 group-hover:scale-125"
                         style={{
-                          background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                          boxShadow: '0 0 12px rgba(243,218,115,0.4)'
+                          background: '#D4B65D',
+                          boxShadow: '0 4px 12px rgba(212,182,93,0.3)'
                         }}
                       />
 
@@ -215,33 +213,13 @@ const Problem = () => {
           className={`mt-24 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden group"
+            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
-              backdropFilter: 'blur(12px)',
-              WebkitBackdropFilter: 'blur(12px)',
-              border: '1px solid rgba(243,218,115,0.3)',
-              boxShadow: '0 8px 40px rgba(113,141,169,0.12)',
-              transition: 'all 0.5s ease'
+              background: 'rgba(243,218,115,0.08)',
+              border: '2.5px solid #D4B65D',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
-            {/* Subtle glow effect */}
-            <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-              style={{
-                background: 'radial-gradient(circle at center, rgba(243,218,115,0.1), transparent 70%)'
-              }}
-            />
-            
-            {/* Shimmer animation */}
-            <div 
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%)',
-                backgroundSize: '200% 100%',
-                animation: 'shimmer 5s ease-in-out infinite'
-              }}
-            />
             
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold text-center leading-tight relative z-10"

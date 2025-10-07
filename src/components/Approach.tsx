@@ -139,51 +139,26 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Luxury blue card with white text - softer tones */}
+                  {/* Clean white card with gold border */}
                   <div
-                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.4)] h-full flex flex-col"
+                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
                     style={{
-                      background: 'linear-gradient(135deg, #8BA5BB, #6D8BA1)',
-                      boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
-                      border: '2px solid rgba(243,218,115,0.6)',
-                      position: 'relative'
+                      background: '#FFFFFF',
+                      border: '2.5px solid #D4B65D',
+                      boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
                     }}
                   >
-                    {/* Premium gradient accent line */}
-                    <div 
-                      className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
-                      style={{
-                        background: 'linear-gradient(90deg, #F3DA73 0%, rgba(255,255,255,0.6) 50%, #F3DA73 100%)',
-                        boxShadow: '0 2px 8px rgba(243,218,115,0.4)'
-                      }}
-                    />
-                    
-                    {/* Sophisticated hover glow */}
-                    <div 
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
-                      style={{
-                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%)'
-                      }}
-                    />
-                    
-                    {/* Elegant edge highlight */}
-                    <div 
-                      className="absolute inset-0 rounded-2xl pointer-events-none"
-                      style={{
-                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -1px 1px rgba(0,0,0,0.1)'
-                      }}
-                    />
                     
                     {/* Refined minimal number badge */}
                     <div className="flex justify-center mb-6">
                       <div 
                         className="relative w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                         style={{
-                          background: 'rgba(243,218,115,0.2)',
-                          border: '2px solid rgba(243,218,115,0.5)'
+                          background: 'rgba(113,141,169,0.1)',
+                          border: '2px solid rgba(113,141,169,0.25)'
                         }}
                       >
-                        <span className="text-xl font-inter font-semibold" style={{ color: '#F3DA73' }}>
+                        <span className="text-xl font-inter font-semibold" style={{ color: '#718DA9' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -195,14 +170,13 @@ const Approach = () => {
                           <p 
                             className="text-base sm:text-lg font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
-                              color: '#FFFFFF', 
+                              color: '#2C2C2C', 
                               letterSpacing: '0.01em',
-                              lineHeight: '1.7',
-                              textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+                              lineHeight: '1.7'
                             }}
                           >
                             {benefit.text}
-                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#F3DA73' }}>
+                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#718DA9' }}>
                               {benefit.emphasis}
                             </span>
                           </p>
@@ -211,12 +185,12 @@ const Approach = () => {
                               <div key={idx} className="flex items-start gap-3">
                                 <div 
                                   className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
-                                  style={{ background: '#F3DA73' }}
+                                  style={{ background: '#D4B65D' }}
                                 />
                                 <p 
                                   className="text-sm sm:text-base font-inter"
                                   style={{ 
-                                    color: '#FFFFFF',
+                                    color: '#2C2C2C',
                                     letterSpacing: '0.01em',
                                     lineHeight: '1.6'
                                   }}
@@ -231,14 +205,13 @@ const Approach = () => {
                         <p 
                           className="text-base sm:text-lg font-inter font-medium leading-relaxed text-center"
                           style={{ 
-                            color: '#FFFFFF', 
+                            color: '#2C2C2C', 
                             letterSpacing: '0.01em',
-                            lineHeight: '1.7',
-                            textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+                            lineHeight: '1.7'
                           }}
                         >
                           {benefit.text}
-                          <span className="font-bold" style={{ color: '#F3DA73' }}>
+                          <span className="font-bold" style={{ color: '#718DA9' }}>
                             {benefit.emphasis}
                           </span>
                           {benefit.suffix}
@@ -255,34 +228,13 @@ const Approach = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-5xl"
+            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '2px solid rgba(113,141,169,0.25)',
-              boxShadow: '0 15px 50px rgba(113,141,169,0.15)',
-              transition: 'all 0.6s ease'
+              background: 'rgba(113,141,169,0.08)',
+              border: '2.5px solid #D4B65D',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
-            {/* Animated gradient border glow */}
-            <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-              style={{
-                background: 'linear-gradient(135deg, rgba(243,218,115,0.2), rgba(113,141,169,0.2))',
-                filter: 'blur(30px)'
-              }}
-            />
-            
-            {/* Shimmer effect */}
-            <div 
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%)',
-                backgroundSize: '200% 100%',
-                animation: 'shimmer 6s ease-in-out infinite'
-              }}
-            />
             
             <div className="relative z-10 text-center">
               <p 

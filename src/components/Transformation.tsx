@@ -150,7 +150,7 @@ const Transformation = () => {
                     style={{
                       background: 'linear-gradient(135deg, #8BA5BB, #6D8BA1)',
                       boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
-                      border: '1px solid rgba(255,255,255,0.15)',
+                      border: '2px solid rgba(243,218,115,0.6)',
                       minHeight: '240px'
                     }}
                   >

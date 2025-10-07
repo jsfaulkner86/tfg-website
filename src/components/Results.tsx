@@ -156,10 +156,9 @@ const Results = () => {
           <div 
             className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'rgba(255,255,255,0.04)',
+              background: 'rgba(255,255,255,0.08)',
               border: '3.5px solid #D4B65D',
-              boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
-              backdropFilter: 'blur(10px)'
+              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
             <div className="relative z-10 text-center">

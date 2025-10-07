@@ -34,12 +34,13 @@ const FinalCTA = () => {
         <div className="space-y-4">
           <Button 
             onClick={scrollToContact}
-            variant="accent" 
-            size="lg" 
-            className="text-lg px-12 py-7 group animate-glow"
+            className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold"
+            style={{ 
+              boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
+            }}
           >
             Book a Consultation
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
           
           <div className="space-y-2 text-white/90">

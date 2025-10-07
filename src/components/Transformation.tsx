@@ -243,7 +243,7 @@ const Transformation = () => {
               }}
             />
             
-            <div className="relative z-10 text-center px-4">
+            <div className="relative z-10 text-left px-4">
               <p 
                 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 

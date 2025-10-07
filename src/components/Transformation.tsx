@@ -192,20 +192,18 @@ const Transformation = () => {
           <div 
             className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'rgba(243,218,115,0.08)',
-              border: '2.5px solid #D4B65D',
+              background: 'rgba(243,218,115,0.15)',
+              border: '2px solid rgba(243,218,115,0.4)',
               boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
-            
-            <div className="relative z-10 text-center flex items-center justify-center">
+            <div className="relative z-10 text-center">
               <p 
-                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold italic"
                 style={{ 
-                  color: '#718DA9', 
+                  color: '#F3DA73', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4',
-                  whiteSpace: 'nowrap'
+                  lineHeight: '1.4'
                 }}
               >
                 This is where practices stop bleeding time and money and start thriving.

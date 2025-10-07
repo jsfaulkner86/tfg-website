@@ -18,12 +18,24 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards]">
-          <h1 className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase" style={{ letterSpacing: '0.02em' }}>
+          <h1 
+            className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase" 
+            style={{ 
+              letterSpacing: '0.02em',
+              textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3)'
+            }}
+          >
             LESS CHAOS.<br />
             MORE CLARITY.<br />
             REAL GROWTH.
           </h1>
-          <p className="mb-12 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" style={{ color: '#F9F9F9' }}>
+          <p 
+            className="mb-12 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
+            style={{ 
+              color: '#F9F9F9',
+              textShadow: '0 2px 6px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)'
+            }}
+          >
             We help healthcare leaders escape broken systems & build organizations that thrive.
           </p>
           <Button 

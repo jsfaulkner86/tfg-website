@@ -190,10 +190,10 @@ const Transformation = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
+            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'rgba(243,218,115,0.08)',
-              border: '2.5px solid #D4B65D',
+              background: 'rgba(243,218,115,0.06)',
+              border: '3.5px solid #D4B65D',
               boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >

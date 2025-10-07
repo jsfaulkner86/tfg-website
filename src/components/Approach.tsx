@@ -66,7 +66,7 @@ const Approach = () => {
             The Growth Blueprint™
           </h2>
           <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1', letterSpacing: '0.01em' }}>
-            The Blueprint is the entry point — 30 days to clarity, guaranteed.
+            The Blueprint is the entry point: 30 days to clarity, guaranteed.
           </p>
           <div 
             className="relative overflow-hidden rounded-full mx-auto"
@@ -172,7 +172,7 @@ const Approach = () => {
               className="text-2xl sm:text-3xl font-playfair font-semibold italic relative z-10"
               style={{ color: '#718DA9', letterSpacing: '-0.01em', lineHeight: '1.4' }}
             >
-              This isn't theory. It's clarity, cash flow, and control — delivered fast.
+              This isn't theory. It's clarity, cash flow, and control, delivered fast.
             </p>
           </div>
         </div>

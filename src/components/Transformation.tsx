@@ -54,7 +54,7 @@ const Transformation = () => {
             But the Transformation is where the real magic happens.
           </p>
           <p className="text-lg text-muted-foreground font-light max-w-3xl mx-auto leading-relaxed">
-            Almost every client who completes the Blueprint chooses to continue — because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
+            Almost every client who completes the Blueprint chooses to continue because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const Transformation = () => {
 
         <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <p className="text-xl sm:text-2xl text-foreground font-medium">
-            This is where practices stop bleeding time and money — and start thriving.
+            This is where practices stop bleeding time and money and start thriving.
           </p>
         </div>
       </div>

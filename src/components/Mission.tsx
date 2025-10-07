@@ -39,7 +39,7 @@ const Mission = () => {
               We are a boutique healthcare advisory firm that helps specialty practices, women's health groups, fertility practices, and health tech innovators escape broken systems and build organizations that thrive.
             </p>
             <p className="text-xl text-muted-foreground font-light leading-relaxed">
-              Led by <strong className="text-foreground">John Faulkner</strong> — a Healthcare Growth Architect with 13+ years of experience — and <strong className="text-foreground">Dr. Nicole Faulkner</strong> — a board-certified OB/GYN physician with over a decade of frontline practice — we bring a rare combination of business strategy and clinical insight.
+              Led by <strong className="text-foreground">John Faulkner</strong>, a Healthcare Growth Architect with 13+ years of experience, and <strong className="text-foreground">Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we bring a rare combination of business strategy and clinical insight.
             </p>
             <p className="text-xl text-muted-foreground font-light leading-relaxed">
               You're not hiring consultants. You're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.

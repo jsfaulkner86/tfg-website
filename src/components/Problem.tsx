@@ -75,34 +75,60 @@ const Problem = () => {
             <div>
               <h2 
                 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4"
-                style={{ color: '#2C2C2C' }}
+                style={{ 
+                  color: '#2C2C2C',
+                  letterSpacing: '-0.02em',
+                  lineHeight: '1.1'
+                }}
               >
                 The Problem
               </h2>
-              <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1' }}>
+              <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1', letterSpacing: '0.01em' }}>
                 Hidden leaks draining your profitability without warning.
               </p>
               <div 
-                className="bg-[#F3DA73]" 
-                style={{ width: '60px', height: '2px' }}
-              />
+                className="relative overflow-hidden rounded-full"
+                style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }}
+              >
+                <div 
+                  className="absolute inset-0"
+                  style={{
+                    background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)',
+                    animation: 'shimmer 3s linear infinite'
+                  }}
+                />
+              </div>
             </div>
 
-            <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#444' }}>
+            <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#444', letterSpacing: '0.01em' }}>
               <p className="text-base sm:text-lg">
-                Most practices aren't <strong style={{ color: '#2C2C2C' }}>losing money</strong> because they don't have enough patients.
+                Most practices aren't <strong style={{ color: '#2C2C2C', fontWeight: 600 }}>losing money</strong> because they don't have enough patients.
               </p>
               <p className="text-base sm:text-lg">
-                They're <strong style={{ color: '#2C2C2C' }}>losing it</strong> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
+                They're <strong style={{ color: '#2C2C2C', fontWeight: 600 }}>losing it</strong> through <strong style={{ color: '#2C2C2C', fontWeight: 600 }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
               </p>
               <div 
-                className="mt-8 p-8 rounded-xl border-l-4"
+                className="mt-8 p-8 rounded-xl relative overflow-hidden group"
                 style={{
-                  backgroundColor: 'rgba(113,141,169,0.08)',
-                  borderLeftColor: '#718DA9'
+                  background: 'linear-gradient(135deg, rgba(113,141,169,0.1), rgba(113,141,169,0.05))',
+                  border: '1px solid rgba(113,141,169,0.2)',
+                  boxShadow: '0 4px 20px rgba(113,141,169,0.1)',
+                  transition: 'all 0.4s ease'
                 }}
               >
-                <p className="text-xl sm:text-2xl font-inter leading-relaxed" style={{ color: '#2C2C2C' }}>
+                <div 
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(243,218,115,0.05), transparent)',
+                  }}
+                />
+                <div 
+                  className="absolute left-0 top-0 bottom-0 w-1 rounded-full"
+                  style={{
+                    background: 'linear-gradient(180deg, #F3DA73, #D4B65D)'
+                  }}
+                />
+                <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10" style={{ color: '#2C2C2C', letterSpacing: '-0.01em' }}>
                   Even top-performing groups leak <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>six to seven figures annually</strong> without realizing it.
                 </p>
               </div>
@@ -138,21 +164,21 @@ const Problem = () => {
                   >
                     {/* Glassmorphism card */}
                     <div 
-                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(243,218,115,0.3)]"
+                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_8px_40px_rgba(113,141,169,0.15)]"
                       style={{
-                        background: 'rgba(255,255,255,0.2)',
-                        backdropFilter: 'blur(10px)',
-                        WebkitBackdropFilter: 'blur(10px)',
-                        border: '1px solid rgba(243,218,115,0.3)',
-                        boxShadow: '0 8px 32px rgba(113,141,169,0.1)'
+                        background: 'rgba(255,255,255,0.4)',
+                        backdropFilter: 'blur(12px)',
+                        WebkitBackdropFilter: 'blur(12px)',
+                        border: '1px solid rgba(243,218,115,0.2)',
+                        boxShadow: '0 4px 20px rgba(113,141,169,0.08)'
                       }}
                     >
                       {/* Golden accent dot on connecting line */}
                       <div 
-                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transition-all duration-300 group-hover:scale-125"
+                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:shadow-[0_0_20px_rgba(243,218,115,0.8)]"
                         style={{
                           background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                          boxShadow: '0 0 20px rgba(243,218,115,0.6)'
+                          boxShadow: '0 0 12px rgba(243,218,115,0.4)'
                         }}
                       />
 
@@ -171,7 +197,7 @@ const Problem = () => {
                         {/* Problem text */}
                         <p 
                           className="text-base sm:text-lg font-inter leading-relaxed"
-                          style={{ color: '#2C2C2C' }}
+                          style={{ color: '#2C2C2C', letterSpacing: '0.01em' }}
                         >
                           {problem.text}
                         </p>
@@ -189,28 +215,37 @@ const Problem = () => {
           className={`mt-24 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
           <div 
-            className="relative p-10 rounded-2xl overflow-hidden"
+            className="relative p-12 rounded-2xl overflow-hidden group"
             style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.15), rgba(243,218,115,0.08))',
-              backdropFilter: 'blur(10px)',
-              WebkitBackdropFilter: 'blur(10px)',
-              border: '1px solid rgba(243,218,115,0.4)',
-              boxShadow: '0 12px 48px rgba(243,218,115,0.2)'
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+              border: '1px solid rgba(243,218,115,0.3)',
+              boxShadow: '0 8px 40px rgba(113,141,169,0.12)',
+              transition: 'all 0.5s ease'
             }}
           >
+            {/* Subtle glow effect */}
+            <div 
+              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+              style={{
+                background: 'radial-gradient(circle at center, rgba(243,218,115,0.1), transparent 70%)'
+              }}
+            />
+            
             {/* Shimmer animation */}
             <div 
               className="absolute inset-0 pointer-events-none"
               style={{
-                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%)',
+                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%)',
                 backgroundSize: '200% 100%',
-                animation: 'shimmer 4s linear infinite'
+                animation: 'shimmer 5s ease-in-out infinite'
               }}
             />
             
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold text-center leading-tight relative z-10"
-              style={{ color: '#2C2C2C' }}
+              style={{ color: '#2C2C2C', letterSpacing: '-0.01em' }}
             >
               We don't just identify the leaks.{' '}
               <span style={{ color: '#718DA9', fontWeight: 700 }}>

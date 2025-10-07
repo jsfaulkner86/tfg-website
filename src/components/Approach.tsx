@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "A 10–12 page bespoke playbook showing exactly where your practice is leaking money and how to stop it",
-  "A guarantee of at least six figures uncovered — often $250K+ — and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing.",
+  "A 10-12 page bespoke playbook showing exactly where your practice is leaking money and how to stop it",
+  "A guarantee of at least six figures uncovered, often $250K+, and in some cases, far more. One recent practice uncovered over $3 million in lost revenue from processes they were already running but not optimizing.",
   "And if we don't uncover at least six figures? We keep working with you at no cost until you do."
 ];
 

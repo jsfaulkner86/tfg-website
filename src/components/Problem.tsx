@@ -80,7 +80,7 @@ const Problem = () => {
                 The Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1' }}>
-                Hidden leaks draining your profitability — without warning.
+                Hidden leaks draining your profitability without warning.
               </p>
               <div 
                 className="bg-[#F3DA73]" 
@@ -96,7 +96,7 @@ const Problem = () => {
                 They're <strong style={{ color: '#2C2C2C' }}>losing it</strong> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see — problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
               </p>
               <p className="text-base sm:text-lg font-medium" style={{ color: '#2C2C2C' }}>
-                Even top-performing groups leak <span style={{ color: '#718DA9', fontWeight: 600 }}>six to seven figures annually</span> — without realizing it.
+                Even top-performing groups leak <span style={{ color: '#718DA9', fontWeight: 600 }}>six to seven figures annually</span> without realizing it.
               </p>
             </div>
           </div>
@@ -206,7 +206,7 @@ const Problem = () => {
             >
               We don't just identify the leaks.{' '}
               <span style={{ color: '#718DA9', fontWeight: 700 }}>
-                We architect systems that stop them — permanently.
+                We architect systems that stop them permanently.
               </span>
             </p>
           </div>

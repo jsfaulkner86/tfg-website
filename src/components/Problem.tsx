@@ -1,22 +1,22 @@
 import { useEffect, useRef, useState } from "react";
-import { DoorOpen, TrendingDown, Flame, AlertCircle } from "lucide-react";
+import { DoorOpen, TrendingDown, Flame, Settings } from "lucide-react";
 
 const problemsData = [
   { 
-    text: "Patient access gaps that quietly push new business to competitors",
+    text: "Access gaps pushing patients to competitors",
     icon: DoorOpen
   },
   { 
-    text: "Staff and provider turnover bleeding hundreds of thousands per year",
+    text: "Turnover bleeding six figures annually",
     icon: TrendingDown
   },
   { 
-    text: "Workflows that exhaust clinicians and stall growth",
+    text: "Workflows exhausting clinicians",
     icon: Flame
   },
   { 
-    text: "Systems that look \"fine\" but silently erode profitability",
-    icon: AlertCircle
+    text: "Systems silently eroding margins",
+    icon: Settings
   }
 ];
 
@@ -46,139 +46,168 @@ const Problem = () => {
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{
-        paddingTop: '140px',
-        paddingBottom: '140px',
-        background: 'linear-gradient(180deg, hsl(210 25% 96%) 0%, hsl(0 0% 100%) 100%)'
+        paddingTop: '120px',
+        paddingBottom: '100px',
+        background: 'linear-gradient(180deg, #FFFFFF 0%, rgba(113,141,169,0.08) 100%)'
       }}
     >
-      {/* Rich ambient overlay */}
+      {/* Subtle misty texture overlay - matching Who We Are */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(circle at 20% 30%, hsl(210 25% 55% / 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 80% 70%, hsl(210 25% 55% / 0.06) 0%, transparent 50%)
+            radial-gradient(circle at 20% 30%, rgba(113,141,169,0.04) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(113,141,169,0.03) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.5) 0%, transparent 70%)
           `,
-          opacity: 0.7
+          opacity: 0.6,
+          mixBlendMode: 'soft-light'
         }}
       />
-      
-      {/* Subtle animated glow */}
-      <div className="absolute top-40 left-20 w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ background: 'hsl(210 25% 55% / 0.06)', animationDuration: '8s' }} />
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        {/* Bold header */}
-        <div className={`text-center mb-28 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 
-            className="text-6xl sm:text-7xl md:text-8xl font-playfair font-bold mb-8"
-            style={{ 
-              color: 'hsl(210 25% 55%)',
-              letterSpacing: '-0.03em',
-              lineHeight: '1.1'
-            }}
-          >
-            The Problem
-          </h2>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid md:grid-cols-2 gap-24 items-start">
+          {/* Left Column - Headline & Summary */}
           <div 
-            className="h-1 mx-auto mb-12 rounded-full" 
-            style={{ 
-              width: '100px',
-              background: 'hsl(210 25% 55% / 0.4)'
-            }}
-          />
-          <p 
-            className="text-2xl sm:text-3xl font-inter max-w-4xl mx-auto leading-relaxed font-light"
-            style={{ color: 'hsl(210 25% 30%)' }}
+            className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ maxWidth: '650px', transitionDelay: '0.2s' }}
           >
-            Most practices aren't <strong style={{ color: 'hsl(210 25% 55%)', fontWeight: 600 }}>losing money</strong> because they don't have enough patients. They're <strong style={{ color: 'hsl(210 25% 55%)', fontWeight: 600 }}>losing it</strong> through <strong style={{ color: 'hsl(210 25% 55%)', fontWeight: 600 }}>hidden inefficiencies</strong> they can't see:
-          </p>
-        </div>
-
-        {/* Rich problem cards */}
-        <div className="grid gap-6 max-w-5xl mx-auto">
-          {problemsData.map((problem, index) => {
-            const Icon = problem.icon;
-            return (
-              <div
-                key={index}
-                className={`group relative flex items-center gap-8 p-10 rounded-2xl transition-all duration-700 hover:-translate-y-1 ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
-                style={{ 
-                  transitionDelay: `${index * 150}ms`,
-                  background: 'linear-gradient(135deg, hsl(210 25% 55% / 0.08) 0%, hsl(210 25% 55% / 0.04) 100%)',
-                  boxShadow: '0 8px 32px hsl(210 25% 55% / 0.12)',
-                  border: '1px solid hsl(210 25% 55% / 0.15)'
-                }}
+            <div>
+              <h2 
+                className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4"
+                style={{ color: '#2C2C2C' }}
               >
-                {/* Bold left accent */}
-                <div 
-                  className="absolute left-0 top-0 bottom-0 w-1.5 rounded-l-2xl transition-all duration-300 group-hover:w-2"
-                  style={{
-                    background: 'hsl(210 25% 55%)'
-                  }}
-                />
-                
-                {/* Icon with rich background */}
-                <div 
-                  className="flex-shrink-0 p-5 rounded-xl transition-all duration-300 group-hover:scale-105"
-                  style={{
-                    background: 'linear-gradient(135deg, hsl(210 25% 55% / 0.15), hsl(210 25% 55% / 0.08))',
-                    boxShadow: '0 4px 16px hsl(210 25% 55% / 0.2)'
-                  }}
-                >
-                  <Icon 
-                    size={32} 
-                    strokeWidth={2}
-                    style={{ color: 'hsl(210 25% 55%)' }}
-                  />
-                </div>
-                
-                <p 
-                  className="text-xl sm:text-2xl font-inter leading-relaxed"
-                  style={{ color: 'hsl(210 25% 25%)' }}
-                >
-                  {problem.text}
-                </p>
-              </div>
-            );
-          })}
+                The Problem
+              </h2>
+              <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#5882A1' }}>
+                Hidden leaks draining your profitability — without warning.
+              </p>
+              <div 
+                className="bg-[#F3DA73]" 
+                style={{ width: '60px', height: '2px' }}
+              />
+            </div>
+
+            <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#444' }}>
+              <p className="text-base sm:text-lg">
+                Most practices aren't <strong style={{ color: '#2C2C2C' }}>losing money</strong> because they don't have enough patients.
+              </p>
+              <p className="text-base sm:text-lg">
+                They're <strong style={{ color: '#2C2C2C' }}>losing it</strong> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see — problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
+              </p>
+              <p className="text-base sm:text-lg font-medium" style={{ color: '#2C2C2C' }}>
+                Even top-performing groups leak <span style={{ color: '#F3DA73', fontWeight: 600 }}>six to seven figures annually</span> — without realizing it.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column - Flowing Problem Visualization */}
+          <div 
+            className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ transitionDelay: '0.4s' }}
+          >
+            {/* Vertical golden thread connecting problems */}
+            <div 
+              className="absolute left-8 top-0 bottom-0 w-0.5"
+              style={{
+                background: 'linear-gradient(180deg, transparent 0%, #F3DA73 15%, #F3DA73 85%, transparent 100%)',
+                opacity: 0.4
+              }}
+            />
+
+            <div className="space-y-8">
+              {problemsData.map((problem, index) => {
+                const Icon = problem.icon;
+                return (
+                  <div
+                    key={index}
+                    className={`relative transition-all duration-700 ${
+                      isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+                    }`}
+                    style={{ 
+                      transitionDelay: `${index * 200 + 400}ms`
+                    }}
+                  >
+                    {/* Glassmorphism card */}
+                    <div 
+                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(243,218,115,0.3)]"
+                      style={{
+                        background: 'rgba(255,255,255,0.2)',
+                        backdropFilter: 'blur(10px)',
+                        WebkitBackdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(243,218,115,0.3)',
+                        boxShadow: '0 8px 32px rgba(113,141,169,0.1)'
+                      }}
+                    >
+                      {/* Golden accent dot on connecting line */}
+                      <div 
+                        className="absolute -left-8 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full transition-all duration-300 group-hover:scale-125"
+                        style={{
+                          background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
+                          boxShadow: '0 0 20px rgba(243,218,115,0.6)'
+                        }}
+                      />
+
+                      <div className="flex items-center gap-5">
+                        {/* Elegant thin-line icon */}
+                        <div 
+                          className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+                        >
+                          <Icon 
+                            size={28} 
+                            strokeWidth={1.5}
+                            style={{ color: '#F3DA73' }}
+                          />
+                        </div>
+
+                        {/* Problem text */}
+                        <p 
+                          className="text-base sm:text-lg font-inter leading-relaxed"
+                          style={{ color: '#2C2C2C' }}
+                        >
+                          {problem.text}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
-        {/* Bold separator */}
+        {/* Translucent gold banner - ending statement */}
         <div 
-          className={`w-24 h-1 mx-auto mt-24 mb-20 rounded-full transition-all duration-1000 delay-700 ${
-            isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
-          }`}
-          style={{ 
-            background: 'hsl(210 25% 55% / 0.3)'
-          }}
-        />
-
-        {/* Impactful closing statement */}
-        <div className={`text-center max-w-4xl mx-auto transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          className={`mt-24 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
           <div 
-            className="p-12 rounded-2xl"
+            className="relative p-10 rounded-2xl overflow-hidden"
             style={{
-              background: 'linear-gradient(135deg, hsl(210 25% 55% / 0.12), hsl(210 25% 55% / 0.06))',
-              border: '2px solid hsl(210 25% 55% / 0.2)',
-              boxShadow: '0 12px 48px hsl(210 25% 55% / 0.15)'
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.15), rgba(243,218,115,0.08))',
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              border: '1px solid rgba(243,218,115,0.4)',
+              boxShadow: '0 12px 48px rgba(243,218,115,0.2)'
             }}
           >
+            {/* Shimmer animation */}
+            <div 
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%)',
+                backgroundSize: '200% 100%',
+                animation: 'shimmer 4s linear infinite'
+              }}
+            />
+            
             <p 
-              className="text-3xl sm:text-4xl font-playfair font-bold leading-tight"
-              style={{ color: 'hsl(210 25% 25%)' }}
+              className="text-2xl sm:text-3xl font-playfair font-semibold text-center leading-tight relative z-10"
+              style={{ color: '#2C2C2C' }}
             >
-              Even top-performing groups are leaking{' '}
-              <span 
-                style={{ 
-                  color: 'hsl(210 25% 55%)',
-                  fontWeight: 800
-                }}
-              >
-                six to seven figures annually
+              We don't just identify the leaks.{' '}
+              <span style={{ color: '#718DA9', fontWeight: 700 }}>
+                We architect systems that stop them — permanently.
               </span>
-              {' '}- without realizing it.
             </p>
           </div>
         </div>

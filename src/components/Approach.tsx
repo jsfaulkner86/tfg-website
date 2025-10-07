@@ -139,11 +139,11 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Clean white card with gold border */}
+                  {/* Blue card with gold border */}
                   <div
                     className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
                     style={{
-                      background: '#FFFFFF',
+                      background: 'rgba(113,141,169,0.95)',
                       border: '2.5px solid #D4B65D',
                       boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
                     }}
@@ -154,11 +154,11 @@ const Approach = () => {
                       <div 
                         className="relative w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                         style={{
-                          background: 'rgba(113,141,169,0.1)',
-                          border: '2px solid rgba(113,141,169,0.25)'
+                          background: 'rgba(255,255,255,0.15)',
+                          border: '2px solid rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-xl font-inter font-semibold" style={{ color: '#718DA9' }}>
+                        <span className="text-xl font-inter font-semibold" style={{ color: '#FFFFFF' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -170,13 +170,13 @@ const Approach = () => {
                           <p 
                             className="text-base sm:text-lg font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
-                              color: '#2C2C2C', 
+                              color: '#FFFFFF', 
                               letterSpacing: '0.01em',
                               lineHeight: '1.7'
                             }}
                           >
                             {benefit.text}
-                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#718DA9' }}>
+                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#F3DA73' }}>
                               {benefit.emphasis}
                             </span>
                           </p>
@@ -185,12 +185,12 @@ const Approach = () => {
                               <div key={idx} className="flex items-start gap-3">
                                 <div 
                                   className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
-                                  style={{ background: '#D4B65D' }}
+                                  style={{ background: '#F3DA73' }}
                                 />
                                 <p 
                                   className="text-sm sm:text-base font-inter"
                                   style={{ 
-                                    color: '#2C2C2C',
+                                    color: '#FFFFFF',
                                     letterSpacing: '0.01em',
                                     lineHeight: '1.6'
                                   }}
@@ -205,13 +205,13 @@ const Approach = () => {
                         <p 
                           className="text-base sm:text-lg font-inter font-medium leading-relaxed text-center"
                           style={{ 
-                            color: '#2C2C2C', 
+                            color: '#FFFFFF', 
                             letterSpacing: '0.01em',
                             lineHeight: '1.7'
                           }}
                         >
                           {benefit.text}
-                          <span className="font-bold" style={{ color: '#718DA9' }}>
+                          <span className="font-bold" style={{ color: '#F3DA73' }}>
                             {benefit.emphasis}
                           </span>
                           {benefit.suffix}

@@ -144,11 +144,11 @@ const Transformation = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 400}ms` }}
                 >
-                  {/* Clean white card with gold border */}
+                  {/* Blue card with gold border */}
                   <div
                     className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col items-center text-center"
                     style={{
-                      background: '#FFFFFF',
+                      background: 'rgba(113,141,169,0.95)',
                       border: '2.5px solid #D4B65D',
                       boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
                       minHeight: '240px'
@@ -159,21 +159,21 @@ const Transformation = () => {
                     <div 
                       className="mb-6 w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                       style={{
-                        background: 'rgba(113,141,169,0.1)',
-                        border: '2px solid rgba(113,141,169,0.25)'
+                        background: 'rgba(255,255,255,0.15)',
+                        border: '2px solid rgba(255,255,255,0.3)'
                       }}
                     >
                       <Icon 
                         size={32}
                         strokeWidth={2}
-                        style={{ color: '#718DA9' }}
+                        style={{ color: '#FFFFFF' }}
                       />
                     </div>
                     
                     <p 
                       className="text-base sm:text-lg font-inter font-medium leading-relaxed relative z-10"
                       style={{ 
-                        color: '#2C2C2C',
+                        color: '#FFFFFF',
                         letterSpacing: '0.01em',
                         lineHeight: '1.7'
                       }}

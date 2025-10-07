@@ -119,32 +119,30 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Luxury card with enhanced depth */}
+                  {/* Luxury blue card with white text */}
                   <div
-                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.25)] h-full flex flex-col"
+                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.4)] h-full flex flex-col"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85))',
-                      backdropFilter: 'blur(30px)',
-                      WebkitBackdropFilter: 'blur(30px)',
-                      border: '1.5px solid rgba(243,218,115,0.4)',
-                      boxShadow: '0 15px 50px rgba(113,141,169,0.12), inset 0 1px 0 rgba(255,255,255,0.8)',
+                      background: 'linear-gradient(135deg, #718DA9, #5882A1)',
+                      boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
+                      border: '1px solid rgba(255,255,255,0.15)',
                       position: 'relative'
                     }}
                   >
-                    {/* Premium gradient accent line - dual color */}
+                    {/* Premium gradient accent line */}
                     <div 
                       className="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl"
                       style={{
-                        background: 'linear-gradient(90deg, #F3DA73 0%, #718DA9 50%, #F3DA73 100%)',
-                        boxShadow: '0 2px 8px rgba(243,218,115,0.3)'
+                        background: 'linear-gradient(90deg, #F3DA73 0%, rgba(255,255,255,0.6) 50%, #F3DA73 100%)',
+                        boxShadow: '0 2px 8px rgba(243,218,115,0.4)'
                       }}
                     />
                     
-                    {/* Sophisticated hover glow with dual gradients */}
+                    {/* Sophisticated hover glow */}
                     <div 
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
                       style={{
-                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%), radial-gradient(circle at 50% 100%, rgba(113,141,169,0.1), transparent 50%)'
+                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.2), transparent 50%)'
                       }}
                     />
                     
@@ -152,17 +150,17 @@ const Approach = () => {
                     <div 
                       className="absolute inset-0 rounded-2xl pointer-events-none"
                       style={{
-                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.9), inset 0 -1px 1px rgba(0,0,0,0.02)'
+                        boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -1px 1px rgba(0,0,0,0.1)'
                       }}
                     />
                     
-                    {/* Luxury number badge with refined styling */}
+                    {/* Luxury number badge */}
                     <div className="flex justify-center mb-8">
                       <div 
                         className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
                         style={{
                           background: 'linear-gradient(135deg, #F3DA73 0%, #E5C962 50%, #D4B65D 100%)',
-                          boxShadow: '0 8px 24px rgba(243,218,115,0.5), inset 0 1px 2px rgba(255,255,255,0.5), inset 0 -1px 2px rgba(0,0,0,0.1)',
+                          boxShadow: '0 8px 24px rgba(243,218,115,0.6), inset 0 1px 2px rgba(255,255,255,0.5), inset 0 -1px 2px rgba(0,0,0,0.1)',
                           border: '1px solid rgba(255,255,255,0.3)'
                         }}
                       >
@@ -176,7 +174,7 @@ const Approach = () => {
                       <p 
                         className="text-base font-inter leading-relaxed"
                         style={{ 
-                          color: '#2C2C2C', 
+                          color: '#FFFFFF', 
                           letterSpacing: '0.01em',
                           lineHeight: '1.8'
                         }}

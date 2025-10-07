@@ -214,7 +214,7 @@ const Transformation = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-5xl"
+            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-6xl"
             style={{
               background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
               backdropFilter: 'blur(20px)',
@@ -245,7 +245,7 @@ const Transformation = () => {
             
             <div className="relative z-10 text-center">
               <p 
-                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
+                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 

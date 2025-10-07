@@ -64,7 +64,7 @@ const Problem = () => {
       style={{
         paddingTop: '120px',
         paddingBottom: '100px',
-        background: `linear-gradient(180deg, rgba(113,141,169,0.7) 0%, #FFFFFF 100%)`,
+        background: `linear-gradient(180deg, rgba(113,141,169,0.15) 0%, #FFFFFF 100%)`,
         transform: `translateY(${parallaxOffset}px)`,
         transition: 'transform 0.1s ease-out'
       }}
@@ -111,8 +111,8 @@ const Problem = () => {
               height: '2px'
             }}
           />
-          <p className="text-xl font-inter max-w-3xl mx-auto" style={{ lineHeight: '1.8', color: '#666' }}>
-            Most practices aren't <span style={{ color: '#444', fontWeight: 600 }}>losing money</span> because they don't have enough patients. They're <span style={{ color: '#444', fontWeight: 600 }}>losing it</span> through <strong style={{ color: '#2C2C2C' }}>hidden inefficiencies</strong> they can't see:
+          <p className="text-xl font-inter max-w-3xl mx-auto" style={{ lineHeight: '1.8', color: '#2C2C2C' }}>
+            Most practices aren't <span style={{ color: '#1a1a1a', fontWeight: 600 }}>losing money</span> because they don't have enough patients. They're <span style={{ color: '#1a1a1a', fontWeight: 600 }}>losing it</span> through <strong style={{ color: '#1a1a1a' }}>hidden inefficiencies</strong> they can't see:
           </p>
         </div>
 
@@ -154,7 +154,7 @@ const Problem = () => {
                     strokeWidth={1.5}
                   />
                 </div>
-                <p className="text-base sm:text-lg font-inter" style={{ color: '#444', lineHeight: '1.7', fontWeight: 400 }}>
+                <p className="text-base sm:text-lg font-inter" style={{ color: '#2C2C2C', lineHeight: '1.7', fontWeight: 400 }}>
                   {problem.text}
                 </p>
               </div>

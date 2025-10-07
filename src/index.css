@@ -17,11 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 204 28% 40%;
+    --primary: 210 25% 55%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96%;
-    --secondary-foreground: 204 28% 40%;
+    --secondary-foreground: 210 25% 55%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
@@ -39,8 +39,8 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Custom tokens for Faulkner Group */
-    --faulkner-blue: 204 28% 40%;
-    --faulkner-blue-light: 204 28% 56%;
+    --faulkner-blue: 210 25% 55%;
+    --faulkner-blue-light: 210 25% 65%;
     --faulkner-gold: 45 62% 56%;
     --faulkner-gold-light: 45 62% 70%;
     --soft-gray: 0 0% 96%;

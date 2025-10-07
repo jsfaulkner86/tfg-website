@@ -49,19 +49,19 @@ const Mission = () => {
 
           {/* Visual */}
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+            <div className="flex justify-center gap-8">
+              <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-elegant">
                 <img 
                   src={johnHeadshot} 
                   alt="John Faulkner - Healthcare Growth Architect"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+              <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-elegant">
                 <img 
                   src={nicoleHeadshot} 
                   alt="Dr. Nicole Faulkner - Board-Certified OB/GYN Physician"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

@@ -193,7 +193,7 @@ const Approach = () => {
                       {benefit.type === 'bullets' ? (
                         <div>
                           <p 
-                            className="text-lg sm:text-xl font-inter font-medium leading-relaxed mb-6 text-center"
+                            className="text-base sm:text-lg font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
                               color: '#FFFFFF', 
                               letterSpacing: '0.01em',
@@ -202,7 +202,7 @@ const Approach = () => {
                             }}
                           >
                             {benefit.text}
-                            <span className="font-bold text-xl sm:text-2xl" style={{ color: '#F3DA73' }}>
+                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#F3DA73' }}>
                               {benefit.emphasis}
                             </span>
                           </p>
@@ -214,7 +214,7 @@ const Approach = () => {
                                   style={{ background: '#F3DA73' }}
                                 />
                                 <p 
-                                  className="text-base sm:text-lg font-inter"
+                                  className="text-sm sm:text-base font-inter"
                                   style={{ 
                                     color: '#FFFFFF',
                                     letterSpacing: '0.01em',
@@ -229,7 +229,7 @@ const Approach = () => {
                         </div>
                       ) : (
                         <p 
-                          className="text-lg sm:text-xl font-inter font-medium leading-relaxed text-center"
+                          className="text-base sm:text-lg font-inter font-medium leading-relaxed text-center"
                           style={{ 
                             color: '#FFFFFF', 
                             letterSpacing: '0.01em',

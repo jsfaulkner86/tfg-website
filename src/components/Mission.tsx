@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import transformationVisual from "@/assets/transformation-visual.jpg";
+import healthcareClarity from "@/assets/healthcare-clarity.jpg";
 
 const Mission = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,8 +50,8 @@ const Mission = () => {
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <img 
-                src={transformationVisual} 
-                alt="Complex system transforming into organized clarity - visual metaphor for business transformation"
+                src={healthcareClarity} 
+                alt="Healthcare professional reviewing clear data visualizations - representing clarity in healthcare"
                 className="w-full h-auto object-cover"
               />
             </div>

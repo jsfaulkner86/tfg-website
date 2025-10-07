@@ -223,7 +223,7 @@ const Problem = () => {
             
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold text-center leading-tight relative z-10"
-              style={{ color: '#2C2C2C', letterSpacing: '-0.01em' }}
+              style={{ color: '#718DA9', letterSpacing: '-0.01em' }}
             >
               We don't just identify the leaks.{' '}
               <span style={{ color: '#718DA9', fontWeight: 700 }}>

@@ -144,7 +144,7 @@ const Approach = () => {
 
         <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-10 rounded-2xl overflow-hidden group mx-auto max-w-4xl"
+            className="relative p-10 rounded-2xl overflow-hidden group mx-auto max-w-4xl flex items-center justify-center"
             style={{
               background: 'linear-gradient(135deg, rgba(243,218,115,0.12), rgba(243,218,115,0.06))',
               backdropFilter: 'blur(12px)',
@@ -170,7 +170,7 @@ const Approach = () => {
             />
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold italic relative z-10"
-              style={{ color: '#718DA9', letterSpacing: '-0.01em', lineHeight: '1.4', whiteSpace: 'nowrap' }}
+              style={{ color: '#718DA9', letterSpacing: '-0.01em', lineHeight: '1.4', whiteSpace: 'nowrap', textAlign: 'center' }}
             >
               This isn't theory. It's clarity, cash flow, and control, delivered fast.
             </p>

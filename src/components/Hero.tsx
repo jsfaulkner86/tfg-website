@@ -40,13 +40,13 @@ const Hero = () => {
           </p>
           <Button 
             onClick={scrollToContact} 
-            className="text-lg px-10 py-7 rounded-lg group transition-all duration-300 bg-[#718DA9] text-white hover:bg-[#F3DA73] hover:text-[#2A2E35] font-medium"
+            className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#2A2E35] hover:bg-[#718DA9] hover:text-white font-semibold"
             style={{ 
-              boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+              boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
             }}
           >
             Book a Consultation
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
         </div>
       </div>

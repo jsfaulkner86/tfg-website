@@ -21,7 +21,7 @@ const benefits = [
   },
   {
     type: 'text',
-    text: "And if we don't uncover at least six figures? ",
+    text: "If we don't uncover at least six figures? ",
     emphasis: "We keep working with you at no cost",
     suffix: " until you do."
   }
@@ -189,11 +189,11 @@ const Approach = () => {
                       </div>
                     </div>
 
-                    <div className="relative z-10 text-center flex-1">
+                    <div className="relative z-10 flex-1">
                       {benefit.type === 'bullets' ? (
                         <div>
                           <p 
-                            className="text-lg sm:text-xl font-inter font-medium leading-relaxed mb-4"
+                            className="text-lg sm:text-xl font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
                               color: '#FFFFFF', 
                               letterSpacing: '0.01em',
@@ -206,18 +206,19 @@ const Approach = () => {
                               {benefit.emphasis}
                             </span>
                           </p>
-                          <div className="space-y-2 mt-4">
+                          <div className="space-y-3 mt-6 text-left max-w-md mx-auto">
                             {benefit.bullets.map((bullet, idx) => (
-                              <div key={idx} className="flex items-center justify-center gap-2">
+                              <div key={idx} className="flex items-start gap-3">
                                 <div 
-                                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                                  className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
                                   style={{ background: '#F3DA73' }}
                                 />
                                 <p 
                                   className="text-base sm:text-lg font-inter"
                                   style={{ 
                                     color: '#FFFFFF',
-                                    letterSpacing: '0.01em'
+                                    letterSpacing: '0.01em',
+                                    lineHeight: '1.6'
                                   }}
                                 >
                                   {bullet}
@@ -228,7 +229,7 @@ const Approach = () => {
                         </div>
                       ) : (
                         <p 
-                          className="text-lg sm:text-xl font-inter font-medium leading-relaxed"
+                          className="text-lg sm:text-xl font-inter font-medium leading-relaxed text-center"
                           style={{ 
                             color: '#FFFFFF', 
                             letterSpacing: '0.01em',

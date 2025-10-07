@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Approach from "@/components/Approach";
@@ -7,14 +8,17 @@ import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <main className="overflow-x-hidden">
-      <Hero />
-      <Mission />
-      <Approach />
-      <Results />
-      <Testimonials />
-      <FinalCTA />
-    </main>
+    <>
+      <Header />
+      <main className="overflow-x-hidden">
+        <Hero />
+        <Mission />
+        <Approach />
+        <Results />
+        <Testimonials />
+        <FinalCTA />
+      </main>
+    </>
   );
 };
 

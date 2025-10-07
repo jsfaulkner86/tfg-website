@@ -47,6 +47,7 @@ const Approach = () => {
 
   return (
     <section 
+      id="approach"
       ref={sectionRef}
       className="py-32 px-6 bg-secondary"
     >

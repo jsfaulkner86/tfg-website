@@ -56,6 +56,7 @@ const Results = () => {
 
   return (
     <section 
+      id="results"
       ref={sectionRef}
       className="py-32 px-6 bg-primary text-primary-foreground"
     >

@@ -24,6 +24,7 @@ const Mission = () => {
 
   return (
     <section 
+      id="mission"
       ref={sectionRef}
       className="py-32 px-6 bg-background"
     >

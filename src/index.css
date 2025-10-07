@@ -71,5 +71,6 @@ All colors MUST be HSL.
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
 }

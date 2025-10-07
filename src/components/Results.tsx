@@ -94,12 +94,12 @@ const Results = () => {
                 }`}
                 style={{ transitionDelay: `${index * 200 + 300}ms` }}
               >
-                {/* Clean white card */}
+                {/* Clean white card with elegant gold border */}
                 <div
                   className="relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
                   style={{
                     background: '#FFFFFF',
-                    border: '2px solid rgba(243,218,115,0.5)',
+                    border: '2.5px solid #D4B65D',
                     boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
                     minHeight: '240px'
                   }}

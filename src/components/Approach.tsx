@@ -169,7 +169,7 @@ const Approach = () => {
               }}
             />
             <p 
-              className="text-xl sm:text-2xl font-playfair font-semibold italic relative z-10"
+              className="text-2xl sm:text-3xl font-playfair font-semibold italic relative z-10"
               style={{ color: '#718DA9', letterSpacing: '-0.01em', lineHeight: '1.4', whiteSpace: 'nowrap' }}
             >
               This isn't theory. It's clarity, cash flow, and control, delivered fast.

@@ -34,7 +34,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="The Faulkner Group - Healthcare Advisory Excellence" 
-              className="h-14 w-auto md:h-16 transition-transform duration-300 hover:scale-105"
+              className="h-16 w-auto md:h-20 transition-transform duration-300 hover:scale-105"
             />
           </div>
           

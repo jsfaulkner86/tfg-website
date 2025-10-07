@@ -100,11 +100,11 @@ const Problem = () => {
                 style={{
                   background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                   border: '2px solid rgba(113,141,169,0.3)',
-                  boxShadow: '0 8px 32px rgba(113,141,169,0.2)'
+                  boxShadow: '0 12px 40px rgba(113,141,169,0.25)'
                 }}
               >
-                <p className="text-xl sm:text-2xl font-playfair font-bold leading-tight" style={{ color: '#2C2C2C' }}>
-                  Even top-performing groups leak <span style={{ color: '#718DA9', fontWeight: 800, fontSize: '1.1em' }}>six to seven figures annually</span> without realizing it.
+                <p className="text-lg sm:text-xl font-inter font-semibold leading-relaxed" style={{ color: '#2C2C2C' }}>
+                  Even top-performing groups leak <span className="block mt-2 text-2xl sm:text-3xl font-bold" style={{ color: '#718DA9' }}>six to seven figures annually</span> without realizing it.
                 </p>
               </div>
             </div>

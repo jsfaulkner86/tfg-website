@@ -17,6 +17,7 @@ export default {
         sans: ['Cormorant Garamond', 'serif'],
         display: ['Cinzel', 'serif'],
         playfair: ['Playfair Display', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

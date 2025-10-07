@@ -213,17 +213,21 @@ const Problem = () => {
           className={`mt-24 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
         >
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
+            className="relative p-12 rounded-[32px] overflow-hidden mx-auto max-w-7xl"
             style={{
-              background: 'rgba(243,218,115,0.08)',
-              border: '2.5px solid #D4B65D',
-              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
+              background: '#FAF9F6',
+              border: '2.5px solid #C9B882',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
             }}
           >
             
             <p 
               className="text-2xl sm:text-3xl font-playfair font-semibold text-center leading-tight relative z-10"
-              style={{ color: '#718DA9', letterSpacing: '-0.01em' }}
+              style={{ 
+                color: '#718DA9', 
+                letterSpacing: '-0.01em',
+                whiteSpace: 'nowrap'
+              }}
             >
               We don't just identify the leaks.{' '}
               <span style={{ color: '#718DA9', fontWeight: 700 }}>

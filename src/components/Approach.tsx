@@ -228,11 +228,11 @@ const Approach = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-5xl"
+            className="relative p-12 rounded-[32px] overflow-hidden mx-auto max-w-5xl"
             style={{
-              background: 'rgba(113,141,169,0.08)',
-              border: '2.5px solid #D4B65D',
-              boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
+              background: '#FAF9F6',
+              border: '2.5px solid #C9B882',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
             }}
           >
             

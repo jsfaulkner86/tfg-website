@@ -24,9 +24,8 @@ const Hero = () => {
             MORE CLARITY.<br />
             REAL GROWTH.
           </h1>
-          <p className="mb-12 text-xl font-normal text-white/90 md:text-2xl lg:text-3xl max-w-3xl mx-auto">
-            We help healthcare leaders escape broken systems and build organizations that thrive.
-          </p>
+          <p className="mb-12 text-xl font-normal text-white/90 md:text-2xl lg:text-3xl max-w-3xl mx-auto">We help healthcare leaders escape broken systems &
+build organizations that thrive.</p>
           <Button onClick={scrollToContact} variant="hero" size="lg" className="text-lg px-10 py-7 group">
             Book a Consultation
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

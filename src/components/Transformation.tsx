@@ -243,7 +243,7 @@ const Transformation = () => {
               }}
             />
             
-            <div className="relative z-10 text-left" style={{ paddingLeft: '2rem' }}>
+            <div className="relative z-10 text-left" style={{ paddingLeft: '4rem' }}>
               <p 
                 className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 

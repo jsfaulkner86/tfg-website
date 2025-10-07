@@ -119,11 +119,11 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Luxury blue card with white text */}
+                  {/* Luxury blue card with white text - softer tones */}
                   <div
                     className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(113,141,169,0.4)] h-full flex flex-col"
                     style={{
-                      background: 'linear-gradient(135deg, #718DA9, #5882A1)',
+                      background: 'linear-gradient(135deg, #8BA5BB, #6D8BA1)',
                       boxShadow: '0 15px 50px rgba(113,141,169,0.25), inset 0 1px 0 rgba(255,255,255,0.2)',
                       border: '1px solid rgba(255,255,255,0.15)',
                       position: 'relative'

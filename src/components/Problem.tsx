@@ -138,7 +138,7 @@ const Problem = () => {
           {/* Right Column - Flowing Problem Visualization */}
           <div 
             className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-            style={{ transitionDelay: '0.4s' }}
+            style={{ transitionDelay: '0.4s', marginTop: '120px' }}
           >
             {/* Vertical golden thread connecting problems */}
             <div 
@@ -149,7 +149,7 @@ const Problem = () => {
               }}
             />
 
-            <div className="space-y-8">
+            <div className="space-y-10">
               {problemsData.map((problem, index) => {
                 const Icon = problem.icon;
                 return (

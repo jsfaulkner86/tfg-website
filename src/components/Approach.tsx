@@ -34,8 +34,8 @@ const Approach = () => {
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{
-        paddingTop: '140px',
-        paddingBottom: '120px',
+        paddingTop: '100px',
+        paddingBottom: '80px',
         background: 'linear-gradient(180deg, rgba(113,141,169,0.08) 0%, #FFFFFF 50%, rgba(243,218,115,0.08) 100%)'
       }}
     >
@@ -55,18 +55,18 @@ const Approach = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header with refined elegance */}
-        <div className={`text-center mb-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
             background: 'linear-gradient(135deg, rgba(243,218,115,0.15), rgba(243,218,115,0.08))',
             border: '1px solid rgba(243,218,115,0.3)'
           }}>
-            <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#718DA9' }}>
+            <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#718DA9' }}>
               Your First Step
             </span>
           </div>
           
           <h2 
-            className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8"
+            className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
             style={{ 
               color: '#2C2C2C',
               letterSpacing: '-0.03em',
@@ -76,7 +76,7 @@ const Approach = () => {
             The Growth Blueprint™
           </h2>
           
-          <p className="text-xl sm:text-2xl font-inter font-light max-w-3xl mx-auto" style={{ 
+          <p className="text-lg sm:text-xl font-inter font-light max-w-3xl mx-auto mb-6" style={{ 
             color: '#5882A1', 
             letterSpacing: '0.01em',
             lineHeight: '1.6'
@@ -84,10 +84,10 @@ const Approach = () => {
             The Blueprint is the entry point: <span style={{ color: '#2C2C2C', fontWeight: 600 }}>30 days to clarity, guaranteed.</span>
           </p>
           
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center">
             <div 
               className="relative overflow-hidden rounded-full"
-              style={{ width: '100px', height: '4px', background: 'linear-gradient(90deg, #F3DA73, #718DA9, #F3DA73)' }}
+              style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #718DA9, #F3DA73)' }}
             >
               <div 
                 className="absolute inset-0"
@@ -100,113 +100,96 @@ const Approach = () => {
           </div>
         </div>
 
-        {/* What you get - Premium showcase */}
-        <div className={`mb-20 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        {/* What you get - Centered single column with numbers */}
+        <div className={`mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h3 
-            className="text-3xl sm:text-4xl font-playfair font-bold mb-16 text-center"
+            className="text-2xl sm:text-3xl font-playfair font-bold mb-12 text-center"
             style={{ color: '#2C2C2C', letterSpacing: '-0.02em' }}
           >
             What you receive:
           </h3>
           
-          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className={`group relative transition-all duration-700 ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}
-                style={{ transitionDelay: `${index * 200 + 400}ms` }}
-              >
-                {/* Luxury card with depth */}
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              {benefits.map((benefit, index) => (
                 <div
-                  className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(113,141,169,0.2)]"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7))',
-                    backdropFilter: 'blur(20px)',
-                    WebkitBackdropFilter: 'blur(20px)',
-                    border: '1px solid rgba(243,218,115,0.3)',
-                    boxShadow: '0 10px 40px rgba(113,141,169,0.1)',
-                    minHeight: '180px'
-                  }}
+                  key={index}
+                  className={`group relative transition-all duration-700 ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+                  }`}
+                  style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Gradient accent line */}
-                  <div 
-                    className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl"
+                  {/* Compact luxury card */}
+                  <div
+                    className="relative p-8 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(113,141,169,0.2)] h-full flex flex-col"
                     style={{
-                      background: 'linear-gradient(90deg, #F3DA73, #718DA9)'
-                    }}
-                  />
-                  
-                  {/* Hover glow */}
-                  <div 
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl"
-                    style={{
-                      background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.15), transparent 60%)'
-                    }}
-                  />
-                  
-                  {/* Number badge */}
-                  <div 
-                    className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
-                    style={{
-                      background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                      boxShadow: '0 8px 24px rgba(243,218,115,0.4)'
+                      background: 'linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7))',
+                      backdropFilter: 'blur(20px)',
+                      WebkitBackdropFilter: 'blur(20px)',
+                      border: '1px solid rgba(243,218,115,0.3)',
+                      boxShadow: '0 8px 30px rgba(113,141,169,0.1)'
                     }}
                   >
-                    <span className="text-lg font-playfair font-bold" style={{ color: '#2C2C2C' }}>
-                      {index + 1}
-                    </span>
-                  </div>
-
-                  <div className="relative z-10 flex items-start gap-6">
+                    {/* Gradient accent line */}
                     <div 
-                      className="flex-shrink-0 mt-1 transition-all duration-300 group-hover:scale-110"
+                      className="absolute top-0 left-0 right-0 h-1 rounded-t-xl"
                       style={{
-                        width: '48px',
-                        height: '48px',
-                        borderRadius: '12px',
-                        background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.08))',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '1px solid rgba(113,141,169,0.2)'
+                        background: 'linear-gradient(90deg, #F3DA73, #718DA9)'
                       }}
-                    >
-                      <CheckCircle2 
-                        size={26} 
-                        strokeWidth={2}
-                        style={{ color: '#718DA9' }}
-                      />
-                    </div>
+                    />
                     
-                    <p 
-                      className="text-lg font-inter leading-relaxed pt-3"
-                      style={{ 
-                        color: '#2C2C2C', 
-                        letterSpacing: '0.01em',
-                        lineHeight: '1.7'
+                    {/* Hover glow */}
+                    <div 
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-xl"
+                      style={{
+                        background: 'radial-gradient(circle at 50% 0%, rgba(243,218,115,0.15), transparent 60%)'
                       }}
-                    >
-                      {benefit}
-                    </p>
+                    />
+                    
+                    {/* Number badge - centered at top */}
+                    <div className="flex justify-center mb-6">
+                      <div 
+                        className="w-14 h-14 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                        style={{
+                          background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
+                          boxShadow: '0 6px 20px rgba(243,218,115,0.4)'
+                        }}
+                      >
+                        <span className="text-2xl font-playfair font-bold" style={{ color: '#2C2C2C' }}>
+                          {index + 1}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="relative z-10 text-center flex-1">
+                      <p 
+                        className="text-base font-inter leading-relaxed"
+                        style={{ 
+                          color: '#2C2C2C', 
+                          letterSpacing: '0.01em',
+                          lineHeight: '1.7'
+                        }}
+                      >
+                        {benefit}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Bottom statement with dramatic flair */}
-        <div className={`transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-16 rounded-3xl overflow-hidden group mx-auto max-w-5xl"
+            className="relative p-12 rounded-2xl overflow-hidden group mx-auto max-w-5xl"
             style={{
               background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
               backdropFilter: 'blur(20px)',
               WebkitBackdropFilter: 'blur(20px)',
               border: '2px solid rgba(113,141,169,0.25)',
-              boxShadow: '0 20px 60px rgba(113,141,169,0.15)',
+              boxShadow: '0 15px 50px rgba(113,141,169,0.15)',
               transition: 'all 0.6s ease'
             }}
           >
@@ -231,7 +214,7 @@ const Approach = () => {
             
             <div className="relative z-10 text-center">
               <p 
-                className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold italic mb-2"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold italic mb-1"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
@@ -241,7 +224,7 @@ const Approach = () => {
                 This isn't theory.
               </p>
               <p 
-                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-semibold"
+                className="text-xl sm:text-2xl md:text-3xl font-playfair font-semibold"
                 style={{ 
                   color: '#2C2C2C', 
                   letterSpacing: '-0.01em',

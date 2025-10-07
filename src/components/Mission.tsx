@@ -27,14 +27,28 @@ const Mission = () => {
     <section 
       id="mission"
       ref={sectionRef}
-      className="px-6"
+      className="px-6 relative overflow-hidden"
       style={{
         paddingTop: '120px',
         paddingBottom: '100px',
         background: 'linear-gradient(180deg, #FFFFFF 0%, rgba(113,141,169,0.05) 100%)'
       }}
     >
-      <div className="max-w-7xl mx-auto">
+      {/* Subtle misty texture overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(circle at 20% 30%, rgba(113,141,169,0.03) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(113,141,169,0.02) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.5) 0%, transparent 70%)
+          `,
+          opacity: 0.6,
+          mixBlendMode: 'soft-light'
+        }}
+      />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-24 items-start">
           {/* Text Content - Left Column */}
           <div 

@@ -63,28 +63,39 @@ const Problem = () => {
         background: 'linear-gradient(180deg, #718DA9 0%, #F6F8FA 100%)'
       }}
     >
-      {/* Subtle gold light streaks with parallax */}
+      {/* Diagonal gold light beams with enhanced visibility */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            linear-gradient(135deg, transparent 30%, rgba(243,218,115,0.12) 48%, rgba(243,218,115,0.15) 50%, rgba(243,218,115,0.12) 52%, transparent 70%),
-            linear-gradient(160deg, transparent 40%, rgba(243,218,115,0.08) 50%, transparent 60%)
+            linear-gradient(140deg, transparent 25%, rgba(243,218,115,0.15) 45%, rgba(243,218,115,0.18) 50%, rgba(243,218,115,0.15) 55%, transparent 75%),
+            linear-gradient(160deg, transparent 35%, rgba(243,218,115,0.12) 50%, transparent 65%)
           `,
           transform: `translateY(${parallaxOffset * -0.5}px)`,
           mixBlendMode: 'screen'
         }}
       />
 
-      {/* Fog/mist overlay */}
+      {/* Radial vignette - center lighter, edges darker */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.15) 100%)'
+        }}
+      />
+
+      {/* Dimensional blur overlay - luxury lighting effect */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 50%),
-            radial-gradient(circle at 70% 80%, rgba(255,255,255,0.03) 0%, transparent 50%)
+            radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08) 0%, transparent 40%),
+            radial-gradient(circle at 70% 80%, rgba(113,141,169,0.06) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 60%)
           `,
-          opacity: 0.7
+          backdropFilter: 'blur(1px)',
+          mixBlendMode: 'soft-light',
+          opacity: 0.8
         }}
       />
 

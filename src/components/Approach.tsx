@@ -154,17 +154,16 @@ const Approach = () => {
                       }}
                     />
                     
-                    {/* Luxury number badge */}
-                    <div className="flex justify-center mb-8">
+                    {/* Refined minimal number badge */}
+                    <div className="flex justify-center mb-6">
                       <div 
-                        className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
+                        className="relative w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                         style={{
-                          background: 'linear-gradient(135deg, #F3DA73 0%, #E5C962 50%, #D4B65D 100%)',
-                          boxShadow: '0 8px 24px rgba(243,218,115,0.6), inset 0 1px 2px rgba(255,255,255,0.5), inset 0 -1px 2px rgba(0,0,0,0.1)',
-                          border: '1px solid rgba(255,255,255,0.3)'
+                          background: 'rgba(243,218,115,0.2)',
+                          border: '2px solid rgba(243,218,115,0.5)'
                         }}
                       >
-                        <span className="text-2xl font-playfair font-bold" style={{ color: '#2C2C2C', textShadow: '0 1px 2px rgba(255,255,255,0.5)' }}>
+                        <span className="text-xl font-inter font-semibold" style={{ color: '#F3DA73' }}>
                           {index + 1}
                         </span>
                       </div>

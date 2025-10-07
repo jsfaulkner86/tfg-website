@@ -142,6 +142,16 @@ export default {
             backgroundPosition: "200% 0",
           },
         },
+        "pulse-soft": {
+          "0%, 100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+          "50%": {
+            opacity: "0.7",
+            transform: "scale(1.05)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -152,6 +162,7 @@ export default {
         "scale-in": "scale-in 0.5s ease-out",
         "glow": "glow 2s ease-in-out infinite",
         "shimmer": "shimmer 3s linear infinite",
+        "pulse-soft": "pulse-soft 3s ease-in-out infinite",
       },
     },
   },

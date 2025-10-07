@@ -190,22 +190,21 @@ const Transformation = () => {
         {/* Bottom statement with dramatic flair */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative p-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
+            className="relative py-16 px-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'rgba(243,218,115,0.08)',
-              border: '2.5px solid #D4B65D',
+              background: '#FFFFFF',
+              border: '2px solid #D4B65D',
               boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >
             
             <div className="relative z-10 text-center flex items-center justify-center">
               <p 
-                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4',
-                  whiteSpace: 'nowrap'
+                  lineHeight: '1.4'
                 }}
               >
                 This is where practices stop bleeding time and money and start thriving.

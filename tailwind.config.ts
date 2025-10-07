@@ -152,6 +152,14 @@ export default {
             transform: "scale(1.05)",
           },
         },
+        "shimmer-glow": {
+          "0%, 100%": {
+            textShadow: "0 0 20px rgba(243,218,115,0.4)",
+          },
+          "50%": {
+            textShadow: "0 0 30px rgba(243,218,115,0.7)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -163,6 +171,7 @@ export default {
         "glow": "glow 2s ease-in-out infinite",
         "shimmer": "shimmer 3s linear infinite",
         "pulse-soft": "pulse-soft 3s ease-in-out infinite",
+        "shimmer-glow": "shimmer-glow 10s ease-in-out infinite",
       },
     },
   },

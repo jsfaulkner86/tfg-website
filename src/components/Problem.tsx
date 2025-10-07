@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { AlertCircle } from "lucide-react";
+
+const AlertIcon = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+    <circle cx="16" cy="16" r="15" stroke="hsl(var(--accent))" strokeWidth="2" fill="hsl(var(--accent) / 0.1)" />
+    <path d="M16 10V18" stroke="hsl(var(--accent))" strokeWidth="2.5" strokeLinecap="round" />
+    <circle cx="16" cy="22" r="1.5" fill="hsl(var(--accent))" />
+  </svg>
+);
 
 const problems = [
   "Patient access gaps that quietly push new business to competitors",
@@ -53,7 +60,7 @@ const Problem = () => {
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <AlertCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
+              <AlertIcon />
               <p className="text-lg text-foreground font-light">
                 {problem}
               </p>

@@ -64,7 +64,7 @@ const Problem = () => {
       style={{
         paddingTop: '120px',
         paddingBottom: '100px',
-        background: `linear-gradient(180deg, rgba(113,141,169,0.15) 0%, #FFFFFF 100%)`,
+        background: `linear-gradient(180deg, rgba(113,141,169,0.7) 0%, #FFFFFF 100%)`,
         transform: `translateY(${parallaxOffset}px)`,
         transition: 'transform 0.1s ease-out'
       }}
@@ -95,11 +95,12 @@ const Problem = () => {
       <div className="max-w-5xl mx-auto relative z-10">
         <div className={`text-center mb-20 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 
-            className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8 uppercase" 
+            className="text-6xl sm:text-7xl md:text-8xl font-playfair font-bold mb-8 uppercase" 
             style={{ 
-              color: '#2C2C2C',
+              color: '#FFFFFF',
               letterSpacing: '0.1em',
-              fontVariant: 'small-caps'
+              fontVariant: 'small-caps',
+              textShadow: '0 2px 10px rgba(0,0,0,0.3)'
             }}
           >
             The Problem
@@ -111,8 +112,8 @@ const Problem = () => {
               height: '2px'
             }}
           />
-          <p className="text-xl font-inter max-w-3xl mx-auto" style={{ lineHeight: '1.8', color: '#2C2C2C' }}>
-            Most practices aren't <span style={{ color: '#1a1a1a', fontWeight: 600 }}>losing money</span> because they don't have enough patients. They're <span style={{ color: '#1a1a1a', fontWeight: 600 }}>losing it</span> through <strong style={{ color: '#1a1a1a' }}>hidden inefficiencies</strong> they can't see:
+          <p className="text-2xl sm:text-3xl font-inter max-w-3xl mx-auto" style={{ lineHeight: '1.8', color: '#FFFFFF', textShadow: '0 1px 4px rgba(0,0,0,0.2)' }}>
+            Most practices aren't <span style={{ fontWeight: 700 }}>losing money</span> because they don't have enough patients. They're <span style={{ fontWeight: 700 }}>losing it</span> through <strong>hidden inefficiencies</strong> they can't see:
           </p>
         </div>
 
@@ -149,12 +150,12 @@ const Problem = () => {
                   }}
                 >
                   <Icon 
-                    size={32} 
+                    size={40} 
                     color="#F3DA73" 
                     strokeWidth={1.5}
                   />
                 </div>
-                <p className="text-base sm:text-lg font-inter" style={{ color: '#2C2C2C', lineHeight: '1.7', fontWeight: 400 }}>
+                <p className="text-xl sm:text-2xl font-inter" style={{ color: '#2C2C2C', lineHeight: '1.7', fontWeight: 500 }}>
                   {problem.text}
                 </p>
               </div>
@@ -171,7 +172,7 @@ const Problem = () => {
         />
 
         <div className={`text-center transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <p className="text-xl sm:text-2xl font-inter font-semibold" style={{ color: '#2C2C2C', lineHeight: '1.7' }}>
+          <p className="text-2xl sm:text-3xl font-inter font-semibold" style={{ color: '#2C2C2C', lineHeight: '1.7' }}>
             Even top-performing groups are <strong style={{ color: '#2C2C2C' }}>leaking</strong>{' '}
             <span 
               className="transition-all duration-700"

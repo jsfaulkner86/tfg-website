@@ -151,13 +151,13 @@ const Results = () => {
           })}
         </div>
 
-        {/* Clean bottom statement - taller and cohesive */}
+        {/* Clean bottom statement - matching reference style */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
             className="relative py-16 px-12 rounded-2xl overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: 'rgba(243,218,115,0.08)',
-              border: '2.5px solid #D4B65D',
+              background: '#FFFFFF',
+              border: '2px solid #D4B65D',
               boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
             }}
           >

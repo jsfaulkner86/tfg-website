@@ -14,16 +14,18 @@ const benefits = [
     emphasis: "$100,000+ in hidden revenue",
     bullets: [
       "Most practices? $250K+ recovered",
-      "One recent client: $3 MILLION in lost revenue found",
-      "All from systems you're already running",
-      "Just not optimizing (yet)"
+      "One recent client: $3 MILLION in lost revenue found"
     ]
   },
   {
-    type: 'text',
+    type: 'bullets',
     text: "Don't hit six figures? ",
-    emphasis: "We work FREE",
-    suffix: " until you do. You literally cannot lose."
+    emphasis: "We work FREE until you do.",
+    bullets: [
+      "All from systems you're already running",
+      "Just not optimizing (yet)",
+      "You literally cannot lose"
+    ]
   }
 ];
 

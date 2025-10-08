@@ -63,23 +63,6 @@ const BottomVideo = () => {
           }`}
         >
           <div className="space-y-10">
-            {/* Premium badge - centered and prominent */}
-            <div className="flex justify-center mb-6">
-              <div className="inline-block px-10 py-4 rounded-full animate-pulse" style={{
-                background: 'linear-gradient(135deg, rgba(243,218,115,0.4), rgba(243,218,115,0.25))',
-                border: '3px solid #F3DA73',
-                backdropFilter: 'blur(20px)',
-                boxShadow: '0 0 40px rgba(243,218,115,0.6), 0 8px 30px rgba(243,218,115,0.4), 0 4px 15px rgba(0,0,0,0.3), inset 0 2px 0 rgba(255,255,255,0.4)'
-              }}>
-                <span className="text-lg font-inter font-black tracking-widest uppercase" style={{ 
-                  color: '#FFF',
-                  textShadow: '0 0 20px rgba(243,218,115,0.8), 0 2px 10px rgba(0,0,0,0.5)'
-                }}>
-                  Your First Step
-                </span>
-              </div>
-            </div>
-
             <h2
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6"
               style={{ 

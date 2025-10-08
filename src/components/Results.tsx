@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Award,
     stat: "23+ years",
-    text: "Combined expertise: 13+ years of healthcare growth architecture + 10+ years of physician leadership"
+    text: "13+ years leading healthcare growth architecture and 10+ years in frontline clinical leadership. We bridge the boardroom and the bedside, strategy that actually works in real-world medicine."
   },
   {
     icon: Users,

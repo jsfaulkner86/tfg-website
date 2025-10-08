@@ -115,10 +115,7 @@ const Approach = () => {
             letterSpacing: '0.02em',
             lineHeight: '1.6'
           }}>
-            The Blueprint is the entry point:{' '}
-            <span className="font-bold" style={{ color: '#F3DA73' }}>30 days</span>
-            {' '}to clarity,{' '}
-            <span className="font-bold" style={{ color: '#F3DA73' }}>guaranteed</span>.
+            The Blueprint is the entry point: 30 days to clarity, guaranteed.
           </p>
           
           {/* Decorative divider */}

@@ -76,11 +76,12 @@ const Approach = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header with refined elegance */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
-            background: 'linear-gradient(135deg, rgba(243,218,115,0.15), rgba(243,218,115,0.08))',
-            border: '1px solid rgba(243,218,115,0.3)'
+          <div className="inline-block mb-4 px-8 py-3 rounded-full" style={{
+            background: 'linear-gradient(135deg, rgba(243,218,115,0.25), rgba(243,218,115,0.15))',
+            border: '2px solid rgba(243,218,115,0.5)',
+            boxShadow: '0 4px 20px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.2)'
           }}>
-            <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#718DA9' }}>
+            <span className="text-sm font-inter font-bold tracking-wider uppercase" style={{ color: '#C9A961' }}>
               Your First Step
             </span>
           </div>

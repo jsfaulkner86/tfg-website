@@ -4,26 +4,26 @@ import { CheckCircle2 } from "lucide-react";
 const benefits = [
   { 
     type: 'text',
-    text: "A 10-12 page bespoke playbook showing exactly where your practice is ",
-    emphasis: "leaking money",
-    suffix: " and how to stop it"
+    text: "Your custom ",
+    emphasis: "Revenue Recovery Blueprint: ",
+    suffix: "10-12 pages revealing exactly where you're hemorrhaging cash—and the precise fixes to plug every leak"
   },
   {
     type: 'bullets',
-    text: "A guarantee of at least ",
-    emphasis: "six figures uncovered",
+    text: "Our iron-clad guarantee: Uncover at least ",
+    emphasis: "$100,000+ in hidden revenue",
     bullets: [
-      "Often $250K+",
-      "In some cases, far more",
-      "One recent practice: $3 million in lost revenue",
-      "From processes already running but not optimizing"
+      "Most practices? $250K+ recovered",
+      "One recent client: $3 MILLION in lost revenue found",
+      "All from systems you're already running",
+      "Just not optimizing (yet)"
     ]
   },
   {
     type: 'text',
-    text: "If we don't uncover at least six figures? ",
-    emphasis: "We keep working with you at no cost",
-    suffix: " until you do."
+    text: "Don't hit six figures? ",
+    emphasis: "We work FREE",
+    suffix: " until you do. You literally cannot lose."
   }
 ];
 

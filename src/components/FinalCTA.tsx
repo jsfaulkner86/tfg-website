@@ -63,18 +63,47 @@ const FinalCTA = () => {
           </Button>
         </div>
           
-        {/* Clean contact information */}
-        <div className="pt-6 space-y-3">
-          <p className="text-lg sm:text-xl font-inter text-white/90" style={{
-            textShadow: '0 2px 8px rgba(0,0,0,0.2)'
-          }}>
-            <span className="font-semibold text-white">John Faulkner</span> – Co-Founder, Healthcare Growth Architect
-          </p>
-          <p className="text-lg sm:text-xl font-inter text-white/90" style={{
-            textShadow: '0 2px 8px rgba(0,0,0,0.2)'
-          }}>
-            <span className="font-semibold text-white">Dr. Nicole Faulkner</span> – Co-Founder, Chief Clinical Officer
-          </p>
+        {/* Elegant contact information */}
+        <div className="pt-8 space-y-6 max-w-3xl mx-auto">
+          <div className="h-px w-20 mx-auto" style={{
+            background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.6), transparent)'
+          }} />
+          
+          <div className="space-y-4">
+            <div className="space-y-1">
+              <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
+                textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                letterSpacing: '-0.01em'
+              }}>
+                John Faulkner
+              </p>
+              <p className="text-base sm:text-lg font-inter text-white/80" style={{
+                textShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                letterSpacing: '0.02em'
+              }}>
+                Co-Founder, Healthcare Growth Architect
+              </p>
+            </div>
+            
+            <div className="h-px w-12 mx-auto" style={{
+              background: 'rgba(243,218,115,0.3)'
+            }} />
+            
+            <div className="space-y-1">
+              <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
+                textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                letterSpacing: '-0.01em'
+              }}>
+                Dr. Nicole Faulkner
+              </p>
+              <p className="text-base sm:text-lg font-inter text-white/80" style={{
+                textShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                letterSpacing: '0.02em'
+              }}>
+                Co-Founder, Chief Clinical Officer
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

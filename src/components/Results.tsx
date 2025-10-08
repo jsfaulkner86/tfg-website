@@ -9,7 +9,7 @@ const highlights = [
   },
   {
     icon: Award,
-    stat: "23+ years",
+    stat: "23+ Years of Expertise",
     text: "13+ years leading healthcare growth architecture and 10+ years in frontline clinical leadership. We bridge the boardroom and the bedside, strategy that actually works in real-world medicine."
   },
   {

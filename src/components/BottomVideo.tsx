@@ -90,16 +90,13 @@ const BottomVideo = () => {
             <div className="space-y-8">
               <Button 
                 onClick={scrollToContact}
-                className="text-xl sm:text-2xl px-16 py-10 rounded-2xl group transition-all duration-500 font-semibold"
+                className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold"
                 style={{ 
-                  background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
-                  color: '#2C2C2C',
-                  boxShadow: '0 12px 40px rgba(243,218,115,0.5), 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5)',
-                  border: '2px solid rgba(255,255,255,0.3)'
+                  boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
                 }}
               >
-                Book Your Growth Blueprint™ Call
-                <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-300 group-hover:translate-x-2" />
+                Book a Consultation
+                <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
               
               {/* Elegant contact information */}

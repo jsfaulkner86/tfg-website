@@ -3,16 +3,22 @@ import { Target, TrendingUp, Cog } from "lucide-react";
 
 const outcomes = [
   {
-    icon: Target,
-    text: "Eliminate bottlenecks that stall growth"
+    microHeadline: "From Chaos to Control",
+    mainTitle: "Eliminate bottlenecks that stall growth",
+    benefitSummary: "Your team stops firefighting daily crises. Instead, they operate with clarity and confidence, knowing exactly what drives results.",
+    result: "30% faster patient flow without adding staff"
   },
   {
-    icon: TrendingUp,
-    text: "Restore margins so profitability compounds"
+    microHeadline: "From Bleeding to Thriving",
+    mainTitle: "Restore margins so profitability compounds",
+    benefitSummary: "Watch hidden revenue surface and inefficiencies disappear. Every dollar you earn starts working harder for your practice's future.",
+    result: "6-figure profit recovery in the first quarter"
   },
   {
-    icon: Cog,
-    text: "Build scalable systems that last long after we leave"
+    microHeadline: "From Band-Aids to Breakthroughs",
+    mainTitle: "Build scalable systems that last long after we leave",
+    benefitSummary: "No more temporary fixes. You'll have frameworks and processes that grow with your practice, creating lasting momentum.",
+    result: "Systems that scale to 2x revenue without breaking"
   }
 ];
 
@@ -140,12 +146,10 @@ const Transformation = () => {
           </p>
         </div>
 
-        {/* Luxury outcome cards */}
+        {/* Success story cards */}
         <div className={`mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {outcomes.map((outcome, index) => {
-              const Icon = outcome.icon;
-              
               return (
                 <div
                   key={index}
@@ -163,14 +167,14 @@ const Transformation = () => {
                     }}
                   />
                   
-                  {/* Elevated card with multiple layers */}
+                  {/* Elevated card */}
                   <div
-                    className="relative p-12 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col items-center text-center overflow-hidden"
+                    className="relative p-10 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden"
                     style={{
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                       border: '2.5px solid #F3DA73',
                       boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
-                      minHeight: '300px',
+                      minHeight: '380px',
                       backdropFilter: 'blur(10px)'
                     }}
                   >
@@ -182,44 +186,64 @@ const Transformation = () => {
                       }}
                     />
                     
-                    {/* Enhanced Icon with glow */}
-                    <div className="relative mb-8">
-                      {/* Icon glow */}
-                      <div 
-                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        style={{
-                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
-                          filter: 'blur(12px)',
-                          transform: 'scale(1.5)'
-                        }}
-                      />
-                      <div 
-                        className="relative w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
-                        style={{
-                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
-                          border: '2px solid rgba(255,255,255,0.3)',
-                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col h-full">
+                      {/* Micro-headline */}
+                      <p 
+                        className="text-sm font-inter font-bold tracking-wider uppercase mb-4"
+                        style={{ 
+                          color: '#F3DA73',
+                          letterSpacing: '0.1em',
+                          textShadow: '0 2px 4px rgba(0,0,0,0.2)'
                         }}
                       >
-                        <Icon 
-                          size={36}
-                          strokeWidth={2.5}
-                          style={{ color: '#FFFFFF' }}
-                        />
+                        {outcome.microHeadline}
+                      </p>
+                      
+                      {/* Main title */}
+                      <h3 
+                        className="text-xl sm:text-2xl font-playfair font-bold mb-4"
+                        style={{ 
+                          color: 'rgba(255,255,255,0.98)',
+                          letterSpacing: '-0.01em',
+                          lineHeight: '1.3',
+                          textShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                        }}
+                      >
+                        {outcome.mainTitle}
+                      </h3>
+                      
+                      {/* Benefit summary */}
+                      <p 
+                        className="text-base font-inter mb-6 flex-grow"
+                        style={{ 
+                          color: 'rgba(248,248,248,0.85)',
+                          letterSpacing: '0.02em',
+                          lineHeight: '1.6'
+                        }}
+                      >
+                        {outcome.benefitSummary}
+                      </p>
+                      
+                      {/* Result line with gold highlight */}
+                      <div 
+                        className="pt-4 mt-auto"
+                        style={{
+                          borderTop: '1px solid rgba(243,218,115,0.3)'
+                        }}
+                      >
+                        <p 
+                          className="text-sm font-inter font-semibold"
+                          style={{ 
+                            color: 'rgba(255,255,255,0.9)',
+                            letterSpacing: '0.02em'
+                          }}
+                        >
+                          <span style={{ color: '#F3DA73', fontWeight: 700 }}>Result:</span>{' '}
+                          {outcome.result}
+                        </p>
                       </div>
                     </div>
-                    
-                    <p 
-                      className="text-lg sm:text-xl font-inter font-medium leading-relaxed relative z-10"
-                      style={{ 
-                        color: 'rgba(248,248,248,0.95)',
-                        letterSpacing: '0.3px',
-                        lineHeight: '1.7',
-                        textShadow: '0 2px 8px rgba(0,0,0,0.15)'
-                      }}
-                    >
-                      {outcome.text}
-                    </p>
                     
                     {/* Bottom accent line */}
                     <div 

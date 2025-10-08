@@ -238,12 +238,11 @@ const Transformation = () => {
             
             <div className="relative z-10 text-center flex items-center justify-center">
               <p 
-                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
+                className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4',
-                  whiteSpace: 'nowrap'
+                  lineHeight: '1.4'
                 }}
               >
                 This is where practices stop bleeding time and money and start thriving.

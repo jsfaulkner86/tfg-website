@@ -8,6 +8,7 @@ import Transformation from "@/components/Transformation";
 import Results from "@/components/Results";
 import BottomVideo from "@/components/BottomVideo";
 import StickyCTA from "@/components/StickyCTA";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <BottomVideo />
       </main>
       <StickyCTA />
+      <MusicPlayer />
     </>
   );
 };

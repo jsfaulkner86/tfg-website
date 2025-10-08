@@ -219,7 +219,8 @@ const Problem = () => {
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em',
-                  lineHeight: '1.4'
+                  lineHeight: '1.4',
+                  whiteSpace: 'nowrap'
                 }}
               >
                 We don't just identify the leaks. We architect systems that stop them permanently.

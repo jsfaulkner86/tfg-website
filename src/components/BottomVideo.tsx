@@ -87,19 +87,22 @@ const BottomVideo = () => {
               If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
             </p>
 
-            {/* Performance Assurance */}
-            <div className="mb-10 px-4">
-              <p 
-                className="text-base sm:text-lg font-inter font-light italic tracking-wide"
-                style={{ 
-                  color: 'rgba(255,255,255,0.85)',
-                  textShadow: '0 2px 8px rgba(0,0,0,0.3)',
-                  letterSpacing: '0.03em',
-                  lineHeight: '1.6'
-                }}
-              >
-                Performance Guarantee: Six-figure revenue recovery within 30 days, or we continue at no additional cost.
-              </p>
+            {/* Risk Reversal */}
+            <div 
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full mb-10"
+              style={{
+                background: 'rgba(243,218,115,0.15)',
+                border: '1.5px solid rgba(243,218,115,0.4)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
+              <div className="text-2xl">✓</div>
+              <span className="text-base font-inter font-semibold" style={{ 
+                color: '#F3DA73',
+                textShadow: '0 2px 8px rgba(0,0,0,0.3)'
+              }}>
+                We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do
+              </span>
             </div>
 
             <div className="space-y-8">

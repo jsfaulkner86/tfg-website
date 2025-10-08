@@ -94,40 +94,68 @@ const Results = () => {
                 }`}
                 style={{ transitionDelay: `${index * 200 + 300}ms` }}
               >
-                {/* Clean white card with elegant gold border */}
-                <div
-                  className="relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
+                {/* Outer glow on hover */}
+                <div 
+                  className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
-                    background: '#FFFFFF',
+                    background: 'linear-gradient(135deg, #D4B65D, #F3DA73)',
+                    filter: 'blur(8px)'
+                  }}
+                />
+                
+                {/* Elevated card with multiple layers */}
+                <div
+                  className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-4 h-full flex flex-col overflow-hidden"
+                  style={{
+                    background: 'linear-gradient(135deg, #FFFFFF 0%, rgba(250,249,246,0.98) 100%)',
                     border: '2.5px solid #D4B65D',
-                    boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
-                    minHeight: '240px'
+                    boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.9)',
+                    minHeight: '280px'
                   }}
                 >
-                  {/* Icon with clean styling */}
-                  <div className="mb-6">
+                  {/* Inner subtle gradient overlay */}
+                  <div 
+                    className="absolute inset-0 opacity-20 pointer-events-none"
+                    style={{
+                      background: 'radial-gradient(circle at 30% 20%, rgba(113,141,169,0.15) 0%, transparent 60%)'
+                    }}
+                  />
+                  
+                  {/* Enhanced Icon with glow */}
+                  <div className="mb-8 relative">
+                    {/* Icon glow */}
                     <div 
-                      className="w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                       style={{
-                        background: 'rgba(113,141,169,0.1)',
-                        border: '2px solid rgba(113,141,169,0.25)'
+                        background: 'radial-gradient(circle, rgba(113,141,169,0.3) 0%, transparent 70%)',
+                        filter: 'blur(12px)',
+                        transform: 'scale(1.5)'
+                      }}
+                    />
+                    <div 
+                      className="relative w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
+                      style={{
+                        background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.05))',
+                        border: '2px solid rgba(113,141,169,0.3)',
+                        boxShadow: '0 8px 20px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.5)'
                       }}
                     >
                       <Icon 
-                        size={28}
-                        strokeWidth={2}
+                        size={32}
+                        strokeWidth={2.5}
                         style={{ color: '#718DA9' }}
                       />
                     </div>
                   </div>
                   
                   {/* Stat */}
-                  <div className="mb-4">
+                  <div className="mb-4 relative z-10">
                     <p 
                       className="text-3xl sm:text-4xl font-playfair font-bold"
                       style={{ 
                         color: '#718DA9',
-                        letterSpacing: '-0.02em'
+                        letterSpacing: '-0.02em',
+                        textShadow: '0 2px 8px rgba(0,0,0,0.1)'
                       }}
                     >
                       {highlight.stat}
@@ -136,7 +164,7 @@ const Results = () => {
                   
                   {/* Description */}
                   <p 
-                    className="text-base font-inter leading-relaxed relative z-10 flex-1"
+                    className="text-base font-inter font-medium leading-relaxed relative z-10 flex-1"
                     style={{ 
                       color: '#2C2C2C',
                       letterSpacing: '0.01em',
@@ -145,6 +173,14 @@ const Results = () => {
                   >
                     {highlight.text}
                   </p>
+                  
+                  {/* Bottom accent line */}
+                  <div 
+                    className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{
+                      background: 'linear-gradient(90deg, transparent, #D4B65D, transparent)'
+                    }}
+                  />
                 </div>
               </div>
             );

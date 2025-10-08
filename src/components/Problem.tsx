@@ -162,13 +162,22 @@ const Problem = () => {
                       transitionDelay: `${index * 200 + 400}ms`
                     }}
                   >
-                    {/* Clean white card with gold border */}
+                    {/* Outer glow on hover */}
                     <div 
-                      className="group relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
+                      className="absolute -inset-0.5 rounded-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                       style={{
-                        background: '#FFFFFF',
+                        background: 'linear-gradient(135deg, #D4B65D, #F3DA73)',
+                        filter: 'blur(8px)'
+                      }}
+                    />
+                    
+                    {/* Elevated card with multiple layers */}
+                    <div 
+                      className="relative p-6 rounded-[16px] transition-all duration-500 hover:-translate-y-3 overflow-hidden"
+                      style={{
+                        background: 'linear-gradient(135deg, #FFFFFF 0%, rgba(250,249,246,0.98) 100%)',
                         border: '2.5px solid #D4B65D',
-                        boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
+                        boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.9)'
                       }}
                     >
                       {/* Golden accent dot on connecting line */}
@@ -180,26 +189,53 @@ const Problem = () => {
                         }}
                       />
 
-                      <div className="flex items-center gap-5">
-                        {/* Elegant thin-line icon */}
-                        <div 
-                          className="flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
-                        >
-                          <Icon 
-                            size={28} 
-                            strokeWidth={1.5}
-                            style={{ color: '#F3DA73' }}
+                      {/* Inner subtle gradient overlay */}
+                      <div 
+                        className="absolute inset-0 opacity-20 pointer-events-none"
+                        style={{
+                          background: 'radial-gradient(circle at 20% 30%, rgba(243,218,115,0.15) 0%, transparent 60%)'
+                        }}
+                      />
+                      
+                      <div className="flex items-center gap-5 relative z-10">
+                        {/* Enhanced icon with glow */}
+                        <div className="relative flex-shrink-0">
+                          {/* Icon glow */}
+                          <div 
+                            className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            style={{
+                              background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                              filter: 'blur(10px)',
+                              transform: 'scale(1.8)'
+                            }}
                           />
+                          <div 
+                            className="relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+                          >
+                            <Icon 
+                              size={28} 
+                              strokeWidth={2}
+                              style={{ color: '#F3DA73' }}
+                            />
+                          </div>
                         </div>
 
                         {/* Problem text */}
                         <p 
-                          className="text-base sm:text-lg font-inter leading-relaxed"
+                          className="text-base sm:text-lg font-inter font-medium leading-relaxed"
                           style={{ color: '#2C2C2C', letterSpacing: '0.01em' }}
                         >
                           {problem.text}
                         </p>
                       </div>
+                      
+                      {/* Bottom accent line */}
+                      <div 
+                        className="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        style={{
+                          background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
+                        }}
+                      />
                     </div>
                   </div>
                 );

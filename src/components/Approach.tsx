@@ -139,26 +139,53 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  {/* Blue card with gold border */}
-                  <div
-                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col"
+                  {/* Outer glow on hover */}
+                  <div 
+                    className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
-                      background: 'rgba(113,141,169,0.95)',
+                      background: 'linear-gradient(135deg, #D4B65D, #718DA9)',
+                      filter: 'blur(8px)'
+                    }}
+                  />
+                  
+                  {/* Elevated card with multiple layers */}
+                  <div
+                    className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-4 h-full flex flex-col overflow-hidden"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(113,141,169,0.98) 0%, rgba(88,130,161,0.98) 100%)',
                       border: '2.5px solid #D4B65D',
-                      boxShadow: '0 10px 40px rgba(0,0,0,0.15)'
+                      boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(10px)'
                     }}
                   >
+                    {/* Inner subtle gradient overlay */}
+                    <div 
+                      className="absolute inset-0 opacity-30 pointer-events-none"
+                      style={{
+                        background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
+                      }}
+                    />
                     
-                    {/* Refined minimal number badge */}
-                    <div className="flex justify-center mb-6">
+                    {/* Enhanced number badge with glow */}
+                    <div className="flex justify-center mb-8 relative">
+                      {/* Badge glow */}
                       <div 
-                        className="relative w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-105"
+                        className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                         style={{
-                          background: 'rgba(255,255,255,0.15)',
-                          border: '2px solid rgba(255,255,255,0.3)'
+                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                          filter: 'blur(12px)',
+                          transform: 'scale(1.8)'
+                        }}
+                      />
+                      <div 
+                        className="relative w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-xl font-inter font-semibold" style={{ color: '#FFFFFF' }}>
+                        <span className="text-xl font-inter font-bold" style={{ color: '#FFFFFF', textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -207,7 +234,8 @@ const Approach = () => {
                           style={{ 
                             color: '#FFFFFF', 
                             letterSpacing: '0.01em',
-                            lineHeight: '1.7'
+                            lineHeight: '1.7',
+                            textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                           }}
                         >
                           {benefit.text}
@@ -218,6 +246,14 @@ const Approach = () => {
                         </p>
                       )}
                     </div>
+                    
+                    {/* Bottom accent line */}
+                    <div 
+                      className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      style={{
+                        background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
+                      }}
+                    />
                   </div>
                 </div>
               ))}

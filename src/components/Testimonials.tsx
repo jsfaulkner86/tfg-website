@@ -4,23 +4,23 @@ import { Quote, Star } from "lucide-react";
 const testimonials = [
   {
     quote: "The Faulkner Group uncovered $780K in lost revenue in just 30 days. Within 90 days, we had systems in place that permanently fixed the leaks. This wasn't consulting—this was transformation.",
-    author: "Dr. Sarah Mitchell",
-    role: "Founder, Women's Health Specialists",
-    location: "Austin, TX",
+    author: "Medical Director",
+    role: "Women's Health Practice",
+    location: "Texas",
     result: "$780K recovered"
   },
   {
     quote: "We were drowning in inefficiency. The Growth Blueprint gave us clarity we'd never had. Six months later, our margins increased by 34% and our team actually has time to breathe.",
-    author: "Michael Chen",
-    role: "CEO, Fertility Solutions Group",
-    location: "San Diego, CA",
+    author: "Chief Executive Officer",
+    role: "Multi-Specialty Fertility Center",
+    location: "California",
     result: "34% margin increase"
   },
   {
     quote: "John and Nicole don't just understand healthcare—they live it. Their dual perspective as both clinical expert and growth architect is exactly what modern practices need.",
-    author: "Dr. Amanda Rodriguez",
-    role: "Chief Medical Officer, Premier OB/GYN",
-    location: "Miami, FL",
+    author: "Chief Medical Officer",
+    role: "OB/GYN Group Practice",
+    location: "Florida",
     result: "3x patient capacity"
   }
 ];

@@ -14,8 +14,8 @@ const highlights = [
   },
   {
     icon: Users,
-    stat: "Boutique",
-    text: "High-touch approach that blends clinical insight with growth strategy"
+    stat: "Boutique by Design",
+    text: "A high-touch partnership that blends physician insight, operational precision, and executive strategy. Every engagement is customized — no cookie-cutter consulting, ever."
   }
 ];
 

@@ -166,11 +166,11 @@ const Results = () => {
                   
                   {/* Description */}
                   <p 
-                    className="text-base sm:text-lg font-inter leading-relaxed relative z-10 flex-1 text-center"
+                    className="text-lg sm:text-xl font-inter font-medium leading-relaxed relative z-10 flex-1 text-center"
                     style={{ 
-                      color: '#3A4A5A',
-                      letterSpacing: '0.01em',
-                      lineHeight: '1.7'
+                      color: '#2A3A4A',
+                      letterSpacing: '0.005em',
+                      lineHeight: '1.6'
                     }}
                   >
                     {highlight.text}

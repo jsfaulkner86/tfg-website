@@ -199,30 +199,30 @@ const Problem = () => {
           </div>
         </div>
 
-        {/* Deep cornflower callout */}
+        {/* Bottom callout */}
         <div 
           className={`mt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           style={{ transitionDelay: '1.2s' }}
         >
           <div 
-            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto"
+            className="relative py-12 px-12 rounded-[32px] overflow-hidden mx-auto"
             style={{
-              background: '#718DA9',
-              border: '2.5px solid #F3DA73',
-              boxShadow: '0 12px 40px rgba(0,0,0,0.15)',
+              background: '#FBF8F1',
+              border: '2.5px solid #C9B882',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.08)',
               maxWidth: '1400px'
             }}
           >
             <div className="relative z-10 text-center">
               <p 
-                className="text-2xl sm:text-3xl md:text-4xl font-inter font-semibold"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 
-                  color: '#FFFFFF', 
-                  letterSpacing: '-0.01em',
-                  lineHeight: '1.5'
+                  color: '#718DA9', 
+                  letterSpacing: '-0.02em',
+                  lineHeight: '1.4'
                 }}
               >
-                We don't just identify the leaks. We <span style={{ color: '#F3DA73', fontWeight: 700 }}>architect</span> systems that stop them permanently.
+                We don't just identify the leaks. We architect systems that stop them permanently.
               </p>
             </div>
           </div>

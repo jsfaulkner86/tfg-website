@@ -165,7 +165,7 @@ const Results = () => {
                   {/* Stat */}
                   <div className="mb-6 relative z-10 text-center">
                     <p 
-                      className="text-5xl sm:text-6xl font-playfair font-bold leading-tight"
+                      className="text-4xl sm:text-5xl font-playfair font-bold leading-tight"
                       style={{ 
                         color: '#718DA9',
                         letterSpacing: '-0.03em',

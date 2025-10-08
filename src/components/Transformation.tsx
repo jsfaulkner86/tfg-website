@@ -132,7 +132,7 @@ const Transformation = () => {
 
         {/* Luxury outcome cards */}
         <div className={`mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {outcomes.map((outcome, index) => {
               const Icon = outcome.icon;
               
@@ -144,42 +144,80 @@ const Transformation = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 400}ms` }}
                 >
-                  {/* Blue card with gold border */}
-                  <div
-                    className="relative p-10 rounded-2xl transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)] h-full flex flex-col items-center text-center"
+                  {/* Outer glow on hover */}
+                  <div 
+                    className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
-                      background: 'rgba(113,141,169,0.95)',
+                      background: 'linear-gradient(135deg, #D4B65D, #718DA9)',
+                      filter: 'blur(8px)'
+                    }}
+                  />
+                  
+                  {/* Elevated card with multiple layers */}
+                  <div
+                    className="relative p-12 rounded-[20px] transition-all duration-500 group-hover:-translate-y-4 h-full flex flex-col items-center text-center overflow-hidden"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(113,141,169,0.98) 0%, rgba(88,130,161,0.98) 100%)',
                       border: '2.5px solid #D4B65D',
-                      boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
-                      minHeight: '240px'
+                      boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.1)',
+                      minHeight: '280px',
+                      backdropFilter: 'blur(10px)'
                     }}
                   >
-                    
-                    {/* Icon */}
+                    {/* Inner subtle gradient overlay */}
                     <div 
-                      className="mb-6 w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                      className="absolute inset-0 opacity-30 pointer-events-none"
                       style={{
-                        background: 'rgba(255,255,255,0.15)',
-                        border: '2px solid rgba(255,255,255,0.3)'
+                        background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
                       }}
-                    >
-                      <Icon 
-                        size={32}
-                        strokeWidth={2}
-                        style={{ color: '#FFFFFF' }}
+                    />
+                    
+                    {/* Enhanced Icon with glow */}
+                    <div className="relative mb-8">
+                      {/* Icon glow */}
+                      <div 
+                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        style={{
+                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                          filter: 'blur(12px)',
+                          transform: 'scale(1.5)'
+                        }}
                       />
+                      <div 
+                        className="relative w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
+                        }}
+                      >
+                        <Icon 
+                          size={36}
+                          strokeWidth={2.5}
+                          style={{ color: '#FFFFFF' }}
+                        />
+                      </div>
                     </div>
                     
                     <p 
-                      className="text-base sm:text-lg font-inter font-medium leading-relaxed relative z-10"
+                      className="text-lg font-inter font-medium leading-relaxed relative z-10"
                       style={{ 
                         color: '#FFFFFF',
                         letterSpacing: '0.01em',
-                        lineHeight: '1.7'
+                        lineHeight: '1.7',
+                        textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                       }}
                     >
                       {outcome.text}
                     </p>
+                    
+                    {/* Bottom accent line */}
+                    <div 
+                      className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      style={{
+                        background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
+                      }}
+                    />
                   </div>
                 </div>
               );

@@ -87,6 +87,17 @@ All colors MUST be HSL.
     }
   }
   
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   .animate-shimmer {
     animation: shimmer 5s ease-in-out infinite;
   }

@@ -120,17 +120,17 @@ const Approach = () => {
           </div>
         </div>
 
-        {/* What you get - Executive clean layout */}
+        {/* What you get - Centered single column with numbers */}
         <div className={`mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h3 
-            className="text-3xl sm:text-4xl font-playfair font-bold mb-20 text-center"
-            style={{ color: '#1A2A3A', letterSpacing: '-0.03em' }}
+            className="text-2xl sm:text-3xl font-playfair font-bold mb-12 text-center"
+            style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
           >
             What you receive:
           </h3>
           
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
@@ -139,23 +139,53 @@ const Approach = () => {
                   }`}
                   style={{ transitionDelay: `${index * 150 + 300}ms` }}
                 >
-                  <div
-                    className="relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-2 h-full flex flex-col bg-white"
+                  {/* Outer glow on hover */}
+                  <div 
+                    className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
-                      border: '1px solid rgba(113,141,169,0.12)',
-                      boxShadow: '0 4px 24px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02)',
+                      background: 'linear-gradient(135deg, #D4B65D, #718DA9)',
+                      filter: 'blur(8px)'
+                    }}
+                  />
+                  
+                  {/* Elevated card with multiple layers */}
+                  <div
+                    className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-4 h-full flex flex-col overflow-hidden"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(113,141,169,0.98) 0%, rgba(88,130,161,0.98) 100%)',
+                      border: '2.5px solid #D4B65D',
+                      boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(10px)'
                     }}
                   >
-                    {/* Minimal number indicator */}
-                    <div className="mb-6">
+                    {/* Inner subtle gradient overlay */}
+                    <div 
+                      className="absolute inset-0 opacity-30 pointer-events-none"
+                      style={{
+                        background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
+                      }}
+                    />
+                    
+                    {/* Enhanced number badge with glow */}
+                    <div className="flex justify-center mb-8 relative">
+                      {/* Badge glow */}
                       <div 
-                        className="inline-flex items-center justify-center w-10 h-10 rounded-full"
+                        className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                         style={{
-                          background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                          boxShadow: '0 2px 8px rgba(243,218,115,0.25)'
+                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                          filter: 'blur(12px)',
+                          transform: 'scale(1.8)'
+                        }}
+                      />
+                      <div 
+                        className="relative w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
+                        style={{
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-sm font-inter font-bold" style={{ color: '#1A2A3A' }}>
+                        <span className="text-xl font-inter font-bold" style={{ color: '#FFFFFF', textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -165,30 +195,30 @@ const Approach = () => {
                       {benefit.type === 'bullets' ? (
                         <div>
                           <p 
-                            className="text-lg font-inter font-semibold leading-relaxed mb-6"
+                            className="text-base sm:text-lg font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
-                              color: '#1A2A3A', 
-                              letterSpacing: '-0.01em',
-                              lineHeight: '1.5'
+                              color: '#FFFFFF', 
+                              letterSpacing: '0.01em',
+                              lineHeight: '1.7'
                             }}
                           >
                             {benefit.text}
-                            <span style={{ color: '#D4B65D' }}>
+                            <span className="font-bold text-lg sm:text-xl" style={{ color: '#F3DA73' }}>
                               {benefit.emphasis}
                             </span>
                           </p>
-                          <div className="space-y-3.5 mt-6">
+                          <div className="space-y-3 mt-6 text-left max-w-md mx-auto">
                             {benefit.bullets.map((bullet, idx) => (
                               <div key={idx} className="flex items-start gap-3">
                                 <div 
                                   className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
-                                  style={{ background: '#D4B65D' }}
+                                  style={{ background: '#F3DA73' }}
                                 />
                                 <p 
-                                  className="text-base font-inter"
+                                  className="text-sm sm:text-base font-inter"
                                   style={{ 
-                                    color: '#5882A1',
-                                    letterSpacing: '0.002em',
+                                    color: '#FFFFFF',
+                                    letterSpacing: '0.01em',
                                     lineHeight: '1.6'
                                   }}
                                 >
@@ -200,29 +230,28 @@ const Approach = () => {
                         </div>
                       ) : (
                         <p 
-                          className="text-lg font-inter font-semibold leading-relaxed"
+                          className="text-base sm:text-lg font-inter font-medium leading-relaxed text-center"
                           style={{ 
-                            color: '#1A2A3A', 
-                            letterSpacing: '-0.01em',
-                            lineHeight: '1.5'
+                            color: '#FFFFFF', 
+                            letterSpacing: '0.01em',
+                            lineHeight: '1.7',
+                            textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                           }}
                         >
                           {benefit.text}
-                          <span style={{ color: '#D4B65D' }}>
+                          <span className="font-bold" style={{ color: '#F3DA73' }}>
                             {benefit.emphasis}
                           </span>
-                          {benefit.suffix && (
-                            <span style={{ color: '#1A2A3A' }}>{benefit.suffix}</span>
-                          )}
+                          {benefit.suffix}
                         </p>
                       )}
                     </div>
                     
-                    {/* Hover accent */}
+                    {/* Bottom accent line */}
                     <div 
-                      className="absolute bottom-0 left-8 right-8 h-0.5 opacity-0 group-hover:opacity-100 transition-all duration-500"
+                      className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                       style={{
-                        background: 'linear-gradient(90deg, transparent, #D4B65D, transparent)'
+                        background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
                       }}
                     />
                   </div>

@@ -160,6 +160,14 @@ export default {
             textShadow: "0 0 30px rgba(243,218,115,0.7)",
           },
         },
+        "slide-up": {
+          "0%": {
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

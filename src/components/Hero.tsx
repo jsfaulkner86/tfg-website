@@ -1,6 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     contactSection?.scrollIntoView({
@@ -8,41 +19,81 @@ const Hero = () => {
     });
   };
   return <section className="relative h-screen w-full overflow-hidden pt-20">
-      {/* Background Video */}
-      <div className="absolute inset-0">
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover brightness-110">
+      {/* Background Video with Parallax */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          transform: `translateY(${scrollY * 0.5}px)`
+        }}
+      >
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            filter: 'brightness(1.15) contrast(1.1)'
+          }}
+        >
           <source src="/hero-beach.mp4" type="video/mp4" />
         </video>
+        
+        {/* Subtle vignette - only outer 10% */}
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.15) 100%)'
+          }}
+        />
       </div>
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
-        <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards]">
+        <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
           <h1 
-            className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase" 
+            className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase relative overflow-hidden" 
             style={{ 
               letterSpacing: '0.02em',
-              textShadow: '0 2px 8px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3)'
+              textShadow: '0 4px 8px rgba(0,0,0,0.35)',
+              animation: 'fade-in 1.2s ease-out 0.2s forwards, slide-up 1.2s ease-out 0.2s forwards'
             }}
           >
-            LESS CHAOS.<br />
-            MORE CLARITY.<br />
-            REAL GROWTH.
+            {/* Shimmer effect */}
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[shimmer_15s_ease-in-out_infinite]" 
+              style={{
+                backgroundSize: '200% 100%'
+              }}
+            />
+            <span className="relative">
+              LESS CHAOS.<br />
+              MORE CLARITY.<br />
+              REAL GROWTH.
+            </span>
           </h1>
           <p 
             className="mb-12 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
             style={{ 
-              color: '#F9F9F9',
-              textShadow: '0 2px 6px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3)'
+              color: 'rgba(255, 255, 255, 0.85)',
+              textShadow: '0 4px 8px rgba(0,0,0,0.35)'
             }}
           >
             We help healthcare leaders escape broken systems & build organizations that thrive.
           </p>
           <Button 
             onClick={scrollToContact} 
-            className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold"
+            className="text-xl rounded-lg group transition-all duration-300 font-semibold relative overflow-hidden border-0"
             style={{ 
+              backgroundColor: 'rgba(243, 218, 115, 0.9)',
+              color: '#5882A1',
+              padding: '1.2em 2.8em',
               boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 8px 32px rgba(243,218,115,0.6), 0 0 40px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)';
             }}
           >
             Book a Consultation

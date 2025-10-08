@@ -55,32 +55,21 @@ const Approach = () => {
       className="px-6 relative overflow-hidden"
       style={{
         paddingTop: '100px',
-        paddingBottom: '100px',
-        background: 'linear-gradient(180deg, #FDFCF9 0%, #F8F4E3 100%)'
+        paddingBottom: '80px',
+        background: 'linear-gradient(180deg, rgba(113,141,169,0.08) 0%, #FFFFFF 50%, rgba(243,218,115,0.08) 100%)'
       }}
     >
-      {/* Subtle curved divider at top */}
-      <div 
-        className="absolute top-0 left-0 right-0 h-16"
-        style={{
-          background: 'radial-gradient(ellipse at center top, rgba(113,141,169,0.15) 0%, transparent 100%)',
-        }}
-      />
-      
-      {/* Ambient lighting glow effect at top center */}
-      <div 
-        className="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full pointer-events-none"
-        style={{
-          background: 'radial-gradient(circle, rgba(243,218,115,0.15) 0%, transparent 70%)',
-          filter: 'blur(60px)'
-        }}
-      />
-
-      {/* Light vignette frame */}
+      {/* Sophisticated texture overlay */}
       <div 
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.03) 100%)'
+          background: `
+            radial-gradient(circle at 30% 20%, rgba(243,218,115,0.06) 0%, transparent 50%),
+            radial-gradient(circle at 70% 80%, rgba(113,141,169,0.05) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.8) 0%, transparent 60%)
+          `,
+          opacity: 0.7,
+          mixBlendMode: 'soft-light'
         }}
       />
 
@@ -99,28 +88,35 @@ const Approach = () => {
           <h2 
             className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
             style={{ 
-              color: '#2A3B4F',
+              color: '#2C2C2C',
               letterSpacing: '-0.03em',
-              lineHeight: '1.05',
-              textShadow: '0 2px 8px rgba(113,141,169,0.2)'
+              lineHeight: '1.05'
             }}
           >
             The Growth Blueprint™
           </h2>
           
-          <p className="text-lg sm:text-xl font-inter font-light italic max-w-3xl mx-auto mb-4" style={{ 
-            color: '#718DA9', 
-            letterSpacing: '0.03em',
+          <p className="text-lg sm:text-xl font-inter font-light max-w-3xl mx-auto mb-6" style={{ 
+            color: '#5882A1', 
+            letterSpacing: '0.01em',
             lineHeight: '1.6'
           }}>
             The Blueprint is the entry point: 30 days to clarity, guaranteed.
           </p>
           
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <div 
-              className="h-0.5 w-24"
-              style={{ background: '#F3DA73' }}
-            />
+              className="relative overflow-hidden rounded-full"
+              style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #718DA9, #F3DA73)' }}
+            >
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)',
+                  animation: 'shimmer 3s linear infinite'
+                }}
+              />
+            </div>
           </div>
         </div>
 
@@ -145,42 +141,51 @@ const Approach = () => {
                 >
                   {/* Outer glow on hover */}
                   <div 
-                    className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-all duration-500"
+                    className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
-                      background: 'linear-gradient(135deg, #F3DA73, #D4B65D)',
-                      filter: 'blur(12px)'
+                      background: 'linear-gradient(135deg, #D4B65D, #718DA9)',
+                      filter: 'blur(8px)'
                     }}
                   />
                   
-                  {/* Semi-translucent glass card */}
+                  {/* Elevated card with multiple layers */}
                   <div
-                    className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-[6px] h-full flex flex-col overflow-hidden"
+                    className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-4 h-full flex flex-col overflow-hidden"
                     style={{
-                      background: 'rgba(113,141,169,0.1)',
-                      backdropFilter: 'blur(8px)',
-                      border: '1px solid rgba(243,218,115,0.3)',
-                      boxShadow: '0 8px 20px rgba(0,0,0,0.05)'
+                      background: 'linear-gradient(135deg, rgba(113,141,169,0.98) 0%, rgba(88,130,161,0.98) 100%)',
+                      border: '2.5px solid #D4B65D',
+                      boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(10px)'
                     }}
                   >
-                    {/* Enhanced number badge with gold gradient */}
+                    {/* Inner subtle gradient overlay */}
+                    <div 
+                      className="absolute inset-0 opacity-30 pointer-events-none"
+                      style={{
+                        background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
+                      }}
+                    />
+                    
+                    {/* Enhanced number badge with glow */}
                     <div className="flex justify-center mb-8 relative">
-                      {/* Badge glow on hover */}
+                      {/* Badge glow */}
                       <div 
                         className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                         style={{
-                          background: 'radial-gradient(circle, rgba(243,218,115,0.5) 0%, transparent 70%)',
-                          filter: 'blur(15px)',
-                          transform: 'scale(2)'
+                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                          filter: 'blur(12px)',
+                          transform: 'scale(1.8)'
                         }}
                       />
                       <div 
-                        className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110"
+                        className="relative w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12"
                         style={{
-                          background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
-                          boxShadow: '0 6px 16px rgba(243,218,115,0.4), inset 0 2px 4px rgba(255,255,255,0.4)'
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-2xl font-inter font-bold" style={{ color: '#2C2C2C', textShadow: '0 1px 2px rgba(255,255,255,0.5)' }}>
+                        <span className="text-xl font-inter font-bold" style={{ color: '#FFFFFF', textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
                           {index + 1}
                         </span>
                       </div>
@@ -192,7 +197,7 @@ const Approach = () => {
                           <p 
                             className="text-base sm:text-lg font-inter font-medium leading-relaxed mb-6 text-center"
                             style={{ 
-                              color: '#1E1E1E', 
+                              color: '#FFFFFF', 
                               letterSpacing: '0.01em',
                               lineHeight: '1.7'
                             }}
@@ -202,37 +207,23 @@ const Approach = () => {
                               {benefit.emphasis}
                             </span>
                           </p>
-                          <div className="space-y-4 mt-6 text-left max-w-md mx-auto">
+                          <div className="space-y-3 mt-6 text-left max-w-md mx-auto">
                             {benefit.bullets.map((bullet, idx) => (
-                              <div key={idx}>
-                                {idx > 0 && (
-                                  <div 
-                                    className="h-px mb-4"
-                                    style={{ 
-                                      backgroundImage: 'repeating-linear-gradient(to right, #F3DA73 0px, #F3DA73 4px, transparent 4px, transparent 8px)',
-                                      opacity: 0.3
-                                    }}
-                                  />
-                                )}
-                                <div className="flex items-start gap-3">
-                                  <div 
-                                    className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
-                                    style={{ background: '#F3DA73' }}
-                                  />
-                                  <p 
-                                    className="text-sm sm:text-base font-inter"
-                                    style={{ 
-                                      color: '#1E1E1E',
-                                      letterSpacing: '0.01em',
-                                      lineHeight: '1.6'
-                                    }}
-                                    dangerouslySetInnerHTML={{
-                                      __html: bullet
-                                        .replace(/\$250K\+/g, '<span style="color: #F3DA73; font-weight: 600;">$250K+</span>')
-                                        .replace(/\$3 million/g, '<span style="color: #F3DA73; font-weight: 600;">$3 million</span>')
-                                    }}
-                                  />
-                                </div>
+                              <div key={idx} className="flex items-start gap-3">
+                                <div 
+                                  className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2"
+                                  style={{ background: '#F3DA73' }}
+                                />
+                                <p 
+                                  className="text-sm sm:text-base font-inter"
+                                  style={{ 
+                                    color: '#FFFFFF',
+                                    letterSpacing: '0.01em',
+                                    lineHeight: '1.6'
+                                  }}
+                                >
+                                  {bullet}
+                                </p>
                               </div>
                             ))}
                           </div>
@@ -241,9 +232,10 @@ const Approach = () => {
                         <p 
                           className="text-base sm:text-lg font-inter font-medium leading-relaxed text-center"
                           style={{ 
-                            color: '#1E1E1E', 
+                            color: '#FFFFFF', 
                             letterSpacing: '0.01em',
-                            lineHeight: '1.7'
+                            lineHeight: '1.7',
+                            textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                           }}
                         >
                           {benefit.text}
@@ -269,41 +261,26 @@ const Approach = () => {
           </div>
         </div>
 
-        {/* Bottom callout - cinematic moment */}
-        <div className={`transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          {/* Thin gold separator line */}
+        {/* Bottom statement with dramatic flair */}
+        <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="h-px w-32 mx-auto mb-12"
-            style={{ background: '#F3DA73' }}
-          />
-          
-          <div 
-            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl group"
+            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: '#718DA9',
-              border: '2px solid #F3DA73',
-              boxShadow: '0 12px 40px rgba(113,141,169,0.3), 0 0 60px rgba(243,218,115,0.15)'
+              background: '#FBF8F1',
+              border: '2.5px solid #C9B882',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
             }}
           >
-            {/* Subtle shimmer effect on hover */}
-            <div 
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
-              style={{
-                background: 'linear-gradient(120deg, transparent 0%, rgba(243,218,115,0.1) 50%, transparent 100%)',
-                animation: 'shimmer 3s ease-in-out infinite'
-              }}
-            />
-            
             <div className="relative z-10 text-center">
               <p 
-                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-semibold leading-relaxed"
+                className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold"
                 style={{ 
-                  color: '#FFFFFF', 
-                  letterSpacing: '-0.01em', 
-                  lineHeight: '1.5'
+                  color: '#718DA9', 
+                  letterSpacing: '-0.02em', 
+                  lineHeight: '1.4'
                 }}
               >
-                We don't just identify the leaks. We <span style={{ color: '#F3DA73', fontWeight: 700 }}>architect</span> systems that stop them permanently.
+                This isn't theory. It's clarity, cash flow, and control, delivered fast.
               </p>
             </div>
           </div>

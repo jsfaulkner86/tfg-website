@@ -43,90 +43,99 @@ const Transformation = () => {
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{
-        paddingTop: '100px',
-        paddingBottom: '80px',
-        background: 'linear-gradient(180deg, rgba(243,218,115,0.08) 0%, #FFFFFF 50%, rgba(113,141,169,0.08) 100%)'
+        paddingTop: '120px',
+        paddingBottom: '100px',
+        background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
       }}
     >
-      {/* Sophisticated texture overlay */}
+      {/* Cinematic lighting effect */}
       <div 
-        className="absolute inset-0 pointer-events-none"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at center, rgba(113,141,169,0.08) 0%, transparent 70%)',
+          filter: 'blur(60px)'
+        }}
+      />
+      
+      {/* Ambient particles effect */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-30"
         style={{
           background: `
-            radial-gradient(circle at 70% 20%, rgba(113,141,169,0.06) 0%, transparent 50%),
-            radial-gradient(circle at 30% 80%, rgba(243,218,115,0.05) 0%, transparent 50%),
-            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.8) 0%, transparent 60%)
-          `,
-          opacity: 0.7,
-          mixBlendMode: 'soft-light'
+            radial-gradient(circle at 80% 30%, rgba(113,141,169,0.04) 0%, transparent 25%),
+            radial-gradient(circle at 20% 60%, rgba(243,218,115,0.05) 0%, transparent 30%),
+            radial-gradient(circle at 60% 80%, rgba(113,141,169,0.03) 0%, transparent 20%)
+          `
         }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Refined header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
-            background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.08))',
-            border: '1px solid rgba(113,141,169,0.3)'
+        <div className={`text-center mb-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+            background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
+            border: '1.5px solid rgba(113,141,169,0.25)',
+            boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
           }}>
-            <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#718DA9' }}>
+            <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>
               The Journey Continues
             </span>
           </div>
           
           <h2 
-            className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
+            className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8"
             style={{ 
               color: '#1A2A3A',
-              letterSpacing: '-0.03em',
-              lineHeight: '1.05'
+              letterSpacing: '-0.04em',
+              lineHeight: '1',
+              textShadow: '0 2px 4px rgba(0,0,0,0.02)'
             }}
           >
             The Transformation
           </h2>
           
-          <div className="space-y-4 max-w-4xl mx-auto">
-            <p className="text-lg sm:text-xl font-inter font-light" style={{ 
-              color: '#5882A1', 
-              letterSpacing: '0.01em',
+          <div className="space-y-6 max-w-4xl mx-auto mb-8">
+            <p className="text-xl sm:text-2xl font-inter font-medium" style={{ 
+              color: '#4A6A85', 
+              letterSpacing: '0.02em',
               lineHeight: '1.6'
             }}>
               The Growth Blueprint™ gives you clarity.
             </p>
-            <p className="text-xl sm:text-2xl font-playfair font-semibold italic" style={{ 
+            <p className="text-2xl sm:text-3xl font-playfair font-bold italic" style={{ 
               color: '#1A2A3A',
-              letterSpacing: '-0.01em'
+              letterSpacing: '-0.02em',
+              lineHeight: '1.3'
             }}>
               But the Transformation is where the real magic happens.
             </p>
-            <p className="text-base sm:text-lg font-inter font-light" style={{ 
-              color: '#5882A1', 
-              letterSpacing: '0.01em',
+            <p className="text-lg sm:text-xl font-inter" style={{ 
+              color: '#4A6A85', 
+              letterSpacing: '0.02em',
               lineHeight: '1.7'
             }}>
               Almost every client who completes the Blueprint chooses to continue because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
             </p>
           </div>
           
-          <div className="flex justify-center mt-6">
+          {/* Decorative divider */}
+          <div className="flex items-center justify-center gap-3">
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(113,141,169,0.4))' }} />
             <div 
-              className="relative overflow-hidden rounded-full"
-              style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #718DA9, #F3DA73, #718DA9)' }}
-            >
-              <div 
-                className="absolute inset-0"
-                style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)',
-                  animation: 'shimmer 3s linear infinite'
-                }}
-              />
-            </div>
+              className="w-2 h-2 rounded-full"
+              style={{ background: '#718DA9', boxShadow: '0 0 8px rgba(113,141,169,0.4)' }}
+            />
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, rgba(113,141,169,0.4), transparent)' }} />
           </div>
         </div>
 
         {/* Intro text */}
-        <div className={`mb-12 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className="text-xl sm:text-2xl font-playfair font-semibold text-center mb-3" style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}>
+        <div className={`mb-14 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <p className="text-2xl sm:text-3xl font-playfair font-bold text-center" style={{ 
+            color: '#1A2A3A', 
+            letterSpacing: '-0.02em',
+            lineHeight: '1.3'
+          }}>
             Over 3–6 months, we integrate alongside your team to:
           </p>
         </div>
@@ -156,12 +165,12 @@ const Transformation = () => {
                   
                   {/* Elevated card with multiple layers */}
                   <div
-                    className="relative p-12 rounded-[20px] transition-all duration-500 group-hover:-translate-y-4 h-full flex flex-col items-center text-center overflow-hidden"
+                    className="relative p-12 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col items-center text-center overflow-hidden"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(113,141,169,0.98) 0%, rgba(88,130,161,0.98) 100%)',
-                      border: '2.5px solid #D4B65D',
-                      boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.1)',
-                      minHeight: '280px',
+                      background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
+                      border: '2.5px solid #F3DA73',
+                      boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
+                      minHeight: '300px',
                       backdropFilter: 'blur(10px)'
                     }}
                   >
@@ -201,10 +210,10 @@ const Transformation = () => {
                     </div>
                     
                     <p 
-                      className="text-lg font-inter font-medium leading-relaxed relative z-10"
+                      className="text-lg sm:text-xl font-inter font-medium leading-relaxed relative z-10"
                       style={{ 
-                        color: '#FFFFFF',
-                        letterSpacing: '0.01em',
+                        color: 'rgba(248,248,248,0.95)',
+                        letterSpacing: '0.3px',
                         lineHeight: '1.7',
                         textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                       }}
@@ -226,24 +235,23 @@ const Transformation = () => {
           </div>
         </div>
 
-        {/* Bottom statement with dramatic flair */}
+        {/* Bottom statement */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
+            className="relative py-12 px-12 rounded-3xl mx-auto max-w-5xl"
             style={{
               background: '#FBF8F1',
-              border: '2.5px solid #C9B882',
-              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
+              border: '2px solid #D4B65D',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
             }}
           >
-            
-            <div className="relative z-10 text-center flex items-center justify-center">
+            <div className="text-center">
               <p 
-                className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
+                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4'
+                  lineHeight: '1.5'
                 }}
               >
                 This is where practices stop bleeding time and money and start thriving.

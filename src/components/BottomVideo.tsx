@@ -98,7 +98,7 @@ const BottomVideo = () => {
                 WebkitBackdropFilter: 'blur(20px)'
               }}
             >
-              <div className="text-2xl" style={{ textShadow: '0 2px 8px rgba(243,218,115,0.4)' }}>✓</div>
+              <div className="text-2xl" style={{ color: '#FFFFFF', textShadow: '0 2px 12px rgba(243,218,115,0.6), 0 0 20px rgba(255,255,255,0.4)' }}>✓</div>
               <span className="text-base font-inter font-semibold tracking-wide" style={{ 
                 color: '#F3DA73',
                 textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 0 20px rgba(243,218,115,0.2)'

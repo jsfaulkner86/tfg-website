@@ -51,22 +51,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
-          {/* Urgency Badge */}
-          <div 
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full mb-8 animate-[fade-in_1.2s_ease-out_0.4s_forwards]"
-            style={{
-              background: 'rgba(243,218,115,0.95)',
-              border: '2px solid rgba(255,255,255,0.3)',
-              boxShadow: '0 8px 32px rgba(243,218,115,0.4), 0 0 60px rgba(243,218,115,0.3)',
-              backdropFilter: 'blur(10px)'
-            }}
-          >
-            <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-            <span className="text-sm font-inter font-bold uppercase tracking-wider" style={{ color: '#1A2A3A' }}>
-              Limited Availability Book This Month
-            </span>
-          </div>
-
           <h1 
             className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase relative overflow-hidden" 
             style={{ 

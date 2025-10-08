@@ -60,10 +60,11 @@ const BottomVideo = () => {
             background: 'rgba(255,255,255,0.02)',
             border: '1px solid rgba(243,218,115,0.2)'
           }}>
-              <p className="text-sm sm:text-base font-inter font-normal text-center" style={{
-              color: 'rgba(255,255,255,0.85)',
+              <p className="text-lg sm:text-xl md:text-2xl font-inter font-medium text-center" style={{
+              color: 'rgba(255,255,255,0.95)',
               letterSpacing: '0.02em',
-              lineHeight: '1.7'
+              lineHeight: '1.6',
+              textShadow: '0 2px 8px rgba(0,0,0,0.3)'
             }}>We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do</p>
             </div>
 

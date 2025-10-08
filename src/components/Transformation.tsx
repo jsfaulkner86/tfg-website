@@ -271,7 +271,7 @@ const Transformation = () => {
           >
             <div className="text-center">
               <p 
-                className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-playfair font-bold whitespace-nowrap"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 

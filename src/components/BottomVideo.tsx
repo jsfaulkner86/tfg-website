@@ -87,37 +87,62 @@ const BottomVideo = () => {
               If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
               <Button 
                 onClick={scrollToContact}
-                className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold"
+                className="text-xl sm:text-2xl px-16 py-10 rounded-2xl group transition-all duration-500 font-semibold"
                 style={{ 
-                  boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
+                  background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
+                  color: '#2C2C2C',
+                  boxShadow: '0 12px 40px rgba(243,218,115,0.5), 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5)',
+                  border: '2px solid rgba(255,255,255,0.3)'
                 }}
               >
-                Book a Consultation
-                <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
+                Book Your Growth Blueprint™ Call
+                <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-300 group-hover:translate-x-2" />
               </Button>
               
-              <div className="space-y-3 pt-4">
-                <p 
-                  className="text-lg sm:text-xl font-inter"
-                  style={{ 
-                    color: 'rgba(255,255,255,0.9)',
-                    textShadow: '0 2px 4px rgba(0,0,0,0.3)'
-                  }}
-                >
-                  📩 <strong style={{ color: '#FFFFFF' }}>John Faulkner</strong> – Co-Founder, Healthcare Growth Architect
-                </p>
-                <p 
-                  className="text-lg sm:text-xl font-inter"
-                  style={{ 
-                    color: 'rgba(255,255,255,0.9)',
-                    textShadow: '0 2px 4px rgba(0,0,0,0.3)'
-                  }}
-                >
-                  📩 <strong style={{ color: '#FFFFFF' }}>Dr. Nicole Faulkner</strong> – Co-Founder, Chief Clinical Officer
-                </p>
+              {/* Elegant contact information */}
+              <div className="pt-8 space-y-6 max-w-3xl mx-auto">
+                <div className="h-px w-20 mx-auto" style={{
+                  background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.6), transparent)'
+                }} />
+                
+                <div className="space-y-4">
+                  <div className="space-y-1">
+                    <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
+                      textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                      letterSpacing: '-0.01em'
+                    }}>
+                      John Faulkner
+                    </p>
+                    <p className="text-base sm:text-lg font-inter text-white/80" style={{
+                      textShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                      letterSpacing: '0.02em'
+                    }}>
+                      Co-Founder, Healthcare Growth Architect
+                    </p>
+                  </div>
+                  
+                  <div className="h-px w-12 mx-auto" style={{
+                    background: 'rgba(243,218,115,0.3)'
+                  }} />
+                  
+                  <div className="space-y-1">
+                    <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
+                      textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+                      letterSpacing: '-0.01em'
+                    }}>
+                      Dr. Nicole Faulkner
+                    </p>
+                    <p className="text-base sm:text-lg font-inter text-white/80" style={{
+                      textShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                      letterSpacing: '0.02em'
+                    }}>
+                      Co-Founder, Chief Clinical Officer
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

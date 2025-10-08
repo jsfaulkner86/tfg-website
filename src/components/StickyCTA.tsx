@@ -71,7 +71,7 @@ const StickyCTA = () => {
             className="group transition-all duration-300 font-semibold rounded-full"
             style={{
               background: '#F3DA73',
-              color: '#2C2C2C',
+              color: '#5882A1',
               padding: '0.75rem 2rem',
               boxShadow: '0 4px 16px rgba(243,218,115,0.4)',
               border: 'none'
@@ -87,7 +87,7 @@ const StickyCTA = () => {
           >
             <span className="hidden sm:inline">Book Your Consultation</span>
             <span className="sm:hidden">Book Now</span>
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" style={{ color: '#5882A1' }} />
           </Button>
         </div>
       </div>

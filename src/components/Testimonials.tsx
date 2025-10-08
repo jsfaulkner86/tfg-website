@@ -198,10 +198,28 @@ const Testimonials = () => {
         </div>
 
         {/* Bottom trust statement */}
-        <div className={`mt-16 text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className="text-lg font-inter font-medium" style={{ color: '#718DA9' }}>
-            Join the visionary healthcare leaders who chose clarity over chaos
-          </p>
+        <div className={`mt-16 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div 
+            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
+            style={{
+              background: '#FBF8F1',
+              border: '2.5px solid #C9B882',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
+            }}
+          >
+            <div className="relative z-10 text-center">
+              <p 
+                className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
+                style={{ 
+                  color: '#718DA9', 
+                  letterSpacing: '-0.02em', 
+                  lineHeight: '1.4'
+                }}
+              >
+                Join the visionary healthcare leaders who chose clarity over chaos
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

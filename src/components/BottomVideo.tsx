@@ -63,7 +63,22 @@ const BottomVideo = () => {
           }`}
         >
           <div className="space-y-10">
-            <h2 
+            {/* Premium badge */}
+            <div className="inline-block mb-2 px-6 py-2.5 rounded-full" style={{
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.25), rgba(243,218,115,0.15))',
+              border: '1.5px solid rgba(243,218,115,0.6)',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 4px 20px rgba(243,218,115,0.3), inset 0 1px 0 rgba(255,255,255,0.2)'
+            }}>
+              <span className="text-sm font-inter font-semibold tracking-wider uppercase" style={{ 
+                color: '#F3DA73',
+                textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+              }}>
+                Your First Step
+              </span>
+            </div>
+
+            <h2
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6"
               style={{ 
                 color: '#FFFFFF',

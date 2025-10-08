@@ -89,17 +89,19 @@ const BottomVideo = () => {
 
             {/* Risk Reversal */}
             <div 
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full mb-10"
+              className="inline-flex items-center gap-4 px-8 py-5 rounded-2xl mb-10"
               style={{
-                background: 'rgba(243,218,115,0.15)',
-                border: '1.5px solid rgba(243,218,115,0.4)',
-                backdropFilter: 'blur(10px)'
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.12) 0%, rgba(243,218,115,0.08) 100%)',
+                border: '2px solid rgba(243,218,115,0.5)',
+                backdropFilter: 'blur(20px)',
+                boxShadow: '0 8px 32px rgba(243,218,115,0.2), 0 4px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1)',
+                WebkitBackdropFilter: 'blur(20px)'
               }}
             >
-              <div className="text-2xl">✓</div>
-              <span className="text-base font-inter font-semibold" style={{ 
+              <div className="text-2xl" style={{ textShadow: '0 2px 8px rgba(243,218,115,0.4)' }}>✓</div>
+              <span className="text-base font-inter font-semibold tracking-wide" style={{ 
                 color: '#F3DA73',
-                textShadow: '0 2px 8px rgba(0,0,0,0.3)'
+                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 0 20px rgba(243,218,115,0.2)'
               }}>
                 We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do
               </span>

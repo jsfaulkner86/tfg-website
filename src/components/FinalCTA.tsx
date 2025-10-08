@@ -64,40 +64,60 @@ const FinalCTA = () => {
         </div>
           
         {/* Elegant contact cards */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto pt-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto pt-8">
           <div 
-            className="group relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-2"
+            className="group relative p-10 rounded-3xl transition-all duration-500 hover:-translate-y-3"
             style={{
-              background: 'rgba(255,255,255,0.1)',
-              border: '2px solid rgba(255,255,255,0.2)',
-              backdropFilter: 'blur(20px)',
-              boxShadow: '0 8px 30px rgba(0,0,0,0.2)'
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05))',
+              border: '2px solid rgba(243,218,115,0.4)',
+              backdropFilter: 'blur(30px)',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2)'
             }}
           >
-            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.1), transparent)',
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.15), transparent)',
             }} />
-            <div className="relative z-10">
-              <p className="text-lg font-inter font-semibold text-white mb-2">John Faulkner</p>
-              <p className="text-base font-inter text-white/80">Co-Founder, Healthcare Growth Architect</p>
+            <div className="relative z-10 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.3), rgba(243,218,115,0.1))',
+                border: '2px solid rgba(243,218,115,0.5)'
+              }}>
+                <span className="text-3xl">👨‍💼</span>
+              </div>
+              <p className="text-xl sm:text-2xl font-playfair font-bold text-white mb-2" style={{
+                textShadow: '0 2px 8px rgba(0,0,0,0.3)'
+              }}>John Faulkner</p>
+              <p className="text-base sm:text-lg font-inter text-white/90" style={{
+                textShadow: '0 2px 6px rgba(0,0,0,0.2)'
+              }}>Co-Founder, Healthcare Growth Architect</p>
             </div>
           </div>
           
           <div 
-            className="group relative p-8 rounded-2xl transition-all duration-500 hover:-translate-y-2"
+            className="group relative p-10 rounded-3xl transition-all duration-500 hover:-translate-y-3"
             style={{
-              background: 'rgba(255,255,255,0.1)',
-              border: '2px solid rgba(255,255,255,0.2)',
-              backdropFilter: 'blur(20px)',
-              boxShadow: '0 8px 30px rgba(0,0,0,0.2)'
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05))',
+              border: '2px solid rgba(243,218,115,0.4)',
+              backdropFilter: 'blur(30px)',
+              boxShadow: '0 10px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2)'
             }}
           >
-            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.1), transparent)',
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.15), transparent)',
             }} />
-            <div className="relative z-10">
-              <p className="text-lg font-inter font-semibold text-white mb-2">Dr. Nicole Faulkner</p>
-              <p className="text-base font-inter text-white/80">Co-Founder, Chief Clinical Officer</p>
+            <div className="relative z-10 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.3), rgba(243,218,115,0.1))',
+                border: '2px solid rgba(243,218,115,0.5)'
+              }}>
+                <span className="text-3xl">👩‍⚕️</span>
+              </div>
+              <p className="text-xl sm:text-2xl font-playfair font-bold text-white mb-2" style={{
+                textShadow: '0 2px 8px rgba(0,0,0,0.3)'
+              }}>Dr. Nicole Faulkner</p>
+              <p className="text-base sm:text-lg font-inter text-white/90" style={{
+                textShadow: '0 2px 6px rgba(0,0,0,0.2)'
+              }}>Co-Founder, Chief Clinical Officer</p>
             </div>
           </div>
         </div>

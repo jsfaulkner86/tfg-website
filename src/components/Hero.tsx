@@ -63,7 +63,7 @@ const Hero = () => {
           >
             <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
             <span className="text-sm font-inter font-bold uppercase tracking-wider" style={{ color: '#2C2C2C' }}>
-              Limited Availability — Book This Month
+              Limited Availability Book This Month
             </span>
           </div>
 

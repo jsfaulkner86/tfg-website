@@ -3,7 +3,7 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "The Faulkner Group uncovered $780K in lost revenue in just 30 days. Within 90 days, we had systems in place that permanently fixed the leaks. This wasn't consulting—this was transformation.",
+    quote: "The Faulkner Group uncovered $780K in lost revenue in just 30 days. Within 90 days, we had systems in place that permanently fixed the leaks. This wasn't consulting, this was transformation.",
     author: "Medical Director",
     role: "Women's Health Practice",
     location: "Texas",
@@ -17,7 +17,7 @@ const testimonials = [
     result: "34% margin increase"
   },
   {
-    quote: "John and Nicole don't just understand healthcare—they live it. Their dual perspective as both clinical expert and growth architect is exactly what modern practices need.",
+    quote: "John and Nicole don't just understand healthcare, they live it. Their dual perspective as both clinical expert and growth architect is exactly what modern practices need.",
     author: "Chief Medical Officer",
     role: "OB/GYN Group Practice",
     location: "Florida",
@@ -94,7 +94,7 @@ const Testimonials = () => {
             letterSpacing: '0.01em',
             lineHeight: '1.6'
           }}>
-            Our clients don't just see improvement—they experience transformation that compounds year after year.
+            Our clients don't just see improvement, they experience transformation that compounds year after year.
           </p>
         </div>
 

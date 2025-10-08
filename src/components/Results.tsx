@@ -122,7 +122,7 @@ const Results = () => {
                   />
                   
                   {/* Enhanced Icon with glow */}
-                  <div className="mb-8 relative">
+                  <div className="flex justify-center mb-8 relative">
                     {/* Icon glow */}
                     <div 
                       className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -149,7 +149,7 @@ const Results = () => {
                   </div>
                   
                   {/* Stat */}
-                  <div className="mb-4 relative z-10">
+                  <div className="mb-4 relative z-10 text-center">
                     <p 
                       className="text-3xl sm:text-4xl font-playfair font-bold"
                       style={{ 
@@ -164,7 +164,7 @@ const Results = () => {
                   
                   {/* Description */}
                   <p 
-                    className="text-base font-inter font-medium leading-relaxed relative z-10 flex-1"
+                    className="text-base font-inter font-medium leading-relaxed relative z-10 flex-1 text-center"
                     style={{ 
                       color: '#2C2C2C',
                       letterSpacing: '0.01em',

@@ -101,7 +101,7 @@ const BottomVideo = () => {
                 color: '#F3DA73',
                 textShadow: '0 2px 8px rgba(0,0,0,0.3)'
               }}>
-                30-Day Clarity Guarantee — If we don't uncover actionable insights, you don't pay
+                We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do
               </span>
             </div>
 

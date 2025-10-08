@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="mb-12 flex flex-wrap justify-center gap-8 text-white/90">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+              <span className="text-base font-inter font-bold" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)', color: 'rgba(255, 255, 255, 0.95)' }}>
                 $50M+ Revenue Recovered
               </span>
             </div>

@@ -225,7 +225,7 @@ const Approach = () => {
                         {benefit.type === 'bullets' ? (
                           <div className="flex flex-col flex-1">
                             <p 
-                              className="text-lg sm:text-xl font-inter leading-relaxed mb-4 text-center"
+                              className="text-lg sm:text-xl font-inter leading-relaxed mb-3 text-center"
                               style={{ 
                                 color: 'rgba(248,248,248,0.95)', 
                                 letterSpacing: '0.3px',
@@ -234,7 +234,7 @@ const Approach = () => {
                             >
                               {benefit.text}
                             </p>
-                            <p className="font-bold text-2xl sm:text-3xl text-center mb-8" style={{ 
+                            <p className="font-bold text-2xl sm:text-3xl text-center mb-6" style={{ 
                               color: '#F3DA73',
                               textShadow: '0 2px 4px rgba(0,0,0,0.2)',
                               lineHeight: '1.3'
@@ -266,7 +266,7 @@ const Approach = () => {
                             </div>
                           </div>
                         ) : (
-                          <div className="flex flex-col items-center justify-center h-full space-y-6">
+                          <div className="flex flex-col items-center justify-center h-full space-y-4">
                             <p 
                               className="text-lg sm:text-xl font-inter leading-relaxed text-center"
                               style={{ 

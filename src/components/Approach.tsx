@@ -219,31 +219,38 @@ const Approach = () => {
                         </div>
                       </div>
 
-                      <div className="relative z-10 flex-1 flex flex-col" style={{
+                      <div className="relative z-10 flex flex-col h-full" style={{
                         animation: `fade-in 0.6s ease-out ${index * 200 + 600}ms backwards, slide-up 0.6s ease-out ${index * 200 + 600}ms backwards`
                       }}>
-                        {benefit.type === 'bullets' ? (
-                          <div className="flex flex-col h-full">
-                            <div className="mb-6">
-                              <p 
-                                className="text-lg sm:text-xl font-inter leading-relaxed mb-3 text-center"
-                                style={{ 
-                                  color: 'rgba(248,248,248,0.95)', 
-                                  letterSpacing: '0.3px',
-                                  lineHeight: '1.6'
-                                }}
-                              >
-                                {benefit.text}
-                              </p>
-                              <p className="font-bold text-2xl sm:text-3xl text-center" style={{ 
-                                color: '#F3DA73',
-                                textShadow: '0 2px 4px rgba(0,0,0,0.2)',
-                                lineHeight: '1.3'
-                              }}>
-                                {benefit.emphasis}
-                              </p>
-                            </div>
-                            <div className="space-y-4 flex-1 flex flex-col justify-center">
+                        {/* Fixed height intro text section */}
+                        <div className="mb-3" style={{ minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <p 
+                            className="text-lg sm:text-xl font-inter leading-relaxed text-center"
+                            style={{ 
+                              color: 'rgba(248,248,248,0.95)', 
+                              letterSpacing: '0.3px',
+                              lineHeight: '1.6'
+                            }}
+                          >
+                            {benefit.text}
+                          </p>
+                        </div>
+                        
+                        {/* Fixed height gold emphasis - perfectly aligned */}
+                        <div className="mb-8" style={{ minHeight: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                          <p className="font-bold text-2xl sm:text-3xl text-center font-playfair" style={{ 
+                            color: '#F3DA73',
+                            textShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                            lineHeight: '1.3'
+                          }}>
+                            {benefit.emphasis}
+                          </p>
+                        </div>
+                        
+                        {/* Flexible bottom content area */}
+                        <div className="flex-1 flex flex-col justify-start">
+                          {benefit.type === 'bullets' ? (
+                            <div className="space-y-4">
                               {benefit.bullets.map((bullet, idx) => (
                                 <div key={idx} className="flex items-start gap-4">
                                   <div 
@@ -266,40 +273,16 @@ const Approach = () => {
                                 </div>
                               ))}
                             </div>
-                          </div>
-                        ) : (
-                          <div className="flex flex-col h-full">
-                            <div className="mb-6">
-                              <p 
-                                className="text-lg sm:text-xl font-inter leading-relaxed mb-3 text-center"
-                                style={{ 
-                                  color: 'rgba(248,248,248,0.95)', 
-                                  letterSpacing: '0.3px',
-                                  lineHeight: '1.6',
-                                  textShadow: '0 2px 8px rgba(0,0,0,0.15)'
-                                }}
-                              >
-                                {benefit.text}
-                              </p>
-                              <p className="text-2xl sm:text-3xl font-playfair font-bold text-center" style={{ 
-                                color: '#F3DA73',
-                                textShadow: '0 2px 8px rgba(0,0,0,0.3)',
-                                lineHeight: '1.3'
-                              }}>
-                                {benefit.emphasis}
-                              </p>
-                            </div>
-                            <div className="flex-1 flex flex-col justify-center">
-                              <p className="text-base sm:text-lg font-inter text-center" style={{ 
-                                color: 'rgba(248,248,248,0.95)',
-                                letterSpacing: '0.3px',
-                                lineHeight: '1.7'
-                              }}>
-                                {benefit.suffix}
-                              </p>
-                            </div>
-                          </div>
-                        )}
+                          ) : (
+                            <p className="text-base sm:text-lg font-inter text-center" style={{ 
+                              color: 'rgba(248,248,248,0.95)',
+                              letterSpacing: '0.3px',
+                              lineHeight: '1.7'
+                            }}>
+                              {benefit.suffix}
+                            </p>
+                          )}
+                        </div>
                       </div>
                       
                       {/* Bottom accent line on hover */}

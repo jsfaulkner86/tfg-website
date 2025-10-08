@@ -33,17 +33,17 @@ const Hero = () => {
           playsInline 
           className="absolute inset-0 w-full h-full object-cover"
           style={{
-            filter: 'brightness(0.65) contrast(1.1)'
+            filter: 'brightness(1.15) contrast(1.1)'
           }}
         >
           <source src="/hero-beach.mp4" type="video/mp4" />
         </video>
         
-        {/* Dark overlay for text readability */}
+        {/* Subtle vignette - only outer 10% */}
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(circle at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.45) 100%)'
+            background: 'radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.15) 100%)'
           }}
         />
       </div>
@@ -90,30 +90,30 @@ const Hero = () => {
           <p 
             className="mb-6 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
             style={{ 
-              color: 'rgba(255, 255, 255, 0.95)',
-              textShadow: '0 4px 16px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)'
+              color: 'rgba(255, 255, 255, 0.85)',
+              textShadow: '0 4px 8px rgba(0,0,0,0.35)'
             }}
           >
             We help healthcare leaders escape broken systems & build organizations that thrive.
           </p>
           
           {/* Trust indicators */}
-          <div className="mb-12 flex flex-wrap justify-center gap-8 text-white/95">
+          <div className="mb-12 flex flex-wrap justify-center gap-8 text-white/90">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.8), 0 2px 6px rgba(0,0,0,0.6)' }}>
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 $50M+ Revenue Recovered
               </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.8), 0 2px 6px rgba(0,0,0,0.6)' }}>
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 23+ Years Combined Expertise
               </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.8), 0 2px 6px rgba(0,0,0,0.6)' }}>
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
                 6-Figure Recovery Guarantee
               </span>
             </div>

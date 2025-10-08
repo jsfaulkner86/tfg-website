@@ -4,8 +4,8 @@ import { TrendingUp, Award, Users } from "lucide-react";
 const highlights = [
   {
     icon: TrendingUp,
-    stat: "$50M+",
-    text: "Uncovered in lost revenue across hospitals, health centers, and specialty practices"
+    stat: "$50M+ Recovered",
+    text: "Uncovered in lost revenue across hospitals, health systems, and specialty practices — by fixing inefficiencies hiding in plain sight."
   },
   {
     icon: Award,

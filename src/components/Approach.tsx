@@ -139,7 +139,7 @@ const Approach = () => {
               textShadow: '0 1px 2px rgba(0,0,0,0.03)'
             }}
           >
-            What you receive:
+            Inside your Blueprint:
           </h3>
           
           <div className="max-w-6xl mx-auto relative">

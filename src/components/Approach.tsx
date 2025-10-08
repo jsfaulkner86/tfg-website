@@ -149,7 +149,7 @@ const Approach = () => {
               transform: 'translateY(-50%)'
             }} />
             
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-3 gap-10 mb-16">
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
@@ -172,8 +172,9 @@ const Approach = () => {
                     className="relative rounded-[24px] transition-all duration-300 hover:-translate-y-2 h-full flex flex-col overflow-hidden"
                     style={{
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
-                      border: '1.5px solid #F3DA73',
-                      boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
+                      border: '2.5px solid #F3DA73',
+                      boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
+                      backdropFilter: 'blur(10px)'
                     }}
                   >
                     {/* Inner lighting gradient for depth */}
@@ -184,9 +185,9 @@ const Approach = () => {
                       }}
                     />
                     
-                    <div className="relative p-8 sm:p-10 flex flex-col h-full">
+                    <div className="relative p-10 sm:p-12 flex flex-col h-full">
                       {/* Frosted glass number badge */}
-                      <div className="flex justify-center mb-8 relative" style={{
+                      <div className="flex justify-center mb-10 relative" style={{
                         animation: `fade-in 0.6s ease-out ${index * 200 + 400}ms backwards`
                       }}>
                         {/* Badge glow on hover */}
@@ -199,7 +200,7 @@ const Approach = () => {
                           }}
                         />
                         <div 
-                          className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                          className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                           style={{
                             background: 'rgba(255,255,255,0.15)',
                             backdropFilter: 'blur(10px)',
@@ -207,7 +208,7 @@ const Approach = () => {
                             boxShadow: '0 4px 16px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 0 20px rgba(243,218,115,0.1)'
                           }}
                         >
-                          <span className="text-2xl font-playfair font-bold" style={{ 
+                          <span className="text-3xl font-playfair font-bold" style={{ 
                             color: '#F3DA73',
                             textShadow: '0 2px 8px rgba(0,0,0,0.2)'
                           }}>
@@ -222,37 +223,38 @@ const Approach = () => {
                         {benefit.type === 'bullets' ? (
                           <div className="flex flex-col flex-1">
                             <p 
-                              className="text-base sm:text-lg font-inter leading-relaxed mb-6 text-center"
+                              className="text-lg sm:text-xl font-inter leading-relaxed mb-8 text-center"
                               style={{ 
-                                color: 'rgba(248,248,248,0.9)', 
+                                color: 'rgba(248,248,248,0.95)', 
                                 letterSpacing: '0.3px',
-                                lineHeight: '1.6'
+                                lineHeight: '1.7'
                               }}
                             >
                               {benefit.text}
-                              <span className="font-bold text-xl block mt-2" style={{ 
-                                color: '#F3DA73',
-                                textShadow: '0 2px 4px rgba(0,0,0,0.2)'
-                              }}>
-                                {benefit.emphasis}
-                              </span>
                             </p>
-                            <div className="space-y-3.5 mt-auto">
+                            <p className="font-bold text-2xl sm:text-3xl text-center mb-8" style={{ 
+                              color: '#F3DA73',
+                              textShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                              lineHeight: '1.3'
+                            }}>
+                              {benefit.emphasis}
+                            </p>
+                            <div className="space-y-4 mt-auto">
                               {benefit.bullets.map((bullet, idx) => (
-                                <div key={idx} className="flex items-start gap-3">
+                                <div key={idx} className="flex items-start gap-4">
                                   <div 
-                                    className="w-2 h-2 rounded-full flex-shrink-0 mt-1.5"
+                                    className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-2"
                                     style={{ 
                                       background: '#F3DA73',
-                                      boxShadow: '0 0 8px rgba(243,218,115,0.4)'
+                                      boxShadow: '0 0 8px rgba(243,218,115,0.5)'
                                     }}
                                   />
                                   <p 
-                                    className="text-sm sm:text-base font-inter"
+                                    className="text-base sm:text-lg font-inter"
                                     style={{ 
-                                      color: 'rgba(248,248,248,0.9)',
+                                      color: 'rgba(248,248,248,0.95)',
                                       letterSpacing: '0.3px',
-                                      lineHeight: '1.6'
+                                      lineHeight: '1.8'
                                     }}
                                   >
                                     {bullet}
@@ -262,23 +264,31 @@ const Approach = () => {
                             </div>
                           </div>
                         ) : (
-                          <div className="flex items-center justify-center h-full">
+                          <div className="flex flex-col items-center justify-center h-full space-y-6">
                             <p 
-                              className="text-lg sm:text-xl font-playfair font-bold text-center leading-relaxed"
+                              className="text-xl sm:text-2xl font-playfair font-semibold text-center leading-relaxed"
                               style={{ 
                                 color: '#FFFFFF', 
                                 letterSpacing: '0.3px',
-                                lineHeight: '1.6',
+                                lineHeight: '1.5',
                                 textShadow: '0 2px 8px rgba(0,0,0,0.2)'
                               }}
                             >
                               {benefit.text}
-                              <span className="block mt-2" style={{ color: '#F3DA73' }}>
-                                {benefit.emphasis}
-                              </span>
-                              <span className="font-normal text-base block mt-2" style={{ color: 'rgba(248,248,248,0.9)' }}>
-                                {benefit.suffix}
-                              </span>
+                            </p>
+                            <p className="text-3xl sm:text-4xl font-playfair font-bold text-center" style={{ 
+                              color: '#F3DA73',
+                              textShadow: '0 2px 8px rgba(0,0,0,0.3)',
+                              lineHeight: '1.2'
+                            }}>
+                              {benefit.emphasis}
+                            </p>
+                            <p className="text-lg sm:text-xl font-inter text-center" style={{ 
+                              color: 'rgba(248,248,248,0.95)',
+                              letterSpacing: '0.3px',
+                              lineHeight: '1.8'
+                            }}>
+                              {benefit.suffix}
                             </p>
                           </div>
                         )}

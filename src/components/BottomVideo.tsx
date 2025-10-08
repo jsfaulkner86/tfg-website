@@ -48,14 +48,6 @@ const BottomVideo = () => {
         >
           <source src="/cliff-aerial.mp4" type="video/mp4" />
         </video>
-        
-        {/* Sophisticated gradient overlay */}
-        <div 
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(180deg, rgba(44,44,44,0.5) 0%, rgba(44,44,44,0.7) 50%, rgba(44,44,44,0.85) 100%)'
-          }}
-        />
       </div>
 
       {/* Content Overlay */}

@@ -43,7 +43,7 @@ const BottomVideo = () => {
           playsInline 
           className="absolute inset-0 w-full h-full object-cover brightness-75"
         >
-          <source src="/hero-beach.mp4" type="video/mp4" />
+          <source src="/cliff-aerial.mp4" type="video/mp4" />
         </video>
         
         {/* Sophisticated gradient overlay */}

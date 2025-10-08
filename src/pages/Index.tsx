@@ -3,9 +3,11 @@ import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
 import Problem from "@/components/Problem";
 import Approach from "@/components/Approach";
+import Testimonials from "@/components/Testimonials";
 import Transformation from "@/components/Transformation";
 import Results from "@/components/Results";
 import BottomVideo from "@/components/BottomVideo";
+import StickyCTA from "@/components/StickyCTA";
 
 const Index = () => {
   return (
@@ -16,10 +18,12 @@ const Index = () => {
         <Mission />
         <Problem />
         <Approach />
+        <Testimonials />
         <Transformation />
         <Results />
         <BottomVideo />
       </main>
+      <StickyCTA />
     </>
   );
 };

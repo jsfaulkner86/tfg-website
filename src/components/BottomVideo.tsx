@@ -76,7 +76,7 @@ const BottomVideo = () => {
             </h2>
             
             <p 
-              className="text-xl sm:text-2xl md:text-3xl font-inter font-light mb-10"
+              className="text-xl sm:text-2xl md:text-3xl font-inter font-light mb-6"
               style={{ 
                 color: 'rgba(255,255,255,0.95)',
                 letterSpacing: '0.01em',
@@ -86,6 +86,24 @@ const BottomVideo = () => {
             >
               If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
             </p>
+
+            {/* Risk Reversal */}
+            <div 
+              className="inline-flex items-center gap-3 px-6 py-3 rounded-full mb-10"
+              style={{
+                background: 'rgba(243,218,115,0.15)',
+                border: '1.5px solid rgba(243,218,115,0.4)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
+              <div className="text-2xl">✓</div>
+              <span className="text-base font-inter font-semibold" style={{ 
+                color: '#F3DA73',
+                textShadow: '0 2px 8px rgba(0,0,0,0.3)'
+              }}>
+                30-Day Clarity Guarantee — If we don't uncover actionable insights, you don't pay
+              </span>
+            </div>
 
             <div className="space-y-8">
               <Button 

@@ -51,6 +51,22 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
+          {/* Urgency Badge */}
+          <div 
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full mb-8 animate-[fade-in_1.2s_ease-out_0.4s_forwards]"
+            style={{
+              background: 'rgba(243,218,115,0.95)',
+              border: '2px solid rgba(255,255,255,0.3)',
+              boxShadow: '0 8px 32px rgba(243,218,115,0.4), 0 0 60px rgba(243,218,115,0.3)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
+            <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="text-sm font-inter font-bold uppercase tracking-wider" style={{ color: '#2C2C2C' }}>
+              Limited Availability — Book This Month
+            </span>
+          </div>
+
           <h1 
             className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase relative overflow-hidden" 
             style={{ 
@@ -72,7 +88,7 @@ const Hero = () => {
             </span>
           </h1>
           <p 
-            className="mb-12 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
+            className="mb-6 text-lg font-light sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
             style={{ 
               color: 'rgba(255, 255, 255, 0.85)',
               textShadow: '0 4px 8px rgba(0,0,0,0.35)'
@@ -80,7 +96,30 @@ const Hero = () => {
           >
             We help healthcare leaders escape broken systems & build organizations that thrive.
           </p>
-          <Button 
+          
+          {/* Trust indicators */}
+          <div className="mb-12 flex flex-wrap justify-center gap-8 text-white/90">
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+                $50M+ Revenue Recovered
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+                23+ Years Combined Expertise
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
+              <span className="text-sm font-inter font-medium" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+                30-Day Clarity Guarantee
+              </span>
+            </div>
+          </div>
+
+          <Button
             onClick={scrollToContact} 
             className="text-xl rounded-lg group transition-all duration-300 font-semibold relative overflow-hidden border-0"
             style={{ 

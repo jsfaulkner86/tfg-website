@@ -110,27 +110,25 @@ const Approach = () => {
             The Growth Blueprint™
           </h2>
           
-          <p className="text-xl sm:text-2xl font-inter font-light max-w-3xl mx-auto mb-8" style={{ 
-            color: '#5882A1', 
+          <p className="text-xl sm:text-2xl font-inter font-medium max-w-4xl mx-auto mb-8" style={{ 
+            color: '#4A6A85', 
             letterSpacing: '0.02em',
-            lineHeight: '1.7'
+            lineHeight: '1.6'
           }}>
-            The Blueprint is the entry point: 30 days to clarity, guaranteed.
+            The Blueprint is the entry point:{' '}
+            <span className="font-bold" style={{ color: '#F3DA73' }}>30 days</span>
+            {' '}to clarity,{' '}
+            <span className="font-bold" style={{ color: '#F3DA73' }}>guaranteed</span>.
           </p>
           
-          <div className="flex justify-center">
+          {/* Decorative divider */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4))' }} />
             <div 
-              className="relative overflow-hidden rounded-full"
-              style={{ width: '100px', height: '2px', background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
-            >
-              <div 
-                className="absolute inset-0"
-                style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent)',
-                  animation: 'shimmer 3s linear infinite'
-                }}
-              />
-            </div>
+              className="w-2 h-2 rounded-full"
+              style={{ background: '#F3DA73', boxShadow: '0 0 8px rgba(243,218,115,0.4)' }}
+            />
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, rgba(243,218,115,0.4), transparent)' }} />
           </div>
         </div>
 
@@ -140,7 +138,7 @@ const Approach = () => {
             className="text-3xl sm:text-4xl font-playfair font-bold mb-12 text-center"
             style={{ 
               color: '#1A2A3A', 
-              letterSpacing: '-0.03em',
+              letterSpacing: '0.05em',
               textShadow: '0 1px 2px rgba(0,0,0,0.03)'
             }}
           >

@@ -266,7 +266,7 @@ const Approach = () => {
           <div 
             className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
             style={{
-              background: '#FAF9F6',
+              background: '#FBF8F1',
               border: '2.5px solid #C9B882',
               boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
             }}

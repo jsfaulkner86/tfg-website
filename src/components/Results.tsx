@@ -5,17 +5,17 @@ const highlights = [
   {
     icon: TrendingUp,
     stat: "$50M+",
-    text: "uncovered in lost revenue across hospitals, health centers, and specialty practices"
+    text: "Uncovered in lost revenue across hospitals, health centers, and specialty practices"
   },
   {
     icon: Award,
     stat: "23+ years",
-    text: "combined expertise: 13+ years of healthcare growth architecture + 10+ years of physician leadership"
+    text: "Combined expertise: 13+ years of healthcare growth architecture + 10+ years of physician leadership"
   },
   {
     icon: Users,
     stat: "Boutique",
-    text: "high-touch approach that blends clinical insight with growth strategy"
+    text: "High-touch approach that blends clinical insight with growth strategy"
   }
 ];
 

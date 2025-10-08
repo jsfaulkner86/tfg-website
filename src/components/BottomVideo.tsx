@@ -87,19 +87,18 @@ const BottomVideo = () => {
               If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
             </p>
 
-            {/* Risk Reversal - Refined */}
+            {/* Risk Reversal - Ultra Refined */}
             <div 
-              className="px-10 py-6 rounded-xl mb-10 max-w-4xl mx-auto"
+              className="px-8 py-5 rounded-lg mb-10 max-w-3xl mx-auto"
               style={{
-                background: 'rgba(255,255,255,0.03)',
-                border: '1.5px solid rgba(243,218,115,0.3)',
-                backdropFilter: 'blur(10px)',
+                background: 'rgba(255,255,255,0.02)',
+                border: '1px solid rgba(243,218,115,0.2)',
               }}
             >
-              <p className="text-base sm:text-lg font-inter font-medium text-center" style={{ 
-                color: 'rgba(255,255,255,0.9)',
-                letterSpacing: '0.01em',
-                lineHeight: '1.6'
+              <p className="text-sm sm:text-base font-inter font-normal text-center" style={{ 
+                color: 'rgba(255,255,255,0.85)',
+                letterSpacing: '0.02em',
+                lineHeight: '1.7'
               }}>
                 We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do
               </p>

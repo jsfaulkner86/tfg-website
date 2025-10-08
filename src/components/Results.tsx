@@ -166,7 +166,7 @@ const Results = () => {
                   <p 
                     className="text-base font-inter font-medium leading-relaxed relative z-10 flex-1 text-center"
                     style={{ 
-                      color: '#2C2C2C',
+                      color: '#1A2A3A',
                       letterSpacing: '0.01em',
                       lineHeight: '1.7'
                     }}

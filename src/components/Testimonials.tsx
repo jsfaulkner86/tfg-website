@@ -81,7 +81,7 @@ const Testimonials = () => {
           <h2 
             className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
             style={{ 
-              color: '#2C2C2C',
+              color: '#1A2A3A',
               letterSpacing: '-0.03em',
               lineHeight: '1.05'
             }}
@@ -151,7 +151,7 @@ const Testimonials = () => {
                 <p 
                   className="text-base font-inter leading-relaxed mb-8 flex-1"
                   style={{ 
-                    color: '#2C2C2C',
+                    color: '#1A2A3A',
                     letterSpacing: '0.01em',
                     lineHeight: '1.7'
                   }}
@@ -174,7 +174,7 @@ const Testimonials = () => {
 
                 {/* Author */}
                 <div>
-                  <p className="font-inter text-base font-bold mb-1" style={{ color: '#2C2C2C' }}>
+                  <p className="font-inter text-base font-bold mb-1" style={{ color: '#1A2A3A' }}>
                     {testimonial.author}
                   </p>
                   <p className="font-inter text-sm mb-1" style={{ color: '#718DA9' }}>

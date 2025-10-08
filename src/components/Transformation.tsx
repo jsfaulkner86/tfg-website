@@ -76,7 +76,7 @@ const Transformation = () => {
           <h2 
             className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
             style={{ 
-              color: '#2C2C2C',
+              color: '#1A2A3A',
               letterSpacing: '-0.03em',
               lineHeight: '1.05'
             }}
@@ -93,7 +93,7 @@ const Transformation = () => {
               The Growth Blueprint™ gives you clarity.
             </p>
             <p className="text-xl sm:text-2xl font-playfair font-semibold italic" style={{ 
-              color: '#2C2C2C',
+              color: '#1A2A3A',
               letterSpacing: '-0.01em'
             }}>
               But the Transformation is where the real magic happens.
@@ -125,7 +125,7 @@ const Transformation = () => {
 
         {/* Intro text */}
         <div className={`mb-12 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <p className="text-xl sm:text-2xl font-playfair font-semibold text-center mb-3" style={{ color: '#2C2C2C', letterSpacing: '-0.01em' }}>
+          <p className="text-xl sm:text-2xl font-playfair font-semibold text-center mb-3" style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}>
             Over 3–6 months, we integrate alongside your team to:
           </p>
         </div>

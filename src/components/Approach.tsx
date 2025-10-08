@@ -88,7 +88,7 @@ const Approach = () => {
           <h2 
             className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
             style={{ 
-              color: '#2C2C2C',
+              color: '#1A2A3A',
               letterSpacing: '-0.03em',
               lineHeight: '1.05'
             }}
@@ -124,7 +124,7 @@ const Approach = () => {
         <div className={`mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h3 
             className="text-2xl sm:text-3xl font-playfair font-bold mb-12 text-center"
-            style={{ color: '#2C2C2C', letterSpacing: '-0.02em' }}
+            style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
           >
             What you receive:
           </h3>

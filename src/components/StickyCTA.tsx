@@ -47,7 +47,7 @@ const StickyCTA = () => {
           className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
           style={{
             background: '#F3DA73',
-            color: '#2C2C2C',
+            color: '#1A2A3A',
             boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
           }}
           aria-label="Dismiss"

@@ -53,7 +53,7 @@ const FinalCTA = () => {
             className="text-xl sm:text-2xl px-16 py-10 rounded-2xl group transition-all duration-500 font-semibold"
             style={{ 
               background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
-              color: '#2C2C2C',
+              color: '#1A2A3A',
               boxShadow: '0 12px 40px rgba(243,218,115,0.5), 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5)',
               border: '2px solid rgba(255,255,255,0.3)'
             }}

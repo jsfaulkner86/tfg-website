@@ -137,7 +137,7 @@ const Approach = () => {
         {/* What you receive - Cinematic reveal */}
         <div className={`mb-20 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h3 
-            className="text-3xl sm:text-4xl font-playfair font-bold mb-16 text-center"
+            className="text-3xl sm:text-4xl font-playfair font-bold mb-12 text-center"
             style={{ 
               color: '#1A2A3A', 
               letterSpacing: '-0.03em',

@@ -54,21 +54,23 @@ const Results = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Refined header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-block mb-4 px-5 py-1.5 rounded-full" style={{
-            background: 'rgba(243,218,115,0.15)',
-            border: '1px solid rgba(243,218,115,0.4)'
+          <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+            background: 'rgba(243,218,115,0.2)',
+            border: '1.5px solid rgba(243,218,115,0.5)',
+            boxShadow: '0 4px 12px rgba(243,218,115,0.15)'
           }}>
-            <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>
-              The Difference
+            <span className="text-xs font-inter font-bold tracking-[0.15em] uppercase" style={{ color: '#F3DA73' }}>
+              THE DIFFERENCE
             </span>
           </div>
           
           <h2 
-            className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6"
+            className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8"
             style={{ 
               color: '#FFFFFF',
-              letterSpacing: '-0.03em',
-              lineHeight: '1.05'
+              letterSpacing: '-0.04em',
+              lineHeight: '1',
+              textShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}
           >
             Why Work With Us
@@ -77,7 +79,7 @@ const Results = () => {
           <div className="flex justify-center">
             <div 
               className="relative overflow-hidden rounded-full"
-              style={{ width: '80px', height: '3px', background: '#F3DA73' }}
+              style={{ width: '120px', height: '4px', background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
             />
           </div>
         </div>
@@ -105,12 +107,12 @@ const Results = () => {
                 
                 {/* Elevated card with multiple layers */}
                 <div
-                  className="relative p-10 rounded-[20px] transition-all duration-500 hover:-translate-y-4 h-full flex flex-col overflow-hidden"
+                  className="relative p-12 rounded-[24px] transition-all duration-500 hover:-translate-y-3 h-full flex flex-col overflow-hidden"
                   style={{
-                    background: 'linear-gradient(135deg, #FFFFFF 0%, rgba(250,249,246,0.98) 100%)',
-                    border: '2.5px solid #D4B65D',
-                    boxShadow: '0 15px 50px rgba(0,0,0,0.2), 0 5px 20px rgba(212,182,93,0.15), inset 0 1px 0 rgba(255,255,255,0.9)',
-                    minHeight: '280px'
+                    background: 'linear-gradient(180deg, #FFFFFF 0%, #FEFDFB 100%)',
+                    border: '3px solid #D4B65D',
+                    boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 8px 24px rgba(212,182,93,0.2), inset 0 1px 0 rgba(255,255,255,1)',
+                    minHeight: '340px'
                   }}
                 >
                   {/* Inner subtle gradient overlay */}
@@ -122,40 +124,40 @@ const Results = () => {
                   />
                   
                   {/* Enhanced Icon with glow */}
-                  <div className="flex justify-center mb-8 relative">
+                  <div className="flex justify-center mb-10 relative">
                     {/* Icon glow */}
                     <div 
-                      className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                       style={{
-                        background: 'radial-gradient(circle, rgba(113,141,169,0.3) 0%, transparent 70%)',
-                        filter: 'blur(12px)',
+                        background: 'radial-gradient(circle, rgba(113,141,169,0.25) 0%, transparent 70%)',
+                        filter: 'blur(16px)',
                         transform: 'scale(1.5)'
                       }}
                     />
                     <div 
-                      className="relative w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
+                      className="relative w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(113,141,169,0.15), rgba(113,141,169,0.05))',
-                        border: '2px solid rgba(113,141,169,0.3)',
-                        boxShadow: '0 8px 20px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.5)'
+                        background: 'linear-gradient(135deg, rgba(113,141,169,0.08), rgba(113,141,169,0.03))',
+                        border: '2px solid rgba(113,141,169,0.2)',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.8)'
                       }}
                     >
                       <Icon 
-                        size={32}
-                        strokeWidth={2.5}
+                        size={36}
+                        strokeWidth={2}
                         style={{ color: '#718DA9' }}
                       />
                     </div>
                   </div>
                   
                   {/* Stat */}
-                  <div className="mb-4 relative z-10 text-center">
+                  <div className="mb-6 relative z-10 text-center">
                     <p 
-                      className="text-3xl sm:text-4xl font-playfair font-bold"
+                      className="text-5xl sm:text-6xl font-playfair font-bold"
                       style={{ 
                         color: '#718DA9',
-                        letterSpacing: '-0.02em',
-                        textShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                        letterSpacing: '-0.03em',
+                        textShadow: '0 2px 8px rgba(113,141,169,0.15)'
                       }}
                     >
                       {highlight.stat}
@@ -164,9 +166,9 @@ const Results = () => {
                   
                   {/* Description */}
                   <p 
-                    className="text-base font-inter font-medium leading-relaxed relative z-10 flex-1 text-center"
+                    className="text-base sm:text-lg font-inter leading-relaxed relative z-10 flex-1 text-center"
                     style={{ 
-                      color: '#1A2A3A',
+                      color: '#3A4A5A',
                       letterSpacing: '0.01em',
                       lineHeight: '1.7'
                     }}

@@ -113,7 +113,7 @@ const Mission = () => {
                 </p>
                 <p 
                   className="text-sm sm:text-base font-playfair italic pt-4" 
-                  style={{ color: '#F3DA73', fontWeight: 500 }}
+                  style={{ color: '#C9A962', fontWeight: 600, textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}
                 >
                   Because better systems build better care.
                 </p>

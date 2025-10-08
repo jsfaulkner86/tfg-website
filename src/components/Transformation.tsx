@@ -4,30 +4,15 @@ import { Target, TrendingUp, Cog } from "lucide-react";
 const outcomes = [
   {
     icon: Target,
-    heading: "Eliminate bottlenecks",
-    emphasis: "that stall growth",
-    bullets: [
-      "Identify the 3-5 critical constraints holding you back",
-      "Implement proven fixes that unlock capacity"
-    ]
+    text: "Eliminate bottlenecks that stall growth"
   },
   {
     icon: TrendingUp,
-    heading: "Restore margins so",
-    emphasis: "profitability compounds",
-    bullets: [
-      "Reclaim 10-20% of revenue lost to inefficiency",
-      "Build sustainable profit momentum quarter over quarter"
-    ]
+    text: "Restore margins so profitability compounds"
   },
   {
     icon: Cog,
-    heading: "Build scalable systems",
-    emphasis: "that last after we leave",
-    bullets: [
-      "Create repeatable processes your team can own",
-      "Ensure growth doesn't require constant intervention"
-    ]
+    text: "Build scalable systems that last long after we leave"
   }
 ];
 
@@ -157,8 +142,10 @@ const Transformation = () => {
 
         {/* Luxury outcome cards */}
         <div className={`mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {outcomes.map((outcome, index) => {
+              const Icon = outcome.icon;
+              
               return (
                 <div
                   key={index}
@@ -195,87 +182,44 @@ const Transformation = () => {
                       }}
                     />
                     
-                    {/* Number badge */}
-                    <div className="flex justify-center mb-8 relative">
+                    {/* Enhanced Icon with glow */}
+                    <div className="relative mb-8">
+                      {/* Icon glow */}
                       <div 
-                        className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                         style={{
-                          background: 'radial-gradient(circle, rgba(243,218,115,0.5) 0%, transparent 70%)',
-                          filter: 'blur(20px)',
-                          transform: 'scale(2)'
+                          background: 'radial-gradient(circle, rgba(243,218,115,0.4) 0%, transparent 70%)',
+                          filter: 'blur(12px)',
+                          transform: 'scale(1.5)'
                         }}
                       />
                       <div 
-                        className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                        className="relative w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
                         style={{
-                          background: 'rgba(255,255,255,0.15)',
-                          backdropFilter: 'blur(10px)',
-                          border: '1.5px solid rgba(255,255,255,0.25)',
-                          boxShadow: '0 4px 16px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 0 20px rgba(243,218,115,0.1)'
+                          background: 'linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05))',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          boxShadow: '0 8px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.3)'
                         }}
                       >
-                        <span className="text-3xl font-playfair font-bold" style={{ 
-                          color: '#F3DA73',
-                          textShadow: '0 2px 8px rgba(0,0,0,0.2)'
-                        }}>
-                          {index + 1}
-                        </span>
+                        <Icon 
+                          size={36}
+                          strokeWidth={2.5}
+                          style={{ color: '#FFFFFF' }}
+                        />
                       </div>
                     </div>
                     
-                    <div className="relative z-10 flex-1 flex flex-col">
-                      {/* Fixed height heading section */}
-                      <div className="mb-3" style={{ minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <p 
-                          className="text-lg sm:text-xl font-inter leading-relaxed text-center"
-                          style={{ 
-                            color: 'rgba(248,248,248,0.95)', 
-                            letterSpacing: '0.3px',
-                            lineHeight: '1.6'
-                          }}
-                        >
-                          {outcome.heading}
-                        </p>
-                      </div>
-                      
-                      {/* Fixed height emphasis - perfectly aligned */}
-                      <div className="mb-6" style={{ minHeight: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <p className="font-bold text-2xl sm:text-3xl text-center font-playfair" style={{ 
-                          color: '#F3DA73',
-                          textShadow: '0 2px 4px rgba(0,0,0,0.2)',
-                          lineHeight: '1.3'
-                        }}>
-                          {outcome.emphasis}
-                        </p>
-                      </div>
-                      
-                      {/* Bullet points */}
-                      <div className="flex-1 flex flex-col justify-start">
-                        <div className="space-y-4">
-                          {outcome.bullets.map((bullet, idx) => (
-                            <div key={idx} className="flex items-start gap-4">
-                              <div 
-                                className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-2"
-                                style={{ 
-                                  background: '#F3DA73',
-                                  boxShadow: '0 0 8px rgba(243,218,115,0.5)'
-                                }}
-                              />
-                              <p 
-                                className="text-base sm:text-lg font-inter"
-                                style={{ 
-                                  color: 'rgba(248,248,248,0.95)',
-                                  letterSpacing: '0.3px',
-                                  lineHeight: '1.7'
-                                }}
-                              >
-                                {bullet}
-                              </p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
+                    <p 
+                      className="text-lg sm:text-xl font-inter font-medium leading-relaxed relative z-10"
+                      style={{ 
+                        color: 'rgba(248,248,248,0.95)',
+                        letterSpacing: '0.3px',
+                        lineHeight: '1.7',
+                        textShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                      }}
+                    >
+                      {outcome.text}
+                    </p>
                     
                     {/* Bottom accent line */}
                     <div 

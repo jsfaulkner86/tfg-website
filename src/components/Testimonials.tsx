@@ -48,6 +48,7 @@ const Testimonials = () => {
 
   return (
     <section 
+      id="testimonials"
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{

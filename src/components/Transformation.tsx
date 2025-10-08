@@ -39,6 +39,7 @@ const Transformation = () => {
 
   return (
     <section 
+      id="transformation"
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{

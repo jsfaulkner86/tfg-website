@@ -57,10 +57,10 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
             <a 
-              href="#results" 
+              href="#testimonials" 
               className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
             >
-              Results
+              Testimonials
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
             <a 

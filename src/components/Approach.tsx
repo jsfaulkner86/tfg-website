@@ -305,7 +305,7 @@ const Approach = () => {
             className="relative py-12 px-12 rounded-3xl mx-auto max-w-5xl"
             style={{
               background: '#FBF8F1',
-              border: '1.5px solid rgba(201,184,130,0.3)',
+              border: '2px solid #D4B65D',
               boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
             }}
           >
@@ -318,11 +318,7 @@ const Approach = () => {
                   lineHeight: '1.5'
                 }}
               >
-                This isn't theory. It's{' '}
-                <span style={{ color: '#F3DA73' }}>
-                  clarity, cash flow, and control
-                </span>
-                , delivered fast.
+                This isn't theory. It's clarity, cash flow, and control, delivered fast.
               </p>
             </div>
           </div>

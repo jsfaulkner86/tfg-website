@@ -111,12 +111,6 @@ const Mission = () => {
                   We don't just deliver reports.<br />
                   We deliver results that last.
                 </p>
-                <p 
-                  className="text-sm sm:text-base font-playfair italic pt-4" 
-                  style={{ color: '#B8962E', fontWeight: 600 }}
-                >
-                  Because better systems build better care.
-                </p>
               </div>
             </div>
           </div>

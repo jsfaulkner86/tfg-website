@@ -199,11 +199,11 @@ const Results = () => {
           >
             <div className="relative z-10 text-center">
               <p 
-                className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4'
+                  lineHeight: '1.3'
                 }}
               >
                 We don't just analyze. We architect organizations built to last.

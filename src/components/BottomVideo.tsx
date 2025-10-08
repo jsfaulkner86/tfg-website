@@ -41,7 +41,10 @@ const BottomVideo = () => {
           loop 
           muted 
           playsInline 
-          className="absolute inset-0 w-full h-full object-cover brightness-75"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            filter: 'brightness(1.15) contrast(1.1)'
+          }}
         >
           <source src="/cliff-aerial.mp4" type="video/mp4" />
         </video>

@@ -12,7 +12,8 @@ const highlights = [
   },
   {
     icon: Award,
-    stat: "23+ Years of Expertise",
+    stat: "23+ Years of",
+    stat2: "Expertise",
     bullets: [
       "13+ years leading healthcare growth architecture",
       "10+ years in frontline clinical leadership",
@@ -164,7 +165,7 @@ const Results = () => {
                   {/* Stat */}
                   <div className="mb-6 relative z-10 text-center">
                     <p 
-                      className="text-5xl sm:text-6xl font-playfair font-bold"
+                      className="text-5xl sm:text-6xl font-playfair font-bold leading-tight"
                       style={{ 
                         color: '#718DA9',
                         letterSpacing: '-0.03em',
@@ -172,6 +173,12 @@ const Results = () => {
                       }}
                     >
                       {highlight.stat}
+                      {'stat2' in highlight && (
+                        <>
+                          <br />
+                          {highlight.stat2}
+                        </>
+                      )}
                     </p>
                   </div>
                   

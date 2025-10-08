@@ -5,17 +5,28 @@ const highlights = [
   {
     icon: TrendingUp,
     stat: "$50M+ Recovered",
-    text: "Uncovered in lost revenue across hospitals, health systems, and specialty practices — by fixing inefficiencies hiding in plain sight."
+    bullets: [
+      "Uncovered in lost revenue across hospitals, health systems, and specialty practices",
+      "By fixing inefficiencies hiding in plain sight"
+    ]
   },
   {
     icon: Award,
     stat: "23+ Years of Expertise",
-    text: "13+ years leading healthcare growth architecture and 10+ years in frontline clinical leadership. We bridge the boardroom and the bedside, strategy that actually works in real-world medicine."
+    bullets: [
+      "13+ years leading healthcare growth architecture",
+      "10+ years in frontline clinical leadership",
+      "We bridge the boardroom and the bedside"
+    ]
   },
   {
     icon: Users,
     stat: "Boutique by Design",
-    text: "A high-touch partnership that blends physician insight, operational precision, and executive strategy. Every engagement is customized — no cookie-cutter consulting, ever."
+    bullets: [
+      "High-touch partnership blending physician insight, operational precision, and executive strategy",
+      "Every engagement is customized",
+      "No cookie-cutter consulting, ever"
+    ]
   }
 ];
 
@@ -164,17 +175,30 @@ const Results = () => {
                     </p>
                   </div>
                   
-                  {/* Description */}
-                  <p 
-                    className="text-lg sm:text-xl font-inter font-medium leading-relaxed relative z-10 flex-1 text-center"
-                    style={{ 
-                      color: '#2A3A4A',
-                      letterSpacing: '0.005em',
-                      lineHeight: '1.6'
-                    }}
-                  >
-                    {highlight.text}
-                  </p>
+                  {/* Description with bullets */}
+                  <ul className="space-y-3 relative z-10 flex-1">
+                    {highlight.bullets.map((bullet, i) => (
+                      <li 
+                        key={i}
+                        className="flex items-start gap-3 text-left"
+                      >
+                        <span 
+                          className="inline-block w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0"
+                          style={{ background: '#D4B65D' }}
+                        />
+                        <span 
+                          className="text-base sm:text-lg font-inter font-medium leading-relaxed"
+                          style={{ 
+                            color: '#4A5568',
+                            letterSpacing: '0.005em',
+                            lineHeight: '1.6'
+                          }}
+                        >
+                          {bullet}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                   
                   {/* Bottom accent line */}
                   <div 

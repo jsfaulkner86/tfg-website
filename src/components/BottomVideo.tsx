@@ -87,24 +87,22 @@ const BottomVideo = () => {
               If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
             </p>
 
-            {/* Risk Reversal */}
+            {/* Risk Reversal - Refined */}
             <div 
-              className="inline-flex items-center gap-4 px-8 py-5 rounded-2xl mb-10"
+              className="px-10 py-6 rounded-xl mb-10 max-w-4xl mx-auto"
               style={{
-                background: 'linear-gradient(135deg, rgba(243,218,115,0.12) 0%, rgba(243,218,115,0.08) 100%)',
-                border: '2px solid rgba(243,218,115,0.5)',
-                backdropFilter: 'blur(20px)',
-                boxShadow: '0 8px 32px rgba(243,218,115,0.2), 0 4px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1)',
-                WebkitBackdropFilter: 'blur(20px)'
+                background: 'rgba(255,255,255,0.03)',
+                border: '1.5px solid rgba(243,218,115,0.3)',
+                backdropFilter: 'blur(10px)',
               }}
             >
-              <div className="text-2xl" style={{ color: '#FFFFFF', textShadow: '0 2px 12px rgba(243,218,115,0.6), 0 0 20px rgba(255,255,255,0.4)' }}>✓</div>
-              <span className="text-base font-inter font-semibold tracking-wide" style={{ 
-                color: '#F3DA73',
-                textShadow: '0 2px 12px rgba(0,0,0,0.4), 0 0 20px rgba(243,218,115,0.2)'
+              <p className="text-base sm:text-lg font-inter font-medium text-center" style={{ 
+                color: 'rgba(255,255,255,0.9)',
+                letterSpacing: '0.01em',
+                lineHeight: '1.6'
               }}>
                 We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do
-              </span>
+              </p>
             </div>
 
             <div className="space-y-8">

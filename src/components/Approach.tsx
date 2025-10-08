@@ -3,10 +3,13 @@ import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
   { 
-    type: 'text',
+    type: 'bullets',
     text: "Your custom ",
-    emphasis: "Revenue Recovery Blueprint: ",
-    suffix: "10-12 pages revealing exactly where you're hemorrhaging cash—and the precise fixes to plug every leak"
+    emphasis: "Revenue Recovery Blueprint:",
+    bullets: [
+      "10-12 pages revealing exactly where you're hemorrhaging cash",
+      "The precise fixes to plug every leak"
+    ]
   },
   {
     type: 'bullets',
@@ -249,39 +252,29 @@ const Approach = () => {
                         
                         {/* Flexible bottom content area */}
                         <div className="flex-1 flex flex-col justify-start">
-                          {benefit.type === 'bullets' ? (
-                            <div className="space-y-4">
-                              {benefit.bullets.map((bullet, idx) => (
-                                <div key={idx} className="flex items-start gap-4">
-                                  <div 
-                                    className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-2"
-                                    style={{ 
-                                      background: '#F3DA73',
-                                      boxShadow: '0 0 8px rgba(243,218,115,0.5)'
-                                    }}
-                                  />
-                                  <p 
-                                    className="text-base sm:text-lg font-inter"
-                                    style={{ 
-                                      color: 'rgba(248,248,248,0.95)',
-                                      letterSpacing: '0.3px',
-                                      lineHeight: '1.7'
-                                    }}
-                                  >
-                                    {bullet}
-                                  </p>
-                                </div>
-                              ))}
-                            </div>
-                          ) : (
-                            <p className="text-base sm:text-lg font-inter text-center" style={{ 
-                              color: 'rgba(248,248,248,0.95)',
-                              letterSpacing: '0.3px',
-                              lineHeight: '1.7'
-                            }}>
-                              {benefit.suffix}
-                            </p>
-                          )}
+                          <div className="space-y-4">
+                            {benefit.bullets.map((bullet, idx) => (
+                              <div key={idx} className="flex items-start gap-4">
+                                <div 
+                                  className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-2"
+                                  style={{ 
+                                    background: '#F3DA73',
+                                    boxShadow: '0 0 8px rgba(243,218,115,0.5)'
+                                  }}
+                                />
+                                <p 
+                                  className="text-base sm:text-lg font-inter"
+                                  style={{ 
+                                    color: 'rgba(248,248,248,0.95)',
+                                    letterSpacing: '0.3px',
+                                    lineHeight: '1.7'
+                                  }}
+                                >
+                                  {bullet}
+                                </p>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
                       

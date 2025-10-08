@@ -299,25 +299,17 @@ const Approach = () => {
           </div>
         </div>
 
-        {/* Bottom statement with gold shimmer */}
+        {/* Bottom statement */}
         <div className={`transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-5xl"
+            className="relative py-12 px-12 rounded-3xl mx-auto max-w-5xl"
             style={{
-              background: 'linear-gradient(135deg, #FDFCF9 0%, #FBF8F1 100%)',
-              border: '1.5px solid rgba(243,218,115,0.3)',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8)'
+              background: '#FBF8F1',
+              border: '1.5px solid rgba(201,184,130,0.3)',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
             }}
           >
-            {/* Soft vignette effect */}
-            <div 
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: 'radial-gradient(ellipse at center, transparent 40%, rgba(113,141,169,0.03) 100%)'
-              }}
-            />
-            
-            <div className="relative z-10 text-center">
+            <div className="text-center">
               <p 
                 className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
                 style={{ 
@@ -327,15 +319,7 @@ const Approach = () => {
                 }}
               >
                 This isn't theory. It's{' '}
-                <span className="shimmer-text" style={{ 
-                  color: '#F3DA73',
-                  background: 'linear-gradient(90deg, #F3DA73 0%, #E5C961 25%, #F3DA73 50%, #E5C961 75%, #F3DA73 100%)',
-                  backgroundSize: '200% auto',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  animation: 'shimmer 3s linear infinite'
-                }}>
+                <span style={{ color: '#F3DA73' }}>
                   clarity, cash flow, and control
                 </span>
                 , delivered fast.

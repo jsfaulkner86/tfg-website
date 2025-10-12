@@ -36,11 +36,11 @@ const Hero = () => {
           <source src="/hero-beach.mp4" type="video/mp4" />
         </video>
         
-        {/* Subtle vignette - only outer 10% */}
+        {/* Dark gradient overlay for better text readability */}
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.15) 100%)'
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 40%, transparent 70%, rgba(0,0,0,0.15) 100%)'
           }}
         />
       </div>

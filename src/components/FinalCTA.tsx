@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const FinalCTA = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  const handleBooking = () => {
+    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
 
   return (
@@ -49,7 +48,7 @@ const FinalCTA = () => {
 
         <div className="pt-4">
           <Button 
-            onClick={scrollToContact}
+            onClick={handleBooking}
             className="text-xl sm:text-2xl px-16 py-10 rounded-2xl group transition-all duration-500 font-semibold"
             style={{ 
               background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',

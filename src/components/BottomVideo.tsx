@@ -4,11 +4,8 @@ import { ArrowRight } from "lucide-react";
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({
-      behavior: 'smooth'
-    });
+  const handleBooking = () => {
+    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -69,7 +66,7 @@ const BottomVideo = () => {
             </div>
 
             <div className="space-y-8">
-              <Button onClick={scrollToContact} className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold" style={{
+              <Button onClick={handleBooking} className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold" style={{
               boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
             }}>
                 Book a Consultation

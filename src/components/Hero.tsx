@@ -12,11 +12,8 @@ const Hero = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({
-      behavior: 'smooth'
-    });
+  const handleBooking = () => {
+    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
   return <section className="relative h-screen w-full overflow-hidden pt-20">
       {/* Background Video with Parallax */}
@@ -104,7 +101,7 @@ const Hero = () => {
           </div>
 
           <Button
-            onClick={scrollToContact} 
+            onClick={handleBooking} 
             className="text-xl rounded-lg group transition-all duration-300 font-semibold relative overflow-hidden border-0"
             style={{ 
               backgroundColor: 'rgba(243, 218, 115, 0.9)',

@@ -18,9 +18,8 @@ const StickyCTA = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isDismissed]);
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  const handleBooking = () => {
+    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
 
   if (!isVisible || isDismissed) return null;
@@ -67,7 +66,7 @@ const StickyCTA = () => {
           </div>
           
           <Button
-            onClick={scrollToContact}
+            onClick={handleBooking}
             className="group transition-all duration-300 font-semibold rounded-full"
             style={{
               background: '#F3DA73',

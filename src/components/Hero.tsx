@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex h-full items-center justify-center px-6 text-center pt-32">
+      <div className="relative z-10 flex h-full items-center justify-center px-6 text-center pt-16">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
           <h1 
             className="mb-6 text-4xl font-display font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl uppercase relative overflow-hidden" 

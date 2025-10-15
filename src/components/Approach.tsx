@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle2, Shield } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const pillars = [
   { 
@@ -133,46 +133,34 @@ const Approach = () => {
             A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.
           </p>
           
-          {/* GUARANTEE - Make it REALLY stand out */}
+          {/* GUARANTEE - Clean and sophisticated */}
           <div 
-            className="relative py-10 px-10 rounded-3xl mx-auto max-w-5xl mb-8"
+            className="relative py-12 px-12 rounded-2xl mx-auto max-w-4xl mb-10"
             style={{
-              background: 'linear-gradient(135deg, #718DA9 0%, #5A7491 100%)',
-              border: '3px solid #F3DA73',
-              boxShadow: '0 20px 60px rgba(113,141,169,0.4), 0 0 80px rgba(243,218,115,0.3), inset 0 2px 0 rgba(255,255,255,0.2)'
+              background: 'linear-gradient(135deg, rgba(113,141,169,0.08), rgba(113,141,169,0.04))',
+              border: '2px solid #718DA9',
+              boxShadow: '0 8px 32px rgba(113,141,169,0.15)'
             }}
           >
-            {/* Glow effect */}
-            <div 
-              className="absolute -inset-1 rounded-3xl opacity-60 blur-xl"
-              style={{
-                background: 'linear-gradient(135deg, #F3DA73, #718DA9)',
-                zIndex: -1
-              }}
-            />
-            
-            <div className="flex items-center justify-center gap-6 mb-4">
-              <Shield size={48} style={{ color: '#F3DA73' }} strokeWidth={2.5} />
+            <div className="text-center space-y-4">
               <p 
-                className="text-sm font-inter font-bold tracking-[0.2em] uppercase"
-                style={{ color: '#F3DA73' }}
+                className="text-xs font-inter font-semibold tracking-[0.25em] uppercase mb-3"
+                style={{ color: '#718DA9' }}
               >
-                OUR GUARANTEE
+                Our Guarantee
               </p>
-              <Shield size={48} style={{ color: '#F3DA73' }} strokeWidth={2.5} />
+              
+              <p 
+                className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold leading-tight"
+                style={{ 
+                  color: '#1A2A3A',
+                  letterSpacing: '-0.02em',
+                  lineHeight: '1.2'
+                }}
+              >
+                We'll uncover at least six figures in hidden revenue, or we work free until we do.
+              </p>
             </div>
-            
-            <p 
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-center leading-tight"
-              style={{ 
-                color: '#FFFFFF',
-                textShadow: '0 4px 12px rgba(0,0,0,0.3)',
-                letterSpacing: '-0.01em',
-                lineHeight: '1.3'
-              }}
-            >
-              We'll uncover at least six figures in hidden revenue, or we work free until we do.
-            </p>
           </div>
           
           {/* Decorative divider */}

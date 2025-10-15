@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Shield } from "lucide-react";
 
 const pillars = [
   { 
@@ -133,13 +133,47 @@ const Approach = () => {
             A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.
           </p>
           
-          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8" style={{ 
-            color: '#718DA9', 
-            letterSpacing: '0.01em',
-            lineHeight: '1.5'
-          }}>
-            Our guarantee: We'll uncover at least six figures in hidden revenue, or we work free until we do.
-          </p>
+          {/* GUARANTEE - Make it REALLY stand out */}
+          <div 
+            className="relative py-10 px-10 rounded-3xl mx-auto max-w-5xl mb-8"
+            style={{
+              background: 'linear-gradient(135deg, #718DA9 0%, #5A7491 100%)',
+              border: '3px solid #F3DA73',
+              boxShadow: '0 20px 60px rgba(113,141,169,0.4), 0 0 80px rgba(243,218,115,0.3), inset 0 2px 0 rgba(255,255,255,0.2)'
+            }}
+          >
+            {/* Glow effect */}
+            <div 
+              className="absolute -inset-1 rounded-3xl opacity-60 blur-xl"
+              style={{
+                background: 'linear-gradient(135deg, #F3DA73, #718DA9)',
+                zIndex: -1
+              }}
+            />
+            
+            <div className="flex items-center justify-center gap-6 mb-4">
+              <Shield size={48} style={{ color: '#F3DA73' }} strokeWidth={2.5} />
+              <p 
+                className="text-sm font-inter font-bold tracking-[0.2em] uppercase"
+                style={{ color: '#F3DA73' }}
+              >
+                OUR GUARANTEE
+              </p>
+              <Shield size={48} style={{ color: '#F3DA73' }} strokeWidth={2.5} />
+            </div>
+            
+            <p 
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-center leading-tight"
+              style={{ 
+                color: '#FFFFFF',
+                textShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                letterSpacing: '-0.01em',
+                lineHeight: '1.3'
+              }}
+            >
+              We'll uncover at least six figures in hidden revenue, or we work free until we do.
+            </p>
+          </div>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">

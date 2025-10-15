@@ -4,27 +4,51 @@ import { CheckCircle2 } from "lucide-react";
 const pillars = [
   { 
     title: "Revenue Cycle Performance",
-    description: "Identify billing inefficiencies, denial patterns, and cash flow gaps costing you revenue every month"
+    details: [
+      "Identify billing inefficiencies, denial patterns, and cash flow gaps costing you revenue every month.",
+      "Uncover missed charges, underpayments, and revenue leaks hidden in your billing processes.",
+      "Optimize claims management to accelerate cash flow and reduce days in AR."
+    ]
   },
   {
     title: "Payer Contract Positioning",
-    description: "Uncover underpayments and contract opportunities to maximize reimbursement rates"
+    details: [
+      "Analyze your current payer contracts to find underpayment patterns and missed revenue opportunities.",
+      "Benchmark reimbursement rates against market standards to identify negotiation leverage.",
+      "Develop strategies to maximize contract value and protect your bottom line."
+    ]
   },
   {
     title: "Patient Access & Experience",
-    description: "Optimize scheduling, reduce no-shows, and eliminate access gaps pushing patients to competitors"
+    details: [
+      "Eliminate scheduling gaps and access barriers that push patients to competitors.",
+      "Reduce no-shows and cancellations through optimized communication and reminder systems.",
+      "Streamline patient flow from initial contact to payment to improve satisfaction and retention."
+    ]
   },
   {
     title: "Coding & Documentation Accuracy",
-    description: "Ensure proper coding compliance and documentation to capture every dollar you've earned"
+    details: [
+      "Ensure proper coding compliance to capture every dollar of revenue you've legitimately earned.",
+      "Identify documentation gaps that result in downcoding and lost reimbursement.",
+      "Implement quality assurance processes to maintain accuracy and reduce audit risk."
+    ]
   },
   {
     title: "Technology & Workflow Optimization",
-    description: "Streamline operations, reduce administrative burden, and eliminate workflow bottlenecks"
+    details: [
+      "Eliminate redundant processes and workflow bottlenecks that waste staff time and create burnout.",
+      "Optimize EHR utilization and system integrations to reduce administrative burden.",
+      "Streamline operations so your team can focus on patient care instead of paperwork."
+    ]
   },
   {
     title: "Compliance & Risk Management",
-    description: "Protect your practice from regulatory exposure and operational vulnerabilities"
+    details: [
+      "Identify regulatory exposure and operational vulnerabilities before they become costly problems.",
+      "Ensure all systems and workflows align with current compliance and security standards.",
+      "Protect your practice from audits, penalties, and revenue disruptions."
+    ]
   }
 ];
 
@@ -179,7 +203,7 @@ const Approach = () => {
                       border: '2.5px solid #F3DA73',
                       boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
                       backdropFilter: 'blur(10px)',
-                      minHeight: '280px'
+                      minHeight: '400px'
                     }}
                   >
                     {/* Inner lighting gradient */}
@@ -222,7 +246,7 @@ const Approach = () => {
                       <div className="relative z-10 flex flex-col flex-1 text-center">
                         {/* Title */}
                         <h4 
-                          className="text-xl sm:text-2xl font-playfair font-bold mb-4"
+                          className="text-xl sm:text-2xl font-playfair font-bold mb-6"
                           style={{ 
                             color: '#F3DA73',
                             textShadow: '0 2px 4px rgba(0,0,0,0.2)',
@@ -232,17 +256,27 @@ const Approach = () => {
                           {pillar.title}
                         </h4>
                         
-                        {/* Description */}
-                        <p 
-                          className="text-base sm:text-lg font-inter leading-relaxed"
-                          style={{ 
-                            color: 'rgba(248,248,248,0.95)', 
-                            letterSpacing: '0.3px',
-                            lineHeight: '1.6'
-                          }}
-                        >
-                          {pillar.description}
-                        </p>
+                        {/* Details */}
+                        <div className="space-y-4 text-left">
+                          {pillar.details.map((detail, detailIndex) => (
+                            <div key={detailIndex} className="flex items-start gap-3">
+                              <span 
+                                className="inline-block w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0"
+                                style={{ background: '#F3DA73' }}
+                              />
+                              <p 
+                                className="text-base font-inter leading-relaxed"
+                                style={{ 
+                                  color: 'rgba(248,248,248,0.95)', 
+                                  letterSpacing: '0.3px',
+                                  lineHeight: '1.6'
+                                }}
+                              >
+                                {detail}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                       
                       {/* Bottom accent line on hover */}

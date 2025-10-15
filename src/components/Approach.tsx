@@ -111,7 +111,7 @@ const Approach = () => {
             letterSpacing: '0.02em',
             lineHeight: '1.6'
           }}>
-            A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money—and exactly how to fix it.
+            A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.
           </p>
           
           <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8" style={{ 
@@ -279,7 +279,7 @@ const Approach = () => {
                   lineHeight: '1.5'
                 }}
               >
-                In 30 days, you'll receive a comprehensive 10-12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it—guaranteed to uncover at least six figures in hidden revenue.
+                In 30 days, you'll receive a comprehensive 10 to 12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it, guaranteed to uncover at least six figures in hidden revenue.
               </p>
             </div>
           </div>

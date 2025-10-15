@@ -142,7 +142,7 @@ const Transformation = () => {
             letterSpacing: '-0.02em',
             lineHeight: '1.3'
           }}>
-            Over 3–6 months, we integrate alongside your team to:
+            Over 3 to 6 months, we integrate alongside your team to:
           </p>
         </div>
 

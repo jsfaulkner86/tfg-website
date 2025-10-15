@@ -133,33 +133,30 @@ const Approach = () => {
             A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.
           </p>
           
-          {/* GUARANTEE - Clean and sophisticated */}
-          <div 
-            className="relative py-12 px-12 rounded-2xl mx-auto max-w-4xl mb-10"
-            style={{
-              background: 'linear-gradient(135deg, rgba(113,141,169,0.08), rgba(113,141,169,0.04))',
-              border: '2px solid #718DA9',
-              boxShadow: '0 8px 32px rgba(113,141,169,0.15)'
-            }}
-          >
-            <div className="text-center space-y-4">
-              <p 
-                className="text-xs font-inter font-semibold tracking-[0.25em] uppercase mb-3"
-                style={{ color: '#718DA9' }}
-              >
-                Our Guarantee
-              </p>
+          {/* GUARANTEE - Boutique elegance */}
+          <div className="relative mx-auto max-w-3xl mb-16">
+            <div className="text-center space-y-8 py-16 px-8">
+              <div 
+                className="w-16 h-px mx-auto"
+                style={{ background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
+              />
               
               <p 
-                className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold leading-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-playfair italic leading-tight"
                 style={{ 
                   color: '#1A2A3A',
-                  letterSpacing: '-0.02em',
-                  lineHeight: '1.2'
+                  letterSpacing: '-0.01em',
+                  lineHeight: '1.15',
+                  fontWeight: 400
                 }}
               >
                 We'll uncover at least six figures in hidden revenue, or we work free until we do.
               </p>
+              
+              <div 
+                className="w-16 h-px mx-auto"
+                style={{ background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
+              />
             </div>
           </div>
           

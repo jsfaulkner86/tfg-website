@@ -3,51 +3,46 @@ import { CheckCircle2 } from "lucide-react";
 
 const pillars = [
   { 
-    title: "Revenue Cycle Performance",
+    title: "Workflow Architecture",
     details: [
-      "Identify billing inefficiencies, denial patterns, and cash flow gaps costing you revenue every month.",
-      "Uncover missed charges, underpayments, and revenue leaks hidden in your billing processes.",
-      "Optimize claims management to accelerate cash flow and reduce days in AR."
+      "We review every process, from scheduling to documentation, to find redundancies, bottlenecks, and hidden delays.",
+      "Broken workflows bleed time and talent."
     ]
   },
   {
-    title: "Payer Contract Positioning",
+    title: "Revenue Integrity",
     details: [
-      "Analyze your current payer contracts to find underpayment patterns and missed revenue opportunities.",
-      "Benchmark reimbursement rates against market standards to identify negotiation leverage.",
-      "Develop strategies to maximize contract value and protect your bottom line."
+      "Find the money you're already earning.",
+      "Uncover hidden revenue leaks and coding inefficiencies, from charge capture gaps to missed claims."
     ]
   },
   {
-    title: "Patient Access & Experience",
+    title: "Team Dynamics & Capacity",
     details: [
-      "Eliminate scheduling gaps and access barriers that push patients to competitors.",
-      "Reduce no-shows and cancellations through optimized communication and reminder systems.",
-      "Streamline patient flow from initial contact to payment to improve satisfaction and retention."
+      "Align people with purpose.",
+      "Identify role misalignment, unbalanced workloads, and capacity bottlenecks.",
+      "Redistribute effort for greater impact."
     ]
   },
   {
-    title: "Coding & Documentation Accuracy",
+    title: "Patient Experience Pathways",
     details: [
-      "Ensure proper coding compliance to capture every dollar of revenue you've legitimately earned.",
-      "Identify documentation gaps that result in downcoding and lost reimbursement.",
-      "Implement quality assurance processes to maintain accuracy and reduce audit risk."
+      "Reduce leakage. Grow loyalty.",
+      "Diagnose patient touchpoints that drive drop-off or delay, and improve retention through lasting relationships."
     ]
   },
   {
-    title: "Technology & Workflow Optimization",
+    title: "AI Adoption & Automation",
     details: [
-      "Eliminate redundant processes and workflow bottlenecks that waste staff time and create burnout.",
-      "Optimize EHR utilization and system integrations to reduce administrative burden.",
-      "Streamline operations so your team can focus on patient care instead of paperwork."
+      "Leverage AI to enhance, not replace, human expertise.",
+      "Streamline documentation, scheduling, and communication to boost efficiency without burnout."
     ]
   },
   {
-    title: "Compliance & Risk Management",
+    title: "Vendor, Technology & Compliance Optimization",
     details: [
-      "Identify regulatory exposure and operational vulnerabilities before they become costly problems.",
-      "Ensure all systems and workflows align with current compliance and security standards.",
-      "Protect your practice from audits, penalties, and revenue disruptions."
+      "Evaluate your EHR, tech stack, and vendor relationships.",
+      "Eliminate redundancy, maximize ROI, and ensure all systems and workflows align with compliance and security standards."
     ]
   }
 ];

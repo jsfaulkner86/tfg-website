@@ -133,32 +133,13 @@ const Approach = () => {
             A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.
           </p>
           
-          {/* GUARANTEE - Boutique elegance */}
-          <div className="relative mx-auto max-w-3xl mb-16">
-            <div className="text-center space-y-8 py-16 px-8">
-              <div 
-                className="w-16 h-px mx-auto"
-                style={{ background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
-              />
-              
-              <p 
-                className="text-4xl sm:text-5xl md:text-6xl font-playfair italic leading-tight"
-                style={{ 
-                  color: '#1A2A3A',
-                  letterSpacing: '-0.01em',
-                  lineHeight: '1.15',
-                  fontWeight: 400
-                }}
-              >
-                We'll uncover at least six figures in hidden revenue, or we work free until we do.
-              </p>
-              
-              <div 
-                className="w-16 h-px mx-auto"
-                style={{ background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
-              />
-            </div>
-          </div>
+          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8" style={{ 
+            color: '#718DA9', 
+            letterSpacing: '0.01em',
+            lineHeight: '1.5'
+          }}>
+            Our guarantee: We'll uncover at least six figures in hidden revenue, or we work free until we do.
+          </p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">

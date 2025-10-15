@@ -88,7 +88,7 @@ const Problem = () => {
                 The Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                Hidden leaks draining your profitability without warning.
+                Whether you're a single-site specialty practice, multi-specialty group, or large multi-location system—hidden leaks are draining your profitability without warning.
               </p>
               <div 
                 className="relative overflow-hidden rounded-full"
@@ -106,10 +106,10 @@ const Problem = () => {
 
             <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
               <p className="text-base sm:text-lg">
-                Most practices aren't <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing money</strong> because they don't have enough patients.
+                From single-site specialty practices to multi-specialty groups to large multi-location systems, most organizations aren't <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing money</strong> because they don't have enough patients.
               </p>
               <p className="text-base sm:text-lg">
-                They're <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing it</strong> through <strong style={{ color: '#718DA9', fontWeight: 600 }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, and workflows that quietly bleed margins.
+                They're <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing it</strong> through <strong style={{ color: '#718DA9', fontWeight: 600 }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, payer contract underpayments, and workflows that quietly bleed margins.
               </p>
               
               {/* Thin gold line separator */}

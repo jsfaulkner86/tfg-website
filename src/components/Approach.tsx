@@ -1,34 +1,30 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 
-const benefits = [
+const pillars = [
   { 
-    type: 'bullets',
-    text: "Your custom ",
-    emphasis: "Revenue Recovery Blueprint:",
-    bullets: [
-      "10-12 pages revealing exactly where you're hemorrhaging cash",
-      "The precise fixes to plug every leak"
-    ]
+    title: "Revenue Cycle Performance",
+    description: "Identify billing inefficiencies, denial patterns, and cash flow gaps costing you revenue every month"
   },
   {
-    type: 'bullets',
-    text: "Our iron-clad guarantee: Uncover at least ",
-    emphasis: "$100,000+ in hidden revenue",
-    bullets: [
-      "Most practices? $250K+ recovered",
-      "One recent client: $3 MILLION in lost revenue found"
-    ]
+    title: "Payer Contract Positioning",
+    description: "Uncover underpayments and contract opportunities to maximize reimbursement rates"
   },
   {
-    type: 'bullets',
-    text: "Don't hit six figures? ",
-    emphasis: "We work FREE until you do.",
-    bullets: [
-      "All from systems you're already running",
-      "Just not optimizing (yet)",
-      "You literally cannot lose"
-    ]
+    title: "Patient Access & Experience",
+    description: "Optimize scheduling, reduce no-shows, and eliminate access gaps pushing patients to competitors"
+  },
+  {
+    title: "Coding & Documentation Accuracy",
+    description: "Ensure proper coding compliance and documentation to capture every dollar you've earned"
+  },
+  {
+    title: "Technology & Workflow Optimization",
+    description: "Streamline operations, reduce administrative burden, and eliminate workflow bottlenecks"
+  },
+  {
+    title: "Compliance & Risk Management",
+    description: "Protect your practice from regulatory exposure and operational vulnerabilities"
   }
 ];
 
@@ -110,12 +106,20 @@ const Approach = () => {
             The Growth Blueprint™
           </h2>
           
-          <p className="text-xl sm:text-2xl font-inter font-medium max-w-4xl mx-auto mb-8" style={{ 
+          <p className="text-xl sm:text-2xl font-inter font-medium max-w-4xl mx-auto mb-4" style={{ 
             color: '#4A6A85', 
             letterSpacing: '0.02em',
             lineHeight: '1.6'
           }}>
-            The Blueprint is the entry point: 30 days to clarity, guaranteed.
+            A structured 30-day diagnostic engagement that delivers absolute clarity on where you're losing money—and exactly how to fix it.
+          </p>
+          
+          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8" style={{ 
+            color: '#718DA9', 
+            letterSpacing: '0.01em',
+            lineHeight: '1.5'
+          }}>
+            Our guarantee: We'll uncover at least six figures in hidden revenue, or we work free until we do.
           </p>
           
           {/* Decorative divider */}
@@ -139,7 +143,7 @@ const Approach = () => {
               textShadow: '0 1px 2px rgba(0,0,0,0.03)'
             }}
           >
-            Inside your Blueprint:
+            The 6 Pillars We Evaluate:
           </h3>
           
           <div className="max-w-6xl mx-auto relative">
@@ -149,14 +153,14 @@ const Approach = () => {
               transform: 'translateY(-50%)'
             }} />
             
-            <div className="grid md:grid-cols-3 gap-10 mb-16">
-              {benefits.map((benefit, index) => (
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              {pillars.map((pillar, index) => (
                 <div
                   key={index}
                   className={`group relative transition-all duration-700 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
                   }`}
-                  style={{ transitionDelay: `${index * 200 + 400}ms` }}
+                  style={{ transitionDelay: `${index * 150 + 400}ms` }}
                 >
                   {/* Outer gold glow on hover */}
                   <div 
@@ -167,17 +171,18 @@ const Approach = () => {
                     }}
                   />
                   
-                  {/* Main Faulkner Blue card with semi-gloss finish */}
+                  {/* Main card */}
                   <div
                     className="relative rounded-[24px] transition-all duration-300 hover:-translate-y-2 h-full flex flex-col overflow-hidden"
                     style={{
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                       border: '2.5px solid #F3DA73',
                       boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
-                      backdropFilter: 'blur(10px)'
+                      backdropFilter: 'blur(10px)',
+                      minHeight: '280px'
                     }}
                   >
-                    {/* Inner lighting gradient for depth */}
+                    {/* Inner lighting gradient */}
                     <div 
                       className="absolute inset-0 opacity-20 pointer-events-none"
                       style={{
@@ -185,12 +190,9 @@ const Approach = () => {
                       }}
                     />
                     
-                    <div className="relative p-10 sm:p-12 flex flex-col h-full">
-                      {/* Frosted glass number badge */}
-                      <div className="flex justify-center mb-10 relative" style={{
-                        animation: `fade-in 0.6s ease-out ${index * 200 + 400}ms backwards`
-                      }}>
-                        {/* Badge glow on hover */}
+                    <div className="relative p-8 sm:p-10 flex flex-col h-full">
+                      {/* Number badge */}
+                      <div className="flex justify-center mb-8 relative">
                         <div 
                           className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                           style={{
@@ -200,15 +202,15 @@ const Approach = () => {
                           }}
                         />
                         <div 
-                          className="relative w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                          className="relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                           style={{
                             background: 'rgba(255,255,255,0.15)',
                             backdropFilter: 'blur(10px)',
                             border: '1.5px solid rgba(255,255,255,0.25)',
-                            boxShadow: '0 4px 16px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3), inset 0 0 20px rgba(243,218,115,0.1)'
+                            boxShadow: '0 4px 16px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.3)'
                           }}
                         >
-                          <span className="text-3xl font-playfair font-bold" style={{ 
+                          <span className="text-2xl font-playfair font-bold" style={{ 
                             color: '#F3DA73',
                             textShadow: '0 2px 8px rgba(0,0,0,0.2)'
                           }}>
@@ -217,60 +219,30 @@ const Approach = () => {
                         </div>
                       </div>
 
-                      <div className="relative z-10 flex flex-col h-full" style={{
-                        animation: `fade-in 0.6s ease-out ${index * 200 + 600}ms backwards, slide-up 0.6s ease-out ${index * 200 + 600}ms backwards`
-                      }}>
-                        {/* Fixed height intro text section */}
-                        <div className="mb-3" style={{ minHeight: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          <p 
-                            className="text-lg sm:text-xl font-inter leading-relaxed text-center"
-                            style={{ 
-                              color: 'rgba(248,248,248,0.95)', 
-                              letterSpacing: '0.3px',
-                              lineHeight: '1.6'
-                            }}
-                          >
-                            {benefit.text}
-                          </p>
-                        </div>
-                        
-                        {/* Fixed height gold emphasis - perfectly aligned */}
-                        <div className="mb-8" style={{ minHeight: '90px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                          <p className="font-bold text-2xl sm:text-3xl text-center font-playfair" style={{ 
+                      <div className="relative z-10 flex flex-col flex-1 text-center">
+                        {/* Title */}
+                        <h4 
+                          className="text-xl sm:text-2xl font-playfair font-bold mb-4"
+                          style={{ 
                             color: '#F3DA73',
                             textShadow: '0 2px 4px rgba(0,0,0,0.2)',
                             lineHeight: '1.3'
-                          }}>
-                            {benefit.emphasis}
-                          </p>
-                        </div>
+                          }}
+                        >
+                          {pillar.title}
+                        </h4>
                         
-                        {/* Flexible bottom content area */}
-                        <div className="flex-1 flex flex-col justify-start">
-                          <div className="space-y-4">
-                            {benefit.bullets.map((bullet, idx) => (
-                              <div key={idx} className="flex items-start gap-4">
-                                <div 
-                                  className="w-2.5 h-2.5 rounded-full flex-shrink-0 mt-2"
-                                  style={{ 
-                                    background: '#F3DA73',
-                                    boxShadow: '0 0 8px rgba(243,218,115,0.5)'
-                                  }}
-                                />
-                                <p 
-                                  className="text-base sm:text-lg font-inter"
-                                  style={{ 
-                                    color: 'rgba(248,248,248,0.95)',
-                                    letterSpacing: '0.3px',
-                                    lineHeight: '1.7'
-                                  }}
-                                >
-                                  {bullet}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
+                        {/* Description */}
+                        <p 
+                          className="text-base sm:text-lg font-inter leading-relaxed"
+                          style={{ 
+                            color: 'rgba(248,248,248,0.95)', 
+                            letterSpacing: '0.3px',
+                            lineHeight: '1.6'
+                          }}
+                        >
+                          {pillar.description}
+                        </p>
                       </div>
                       
                       {/* Bottom accent line on hover */}
@@ -307,7 +279,7 @@ const Approach = () => {
                   lineHeight: '1.5'
                 }}
               >
-                This isn't theory. It's clarity, cash flow, and control, delivered fast.
+                In 30 days, you'll receive a comprehensive 10-12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it—guaranteed to uncover at least six figures in hidden revenue.
               </p>
             </div>
           </div>

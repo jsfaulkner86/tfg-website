@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import logo from "@/assets/faulkner-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +13,10 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header 
@@ -42,6 +48,7 @@ const Header = () => {
             />
           </div>
           
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-12">
             <a 
               href="#mission" 
@@ -72,8 +79,61 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-all duration-300"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div 
+          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-hidden animate-fade-in z-50"
+          style={{
+            background: 'rgba(113,141,169,0.98)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+          }}
+        >
+          <nav className="flex flex-col py-2">
+            <a 
+              href="#mission"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              About
+            </a>
+            <a 
+              href="#approach"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Our Approach
+            </a>
+            <a 
+              href="#testimonials"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Testimonials
+            </a>
+            <a 
+              href="#contact"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300"
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

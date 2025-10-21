@@ -292,7 +292,7 @@ const Approach = () => {
         {/* Bottom statement */}
         <div className={`transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative py-12 px-12 rounded-3xl mx-auto max-w-5xl"
+            className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl"
             style={{
               background: '#FBF8F1',
               border: '2px solid #D4B65D',
@@ -301,7 +301,7 @@ const Approach = () => {
           >
             <div className="text-center">
               <p 
-                className="text-xl sm:text-2xl md:text-3xl font-playfair font-bold"
+                className="text-base sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 

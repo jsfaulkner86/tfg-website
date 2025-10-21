@@ -6,6 +6,7 @@ import Approach from "@/components/Approach";
 import Testimonials from "@/components/Testimonials";
 import Transformation from "@/components/Transformation";
 import Results from "@/components/Results";
+import Partners from "@/components/Partners";
 import BottomVideo from "@/components/BottomVideo";
 import StickyCTA from "@/components/StickyCTA";
 
@@ -21,6 +22,7 @@ const Index = () => {
         <Transformation />
         <Testimonials />
         <Results />
+        <Partners />
         <BottomVideo />
       </main>
       <StickyCTA />

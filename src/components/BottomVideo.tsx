@@ -45,6 +45,7 @@ const BottomVideo = () => {
             muted 
             playsInline
             preload="none"
+            poster="/hero-background.jpg"
             className="absolute inset-0 w-full h-full object-cover" 
             style={{
               filter: 'brightness(1.15) contrast(1.1)'

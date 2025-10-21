@@ -43,9 +43,11 @@ const Hero = () => {
           muted 
           playsInline
           preload={isMobile ? "none" : "auto"}
+          poster="/hero-background.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
-            filter: 'brightness(1.15) contrast(1.1)'
+            filter: 'brightness(1.15) contrast(1.1)',
+            willChange: isMobile ? 'auto' : 'transform'
           }}
         >
           <source src="/hero-beach.mp4" type="video/mp4" />

@@ -10,11 +10,11 @@ const Partners = () => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <div className="opacity-60 hover:opacity-100 transition-opacity">
+          <div className="opacity-70 hover:opacity-100 transition-opacity">
             <img 
               src={vantaBadge} 
               alt="Vanta Managed Service Provider Partner" 
-              className="h-16 w-auto"
+              className="h-24 md:h-32 w-auto"
             />
           </div>
         </div>

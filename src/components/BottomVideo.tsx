@@ -3,17 +3,31 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  
   const handleBooking = () => {
     window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
+  
   useEffect(() => {
+    // Check if mobile
+    setIsMobile(window.innerWidth < 768);
+    
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
+        setShouldLoadVideo(true);
+        // Load and play video when visible
+        if (videoRef.current) {
+          videoRef.current.load();
+        }
       }
     }, {
-      threshold: 0.2
+      threshold: 0.1,
+      rootMargin: '100px'
     });
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
@@ -23,11 +37,24 @@ const BottomVideo = () => {
   return <section ref={sectionRef} id="contact" className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0">
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover" style={{
-        filter: 'brightness(1.15) contrast(1.1)'
-      }}>
-          <source src="/cliff-aerial.mp4" type="video/mp4" />
-        </video>
+        {shouldLoadVideo ? (
+          <video 
+            ref={videoRef}
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            preload="none"
+            className="absolute inset-0 w-full h-full object-cover" 
+            style={{
+              filter: 'brightness(1.15) contrast(1.1)'
+            }}
+          >
+            <source src="/cliff-aerial.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-900" />
+        )}
       </div>
 
       {/* Content Overlay */}

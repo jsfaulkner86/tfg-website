@@ -147,6 +147,7 @@ const Mission = () => {
                       src={johnHeadshot} 
                       alt="John Faulkner - Healthcare Growth Architect"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                       style={{ transform: 'scaleX(-1) scale(1.3) translateY(8%)' }}
                     />
                   </div>
@@ -185,6 +186,7 @@ const Mission = () => {
                       src={nicoleHeadshot} 
                       alt="Dr. Nicole Faulkner - Board-Certified OB/GYN Physician"
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>

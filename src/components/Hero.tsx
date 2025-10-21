@@ -4,14 +4,28 @@ import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
+    // Check if mobile device
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    const handleScroll = () => {
+      // Only update scroll position if not mobile for performance
+      if (!isMobile) {
+        setScrollY(window.scrollY);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, [isMobile]);
   const handleBooking = () => {
     window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
@@ -20,14 +34,15 @@ const Hero = () => {
       <div 
         className="absolute inset-0"
         style={{
-          transform: `translateY(${scrollY * 0.5}px)`
+          transform: isMobile ? 'none' : `translateY(${scrollY * 0.5}px)`
         }}
       >
         <video 
           autoPlay 
           loop 
           muted 
-          playsInline 
+          playsInline
+          preload={isMobile ? "none" : "auto"}
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             filter: 'brightness(1.15) contrast(1.1)'

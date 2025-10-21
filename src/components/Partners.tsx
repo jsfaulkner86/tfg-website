@@ -15,6 +15,7 @@ const Partners = () => {
               src={vantaBadge} 
               alt="Vanta Managed Service Provider Partner" 
               className="h-24 md:h-32 w-auto"
+              loading="lazy"
             />
           </div>
         </div>

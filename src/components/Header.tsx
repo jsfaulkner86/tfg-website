@@ -8,7 +8,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -35,6 +35,7 @@ const Header = () => {
               src={logo} 
               alt="The Faulkner Group - Healthcare Advisory Excellence" 
               className="h-20 w-auto md:h-24 transition-transform duration-300 hover:scale-105"
+              loading="eager"
               style={{
                 filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
               }}

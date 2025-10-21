@@ -22,8 +22,8 @@ const Index = () => {
         <Transformation />
         <Testimonials />
         <Results />
-        <Partners />
         <BottomVideo />
+        <Partners />
       </main>
       <StickyCTA />
     </>

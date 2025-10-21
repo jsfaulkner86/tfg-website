@@ -7,15 +7,12 @@ const BottomVideo = () => {
   const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  
   const handleBooking = () => {
     window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
   };
-  
   useEffect(() => {
     // Check if mobile
     setIsMobile(window.innerWidth < 768);
-    
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsVisible(true);
@@ -37,25 +34,11 @@ const BottomVideo = () => {
   return <section ref={sectionRef} id="contact" className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0">
-        {shouldLoadVideo ? (
-          <video 
-            ref={videoRef}
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            preload="none"
-            poster="/hero-background.jpg"
-            className="absolute inset-0 w-full h-full object-cover" 
-            style={{
-              filter: 'brightness(1.15) contrast(1.1)'
-            }}
-          >
+        {shouldLoadVideo ? <video ref={videoRef} autoPlay loop muted playsInline preload="none" poster="/hero-background.jpg" className="absolute inset-0 w-full h-full object-cover" style={{
+        filter: 'brightness(1.15) contrast(1.1)'
+      }}>
             <source src="/cliff-aerial.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-900" />
-        )}
+          </video> : <div className="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-900" />}
       </div>
 
       {/* Content Overlay */}
@@ -118,9 +101,7 @@ const BottomVideo = () => {
                     <p className="text-base sm:text-lg font-inter text-white/80" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.2)',
                     letterSpacing: '0.02em'
-                  }}>
-                      Co-Founder, Healthcare Growth Architect
-                    </p>
+                  }}>C``````o-Founder, Healthcare Growth Architect</p>
                   </div>
                   
                   <div className="h-px w-12 mx-auto" style={{

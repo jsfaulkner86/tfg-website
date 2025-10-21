@@ -82,7 +82,7 @@ const Mission = () => {
               <p className="text-base sm:text-lg">
                 Led by <strong style={{
                 color: '#1E1E1E'
-              }}>John Faulkner</strong>, a Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{
+              }}>John Faulkner</strong>, CEO & Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{
                 color: '#1E1E1E'
               }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
               </p>

@@ -2,7 +2,7 @@ import vantaBadge from "@/assets/vanta-partner-badge.png";
 
 const Partners = () => {
   return (
-    <section className="py-16 px-6 bg-background">
+    <section className="py-8 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <p className="text-sm font-inter text-muted-foreground uppercase tracking-wider">

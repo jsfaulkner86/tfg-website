@@ -101,7 +101,7 @@ const BottomVideo = () => {
                     <p className="text-base sm:text-lg font-inter text-white/80" style={{
                     textShadow: '0 2px 8px rgba(0,0,0,0.2)',
                     letterSpacing: '0.02em'
-                  }}>C``````o-Founder, Healthcare Growth Architect</p>
+                  }}>CEO & Co-Founder, Healthcare Growth Architect</p>
                   </div>
                   
                   <div className="h-px w-12 mx-auto" style={{

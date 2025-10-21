@@ -45,10 +45,10 @@ const BottomVideo = () => {
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className={`max-w-5xl text-center transition-all duration-1500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="space-y-10">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6" style={{
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold mb-6" style={{
             color: '#FFFFFF',
-            letterSpacing: '-0.03em',
-            lineHeight: '1.1',
+            letterSpacing: '-0.01em',
+            lineHeight: '1.2',
             textShadow: '0 4px 12px rgba(0,0,0,0.5)'
           }}>
               Ready to See What's Possible?

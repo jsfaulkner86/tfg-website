@@ -226,9 +226,7 @@ const Approach = () => {
               color: '#718DA9',
               letterSpacing: '-0.02em',
               lineHeight: '1.5'
-            }}>
-                In 30 days, you'll receive a comprehensive 10 to 12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it, guaranteed to uncover at least six figures in hidden revenue.
-              </p>
+            }}>In 14 days, you'll receive a comprehensive 10 to 12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it, guaranteed to uncover at least six figures in hidden revenue.</p>
             </div>
           </div>
         </div>

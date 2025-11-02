@@ -73,7 +73,7 @@ const BottomVideo = () => {
               letterSpacing: '0.02em',
               lineHeight: '1.6',
               textShadow: '0 2px 8px rgba(0,0,0,0.3)'
-            }}>We guarantee to uncover 6 figures in lost revenue in 30 days or we keep working for free until we do</p>
+            }}>We guarantee to uncover 6 figures in lost revenue in 14 days or we keep working for free until we do</p>
             </div>
 
             <div className="space-y-8">

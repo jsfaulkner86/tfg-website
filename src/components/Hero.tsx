@@ -37,21 +37,15 @@ const Hero = () => {
           transform: isMobile ? 'none' : `translateY(${scrollY * 0.5}px)`
         }}
       >
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          preload={isMobile ? "none" : "auto"}
-          poster="/hero-background.jpg"
+        <img 
+          src="/hero-boardroom.jpg"
+          alt="Healthcare leadership team collaboration"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             filter: 'brightness(1.15) contrast(1.1)',
             willChange: isMobile ? 'auto' : 'transform'
           }}
-        >
-          <source src="/hero-beach.mp4" type="video/mp4" />
-        </video>
+        />
         
         {/* Dark gradient overlay for better text readability */}
         <div 

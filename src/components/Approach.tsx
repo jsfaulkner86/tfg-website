@@ -92,7 +92,7 @@ const Approach = () => {
           lineHeight: '1.6'
         }}>A structured 14-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.</p>
           
-          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8" style={{
+          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8 whitespace-nowrap" style={{
           color: '#718DA9',
           letterSpacing: '0.01em',
           lineHeight: '1.5'

@@ -72,7 +72,7 @@ const Mission = () => {
               </div>
             </div>
             
-            <div className="hidden md:block space-y-8 font-inter" style={{
+            <div className="space-y-8 font-inter" style={{
             lineHeight: '1.82',
             color: '#1E1E1E'
           }}>

@@ -80,7 +80,7 @@ const Hero = () => {
             </span>
           </h1>
           <p 
-            className="mb-6 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto px-6 py-3 rounded-lg whitespace-nowrap" 
+            className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto px-4 py-3 rounded-lg" 
             style={{ 
               color: 'rgb(255, 255, 255)',
               textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
@@ -92,10 +92,10 @@ const Hero = () => {
           </p>
           
           {/* Trust indicators */}
-          <div className="mb-12 flex flex-wrap justify-center gap-8 text-white/90">
+          <div className="mb-12 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-white/90 px-4">
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-base font-inter font-bold px-3 py-1 rounded" style={{ 
+              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
+              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
                 textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
                 color: 'rgb(255, 255, 255)',
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
@@ -105,8 +105,8 @@ const Hero = () => {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-base font-inter font-bold px-3 py-1 rounded" style={{ 
+              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
+              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
                 textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
                 color: 'rgb(255, 255, 255)',
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
@@ -116,8 +116,8 @@ const Hero = () => {
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#F3DA73' }} />
-              <span className="text-base font-inter font-bold px-3 py-1 rounded" style={{ 
+              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
+              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
                 textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
                 color: 'rgb(255, 255, 255)',
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
@@ -130,11 +130,10 @@ const Hero = () => {
 
           <Button
             onClick={handleBooking} 
-            className="text-xl rounded-lg group transition-all duration-300 font-semibold relative overflow-hidden border-0"
+            className="text-base sm:text-lg md:text-xl rounded-lg group transition-all duration-300 font-semibold relative overflow-hidden border-0 px-6 sm:px-8 md:px-12 py-4 sm:py-6"
             style={{ 
               backgroundColor: 'rgba(243, 218, 115, 0.9)',
               color: '#5882A1',
-              padding: '1.5em 3.4em',
               boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
             }}
             onMouseEnter={(e) => {
@@ -145,7 +144,7 @@ const Hero = () => {
             }}
           >
             Book Your Growth Blueprint
-            <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
         </div>
       </div>

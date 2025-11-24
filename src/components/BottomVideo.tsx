@@ -113,7 +113,10 @@ const BottomVideo = () => {
               }} />
                 
                 <div className="space-y-4">
-                  <div className="space-y-1">
+                  <div className="space-y-2 px-6 py-3 rounded-lg inline-block" style={{
+                    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                    backdropFilter: 'blur(4px)'
+                  }}>
                     <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
                       textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
                       letterSpacing: '-0.01em'
@@ -130,7 +133,10 @@ const BottomVideo = () => {
                     background: 'rgba(243,218,115,0.3)'
                   }} />
                   
-                  <div className="space-y-1">
+                  <div className="space-y-2 px-6 py-3 rounded-lg inline-block" style={{
+                    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                    backdropFilter: 'blur(4px)'
+                  }}>
                     <p className="text-2xl sm:text-3xl font-playfair font-bold text-white" style={{
                       textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
                       letterSpacing: '-0.01em'

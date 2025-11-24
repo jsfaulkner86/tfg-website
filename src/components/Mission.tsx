@@ -80,7 +80,11 @@ const Mission = () => {
                 We are a boutique healthcare advisory firm helping specialty practices, women's health groups, fertility clinics, and health tech innovators escape broken systems and build organizations that thrive.
               </p>
               <p className="text-base sm:text-lg">
-                Led by <strong style={{ color: '#1E1E1E' }}>John Faulkner</strong>, CEO & Operational Systems Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{ color: '#1E1E1E' }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
+                Led by John Faulkner, CEO & Operational Systems Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and Dr. Nicole Faulkner, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.                                                                                                                                                                                                                                                                                                                                                                                           <strong style={{
+                color: '#1E1E1E'
+              }}>John Faulkner</strong>, CEO & Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <strong style={{
+                color: '#1E1E1E'
+              }}>Dr. Nicole Faulkner</strong>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
               </p>
               <p className="text-base sm:text-lg">
                 You're not hiring consultants - you're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.

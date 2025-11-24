@@ -46,7 +46,7 @@ const Problem = () => {
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{
-        paddingTop: '60px',
+        paddingTop: '20px',
         paddingBottom: '100px',
         background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
       }}

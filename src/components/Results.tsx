@@ -59,7 +59,7 @@ const Results = () => {
       className="px-6 relative overflow-hidden"
       style={{
         paddingTop: '100px',
-        paddingBottom: '80px',
+        paddingBottom: '40px',
         background: '#718DA9'
       }}
     >

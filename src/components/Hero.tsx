@@ -80,7 +80,7 @@ const Hero = () => {
             </span>
           </h1>
           <p 
-            className="mb-6 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto px-6 py-3 rounded-lg" 
+            className="mb-6 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto px-6 py-3 rounded-lg whitespace-nowrap" 
             style={{ 
               color: 'rgb(255, 255, 255)',
               textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',

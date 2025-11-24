@@ -1,23 +1,29 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
-  title: "Workflow Architecture",
-  details: ["We review every process, from scheduling to documentation, to find redundancies, bottlenecks, and hidden delays.", "Broken workflows bleed time and talent."]
+  title: "Admin Relief",
+  description: "We eliminate manual tasks, streamline workflows, and integrate automation that cuts administrative time by up to 40-60 percent.",
+  roi: "Providers regain time for real clinical care, not paperwork."
 }, {
-  title: "Revenue Integrity",
-  details: ["Find the money you're already earning.", "Uncover hidden revenue leaks and coding inefficiencies, from charge capture gaps to missed claims."]
+  title: "Revenue Recovery",
+  description: "We identify denied claims, missed charges, and inefficient payer processes—then implement systems that capture every dollar you have already earned.",
+  roi: "Six figures in recoverable revenue within 90 days."
 }, {
-  title: "Team Dynamics & Capacity",
-  details: ["Align people with purpose.", "Identify role misalignment, unbalanced workloads, and capacity bottlenecks.", "Redistribute effort for greater impact."]
+  title: "Team Wellbeing",
+  description: "We redesign workflows and staffing models to reduce pressure, protect your teams, improve morale, and stop costly turnover.",
+  roi: "Happier staff, better care, and significantly lower hiring costs."
 }, {
-  title: "Patient Experience Pathways",
-  details: ["Reduce leakage. Grow loyalty.", "Diagnose patient touchpoints that drive drop-off or delay, and improve retention through lasting relationships."]
+  title: "Patient Flow",
+  description: "We optimize scheduling, communication, and follow-up processes so patients move through the system efficiently and receive a better experience.",
+  roi: "Higher retention, better reviews, and increased lifetime value."
 }, {
-  title: "AI Adoption & Automation",
-  details: ["Leverage AI to enhance, not replace, human expertise.", "Streamline documentation, scheduling, and communication to boost efficiency without burnout."]
+  title: "System Integration",
+  description: "We connect your EHR, billing, scheduling, analytics, and communication tools into one seamless operating system.",
+  roi: "Real-time data flow, fewer errors, and operations that finally run smoothly."
 }, {
-  title: "Vendor, Technology & Compliance Optimization",
-  details: ["Evaluate your EHR, tech stack, and vendor relationships.", "Eliminate redundancy, maximize ROI, and ensure all systems and workflows align with compliance and security standards."]
+  title: "Growth Strategy",
+  description: "We create a roadmap for expansion, new service lines, and competitive positioning so you can grow with confidence without sacrificing quality or burning out your team.",
+  roi: "Predictable growth and long-term financial stability."
 }];
 const Approach = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -186,20 +192,32 @@ const Approach = () => {
                           {pillar.title}
                         </h4>
                         
-                        {/* Details */}
-                        <div className="space-y-4 text-left">
-                          {pillar.details.map((detail, detailIndex) => <div key={detailIndex} className="flex items-start gap-3">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{
-                          background: '#F3DA73'
-                        }} />
-                              <p className="text-base font-inter leading-relaxed" style={{
-                          color: 'rgba(248,248,248,0.95)',
-                          letterSpacing: '0.3px',
-                          lineHeight: '1.6'
-                        }}>
-                                {detail}
-                              </p>
-                            </div>)}
+                        {/* Description */}
+                        <div className="space-y-6 text-left flex-1">
+                          <p className="text-base font-inter leading-relaxed" style={{
+                            color: 'rgba(248,248,248,0.95)',
+                            letterSpacing: '0.3px',
+                            lineHeight: '1.6'
+                          }}>
+                            {pillar.description}
+                          </p>
+                          
+                          {/* ROI */}
+                          <div className="pt-4 border-t border-white/20">
+                            <p className="text-sm font-inter font-bold mb-2" style={{
+                              color: '#F3DA73',
+                              letterSpacing: '0.5px'
+                            }}>
+                              ROI:
+                            </p>
+                            <p className="text-base font-inter leading-relaxed" style={{
+                              color: 'rgba(248,248,248,0.95)',
+                              letterSpacing: '0.3px',
+                              lineHeight: '1.6'
+                            }}>
+                              {pillar.roi}
+                            </p>
+                          </div>
                         </div>
                       </div>
                       

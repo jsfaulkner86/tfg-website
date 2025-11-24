@@ -140,7 +140,8 @@ const Mission = () => {
                 </p>
                 <p className="font-inter text-sm" style={{
                 color: '#718DA9'
-              }}>CEO & Healthcare Growth Architect, Co-Founder</p>
+              }}>CEO & Operational Systems Architect
+, Co-Founder</p>
               </div>
 
               {/* Nicole's Portrait */}

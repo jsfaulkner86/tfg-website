@@ -31,7 +31,7 @@ const BottomVideo = () => {
     }
     return () => observer.disconnect();
   }, []);
-  return <section ref={sectionRef} id="contact" className="relative h-screen w-full overflow-hidden">
+  return <section ref={sectionRef} id="contact" className="relative min-h-screen w-full overflow-visible">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -53,7 +53,7 @@ const BottomVideo = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 flex h-full items-start md:items-center justify-center px-6 pt-40 pb-20 md:pt-20 md:pb-0 overflow-y-auto">
+      <div className="relative z-10 flex min-h-screen items-start md:items-center justify-center px-6 pt-40 pb-32 md:pt-20 md:pb-20">
         <div className={`max-w-5xl text-center transition-all duration-1500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="space-y-10">
             <h2 
@@ -152,7 +152,7 @@ const BottomVideo = () => {
       </div>
 
       {/* Elegant bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32" style={{
+      <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" style={{
       background: 'linear-gradient(to bottom, transparent, rgba(44,44,44,0.95))'
     }} />
     </section>;

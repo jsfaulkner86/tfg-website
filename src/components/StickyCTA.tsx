@@ -26,9 +26,10 @@ const StickyCTA = () => {
 
   return (
     <div 
-      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-[slide-in-up_0.5s_ease-out]"
+      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-[slide-in-up_0.5s_ease-out] pointer-events-auto"
       style={{
-        animation: 'fade-in 0.5s ease-out'
+        animation: 'fade-in 0.5s ease-out',
+        touchAction: 'none'
       }}
     >
       <div 

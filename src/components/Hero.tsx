@@ -80,10 +80,12 @@ const Hero = () => {
             </span>
           </h1>
           <p 
-            className="mb-6 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto" 
+            className="mb-6 text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto px-6 py-3 rounded-lg" 
             style={{ 
-              color: 'rgba(255, 255, 255, 0.95)',
-              textShadow: '0 4px 8px rgba(0,0,0,0.35)'
+              color: 'rgb(255, 255, 255)',
+              textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              backdropFilter: 'blur(4px)'
             }}
           >
             We help healthcare leaders escape broken systems & build organizations that thrive.

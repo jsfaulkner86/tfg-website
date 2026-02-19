@@ -39,7 +39,7 @@ const Header = () => {
           <div className="flex items-center">
             <img 
               src={logo} 
-              alt="The Faulkner Group - Healthcare Advisory Excellence" 
+              alt="The Faulkner Group - Clinical Strategy for Health Tech" 
               className="h-20 w-auto md:h-24 transition-transform duration-300 hover:scale-105"
               loading="eager"
               style={{

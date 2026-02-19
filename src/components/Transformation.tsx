@@ -5,7 +5,7 @@ const outcomes = [
   {
     microHeadline: "From Skepticism to Advocacy",
     mainTitle: "Turn physicians into product champions",
-    benefitSummary: "Through CMIO engagement, peer-to-peer advocacy, and clinical credibility building, your platform stops being 'another tool' and becomes essential to clinical practice.",
+    benefitSummary: "Through CMIO engagement, peer-to-peer advocacy, and clinical credibility building, your platform stops being 'another tool' and becomes essential to clinical workflows.",
     result: "Internal physician champions who drive adoption organically"
   },
   {
@@ -17,7 +17,7 @@ const outcomes = [
   {
     microHeadline: "From Risk to Confidence",
     mainTitle: "Give health systems the safety frameworks they demand",
-    benefitSummary: "We build controlled rollback protocols, escalation pathways, and compliance documentation that transform risk objections into confident approvals.",
+    benefitSummary: "We build controlled rollback protocols, escalation pathways, and compliance documentation that turn risk objections into confident approvals.",
     result: "Enterprise contracts secured with pre-built governance packages"
   }
 ];
@@ -45,7 +45,7 @@ const Transformation = () => {
 
   return (
     <section 
-      id="transformation"
+      id="outcomes"
       ref={sectionRef}
       className="px-6 relative overflow-hidden"
       style={{
@@ -84,7 +84,7 @@ const Transformation = () => {
             boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
           }}>
             <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>
-              The Outcome
+              What You Get
             </span>
           </div>
           
@@ -97,7 +97,7 @@ const Transformation = () => {
               textShadow: '0 2px 4px rgba(0,0,0,0.02)'
             }}
           >
-            The Transformation
+            The Outcome
           </h2>
           
           <div className="space-y-6 max-w-4xl mx-auto mb-8">

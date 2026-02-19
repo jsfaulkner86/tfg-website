@@ -75,7 +75,7 @@ const Testimonials = () => {
             border: '1px solid rgba(243,218,115,0.4)'
           }}>
             <span className="text-xs font-inter font-medium tracking-wider uppercase" style={{ color: '#D4B65D' }}>
-              Client Success Stories
+              Partner Success Stories
             </span>
           </div>
           

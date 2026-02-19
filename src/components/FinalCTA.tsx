@@ -29,7 +29,7 @@ const FinalCTA = () => {
           backdropFilter: 'blur(10px)'
         }}>
           <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>
-            Let's Transform Your Practice
+            Let's Accelerate Your Adoption
           </span>
         </div>
 
@@ -43,7 +43,7 @@ const FinalCTA = () => {
         <p className="text-xl sm:text-2xl md:text-3xl font-inter font-light text-white/95 max-w-4xl mx-auto leading-relaxed" style={{
           textShadow: '0 2px 10px rgba(0,0,0,0.2)'
         }}>
-          If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
+          If you're building health tech that needs physician adoption, clinical governance, and a path from pilot to scale, the next step is simple: schedule a strategy call today.
         </p>
 
         <div className="pt-4">
@@ -57,7 +57,7 @@ const FinalCTA = () => {
               border: '2px solid rgba(255,255,255,0.3)'
             }}
           >
-            Book Your Growth Blueprint
+            Book Your Strategy Call
             <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-300 group-hover:translate-x-2" />
           </Button>
         </div>
@@ -80,7 +80,7 @@ const FinalCTA = () => {
                 textShadow: '0 2px 8px rgba(0,0,0,0.2)',
                 letterSpacing: '0.02em'
               }}>
-                Co-Founder, Healthcare Growth Architect
+                Co-Founder, Operational Systems Architect
               </p>
             </div>
             

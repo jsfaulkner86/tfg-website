@@ -4,29 +4,31 @@ import { TrendingUp, Award, Users } from "lucide-react";
 const highlights = [
   {
     icon: TrendingUp,
-    stat: "$50M+ Recovered",
+    stat: "Physician-First",
+    stat2: "Strategy",
     bullets: [
-      "Uncovered in lost revenue across hospitals, health systems, and specialty practices",
-      "By fixing inefficiencies hiding in plain sight"
+      "Board-certified OB/GYN physician co-founder who speaks the language of clinicians",
+      "Direct access to physician networks through BackTable and WHIS",
+      "We build trust with the people who decide whether your product gets used"
     ]
   },
   {
     icon: Award,
-    stat: "23+ Years of",
-    stat2: "Expertise",
+    stat: "15+ Years",
+    stat2: "Combined",
     bullets: [
-      "13+ years leading healthcare growth architecture",
+      "15+ years in healthcare operations and systems architecture",
       "10+ years in frontline clinical leadership",
-      "We bridge the boardroom and the bedside"
+      "We bridge the gap between your product and the clinical world"
     ]
   },
   {
     icon: Users,
-    stat: "Boutique by Design",
+    stat: "Embedded Partners",
     bullets: [
-      "High-touch partnership blending physician insight, operational precision, and executive strategy",
-      "Every engagement is customized",
-      "No cookie-cutter consulting, ever"
+      "We don't send slide decks. We embed directly into your team as fractional advisors",
+      "Every engagement is customized to your product, market, and clinical specialty",
+      "Built specifically for femtech and women's health innovation"
     ]
   }
 ];
@@ -239,7 +241,7 @@ const Results = () => {
                   lineHeight: '1.4'
                 }}
               >
-                We don't just analyze. We architect organizations built to last.
+                We don't just advise. We embed, execute, and deliver clinical adoption at scale.
               </p>
             </div>
           </div>

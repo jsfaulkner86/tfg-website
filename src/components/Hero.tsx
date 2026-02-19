@@ -93,7 +93,7 @@ const Hero = () => {
           
           {/* Trust indicators */}
           <div className="mb-12 flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/90 px-4">
-            {["Clinical Readiness", "Physician Adoption", "Governance & Risk", "Training & Education", "24/7 Support"].map((badge) => (
+            {["Readiness & Governance", "Physician Adoption", "Training & Education", "Sales, CSM & Deployment"].map((badge) => (
               <div key={badge} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
                 <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 

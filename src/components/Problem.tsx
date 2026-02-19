@@ -88,7 +88,7 @@ const Problem = () => {
                 The Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                Whether you're a single-site specialty practice, multi-specialty group, or large multi-location system—hidden leaks are draining your profitability without warning.
+                Whether you're a single-site specialty practice, multi-specialty group, or large multi-location system, hidden leaks are draining your profitability without warning.
               </p>
               <div 
                 className="relative overflow-hidden rounded-full"

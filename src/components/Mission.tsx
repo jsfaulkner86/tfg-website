@@ -117,15 +117,15 @@ const Mission = () => {
               }}
             >
               <p className="text-base sm:text-lg">
-                We are the strategic clinical and operational partner for femtech and women's health technology companies — bridging the gap between innovative platforms and real-world clinical adoption.
+                We are the strategic clinical and operational partner for femtech and women's health technology companies, bridging the gap between innovative platforms and real-world clinical adoption.
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 15 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician and Medical Director at BackTable — a physician-to-physician podcast network — we combine deep clinical credibility and an extensive physician network with health tech strategy to drive adoption, governance, and measurable outcomes.
+                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 15 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician and Medical Director at BackTable (a physician-to-physician podcast network), we combine deep clinical credibility and an extensive physician network with health tech strategy to drive adoption, governance, and measurable outcomes.
               </p>
               
               <p className="text-base sm:text-lg">
-                You're not hiring consultants — you're partnering with clinical operators who understand both the exam room and the boardroom, purpose-built to help femtech companies win.
+                You're not hiring consultants. You're partnering with clinical operators who understand both the exam room and the boardroom, purpose-built to help femtech companies win.
               </p>
               
               <div

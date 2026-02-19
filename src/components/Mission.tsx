@@ -96,7 +96,7 @@ const Mission = () => {
                     lineHeight: '1.82'
                   }}
                 >
-                  Built at the intersection of medicine, strategy, and innovation.
+                  Built at the intersection of clinical medicine, health tech strategy, and women's health innovation.
                 </p>
                 <div
                   className="bg-[#F3DA73]"
@@ -117,15 +117,15 @@ const Mission = () => {
               }}
             >
               <p className="text-base sm:text-lg">
-                We are a boutique healthcare advisory firm helping specialty practices, women's health groups, fertility clinics, and health tech innovators escape broken systems and build organizations that thrive.
+                We are the strategic clinical and operational partner for femtech and women's health technology companies — bridging the gap between innovative platforms and real-world clinical adoption.
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO & Healthcare Growth Architect with over 13 years of experience optimizing operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite business strategy and clinical expertise to drive real, measurable change.
+                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 13 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite health tech business strategy with deep clinical expertise to drive adoption, engagement, and measurable outcomes.
               </p>
               
               <p className="text-base sm:text-lg">
-                You're not hiring consultants - you're partnering with growth architects who understand both the trenches of medicine and the boardroom strategy required to scale.
+                You're not hiring consultants — you're partnering with clinical operators who understand both the exam room and the boardroom, purpose-built to help femtech companies win.
               </p>
               
               <div
@@ -149,8 +149,8 @@ const Mission = () => {
                     lineHeight: '1.82'
                   }}
                 >
-                  We don't just deliver reports.<br />
-                  We deliver results that last.
+                  We don't just advise.<br />
+                  We embed, execute, and deliver results.
                 </p>
               </div>
             </div>

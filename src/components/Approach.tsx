@@ -82,7 +82,7 @@ const Approach = () => {
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>We embed alongside your team across four critical areas that determine whether health tech products achieve real-world clinical adoption and commercial success.</p>
+        }}>We embed alongside your team across the four pillars that determine whether health tech products achieve real-world clinical adoption and commercial success.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">

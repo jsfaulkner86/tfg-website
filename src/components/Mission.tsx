@@ -195,7 +195,7 @@ const Mission = () => {
                   >
                     <img
                       src={johnHeadshot}
-                      alt="John Faulkner - Healthcare Growth Architect"
+                      alt="John Faulkner - Operational Systems Architect"
                       className="w-full h-full object-cover"
                       loading="lazy"
                       style={{

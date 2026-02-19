@@ -125,7 +125,7 @@ const Mission = () => {
               </p>
               
               <p className="text-base sm:text-lg">
-                You're not hiring consultants. You're partnering with clinical operators who understand both the exam room and the boardroom, purpose-built to help femtech companies win.
+                We serve as fractional clinical and operational advisors for femtech companies, embedding directly into your team to accelerate physician adoption, reduce risk, and convert pilots into lasting, scalable solutions.
               </p>
               
               <div

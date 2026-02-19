@@ -88,44 +88,24 @@ const Hero = () => {
               backdropFilter: 'blur(4px)'
             }}
           >
-            We help femtech companies drive physician adoption, mitigate clinical risk, and convert pilots into full-scale implementations.
+            We help femtech companies achieve physician adoption, clinical governance, and full-scale implementation through embedded clinical and operational partnership.
           </p>
           
           {/* Trust indicators */}
-          <div className="mb-12 flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-white/90 px-4">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
-              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
-                textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
-                color: 'rgb(255, 255, 255)',
-                backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                backdropFilter: 'blur(4px)'
-              }}>
-                Physician Adoption
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
-              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
-                textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
-                color: 'rgb(255, 255, 255)',
-                backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                backdropFilter: 'blur(4px)'
-              }}>
-                Risk & Governance
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
-              <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
-                textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
-                color: 'rgb(255, 255, 255)',
-                backgroundColor: 'rgba(0, 0, 0, 0.3)',
-                backdropFilter: 'blur(4px)'
-              }}>
-                Pilot-to-Scale Conversion
-              </span>
-            </div>
+          <div className="mb-12 flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/90 px-4">
+            {["Clinical Readiness", "Physician Adoption", "Governance & Risk", "Training & Education", "24/7 Support"].map((badge) => (
+              <div key={badge} className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
+                <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{ 
+                  textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)', 
+                  color: 'rgb(255, 255, 255)',
+                  backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                  backdropFilter: 'blur(4px)'
+                }}>
+                  {badge}
+                </span>
+              </div>
+            ))}
           </div>
 
           <Button

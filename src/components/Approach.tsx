@@ -1,21 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
-  title: "Physician Adoption",
-  description: "We build trust-based adoption strategies that get physicians to champion your platform. From KOL engagement to peer-reviewed validation, we create the clinical credibility your product needs.",
-  roi: "Accelerated adoption timelines and physician champions who sell for you."
+  title: "Clinical Environment Readiness",
+  description: "We assess your target clinical environment, including health systems, payer networks, and practice workflows, to identify integration barriers, workflow conflicts, and adoption risks before your technology ever touches a patient.",
+  roi: "A clear integration roadmap that eliminates surprises and accelerates time-to-deployment."
 }, {
-  title: "Risk Mitigation & Governance",
-  description: "We design clinical governance frameworks, regulatory compliance strategies, and risk protocols that give health systems the confidence to say yes.",
-  roi: "Cleared regulatory hurdles and enterprise-ready governance documentation."
+  title: "Physician Adoption & Champion Development",
+  description: "We build trust with the clinical decision-makers who determine whether your platform gets adopted or abandoned. From CMIO engagement to peer-to-peer physician advocacy, we create internal champions who drive adoption from the inside.",
+  roi: "Physicians who actively advocate for your product across their health system."
 }, {
-  title: "Clinical Readiness",
-  description: "We ensure your product fits real clinical workflows. From EHR integration strategy to care pathway mapping, we make sure your technology works the way physicians actually practice.",
-  roi: "Seamless workflow integration and dramatically reduced implementation friction."
+  title: "Clinical Governance & Risk Management",
+  description: "We design governance protocols, escalation pathways, and controlled rollback strategies that give health system leadership the confidence to approve and sustain your technology at scale.",
+  roi: "Enterprise-ready governance documentation and clinical safety frameworks."
 }, {
-  title: "Pilot-to-Scale Conversion",
-  description: "We turn successful pilots into full-scale deployments with structured rollout plans, training programs, and change management strategies that stick.",
-  roi: "Predictable scaling from pilot to enterprise-wide adoption."
+  title: "Training, Education & Change Management",
+  description: "We build structured training programs, clinical education curricula, and change management strategies that ensure every user, from front-desk staff to attending physicians, is confident and competent from day one.",
+  roi: "Faster onboarding, higher engagement, and dramatically reduced support burden."
+}, {
+  title: "Deployment Operations & Ongoing Support",
+  description: "We manage the full deployment lifecycle with 24/7 clinical-technical support escalation, performance monitoring, and structured scaling from pilot to enterprise-wide implementation.",
+  roi: "Predictable scaling with continuous support from pilot through full adoption."
 }];
 const Approach = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -82,7 +86,7 @@ const Approach = () => {
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>We embed alongside your team to solve the four critical challenges that determine whether health tech products achieve real-world clinical adoption.</p>
+        }}>We embed alongside your team to solve the five critical challenges that determine whether health tech products achieve real-world clinical adoption.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -110,7 +114,7 @@ const Approach = () => {
           letterSpacing: '0.05em',
           textShadow: '0 1px 2px rgba(0,0,0,0.03)'
         }}>
-            The 4 Pillars of Clinical Adoption:
+            The 5 Pillars of Clinical Adoption:
           </h3>
           
           <div className="max-w-6xl mx-auto relative">
@@ -120,7 +124,7 @@ const Approach = () => {
             transform: 'translateY(-50%)'
           }} />
             
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {pillars.map((pillar, index) => <div key={index} className={`group relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`} style={{
               transitionDelay: `${index * 150 + 400}ms`
             }}>

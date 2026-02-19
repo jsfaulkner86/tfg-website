@@ -241,7 +241,7 @@ const Results = () => {
                   lineHeight: '1.4'
                 }}
               >
-                We don't just advise. We embed, execute, and deliver clinical adoption at scale.
+                Clinical credibility. Operational precision. Physician trust. That's the difference.
               </p>
             </div>
           </div>

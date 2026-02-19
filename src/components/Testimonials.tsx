@@ -3,25 +3,25 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "The Faulkner Group uncovered $780K in lost revenue in just 30 days. Within 90 days, we had systems in place that permanently fixed the leaks. This wasn't consulting, this was transformation.",
-    author: "Medical Director",
-    role: "Women's Health Practice",
-    location: "Texas",
-    result: "$780K recovered"
+    quote: "The Faulkner Group gave us the clinical credibility we were missing. Physicians went from skeptical to actively championing our platform within weeks.",
+    author: "CEO",
+    role: "FemTech Startup",
+    location: "Women's Health",
+    result: "3x physician adoption rate"
   },
   {
-    quote: "We were drowning in inefficiency. The Growth Blueprint gave us clarity we'd never had. Six months later, our margins increased by 34% and our team actually has time to breathe.",
-    author: "Chief Executive Officer",
-    role: "Multi-Specialty Fertility Center",
-    location: "California",
-    result: "34% margin increase"
+    quote: "We had been stuck in pilot mode for over a year. Their governance framework and clinical strategy turned our pilot into a system-wide deployment in 90 days.",
+    author: "VP of Growth",
+    role: "Health Tech Platform",
+    location: "Digital Health",
+    result: "Pilot to full-scale in 90 days"
   },
   {
-    quote: "John and Nicole don't just understand healthcare, they live it. Their dual perspective as both clinical expert and growth architect is exactly what modern practices need.",
-    author: "Chief Medical Officer",
-    role: "OB/GYN Group Practice",
-    location: "Florida",
-    result: "3x patient capacity"
+    quote: "Having a board-certified OB/GYN and a healthcare operations architect on our side changed everything. They don't just advise, they execute.",
+    author: "Founder",
+    role: "Women's Health Technology",
+    location: "Reproductive Health",
+    result: "Enterprise contracts secured"
   }
 ];
 
@@ -87,7 +87,7 @@ const Testimonials = () => {
               lineHeight: '1.05'
             }}
           >
-            Real Practices. Real Results.
+            Real Companies. Real Adoption.
           </h2>
           
           <p className="text-xl font-inter font-light max-w-3xl mx-auto" style={{ 
@@ -95,7 +95,7 @@ const Testimonials = () => {
             letterSpacing: '0.01em',
             lineHeight: '1.6'
           }}>
-            Our clients don't just see improvement, they experience transformation that compounds year after year.
+            Our partners don't just see improvement. They experience clinical adoption that compounds quarter after quarter.
           </p>
         </div>
 
@@ -217,7 +217,7 @@ const Testimonials = () => {
                   lineHeight: '1.4'
                 }}
               >
-                Join the visionary healthcare leaders who chose clarity over chaos
+                Join the health tech companies that chose clinical strategy over guesswork
               </p>
             </div>
           </div>

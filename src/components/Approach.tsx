@@ -1,29 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
-  title: "Admin Relief",
-  description: "We eliminate manual tasks, streamline workflows, and integrate automation that cuts administrative time by up to 40-60 percent.",
-  roi: "Providers regain time for real clinical care, not paperwork."
+  title: "Physician Adoption",
+  description: "We build trust-based adoption strategies that get physicians to champion your platform. From KOL engagement to peer-reviewed validation, we create the clinical credibility your product needs.",
+  roi: "Accelerated adoption timelines and physician champions who sell for you."
 }, {
-  title: "Revenue Recovery",
-  description: "We identify denied claims, missed charges, and inefficient payer processes, then implement systems that capture every dollar you have already earned.",
-  roi: "Six figures in recoverable revenue within 90 days."
+  title: "Risk Mitigation & Governance",
+  description: "We design clinical governance frameworks, regulatory compliance strategies, and risk protocols that give health systems the confidence to say yes.",
+  roi: "Cleared regulatory hurdles and enterprise-ready governance documentation."
 }, {
-  title: "Team Wellbeing",
-  description: "We redesign workflows and staffing models to reduce pressure, protect your teams, improve morale, and stop costly turnover.",
-  roi: "Happier staff, better care, and significantly lower hiring costs."
+  title: "Clinical Readiness",
+  description: "We ensure your product fits real clinical workflows. From EHR integration strategy to care pathway mapping, we make sure your technology works the way physicians actually practice.",
+  roi: "Seamless workflow integration and dramatically reduced implementation friction."
 }, {
-  title: "Patient Flow",
-  description: "We optimize scheduling, communication, and follow-up processes so patients move through the system efficiently and receive a better experience.",
-  roi: "Higher retention, better reviews, and increased lifetime value."
-}, {
-  title: "System Integration",
-  description: "We connect your EHR, billing, scheduling, analytics, and communication tools into one seamless operating system.",
-  roi: "Real-time data flow, fewer errors, and operations that finally run smoothly."
-}, {
-  title: "Growth Strategy",
-  description: "We create a roadmap for expansion, new service lines, and competitive positioning so you can grow with confidence without sacrificing quality or burning out your team.",
-  roi: "Predictable growth and long-term financial stability."
+  title: "Pilot-to-Scale Conversion",
+  description: "We turn successful pilots into full-scale deployments with structured rollout plans, training programs, and change management strategies that stick.",
+  roi: "Predictable scaling from pilot to enterprise-wide adoption."
 }];
 const Approach = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,7 +65,7 @@ const Approach = () => {
             <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{
             color: '#718DA9'
           }}>
-              Your First Step
+              Our Framework
             </span>
           </div>
           
@@ -83,22 +75,14 @@ const Approach = () => {
           lineHeight: '1',
           textShadow: '0 2px 4px rgba(0,0,0,0.02)'
         }}>
-            The Growth Blueprint™
+            How We Work
           </h2>
           
           <p className="text-xl sm:text-2xl font-inter font-medium max-w-4xl mx-auto mb-4" style={{
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>A structured 14-day diagnostic engagement that delivers absolute clarity on where you're losing money and exactly how to fix it.</p>
-          
-          <p className="text-lg sm:text-xl font-inter font-semibold max-w-4xl mx-auto mb-8 whitespace-nowrap" style={{
-          color: '#718DA9',
-          letterSpacing: '0.01em',
-          lineHeight: '1.5'
-        }}>
-            Our guarantee: We'll uncover at least six figures in hidden revenue, or we work free until we do.
-          </p>
+        }}>We embed alongside your team to solve the four critical challenges that determine whether health tech products achieve real-world clinical adoption.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -126,7 +110,7 @@ const Approach = () => {
           letterSpacing: '0.05em',
           textShadow: '0 1px 2px rgba(0,0,0,0.03)'
         }}>
-            The 6 Pillars We Evaluate:
+            The 4 Pillars of Clinical Adoption:
           </h3>
           
           <div className="max-w-6xl mx-auto relative">
@@ -136,7 +120,7 @@ const Approach = () => {
             transform: 'translateY(-50%)'
           }} />
             
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               {pillars.map((pillar, index) => <div key={index} className={`group relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`} style={{
               transitionDelay: `${index * 150 + 400}ms`
             }}>
@@ -240,11 +224,11 @@ const Approach = () => {
           boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
         }}>
             <div className="text-center">
-              <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold" style={{
+            <p className="text-base sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold" style={{
               color: '#718DA9',
               letterSpacing: '-0.02em',
               lineHeight: '1.5'
-            }}>In 14 days, you'll receive a comprehensive 10 to 12 page Revenue Recovery Blueprint revealing exactly where you're losing money and the precise steps to recover it, guaranteed to uncover at least six figures in hidden revenue.</p>
+            }}>We don't just consult. We embed, execute, and deliver measurable clinical adoption outcomes.</p>
             </div>
           </div>
         </div>

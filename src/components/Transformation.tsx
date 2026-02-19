@@ -3,22 +3,22 @@ import { Target, TrendingUp, Cog } from "lucide-react";
 
 const outcomes = [
   {
-    microHeadline: "From Chaos to Control",
-    mainTitle: "Eliminate bottlenecks that stall growth",
-    benefitSummary: "Your team stops firefighting daily crises. Instead, they operate with clarity and confidence, knowing exactly what drives results.",
-    result: "30% faster patient flow without adding staff"
+    microHeadline: "From Skepticism to Advocacy",
+    mainTitle: "Turn physicians into product champions",
+    benefitSummary: "Your platform stops being 'another tool' and becomes an essential part of clinical practice. Physicians actively recommend it to peers.",
+    result: "Physician-led referral networks that scale organically"
   },
   {
-    microHeadline: "From Bleeding to Thriving",
-    mainTitle: "Restore margins so profitability compounds",
-    benefitSummary: "Watch hidden revenue surface and inefficiencies disappear. Every dollar you earn starts working harder for your practice's future.",
-    result: "6-figure profit recovery in the first quarter"
+    microHeadline: "From Pilot to Enterprise",
+    mainTitle: "Convert proof-of-concept into full deployment",
+    benefitSummary: "No more pilots that go nowhere. We build the governance, training, and clinical validation that health systems require to say yes at scale.",
+    result: "Structured rollout from single site to system-wide adoption"
   },
   {
-    microHeadline: "From Band-Aids to Breakthroughs",
-    mainTitle: "Build scalable systems that last long after we leave",
-    benefitSummary: "No more temporary fixes. You'll have frameworks and processes that grow with your practice, creating lasting momentum.",
-    result: "Systems that scale to 2x revenue without breaking"
+    microHeadline: "From Risk to Readiness",
+    mainTitle: "Clear regulatory and compliance barriers before they stall you",
+    benefitSummary: "We proactively address clinical governance, data privacy, and workflow integration so your product is enterprise-ready from day one.",
+    result: "Accelerated sales cycles with pre-built compliance documentation"
   }
 ];
 
@@ -84,7 +84,7 @@ const Transformation = () => {
             boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
           }}>
             <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>
-              The Journey Continues
+              The Outcome
             </span>
           </div>
           
@@ -106,21 +106,14 @@ const Transformation = () => {
               letterSpacing: '0.02em',
               lineHeight: '1.6'
             }}>
-              The Growth Blueprint™ gives you clarity.
-            </p>
-            <p className="text-2xl sm:text-3xl font-playfair font-bold italic" style={{ 
-              color: '#1A2A3A',
-              letterSpacing: '-0.02em',
-              lineHeight: '1.3'
-            }}>
-              But the Transformation is where the real magic happens.
+              When clinical strategy meets health tech innovation, the results compound.
             </p>
             <p className="text-lg sm:text-xl font-inter" style={{ 
               color: '#4A6A85', 
               letterSpacing: '0.02em',
               lineHeight: '1.7'
             }}>
-              Almost every client who completes the Blueprint chooses to continue because once you see six or seven figures of hidden revenue uncovered, you don't want to stop there.
+              Our clients don't just launch products. They build clinical ecosystems that drive lasting adoption and measurable patient outcomes.
             </p>
           </div>
           
@@ -142,7 +135,7 @@ const Transformation = () => {
             letterSpacing: '-0.02em',
             lineHeight: '1.3'
           }}>
-            Over 3 to 6 months, we integrate alongside your team to:
+            As your fractional clinical and operational advisors, we:
           </p>
         </div>
 
@@ -278,7 +271,7 @@ const Transformation = () => {
                   lineHeight: '1.5'
                 }}
               >
-                This is where practices stop bleeding time and money and start thriving.
+                This is where health tech companies stop stalling and start scaling.
               </p>
             </div>
           </div>

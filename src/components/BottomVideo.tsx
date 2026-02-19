@@ -81,7 +81,7 @@ const BottomVideo = () => {
                 backdropFilter: 'blur(4px)'
               }}
             >
-              If you're a visionary healthcare leader who refuses to settle, the next step is simple: schedule your Growth Blueprint™ call today.
+              If you're building health tech that needs physician adoption, clinical governance, and a clear path from pilot to scale, the next step is simple: schedule a strategy call today.
             </p>
 
             {/* Risk Reversal - Ultra Refined */}
@@ -95,14 +95,14 @@ const BottomVideo = () => {
                 letterSpacing: '0.02em',
                 lineHeight: '1.6',
                 textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)'
-              }}>We guarantee to uncover 6 figures in lost revenue in 14 days or we keep working for free until we do</p>
+              }}>We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in, or we keep working until we do</p>
             </div>
 
             <div className="space-y-8">
               <Button onClick={handleBooking} className="text-xl px-12 py-8 rounded-lg group transition-all duration-300 bg-[#F3DA73] text-[#5882A1] hover:bg-[#718DA9] hover:text-white font-semibold" style={{
               boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
             }}>
-                Book Your Growth Blueprint
+                Book Your Strategy Call
                 <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
               

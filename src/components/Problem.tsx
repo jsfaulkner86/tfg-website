@@ -3,19 +3,19 @@ import { Compass, CircleDollarSign, Activity, Settings2 } from "lucide-react";
 
 const problemsData = [
   { 
-    text: "Access gaps pushing patients to competitors",
+    text: "Physicians won't adopt technology they don't trust",
     icon: Compass
   },
   { 
-    text: "Turnover bleeding six figures annually",
+    text: "Regulatory and clinical risk blocks go-to-market timelines",
     icon: CircleDollarSign
   },
   { 
-    text: "Workflows exhausting clinicians",
+    text: "Pilots stall because clinical workflows aren't aligned",
     icon: Activity
   },
   { 
-    text: "Systems silently eroding margins",
+    text: "Scaling fails without governance, training, and physician champions",
     icon: Settings2
   }
 ];
@@ -88,7 +88,7 @@ const Problem = () => {
                 The Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                Whether you're a single-site specialty practice, multi-specialty group, or large multi-location system, hidden leaks are draining your profitability without warning.
+                Most femtech companies build incredible technology but struggle to get physicians to actually use it.
               </p>
               <div 
                 className="relative overflow-hidden rounded-full"
@@ -106,10 +106,10 @@ const Problem = () => {
 
             <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
               <p className="text-base sm:text-lg">
-                From single-site specialty practices to multi-specialty groups to large multi-location systems, most organizations aren't <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing money</strong> because they don't have enough patients.
+                The gap between a promising health tech product and real-world clinical adoption isn't about the technology. It's about <strong style={{ color: '#718DA9', fontWeight: 600 }}>trust, workflow fit, and physician buy-in</strong>.
               </p>
               <p className="text-base sm:text-lg">
-                They're <strong style={{ color: '#718DA9', fontWeight: 600 }}>losing it</strong> through <strong style={{ color: '#718DA9', fontWeight: 600 }}>hidden inefficiencies</strong> they can't see: problems buried in scheduling gaps, turnover costs, payer contract underpayments, and workflows that quietly bleed margins.
+                Without a clinical strategy from day one, even the best platforms get stuck in <strong style={{ color: '#718DA9', fontWeight: 600 }}>endless pilots</strong>, face <strong style={{ color: '#718DA9', fontWeight: 600 }}>regulatory roadblocks</strong>, and never reach the scale they were built for.
               </p>
               
               {/* Thin gold line separator */}
@@ -131,7 +131,7 @@ const Problem = () => {
                 }}
               >
                 <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
-                  Even top-performing groups leak <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>six to seven figures annually</strong> without realizing it.
+                  <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>90% of health tech pilots fail to convert</strong> to full-scale implementation without clinical alignment.
                 </p>
               </div>
             </div>
@@ -222,7 +222,7 @@ const Problem = () => {
                   lineHeight: '1.4'
                 }}
               >
-                We don't just identify the leaks. We architect systems that stop them permanently.
+                We don't just identify the gaps. We build the clinical strategy that closes them permanently.
               </p>
             </div>
           </div>

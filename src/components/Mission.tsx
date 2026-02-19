@@ -121,7 +121,7 @@ const Mission = () => {
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 13 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician with over a decade of frontline practice, we unite health tech business strategy with deep clinical expertise to drive adoption, engagement, and measurable outcomes.
+                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 15 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician and Medical Director at BackTable — a physician-to-physician podcast network — we combine deep clinical credibility and an extensive physician network with health tech strategy to drive adoption, governance, and measurable outcomes.
               </p>
               
               <p className="text-base sm:text-lg">

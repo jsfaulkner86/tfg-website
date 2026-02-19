@@ -8,7 +8,7 @@ const Mission = lazy(() => import("@/components/Mission"));
 const Problem = lazy(() => import("@/components/Problem"));
 const Approach = lazy(() => import("@/components/Approach"));
 const Transformation = lazy(() => import("@/components/Transformation"));
-const Testimonials = lazy(() => import("@/components/Testimonials"));
+
 const Results = lazy(() => import("@/components/Results"));
 const BottomVideo = lazy(() => import("@/components/BottomVideo"));
 const Partners = lazy(() => import("@/components/Partners"));
@@ -24,7 +24,7 @@ const Index = () => {
           <Problem />
           <Approach />
           <Transformation />
-          <Testimonials />
+          
           <Results />
           <BottomVideo />
           <Partners />

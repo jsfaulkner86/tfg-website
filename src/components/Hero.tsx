@@ -74,9 +74,9 @@ const Hero = () => {
               }}
             />
             <span className="relative">
-              CLINICAL EXPERTISE.<br />
-              OPERATIONAL POWER.<br />
-              FEMTECH GROWTH.
+              FROM PILOT<br />
+              TO FULL-SCALE<br />
+              ADOPTION.
             </span>
           </h1>
           <p 
@@ -88,7 +88,7 @@ const Hero = () => {
               backdropFilter: 'blur(4px)'
             }}
           >
-            Your strategic clinical & operational partner — helping femtech companies launch, scale, and deliver real patient outcomes.
+            We help femtech companies drive physician adoption, mitigate clinical risk, and convert pilots into full-scale implementations.
           </p>
           
           {/* Trust indicators */}
@@ -101,7 +101,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                Clinical Readiness & Regulatory Strategy
+                Physician Adoption
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -112,7 +112,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                Sales & Customer Success Support
+                Risk & Governance
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -123,7 +123,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                Training, Onboarding & Scale
+                Pilot-to-Scale Conversion
               </span>
             </div>
           </div>

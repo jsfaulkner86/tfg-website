@@ -7,9 +7,9 @@ const highlights = [
     stat: "Physician-First",
     stat2: "Strategy",
     bullets: [
-      "Board-certified OB/GYN physician co-founder who speaks the language of clinicians",
-      "Direct access to physician networks through BackTable and WHIS",
-      "We build trust with the people who decide whether your product gets used"
+      "Board-certified OB/GYN co-founder and BackTable Medical Director who speaks the language of clinicians",
+      "Direct physician networks through BackTable and WHIS conferences",
+      "We build trust with the people who decide whether your product lives or dies"
     ]
   },
   {
@@ -17,17 +17,17 @@ const highlights = [
     stat: "15+ Years",
     stat2: "Combined",
     bullets: [
-      "15+ years in healthcare operations and systems architecture",
-      "10+ years in frontline clinical leadership",
-      "We bridge the gap between your product and the clinical world"
+      "15+ years in healthcare operations, EHR systems, and clinical workflow architecture",
+      "10+ years in frontline OB/GYN clinical leadership",
+      "From clinical environment audits to 24/7 deployment support, we cover the full lifecycle"
     ]
   },
   {
     icon: Users,
     stat: "Embedded Partners",
     bullets: [
-      "We don't send slide decks. We embed directly into your team as fractional advisors",
-      "Every engagement is customized to your product, market, and clinical specialty",
+      "We don't send slide decks. We embed as your fractional clinical and operational advisors",
+      "Governance frameworks, physician training, CMIO engagement, and controlled rollback protocols",
       "Built specifically for femtech and women's health innovation"
     ]
   }

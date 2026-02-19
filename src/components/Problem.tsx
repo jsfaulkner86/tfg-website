@@ -3,19 +3,19 @@ import { Compass, CircleDollarSign, Activity, Settings2 } from "lucide-react";
 
 const problemsData = [
   { 
-    text: "Physicians won't adopt technology they don't trust",
+    text: "Physicians won't adopt technology they don't trust or understand",
     icon: Compass
   },
   { 
-    text: "Regulatory and clinical risk blocks go-to-market timelines",
+    text: "Health systems require governance and risk frameworks before they'll approve new tech",
     icon: CircleDollarSign
   },
   { 
-    text: "Pilots stall because clinical workflows aren't aligned",
+    text: "Pilots stall without clinical workflow alignment and proper training",
     icon: Activity
   },
   { 
-    text: "Scaling fails without governance, training, and physician champions",
+    text: "Scaling fails without 24/7 support infrastructure and change management",
     icon: Settings2
   }
 ];

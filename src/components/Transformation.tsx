@@ -5,20 +5,20 @@ const outcomes = [
   {
     microHeadline: "From Skepticism to Advocacy",
     mainTitle: "Turn physicians into product champions",
-    benefitSummary: "Your platform stops being 'another tool' and becomes an essential part of clinical practice. Physicians actively recommend it to peers.",
-    result: "Physician-led referral networks that scale organically"
+    benefitSummary: "Through CMIO engagement, peer-to-peer advocacy, and clinical credibility building, your platform stops being 'another tool' and becomes essential to clinical practice.",
+    result: "Internal physician champions who drive adoption organically"
   },
   {
     microHeadline: "From Pilot to Enterprise",
-    mainTitle: "Convert proof-of-concept into full deployment",
-    benefitSummary: "No more pilots that go nowhere. We build the governance, training, and clinical validation that health systems require to say yes at scale.",
-    result: "Structured rollout from single site to system-wide adoption"
+    mainTitle: "Convert proof-of-concept into system-wide deployment",
+    benefitSummary: "With clinical environment readiness assessments, governance frameworks, and structured training, we remove every barrier between your pilot and full-scale adoption.",
+    result: "Structured rollout with governance and 24/7 support from day one"
   },
   {
-    microHeadline: "From Risk to Readiness",
-    mainTitle: "Clear regulatory and compliance barriers before they stall you",
-    benefitSummary: "We proactively address clinical governance, data privacy, and workflow integration so your product is enterprise-ready from day one.",
-    result: "Accelerated sales cycles with pre-built compliance documentation"
+    microHeadline: "From Risk to Confidence",
+    mainTitle: "Give health systems the safety frameworks they demand",
+    benefitSummary: "We build controlled rollback protocols, escalation pathways, and compliance documentation that transform risk objections into confident approvals.",
+    result: "Enterprise contracts secured with pre-built governance packages"
   }
 ];
 

@@ -1,35 +1,21 @@
 import { useEffect, useRef, useState } from "react";
-import { TrendingUp, Award, Users } from "lucide-react";
+import { Stethoscope, Clock, Users } from "lucide-react";
 
 const highlights = [
   {
-    icon: TrendingUp,
-    stat: "Physician-First",
-    stat2: "Strategy",
-    bullets: [
-      "Board-certified OB/GYN co-founder and BackTable Medical Director who speaks the language of clinicians",
-      "Direct physician networks through BackTable and WHIS conferences",
-      "We build trust with the people who decide whether your product lives or dies"
-    ]
+    icon: Stethoscope,
+    title: "Physician-First Strategy",
+    description: "Board-certified OB/GYN co-founder who speaks the language of clinicians. Direct physician networks through BackTable and WHIS conferences. We build trust with the people who decide whether your product lives or dies."
   },
   {
-    icon: Award,
-    stat: "15+ Years",
-    stat2: "Combined",
-    bullets: [
-      "15+ years in healthcare operations, EHR systems, and clinical workflow architecture",
-      "10+ years in frontline OB/GYN clinical leadership",
-      "From clinical environment audits to 24/7 deployment support, we cover the full lifecycle"
-    ]
+    icon: Clock,
+    title: "15+ Years Combined Experience",
+    description: "15+ years in healthcare operations, EHR systems, and clinical workflow architecture. 10+ years in frontline OB/GYN clinical leadership. From clinical environment audits to 24/7 deployment support, we cover the full lifecycle."
   },
   {
     icon: Users,
-    stat: "Embedded Partners",
-    bullets: [
-      "We don't send slide decks. We embed as your fractional clinical and operational advisors",
-      "Governance frameworks, physician training, CMIO engagement, and controlled rollback protocols",
-      "Built specifically for femtech and women's health innovation"
-    ]
+    title: "Embedded Partners, Not Consultants",
+    description: "We don't send slide decks. We embed as your fractional clinical and operational advisors. Governance frameworks, physician training, CMIO engagement, and controlled rollback protocols — built specifically for femtech and women's health innovation."
   }
 ];
 
@@ -61,184 +47,113 @@ const Results = () => {
       className="px-6 relative overflow-hidden"
       style={{
         paddingTop: '100px',
-        paddingBottom: '20px',
-        background: '#718DA9'
+        paddingBottom: '100px',
+        background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
       }}
     >
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Refined header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Header */}
+        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
-            background: 'rgba(243,218,115,0.2)',
-            border: '1.5px solid rgba(243,218,115,0.5)',
-            boxShadow: '0 4px 12px rgba(243,218,115,0.15)'
+            background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
+            border: '1.5px solid rgba(113,141,169,0.25)',
+            boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
           }}>
-            <span className="text-xs font-inter font-bold tracking-[0.15em] uppercase" style={{ color: '#F3DA73' }}>
-              THE DIFFERENCE
+            <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>
+              The Difference
             </span>
           </div>
           
           <h2 
             className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8"
             style={{ 
-              color: '#FFFFFF',
+              color: '#1A2A3A',
               letterSpacing: '-0.04em',
               lineHeight: '1',
-              textShadow: '0 2px 4px rgba(0,0,0,0.1)'
+              textShadow: '0 2px 4px rgba(0,0,0,0.02)'
             }}
           >
             Why Work With Us
           </h2>
           
-          <div className="flex justify-center">
-            <div 
-              className="relative overflow-hidden rounded-full"
-              style={{ width: '120px', height: '4px', background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)' }}
-            />
+          <div className="flex items-center justify-center gap-3">
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(113,141,169,0.4))' }} />
+            <div className="w-2 h-2 rounded-full" style={{ background: '#718DA9', boxShadow: '0 0 8px rgba(113,141,169,0.4)' }} />
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, rgba(113,141,169,0.4), transparent)' }} />
           </div>
         </div>
 
-        {/* Clean cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
+        {/* Stacked rows */}
+        <div className="space-y-16 mb-20">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon;
+            const isEven = index % 2 === 1;
             return (
               <div
                 key={index}
-                className={`group relative transition-all duration-700 ${
+                className={`flex flex-col md:flex-row items-start gap-8 md:gap-16 transition-all duration-700 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-                }`}
+                } ${isEven ? 'md:flex-row-reverse' : ''}`}
                 style={{ transitionDelay: `${index * 200 + 300}ms` }}
               >
-                {/* Outer glow on hover */}
-                <div 
-                  className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{
-                    background: 'linear-gradient(135deg, #D4B65D, #F3DA73)',
-                    filter: 'blur(8px)'
-                  }}
-                />
-                
-                {/* Elevated card with multiple layers */}
-                <div
-                  className="relative p-12 rounded-[24px] transition-all duration-500 hover:-translate-y-3 h-full flex flex-col overflow-hidden"
-                  style={{
-                    background: 'linear-gradient(180deg, #FFFFFF 0%, #FEFDFB 100%)',
-                    border: '3px solid #D4B65D',
-                    boxShadow: '0 20px 60px rgba(0,0,0,0.12), 0 8px 24px rgba(212,182,93,0.2), inset 0 1px 0 rgba(255,255,255,1)',
-                    minHeight: '340px'
-                  }}
-                >
-                  {/* Inner subtle gradient overlay */}
+                {/* Icon + Title */}
+                <div className="flex-shrink-0 md:w-1/3">
                   <div 
-                    className="absolute inset-0 opacity-20 pointer-events-none"
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
                     style={{
-                      background: 'radial-gradient(circle at 30% 20%, rgba(113,141,169,0.15) 0%, transparent 60%)'
+                      background: 'linear-gradient(135deg, rgba(243,218,115,0.15), rgba(243,218,115,0.05))',
+                      border: '1.5px solid rgba(243,218,115,0.3)'
                     }}
-                  />
-                  
-                  {/* Enhanced Icon with glow */}
-                  <div className="flex justify-center mb-10 relative">
-                    {/* Icon glow */}
-                    <div 
-                      className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{
-                        background: 'radial-gradient(circle, rgba(113,141,169,0.25) 0%, transparent 70%)',
-                        filter: 'blur(16px)',
-                        transform: 'scale(1.5)'
-                      }}
-                    />
-                    <div 
-                      className="relative w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110"
-                      style={{
-                        background: 'linear-gradient(135deg, rgba(113,141,169,0.08), rgba(113,141,169,0.03))',
-                        border: '2px solid rgba(113,141,169,0.2)',
-                        boxShadow: '0 4px 12px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.8)'
-                      }}
-                    >
-                      <Icon 
-                        size={36}
-                        strokeWidth={2}
-                        style={{ color: '#718DA9' }}
-                      />
-                    </div>
+                  >
+                    <Icon size={28} strokeWidth={1.5} style={{ color: '#D4B65D' }} />
                   </div>
-                  
-                  {/* Stat */}
-                  <div className="mb-6 relative z-10 text-center">
-                    <p 
-                      className="text-4xl sm:text-5xl font-playfair font-bold leading-tight"
-                      style={{ 
-                        color: '#718DA9',
-                        letterSpacing: '-0.03em',
-                        textShadow: '0 2px 8px rgba(113,141,169,0.15)'
-                      }}
-                    >
-                      {highlight.stat}
-                      {'stat2' in highlight && (
-                        <>
-                          <br />
-                          {highlight.stat2}
-                        </>
-                      )}
-                    </p>
-                  </div>
-                  
-                  {/* Description with bullets */}
-                  <ul className="space-y-3 relative z-10 flex-1">
-                    {highlight.bullets.map((bullet, i) => (
-                      <li 
-                        key={i}
-                        className="flex items-start gap-3 text-left"
-                      >
-                        <span 
-                          className="inline-block w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0"
-                          style={{ background: '#D4B65D' }}
-                        />
-                        <span 
-                          className="text-base sm:text-lg font-inter font-medium leading-relaxed"
-                          style={{ 
-                            color: '#4A5568',
-                            letterSpacing: '0.005em',
-                            lineHeight: '1.6'
-                          }}
-                        >
-                          {bullet}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {/* Bottom accent line */}
-                  <div 
-                    className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{
-                      background: 'linear-gradient(90deg, transparent, #D4B65D, transparent)'
+                  <h3 
+                    className="text-2xl sm:text-3xl font-playfair font-bold"
+                    style={{ 
+                      color: '#1A2A3A',
+                      letterSpacing: '-0.02em',
+                      lineHeight: '1.2'
                     }}
-                  />
+                  >
+                    {highlight.title}
+                  </h3>
+                </div>
+
+                {/* Description */}
+                <div className="md:w-2/3">
+                  <p 
+                    className="text-base sm:text-lg font-inter leading-relaxed"
+                    style={{ 
+                      color: '#4A5568',
+                      letterSpacing: '0.005em',
+                      lineHeight: '1.8'
+                    }}
+                  >
+                    {highlight.description}
+                  </p>
                 </div>
               </div>
             );
           })}
         </div>
 
-        {/* Clean bottom statement - matching reference style */}
+        {/* Bottom statement */}
         <div className={`transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div 
-            className="relative py-16 px-12 rounded-[32px] overflow-hidden mx-auto max-w-6xl"
+            className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl"
             style={{
               background: '#FBF8F1',
-              border: '2.5px solid #C9B882',
-              boxShadow: '0 8px 30px rgba(0,0,0,0.08)'
+              border: '2px solid #D4B65D',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
             }}
           >
-            <div className="relative z-10 text-center">
+            <div className="text-center">
               <p 
-                className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl font-playfair font-bold"
                 style={{ 
                   color: '#718DA9', 
                   letterSpacing: '-0.02em', 
-                  lineHeight: '1.4'
+                  lineHeight: '1.5'
                 }}
               >
                 Clinical credibility. Operational precision. Physician trust. That's the difference.

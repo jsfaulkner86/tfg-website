@@ -74,9 +74,9 @@ const Hero = () => {
               }}
             />
             <span className="relative">
-              LESS CHAOS.<br />
-              MORE CLARITY.<br />
-              REAL GROWTH.
+              CLINICAL EXPERTISE.<br />
+              OPERATIONAL POWER.<br />
+              FEMTECH GROWTH.
             </span>
           </h1>
           <p 
@@ -88,7 +88,7 @@ const Hero = () => {
               backdropFilter: 'blur(4px)'
             }}
           >
-            We help healthcare leaders escape broken systems & build organizations that thrive.
+            Your strategic clinical & operational partner — helping femtech companies launch, scale, and deliver real patient outcomes.
           </p>
           
           {/* Trust indicators */}
@@ -101,7 +101,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                $50M+ Revenue Recovered
+                Clinical Readiness & Regulatory Strategy
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -112,7 +112,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                23+ Years Combined Expertise
+                Sales & Customer Success Support
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -123,7 +123,7 @@ const Hero = () => {
                 backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 backdropFilter: 'blur(4px)'
               }}>
-                6-Figure Recovery Guarantee
+                Training, Onboarding & Scale
               </span>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Hero = () => {
               e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)';
             }}
           >
-            Book Your Growth Blueprint
+            Book Your Strategy Call
             <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
         </div>

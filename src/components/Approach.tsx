@@ -1,25 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
-  title: "Clinical Environment Readiness",
-  description: "We assess your target clinical environment, including health systems, payer networks, and practice workflows, to identify integration barriers, workflow conflicts, and adoption risks before your technology ever touches a patient.",
-  roi: "A clear integration roadmap that eliminates surprises and accelerates time-to-deployment."
+  title: "Clinical Readiness & Governance",
+  description: "We audit your target clinical environment, including health systems, payer networks, and practice workflows, to identify integration barriers and adoption risks. Then we build the governance protocols, CMIO engagement strategies, and controlled rollback frameworks that give leadership the confidence to approve your technology.",
+  roi: "A clear integration roadmap with enterprise-ready governance and clinical safety documentation."
 }, {
   title: "Physician Adoption & Champion Development",
-  description: "We build trust with the clinical decision-makers who determine whether your platform gets adopted or abandoned. From CMIO engagement to peer-to-peer physician advocacy, we create internal champions who drive adoption from the inside.",
+  description: "We build trust with the clinical decision-makers who determine whether your platform gets adopted or abandoned. From peer-to-peer physician advocacy to KOL engagement, we create internal champions who drive adoption from the inside out.",
   roi: "Physicians who actively advocate for your product across their health system."
 }, {
-  title: "Clinical Governance & Risk Management",
-  description: "We design governance protocols, escalation pathways, and controlled rollback strategies that give health system leadership the confidence to approve and sustain your technology at scale.",
-  roi: "Enterprise-ready governance documentation and clinical safety frameworks."
-}, {
   title: "Training, Education & Change Management",
-  description: "We build structured training programs, clinical education curricula, and change management strategies that ensure every user, from front-desk staff to attending physicians, is confident and competent from day one.",
+  description: "We design structured training programs, clinical education curricula, and change management strategies that ensure every user, from front-desk staff to attending physicians, is confident and competent from day one.",
   roi: "Faster onboarding, higher engagement, and dramatically reduced support burden."
 }, {
-  title: "Deployment Operations & Ongoing Support",
-  description: "We manage the full deployment lifecycle with 24/7 clinical-technical support escalation, performance monitoring, and structured scaling from pilot to enterprise-wide implementation.",
-  roi: "Predictable scaling with continuous support from pilot through full adoption."
+  title: "Sales, Customer Success & Deployment",
+  description: "We support your sales process with clinical credibility, manage ongoing customer success relationships, and run the full deployment lifecycle with 24/7 clinical-technical support escalation from pilot through enterprise-wide implementation.",
+  roi: "Shorter sales cycles, stronger retention, and predictable scaling with continuous support."
 }];
 const Approach = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -86,7 +82,7 @@ const Approach = () => {
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>We embed alongside your team to solve the five critical challenges that determine whether health tech products achieve real-world clinical adoption.</p>
+        }}>We embed alongside your team across four critical areas that determine whether health tech products achieve real-world clinical adoption and commercial success.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -114,7 +110,7 @@ const Approach = () => {
           letterSpacing: '0.05em',
           textShadow: '0 1px 2px rgba(0,0,0,0.03)'
         }}>
-            The 5 Pillars of Clinical Adoption:
+            The 4 Pillars of Clinical Adoption:
           </h3>
           
           <div className="max-w-6xl mx-auto relative">
@@ -124,7 +120,7 @@ const Approach = () => {
             transform: 'translateY(-50%)'
           }} />
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               {pillars.map((pillar, index) => <div key={index} className={`group relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`} style={{
               transitionDelay: `${index * 150 + 400}ms`
             }}>

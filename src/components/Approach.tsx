@@ -6,7 +6,7 @@ const pillars = [{
   roi: "Providers regain time for real clinical care, not paperwork."
 }, {
   title: "Revenue Recovery",
-  description: "We identify denied claims, missed charges, and inefficient payer processes—then implement systems that capture every dollar you have already earned.",
+  description: "We identify denied claims, missed charges, and inefficient payer processes, then implement systems that capture every dollar you have already earned.",
   roi: "Six figures in recoverable revenue within 90 days."
 }, {
   title: "Team Wellbeing",

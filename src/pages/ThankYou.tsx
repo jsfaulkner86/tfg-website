@@ -22,7 +22,7 @@ const ThankYou = () => {
         
         <div className="space-y-4">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-            Thank you — your consultation is booked!
+            Thank you, your consultation is booked!
           </h1>
           
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">

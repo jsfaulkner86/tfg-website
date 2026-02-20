@@ -9,8 +9,8 @@ const highlights = [
   },
   {
     icon: Clock,
-    title: "15+ Years Combined Experience",
-    description: "15+ years in healthcare operations, EHR systems, and clinical workflow architecture. 10+ years in frontline OB/GYN clinical leadership. From clinical environment audits to 24/7 deployment support, we cover the full lifecycle."
+    title: "25+ Years Combined Experience",
+    description: "25+ years in healthcare operations, EHR systems, and clinical workflow architecture. 10+ years in frontline OB/GYN clinical leadership. From clinical environment audits to 24/7 deployment support, we cover the full lifecycle."
   },
   {
     icon: Users,

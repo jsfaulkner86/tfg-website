@@ -2,20 +2,20 @@ import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
   title: "Clinical Readiness & Governance",
-  description: "We audit your target clinical environment, including health systems, payer networks, and practice workflows, to identify integration barriers and adoption risks. Then we build the governance protocols, CMIO engagement strategies, and controlled rollback frameworks that give leadership the confidence to approve your technology.",
-  roi: "A clear integration roadmap with enterprise-ready governance and clinical safety documentation."
+  description: "We audit your clinical environment — health systems, payer networks, and practice workflows — to identify every integration barrier before it becomes a crisis. Then we build the governance protocols, CMIO engagement strategies, and risk frameworks that give leadership the confidence to say yes.",
+  roi: "Enterprise-ready governance and clinical safety documentation that satisfies both health systems and payers."
 }, {
   title: "Physician Adoption & Champion Development",
-  description: "We build trust with the clinical decision-makers who determine whether your platform gets adopted or abandoned. From peer-to-peer physician advocacy to KOL engagement, we create internal champions who drive adoption from the inside out.",
-  roi: "Physicians who actively advocate for your product across their health system."
+  description: "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. We build that trust — through peer-to-peer advocacy, KOL engagement, and internal champions who drive adoption from the inside out.",
+  roi: "Physicians who actively advocate for your solution across their health system."
 }, {
   title: "Training, Education & Change Management",
-  description: "We design structured training programs, clinical education curricula, and change management strategies that ensure every user, from front-desk staff to attending physicians, is confident and competent from day one.",
+  description: "We design structured training programs and change management strategies that ensure every user — from front-desk staff to attending physicians — is confident and competent from day one. No shelfware. No workarounds.",
   roi: "Faster onboarding, higher engagement, and dramatically reduced support burden."
 }, {
   title: "Sales, Customer Success & Deployment",
-  description: "We support your sales process with clinical credibility, manage ongoing customer success relationships, and run the full deployment lifecycle with 24/7 clinical-technical support escalation from pilot through enterprise-wide implementation.",
-  roi: "Shorter sales cycles, stronger retention, and predictable scaling with continuous support."
+  description: "We bring clinical credibility to your sales process, manage ongoing customer success, and run the full deployment lifecycle — from pilot through enterprise-wide implementation — with structured support at every stage.",
+  roi: "Shorter sales cycles, stronger retention, and predictable scaling."
 }];
 const Approach = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -82,7 +82,7 @@ const Approach = () => {
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>We embed alongside your team across the four pillars that determine whether health tech products achieve real-world clinical adoption and commercial success.</p>
+        }}>We don't parachute in with a deck and a plan. We embed alongside your team across the four pillars that determine whether women's health technology actually gets used.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -228,7 +228,7 @@ const Approach = () => {
               color: '#718DA9',
               letterSpacing: '-0.02em',
               lineHeight: '1.5'
-            }}>We don't just consult. We embed, execute, and deliver measurable clinical adoption outcomes.</p>
+            }}>Your technology deserves more than a pilot. We make sure it gets there.</p>
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ const Hero = () => {
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center pt-16">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
           <h1
-          className="mb-6 text-2xl font-display font-semibold text-white sm:text-3xl md:text-[56px] md:leading-tight relative overflow-hidden"
+          className="mb-6 text-2xl font-display font-semibold text-white sm:text-3xl md:text-[64px] md:leading-tight relative overflow-hidden"
           style={{
             letterSpacing: '0.02em',
             textShadow: '0 4px 8px rgba(0,0,0,0.35)',
@@ -73,7 +73,7 @@ const Hero = () => {
             backgroundSize: '200% 100%'
           }} />
 
-            <span className="relative">You Built Something That Works.<br />Now Let's Make Sure It Gets Used.</span>
+            <span className="relative">You Built Something That Works.<br />Now Let's Get It Used.</span>
           </h1>
           <p className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto px-4 py-3 rounded-lg" style={{ color: 'rgb(255, 255, 255)',
           textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',

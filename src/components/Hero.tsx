@@ -74,9 +74,9 @@ const Hero = () => {
           }} />
 
             <span className="relative">
-              FROM PILOT<br />
-              TO FULL-SCALE<br />
-              ADOPTION.
+              Great Tech Doesn't<br />
+              Sell Itself. Especially<br />
+              in Women's Health.
             </span>
           </h1>
           <p
@@ -86,14 +86,12 @@ const Hero = () => {
             textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
             backgroundColor: 'rgba(0, 0, 0, 0.3)',
             backdropFilter: 'blur(4px)'
-          }}>We help women's health tech companies achieve physician adoption, clinical governance, and full-scale implementation through embedded clinical and operational partnership.
-
-
+          }}>You've done the hard part — now the health system is in the way. We partner with women's health tech founders to navigate physician adoption, clinical governance, and EHR integration so your solution reaches the women who need it.
         </p>
           
           {/* Trust indicators */}
           <div className="mb-12 flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/90 px-4">
-            {["Readiness & Governance", "Physician Adoption", "Training & Education", "Sales, CSM & Deployment"].map((badge) =>
+            {["Clinical Readiness & Governance", "Physician Adoption", "EHR Integration & Training", "Sales, CSM & Deployment"].map((badge) =>
           <div key={badge} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
                 <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{

@@ -3,26 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, X } from "lucide-react";
 
 const StickyCTA = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Show after scrolling 50% of viewport height
-      if (window.scrollY > window.innerHeight * 0.5 && !isDismissed) {
-        setIsVisible(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isDismissed]);
 
   const handleBooking = () => {
     window.open('https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session', '_blank');
   };
 
-  if (!isVisible || isDismissed) return null;
+  if (isDismissed) return null;
 
   return (
     <div 

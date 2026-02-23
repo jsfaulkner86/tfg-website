@@ -60,7 +60,7 @@ const Hero = () => {
       <div className="relative z-10 flex h-full items-center justify-center px-6 text-center pt-16">
         <div className="max-w-5xl opacity-0 animate-[fade-in_1.2s_ease-out_0.2s_forwards] translate-y-5">
           <h1
-          className="mb-6 text-2xl font-display font-semibold text-white sm:text-3xl md:text-4xl lg:text-[3.25rem] relative overflow-hidden"
+          className="mb-6 text-2xl font-display font-semibold text-white sm:text-3xl md:text-[56px] md:leading-tight relative overflow-hidden"
           style={{
             letterSpacing: '0.02em',
             textShadow: '0 4px 8px rgba(0,0,0,0.35)',

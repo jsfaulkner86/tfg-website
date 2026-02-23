@@ -7,7 +7,7 @@ const BottomVideo = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const handleBooking = () => {
-    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
+    window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
 
   useEffect(() => {

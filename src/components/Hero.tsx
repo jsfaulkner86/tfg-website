@@ -27,7 +27,7 @@ const Hero = () => {
     };
   }, [isMobile]);
   const handleBooking = () => {
-    window.open('https://savvycal.com/thefaulknergroup/growth-blueprint-call-with-john', '_blank');
+    window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
   return <section className="relative h-screen w-full overflow-hidden pt-20">
       {/* Background Video with Parallax */}

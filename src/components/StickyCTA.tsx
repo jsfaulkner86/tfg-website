@@ -47,10 +47,10 @@ const StickyCTA = () => {
         <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
           <div className="hidden sm:block flex-shrink-0">
             <p className="text-sm font-inter font-semibold text-white">
-              Physicians not adopting what you built?
+              We know how hard you've worked to get here.
             </p>
             <p className="text-xs font-inter text-white/80">
-              A Clinical Clarity Session finds why.
+              A Clinical Clarity Session helps us figure out what happens next.
             </p>
           </div>
           

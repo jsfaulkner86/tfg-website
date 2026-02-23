@@ -2,19 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 const pillars = [{
   title: "Clinical Readiness & Governance",
-  description: "We audit your clinical environment — health systems, payer networks, and practice workflows — to identify every integration barrier before it becomes a crisis. Then we build the governance protocols, CMIO engagement strategies, and risk frameworks that give leadership the confidence to say yes.",
+  description: "We audit your clinical environment, including health systems, payer networks, and practice workflows, to identify every integration barrier before it becomes a crisis. Then we build the governance protocols, CMIO engagement strategies, and risk frameworks that give leadership the confidence to say yes.",
   roi: "Enterprise-ready governance and clinical safety documentation that satisfies both health systems and payers."
 }, {
   title: "Physician Adoption & Champion Development",
-  description: "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. We build that trust — through peer-to-peer advocacy, KOL engagement, and internal champions who drive adoption from the inside out.",
+  description: "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. We build that trust through peer-to-peer advocacy, KOL engagement, and internal champions who drive adoption from the inside out.",
   roi: "Physicians who actively advocate for your solution across their health system."
 }, {
   title: "Training, Education & Change Management",
-  description: "We design structured training programs and change management strategies that ensure every user — from front-desk staff to attending physicians — is confident and competent from day one. No shelfware. No workarounds.",
+  description: "We design structured training programs and change management strategies that ensure every user, from front-desk staff to attending physicians, is confident and competent from day one. No shelfware. No workarounds.",
   roi: "Faster onboarding, higher engagement, and dramatically reduced support burden."
 }, {
   title: "Sales, Customer Success & Deployment",
-  description: "We bring clinical credibility to your sales process, manage ongoing customer success, and run the full deployment lifecycle — from pilot through enterprise-wide implementation — with structured support at every stage.",
+  description: "We bring clinical credibility to your sales process, manage ongoing customer success, and run the full deployment lifecycle from pilot through enterprise-wide implementation with structured support at every stage.",
   roi: "Shorter sales cycles, stronger retention, and predictable scaling."
 }];
 const Approach = () => {

@@ -5,20 +5,20 @@ const outcomes = [
 {
   microHeadline: "From Skepticism to Advocacy",
   mainTitle: "Turn physicians into product champions",
-  benefitSummary: "Through CMIO engagement, peer-to-peer advocacy, and clinical credibility building, your platform stops being 'another tool' and becomes essential to clinical workflows.",
-  result: "Internal physician champions who drive adoption organically"
+  benefitSummary: "Through CMIO engagement, peer-to-peer advocacy, and clinical credibility building, your platform stops being another tool and becomes essential to the way physicians practice.",
+  result: "Internal physician champions who drive adoption organically."
 },
 {
   microHeadline: "From Pilot to Enterprise",
   mainTitle: "Convert proof-of-concept into system-wide deployment",
-  benefitSummary: "With clinical environment readiness assessments, governance frameworks, and structured training, we remove every barrier between your pilot and full-scale adoption.",
-  result: "Structured rollout with governance and 24/7 support from day one"
+  benefitSummary: "With clinical environment readiness assessments, governance frameworks, and structured training, we remove every barrier standing between your pilot and full-scale adoption.",
+  result: "Structured rollout with governance and support from day one."
 },
 {
   microHeadline: "From Risk to Confidence",
-  mainTitle: "Give health systems the safety frameworks they demand",
-  benefitSummary: "We build controlled rollback protocols, escalation pathways, and compliance documentation that turn risk objections into confident approvals.",
-  result: "Enterprise contracts secured with pre-built governance packages"
+  mainTitle: "Give health systems and payers the safety frameworks they demand",
+  benefitSummary: "We build controlled rollback protocols, escalation pathways, and compliance documentation that turn risk objections into confident approvals for both health systems and payers.",
+  result: "Enterprise contracts secured with pre-built governance packages."
 }];
 
 
@@ -106,14 +106,14 @@ const Transformation = () => {
               letterSpacing: '0.02em',
               lineHeight: '1.6'
             }}>
-              When clinical strategy meets health tech innovation, the results compound.
+              When clinical strategy meets women's health innovation, the results don't just add up. They compound.
             </p>
             <p className="text-lg sm:text-xl font-inter" style={{
               color: '#4A6A85',
               letterSpacing: '0.02em',
               lineHeight: '1.7'
             }}>
-              Our partners don't just launch products. They build clinical ecosystems that drive lasting adoption and measurable patient outcomes.
+              Our partners don't just launch products. They build clinical ecosystems that drive lasting physician adoption, payer confidence, and measurable patient outcomes.
             </p>
           </div>
           
@@ -271,7 +271,7 @@ const Transformation = () => {
                   lineHeight: '1.5'
                 }}>
 
-                This is where health tech companies stop stalling and start scaling.
+                This is where women's health tech companies stop stalling and start scaling.
               </p>
             </div>
           </div>

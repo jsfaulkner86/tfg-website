@@ -3,11 +3,11 @@ import { Compass, CircleDollarSign, Activity, Settings2 } from "lucide-react";
 
 const problemsData = [
   { 
-    text: "Physicians won't adopt technology they don't trust or understand",
+    text: "Physicians won't adopt technology they don't trust, understand, or have time to learn",
     icon: Compass
   },
   { 
-    text: "Health systems require governance and risk frameworks before they'll approve new tech",
+    text: "Health systems and payers require governance and risk frameworks before approving new tech",
     icon: CircleDollarSign
   },
   { 
@@ -15,7 +15,7 @@ const problemsData = [
     icon: Activity
   },
   { 
-    text: "Scaling fails without 24/7 support infrastructure and change management",
+    text: "Scaling fails without structured support infrastructure and change management",
     icon: Settings2
   }
 ];
@@ -88,7 +88,7 @@ const Problem = () => {
                 The Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                Most femtech companies build incredible technology but struggle to get physicians to actually use it.
+                Most women's health tech companies build incredible technology — and still struggle to get physicians and payers to actually use it.
               </p>
               <div 
                 className="relative overflow-hidden rounded-full"
@@ -106,10 +106,10 @@ const Problem = () => {
 
             <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
               <p className="text-base sm:text-lg">
-                The gap between a promising health tech product and real-world clinical adoption isn't about the technology. It's about <strong style={{ color: '#718DA9', fontWeight: 600 }}>trust, workflow fit, and physician buy-in</strong>.
+                The gap between a promising women's health platform and real-world clinical adoption isn't about the technology. It's about <strong style={{ color: '#718DA9', fontWeight: 600 }}>trust, workflow fit, and physician buy-in</strong>.
               </p>
               <p className="text-base sm:text-lg">
-                Without a clinical strategy from day one, even the best platforms get stuck in <strong style={{ color: '#718DA9', fontWeight: 600 }}>endless pilots</strong>, face <strong style={{ color: '#718DA9', fontWeight: 600 }}>regulatory roadblocks</strong>, and never reach the scale they were built for.
+                Without a clinical and operational strategy from day one, even the best platforms get stuck in <strong style={{ color: '#718DA9', fontWeight: 600 }}>endless pilots</strong>, face <strong style={{ color: '#718DA9', fontWeight: 600 }}>governance roadblocks</strong>, and never reach the scale they were built for.
               </p>
               
               {/* Thin gold line separator */}
@@ -131,7 +131,7 @@ const Problem = () => {
                 }}
               >
                 <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
-                  <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>90% of health tech pilots fail to convert</strong> to full-scale implementation without clinical alignment.
+                  <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>90% of health tech pilots fail to convert</strong> to full-scale implementation without clinical alignment. <span className="text-base font-normal" style={{ color: '#718DA9' }}>(Accenture Health, Digital Health Scaling Report)</span>
                 </p>
               </div>
             </div>
@@ -222,7 +222,7 @@ const Problem = () => {
                   lineHeight: '1.4'
                 }}
               >
-                We don't just identify the gaps. We build the clinical strategy that closes them permanently.
+                We don't just identify the gaps. We embed inside your organization and close them — permanently.
               </p>
             </div>
           </div>

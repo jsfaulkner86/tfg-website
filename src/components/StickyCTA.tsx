@@ -85,8 +85,8 @@ const StickyCTA = () => {
               e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.4)';
             }}
           >
-            <span className="hidden sm:inline">Book a Strategy Call</span>
-            <span className="sm:hidden">Book Now</span>
+            <span className="hidden sm:inline">Let's Meet</span>
+            <span className="sm:hidden">Let's Meet</span>
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" style={{ color: '#5882A1' }} />
           </Button>
         </div>

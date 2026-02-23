@@ -57,7 +57,7 @@ const FinalCTA = () => {
               border: '2px solid rgba(255,255,255,0.3)'
             }}
           >
-            Book Your Strategy Call
+            Let's Meet
             <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-300 group-hover:translate-x-2" />
           </Button>
         </div>

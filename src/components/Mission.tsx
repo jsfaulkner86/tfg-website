@@ -117,15 +117,19 @@ const Mission = () => {
               }}
             >
               <p className="text-base sm:text-lg">
-                We are the strategic clinical and operational partner for femtech and women's health technology companies, bridging the gap between innovative platforms and real-world clinical adoption.
+                We are the strategic clinical and operational partner for women's health tech companies — bridging the gap between innovative platforms and the real-world clinical adoption that actually moves the needle.
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO & Operational Systems Architect with over 15 years of experience optimizing healthcare operations and EHR systems nationwide, and <span className="font-semibold">Dr. Nicole Faulkner</span>, a board-certified OB/GYN physician, Medical Director at BackTable (a physician-to-physician podcast network), and featured speaker at the Women's Health Innovation Summit (WHIS), we combine deep clinical credibility and an extensive physician network with health tech strategy to drive adoption, governance, and measurable outcomes.
+                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT & Operational Systems Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
               </p>
               
               <p className="text-base sm:text-lg">
-                We serve as fractional clinical and operational advisors for femtech companies, embedding directly into your team to accelerate physician adoption, reduce risk, and convert pilots into lasting, scalable solutions.
+                <span className="font-semibold">Dr. Nicole Faulkner</span>, Chief Clinical Officer, is a board-certified OB/GYN physician, Medical Director at BackTable — a physician-to-physician podcast network — and featured speaker at the Women's Health Innovation Summit (WHIS). She brings deep clinical credibility and an extensive physician network that opens doors no sales deck can.
+              </p>
+              
+              <p className="text-base sm:text-lg">
+                Together, we embed directly into your team — accelerating physician adoption, reducing implementation risk, and converting pilots into lasting, scalable outcomes that serve women and satisfy payers.
               </p>
               
               <div
@@ -149,8 +153,8 @@ const Mission = () => {
                     lineHeight: '1.82'
                   }}
                 >
-                  We don't just advise.<br />
-                  We embed, execute, and deliver results.
+                  We don't just show up on a slide deck.<br />
+                  We get inside your organization and make it work.
                 </p>
               </div>
             </div>
@@ -218,7 +222,7 @@ const Mission = () => {
                     color: '#718DA9'
                   }}
                 >
-                  CEO & Operational Systems Architect, Co-Founder
+                  CEO & Healthcare IT and Operational Systems Architect, Co-Founder
                 </p>
               </div>
 

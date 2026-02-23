@@ -123,7 +123,7 @@ const Hero = () => {
               e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)';
             }}
           >
-            Book Your Strategy Call
+            Let's Meet
             <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
         </div>

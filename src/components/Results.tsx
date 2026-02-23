@@ -5,17 +5,17 @@ const highlights = [
   {
     icon: Stethoscope,
     title: "Physician-First Strategy",
-    description: "Board-certified OB/GYN co-founder who speaks the language of clinicians. Direct physician networks through BackTable and WHIS conferences. We build trust with the people who decide whether your product lives or dies."
+    description: "Dr. Nicole Faulkner is a board-certified OB/GYN who speaks the language of clinicians and holds direct physician relationships through BackTable and WHIS conferences. We build trust with the people who decide whether your product lives or dies."
   },
   {
     icon: Clock,
-    title: "25+ Years Combined Experience",
-    description: "25+ years in healthcare operations, EHR systems, and clinical workflow architecture. 10+ years in frontline OB/GYN clinical leadership. From clinical environment audits to 24/7 deployment support, we cover the full lifecycle."
+    title: "25+ Years of Combined Experience",
+    description: "25+ years of combined expertise across healthcare IT architecture, EHR systems, clinical workflow design, and frontline OB/GYN leadership. From clinical environment audits to full deployment support, we cover the entire lifecycle."
   },
   {
     icon: Users,
-    title: "Embedded Partners, Not Consultants",
-    description: "We don't send slide decks. We embed as your fractional clinical and operational advisors. Governance frameworks, physician training, CMIO engagement, and controlled rollback protocols — built specifically for femtech and women's health innovation."
+    title: "Inside Your Organization, Not Outside It",
+    description: "We don't send slide decks. We embed directly into your team as clinical and operational partners. Governance frameworks, physician training, CMIO engagement, and controlled rollback protocols built specifically for women's health technology."
   }
 ];
 

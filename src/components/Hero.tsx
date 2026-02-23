@@ -86,7 +86,7 @@ const Hero = () => {
           textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
           backgroundColor: 'rgba(0, 0, 0, 0.3)',
           backdropFilter: 'blur(4px)'
-        }}>You've done the hard part — now the health system is in the way. We partner with women's health tech founders to navigate physician adoption, clinical governance, and EHR integration so your solution reaches the women who need it.
+        }}>You've done the hard part — now the health system or payer is in the way. We partner with women's health tech founders to navigate physician adoption, clinical governance, and EHR integration so your solution reaches the women who need it.
         </p>
           
           {/* Trust indicators */}

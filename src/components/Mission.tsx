@@ -120,11 +120,11 @@ const Mission = () => {
 
               </p>
               
-              <p className="text-base sm:text-lg">John Faulkner, CEO, Healthcare IT Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
-                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT & Operational Systems Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
+              <p className="text-base sm:text-lg">
+                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT Systems Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
               </p>
               
-              <p className="text-base sm:text-lg">Dr. Nicole Faulkner, Chief Clinical Officer, is a board-certified OB/GYN physician, Medical Director at BackTable, a physician-to-physician podcast network, and featured speaker at the Women's Health Innovation Summit (WHIS). She brings deep clinical credibility and an extensive physician network that opens doors no sales deck can.
+              <p className="text-base sm:text-lg">
                 <span className="font-semibold">Dr. Nicole Faulkner</span>, Chief Clinical Officer, is a board-certified OB/GYN physician, Medical Director at BackTable — a physician-to-physician podcast network — and featured speaker at the Women's Health Innovation Summit (WHIS). She brings deep clinical credibility and an extensive physician network that opens doors no sales deck can.
               </p>
               
@@ -199,7 +199,7 @@ const Mission = () => {
 
                     <img
                       src={johnHeadshot}
-                      alt="John Faulkner - Operational Systems Architect"
+                      alt="John Faulkner - Healthcare IT Systems Architect"
                       className="w-full h-full object-cover"
                       loading="lazy"
                       style={{
@@ -222,7 +222,7 @@ const Mission = () => {
                     color: '#718DA9'
                   }}>
 
-                  CEO & Healthcare IT and Operational Systems Architect, Co-Founder
+                  CEO & Healthcare IT Systems Architect, Co-Founder
                 </p>
               </div>
 

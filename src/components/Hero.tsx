@@ -62,7 +62,7 @@ const Hero = () => {
           <h1
           className="mb-6 text-2xl font-display font-semibold text-white sm:text-3xl md:text-[64px] md:leading-tight relative overflow-hidden"
           style={{
-            fontSize: 'clamp(32px, 4.5vw, 64px)',
+            fontSize: 'clamp(28px, 3.8vw, 58px)',
             letterSpacing: '0.02em',
             textShadow: '0 4px 8px rgba(0,0,0,0.35)',
             animation: 'fade-in 1.2s ease-out 0.2s forwards, slide-up 1.2s ease-out 0.2s forwards'

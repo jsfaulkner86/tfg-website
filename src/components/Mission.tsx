@@ -128,8 +128,8 @@ const Mission = () => {
                 <span className="font-semibold">Dr. Nicole Faulkner</span>, Chief Clinical Officer, is a board-certified OB/GYN physician, Medical Director at BackTable — a physician-to-physician podcast network — and featured speaker at the Women's Health Innovation Summit (WHIS). She brings deep clinical credibility and an extensive physician network that opens doors no sales deck can.
               </p>
               
-              <p className="text-base sm:text-lg">
-                Together, we embed directly into your team — accelerating physician adoption, reducing implementation risk, and converting pilots into lasting, scalable outcomes that serve women and satisfy payers.
+              <p className="text-base sm:text-lg">Together, we embed directly into your team, accelerating physician adoption, reducing implementation risk, and converting pilots into lasting, scalable outcomes that serve women and satisfy payers.
+
               </p>
               
               <div

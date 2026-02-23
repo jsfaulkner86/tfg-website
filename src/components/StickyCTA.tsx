@@ -19,7 +19,7 @@ const StickyCTA = () => {
   }, [isDismissed]);
 
   const handleBooking = () => {
-    window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
+    window.open('https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session', '_blank');
   };
 
   if (!isVisible || isDismissed) return null;
@@ -85,8 +85,8 @@ const StickyCTA = () => {
               e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.4)';
             }}
           >
-            <span className="hidden sm:inline">Let's Meet</span>
-            <span className="sm:hidden">Let's Meet</span>
+            <span className="hidden sm:inline">Book a Clinical Clarity Session</span>
+            <span className="sm:hidden">Book a Clinical Clarity Session</span>
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" style={{ color: '#5882A1' }} />
           </Button>
         </div>

@@ -13,25 +13,26 @@ const StickyCTA = () => {
 
   return (
     <div 
-      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-[slide-in-up_0.5s_ease-out] pointer-events-auto"
+      className="fixed left-1/2 -translate-x-1/2 z-50 pointer-events-auto w-[calc(100%-2rem)] sm:w-auto"
       style={{
+        bottom: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))',
         animation: 'fade-in 0.5s ease-out',
-        touchAction: 'none'
       }}
     >
       <div 
-        className="relative flex items-center gap-4 px-8 py-4 rounded-full backdrop-blur-xl"
+        className="relative flex items-center gap-3 sm:gap-4 px-5 sm:px-8 py-3 sm:py-4 rounded-2xl sm:rounded-full backdrop-blur-xl"
         style={{
           background: 'linear-gradient(135deg, rgba(113,141,169,0.98), rgba(88,130,161,0.98))',
           border: '2px solid rgba(243,218,115,0.5)',
           boxShadow: '0 12px 40px rgba(0,0,0,0.25), 0 0 60px rgba(243,218,115,0.2)',
-          backdropFilter: 'blur(20px)'
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)'
         }}
       >
         {/* Dismiss button */}
         <button
           onClick={() => setIsDismissed(true)}
-          className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+          className="absolute -top-2 -right-2 w-7 h-7 sm:w-6 sm:h-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
           style={{
             background: '#F3DA73',
             color: '#1A2A3A',
@@ -43,8 +44,8 @@ const StickyCTA = () => {
         </button>
 
         {/* Content */}
-        <div className="flex items-center gap-4">
-          <div className="hidden sm:block">
+        <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
+          <div className="hidden sm:block flex-shrink-0">
             <p className="text-sm font-inter font-semibold text-white">
               Physicians not adopting what you built?
             </p>
@@ -55,13 +56,14 @@ const StickyCTA = () => {
           
           <Button
             onClick={handleBooking}
-            className="group transition-all duration-300 font-semibold rounded-full"
+            className="group transition-all duration-300 font-semibold rounded-full w-full sm:w-auto active:scale-95"
             style={{
               background: '#F3DA73',
               color: '#5882A1',
-              padding: '0.75rem 2rem',
+              padding: '0.75rem 1.5rem',
               boxShadow: '0 4px 16px rgba(243,218,115,0.4)',
-              border: 'none'
+              border: 'none',
+              WebkitTapHighlightColor: 'transparent'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = '#FFE999';
@@ -72,8 +74,7 @@ const StickyCTA = () => {
               e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.4)';
             }}
           >
-            <span className="hidden sm:inline">Book a Clinical Clarity Session</span>
-            <span className="sm:hidden">Book a Clinical Clarity Session</span>
+            <span className="text-sm sm:text-base">Book a Clinical Clarity Session</span>
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" style={{ color: '#5882A1' }} />
           </Button>
         </div>

@@ -73,15 +73,15 @@ const Hero = () => {
             backgroundSize: '200% 100%'
           }} />
 
-            <span className="relative">
-              Great Tech Doesn't<br />
+            <span className="relative">Great Tech Doesn't
+Sell Itself.
+Especially
+in Women's Health.<br />
               Sell Itself. Especially<br />
               in Women's Health.
             </span>
           </h1>
-          <p
-          className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto px-4 py-3 rounded-lg"
-          style={{
+          <p className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto px-4 py-3 rounded-lg" style={{
             color: 'rgb(255, 255, 255)',
             textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
             backgroundColor: 'rgba(0, 0, 0, 0.3)',

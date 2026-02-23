@@ -43,7 +43,13 @@ const FinalCTA = () => {
         <p className="text-xl sm:text-2xl md:text-3xl font-inter font-light text-white/95 max-w-4xl mx-auto leading-relaxed" style={{
           textShadow: '0 2px 10px rgba(0,0,0,0.2)'
         }}>
-          If you're building health tech that needs physician adoption, clinical governance, and a path from pilot to scale, the next step is simple: schedule a strategy call today.
+          If you're building women's health tech that needs physician adoption, clinical governance, and a clear path from pilot to scale, the next step is simple.
+        </p>
+
+        <p className="text-lg sm:text-xl font-inter font-light text-white/85 max-w-3xl mx-auto leading-relaxed" style={{
+          textShadow: '0 2px 10px rgba(0,0,0,0.2)'
+        }}>
+          We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in. If we're not moving the needle, we keep working until we do.
         </p>
 
         <div className="pt-4">
@@ -80,7 +86,7 @@ const FinalCTA = () => {
                 textShadow: '0 2px 8px rgba(0,0,0,0.2)',
                 letterSpacing: '0.02em'
               }}>
-                Co-Founder, Operational Systems Architect
+                CEO, Co-Founder and Healthcare IT Architect
               </p>
             </div>
             

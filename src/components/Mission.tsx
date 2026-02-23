@@ -121,7 +121,7 @@ const Mission = () => {
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT Systems Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
+                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
               </p>
               
               <p className="text-base sm:text-lg">
@@ -199,7 +199,7 @@ const Mission = () => {
 
                     <img
                       src={johnHeadshot}
-                      alt="John Faulkner - Healthcare IT Systems Architect"
+                      alt="John Faulkner - Healthcare IT Architect"
                       className="w-full h-full object-cover"
                       loading="lazy"
                       style={{
@@ -222,7 +222,7 @@ const Mission = () => {
                     color: '#718DA9'
                   }}>
 
-                  CEO & Healthcare IT Systems Architect, Co-Founder
+                  CEO & Healthcare IT Architect, Co-Founder
                 </p>
               </div>
 

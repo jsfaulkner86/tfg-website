@@ -110,7 +110,7 @@ const BottomVideo = () => {
                 John Faulkner
               </p>
               <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                CEO & Co-Founder, Healthcare IT Systems Architect
+                CEO & Co-Founder, Healthcare IT Architect
               </p>
             </div>
 

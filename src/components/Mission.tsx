@@ -14,7 +14,7 @@ const Mission = () => {
         }
       },
       {
-        threshold: 0.2,
+        threshold: 0.2
       }
     );
 
@@ -34,16 +34,16 @@ const Mission = () => {
         paddingTop: '90px',
         paddingBottom: '90px',
         background: 'linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(113,141,169,0.04) 100%)'
-      }}
-    >
+      }}>
+
       {/* Soft top fade from hero */}
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none"
         style={{
           height: '25%',
           background: 'linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.97) 100%)'
-        }}
-      />
+        }} />
+
       
       {/* Subtle corner shadows for depth */}
       <div
@@ -55,8 +55,8 @@ const Mission = () => {
             radial-gradient(circle at 0% 100%, rgba(0,0,0,0.02) 0%, transparent 40%),
             radial-gradient(circle at 100% 100%, rgba(0,0,0,0.02) 0%, transparent 40%)
           `
-        }}
-      />
+        }} />
+
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-24 items-start relative">
@@ -65,27 +65,27 @@ const Mission = () => {
             className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"
             style={{
               background: 'linear-gradient(180deg, transparent 0%, rgba(113,141,169,0.15) 20%, rgba(113,141,169,0.15) 80%, transparent 100%)'
-            }}
-          />
+            }} />
+
           
           {/* Text Content - Left Column */}
           <div
             className={`space-y-8 transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-            }`}
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`
+            }
             style={{
               maxWidth: '650px',
               transitionDelay: '0.2s'
-            }}
-          >
+            }}>
+
             <div>
               <h2
                 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4"
                 style={{
                   color: '#1E1E1E',
                   lineHeight: '1.1'
-                }}
-              >
+                }}>
+
                 Who We Are
               </h2>
               <div className="relative inline-block">
@@ -94,8 +94,8 @@ const Mission = () => {
                   style={{
                     color: '#718DA9',
                     lineHeight: '1.82'
-                  }}
-                >
+                  }}>
+
                   Built at the intersection of clinical medicine, health tech strategy, and women's health innovation.
                 </p>
                 <div
@@ -104,8 +104,8 @@ const Mission = () => {
                     width: '100%',
                     height: '1.5px',
                     opacity: 0.8
-                  }}
-                />
+                  }} />
+
               </div>
             </div>
             
@@ -114,10 +114,10 @@ const Mission = () => {
               style={{
                 lineHeight: '1.82',
                 color: '#1E1E1E'
-              }}
-            >
-              <p className="text-base sm:text-lg">
-                We are the strategic clinical and operational partner for women's health tech companies — bridging the gap between innovative platforms and the real-world clinical adoption that actually moves the needle.
+              }}>
+
+              <p className="text-base sm:text-lg">We are the strategic clinical and operational partner for women's health tech companies, bridging the gap between innovative platforms and the real-world clinical adoption that actually moves the needle.
+
               </p>
               
               <p className="text-base sm:text-lg">
@@ -144,15 +144,15 @@ const Mission = () => {
                   borderRadius: '3px',
                   backdropFilter: 'blur(4px)',
                   boxShadow: '0 2px 12px rgba(0,0,0,0.02)'
-                }}
-              >
+                }}>
+
                 <p
                   className="text-base font-inter font-medium italic"
                   style={{
                     color: '#1E1E1E',
                     lineHeight: '1.82'
-                  }}
-                >
+                  }}>
+
                   We don't just show up on a slide deck.<br />
                   We get inside your organization and make it work.
                 </p>
@@ -163,20 +163,20 @@ const Mission = () => {
           {/* Portraits - Right Column */}
           <div
             className={`transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-            }`}
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`
+            }
             style={{
               transitionDelay: '0.5s'
-            }}
-          >
+            }}>
+
             <div className="flex flex-col gap-16 items-center">
               {/* John's Portrait */}
               <div
                 className="text-center group"
                 style={{
                   marginTop: '16px'
-                }}
-              >
+                }}>
+
                 <div className="relative">
                   <div
                     className="relative w-64 h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
@@ -195,8 +195,8 @@ const Mission = () => {
                     onMouseLeave={(e) => {
                       e.currentTarget.style.borderColor = '#F3DA73';
                       e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.05), inset 0 0 20px rgba(243,218,115,0.2)';
-                    }}
-                  >
+                    }}>
+
                     <img
                       src={johnHeadshot}
                       alt="John Faulkner - Operational Systems Architect"
@@ -204,24 +204,24 @@ const Mission = () => {
                       loading="lazy"
                       style={{
                         transform: 'scaleX(-1) scale(1.3) translateY(8%)'
-                      }}
-                    />
+                      }} />
+
                   </div>
                 </div>
                 <p
                   className="font-inter text-base font-semibold"
                   style={{
                     color: '#1E1E1E'
-                  }}
-                >
+                  }}>
+
                   John Faulkner
                 </p>
                 <p
                   className="font-inter text-sm"
                   style={{
                     color: '#718DA9'
-                  }}
-                >
+                  }}>
+
                   CEO & Healthcare IT and Operational Systems Architect, Co-Founder
                 </p>
               </div>
@@ -231,8 +231,8 @@ const Mission = () => {
                 className="text-center group"
                 style={{
                   marginTop: '16px'
-                }}
-              >
+                }}>
+
                 <div className="relative">
                   <div
                     className="relative w-64 h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
@@ -251,30 +251,30 @@ const Mission = () => {
                     onMouseLeave={(e) => {
                       e.currentTarget.style.borderColor = '#F3DA73';
                       e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.05), inset 0 0 20px rgba(243,218,115,0.2)';
-                    }}
-                  >
+                    }}>
+
                     <img
                       src={nicoleHeadshot}
                       alt="Dr. Nicole Faulkner - Board-Certified OB/GYN Physician"
                       className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+                      loading="lazy" />
+
                   </div>
                 </div>
                 <p
                   className="font-inter text-base font-semibold"
                   style={{
                     color: '#1E1E1E'
-                  }}
-                >
+                  }}>
+
                   Dr. Nicole Faulkner
                 </p>
                 <p
                   className="font-inter text-sm"
                   style={{
                     color: '#718DA9'
-                  }}
-                >
+                  }}>
+
                   Chief Clinical Officer, Co-Founder
                 </p>
               </div>
@@ -282,8 +282,8 @@ const Mission = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Mission;

@@ -6,7 +6,7 @@ const StickyCTA = () => {
   const [isDismissed, setIsDismissed] = useState(false);
 
   const handleBooking = () => {
-    window.open('https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session', '_blank');
+    window.location.href = '/clinical-clarity-session';
   };
 
   if (isDismissed) return null;

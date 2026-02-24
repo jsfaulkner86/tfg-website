@@ -97,7 +97,7 @@ const Transformation = () => {
               textShadow: '0 2px 4px rgba(0,0,0,0.02)'
             }}>
 
-            The Outcome
+            The Outcome: Pilot to Enterprise
           </h2>
           
           <div className="space-y-6 max-w-4xl mx-auto mb-8">

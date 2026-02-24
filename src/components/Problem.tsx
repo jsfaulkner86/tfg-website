@@ -106,7 +106,7 @@ const Problem = () => {
 
             <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
               <p className="text-base sm:text-lg">
-                The gap between a promising women's health platform and real-world clinical adoption isn't about the technology. It's about <strong style={{ color: '#718DA9', fontWeight: 600 }}>trust, workflow fit, and physician buy-in</strong>.
+                The gap between a promising women's health platform and real-world health tech clinical adoption isn't about the technology. It's about <strong style={{ color: '#718DA9', fontWeight: 600 }}>trust, workflow fit, and physician buy-in</strong>.
               </p>
               <p className="text-base sm:text-lg">
                 Without a clinical and operational strategy from day one, even the best platforms get stuck in <strong style={{ color: '#718DA9', fontWeight: 600 }}>endless pilots</strong>, face <strong style={{ color: '#718DA9', fontWeight: 600 }}>governance roadblocks</strong>, and never reach the scale they were built for.

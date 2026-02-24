@@ -10,17 +10,27 @@ const faqData = [
   {
     question: "Why do most women's health tech pilots fail to scale?",
     answer:
-      "90% of health tech pilots fail to convert to full-scale implementation without clinical alignment. The gap between a promising platform and real-world adoption isn't about the technology. It's about trust, workflow fit, and physician buy-in. Without a clinical and operational strategy from day one, even the best platforms get stuck in endless pilots, face governance roadblocks, and never reach the scale they were built for.",
+      "90% of health tech pilots fail to convert to full-scale implementation without clinical alignment (Accenture Health, Digital Health Scaling Report). The gap between a promising women's health platform and real-world clinical adoption isn't about the technology. It's about trust, workflow fit, and physician buy-in. Without a clinical and operational strategy from day one, even the best platforms get stuck in endless pilots, face governance roadblocks from health systems and payers, and never reach the scale they were built for. The Faulkner Group embeds directly inside women's health tech companies to close these gaps permanently.",
   },
   {
     question: "How do you get physicians to adopt new health technology?",
     answer:
-      "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. We build that trust through peer-to-peer advocacy, KOL engagement, and internal champions who drive adoption from the inside out. Dr. Nicole Faulkner, a board-certified OB/GYN, speaks the language of clinicians and holds direct physician relationships through BackTable and WHIS conferences.",
+      "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. The Faulkner Group builds physician adoption through peer-to-peer advocacy, KOL engagement, CMIO engagement strategies, and internal champion development that drives adoption from the inside out. Dr. Nicole Faulkner, a board-certified OB/GYN and Medical Director at BackTable, speaks the language of clinicians and holds direct physician relationships through BackTable and WHIS conferences. This is the physician-first strategy that converts skepticism into advocacy.",
   },
   {
     question: "What clinical governance frameworks do health systems require before approving new tech?",
     answer:
-      "Health systems and payers require governance and risk frameworks before approving new technology. We audit your clinical environment, including health systems, payer networks, and practice workflows, to identify every integration barrier. Then we build the governance protocols, CMIO engagement strategies, controlled rollback protocols, and compliance documentation that give leadership the confidence to say yes.",
+      "Health systems and payers require governance and risk frameworks before approving new women's health technology. This includes clinical environment audits, integration barrier identification, controlled rollback protocols, escalation pathways, and compliance documentation. The Faulkner Group builds these governance protocols, CMIO engagement strategies, and risk frameworks so that health system leadership has the confidence to approve enterprise-wide deployment. Without these frameworks, even clinically validated platforms stall at the pilot stage.",
+  },
+  {
+    question: "What is The 4 Pillars of Clinical Adoption framework?",
+    answer:
+      "The 4 Pillars of Clinical Adoption is a framework developed by The Faulkner Group for scaling women's health technology from pilot to enterprise deployment. The four pillars are: (1) Clinical Readiness and Governance, which covers environment audits, integration barrier identification, and risk frameworks for health systems and payers. (2) Physician Adoption and Champion Development, which includes CMIO engagement, peer-to-peer advocacy, KOL strategy, and building internal champions. (3) Training, Education, and Change Management, covering structured programs from front-desk staff to attending physicians. (4) Sales, Customer Success, and Deployment, which brings clinical credibility to the sales process and manages the full pilot-to-enterprise lifecycle. These four pillars determine whether women's health technology actually gets adopted at scale.",
+  },
+  {
+    question: "How do VC and PE firms reduce clinical adoption risk in health tech portfolios?",
+    answer:
+      "Clinical adoption risk is the leading cause of post-investment stalls in women's health tech portfolios. Venture capital and private equity firms reduce this risk through clinical and operational diligence that evaluates physician sentiment, governance readiness, EHR integration viability, and workflow alignment before a Series B, add-on acquisition, or board review. The Faulkner Group provides this clinical readiness assessment by embedding directly inside portfolio companies to identify adoption barriers, build governance frameworks, and accelerate physician buy-in. The result is a clinical adoption strategy that converts stalled pilots into scalable, enterprise-ready deployments.",
   },
 ];
 
@@ -142,9 +152,7 @@ const FAQ = () => {
                 >
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent
-                  className="px-8 pb-6"
-                >
+                <AccordionContent className="px-8 pb-6">
                   <p
                     className="text-base font-inter leading-relaxed"
                     style={{

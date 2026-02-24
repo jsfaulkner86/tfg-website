@@ -82,7 +82,7 @@ const Approach = () => {
           color: '#4A6A85',
           letterSpacing: '0.02em',
           lineHeight: '1.6'
-        }}>We don't parachute in with a deck and a plan. We embed alongside your team across the four pillars that determine whether women's health technology actually gets used.</p>
+        }}>We don't parachute in with a deck and a plan. We embed alongside your team across the four pillars that determine whether women's health technology achieves enterprise-wide clinical adoption.</p>
           
           {/* Decorative divider */}
           <div className="flex items-center justify-center gap-3 mb-8">

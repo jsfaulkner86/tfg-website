@@ -113,7 +113,7 @@ const Transformation = () => {
               letterSpacing: '0.02em',
               lineHeight: '1.7'
             }}>
-              Our partners don't just launch products. They build clinical ecosystems that drive lasting physician adoption, payer confidence, and measurable patient outcomes.
+              Our partners don't just launch products. They build clinical ecosystems that drive lasting physician adoption, payer confidence, and measurable patient outcomes across women's health.
             </p>
           </div>
           

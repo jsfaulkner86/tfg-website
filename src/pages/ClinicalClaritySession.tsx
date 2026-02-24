@@ -15,7 +15,7 @@ const ClinicalClaritySession = () => {
         <section
           className="relative px-4 sm:px-6 overflow-hidden"
           style={{
-            paddingTop: 'calc(140px + env(safe-area-inset-top, 0px))',
+            paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))',
             paddingBottom: '60px',
             background: 'linear-gradient(180deg, #3A5A73 0%, #5A7D99 100%)',
           }}

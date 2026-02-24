@@ -85,7 +85,7 @@ const Problem = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.1)'
                 }}
               >
-                The Problem
+                The Clinical Adoption Problem
               </h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
                 Most women's health tech companies build incredible technology — and still struggle to get physicians and payers to actually use it.

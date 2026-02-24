@@ -75,7 +75,7 @@ const Approach = () => {
           lineHeight: '1',
           textShadow: '0 2px 4px rgba(0,0,0,0.02)'
         }}>
-            How We Work
+            How We Drive Physician Adoption
           </h2>
           
           <p className="text-xl sm:text-2xl font-inter font-medium max-w-4xl mx-auto mb-4" style={{

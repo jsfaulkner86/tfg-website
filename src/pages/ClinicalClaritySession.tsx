@@ -13,9 +13,10 @@ const ClinicalClaritySession = () => {
       <main className="overflow-x-hidden">
         {/* Hero */}
         <section
-          className="relative px-6 overflow-hidden pt-32"
+          className="relative px-4 sm:px-6 overflow-hidden"
           style={{
-            paddingBottom: '80px',
+            paddingTop: 'calc(140px + env(safe-area-inset-top, 0px))',
+            paddingBottom: '60px',
             background: 'linear-gradient(180deg, #3A5A73 0%, #5A7D99 100%)',
           }}
         >
@@ -41,18 +42,18 @@ const ClinicalClaritySession = () => {
             </div>
 
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-8"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 sm:mb-8"
               style={{
                 color: '#FFFFFF',
                 letterSpacing: '-0.03em',
-                lineHeight: '1.1',
+                lineHeight: '1.15',
               }}
             >
               Your Pilot Is Stalling.<br />Find Out Why Before It's Too Late.
             </h1>
 
             <p
-              className="text-lg sm:text-xl font-inter font-light mb-10 max-w-3xl mx-auto"
+              className="text-base sm:text-lg md:text-xl font-inter font-light mb-8 sm:mb-10 max-w-3xl mx-auto px-2"
               style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.7' }}
             >
               Most health tech pilots are already failing before the first physician logs in. The Clinical Clarity Session finds what's standing between your product and real physician adoption — before a contract, pilot, or investor meeting depends on it.
@@ -60,7 +61,7 @@ const ClinicalClaritySession = () => {
 
             <Button
               onClick={handleBooking}
-              className="text-lg px-10 py-7 rounded-xl group transition-all duration-300 font-semibold"
+              className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 rounded-xl group transition-all duration-300 font-semibold w-full sm:w-auto"
               style={{
                 background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
                 color: '#1A2A3A',
@@ -76,10 +77,10 @@ const ClinicalClaritySession = () => {
 
         {/* Pain Points */}
         <section
-          className="px-6"
+          className="px-4 sm:px-6"
           style={{
-            paddingTop: '80px',
-            paddingBottom: '80px',
+            paddingTop: '60px',
+            paddingBottom: '60px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
@@ -91,7 +92,7 @@ const ClinicalClaritySession = () => {
               Sound Familiar?
             </h2>
 
-            <div className="grid sm:grid-cols-3 gap-6 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
               {[
                 "Physicians won't adopt your platform and you don't know why",
                 "The health system wants governance documentation you haven't built yet",

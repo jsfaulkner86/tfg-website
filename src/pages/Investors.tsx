@@ -13,9 +13,10 @@ const Investors = () => {
       <main className="overflow-x-hidden">
         {/* Hero */}
         <section
-          className="relative px-6 overflow-hidden pt-32"
+          className="relative px-4 sm:px-6 overflow-hidden"
           style={{
-            paddingBottom: '80px',
+            paddingTop: 'calc(140px + env(safe-area-inset-top, 0px))',
+            paddingBottom: '60px',
             background: 'linear-gradient(180deg, #2A3B4F 0%, #3A5A73 100%)',
           }}
         >
@@ -41,11 +42,11 @@ const Investors = () => {
             </div>
 
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-8"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 sm:mb-8"
               style={{
                 color: '#FFFFFF',
                 letterSpacing: '-0.03em',
-                lineHeight: '1.1',
+                lineHeight: '1.15',
               }}
             >
               Your Portfolio Company Has the Technology.<br />It Doesn't Have Clinical Adoption.
@@ -62,10 +63,10 @@ const Investors = () => {
 
         {/* Pain Points */}
         <section
-          className="px-6"
+          className="px-4 sm:px-6"
           style={{
-            paddingTop: '80px',
-            paddingBottom: '80px',
+            paddingTop: '60px',
+            paddingBottom: '60px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >

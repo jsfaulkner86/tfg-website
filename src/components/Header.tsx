@@ -37,15 +37,17 @@ const Header = () => {
       >
         <div className="px-8 flex items-center justify-between" style={{ paddingTop: '16px', paddingBottom: '16px' }}>
           <div className="flex items-center">
-            <img 
-              src={logo} 
-              alt="The Faulkner Group - Clinical Strategy for Health Tech" 
-              className="h-20 w-auto md:h-24 transition-transform duration-300 hover:scale-105"
-              loading="eager"
-              style={{
-                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
-              }}
-            />
+            <a href="/" className="flex items-center">
+              <img 
+                src={logo} 
+                alt="The Faulkner Group - Clinical Strategy for Health Tech" 
+                className="h-20 w-auto md:h-24 transition-transform duration-300 hover:scale-105"
+                loading="eager"
+                style={{
+                  filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))'
+                }}
+              />
+            </a>
           </div>
           
           {/* Desktop Navigation */}

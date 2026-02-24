@@ -116,7 +116,7 @@ const Mission = () => {
                 color: '#1E1E1E'
               }}>
 
-              <p className="text-base sm:text-lg">We are the strategic clinical and operational partner for women's health tech companies, bridging the gap between innovative platforms and the real-world clinical adoption that actually moves the needle.
+              <p className="text-base sm:text-lg">We are the strategic clinical and operational partner for women's health tech companies, bridging the gap between innovative platforms and the clinical adoption and physician buy-in that actually moves the needle.
 
               </p>
               

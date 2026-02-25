@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 import logo from "@/assets/faulkner-logo.png";
 
 const Header = () => {
@@ -73,6 +73,26 @@ const Header = () => {
               Contact
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
+            <div className="flex items-center gap-3 ml-2">
+              <a
+                href="https://www.linkedin.com/in/johnathonfaulkner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-white/15 transition-all duration-300"
+                aria-label="John Faulkner LinkedIn"
+              >
+                <Linkedin size={18} style={{ color: '#F3DA73' }} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full hover:bg-white/15 transition-all duration-300"
+                aria-label="Dr. Nicole Faulkner LinkedIn"
+              >
+                <Linkedin size={18} style={{ color: '#F3DA73' }} />
+              </a>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -116,10 +136,32 @@ const Header = () => {
             <a 
               href="#contact"
               onClick={handleNavClick}
-              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300"
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
               Contact
             </a>
+            <div className="flex items-center gap-4 px-6 py-4">
+              <a
+                href="https://www.linkedin.com/in/johnathonfaulkner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+                className="flex items-center gap-2 text-white/80 hover:text-white transition-all duration-300"
+              >
+                <Linkedin size={18} style={{ color: '#F3DA73' }} />
+                <span className="text-sm font-inter">John</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+                className="flex items-center gap-2 text-white/80 hover:text-white transition-all duration-300"
+              >
+                <Linkedin size={18} style={{ color: '#F3DA73' }} />
+                <span className="text-sm font-inter">Nicole</span>
+              </a>
+            </div>
           </nav>
         </div>
       )}

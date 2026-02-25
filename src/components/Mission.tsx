@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Linkedin } from "lucide-react";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 
@@ -221,9 +222,17 @@ const Mission = () => {
                   style={{
                     color: '#718DA9'
                   }}>
-
                   CEO & Healthcare IT Architect, Co-Founder
                 </p>
+                <a
+                  href="https://www.linkedin.com/in/johnathonfaulkner/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  style={{ color: '#F3DA73' }}
+                >
+                  <Linkedin size={16} /> Connect
+                </a>
               </div>
 
               {/* Nicole's Portrait */}
@@ -274,9 +283,17 @@ const Mission = () => {
                   style={{
                     color: '#718DA9'
                   }}>
-
                   Chief Clinical Officer, Co-Founder
                 </p>
+                <a
+                  href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  style={{ color: '#F3DA73' }}
+                >
+                  <Linkedin size={16} /> Connect
+                </a>
               </div>
             </div>
           </div>

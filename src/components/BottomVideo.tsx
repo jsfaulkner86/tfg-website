@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -112,6 +112,15 @@ const BottomVideo = () => {
               <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
                 CEO & Co-Founder, Healthcare IT Architect
               </p>
+              <a
+                href="https://www.linkedin.com/in/johnathonfaulkner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                style={{ color: '#F3DA73' }}
+              >
+                <Linkedin size={16} /> Connect on LinkedIn
+              </a>
             </div>
 
             <div
@@ -126,6 +135,15 @@ const BottomVideo = () => {
               <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
                 Co-Founder, Chief Clinical Officer
               </p>
+              <a
+                href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                style={{ color: '#F3DA73' }}
+              >
+                <Linkedin size={16} /> Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>

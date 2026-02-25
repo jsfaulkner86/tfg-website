@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Linkedin } from "lucide-react";
+import LinkedInIcon from "@/components/LinkedInIcon";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 
@@ -231,7 +231,7 @@ const Mission = () => {
                   className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   style={{ color: '#F3DA73' }}
                 >
-                  <Linkedin size={16} /> Connect
+                  <LinkedInIcon size={16} color="#F3DA73" /> Connect
                 </a>
               </div>
 
@@ -292,7 +292,7 @@ const Mission = () => {
                   className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   style={{ color: '#F3DA73' }}
                 >
-                  <Linkedin size={16} /> Connect
+                  <LinkedInIcon size={16} color="#F3DA73" /> Connect
                 </a>
               </div>
             </div>

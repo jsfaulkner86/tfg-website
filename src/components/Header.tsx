@@ -21,9 +21,9 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
-        isScrolled ? 'w-[96%]' : 'w-[92%]'
-      } max-w-7xl`}
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[92%] md:w-[calc(100%-2rem)] max-w-none ${
+        isScrolled ? 'md:w-[calc(100%-1rem)]' : ''
+      }`}
     >
       <div 
         className={`rounded-lg backdrop-blur-xl border border-white/10 transition-all duration-500 ${

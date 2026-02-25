@@ -35,7 +35,7 @@ const faqData = [
   {
     question: "What is a Clinical Clarity Session and who is it for?",
     answer:
-      "A Clinical Clarity Session is a 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT Architect. It's designed for women's health tech founders in active health system conversations, approaching a pilot, preparing for investor due diligence, or recovering from a pilot that didn't go as planned. The session identifies the 1–3 highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust — and delivers a written Clinical Clarity Summary within 48 hours with findings, risks, and recommended actions shareable with your team or investors. It costs $1,500 and includes a pre-session product review so we arrive informed, not orienting.",
+      "A Clinical Clarity Session is a 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT Architect. It's designed for women's health tech founders in active health system conversations, approaching a pilot, preparing for investor due diligence, or recovering from a pilot that didn't go as planned. The session identifies the 1-3 highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust - and delivers a written Clinical Clarity Summary within 48 hours with findings, risks, and recommended actions shareable with your team or investors. It costs $1,500 and includes a pre-session product review so we arrive informed, not orienting.",
   },
 ];
 

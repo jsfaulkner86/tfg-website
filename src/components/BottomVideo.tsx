@@ -105,7 +105,7 @@ const BottomVideo = () => {
             style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }}
           />
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
             <div className="text-center">
               <p className="text-xl font-playfair font-bold text-white mb-1">
                 John Faulkner
@@ -146,6 +146,30 @@ const BottomVideo = () => {
                 <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
               </a>
             </div>
+          </div>
+
+          {/* Social channels */}
+          <div className="flex items-center justify-center gap-6 mt-8">
+            <a
+              href="https://www.linkedin.com/company/faulkner-group/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full transition-all duration-300 hover:bg-white/10"
+              aria-label="The Faulkner Group LinkedIn"
+            >
+              <LinkedInIcon size={20} color="#F3DA73" />
+            </a>
+            <a
+              href="https://www.youtube.com/@YourHealthcareITexpert"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full transition-all duration-300 hover:bg-white/10"
+              aria-label="The Faulkner Group YouTube"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="#F3DA73">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>

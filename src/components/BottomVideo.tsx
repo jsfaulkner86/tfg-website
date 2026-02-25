@@ -63,7 +63,7 @@ const BottomVideo = () => {
             letterSpacing: '0.01em'
           }}
         >
-          If you're building health tech that needs physician adoption, clinical governance, and a clear path from pilot to scale — the next step is simple.
+          If you're building health tech that needs physician adoption, clinical governance, and a clear path from pilot to scale - the next step is simple.
         </p>
 
         {/* Risk reversal */}
@@ -79,7 +79,7 @@ const BottomVideo = () => {
               lineHeight: '1.7'
             }}
           >
-            We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in — or we keep working until we do.
+            We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in - or we keep working until we do.
           </p>
         </div>
 

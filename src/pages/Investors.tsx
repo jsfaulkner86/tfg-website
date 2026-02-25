@@ -56,7 +56,7 @@ const Investors = () => {
               className="text-lg sm:text-xl font-inter font-light mb-10 max-w-3xl mx-auto"
               style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.7' }}
             >
-              We provide the clinical and operational diligence that tells you exactly why a women's health tech investment is stalling — and the embedded strategy to fix it before the next board meeting.
+              We provide the clinical and operational diligence that tells you exactly why a women's health tech investment is stalling - and the embedded strategy to fix it before the next board meeting.
             </p>
           </div>
         </section>
@@ -80,7 +80,7 @@ const Investors = () => {
 
             <div className="grid sm:grid-cols-3 gap-6 mb-16">
               {[
-                "The platform is clinically validated but physicians won't use it — and no one on the team can explain why",
+                "The platform is clinically validated but physicians won't use it - and no one on the team can explain why",
                 "The company closed a pilot 12 months ago and still can't convert to enterprise because health systems want governance frameworks that don't exist",
                 "A Series B or acquisition depends on demonstrating clinical traction, but the adoption metrics tell a different story",
               ].map((pain, i) => (
@@ -138,7 +138,7 @@ const Investors = () => {
             {/* CTA */}
             <div className="text-center">
               <p className="text-lg font-inter mb-8" style={{ color: '#4A5568', lineHeight: '1.7' }}>
-                Start with a Clinical Clarity Session — 90 minutes of clinical and operational diligence you can bring to your next board meeting.
+                Start with a Clinical Clarity Session - 90 minutes of clinical and operational diligence you can bring to your next board meeting.
               </p>
               <Button
                 onClick={handleBooking}
@@ -150,7 +150,7 @@ const Investors = () => {
                   border: '2px solid rgba(243,218,115,0.4)',
                 }}
               >
-                Book a Clinical Clarity Session — $1,500
+                Book a Clinical Clarity Session - $1,500
                 <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
               </Button>
             </div>

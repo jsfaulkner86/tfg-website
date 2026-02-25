@@ -44,7 +44,7 @@ const ClinicalClaritySession = () => {
               className="text-base sm:text-lg md:text-xl font-inter font-light mb-8 sm:mb-10 max-w-3xl mx-auto px-2"
               style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.7' }}
             >
-              Most health tech pilots are already failing before the first physician logs in. The Clinical Clarity Session finds what's standing between your product and real physician adoption — before a contract, pilot, or investor meeting depends on it.
+              Most health tech pilots are already failing before the first physician logs in. The Clinical Clarity Session finds what's standing between your product and real physician adoption - before a contract, pilot, or investor meeting depends on it.
             </p>
 
             <Button
@@ -113,8 +113,8 @@ const ClinicalClaritySession = () => {
             <div className="space-y-5 mb-16">
               {[
                 { icon: FileText, text: "Pre-session product review so we arrive informed, not orienting" },
-                { icon: Users, text: "Live diagnostic with a practicing OB/GYN and a Healthcare IT Architect — clinical truth and systems reality in the same room" },
-                { icon: Shield, text: "Identification of the 1–3 highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust" },
+                { icon: Users, text: "Live diagnostic with a practicing OB/GYN and a Healthcare IT Architect - clinical truth and systems reality in the same room" },
+                { icon: Shield, text: "Identification of the 1-3 highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust" },
                 { icon: CheckCircle2, text: "Specific prioritized next steps tied to your product, not generic frameworks" },
                 { icon: FileText, text: "Written Clinical Clarity Summary delivered within 48 hours — findings, risks, and recommended actions shareable with your team or investors" },
               ].map((item, i) => {
@@ -159,7 +159,7 @@ const ClinicalClaritySession = () => {
                 }}
               >
                 <p className="text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
-                  We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in — or we keep working until we do.
+                  We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in - or we keep working until we do.
                 </p>
               </div>
 
@@ -174,7 +174,7 @@ const ClinicalClaritySession = () => {
                     border: '2px solid rgba(243,218,115,0.4)',
                   }}
                 >
-                  Book Your Clinical Clarity Session — $1,500
+                  Book Your Clinical Clarity Session - $1,500
                   <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
                 </Button>
               </div>

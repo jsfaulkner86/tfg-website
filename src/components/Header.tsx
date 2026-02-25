@@ -94,6 +94,17 @@ const Header = () => {
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
             </a>
+            <a
+              href="https://podcasts.apple.com/us/podcast/smarter-systems-better-care-podcast/id1835554141"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-white/15 transition-all duration-300"
+              aria-label="Smarter Systems Better Care Podcast"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="#F3DA73">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3.6a8.4 8.4 0 0 1 8.4 8.4c0 2.47-1.065 4.688-2.76 6.228a.725.725 0 0 1-.476.18.72.72 0 0 1-.716-.72c0-.212.092-.404.236-.54A6.96 6.96 0 0 0 18.96 12 6.96 6.96 0 0 0 12 5.04 6.96 6.96 0 0 0 5.04 12a6.96 6.96 0 0 0 2.276 5.148.72.72 0 0 1 .236.54.72.72 0 0 1-.716.72.725.725 0 0 1-.476-.18A8.363 8.363 0 0 1 3.6 12 8.4 8.4 0 0 1 12 3.6zm0 3.6A4.8 4.8 0 0 1 16.8 12c0 1.42-.62 2.696-1.6 3.572a.72.72 0 0 1-1.196-.54.72.72 0 0 1 .248-.544A3.36 3.36 0 0 0 15.36 12 3.36 3.36 0 0 0 12 8.64 3.36 3.36 0 0 0 8.64 12c0 .952.396 1.812 1.032 2.424a.72.72 0 0 1-.948 1.084A4.764 4.764 0 0 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 3.6a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zm-.72 3.48h1.44l.6 4.44a.72.72 0 0 1-.6.84h-1.44a.72.72 0 0 1-.6-.84l.6-4.44z"/>
+              </svg>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -156,12 +167,24 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleNavClick}
-              className="flex items-center gap-2 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="#F3DA73">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
               <span className="text-sm font-inter">YouTube</span>
+            </a>
+            <a
+              href="https://podcasts.apple.com/us/podcast/smarter-systems-better-care-podcast/id1835554141"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleNavClick}
+              className="flex items-center gap-2 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="#F3DA73">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3.6a8.4 8.4 0 0 1 8.4 8.4c0 2.47-1.065 4.688-2.76 6.228a.725.725 0 0 1-.476.18.72.72 0 0 1-.716-.72c0-.212.092-.404.236-.54A6.96 6.96 0 0 0 18.96 12 6.96 6.96 0 0 0 12 5.04 6.96 6.96 0 0 0 5.04 12a6.96 6.96 0 0 0 2.276 5.148.72.72 0 0 1 .236.54.72.72 0 0 1-.716.72.725.725 0 0 1-.476-.18A8.363 8.363 0 0 1 3.6 12 8.4 8.4 0 0 1 12 3.6zm0 3.6A4.8 4.8 0 0 1 16.8 12c0 1.42-.62 2.696-1.6 3.572a.72.72 0 0 1-1.196-.54.72.72 0 0 1 .248-.544A3.36 3.36 0 0 0 15.36 12 3.36 3.36 0 0 0 12 8.64 3.36 3.36 0 0 0 8.64 12c0 .952.396 1.812 1.032 2.424a.72.72 0 0 1-.948 1.084A4.764 4.764 0 0 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 3.6a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zm-.72 3.48h1.44l.6 4.44a.72.72 0 0 1-.6.84h-1.44a.72.72 0 0 1-.6-.84l.6-4.44z"/>
+              </svg>
+              <span className="text-sm font-inter">Podcast</span>
             </a>
           </nav>
         </div>

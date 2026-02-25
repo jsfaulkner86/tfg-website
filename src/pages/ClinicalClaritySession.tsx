@@ -29,18 +29,6 @@ const ClinicalClaritySession = () => {
           />
 
           <div className="max-w-4xl mx-auto relative z-10 text-center">
-            <div
-              className="inline-block mb-6 px-6 py-2 rounded-full"
-              style={{
-                background: 'rgba(243,218,115,0.15)',
-                border: '1.5px solid rgba(243,218,115,0.4)',
-              }}
-            >
-              <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#F3DA73' }}>
-                $1,500 · 90 Minutes · Virtual
-              </span>
-            </div>
-
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 sm:mb-8"
               style={{

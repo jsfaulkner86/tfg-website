@@ -228,7 +228,7 @@ const Approach = () => {
               color: '#718DA9',
               letterSpacing: '-0.02em',
               lineHeight: '1.5'
-            }}>Your technology deserves more than a pilot. We make sure it gets there.</p>
+            }}>Your technology deserves more than a pilot.<br />We make sure it gets there.</p>
             </div>
           </div>
         </div>

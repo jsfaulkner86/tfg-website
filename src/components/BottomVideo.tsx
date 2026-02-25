@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Linkedin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import LinkedInIcon from "@/components/LinkedInIcon";
 
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -119,7 +120,7 @@ const BottomVideo = () => {
                 className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
                 style={{ color: '#F3DA73' }}
               >
-                <Linkedin size={16} /> Connect on LinkedIn
+                <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
               </a>
             </div>
 
@@ -142,7 +143,7 @@ const BottomVideo = () => {
                 className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
                 style={{ color: '#F3DA73' }}
               >
-                <Linkedin size={16} /> Connect on LinkedIn
+                <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
               </a>
             </div>
           </div>

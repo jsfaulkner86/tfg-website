@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Linkedin } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import LinkedInIcon from "@/components/LinkedInIcon";
 import logo from "@/assets/faulkner-logo.png";
 
 const Header = () => {
@@ -80,7 +81,7 @@ const Header = () => {
               className="p-2 rounded-full hover:bg-white/15 transition-all duration-300 ml-2"
               aria-label="The Faulkner Group LinkedIn"
             >
-              <Linkedin size={18} style={{ color: '#F3DA73' }} />
+              <LinkedInIcon size={18} color="#F3DA73" />
             </a>
           </nav>
 
@@ -136,7 +137,7 @@ const Header = () => {
               onClick={handleNavClick}
               className="flex items-center gap-2 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
             >
-              <Linkedin size={18} style={{ color: '#F3DA73' }} />
+              <LinkedInIcon size={18} color="#F3DA73" />
               <span className="text-sm font-inter">LinkedIn</span>
             </a>
           </nav>

@@ -102,14 +102,14 @@ const ForWomensHealth = () => {
 
               {/* Headline */}
               <h1
-                className="mb-6 font-display font-bold text-white"
+                className="mb-6 font-display font-bold text-white text-center"
                 style={{
                   fontSize: 'clamp(28px, 3.8vw, 52px)',
                   lineHeight: 1.1,
                 }}
               >
-                <span className="block">For Women's Health</span>
-                <span className="block text-white md:whitespace-nowrap" style={{ fontSize: 'clamp(22px, 3.2vw, 46px)' }}>Against Every System That Holds It Back</span>
+                <span className="block text-center">For Women's Health</span>
+                <span className="block text-center text-white md:whitespace-nowrap" style={{ fontSize: 'clamp(22px, 3.2vw, 46px)' }}>Against Every System That Holds It Back</span>
               </h1>
 
               {/* Subheadline */}

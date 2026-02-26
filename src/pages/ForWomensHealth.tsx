@@ -108,7 +108,7 @@ const ForWomensHealth = () => {
                 }}
               >
                 <span className="block">For Women's Health.</span>
-                <span className="block" style={{ color: '#F3DA73' }}>Against Every System That Holds It Back.</span>
+                <span className="block text-white">Against Every System That Holds It Back.</span>
               </h1>
 
               {/* Subheadline */}

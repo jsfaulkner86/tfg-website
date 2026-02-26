@@ -51,8 +51,7 @@ const Hero = () => {
                 lineHeight: 1.1,
               }}
             >
-              You Built Something That Works.
-              <br />
+              You Built Something That Works.{' '}
               Now Let's Get It Used.
             </h1>
 

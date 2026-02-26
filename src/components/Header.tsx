@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import logo from "@/assets/faulkner-logo.png";
+import backtableIcon from "@/assets/backtable-obgyn-icon.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,7 +96,7 @@ const Header = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="#F3DA73"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
               </a>
               <a href="https://www.backtable.com/shows/obgyn" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-white/15 transition-all duration-300" aria-label="BackTable OB/GYN Podcast">
-                <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#F3DA73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6h.5"/><path d="M8 15v1a6 6 0 0 1-6 6H1.5"/><path d="M2 9h4"/><path d="M10 9h4"/></svg>
+                <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[18px] w-auto" />
               </a>
             </div>
           </nav>
@@ -205,7 +206,7 @@ const Header = () => {
               onClick={handleNavClick}
               className="flex items-center gap-2 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="#F3DA73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6h.5"/><path d="M8 15v1a6 6 0 0 1-6 6H1.5"/><path d="M2 9h4"/><path d="M10 9h4"/></svg>
+              <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[18px] w-auto" />
               <span className="text-sm font-inter">BackTable OB/GYN</span>
             </a>
           </nav>

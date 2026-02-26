@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
+import backtableIcon from "@/assets/backtable-obgyn-icon.png";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 
 const Mission = () => {
@@ -300,7 +301,7 @@ const Mission = () => {
                     className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
                     style={{ color: '#F3DA73' }}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="#F3DA73" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6h.5"/><path d="M8 15v1a6 6 0 0 1-6 6H1.5"/><path d="M2 9h4"/><path d="M10 9h4"/></svg>
+                    <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[16px] w-auto" />
                     BackTable
                   </a>
                 </div>

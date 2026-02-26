@@ -35,7 +35,7 @@ const SectionHeading = ({ children, light = false }: { children: React.ReactNode
 
 /* ───────────────────────── 1. HERO ───────────────────────── */
 const ServicesHero = () => (
-  <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+  <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
     <img
       src="/hero-boardroom.jpg"
       alt="Healthcare advisory services"
@@ -48,17 +48,17 @@ const ServicesHero = () => (
         <Eyebrow>Healthcare Advisory Services</Eyebrow>
 
         <h1
-          className="mb-6 font-display font-bold text-white"
-          style={{ fontSize: 'clamp(28px, 3.8vw, 52px)', lineHeight: 1.1 }}
+          className="mb-4 md:mb-6 font-display font-bold text-white"
+          style={{ fontSize: 'clamp(26px, 3.8vw, 52px)', lineHeight: 1.1 }}
         >
           <span className="block">Two Brains. One Mission.</span>
           <span className="block">Zero Wasted Time.</span>
         </h1>
 
         <p
-          className="mb-10 font-inter"
+          className="mb-8 md:mb-10 font-inter px-2"
           style={{
-            fontSize: 'clamp(16px, 1.6vw, 20px)',
+            fontSize: 'clamp(15px, 1.6vw, 20px)',
             color: 'rgba(255,255,255,0.85)',
             textShadow: '0 2px 8px rgba(0,0,0,0.5)',
           }}
@@ -68,7 +68,7 @@ const ServicesHero = () => (
 
         <Button
           onClick={handleBooking}
-          className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
+          className="text-base font-semibold rounded-md px-8 py-5 min-h-[48px] border-0 group transition-all duration-300"
           style={{ backgroundColor: '#F3DA73', color: '#5882A1' }}
         >
           Let's Meet
@@ -81,15 +81,15 @@ const ServicesHero = () => (
 
 /* ───────────────────────── 2. DUAL BRAIN ───────────────────────── */
 const DualBrain = () => (
-  <section className="py-12 md:py-20 px-6 bg-background">
+  <section className="py-10 md:py-20 px-5 md:px-6 bg-background">
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
       <SectionHeading>Advisory Plus MedTech. Not Either/Or.</SectionHeading>
 
-      <div className="grid md:grid-cols-2 gap-8 mt-12">
+      <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
         {/* Advisory Brain */}
         <div
-          className="rounded-lg p-8 text-left border border-border"
+          className="rounded-lg p-5 md:p-8 text-left border border-border"
           style={{ background: 'hsl(0 0% 98%)' }}
         >
           <div className="flex items-center gap-3 mb-4">
@@ -107,7 +107,7 @@ const DualBrain = () => (
 
         {/* MedTech Brain */}
         <div
-          className="rounded-lg p-8 text-left border border-border"
+          className="rounded-lg p-5 md:p-8 text-left border border-border"
           style={{ background: 'hsl(0 0% 98%)' }}
         >
           <div className="flex items-center gap-3 mb-4">
@@ -166,9 +166,9 @@ const engagements = [
 ];
 
 const EngagementModels = () => (
-  <section className="py-12 md:py-20 px-6 bg-background">
+  <section className="py-10 md:py-20 px-5 md:px-6 bg-background">
     <div className="max-w-4xl mx-auto">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10 md:mb-16">
         <Eyebrow>Engagement Models</Eyebrow>
         <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
         <p className="font-inter" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>
@@ -180,11 +180,11 @@ const EngagementModels = () => (
         {engagements.map((eng) => (
           <div key={eng.numeral}>
             <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
-            <div className="py-12 md:py-16">
-              <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-12">
+              <div className="py-8 md:py-16">
+              <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-12">
                 <span
                   className="font-display font-light flex-shrink-0"
-                  style={{ fontSize: '48px', lineHeight: 1, color: 'hsl(45, 62%, 56%)', minWidth: '60px' }}
+                  style={{ fontSize: '36px', lineHeight: 1, color: 'hsl(45, 62%, 56%)', minWidth: '60px' }}
                 >
                   {eng.numeral}
                 </span>
@@ -199,8 +199,8 @@ const EngagementModels = () => (
                     {eng.tagline}
                   </p>
                   <p
-                    className="font-inter leading-relaxed mb-6"
-                    style={{ fontSize: '15px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}
+                    className="font-inter leading-relaxed mb-5 md:mb-6"
+                    style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}
                   >
                     {eng.paragraph}
                   </p>
@@ -208,7 +208,7 @@ const EngagementModels = () => (
                     href={eng.href}
                     target={eng.external ? '_blank' : undefined}
                     rel={eng.external ? 'noopener noreferrer' : undefined}
-                    className="inline-flex items-center gap-2 font-inter font-semibold text-sm transition-all duration-300 hover:gap-3"
+                    className="inline-flex items-center gap-2 font-inter font-semibold text-sm min-h-[44px] transition-all duration-300 hover:gap-3"
                     style={{ color: 'hsl(45, 62%, 46%)' }}
                   >
                     {eng.cta}
@@ -236,7 +236,7 @@ const partnershipItems = [
 ];
 
 const Partnership = () => (
-  <section className="py-12 md:py-20 px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
+  <section className="py-10 md:py-20 px-5 md:px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
     <div className="absolute inset-0 opacity-10" style={{
       backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
       backgroundSize: '40px 40px',
@@ -244,13 +244,13 @@ const Partnership = () => (
     <div className="relative z-10 max-w-5xl mx-auto">
       <div className="text-center mb-12">
         <Eyebrow>For the Long Game</Eyebrow>
-        <h2 className="font-display font-bold mb-6 text-white md:whitespace-nowrap" style={{ fontSize: 'clamp(24px, 2.8vw, 38px)', lineHeight: 1.15 }}>Partnership. Not a Retainer. A Relationship.</h2>
+        <h2 className="font-display font-bold mb-6 text-white" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)', lineHeight: 1.15 }}>Partnership. Not a Retainer. A Relationship.</h2>
         <p className="font-inter text-white/85 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: '16px' }}>
           Some of the most important work we do does not fit inside a sprint timeline. Our Partnership Model is designed for women's health tech companies who want The Faulkner Group embedded in their work, not just consulting from the outside.
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-6 mb-12">
+      <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-12">
         {partnershipItems.map(({ icon: Icon, text }) => (
           <div key={text} className="flex items-start gap-3">
             <Icon className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />
@@ -269,7 +269,7 @@ const Partnership = () => (
       <div className="text-center">
         <Button
           onClick={handleBooking}
-          className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
+          className="text-base font-semibold rounded-md px-8 py-5 min-h-[48px] border-0 group transition-all duration-300"
           style={{ backgroundColor: '#F3DA73', color: '#5882A1' }}
         >
           Explore Partnership
@@ -289,12 +289,12 @@ const fitChecks = [
 ];
 
 const IsThisYou = () => (
-  <section className="py-12 md:py-20 px-6 bg-background">
+  <section className="py-10 md:py-20 px-5 md:px-6 bg-background">
     <div className="max-w-4xl mx-auto text-center">
       <Eyebrow>Who We Serve</Eyebrow>
       <SectionHeading>The Faulkner Group Is Right For You If...</SectionHeading>
 
-      <div className="mt-10 space-y-5 text-left max-w-2xl mx-auto">
+      <div className="mt-8 md:mt-10 space-y-4 md:space-y-5 text-left max-w-2xl mx-auto">
         {fitChecks.map((item) => (
           <div key={item} className="flex items-start gap-3">
             <Check className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />
@@ -308,7 +308,7 @@ const IsThisYou = () => (
 
 /* ───────────────────────── PAGE ───────────────────────── */
 const Services = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
     <Header />
     <ServicesHero />
     <DualBrain />

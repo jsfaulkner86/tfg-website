@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Brain, Cpu, Users, Shield, Lightbulb, Handshake } from "lucide-react";
 import BottomVideo from "@/components/BottomVideo";
+import { Link } from "react-router-dom";
 
 const handleBooking = () => {
   window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
@@ -38,7 +40,7 @@ const ServicesHero = () => (
   <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
     <img
       src="/hero-boardroom.jpg"
-      alt="Healthcare advisory services"
+      alt="The Faulkner Group women's health tech advisory team in a strategy session"
       className="absolute inset-0 w-full h-full object-cover"
     />
     <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
@@ -149,7 +151,7 @@ const engagements = [
     numeral: 'II',
     name: 'Sprint Pro',
     tagline: 'Build. Optimize. Operate.',
-    paragraph: 'For women\'s health tech companies in active build or optimization phases. We embed across your strategy and execution layers, leading EHR integration, clinical workflow design, and physician adoption strategy across your platform and clinical partnerships. Includes clinical collaboration with our board-certified OB/GYN advisor and weekly advisory sessions throughout the engagement.',
+    paragraph: 'For women\'s health tech companies in active build or optimization phases. We embed across your strategy and execution layers, leading EHR integration, clinical workflow design, and physician adoption strategy across your <a href="/for-womens-health" class="underline underline-offset-2 hover:opacity-80 transition-opacity" style="color: hsl(45, 62%, 46%)">women\'s health technology platform</a> and clinical partnerships. Includes clinical collaboration with our board-certified OB/GYN advisor and weekly advisory sessions throughout the engagement.',
     cta: 'Schedule a Discovery Call',
     href: 'https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner',
     external: true,
@@ -202,7 +204,7 @@ const EngagementModels = () => (
                     className="font-inter leading-relaxed mb-5 md:mb-6"
                     style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}
                   >
-                    {eng.paragraph}
+                    <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
                   </p>
                   <a
                     href={eng.href}
@@ -307,8 +309,60 @@ const IsThisYou = () => (
 );
 
 /* ───────────────────────── PAGE ───────────────────────── */
+const servicesFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does The Faulkner Group do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group is a boutique advisory firm for women's health tech founders. We combine strategic advisory expertise with deep clinical and EHR integration knowledge to help women's health technology companies scale, achieve physician adoption, and build lasting clinical partnerships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who does The Faulkner Group serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve women's health tech founders and operators who are ready to move from traction to scale. Our clients are building technology platforms in women's health and need both strategic guidance and clinical credibility to succeed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Dual Brain model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Dual Brain model is The Faulkner Group's core approach. It combines an Advisory Brain focused on strategy, stakeholders, and go-to-market positioning with a MedTech Brain focused on EHR integration, clinical workflow design, and operational execution. Together they eliminate the gap between vision and execution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What advisory services does The Faulkner Group offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group offers three engagement models: Sprint Starter, a 30-day diagnostic and roadmap engagement; Sprint Pro, a full strategy and execution engagement including EHR integration and clinical collaboration; and Sprint Elite, an end-to-end enterprise engagement from strategy through launch. We also offer a Partnership model for long-term embedded advisory relationships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is The Faulkner Group different from other healthcare consultants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group is exclusively focused on women's health technology. Our team includes both operational systems architects and board-certified OB/GYN clinical advisors, giving us a unique dual capability that most advisory firms cannot offer. We do not serve hospitals or general health systems. We work only with women's health tech companies."
+      }
+    }
+  ]
+};
+
 const Services = () => (
   <div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
+    <SEOHead
+      title="Women's Health Tech Advisory Services | The Faulkner Group"
+      description="The Faulkner Group offers boutique advisory services for women's health tech founders. From 30-day diagnostics to enterprise partnerships, we align strategy, EHR integration, and clinical expertise to help your platform scale."
+      canonical="https://thrive-beacon-studio.lovable.app/services"
+    />
     <Header />
     <ServicesHero />
     <DualBrain />
@@ -316,6 +370,10 @@ const Services = () => (
     <Partnership />
     <IsThisYou />
     <BottomVideo />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqSchema) }}
+    />
   </div>
 );
 

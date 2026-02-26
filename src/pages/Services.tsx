@@ -133,116 +133,86 @@ const DualBrain = () => (
   </section>
 );
 
-/* ───────────────────────── 3. SPRINT TIERS ───────────────────────── */
-const tiers = [
+/* ───────────────────────── 3. ENGAGEMENT MODELS ───────────────────────── */
+const engagements = [
   {
-    badge: 'Starter',
-    badgeBg: 'hsl(45, 62%, 56%, 0.15)',
-    badgeColor: 'hsl(45, 62%, 56%)',
+    numeral: 'I',
     name: 'Sprint Starter',
     tagline: 'Clarity in 30 Days',
-    items: [
-      'Focused 30-day diagnostic across your product workflows, go-to-market operations, and clinical positioning',
-      'Workflow assessment and priority mapping',
-      'One actionable roadmap, ready to execute',
-      'One 90-minute strategy session with TFG leadership',
-      'Ideal for women\'s health tech founders who are ready to move from traction to scale',
-    ],
+    paragraph: 'For founders who know something is not working but are not sure where to start. We conduct a focused 30-day diagnostic across your product workflows, go-to-market operations, and clinical positioning, and deliver a single clear roadmap your team can act on immediately. Engagement includes a 90-minute strategy session with both co-founders.',
     cta: 'Book Your Sprint Starter',
-    popular: false,
-    cardBg: 'hsl(0 0% 98%)',
   },
   {
-    badge: 'Most Popular',
-    badgeBg: 'hsl(210, 25%, 55%)',
-    badgeColor: '#fff',
+    numeral: 'II',
     name: 'Sprint Pro',
     tagline: 'Build. Optimize. Operate.',
-    items: [
-      'Full engagement across strategy and execution',
-      'EHR integration, clinical workflow design, and optimization across your women\'s health technology platform and clinical partnerships',
-      'Clinical collaboration with board-certified OB/GYN advisor',
-      'Adoption strategy and change management support',
-      'Weekly check-ins plus ongoing support between sessions',
-    ],
+    paragraph: 'For women\'s health tech companies in active build or optimization phases. We embed across your strategy and execution layers, leading EHR integration, clinical workflow design, and physician adoption strategy across your platform and clinical partnerships. Includes clinical collaboration with our board-certified OB/GYN advisor and weekly advisory sessions throughout the engagement.',
     cta: 'Schedule a Discovery Call',
-    popular: true,
-    cardBg: 'hsl(0 0% 98%)',
   },
   {
-    badge: 'Elite',
-    badgeBg: 'hsl(210, 14%, 19%)',
-    badgeColor: '#fff',
+    numeral: 'III',
     name: 'Sprint Elite',
     tagline: 'End-to-End. Enterprise-Grade.',
-    items: [
-      'Full Dual Brain engagement from strategy through launch',
-      'Deep EHR integration expertise across your women\'s health technology platform',
-      'AI readiness assessment and intelligent workflow integration built for women\'s health technology platforms',
-      'Executive advisory access to both co-founders',
-      'Priority response, dedicated project lead, quarterly business reviews',
-    ],
+    paragraph: 'For women\'s health tech companies moving from pilot to enterprise deployment and ready to scale with confidence. We lead from strategy through launch, bringing deep EHR integration expertise, AI readiness assessment, and intelligent workflow integration built for women\'s health technology platforms. Both co-founders are engaged directly and continuously throughout.',
     cta: 'Let\'s Talk',
-    popular: false,
-    cardBg: 'hsl(0 0% 98%)',
   },
 ];
 
-const SprintTiers = () => (
-  <section className="py-12 md:py-20 px-6" style={{ background: 'hsl(210, 14%, 95%)' }}>
-    <div className="max-w-6xl mx-auto text-center">
-      <Eyebrow>Engagement Models</Eyebrow>
-      <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
-      <p className="font-inter mb-12" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>
-        Choose the sprint that fits where you are and scale when you are ready.
-      </p>
+const EngagementModels = () => (
+  <section className="py-12 md:py-20 px-6 bg-background">
+    <div className="max-w-4xl mx-auto">
+      <div className="text-center mb-16">
+        <Eyebrow>Engagement Models</Eyebrow>
+        <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
+        <p className="font-inter" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>
+          Choose the engagement that fits where you are and scale when you are ready.
+        </p>
+      </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
-        {tiers.map((tier) => (
-          <div
-            key={tier.name}
-            className={`relative rounded-lg p-8 text-left border flex flex-col ${
-              tier.popular ? 'border-accent shadow-lg scale-[1.02]' : 'border-border'
-            }`}
-            style={{ background: tier.cardBg }}
-          >
-            {/* Badge */}
-            <span
-              className="inline-block self-start px-3 py-1 rounded-full text-xs font-inter font-semibold uppercase tracking-wider mb-4"
-              style={{ backgroundColor: tier.badgeBg, color: tier.badgeColor }}
-            >
-              {tier.badge}
-            </span>
-
-            <h3 className="text-2xl font-display font-bold mb-1" style={{ color: 'hsl(210, 14%, 19%)' }}>
-              {tier.name}
-            </h3>
-            <p className="font-inter mb-6" style={{ color: 'hsl(45, 62%, 56%)', fontSize: '15px', fontWeight: 500 }}>
-              {tier.tagline}
-            </p>
-
-            <ul className="space-y-3 mb-8 flex-1">
-              {tier.items.map((item) => (
-                <li key={item} className="flex items-start gap-2 font-inter text-sm" style={{ color: 'hsl(0,0%,35%)' }}>
-                  <Check className="h-4 w-4 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-
-
-
-            <Button
-              onClick={handleBooking}
-              className="w-full text-sm font-semibold rounded-md py-5 border-0 group transition-all duration-300"
-              style={{ backgroundColor: '#F3DA73', color: '#5882A1' }}
-            >
-              {tier.cta}
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </Button>
+      <div>
+        {engagements.map((eng) => (
+          <div key={eng.numeral}>
+            <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
+            <div className="py-12 md:py-16">
+              <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-12">
+                <span
+                  className="font-display font-light flex-shrink-0"
+                  style={{ fontSize: '48px', lineHeight: 1, color: 'hsl(45, 62%, 56%)', minWidth: '60px' }}
+                >
+                  {eng.numeral}
+                </span>
+                <div className="flex-1">
+                  <h3
+                    className="font-display font-bold mb-1"
+                    style={{ fontSize: 'clamp(22px, 2.4vw, 30px)', lineHeight: 1.2, color: 'hsl(210, 14%, 19%)' }}
+                  >
+                    {eng.name}
+                  </h3>
+                  <p className="font-display italic mb-5" style={{ fontSize: '16px', color: 'hsl(45, 62%, 56%)' }}>
+                    {eng.tagline}
+                  </p>
+                  <p
+                    className="font-inter leading-relaxed mb-6"
+                    style={{ fontSize: '15px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}
+                  >
+                    {eng.paragraph}
+                  </p>
+                  <a
+                    href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-inter font-semibold text-sm transition-all duration-300 hover:gap-3"
+                    style={{ color: 'hsl(45, 62%, 46%)' }}
+                  >
+                    {eng.cta}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         ))}
+        <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
       </div>
     </div>
   </section>
@@ -367,7 +337,7 @@ const Services = () => (
     <Header />
     <ServicesHero />
     <DualBrain />
-    <SprintTiers />
+    <EngagementModels />
     <Partnership />
     <IsThisYou />
     <ClosingCTA />

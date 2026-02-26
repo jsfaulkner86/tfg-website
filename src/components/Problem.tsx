@@ -44,10 +44,8 @@ const Problem = () => {
   return (
     <section 
       ref={sectionRef}
-      className="px-6 relative overflow-hidden"
+      className="px-6 relative overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: '80px',
-        paddingBottom: '100px',
         background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
       }}
     >
@@ -140,7 +138,7 @@ const Problem = () => {
           {/* Right Column - Flowing Problem Visualization */}
           <div 
             className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-            style={{ transitionDelay: '0.4s', marginTop: '60px' }}
+            style={{ transitionDelay: '0.4s' }}
           >
             {/* Vertical golden thread connecting problems */}
             <div 
@@ -201,7 +199,7 @@ const Problem = () => {
 
         {/* Bottom callout */}
         <div 
-          className={`mt-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`mt-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           style={{ transitionDelay: '1.2s' }}
         >
           <div 

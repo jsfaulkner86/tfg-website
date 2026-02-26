@@ -47,10 +47,8 @@ const Transformation = () => {
     <section
       id="outcomes"
       ref={sectionRef}
-      className="px-6 relative overflow-hidden"
+      className="px-6 relative overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: '120px',
-        paddingBottom: '100px',
         background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
       }}>
 
@@ -140,7 +138,7 @@ const Transformation = () => {
         </div>
 
         {/* Success story cards */}
-        <div className={`mb-16 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`mb-10 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {outcomes.map((outcome, index) => {
               return (
@@ -167,7 +165,7 @@ const Transformation = () => {
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                       border: '2.5px solid #F3DA73',
                       boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
-                      minHeight: '380px',
+                      minHeight: 'auto',
                       backdropFilter: 'blur(10px)'
                     }}>
 

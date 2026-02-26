@@ -44,16 +44,14 @@ const Results = () => {
     <section 
       id="results"
       ref={sectionRef}
-      className="px-6 relative overflow-hidden"
+      className="px-6 relative overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: '100px',
-        paddingBottom: '100px',
         background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
       }}
     >
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
             background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
             border: '1.5px solid rgba(113,141,169,0.25)',
@@ -84,7 +82,7 @@ const Results = () => {
         </div>
 
         {/* Stacked rows */}
-        <div className="space-y-16 mb-20">
+        <div className="space-y-12 mb-12">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon;
             const isEven = index % 2 === 1;

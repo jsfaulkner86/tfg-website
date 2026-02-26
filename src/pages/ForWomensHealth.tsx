@@ -74,7 +74,7 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[120px]">
+        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"

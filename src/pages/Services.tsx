@@ -34,7 +34,7 @@ const SectionHeading = ({ children, light = false }: { children: React.ReactNode
 
 /* ───────────────────────── 1. HERO ───────────────────────── */
 const ServicesHero = () => (
-  <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[120px]">
+  <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
     <img
       src="/hero-boardroom.jpg"
       alt="Healthcare advisory services"

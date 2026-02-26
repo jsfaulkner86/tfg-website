@@ -91,11 +91,11 @@ const ForWomensHealth = () => {
             </div>
 
             <h1 className="mb-4 sm:mb-6 font-playfair font-bold text-white" style={{
-              fontSize: 'clamp(24px, 5vw, 60px)', letterSpacing: '-0.02em', lineHeight: '1.1',
+              fontSize: 'clamp(24px, 4.2vw, 56px)', letterSpacing: '-0.02em', lineHeight: '1.1',
               textShadow: '0 4px 20px rgba(0,0,0,0.3)'
             }}>
               For Women's Health.{' '}
-              <span className="block mt-2" style={{ color: '#F3DA73' }}>Against Every System That Holds It Back.</span>
+              <span className="block mt-2 whitespace-nowrap" style={{ color: '#F3DA73' }}>Against Every System That Holds It Back.</span>
             </h1>
 
             <p className="mb-4 sm:mb-6 text-sm sm:text-base md:text-xl lg:text-2xl max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 rounded-lg" style={{

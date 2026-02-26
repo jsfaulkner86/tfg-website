@@ -285,7 +285,7 @@ const Mission = () => {
                   }}>
                   Chief Clinical Officer, Co-Founder
                 </p>
-                <div className="flex flex-col items-center gap-2 mt-2">
+                <div className="flex items-center justify-center gap-3 mt-2">
                   <a
                     href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
                     target="_blank"
@@ -295,24 +295,22 @@ const Mission = () => {
                   >
                     <LinkedInIcon size={16} color="#F3DA73" /> Connect
                   </a>
-                  <div className="flex items-center justify-center gap-3">
-                    <a
-                      href="https://www.backtable.com/shows/obgyn"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center transition-all duration-300 hover:opacity-80"
-                    >
-                      <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/watch?v=G-fkd6_fDHY"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center transition-all duration-300 hover:opacity-80"
-                    >
-                      <img src={henryFordLogo} alt="Henry Ford Health" className="h-[14px] w-auto rounded-sm border border-[#F3DA73] p-[2px] bg-white" />
-                    </a>
-                  </div>
+                  <a
+                    href="https://www.backtable.com/shows/obgyn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center transition-all duration-300 hover:opacity-80"
+                  >
+                    <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=G-fkd6_fDHY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center transition-all duration-300 hover:opacity-80"
+                  >
+                    <img src={henryFordLogo} alt="Henry Ford Health" className="h-[14px] w-auto rounded-sm border border-[#F3DA73] p-[2px] bg-white" />
+                  </a>
                 </div>
               </div>
             </div>

@@ -267,7 +267,7 @@ const Partnership = () => (
     <div className="relative z-10 max-w-5xl mx-auto">
       <div className="text-center mb-12">
         <Eyebrow>For the Long Game</Eyebrow>
-        <SectionHeading light>Partnership. Not a Retainer. A Relationship.</SectionHeading>
+        <h2 className="font-display font-bold mb-6 text-white md:whitespace-nowrap" style={{ fontSize: 'clamp(24px, 2.8vw, 38px)', lineHeight: 1.15 }}>Partnership. Not a Retainer. A Relationship.</h2>
         <p className="font-inter text-white/85 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: '16px' }}>
           Some of the most important work we do does not fit inside a sprint timeline. Our Partnership Model is designed for women's health tech companies who want The Faulkner Group embedded in their work, not just consulting from the outside.
         </p>

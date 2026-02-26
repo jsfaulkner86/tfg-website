@@ -55,6 +55,18 @@ const StickyCTA = () => {
     };
   }, [isMobile]);
 
+  // Add bottom padding to body when visible so content isn't hidden
+  useEffect(() => {
+    if (isVisible) {
+      document.body.style.paddingBottom = isMobile ? "200px" : "120px";
+    } else {
+      document.body.style.paddingBottom = "";
+    }
+    return () => {
+      document.body.style.paddingBottom = "";
+    };
+  }, [isVisible, isMobile]);
+
   if (!isVisible) return null;
 
   return (
@@ -89,7 +101,7 @@ const StickyCTA = () => {
         </button>
 
         {/* Desktop layout */}
-        <div className="hidden md:flex items-center justify-between px-10 py-5 gap-8">
+        <div className="hidden md:flex items-center justify-between px-10 py-4 gap-8">
           <div className="flex-1 min-w-0">
             <p className="font-inter font-bold text-white text-base leading-tight">
               We know how hard you've worked to get here.
@@ -113,24 +125,24 @@ const StickyCTA = () => {
             </Button>
             <button
               onClick={dismiss}
-              className="mt-2 font-inter text-xs text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer"
+              className="mt-1.5 font-inter text-xs text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer"
             >
               No thanks, I'm not ready yet.
             </button>
           </div>
         </div>
 
-        {/* Mobile layout — stacked */}
-        <div className="flex md:hidden flex-col px-5 py-5 pr-12 gap-3">
+        {/* Mobile layout — compact stacked */}
+        <div className="flex md:hidden flex-col px-5 py-4 pr-12 gap-2">
           <p className="font-inter font-bold text-white text-sm leading-tight">
             We know how hard you've worked to get here.
           </p>
-          <p className="font-inter text-white/60 text-xs">
+          <p className="font-inter text-white/60 text-xs leading-snug">
             A Clinical Clarity Session helps us figure out what happens next.
           </p>
           <Button
             onClick={handleBooking}
-            className="group font-semibold rounded-md border-0 transition-all duration-300 text-sm w-full py-3"
+            className="group font-semibold rounded-md border-0 transition-all duration-300 text-sm w-full py-2.5 mt-1"
             style={{
               backgroundColor: "#C9A84C",
               color: "#0A1628",
@@ -141,7 +153,7 @@ const StickyCTA = () => {
           </Button>
           <button
             onClick={dismiss}
-            className="font-inter text-xs text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer text-center"
+            className="font-inter text-[11px] text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer text-center mt-0.5"
           >
             No thanks, I'm not ready yet.
           </button>

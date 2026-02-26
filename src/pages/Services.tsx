@@ -62,7 +62,7 @@ const ServicesHero = () => (
             textShadow: '0 2px 8px rgba(0,0,0,0.5)',
           }}
         >
-          Strategy and system fluency for health systems and women's health tech founders.
+          Strategy and system fluency for women's health tech founders.
         </p>
 
         <Button
@@ -100,7 +100,7 @@ const DualBrain = () => (
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px' }}>
-            We help health systems, women's health tech founders, and operational leaders align their people, processes, and vision before a single tool is selected or configured.
+            We help women's health tech founders, operators, and product leaders align their people, processes, and vision before a single tool is selected or configured.
           </p>
         </div>
 
@@ -142,11 +142,11 @@ const tiers = [
     name: 'Sprint Starter',
     tagline: 'Clarity in 30 Days',
     items: [
-      'Focused 30-day diagnostic engagement',
+      'Focused 30-day diagnostic across your product workflows, go-to-market operations, and clinical positioning',
       'Workflow assessment and priority mapping',
       'One actionable roadmap, ready to execute',
       'One 90-minute strategy session with TFG leadership',
-      'Ideal for CAHs, community hospitals, and early-stage women\'s health tech teams',
+      'Ideal for women\'s health tech founders who are ready to move from traction to scale',
     ],
     cta: 'Book Your Sprint Starter',
     popular: false,
@@ -160,7 +160,7 @@ const tiers = [
     tagline: 'Build. Optimize. Operate.',
     items: [
       'Full engagement across strategy and execution',
-      'EHR integration, clinical workflow design, and optimization across women\'s health service lines',
+      'EHR integration, clinical workflow design, and optimization across your women\'s health technology platform and clinical partnerships',
       'Clinical collaboration with board-certified OB/GYN advisor',
       'Adoption strategy and change management support',
       'Weekly check-ins plus ongoing support between sessions',
@@ -177,8 +177,8 @@ const tiers = [
     tagline: 'End-to-End. Enterprise-Grade.',
     items: [
       'Full Dual Brain engagement from strategy through launch',
-      'Deep EHR integration expertise across inpatient, outpatient, and specialty women\'s health service lines',
-      'AI readiness assessment and intelligent workflow integration across women\'s health operations',
+      'Deep EHR integration expertise across your women\'s health technology platform',
+      'AI readiness assessment and intelligent workflow integration built for women\'s health technology platforms',
       'Executive advisory access to both co-founders',
       'Priority response, dedicated project lead, quarterly business reviews',
     ],
@@ -269,7 +269,7 @@ const Partnership = () => (
         <Eyebrow>For the Long Game</Eyebrow>
         <SectionHeading light>Partnership. Not a Retainer. A Relationship.</SectionHeading>
         <p className="font-inter text-white/85 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: '16px' }}>
-          Some of the most important work we do does not fit inside a sprint timeline. Our Partnership Model is designed for health tech companies and health systems who want The Faulkner Group embedded in their work, not just consulting from the outside.
+          Some of the most important work we do does not fit inside a sprint timeline. Our Partnership Model is designed for women's health tech companies who want The Faulkner Group embedded in their work, not just consulting from the outside.
         </p>
       </div>
 
@@ -306,7 +306,7 @@ const Partnership = () => (
 /* ───────────────────────── 5. IS THIS YOU? ───────────────────────── */
 const fitChecks = [
   'You are running a women\'s health tech company and physicians are not adopting your product',
-  'Your Epic environment was built for compliance, not for clinicians',
+  'Your EHR integration was built for compliance, not for clinicians',
   'You are scaling and need someone who understands both the boardroom and the build environment',
   'You want a partner, not a vendor',
 ];

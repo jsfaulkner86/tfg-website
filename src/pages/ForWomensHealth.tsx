@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import StickyCTA from "@/components/StickyCTA";
 import {
   Accordion,
   AccordionContent,
@@ -589,6 +590,7 @@ const ForWomensHealth = () => {
             </div>
           </div>
         </section>
+        <StickyCTA />
       </main>
     </>
   );

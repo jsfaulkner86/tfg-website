@@ -11,6 +11,7 @@ import MetaPixelTracker from "@/components/MetaPixelTracker";
 
 const ClinicalClaritySession = lazy(() => import("./pages/ClinicalClaritySession"));
 const Investors = lazy(() => import("./pages/Investors"));
+const ForWomensHealth = lazy(() => import("./pages/ForWomensHealth"));
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/for-womens-health" element={<ForWomensHealth />} />
             <Route path="/clinical-clarity-session" element={<ClinicalClaritySession />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/thank-you" element={<ThankYou />} />

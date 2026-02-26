@@ -122,7 +122,7 @@ const Mission = () => {
               </p>
               
               <p className="text-base sm:text-lg">
-                <span className="font-semibold">John Faulkner</span>, CEO, Healthcare IT Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. He specializes in turning stalled implementations into scalable, working solutions.
+                <span className="font-semibold">John Faulkner</span>, CEO and Healthcare IT Architect, brings over 15 years of experience designing and optimizing healthcare IT infrastructure and EHR systems nationwide. A former Marine Corps Officer Candidate trained at Quantico, VA, John leads with the discipline, precision, and mission-first mindset that defines his approach to healthcare transformation. He specializes in turning stalled implementations into scalable, working solutions, bringing order to complexity and results to organizations that need them most.
               </p>
               
               <p className="text-base sm:text-lg">

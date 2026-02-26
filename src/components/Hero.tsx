@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative h-screen w-full overflow-hidden pt-20">
+      <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
         {/* Background Image */}
         <img
           src="/hero-boardroom.jpg"
@@ -29,7 +29,7 @@ const Hero = () => {
         />
 
         {/* Content */}
-        <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
+        <div className="relative z-10 flex items-center justify-center px-6 text-center">
           <div className="max-w-[820px]">
             {/* Small caps label */}
             <p

@@ -455,7 +455,7 @@ const ForWomensHealth = () => {
                 </p>
 
                 <p className="text-base sm:text-lg font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.75' }}>
-                  Once a month, we open the room to women's health tech founders for 20 focused minutes. Submit your question ahead of time about reimbursement, health system entry, or fundraising strategy. Dr. Nicole Faulkner &amp; John answer the top questions live. Free to attend.
+                  Once a month, we open the room to women's health tech founders for 20 focused minutes. Submit your question ahead of time about reimbursement, health system entry, or fundraising strategy. Dr. Nicole Faulkner &amp; John Faulkner answer the top questions live. Free to attend.
                 </p>
 
                 <div className="space-y-4 pt-2">

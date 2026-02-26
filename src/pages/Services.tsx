@@ -34,7 +34,7 @@ const SectionHeading = ({ children, light = false }: { children: React.ReactNode
 
 /* ───────────────────────── 1. HERO ───────────────────────── */
 const ServicesHero = () => (
-  <section className="relative h-screen w-full overflow-hidden pt-20">
+  <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[120px]">
     <img
       src="/hero-boardroom.jpg"
       alt="Healthcare advisory services"
@@ -42,7 +42,7 @@ const ServicesHero = () => (
     />
     <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
 
-    <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
+    <div className="relative z-10 flex items-center justify-center px-6 text-center">
       <div className="max-w-[820px]">
         <Eyebrow>Healthcare Advisory Services</Eyebrow>
 

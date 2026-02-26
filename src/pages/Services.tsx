@@ -194,7 +194,7 @@ const EngagementModels = () => (
                   >
                     {eng.name}
                   </h3>
-                  <p className="font-display italic mb-5" style={{ fontSize: '16px', color: 'hsl(45, 62%, 56%)' }}>
+                  <p className="font-display italic font-bold mb-5" style={{ fontSize: '16px', color: 'hsl(45, 62%, 56%)' }}>
                     {eng.tagline}
                   </p>
                   <p

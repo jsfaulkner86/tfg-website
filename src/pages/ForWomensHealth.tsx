@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity } from "lucide-react";
+import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import {
@@ -355,9 +355,11 @@ const ForWomensHealth = () => {
             <div className={`mb-16 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {[
-                  { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard" },
-                  { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker" },
-                  { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker" },
+                  { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false },
+                  { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false },
+                  { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker", external: false },
+                  { micro: "Fundraising Pipeline", title: "Women's Health Fundraising Tracker", body: "Track your investor pipeline, get femtech-specific fit scores, and manage warm intros — all private and browser-based.", result: "Private pipeline tracker built for pre-seed and seed femtech founders.", cta: "Open Tracker", href: "https://womenshealthfundraisingtracker.lovable.app/", external: true },
+                  { micro: "Market Intelligence", title: "The Global Femtech Directory", body: "Explore 887+ innovative companies transforming women's health across 27 categories — from fertility to precision medicine.", result: "Searchable directory of femtech companies, investors, and resources worldwide.", cta: "Explore Directory", href: "https://femtechdb.com/", external: true },
                 ].map((card, index) => (
                   <div key={index} className={`group relative transition-all duration-700 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
                     style={{ transitionDelay: `${index * 150 + 400}ms` }}>
@@ -374,9 +376,12 @@ const ForWomensHealth = () => {
                         background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
                       }} />
                       <div className="relative z-10 flex flex-col h-full">
-                        <p className="text-sm font-inter font-bold tracking-wider uppercase mb-4" style={{
-                          color: '#F3DA73', letterSpacing: '0.1em', textShadow: '0 2px 4px rgba(0,0,0,0.2)'
-                        }}>{card.micro}</p>
+                        <div className="flex items-center justify-between mb-4">
+                          <p className="text-sm font-inter font-bold tracking-wider uppercase" style={{
+                            color: '#F3DA73', letterSpacing: '0.1em', textShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                          }}>{card.micro}</p>
+                          {card.external && <ExternalLink className="h-4 w-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />}
+                        </div>
                         <h3 className="text-xl sm:text-2xl font-playfair font-bold mb-4" style={{
                           color: 'rgba(255,255,255,0.98)', letterSpacing: '-0.01em', lineHeight: '1.3', textShadow: '0 2px 8px rgba(0,0,0,0.15)'
                         }}>{card.title}</h3>
@@ -387,7 +392,7 @@ const ForWomensHealth = () => {
                           <p className="text-sm font-inter font-semibold mb-5" style={{ color: 'rgba(255,255,255,0.9)' }}>
                             <span style={{ color: '#F3DA73', fontWeight: 700 }}>What you get:</span>{' '}{card.result}
                           </p>
-                          <Button onClick={() => window.location.href = card.href}
+                          <Button onClick={() => card.external ? window.open(card.href, '_blank') : window.location.href = card.href}
                             className="w-full text-base rounded-lg group/btn transition-all duration-300 font-semibold py-5"
                             style={{
                               background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
@@ -395,7 +400,7 @@ const ForWomensHealth = () => {
                             }}
                             onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.5)'; }}
                             onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.3)'; }}
-                          >{card.cta} <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                          >{card.cta} {card.external ? <ExternalLink className="ml-2 h-4 w-4" /> : <ArrowRight className="ml-2 h-4 w-4" />}</Button>
                         </div>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{

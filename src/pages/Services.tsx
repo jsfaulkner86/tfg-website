@@ -118,7 +118,7 @@ const DualBrain = () => (
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px' }}>
-            We get into the weeds: Epic workflows, clinical build, AI-ready infrastructure, and the operational mechanics that make technology actually work at the bedside.
+            We get into the weeds: EHR integrations, clinical workflow build, AI-ready infrastructure, and the operational mechanics that make technology actually work at the bedside.
           </p>
         </div>
       </div>
@@ -148,7 +148,6 @@ const tiers = [
       'One 90-minute strategy session with TFG leadership',
       'Ideal for CAHs, community hospitals, and early-stage women\'s health tech teams',
     ],
-    pricing: 'Starting at $15,000',
     cta: 'Book Your Sprint Starter',
     popular: false,
     cardBg: 'hsl(0 0% 98%)',
@@ -161,12 +160,11 @@ const tiers = [
     tagline: 'Build. Optimize. Operate.',
     items: [
       'Full engagement across strategy and execution',
-      'Epic Stork/ClinDoc build, workflow optimization',
+      'EHR integration, clinical workflow design, and optimization across women\'s health service lines',
       'Clinical collaboration with board-certified OB/GYN advisor',
       'Adoption strategy and change management support',
-      'Weekly check-ins plus async support between sessions',
+      'Weekly check-ins plus ongoing support between sessions',
     ],
-    pricing: 'Custom pricing based on scope',
     cta: 'Schedule a Discovery Call',
     popular: true,
     cardBg: 'hsl(0 0% 98%)',
@@ -179,12 +177,11 @@ const tiers = [
     tagline: 'End-to-End. Enterprise-Grade.',
     items: [
       'Full Dual Brain engagement from strategy through launch',
-      'Multi-module Epic expertise: Stork, ClinDoc, Ambulatory, REI, MFM, GYN/ONC',
-      'AI readiness assessment and workflow intelligence integration',
+      'Deep EHR integration expertise across inpatient, outpatient, and specialty women\'s health service lines',
+      'AI readiness assessment and intelligent workflow integration across women\'s health operations',
       'Executive advisory access to both co-founders',
       'Priority response, dedicated project lead, quarterly business reviews',
     ],
-    pricing: 'Engagement-based pricing',
     cta: 'Let\'s Talk',
     popular: false,
     cardBg: 'hsl(0 0% 98%)',
@@ -233,9 +230,8 @@ const SprintTiers = () => (
               ))}
             </ul>
 
-            <p className="font-inter font-semibold text-sm mb-4" style={{ color: 'hsl(210, 14%, 19%)' }}>
-              {tier.pricing}
-            </p>
+
+
 
             <Button
               onClick={handleBooking}

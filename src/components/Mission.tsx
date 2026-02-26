@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import backtableIcon from "@/assets/backtable-obgyn-icon.png";
+import henryFordLogo from "@/assets/henry-ford-health-logo.svg";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 
 const Mission = () => {
@@ -301,6 +302,14 @@ const Mission = () => {
                     className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   >
                     <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=G-fkd6_fDHY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  >
+                    <img src={henryFordLogo} alt="Henry Ford Health" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[2px] bg-white" />
                   </a>
                 </div>
               </div>

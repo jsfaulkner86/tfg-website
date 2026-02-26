@@ -110,7 +110,7 @@ const ForWomensHealth = () => {
                 }}
               >
                 For Women's Health.<br />
-                Against Every System Holding It Back.
+                Against Every Broken System.
               </h1>
 
               {/* Subheadline */}

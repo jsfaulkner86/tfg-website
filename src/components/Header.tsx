@@ -76,6 +76,13 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
             <a 
+              href="/services" 
+              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
+            >
+              Services
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+            </a>
+            <a 
               href="/#contact" 
               className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
             >
@@ -145,6 +152,13 @@ const Header = () => {
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
               Our Approach
+            </a>
+            <a 
+              href="/services"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Services
             </a>
             <a 
               href="/#contact"

@@ -15,6 +15,7 @@ const ForWomensHealth = lazy(() => import("./pages/ForWomensHealth"));
 const ReimbursementScorecard = lazy(() => import("./pages/ReimbursementScorecard"));
 const HospitalFitChecker = lazy(() => import("./pages/HospitalFitChecker"));
 const FundingBenchmarker = lazy(() => import("./pages/FundingBenchmarker"));
+const Services = lazy(() => import("./pages/Services"));
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/for-womens-health/reimbursement-scorecard" element={<ReimbursementScorecard />} />
             <Route path="/for-womens-health/hospital-fit-checker" element={<HospitalFitChecker />} />
             <Route path="/for-womens-health/funding-benchmarker" element={<FundingBenchmarker />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/clinical-clarity-session" element={<ClinicalClaritySession />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/thank-you" element={<ThankYou />} />

@@ -3,6 +3,7 @@ import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDolla
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import StickyCTA from "@/components/StickyCTA";
+import BottomVideo from "@/components/BottomVideo";
 import {
   Accordion,
   AccordionContent,
@@ -544,43 +545,7 @@ const ForWomensHealth = () => {
           </div>
         </section>
 
-        {/* ===== CLOSING CTA (matches FinalCTA exactly) ===== */}
-        <section ref={ctaRef} id="contact" className="relative py-20 sm:py-40 px-4 sm:px-6 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-dark-gray to-primary" />
-          <div className="absolute inset-0 opacity-10" style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px'
-          }} />
-          <div className={`relative z-10 max-w-5xl mx-auto text-center space-y-12 transition-all duration-1000 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="inline-block mb-2 px-6 py-2 rounded-full" style={{
-              background: 'rgba(243,218,115,0.2)', border: '1.5px solid rgba(243,218,115,0.5)', backdropFilter: 'blur(10px)'
-            }}>
-              <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>Take the Next Step</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold tracking-wide text-white leading-tight" style={{
-              textShadow: '0 4px 20px rgba(0,0,0,0.3)', letterSpacing: '-0.02em'
-            }}>Ready to Stop Fighting the System Alone?</h2>
-            <p className="text-xl sm:text-2xl md:text-3xl font-inter font-light text-white/95 max-w-4xl mx-auto leading-relaxed" style={{
-              textShadow: '0 2px 10px rgba(0,0,0,0.2)'
-            }}>Book a strategy call with The Faulkner Group and get a clear path forward.</p>
-            <p className="text-lg sm:text-xl font-inter font-light text-white/85 max-w-3xl mx-auto leading-relaxed italic" style={{
-              textShadow: '0 2px 10px rgba(0,0,0,0.2)'
-            }}>No pitch decks. No fluff. Just a real conversation about what is working and what is not.</p>
-            <div className="pt-4">
-              <Button onClick={handleMeet}
-                className="text-lg sm:text-xl md:text-2xl px-8 sm:px-16 py-6 sm:py-10 rounded-2xl group transition-all duration-500 font-semibold"
-                style={{
-                  background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
-                  boxShadow: '0 12px 40px rgba(243,218,115,0.5), 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5)',
-                  border: '2px solid rgba(255,255,255,0.3)'
-                }}>
-                Let's Meet <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-300 group-hover:translate-x-2" />
-              </Button>
-            </div>
-            <div className="pt-8 space-y-6 max-w-3xl mx-auto">
-              <div className="h-px w-20 mx-auto" style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.6), transparent)' }} />
-            </div>
-          </div>
-        </section>
+        <BottomVideo />
         <StickyCTA />
       </main>
     </>

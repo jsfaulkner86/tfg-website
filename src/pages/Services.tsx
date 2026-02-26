@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Brain, Cpu, Users, Shield, Lightbulb, Handshake } from "lucide-react";
+import BottomVideo from "@/components/BottomVideo";
 
 const handleBooking = () => {
   window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
@@ -305,38 +306,6 @@ const IsThisYou = () => (
   </section>
 );
 
-/* ───────────────────────── 6. CLOSING CTA ───────────────────────── */
-const ClosingCTA = () => (
-  <section className="relative py-12 md:py-20 px-6 overflow-hidden">
-    <img
-      src="/hero-boardroom.jpg"
-      alt="Healthcare advisory"
-      className="absolute inset-0 w-full h-full object-cover"
-    />
-    <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.7)' }} />
-
-    <div className="relative z-10 max-w-3xl mx-auto text-center py-16">
-      <h2
-        className="font-display font-bold text-white mb-6 md:whitespace-nowrap"
-        style={{ fontSize: 'clamp(24px, 2.8vw, 40px)', lineHeight: 1.15 }}
-      >
-        Ready to Stop Fighting Your Systems?
-      </h2>
-      <p className="font-inter text-white/85 mb-10" style={{ fontSize: '18px' }}>
-        Let us find the right engagement for where you are.
-      </p>
-      <Button
-        onClick={handleBooking}
-        className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
-        style={{ backgroundColor: '#F3DA73', color: '#5882A1' }}
-      >
-        Let's Meet
-        <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-      </Button>
-    </div>
-  </section>
-);
-
 /* ───────────────────────── PAGE ───────────────────────── */
 const Services = () => (
   <div className="min-h-screen bg-background">
@@ -346,7 +315,7 @@ const Services = () => (
     <EngagementModels />
     <Partnership />
     <IsThisYou />
-    <ClosingCTA />
+    <BottomVideo />
   </div>
 );
 

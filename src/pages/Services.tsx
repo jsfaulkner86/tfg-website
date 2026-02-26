@@ -141,6 +141,8 @@ const engagements = [
     tagline: 'Clarity in 30 Days',
     paragraph: 'For founders who know something is not working but are not sure where to start. We conduct a focused 30-day diagnostic across your product workflows, go-to-market operations, and clinical positioning, and deliver a single clear roadmap your team can act on immediately. Engagement includes a 90-minute strategy session with both co-founders.',
     cta: 'Book Your Sprint Starter',
+    href: '/clinical-clarity-session',
+    external: false,
   },
   {
     numeral: 'II',
@@ -148,6 +150,8 @@ const engagements = [
     tagline: 'Build. Optimize. Operate.',
     paragraph: 'For women\'s health tech companies in active build or optimization phases. We embed across your strategy and execution layers, leading EHR integration, clinical workflow design, and physician adoption strategy across your platform and clinical partnerships. Includes clinical collaboration with our board-certified OB/GYN advisor and weekly advisory sessions throughout the engagement.',
     cta: 'Schedule a Discovery Call',
+    href: 'https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner',
+    external: true,
   },
   {
     numeral: 'III',
@@ -155,6 +159,8 @@ const engagements = [
     tagline: 'End-to-End. Enterprise-Grade.',
     paragraph: 'For women\'s health tech companies moving from pilot to enterprise deployment and ready to scale with confidence. We lead from strategy through launch, bringing deep EHR integration expertise, AI readiness assessment, and intelligent workflow integration built for women\'s health technology platforms. Both co-founders are engaged directly and continuously throughout.',
     cta: 'Let\'s Talk',
+    href: 'https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner',
+    external: true,
   },
 ];
 
@@ -198,9 +204,9 @@ const EngagementModels = () => (
                     {eng.paragraph}
                   </p>
                   <a
-                    href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={eng.href}
+                    target={eng.external ? '_blank' : undefined}
+                    rel={eng.external ? 'noopener noreferrer' : undefined}
                     className="inline-flex items-center gap-2 font-inter font-semibold text-sm transition-all duration-300 hover:gap-3"
                     style={{ color: 'hsl(45, 62%, 46%)' }}
                   >

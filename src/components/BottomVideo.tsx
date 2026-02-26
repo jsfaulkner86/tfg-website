@@ -198,7 +198,7 @@ const BottomVideo = () => {
               className="p-3 rounded-full transition-all duration-300 hover:bg-white/10"
               aria-label="BackTable OB/GYN Podcast"
             >
-              <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[20px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
+              <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[26px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
             </a>
           </div>
         </div>

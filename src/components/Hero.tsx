@@ -51,8 +51,8 @@ const Hero = () => {
                 lineHeight: 1.1,
               }}
             >
-              <span className="block md:whitespace-nowrap">You Built Something That Works.</span>
-              <span className="block md:whitespace-nowrap">Now Let's Get It Used.</span>
+              <span className="block md:whitespace-nowrap">You Built Something That Works</span>
+              <span className="block md:whitespace-nowrap">Now Let's Get It Used</span>
             </h1>
 
             {/* Subheadline */}

@@ -299,10 +299,8 @@ const Mission = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
-                    style={{ color: '#F3DA73' }}
                   >
-                    <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[16px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
-                    BackTable
+                    <img src={backtableIcon} alt="BackTable OB/GYN" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[1px]" />
                   </a>
                 </div>
               </div>

@@ -73,79 +73,87 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
-          <div className="absolute inset-0 opacity-10" style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
-          <div className="absolute top-1/3 right-1/3 w-[500px] h-[500px] rounded-full pointer-events-none" style={{
-            background: 'radial-gradient(circle, rgba(243,218,115,0.12) 0%, transparent 60%)',
-            filter: 'blur(80px)'
+        <section ref={heroRef} className="relative flex items-center justify-center overflow-hidden" style={{
+          backgroundColor: '#0A1628',
+          minHeight: '100vh',
+          paddingTop: 'calc(100px + env(safe-area-inset-top, 0px))'
+        }}>
+          {/* Subtle grid texture */}
+          <div className="absolute inset-0 opacity-[0.04]" style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+            backgroundSize: '60px 60px'
           }} />
 
-          <div className={`relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-8 sm:pt-16 transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="inline-block mb-8 px-6 py-2 rounded-full" style={{
-              background: 'rgba(243,218,115,0.2)', border: '1.5px solid rgba(243,218,115,0.5)', backdropFilter: 'blur(10px)'
+          <div className={`relative z-10 max-w-[700px] mx-auto px-6 text-center transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            {/* Small caps label */}
+            <span className="block mb-6 font-inter font-medium tracking-[0.25em] uppercase" style={{
+              fontSize: '13px',
+              color: '#5BA4B5'
             }}>
-              <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>For Women's Health Innovators</span>
-            </div>
+              For Women's Health
+            </span>
 
-            <h1 className="mb-4 sm:mb-6 font-playfair font-bold text-white" style={{
-              fontSize: 'clamp(24px, 5vw, 60px)', letterSpacing: '-0.02em', lineHeight: '1.1',
-              textShadow: '0 4px 20px rgba(0,0,0,0.3)'
+            {/* Headline */}
+            <h1 className="mb-6 font-playfair font-bold text-white" style={{
+              fontSize: 'clamp(36px, 5vw, 64px)',
+              lineHeight: '1.1',
+              letterSpacing: '-0.02em'
             }}>
-              For Women's Health.{' '}
-              <span className="block mt-2" style={{ color: '#F3DA73' }}>Against Every System That Holds It Back.</span>
+              You Built Something That Works.
+              <br />
+              Now Let's Get It Used.
             </h1>
 
-            <p className="mb-4 sm:mb-6 text-sm sm:text-base md:text-xl lg:text-2xl max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 rounded-lg" style={{
-              color: 'rgb(255,255,255)', textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
-              backgroundColor: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(4px)'
+            {/* Subheadline */}
+            <p className="mb-10 font-inter" style={{
+              fontSize: 'clamp(16px, 1.5vw, 20px)',
+              color: 'rgba(255,255,255,0.6)',
+              lineHeight: '1.5'
             }}>
-              The Faulkner Group equips women's health tech founders, operators, and innovators with the strategy, tools, and system fluency to break through and scale.
+              Strategy and system fluency for women's health tech founders.
             </p>
 
-            <div className="mb-8 sm:mb-12 flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 text-white/90 px-2 sm:px-4">
-              {["Reimbursement Strategy", "Health System Fluency", "Funding Intelligence"].map(badge => (
-                <div key={badge} className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
-                  <span className="text-xs sm:text-sm md:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{
-                    textShadow: '0 2px 12px rgba(0,0,0,0.8)', color: 'rgb(255,255,255)',
-                    backgroundColor: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(4px)'
-                  }}>{badge}</span>
+            {/* Single CTA */}
+            <Button
+              onClick={handleMeet}
+              className="font-inter font-semibold rounded-md px-8 py-3 text-base transition-all duration-300 hover:opacity-90 border-0"
+              style={{
+                backgroundColor: '#D4A843',
+                color: '#0A1628',
+                height: '48px'
+              }}
+            >
+              Let's Meet
+            </Button>
+          </div>
+        </section>
+
+        {/* ===== SERVICE PILLARS STRIP ===== */}
+        <div className="w-full border-b" style={{ backgroundColor: '#F7F8FA', borderColor: '#E5E7EB' }}>
+          <div className="max-w-5xl mx-auto px-6 py-5">
+            <div className="hidden md:flex items-center justify-center">
+              {["Clinical Readiness & Governance", "Physician Adoption", "EHR Integration & Training", "Sales, CSM & Deployment"].map((label, i) => (
+                <div key={label} className="flex items-center">
+                  {i > 0 && <div className="mx-6 h-4" style={{ width: '1px', backgroundColor: '#D1D5DB' }} />}
+                  <span className="font-inter font-medium tracking-[0.12em] uppercase whitespace-nowrap" style={{
+                    fontSize: '13px',
+                    color: '#4A5568'
+                  }}>{label}</span>
                 </div>
               ))}
             </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button onClick={() => document.getElementById('resources')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-base sm:text-lg rounded-lg group transition-all duration-300 font-semibold px-6 sm:px-8 md:px-12 py-4 sm:py-6"
-                style={{
-                  backgroundColor: 'rgba(243,218,115,0.9)', color: '#5882A1',
-                  boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'
-                }}
-                onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 32px rgba(243,218,115,0.6), 0 0 40px rgba(243,218,115,0.4)'; }}
-                onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)'; }}
-              >
-                Access Free Resources <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-              <Button onClick={handleMeet}
-                className="text-base sm:text-lg rounded-lg group transition-all duration-300 font-semibold px-6 sm:px-8 py-4 sm:py-6"
-                style={{ background: 'transparent', color: '#FFFFFF', border: '2px solid rgba(243,218,115,0.5)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(243,218,115,0.15)'; e.currentTarget.style.borderColor = '#F3DA73'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(243,218,115,0.5)'; }}
-              >
-                Let's Meet
-              </Button>
+            {/* Mobile: 2x2 grid */}
+            <div className="grid grid-cols-2 gap-4 md:hidden">
+              {["Clinical Readiness & Governance", "Physician Adoption", "EHR Integration & Training", "Sales, CSM & Deployment"].map(label => (
+                <span key={label} className="font-inter font-medium tracking-[0.1em] uppercase text-center" style={{
+                  fontSize: '11px',
+                  color: '#4A5568',
+                  lineHeight: '1.4'
+                }}>{label}</span>
+              ))}
             </div>
           </div>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="h-12 w-8 rounded-full border-2 border-white/30 flex items-start justify-center p-2">
-              <div className="h-2 w-1 bg-white/60 rounded-full" />
-            </div>
-          </div>
-        </section>
+        </div>
 
         {/* ===== VALUE PROPS (matches Problem section layout) ===== */}
         <section ref={valueRef} className="px-4 sm:px-6 relative overflow-hidden" style={{

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink } from "lucide-react";
+import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import {
@@ -38,6 +38,7 @@ const ForWomensHealth = () => {
   const [calloutVisible, setCalloutVisible] = useState(false);
   const [toolsVisible, setToolsVisible] = useState(false);
   const [faqVisible, setFaqVisible] = useState(false);
+  const [founderVisible, setFounderVisible] = useState(false);
   const [ctaVisible, setCtaVisible] = useState(false);
 
   const heroRef = useRef<HTMLElement>(null);
@@ -45,13 +46,14 @@ const ForWomensHealth = () => {
   const calloutRef = useRef<HTMLElement>(null);
   const toolsRef = useRef<HTMLElement>(null);
   const faqRef = useRef<HTMLElement>(null);
+  const founderRef = useRef<HTMLElement>(null);
   const ctaRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
     const pairs: [React.RefObject<HTMLElement>, (v: boolean) => void][] = [
       [heroRef, setHeroVisible], [valueRef, setValueVisible], [calloutRef, setCalloutVisible],
-      [toolsRef, setToolsVisible], [faqRef, setFaqVisible], [ctaRef, setCtaVisible],
+      [toolsRef, setToolsVisible], [faqRef, setFaqVisible], [founderRef, setFounderVisible], [ctaRef, setCtaVisible],
     ];
     pairs.forEach(([ref, setter]) => {
       const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setter(true); }, { threshold: 0.1, rootMargin: '50px' });
@@ -420,6 +422,94 @@ const ForWomensHealth = () => {
                   <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-playfair font-bold" style={{
                     color: '#718DA9', letterSpacing: '-0.02em', lineHeight: '1.5'
                   }}>Every tool is free. Every insight is actionable. Start here.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== FOUNDER IN THE ROOM ===== */}
+        <section ref={founderRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
+          paddingTop: '60px', paddingBottom: '60px',
+          background: 'linear-gradient(180deg, #F5F0E4 0%, #FDFCF9 100%)'
+        }}>
+          <div className="absolute inset-0 pointer-events-none opacity-30" style={{
+            background: 'radial-gradient(circle at 30% 50%, rgba(243,218,115,0.08) 0%, transparent 40%), radial-gradient(circle at 70% 50%, rgba(113,141,169,0.06) 0%, transparent 35%)'
+          }} />
+
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+              {/* Left Column — Text */}
+              <div className={`space-y-6 transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                style={{ transitionDelay: '0.2s' }}>
+                <span className="text-xs font-inter font-semibold tracking-[0.2em] uppercase" style={{ color: '#718DA9' }}>
+                  LIVE MONTHLY SESSION
+                </span>
+
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold" style={{
+                  color: '#1A2A3A', letterSpacing: '-0.02em', lineHeight: '1.1'
+                }}>Founder in the Room</h2>
+
+                <p className="text-lg sm:text-xl font-inter font-medium" style={{ color: '#718DA9', letterSpacing: '0.01em' }}>
+                  Real questions. Real answers. No pitch deck required.
+                </p>
+
+                <p className="text-base sm:text-lg font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.75' }}>
+                  Once a month, we open the room to women's health tech founders for 20 focused minutes. Submit your question ahead of time about reimbursement, health system entry, or fundraising strategy. Dr. Nicole Faulkner &amp; John answer the top questions live. Free to attend.
+                </p>
+
+                <div className="space-y-4 pt-2">
+                  {[
+                    "20 minutes, no fluff, no sales pitch",
+                    "Free live access with simple email registration",
+                    "Replay sent automatically to all registrants"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: '#D4B65D' }} />
+                      <span className="text-base font-inter" style={{ color: '#2A3B4F' }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column — Registration Card */}
+              <div className={`transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                style={{ transitionDelay: '0.4s' }}>
+                <div className="p-6 sm:p-8 md:p-10 rounded-2xl" style={{
+                  background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F0E4 100%)',
+                  border: '2px solid #D4B65D',
+                  boxShadow: '0 12px 40px rgba(0,0,0,0.08), 0 0 0 1px rgba(243,218,115,0.1)'
+                }}>
+                  <span className="text-xs font-inter font-semibold tracking-[0.2em] uppercase" style={{ color: '#718DA9' }}>
+                    NEXT SESSION
+                  </span>
+
+                  <h3 className="text-2xl sm:text-3xl font-playfair font-bold mt-3 mb-2" style={{
+                    color: '#1A2A3A', letterSpacing: '-0.02em'
+                  }}>March 2026 — Date TBD</h3>
+
+                  <p className="text-base font-inter mb-8" style={{ color: '#4A5568', lineHeight: '1.6' }}>
+                    20 minutes. Top founder questions answered live.
+                  </p>
+
+                  <Button
+                    onClick={() => window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank')}
+                    className="w-full text-base sm:text-lg rounded-xl group transition-all duration-300 font-semibold py-5 sm:py-6"
+                    style={{
+                      background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
+                      color: '#1A2A3A',
+                      boxShadow: '0 6px 20px rgba(243,218,115,0.4)',
+                      border: 'none'
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 10px 30px rgba(243,218,115,0.6)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 6px 20px rgba(243,218,115,0.4)'; }}
+                  >
+                    Reserve My Spot <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Button>
+
+                  <p className="text-sm font-inter text-center mt-4" style={{ color: '#718DA9' }}>
+                    Can't make it live? Register anyway and get the replay.
+                  </p>
                 </div>
               </div>
             </div>

@@ -138,11 +138,11 @@ const engagements = [
   {
     numeral: 'I',
     name: 'Sprint Starter',
-    tagline: 'Clarity in 30 Days',
-    paragraph: 'For founders who know something is not working but are not sure where to start. We conduct a focused 30-day diagnostic across your product workflows, go-to-market operations, and clinical positioning, and deliver a single clear roadmap your team can act on immediately. Engagement includes a 90-minute strategy session with both co-founders.',
+    tagline: 'Clarity in 48 Hours',
+    paragraph: 'For founders who know something is not working but are not sure where to start. We conduct a focused 48-hour diagnostic across your product workflows, go-to-market operations, and clinical positioning, and deliver a single clear roadmap your team can act on immediately. Engagement includes a 90-minute strategy session with both co-founders.',
     cta: 'Book Your Sprint Starter',
-    href: '/clinical-clarity-session',
-    external: false,
+    href: 'https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session',
+    external: true,
   },
   {
     numeral: 'II',

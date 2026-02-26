@@ -109,8 +109,8 @@ const ForWomensHealth = () => {
                   maxWidth: '800px',
                 }}
               >
-                <span className="block text-center">For Women's Health</span>
-                <span className="block text-center">Against Every System That Holds It Back</span>
+                For Women's Health.<br />
+                Against Every System Holding It Back.
               </h1>
 
               {/* Subheadline */}

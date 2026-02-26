@@ -63,16 +63,14 @@ const FAQ = () => {
   return (
     <section
       ref={sectionRef}
-      className="px-6 relative overflow-hidden"
+      className="px-6 relative overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: "80px",
-        paddingBottom: "100px",
         background: "linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)",
       }}
     >
       <div className="max-w-4xl mx-auto relative z-10">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-10 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >

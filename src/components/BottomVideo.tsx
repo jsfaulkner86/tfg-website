@@ -28,10 +28,8 @@ const BottomVideo = () => {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative px-6 overflow-hidden"
+      className="relative px-6 overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: '120px',
-        paddingBottom: '120px',
         background: 'linear-gradient(180deg, #5A7D99 0%, #4A6B85 100%)'
       }}
     >
@@ -68,7 +66,7 @@ const BottomVideo = () => {
         </p>
 
         {/* Risk reversal */}
-        <div className="mb-12 max-w-2xl mx-auto">
+        <div className="mb-8 max-w-2xl mx-auto">
           <div
             className="h-px w-16 mx-auto mb-6"
             style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.5), transparent)' }}
@@ -99,7 +97,7 @@ const BottomVideo = () => {
         </Button>
 
         {/* Contact info */}
-        <div className="mt-16 space-y-6">
+        <div className="mt-10 space-y-6">
           <div
             className="h-px w-20 mx-auto"
             style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }}

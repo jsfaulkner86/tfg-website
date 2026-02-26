@@ -30,10 +30,8 @@ const Mission = () => {
     <section
       id="mission"
       ref={sectionRef}
-      className="px-6 relative overflow-hidden"
+      className="px-6 relative overflow-hidden py-12 md:py-20"
       style={{
-        paddingTop: '90px',
-        paddingBottom: '90px',
         background: 'linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(113,141,169,0.04) 100%)'
       }}>
 

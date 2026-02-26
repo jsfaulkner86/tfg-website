@@ -34,9 +34,7 @@ const Approach = () => {
     }
     return () => observer.disconnect();
   }, []);
-  return <section id="approach" ref={sectionRef} className="px-6 relative overflow-hidden" style={{
-    paddingTop: '120px',
-    paddingBottom: '100px',
+  return <section id="approach" ref={sectionRef} className="px-6 relative overflow-hidden py-12 md:py-20" style={{
     background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
   }}>
       {/* Cinematic lighting effect - glow of clarity at top center */}
@@ -104,7 +102,7 @@ const Approach = () => {
         </div>
 
         {/* What you receive - Cinematic reveal */}
-        <div className={`mb-20 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`mb-12 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           <h3 className="text-3xl sm:text-4xl font-playfair font-bold mb-12 text-center" style={{
           color: '#1A2A3A',
           letterSpacing: '0.05em',
@@ -120,7 +118,7 @@ const Approach = () => {
             transform: 'translateY(-50%)'
           }} />
             
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-10">
               {pillars.map((pillar, index) => <div key={index} className={`group relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`} style={{
               transitionDelay: `${index * 150 + 400}ms`
             }}>
@@ -136,7 +134,7 @@ const Approach = () => {
                 border: '2.5px solid #F3DA73',
                 boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 2px rgba(0,0,0,0.05)',
                 backdropFilter: 'blur(10px)',
-                minHeight: '400px'
+                minHeight: 'auto'
               }}>
                     {/* Inner lighting gradient */}
                     <div className="absolute inset-0 opacity-20 pointer-events-none" style={{

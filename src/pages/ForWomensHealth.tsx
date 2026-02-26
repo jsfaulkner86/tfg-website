@@ -137,14 +137,14 @@ const ForWomensHealth = () => {
                 {
                   title: "Hospital Partnership Fit Checker",
                   body: "Map your startup's stage to realistic health system entry points.",
-                  cta: "Coming Soon",
-                  href: undefined
+                  cta: "Check Your Fit",
+                  href: "/for-womens-health/hospital-fit-checker"
                 },
                 {
                   title: "Femtech Funding Gap Benchmarker",
                   body: "See how your raise compares to peers by stage and founding team.",
-                  cta: "Get Access",
-                  href: undefined
+                  cta: "See Your Benchmark",
+                  href: "/for-womens-health/funding-benchmarker"
                 }
               ].map((card, i) => (
                 <div key={i} className="flex flex-col p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-background border border-border">

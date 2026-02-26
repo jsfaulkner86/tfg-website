@@ -72,8 +72,8 @@ const Hero = () => {
               onClick={handleBooking}
               className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
               style={{
-                backgroundColor: 'hsl(45, 62%, 56%)',
-                color: '#0A1628',
+                backgroundColor: '#F3DA73',
+                color: '#5882A1',
               }}
             >
               Let's Meet

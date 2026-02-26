@@ -131,17 +131,20 @@ const ForWomensHealth = () => {
                 {
                   title: "Reimbursement Readiness Scorecard",
                   body: "Assess whether your product is payer-ready before entering costly sales cycles.",
-                  cta: "Coming Soon"
+                  cta: "Take the Scorecard",
+                  href: "/for-womens-health/reimbursement-scorecard"
                 },
                 {
                   title: "Hospital Partnership Fit Checker",
                   body: "Map your startup's stage to realistic health system entry points.",
-                  cta: "Coming Soon"
+                  cta: "Coming Soon",
+                  href: undefined
                 },
                 {
                   title: "Femtech Funding Gap Benchmarker",
                   body: "See how your raise compares to peers by stage and founding team.",
-                  cta: "Get Access"
+                  cta: "Get Access",
+                  href: undefined
                 }
               ].map((card, i) => (
                 <div key={i} className="flex flex-col p-8 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-background border border-border">
@@ -156,6 +159,8 @@ const ForWomensHealth = () => {
                     style={{ border: '2px solid #5882A1', color: '#5882A1', background: 'transparent' }}
                     onMouseEnter={e => { e.currentTarget.style.background = '#5882A1'; e.currentTarget.style.color = '#FFFFFF'; }}
                     onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#5882A1'; }}
+                    onClick={() => card.href && (window.location.href = card.href)}
+                    disabled={!card.href}
                   >
                     {card.cta}
                   </Button>

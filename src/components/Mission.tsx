@@ -309,7 +309,7 @@ const Mission = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   >
-                    <img src={henryFordLogo} alt="Henry Ford Health" className="h-[28px] w-auto rounded-sm border border-[#F3DA73] p-[2px] bg-white" />
+                    <img src={henryFordLogo} alt="Henry Ford Health" className="h-[14px] w-auto rounded-sm border border-[#F3DA73] p-[2px] bg-white" />
                   </a>
                 </div>
               </div>

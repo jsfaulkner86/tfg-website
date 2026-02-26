@@ -492,24 +492,21 @@ const ForWomensHealth = () => {
                     20 minutes. Top founder questions answered live.
                   </p>
 
-                  <Button
-                    onClick={() => window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank')}
-                    className="w-full text-base sm:text-lg rounded-xl group transition-all duration-300 font-semibold py-5 sm:py-6"
-                    style={{
-                      background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
-                      color: '#1A2A3A',
-                      boxShadow: '0 6px 20px rgba(243,218,115,0.4)',
-                      border: 'none'
-                    }}
-                    onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 10px 30px rgba(243,218,115,0.6)'; }}
-                    onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 6px 20px rgba(243,218,115,0.4)'; }}
-                  >
-                    Reserve My Spot <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Button>
-
-                  <p className="text-sm font-inter text-center mt-4" style={{ color: '#718DA9' }}>
-                    Can't make it live? Register anyway and get the replay.
-                  </p>
+                  <div className="flex items-center justify-center gap-3 py-4 px-4 rounded-xl" style={{
+                    background: 'linear-gradient(135deg, rgba(243,218,115,0.1), rgba(243,218,115,0.05))',
+                    border: '1.5px solid rgba(243,218,115,0.25)'
+                  }}>
+                    <svg className="h-5 w-5 flex-shrink-0" style={{ color: '#D4B65D' }} viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <p className="text-sm font-inter text-center" style={{ color: '#4A5568' }}>
+                      Details will be released on LinkedIn by{' '}
+                      <a href="https://www.linkedin.com/in/johnfaulkner1/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>John</a>
+                      {' '}&amp;{' '}
+                      <a href="https://www.linkedin.com/in/drnicolefaulkner/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>Nicole</a>
+                      . Follow to stay in the loop.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

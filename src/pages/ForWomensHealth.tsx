@@ -438,9 +438,9 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Left Column — Text */}
-              <div className={`space-y-6 transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              <div className={`space-y-4 sm:space-y-6 transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: '0.2s' }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.2em] uppercase" style={{ color: '#718DA9' }}>
                   LIVE MONTHLY SESSION
@@ -458,7 +458,7 @@ const ForWomensHealth = () => {
                   Once a month, we open the room to women's health tech founders for 20 focused minutes. Submit your question ahead of time about reimbursement, health system entry, or fundraising strategy. Dr. Nicole Faulkner &amp; John Faulkner answer the top questions live. Free to attend.
                 </p>
 
-                <div className="space-y-4 pt-2">
+                <div className="space-y-3 sm:space-y-4 pt-2">
                   {[
                     "20 minutes, no fluff, no sales pitch",
                     "Free live access with simple email registration",
@@ -488,18 +488,18 @@ const ForWomensHealth = () => {
                     color: '#1A2A3A', letterSpacing: '-0.02em'
                   }}>March 2026 — Date TBD</h3>
 
-                  <p className="text-base font-inter mb-8" style={{ color: '#4A5568', lineHeight: '1.6' }}>
+                  <p className="text-sm sm:text-base font-inter mb-6 sm:mb-8" style={{ color: '#4A5568', lineHeight: '1.6' }}>
                     20 minutes. Top founder questions answered live.
                   </p>
 
-                  <div className="flex items-center justify-center gap-3 py-4 px-4 rounded-xl" style={{
+                  <div className="flex items-start sm:items-center justify-center gap-3 py-3 sm:py-4 px-3 sm:px-4 rounded-xl" style={{
                     background: 'linear-gradient(135deg, rgba(243,218,115,0.1), rgba(243,218,115,0.05))',
                     border: '1.5px solid rgba(243,218,115,0.25)'
                   }}>
-                    <svg className="h-5 w-5 flex-shrink-0" style={{ color: '#D4B65D' }} viewBox="0 0 24 24" fill="currentColor">
+                    <svg className="h-5 w-5 flex-shrink-0 mt-0.5 sm:mt-0" style={{ color: '#D4B65D' }} viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                     </svg>
-                    <p className="text-sm font-inter text-center" style={{ color: '#4A5568' }}>
+                    <p className="text-xs sm:text-sm font-inter text-center sm:text-left" style={{ color: '#4A5568' }}>
                       Details will be released on LinkedIn by{' '}
                       <a href="https://www.linkedin.com/in/johnathonfaulkner/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>John</a>
                       {' '}&amp;{' '}

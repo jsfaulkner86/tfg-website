@@ -31,8 +31,8 @@ const categories = [
   },
 ];
 
-const allQuestions = categories.flatMap((cat, catIdx) =>
-  cat.questions.map((q, qIdx) => ({ question: q, category: cat.name, catIdx, qIdx }))
+const allQuestions = categories.flatMap((cat) =>
+  cat.questions.map((q) => ({ question: q, category: cat.name }))
 );
 
 const tiers = [
@@ -81,17 +81,12 @@ const ReimbursementScorecard = () => {
   };
 
   const handleNext = () => {
-    if (currentQuestion < allQuestions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowResults(true);
-    }
+    if (currentQuestion < allQuestions.length - 1) setCurrentQuestion(currentQuestion + 1);
+    else setShowResults(true);
   };
 
   const handlePrev = () => {
-    if (currentQuestion > 0) {
-      setCurrentQuestion(currentQuestion - 1);
-    }
+    if (currentQuestion > 0) setCurrentQuestion(currentQuestion - 1);
   };
 
   const handleRestart = () => {
@@ -101,10 +96,9 @@ const ReimbursementScorecard = () => {
   };
 
   const handleMeet = () => {
-    window.location.href = "/clinical-clarity-session";
+    window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
 
-  // Category progress indicators
   const getCategoryProgress = () => {
     let idx = 0;
     return categories.map((cat) => {
@@ -122,43 +116,31 @@ const ReimbursementScorecard = () => {
       <>
         <Header />
         <main className="overflow-x-hidden">
-          <section
-            className="min-h-screen pt-36 pb-20 px-6 sm:px-10"
-            style={{ background: "linear-gradient(135deg, hsl(210,25%,45%), hsl(210,25%,55%))" }}
-          >
-            <div className="max-w-3xl mx-auto">
+          <section className="min-h-screen pt-36 pb-20 px-6 sm:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary">
+            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+            <div className="max-w-3xl mx-auto relative z-10">
               <div className="text-center mb-12">
-                <div
-                  className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6"
-                  style={{ background: "rgba(243,218,115,0.15)", border: "2px solid #F3DA73" }}
-                >
-                  <CheckCircle2 className="h-10 w-10" style={{ color: "#F3DA73" }} />
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6" style={{
+                  background: 'rgba(243,218,115,0.15)',
+                  border: '2.5px solid #F3DA73',
+                  boxShadow: '0 0 30px rgba(243,218,115,0.2)'
+                }}>
+                  <CheckCircle2 className="h-10 w-10" style={{ color: '#F3DA73' }} />
                 </div>
-                <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3">
+                <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                   Your Score: {score}/10
                 </h1>
-                <p
-                  className="font-inter text-xl sm:text-2xl font-semibold"
-                  style={{ color: "#F3DA73" }}
-                >
-                  {tier.label}
-                </p>
+                <p className="font-inter text-xl sm:text-2xl font-semibold" style={{ color: '#F3DA73' }}>{tier.label}</p>
               </div>
 
-              <div
-                className="rounded-xl p-8 sm:p-10 mb-10"
-                style={{
-                  background: "rgba(255,255,255,0.1)",
-                  border: "1px solid rgba(255,255,255,0.15)",
-                  backdropFilter: "blur(10px)",
-                }}
-              >
-                <p className="font-inter text-lg leading-relaxed text-white/90">
-                  {tier.summary}
-                </p>
+              <div className="rounded-[24px] p-8 sm:p-10 mb-10" style={{
+                background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
+                border: '2.5px solid #F3DA73',
+                boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
+              }}>
+                <p className="font-inter text-lg leading-relaxed" style={{ color: 'rgba(248,248,248,0.95)', letterSpacing: '0.3px' }}>{tier.summary}</p>
               </div>
 
-              {/* Category breakdown */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
                 {categories.map((cat, catIdx) => {
                   let startIdx = 0;
@@ -166,51 +148,28 @@ const ReimbursementScorecard = () => {
                   const catAnswers = answers.slice(startIdx, startIdx + cat.questions.length);
                   const catScore = catAnswers.filter((a) => a === true).length;
                   return (
-                    <div
-                      key={catIdx}
-                      className="rounded-lg p-5 text-center"
-                      style={{
-                        background: "rgba(255,255,255,0.08)",
-                        border: "1px solid rgba(255,255,255,0.1)",
-                      }}
-                    >
-                      <p className="text-sm font-inter font-medium text-white/60 mb-1">
-                        {cat.name}
-                      </p>
-                      <p className="font-playfair text-2xl font-bold text-white">
-                        {catScore}/{cat.questions.length}
-                      </p>
+                    <div key={catIdx} className="rounded-xl p-5 text-center" style={{
+                      background: 'rgba(255,255,255,0.08)',
+                      border: '1px solid rgba(243,218,115,0.2)'
+                    }}>
+                      <p className="text-sm font-inter font-medium text-white/60 mb-1">{cat.name}</p>
+                      <p className="font-playfair text-2xl font-bold text-white">{catScore}/{cat.questions.length}</p>
                     </div>
                   );
                 })}
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button
-                  onClick={handleMeet}
-                  className="px-8 py-6 text-base sm:text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105"
-                  style={{ background: "#F3DA73", color: "#5882A1", border: "none" }}
-                >
-                  Let's Meet
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button onClick={handleMeet} className="px-8 py-6 text-base sm:text-lg rounded-lg group transition-all duration-500 font-semibold" style={{
+                  background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
+                  boxShadow: '0 8px 24px rgba(243,218,115,0.4)', border: '2px solid rgba(255,255,255,0.3)'
+                }}>
+                  Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
-                <Button
-                  onClick={handleRestart}
-                  variant="outline"
-                  className="px-8 py-6 text-base sm:text-lg font-semibold rounded-lg transition-all duration-300"
-                  style={{
-                    background: "transparent",
-                    color: "#FFFFFF",
-                    border: "2px solid rgba(255,255,255,0.3)",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#F3DA73";
-                    e.currentTarget.style.color = "#F3DA73";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)";
-                    e.currentTarget.style.color = "#FFFFFF";
-                  }}
+                <Button onClick={handleRestart} variant="outline" className="px-8 py-6 text-base sm:text-lg font-semibold rounded-lg transition-all duration-300"
+                  style={{ background: 'transparent', color: '#FFFFFF', border: '2px solid rgba(243,218,115,0.5)' }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(243,218,115,0.15)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
                 >
                   Retake Scorecard
                 </Button>
@@ -228,51 +187,38 @@ const ReimbursementScorecard = () => {
     <>
       <Header />
       <main className="overflow-x-hidden">
-        {/* Hero intro */}
-        <section
-          className="pt-36 pb-10 px-6 sm:px-10"
-          style={{ background: "linear-gradient(135deg, hsl(210,25%,45%), hsl(210,25%,55%))" }}
-        >
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-              Reimbursement Readiness Scorecard
-            </h1>
-            <p className="font-inter text-lg text-white/75 mb-8">
-              10 questions. 3 categories. Find out if your product is ready for payer conversations.
-            </p>
-          </div>
-        </section>
+        <section className="min-h-screen pt-36 pb-20 px-6 sm:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary">
+          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+          <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none" style={{
+            background: 'radial-gradient(circle, rgba(243,218,115,0.1) 0%, transparent 60%)', filter: 'blur(80px)'
+          }} />
 
-        {/* Quiz section */}
-        <section className="pb-20 px-6 sm:px-10" style={{ background: "linear-gradient(135deg, hsl(210,25%,45%), hsl(210,25%,55%))" }}>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto relative z-10">
+            <div className="text-center mb-10">
+              <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+                background: 'rgba(243,218,115,0.2)', border: '1.5px solid rgba(243,218,115,0.5)', backdropFilter: 'blur(10px)'
+              }}>
+                <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>Reimbursement Readiness</span>
+              </div>
+              <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
+                Reimbursement Readiness Scorecard
+              </h1>
+              <p className="font-inter text-lg text-white/80">10 questions. 3 categories. Find out if your product is ready for payer conversations.</p>
+            </div>
+
             {/* Category tabs */}
             <div className="flex gap-2 mb-6">
               {catProgress.map((cat, i) => (
                 <div key={i} className="flex-1">
                   <div className="flex items-center justify-between mb-1.5">
-                    <span
-                      className={`text-xs font-inter font-semibold tracking-wide uppercase ${
-                        cat.isActive ? "text-white" : "text-white/40"
-                      }`}
-                    >
-                      {cat.name}
-                    </span>
-                    <span className="text-xs font-inter text-white/40">
-                      {cat.answered}/{cat.total}
-                    </span>
+                    <span className={`text-xs font-inter font-semibold tracking-wide uppercase ${cat.isActive ? 'text-white' : 'text-white/40'}`}>{cat.name}</span>
+                    <span className="text-xs font-inter text-white/40">{cat.answered}/{cat.total}</span>
                   </div>
-                  <div
-                    className="h-1.5 rounded-full overflow-hidden"
-                    style={{ background: "rgba(255,255,255,0.1)" }}
-                  >
-                    <div
-                      className="h-full rounded-full transition-all duration-500"
-                      style={{
-                        width: `${(cat.answered / cat.total) * 100}%`,
-                        background: cat.isActive ? "#F3DA73" : "rgba(243,218,115,0.4)",
-                      }}
-                    />
+                  <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.1)' }}>
+                    <div className="h-full rounded-full transition-all duration-500" style={{
+                      width: `${(cat.answered / cat.total) * 100}%`,
+                      background: cat.isActive ? 'linear-gradient(90deg, #F3DA73, #D4B65D)' : 'rgba(243,218,115,0.3)'
+                    }} />
                   </div>
                 </div>
               ))}
@@ -280,110 +226,54 @@ const ReimbursementScorecard = () => {
 
             {/* Overall progress */}
             <div className="flex items-center gap-3 mb-8">
-              <div
-                className="flex-1 h-2 rounded-full overflow-hidden"
-                style={{ background: "rgba(255,255,255,0.1)" }}
-              >
-                <div
-                  className="h-full rounded-full transition-all duration-500"
-                  style={{ width: `${progress}%`, background: "#F3DA73" }}
-                />
+              <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.1)' }}>
+                <div className="h-full rounded-full transition-all duration-500" style={{ width: `${progress}%`, background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }} />
               </div>
-              <span className="text-sm font-inter font-medium text-white/60 whitespace-nowrap">
-                {currentQuestion + 1} of {allQuestions.length}
-              </span>
+              <span className="text-sm font-inter font-medium text-white/60 whitespace-nowrap">{currentQuestion + 1} of {allQuestions.length}</span>
             </div>
 
             {/* Question card */}
-            <div
-              className="rounded-xl p-8 sm:p-10 mb-8"
-              style={{
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(255,255,255,0.12)",
-                backdropFilter: "blur(10px)",
-              }}
-            >
-              <p
-                className="text-xs font-inter font-bold tracking-[0.15em] uppercase mb-6"
-                style={{ color: "#F3DA73" }}
-              >
-                {current.category}
-              </p>
-              <h2 className="font-playfair text-xl sm:text-2xl font-semibold text-white leading-snug mb-8">
+            <div className="rounded-[24px] p-8 sm:p-10 mb-8" style={{
+              background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
+              border: '2.5px solid #F3DA73',
+              boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
+            }}>
+              <p className="text-xs font-inter font-bold tracking-[0.15em] uppercase mb-6" style={{ color: '#F3DA73' }}>{current.category}</p>
+              <h2 className="font-playfair text-xl sm:text-2xl font-semibold text-white leading-snug mb-8" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.15)' }}>
                 {current.question}
               </h2>
-
               <div className="flex gap-4">
-                <button
-                  onClick={() => handleAnswer(true)}
-                  className={`flex-1 py-4 rounded-lg font-inter font-semibold text-base transition-all duration-300 ${
-                    answers[currentQuestion] === true
-                      ? ""
-                      : "hover:scale-[1.02]"
-                  }`}
-                  style={{
-                    background:
-                      answers[currentQuestion] === true
-                        ? "#F3DA73"
-                        : "rgba(255,255,255,0.08)",
-                    color:
-                      answers[currentQuestion] === true
-                        ? "#5882A1"
-                        : "rgba(255,255,255,0.7)",
-                    border:
-                      answers[currentQuestion] === true
-                        ? "2px solid #F3DA73"
-                        : "2px solid rgba(255,255,255,0.15)",
-                  }}
-                >
-                  Yes
-                </button>
-                <button
-                  onClick={() => handleAnswer(false)}
-                  className={`flex-1 py-4 rounded-lg font-inter font-semibold text-base transition-all duration-300 ${
-                    answers[currentQuestion] === false
-                      ? ""
-                      : "hover:scale-[1.02]"
-                  }`}
-                  style={{
-                    background:
-                      answers[currentQuestion] === false
-                        ? "rgba(255,255,255,0.2)"
-                        : "rgba(255,255,255,0.08)",
-                    color: "rgba(255,255,255,0.8)",
-                    border:
-                      answers[currentQuestion] === false
-                        ? "2px solid rgba(255,255,255,0.4)"
-                        : "2px solid rgba(255,255,255,0.15)",
-                  }}
-                >
-                  No
-                </button>
+                {[true, false].map((val) => (
+                  <button key={String(val)} onClick={() => handleAnswer(val)}
+                    className="flex-1 py-4 rounded-lg font-inter font-semibold text-base transition-all duration-300 hover:scale-[1.02]"
+                    style={{
+                      background: answers[currentQuestion] === val
+                        ? 'linear-gradient(135deg, #F3DA73, #D4B65D)'
+                        : 'rgba(255,255,255,0.1)',
+                      color: answers[currentQuestion] === val ? '#1A2A3A' : 'rgba(255,255,255,0.8)',
+                      border: answers[currentQuestion] === val ? '2px solid #F3DA73' : '2px solid rgba(255,255,255,0.2)',
+                      boxShadow: answers[currentQuestion] === val ? '0 4px 16px rgba(243,218,115,0.3)' : 'none'
+                    }}
+                  >
+                    {val ? 'Yes' : 'No'}
+                  </button>
+                ))}
               </div>
             </div>
 
-            {/* Navigation */}
             <div className="flex items-center justify-between">
-              <Button
-                onClick={handlePrev}
-                disabled={currentQuestion === 0}
-                variant="ghost"
-                className="text-white/60 hover:text-white disabled:opacity-30 px-4 py-3"
-              >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back
+              <Button onClick={handlePrev} disabled={currentQuestion === 0} variant="ghost" className="text-white/60 hover:text-white disabled:opacity-30 px-4 py-3">
+                <ArrowLeft className="mr-2 h-4 w-4" /> Back
               </Button>
-              <Button
-                onClick={handleNext}
-                disabled={answers[currentQuestion] === null}
-                className="px-8 py-5 text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-40 disabled:hover:scale-100"
+              <Button onClick={handleNext} disabled={answers[currentQuestion] === null}
+                className="px-8 py-5 text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-40"
                 style={{
-                  background: answers[currentQuestion] !== null ? "#F3DA73" : "rgba(243,218,115,0.3)",
-                  color: "#5882A1",
-                  border: "none",
+                  background: answers[currentQuestion] !== null ? 'linear-gradient(135deg, #F3DA73, #D4B65D)' : 'rgba(243,218,115,0.2)',
+                  color: '#1A2A3A', border: 'none',
+                  boxShadow: answers[currentQuestion] !== null ? '0 4px 16px rgba(243,218,115,0.3)' : 'none'
                 }}
               >
-                {currentQuestion === allQuestions.length - 1 ? "See Results" : "Next"}
+                {currentQuestion === allQuestions.length - 1 ? 'See Results' : 'Next'}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>

@@ -1,82 +1,150 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+
+const SESSION_KEY = "sticky-cta-dismissed";
 
 const StickyCTA = () => {
-  const [isDismissed, setIsDismissed] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const hasTriggered = useRef(false);
+  const isMobile = useIsMobile();
 
-  const handleBooking = () => {
-    window.location.href = '/clinical-clarity-session';
-  };
+  const dismiss = useCallback(() => {
+    setIsVisible(false);
+    sessionStorage.setItem(SESSION_KEY, "1");
+  }, []);
 
-  if (isDismissed) return null;
+  const handleBooking = useCallback(() => {
+    sessionStorage.setItem(SESSION_KEY, "1");
+    window.location.href = "/clinical-clarity-session";
+  }, []);
+
+  useEffect(() => {
+    if (sessionStorage.getItem(SESSION_KEY)) return;
+
+    const scrollThreshold = isMobile ? 0.6 : 0.5;
+
+    const onScroll = () => {
+      if (hasTriggered.current) return;
+      const scrollPercent =
+        window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight);
+      if (scrollPercent >= scrollThreshold) {
+        hasTriggered.current = true;
+        setIsVisible(true);
+      }
+    };
+
+    const onMouseLeave = (e: MouseEvent) => {
+      if (hasTriggered.current) return;
+      if (e.clientY <= 0) {
+        hasTriggered.current = true;
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    if (!isMobile) {
+      document.addEventListener("mouseleave", onMouseLeave);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("mouseleave", onMouseLeave);
+    };
+  }, [isMobile]);
+
+  if (!isVisible) return null;
 
   return (
-    <div 
-      className="fixed left-1/2 -translate-x-1/2 z-50 pointer-events-auto w-[calc(100%-2rem)] sm:w-auto"
+    <div
+      className="fixed bottom-0 left-0 right-0 z-[9999]"
       style={{
-        bottom: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))',
-        animation: 'fade-in 0.5s ease-out',
+        animation: "slideUpCTA 300ms ease-out forwards",
+        paddingBottom: "env(safe-area-inset-bottom, 0px)",
       }}
     >
-      <div 
-        className="relative flex items-center gap-3 sm:gap-4 px-5 sm:px-8 py-3 sm:py-4 rounded-2xl sm:rounded-full backdrop-blur-xl"
+      <style>{`
+        @keyframes slideUpCTA {
+          from { transform: translateY(100%); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+      `}</style>
+
+      <div
+        className="relative w-full"
         style={{
-          background: 'linear-gradient(135deg, rgba(113,141,169,0.98), rgba(88,130,161,0.98))',
-          border: '2px solid rgba(243,218,115,0.5)',
-          boxShadow: '0 12px 40px rgba(0,0,0,0.25), 0 0 60px rgba(243,218,115,0.2)',
-          backdropFilter: 'blur(20px)',
-          WebkitBackdropFilter: 'blur(20px)'
+          backgroundColor: "#0A1628",
+          borderLeft: "4px solid #C9A84C",
         }}
       >
-        {/* Dismiss button */}
+        {/* X dismiss — top right */}
         <button
-          onClick={() => setIsDismissed(true)}
-          className="absolute -top-2 -right-2 w-7 h-7 sm:w-6 sm:h-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95"
-          style={{
-            background: '#F3DA73',
-            color: '#1A2A3A',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
-          }}
+          onClick={dismiss}
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 w-7 h-7 flex items-center justify-center rounded-full transition-opacity hover:opacity-70"
           aria-label="Dismiss"
         >
-          <X size={14} strokeWidth={3} />
+          <X size={16} className="text-white" />
         </button>
 
-        {/* Content */}
-        <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto">
-          <div className="hidden sm:block flex-shrink-0">
-            <p className="text-sm font-inter font-semibold text-white">
+        {/* Desktop layout */}
+        <div className="hidden md:flex items-center justify-between px-10 py-5 gap-8">
+          <div className="flex-1 min-w-0">
+            <p className="font-inter font-bold text-white text-base leading-tight">
               We know how hard you've worked to get here.
             </p>
-            <p className="text-xs font-inter text-white/80">
+            <p className="font-inter text-white/60 text-sm mt-1">
               A Clinical Clarity Session helps us figure out what happens next.
             </p>
           </div>
-          
+
+          <div className="flex flex-col items-center flex-shrink-0">
+            <Button
+              onClick={handleBooking}
+              className="group font-semibold rounded-md border-0 transition-all duration-300 text-base px-6 py-3"
+              style={{
+                backgroundColor: "#C9A84C",
+                color: "#0A1628",
+              }}
+            >
+              Book a Clinical Clarity Session
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
+            <button
+              onClick={dismiss}
+              className="mt-2 font-inter text-xs text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer"
+            >
+              No thanks, I'm not ready yet.
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile layout — stacked */}
+        <div className="flex md:hidden flex-col px-5 py-5 pr-12 gap-3">
+          <p className="font-inter font-bold text-white text-sm leading-tight">
+            We know how hard you've worked to get here.
+          </p>
+          <p className="font-inter text-white/60 text-xs">
+            A Clinical Clarity Session helps us figure out what happens next.
+          </p>
           <Button
             onClick={handleBooking}
-            className="group transition-all duration-300 font-semibold rounded-full w-full sm:w-auto active:scale-95"
+            className="group font-semibold rounded-md border-0 transition-all duration-300 text-sm w-full py-3"
             style={{
-              background: '#F3DA73',
-              color: '#5882A1',
-              padding: '0.75rem 1.5rem',
-              boxShadow: '0 4px 16px rgba(243,218,115,0.4)',
-              border: 'none',
-              WebkitTapHighlightColor: 'transparent'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#FFE999';
-              e.currentTarget.style.boxShadow = '0 6px 24px rgba(243,218,115,0.6)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#F3DA73';
-              e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.4)';
+              backgroundColor: "#C9A84C",
+              color: "#0A1628",
             }}
           >
-            <span className="text-sm sm:text-base">Book a Clinical Clarity Session</span>
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" style={{ color: '#5882A1' }} />
+            Book a Clinical Clarity Session
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Button>
+          <button
+            onClick={dismiss}
+            className="font-inter text-xs text-white/50 hover:text-white/70 transition-colors bg-transparent border-0 cursor-pointer text-center"
+          >
+            No thanks, I'm not ready yet.
+          </button>
         </div>
       </div>
     </div>

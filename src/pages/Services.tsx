@@ -317,8 +317,8 @@ const ClosingCTA = () => (
 
     <div className="relative z-10 max-w-3xl mx-auto text-center py-16">
       <h2
-        className="font-display font-bold text-white mb-6"
-        style={{ fontSize: 'clamp(26px, 3.2vw, 44px)', lineHeight: 1.15 }}
+        className="font-display font-bold text-white mb-6 md:whitespace-nowrap"
+        style={{ fontSize: 'clamp(24px, 2.8vw, 40px)', lineHeight: 1.15 }}
       >
         Ready to Stop Fighting Your Systems?
       </h2>

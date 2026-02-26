@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Dark overlay — 70% deep navy */}
         <div
           className="absolute inset-0"
-          style={{ backgroundColor: 'rgba(10, 22, 40, 0.7)' }}
+          style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
         />
 
         {/* Content */}

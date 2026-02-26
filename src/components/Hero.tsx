@@ -47,7 +47,7 @@ const Hero = () => {
             <h1
               className="mb-6 font-display font-bold text-white"
               style={{
-                fontSize: 'clamp(36px, 5vw, 64px)',
+                fontSize: 'clamp(32px, 4.5vw, 60px)',
                 lineHeight: 1.1,
               }}
             >

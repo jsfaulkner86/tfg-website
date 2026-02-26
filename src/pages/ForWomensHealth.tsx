@@ -71,7 +71,7 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary pt-20">
+        <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
             backgroundSize: '40px 40px'
@@ -81,33 +81,33 @@ const ForWomensHealth = () => {
             filter: 'blur(80px)'
           }} />
 
-          <div className={`relative z-10 max-w-5xl mx-auto px-6 text-center pt-16 transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className={`relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-8 sm:pt-16 transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="inline-block mb-8 px-6 py-2 rounded-full" style={{
               background: 'rgba(243,218,115,0.2)', border: '1.5px solid rgba(243,218,115,0.5)', backdropFilter: 'blur(10px)'
             }}>
               <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>For Women's Health Innovators</span>
             </div>
 
-            <h1 className="mb-6 font-playfair font-bold text-white" style={{
-              fontSize: 'clamp(28px, 4vw, 60px)', letterSpacing: '-0.02em', lineHeight: '1.1',
+            <h1 className="mb-4 sm:mb-6 font-playfair font-bold text-white" style={{
+              fontSize: 'clamp(24px, 5vw, 60px)', letterSpacing: '-0.02em', lineHeight: '1.1',
               textShadow: '0 4px 20px rgba(0,0,0,0.3)'
             }}>
               For Women's Health.{' '}
               <span className="block mt-2" style={{ color: '#F3DA73' }}>Against Every System That Holds It Back.</span>
             </h1>
 
-            <p className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto px-4 py-3 rounded-lg" style={{
+            <p className="mb-4 sm:mb-6 text-sm sm:text-base md:text-xl lg:text-2xl max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 rounded-lg" style={{
               color: 'rgb(255,255,255)', textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)',
               backgroundColor: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(4px)'
             }}>
               The Faulkner Group equips women's health tech founders, operators, and innovators with the strategy, tools, and system fluency to break through and scale.
             </p>
 
-            <div className="mb-12 flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-white/90 px-4">
+            <div className="mb-8 sm:mb-12 flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 text-white/90 px-2 sm:px-4">
               {["Reimbursement Strategy", "Health System Fluency", "Funding Intelligence"].map(badge => (
                 <div key={badge} className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: '#F3DA73' }} />
-                  <span className="text-sm sm:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{
+                  <span className="text-xs sm:text-sm md:text-base font-inter font-bold px-2 sm:px-3 py-1 rounded whitespace-nowrap" style={{
                     textShadow: '0 2px 12px rgba(0,0,0,0.8)', color: 'rgb(255,255,255)',
                     backgroundColor: 'rgba(0,0,0,0.3)', backdropFilter: 'blur(4px)'
                   }}>{badge}</span>
@@ -146,8 +146,8 @@ const ForWomensHealth = () => {
         </section>
 
         {/* ===== VALUE PROPS (matches Problem section layout) ===== */}
-        <section ref={valueRef} className="px-6 relative overflow-hidden" style={{
-          paddingTop: '80px', paddingBottom: '100px',
+        <section ref={valueRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
         }}>
           <div className="absolute top-0 left-0 right-0 pointer-events-none" style={{
@@ -158,12 +158,12 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-24 items-start">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
               {/* Left - Headline */}
               <div className={`space-y-8 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ maxWidth: '650px', transitionDelay: '0.2s' }}>
                 <div>
-                  <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4" style={{
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
                     color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
                   }}>What We Give You That No One Else Does</h2>
                   <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
@@ -199,7 +199,7 @@ const ForWomensHealth = () => {
 
               {/* Right - Value prop cards (matches Problem section right column) */}
               <div className={`relative transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ transitionDelay: '0.4s', marginTop: '60px' }}>
+                style={{ transitionDelay: '0.4s', marginTop: '0px' }}>
                 <div className="absolute left-6 top-0 bottom-0" style={{
                   width: '1px', background: 'linear-gradient(180deg, transparent 0%, rgba(243,218,115,0.3) 15%, rgba(243,218,115,0.3) 85%, transparent 100%)'
                 }} />
@@ -232,9 +232,9 @@ const ForWomensHealth = () => {
             </div>
 
             {/* Bottom callout */}
-            <div className={`mt-24 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            <div className={`mt-12 sm:mt-24 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: '1.2s' }}>
-              <div className="relative py-12 px-12 rounded-[32px] overflow-hidden mx-auto"
+              <div className="relative py-6 px-4 sm:py-12 sm:px-12 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
                 style={{ background: '#FBF8F1', border: '2.5px solid #C9B882', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', maxWidth: '1400px' }}>
                 <div className="relative z-10 text-center">
                   <p className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
@@ -248,8 +248,8 @@ const ForWomensHealth = () => {
         </section>
 
         {/* ===== CALLOUT BAND (matches Approach section cards style) ===== */}
-        <section ref={calloutRef} className="px-6 relative overflow-hidden" style={{
-          paddingTop: '120px', paddingBottom: '100px',
+        <section ref={calloutRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -281,7 +281,7 @@ const ForWomensHealth = () => {
                 <div className="absolute -inset-1 rounded-[24px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.4), rgba(243,218,115,0.2))', filter: 'blur(16px)'
                 }} />
-                <div className="relative rounded-[24px] p-10 sm:p-14 text-center overflow-hidden" style={{
+                <div className="relative rounded-2xl sm:rounded-[24px] p-6 sm:p-10 md:p-14 text-center overflow-hidden" style={{
                   background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                   border: '2.5px solid #F3DA73',
                   boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
@@ -289,7 +289,7 @@ const ForWomensHealth = () => {
                   <div className="absolute inset-0 opacity-20 pointer-events-none" style={{
                     background: 'radial-gradient(circle at 50% 0%, rgba(255,255,255,0.3) 0%, transparent 60%)'
                   }} />
-                  <blockquote className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold leading-snug mb-10 relative z-10" style={{
+                  <blockquote className="font-playfair text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug mb-6 sm:mb-10 relative z-10" style={{
                     color: '#F3DA73', textShadow: '0 2px 8px rgba(0,0,0,0.2)', letterSpacing: '-0.02em'
                   }}>
                     "Most women's health startups don't fail because of bad tech. They fail because the system is complicated. We know the system."
@@ -312,7 +312,7 @@ const ForWomensHealth = () => {
 
             {/* Bottom statement */}
             <div className={`mt-20 transition-all duration-1000 ${calloutVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '0.8s' }}>
-              <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl" style={{
+              <div className="relative py-5 px-4 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-2xl sm:rounded-3xl mx-auto max-w-5xl" style={{
                 background: '#FBF8F1', border: '2px solid #D4B65D', boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
               }}>
                 <div className="text-center">
@@ -326,8 +326,8 @@ const ForWomensHealth = () => {
         </section>
 
         {/* ===== RESOURCE TOOLS (matches Transformation section cards) ===== */}
-        <section id="resources" ref={toolsRef} className="px-6 relative overflow-hidden" style={{
-          paddingTop: '120px', paddingBottom: '100px',
+        <section id="resources" ref={toolsRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -342,7 +342,7 @@ const ForWomensHealth = () => {
               }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>Free Resources</span>
               </div>
-              <h2 className="text-5xl sm:text-6xl md:text-7xl font-playfair font-bold mb-8" style={{
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold mb-8" style={{
                 color: '#1A2A3A', letterSpacing: '-0.04em', lineHeight: '1', textShadow: '0 2px 4px rgba(0,0,0,0.02)'
               }}>Tools Built for This Fight</h2>
               <div className="flex items-center justify-center gap-3">
@@ -364,11 +364,11 @@ const ForWomensHealth = () => {
                     <div className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
                       background: 'linear-gradient(135deg, #D4B65D, #718DA9)', filter: 'blur(8px)'
                     }} />
-                    <div className="relative p-10 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden" style={{
+                    <div className="relative p-6 sm:p-10 rounded-2xl sm:rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden" style={{
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                       border: '2.5px solid #F3DA73',
                       boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)',
-                      minHeight: '380px', backdropFilter: 'blur(10px)'
+                      minHeight: '320px', backdropFilter: 'blur(10px)'
                     }}>
                       <div className="absolute inset-0 opacity-30 pointer-events-none" style={{
                         background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
@@ -422,8 +422,8 @@ const ForWomensHealth = () => {
         </section>
 
         {/* ===== FAQ (matches FAQ section exactly) ===== */}
-        <section ref={faqRef} className="px-6 relative overflow-hidden" style={{
-          paddingTop: '80px', paddingBottom: '100px',
+        <section ref={faqRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
         }}>
           <div className="max-w-4xl mx-auto relative z-10">
@@ -434,7 +434,7 @@ const ForWomensHealth = () => {
               }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>Common Questions</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-6" style={{
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6" style={{
                 color: '#1A2A3A', letterSpacing: '-0.04em', lineHeight: '1.1'
               }}>Frequently Asked Questions</h2>
               <div className="flex items-center justify-center gap-3">
@@ -448,9 +448,9 @@ const ForWomensHealth = () => {
                 {faqData.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border-0 rounded-2xl overflow-hidden"
                     style={{ background: 'white', border: '1.5px solid rgba(243,218,115,0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.03)' }}>
-                    <AccordionTrigger className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                    <AccordionTrigger className="px-4 sm:px-8 py-4 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-lg md:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}>{faq.question}</AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
+                    <AccordionContent className="px-4 sm:px-8 pb-4 sm:pb-6">
                       <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
@@ -461,7 +461,7 @@ const ForWomensHealth = () => {
         </section>
 
         {/* ===== CLOSING CTA (matches FinalCTA exactly) ===== */}
-        <section ref={ctaRef} id="contact" className="relative py-40 px-6 overflow-hidden">
+        <section ref={ctaRef} id="contact" className="relative py-20 sm:py-40 px-4 sm:px-6 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary via-dark-gray to-primary" />
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px'
@@ -472,7 +472,7 @@ const ForWomensHealth = () => {
             }}>
               <span className="text-sm font-inter font-medium tracking-wider uppercase" style={{ color: '#F3DA73' }}>Take the Next Step</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold tracking-wide text-white leading-tight" style={{
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold tracking-wide text-white leading-tight" style={{
               textShadow: '0 4px 20px rgba(0,0,0,0.3)', letterSpacing: '-0.02em'
             }}>Ready to Stop Fighting the System Alone?</h2>
             <p className="text-xl sm:text-2xl md:text-3xl font-inter font-light text-white/95 max-w-4xl mx-auto leading-relaxed" style={{
@@ -483,7 +483,7 @@ const ForWomensHealth = () => {
             }}>No pitch decks. No fluff. Just a real conversation about what is working and what is not.</p>
             <div className="pt-4">
               <Button onClick={handleMeet}
-                className="text-xl sm:text-2xl px-16 py-10 rounded-2xl group transition-all duration-500 font-semibold"
+                className="text-lg sm:text-xl md:text-2xl px-8 sm:px-16 py-6 sm:py-10 rounded-2xl group transition-all duration-500 font-semibold"
                 style={{
                   background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
                   boxShadow: '0 12px 40px rgba(243,218,115,0.5), 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5)',

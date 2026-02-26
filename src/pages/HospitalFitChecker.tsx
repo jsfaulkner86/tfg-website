@@ -50,7 +50,7 @@ const HospitalFitChecker = () => {
       <>
         <Header />
         <main className="overflow-x-hidden">
-          <section className="min-h-screen pt-36 pb-20 px-6 sm:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary">
+          <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
             <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
             <div className="max-w-3xl mx-auto relative z-10">
               <div className="text-center mb-12">
@@ -59,13 +59,13 @@ const HospitalFitChecker = () => {
                 }}>{outcome.icon}</div>
                 <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>{outcome.title}</h1>
               </div>
-              <div className="rounded-[24px] p-8 sm:p-10 mb-10" style={{
+              <div className="rounded-2xl sm:rounded-[24px] p-5 sm:p-8 md:p-10 mb-10" style={{
                 background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)', border: '2.5px solid #F3DA73',
                 boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
               }}>
                 <p className="font-inter text-lg leading-relaxed" style={{ color: 'rgba(248,248,248,0.95)', letterSpacing: '0.3px' }}>{outcome.summary}</p>
               </div>
-              <div className="rounded-[24px] p-6 sm:p-8 mb-10" style={{
+              <div className="rounded-2xl sm:rounded-[24px] p-4 sm:p-6 md:p-8 mb-10" style={{
                 background: 'linear-gradient(180deg, rgba(122,151,179,0.4) 0%, rgba(106,133,158,0.4) 100%)',
                 border: '1px solid rgba(243,218,115,0.2)'
               }}>
@@ -99,7 +99,7 @@ const HospitalFitChecker = () => {
     <>
       <Header />
       <main className="overflow-x-hidden">
-        <section className="min-h-screen pt-36 pb-20 px-6 sm:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary">
+        <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
           <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)', backgroundSize: '40px 40px' }} />
           <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none" style={{
             background: 'radial-gradient(circle, rgba(243,218,115,0.1) 0%, transparent 60%)', filter: 'blur(80px)'
@@ -124,7 +124,7 @@ const HospitalFitChecker = () => {
               <span className="text-sm font-inter font-medium text-white/60 whitespace-nowrap">{currentQuestion + 1} of {questions.length}</span>
             </div>
 
-            <div className="rounded-[24px] p-8 sm:p-10 mb-8" style={{
+            <div className="rounded-2xl sm:rounded-[24px] p-5 sm:p-8 md:p-10 mb-8" style={{
               background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)', border: '2.5px solid #F3DA73',
               boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)'
             }}>

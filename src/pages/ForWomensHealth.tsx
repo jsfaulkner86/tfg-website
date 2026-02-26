@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
 import StickyCTA from "@/components/StickyCTA";
 import BottomVideo from "@/components/BottomVideo";
 import {
@@ -71,6 +73,11 @@ const ForWomensHealth = () => {
 
   return (
     <>
+      <SEOHead
+        title="For Women's Health Tech Founders | The Faulkner Group"
+        description="Strategy and system fluency for women's health tech founders ready to break through and scale. The Faulkner Group brings clinical depth and operational expertise to every engagement."
+        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health"
+      />
       <Header />
       <main className="overflow-x-hidden">
 
@@ -79,7 +86,7 @@ const ForWomensHealth = () => {
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"
-            alt="Healthcare leadership team collaboration"
+            alt="The Faulkner Group women's health tech advisory team in a strategy session"
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay */}
@@ -122,7 +129,7 @@ const ForWomensHealth = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                 }}
               >
-                Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale.
+                Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale. <Link to="/services" className="underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: 'rgba(243,218,115,0.9)' }}>Explore our engagement models</Link>.
               </p>
 
               {/* CTA */}

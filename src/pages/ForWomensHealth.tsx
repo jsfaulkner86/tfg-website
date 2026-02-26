@@ -501,9 +501,9 @@ const ForWomensHealth = () => {
                     </svg>
                     <p className="text-sm font-inter text-center" style={{ color: '#4A5568' }}>
                       Details will be released on LinkedIn by{' '}
-                      <a href="https://www.linkedin.com/in/johnfaulkner1/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>John</a>
+                      <a href="https://www.linkedin.com/in/johnathonfaulkner/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>John</a>
                       {' '}&amp;{' '}
-                      <a href="https://www.linkedin.com/in/drnicolefaulkner/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>Nicole</a>
+                      <a href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/" target="_blank" rel="noopener noreferrer" className="font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: '#718DA9' }}>Nicole</a>
                       . Follow to stay in the loop.
                     </p>
                   </div>

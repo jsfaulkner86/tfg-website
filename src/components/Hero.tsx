@@ -30,7 +30,7 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
-          <div className="max-w-[700px]">
+          <div className="max-w-[820px]">
             {/* Small caps label */}
             <p
               className="mb-6 font-inter font-medium uppercase"

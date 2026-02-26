@@ -108,8 +108,8 @@ const ForWomensHealth = () => {
                   lineHeight: 1.1,
                 }}
               >
-                <span className="block">For Women's Health.</span>
-                <span className="block text-white">Against Every System That Holds It Back.</span>
+                <span className="block">For Women's Health</span>
+                <span className="block text-white md:whitespace-nowrap" style={{ fontSize: 'clamp(22px, 3.2vw, 46px)' }}>Against Every System That Holds It Back</span>
               </h1>
 
               {/* Subheadline */}

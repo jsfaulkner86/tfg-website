@@ -123,15 +123,16 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div 
-          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-y-auto max-h-[calc(100vh-140px)] animate-fade-in z-50"
+          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-y-auto animate-fade-in z-50"
           style={{
             background: 'rgba(113,141,169,0.98)',
             boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
             backdropFilter: 'blur(20px)',
             WebkitBackdropFilter: 'blur(20px)',
+            maxHeight: 'calc(100vh - 160px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px))',
           }}
         >
-          <nav className="flex flex-col py-2">
+          <nav className="flex flex-col py-2 pb-4">
             <a 
               href="/for-womens-health"
               onClick={handleNavClick}

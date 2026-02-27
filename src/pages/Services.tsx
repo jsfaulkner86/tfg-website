@@ -86,7 +86,7 @@ const DualBrain = () =>
 <section className="py-10 md:py-20 px-5 md:px-6 bg-background">
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
-      <SectionHeading>Clinical with Health Technology
+      <SectionHeading>Clinical with Health Technology 
 The Best of Both Worlds
     </SectionHeading>
 

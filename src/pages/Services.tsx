@@ -86,13 +86,13 @@ const DualBrain = () =>
 <section className="py-10 md:py-20 px-5 md:px-6 bg-background">
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
-      <SectionHeading>Clinical with Health Technology  
-Not Either/Or.</SectionHeading>
+      <SectionHeading>Clinical with Health Technology
+The Best of Both Worlds
+    </SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
         {/* Advisory Brain */}
-        <div className="rounded-lg p-5 md:p-8 text-left border border-border"
-      style={{ background: 'hsl(0 0% 98%)' }}>
+        <div className="rounded-lg p-5 md:p-8 text-left border border-border" style={{ background: 'hsl(0 0% 98%)' }}>
 
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 rounded-lg" style={{ backgroundColor: 'hsl(45, 62%, 56%, 0.15)' }}>

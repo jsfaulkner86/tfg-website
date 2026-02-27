@@ -123,7 +123,7 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div 
-          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-hidden animate-fade-in z-50"
+          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-y-auto max-h-[calc(100vh-140px)] animate-fade-in z-50"
           style={{
             background: 'rgba(113,141,169,0.98)',
             boxShadow: '0 8px 32px rgba(0,0,0,0.15)',

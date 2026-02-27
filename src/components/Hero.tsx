@@ -21,6 +21,8 @@ const Hero = () => {
           src="/hero-boardroom.jpg"
           alt="Healthcare leadership team collaboration"
           className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+          decoding="async"
         />
         {/* Dark overlay — 70% deep navy */}
         <div

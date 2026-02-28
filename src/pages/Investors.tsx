@@ -1,6 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
+
+const investorSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Clinical Adoption Diligence for VC & PE Firms",
+  provider: {
+    "@type": "Organization",
+    name: "The Faulkner Group",
+  },
+  description:
+    "Clinical and operational diligence for venture capital and private equity firms with women's health tech portfolio companies. We identify adoption barriers and build governance frameworks to accelerate physician buy-in.",
+  areaServed: { "@type": "Country", name: "United States" },
+};
 
 const Investors = () => {
   const handleBooking = () => {
@@ -9,6 +23,12 @@ const Investors = () => {
 
   return (
     <>
+      <SEOHead
+        title="For VC & PE Firms | The Faulkner Group"
+        description="Clinical adoption diligence for VC and PE firms with women's health tech portfolio companies. Identify adoption barriers before the next board meeting."
+        canonical="https://thrive-beacon-studio.lovable.app/investors"
+        jsonLd={investorSchema}
+      />
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}

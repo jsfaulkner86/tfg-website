@@ -1,6 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, FileText, Users, Shield } from "lucide-react";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
+
+const sessionSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Clinical Clarity Session",
+  provider: {
+    "@type": "Organization",
+    name: "The Faulkner Group",
+  },
+  description:
+    "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
+  offers: {
+    "@type": "Offer",
+    price: "1500",
+    priceCurrency: "USD",
+  },
+};
 
 const ClinicalClaritySession = () => {
   const handleBooking = () => {
@@ -9,6 +27,12 @@ const ClinicalClaritySession = () => {
 
   return (
     <>
+      <SEOHead
+        title="Clinical Clarity Session | The Faulkner Group"
+        description="90-minute diagnostic with a board-certified OB/GYN and Healthcare IT Architect. Identify your top clinical adoption risks for $1,500."
+        canonical="https://thrive-beacon-studio.lovable.app/clinical-clarity-session"
+        jsonLd={sessionSchema}
+      />
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
@@ -181,28 +205,6 @@ const ClinicalClaritySession = () => {
             </div>
           </div>
         </section>
-
-        {/* Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: "Clinical Clarity Session",
-              provider: {
-                "@type": "Organization",
-                name: "The Faulkner Group",
-              },
-              description: "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
-              offers: {
-                "@type": "Offer",
-                price: "1500",
-                priceCurrency: "USD",
-              },
-            }),
-          }}
-        />
       </main>
     </>
   );

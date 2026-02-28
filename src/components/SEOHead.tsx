@@ -4,9 +4,10 @@ interface SEOHeadProps {
   title: string;
   description: string;
   canonical: string;
+  jsonLd?: object | object[];
 }
 
-const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
   useEffect(() => {
     document.title = title;
 
@@ -23,6 +24,18 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
     setMeta("description", description);
     setMeta("robots", "index, follow");
 
+    // Open Graph
+    setMeta("og:title", title, "property");
+    setMeta("og:description", description, "property");
+    setMeta("og:url", canonical, "property");
+    setMeta("og:type", "website", "property");
+    setMeta("og:site_name", "The Faulkner Group", "property");
+
+    // Twitter
+    setMeta("twitter:card", "summary", "name");
+    setMeta("twitter:title", title, "name");
+    setMeta("twitter:description", description, "name");
+
     // Canonical
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
@@ -32,14 +45,27 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
     }
     link.href = canonical;
 
+    // JSON-LD
+    const ldScripts: HTMLScriptElement[] = [];
+    if (jsonLd) {
+      const items = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+      items.forEach((schema) => {
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+        ldScripts.push(script);
+      });
+    }
+
     return () => {
-      // Cleanup canonical on unmount
       const el = document.querySelector('link[rel="canonical"]');
       if (el) el.remove();
       const robots = document.querySelector('meta[name="robots"]');
       if (robots) robots.remove();
+      ldScripts.forEach((s) => s.remove());
     };
-  }, [title, description, canonical]);
+  }, [title, description, canonical, jsonLd]);
 
   return null;
 };

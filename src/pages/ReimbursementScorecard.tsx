@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
 
 const categories = [
   {
@@ -114,6 +115,11 @@ const ReimbursementScorecard = () => {
   if (showResults) {
     return (
       <>
+        <SEOHead
+          title="Reimbursement Readiness Scorecard | Faulkner Group"
+          description="Free 10-question assessment to evaluate your women's health tech product's payer readiness across clinical evidence, coding, and market access."
+          canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/reimbursement-scorecard"
+        />
         <Header />
         <main className="overflow-x-hidden">
           <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
@@ -185,6 +191,11 @@ const ReimbursementScorecard = () => {
 
   return (
     <>
+      <SEOHead
+        title="Reimbursement Readiness Scorecard | Faulkner Group"
+        description="Free 10-question assessment to evaluate your women's health tech product's payer readiness across clinical evidence, coding, and market access."
+        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/reimbursement-scorecard"
+      />
       <Header />
       <main className="overflow-x-hidden">
         <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>

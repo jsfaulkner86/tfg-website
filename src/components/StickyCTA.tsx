@@ -114,10 +114,13 @@ const StickyCTA = () => {
           <div className="flex flex-col items-center flex-shrink-0">
             <Button
               onClick={handleBooking}
-              className="group font-semibold rounded-md border-0 transition-all duration-300 text-base px-6 py-3"
+              className="group font-semibold rounded-lg border transition-all duration-500 text-base px-6 py-3 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
               style={{
-                backgroundColor: "#C9A84C",
-                color: "#0A1628",
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                color: '#2A3B4F',
+                borderColor: 'rgba(255,255,255,0.25)',
+                boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                backdropFilter: 'blur(8px)',
               }}
             >
               Book a Clinical Clarity Session
@@ -142,10 +145,13 @@ const StickyCTA = () => {
           </p>
           <Button
             onClick={handleBooking}
-            className="group font-semibold rounded-md border-0 transition-all duration-300 text-sm w-full py-2.5 mt-1"
+            className="group font-semibold rounded-lg border transition-all duration-500 text-sm w-full py-2.5 mt-1 hover:scale-[1.02] hover:shadow-[0_6px_30px_rgba(243,218,115,0.3)]"
             style={{
-              backgroundColor: "#C9A84C",
-              color: "#0A1628",
+              background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+              color: '#2A3B4F',
+              borderColor: 'rgba(255,255,255,0.25)',
+              boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+              backdropFilter: 'blur(8px)',
             }}
           >
             Book a Clinical Clarity Session

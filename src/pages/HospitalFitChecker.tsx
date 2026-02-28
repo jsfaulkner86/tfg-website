@@ -84,8 +84,9 @@ const HospitalFitChecker = () => {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button onClick={handleMeet} className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300" style={{
-                  backgroundColor: '#F3DA73', color: '#5882A1',
+                <Button onClick={handleMeet} className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]" style={{
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)', color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)', boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)', backdropFilter: 'blur(8px)',
                 }}>Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" /></Button>
                 <Button onClick={handleRestart} variant="outline" className="px-8 py-6 text-base sm:text-lg font-semibold rounded-lg transition-all duration-300"
                   style={{ background: 'transparent', color: '#FFFFFF', border: '2px solid rgba(243,218,115,0.5)' }}

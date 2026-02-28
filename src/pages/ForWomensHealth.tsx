@@ -135,10 +135,13 @@ const ForWomensHealth = () => {
               {/* CTA */}
               <Button
                 onClick={handleMeet}
-                className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
+                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
-                  backgroundColor: '#F3DA73',
-                  color: '#5882A1',
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                  color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  backdropFilter: 'blur(8px)',
                 }}
               >
                 Let's Meet
@@ -298,10 +301,13 @@ const ForWomensHealth = () => {
                     "Most women's health startups don't fail because of bad tech. They fail because the system is complicated. We know the system."
                   </blockquote>
                   <Button onClick={handleMeet}
-                    className="text-base font-semibold rounded-md px-8 py-5 border-0 group/btn transition-all duration-300 relative z-10"
+                    className="text-base font-semibold rounded-lg px-9 py-5 border group/btn transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] relative z-10"
                     style={{
-                      backgroundColor: '#F3DA73',
-                      color: '#5882A1',
+                      background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                      color: '#2A3B4F',
+                      borderColor: 'rgba(255,255,255,0.25)',
+                      boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                      backdropFilter: 'blur(8px)',
                     }}>
                     Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                   </Button>

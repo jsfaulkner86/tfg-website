@@ -115,9 +115,10 @@ const OnStage = () => {
               className="transition-opacity duration-300 hover:opacity-80 underline underline-offset-2"
               style={{ color: "hsl(45, 62%, 56%)" }}
             >
-              WHIS Boston
-            </a>{" "}
-            — Dr. Nicole Faulkner on the{" "}
+            WHIS Boston
+            </a>
+            <br />
+            Dr. Nicole Faulkner on the{" "}
             <em>Emerging Technologies for Maternal Health Management</em> panel
             with leaders from Carrot Fertility, Axia Women's Health, and Marani
             Health.

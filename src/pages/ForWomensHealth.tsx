@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Building2, ClipboardCheck, TrendingUp, ArrowRight, Compass, CircleDollarSign, Activity, ExternalLink, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 import StickyCTA from "@/components/StickyCTA";
 import BottomVideo from "@/components/BottomVideo";
+import EmailGateModal, { isEmailCaptured } from "@/components/EmailGateModal";
 import {
   Accordion,
   AccordionContent,
@@ -44,6 +45,7 @@ const ForWomensHealth = () => {
   const [faqVisible, setFaqVisible] = useState(false);
   const [founderVisible, setFounderVisible] = useState(false);
   const [ctaVisible, setCtaVisible] = useState(false);
+  const [gateModal, setGateModal] = useState<{ toolName: string; href: string } | null>(null);
 
   const heroRef = useRef<HTMLElement>(null);
   const valueRef = useRef<HTMLElement>(null);
@@ -70,6 +72,16 @@ const ForWomensHealth = () => {
   const handleMeet = () => {
     window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
+
+  const handleToolClick = useCallback((card: { title: string; href: string; external: boolean; gated?: boolean }) => {
+    if (card.gated && !isEmailCaptured()) {
+      setGateModal({ toolName: card.title, href: card.href });
+    } else if (card.external) {
+      window.open(card.href, '_blank');
+    } else {
+      window.location.href = card.href;
+    }
+  }, []);
 
   return (
     <>
@@ -363,11 +375,11 @@ const ForWomensHealth = () => {
             <div className={`mb-16 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {[
-                  { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false },
-                  { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false },
-                  { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker", external: false },
-                  { micro: "Fundraising Pipeline", title: "Women's Health Fundraising Tracker", body: "Track your investor pipeline, get femtech-specific fit scores, and manage warm intros — all private and browser-based.", result: "Private pipeline tracker built for pre-seed and seed femtech founders.", cta: "Open Tracker", href: "https://womenshealthfundraisingtracker.lovable.app/", external: true },
-                  { micro: "Market Intelligence", title: "The Global Femtech Directory", body: "Explore 887+ innovative companies transforming women's health across 27 categories — from fertility to precision medicine.", result: "Searchable directory of femtech companies, investors, and resources worldwide.", cta: "Explore Directory", href: "https://femtechdb.com/", external: true },
+                  { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false, gated: true },
+                  { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false, gated: true },
+                  { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker", external: false, gated: true },
+                  { micro: "Fundraising Pipeline", title: "Women's Health Fundraising Tracker", body: "Track your investor pipeline, get femtech-specific fit scores, and manage warm intros — all private and browser-based.", result: "Private pipeline tracker built for pre-seed and seed femtech founders.", cta: "Open Tracker", href: "https://womenshealthfundraisingtracker.lovable.app/", external: true, gated: false },
+                  { micro: "Market Intelligence", title: "The Global Femtech Directory", body: "Explore 887+ innovative companies transforming women's health across 27 categories — from fertility to precision medicine.", result: "Searchable directory of femtech companies, investors, and resources worldwide.", cta: "Explore Directory", href: "https://femtechdb.com/", external: true, gated: false },
                 ].map((card, index) => (
                   <div key={index} className={`group relative transition-all duration-700 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
                     style={{ transitionDelay: `${index * 150 + 400}ms` }}>
@@ -388,7 +400,17 @@ const ForWomensHealth = () => {
                           <p className="text-sm font-inter font-bold tracking-wider uppercase" style={{
                             color: '#F3DA73', letterSpacing: '0.1em', textShadow: '0 2px 4px rgba(0,0,0,0.2)'
                           }}>{card.micro}</p>
-                          {card.external && <ExternalLink className="h-4 w-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />}
+                          <div className="flex items-center gap-2">
+                            {card.gated && (
+                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-inter font-bold tracking-wider uppercase" style={{
+                                background: 'rgba(243,218,115,0.2)',
+                                color: '#F3DA73',
+                                border: '1px solid rgba(243,218,115,0.4)',
+                                letterSpacing: '0.08em',
+                              }}>Free Access</span>
+                            )}
+                            {card.external && <ExternalLink className="h-4 w-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />}
+                          </div>
                         </div>
                         <h3 className="text-xl sm:text-2xl font-playfair font-bold mb-4" style={{
                           color: 'rgba(255,255,255,0.98)', letterSpacing: '-0.01em', lineHeight: '1.3', textShadow: '0 2px 8px rgba(0,0,0,0.15)'
@@ -400,7 +422,7 @@ const ForWomensHealth = () => {
                           <p className="text-sm font-inter font-semibold mb-5" style={{ color: 'rgba(255,255,255,0.9)' }}>
                             <span style={{ color: '#F3DA73', fontWeight: 700 }}>What you get:</span>{' '}{card.result}
                           </p>
-                          <Button onClick={() => card.external ? window.open(card.href, '_blank') : window.location.href = card.href}
+                          <Button onClick={() => handleToolClick(card)}
                             className="w-full text-base rounded-lg group/btn transition-all duration-300 font-semibold py-5"
                             style={{
                               background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
@@ -558,8 +580,53 @@ const ForWomensHealth = () => {
           </div>
         </section>
 
+        {/* ===== BOTTOM CTA BANNER ===== */}
+        <section className="px-4 sm:px-6 relative" style={{
+          paddingTop: '40px', paddingBottom: '40px',
+          background: '#0A1628',
+          borderTop: '3px solid #F3DA73',
+        }}>
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+              <p className="font-playfair text-lg sm:text-xl md:text-2xl font-bold text-white mb-1" style={{ lineHeight: '1.3' }}>
+                Not sure which tool to start with?
+              </p>
+              <p className="font-inter text-sm sm:text-base text-white/60">
+                Book a free 15-min call — we'll tell you exactly where your biggest gap is.
+              </p>
+            </div>
+            <Button
+              onClick={handleMeet}
+              className="text-base font-semibold rounded-lg px-8 py-5 border group flex-shrink-0 transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+              style={{
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                color: '#2A3B4F',
+                borderColor: 'rgba(255,255,255,0.25)',
+                boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                backdropFilter: 'blur(8px)',
+              }}
+            >
+              Book the Call
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
+          </div>
+        </section>
+
         <BottomVideo />
         <StickyCTA />
+
+        {/* Email Gate Modal */}
+        {gateModal && (
+          <EmailGateModal
+            toolName={gateModal.toolName}
+            onUnlocked={() => {
+              const href = gateModal.href;
+              setGateModal(null);
+              window.location.href = href;
+            }}
+            onClose={() => setGateModal(null)}
+          />
+        )}
       </main>
     </>
   );

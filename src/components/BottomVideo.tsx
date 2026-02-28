@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import backtableIcon from "@/assets/backtable-obgyn-icon.png";
+import drNicolePhoto from "@/assets/dr-nicole-faulkner.png";
 
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -148,7 +149,22 @@ const BottomVideo = () => {
               style={{ background: 'rgba(243,218,115,0.3)' }}
             />
 
-            <div className="text-center">
+            <div className="text-center flex flex-col items-center">
+              <div
+                className="w-28 h-28 rounded-full overflow-hidden mb-3"
+                style={{
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.3), 0 2px 12px rgba(243,218,115,0.15), inset 0 1px 0 rgba(255,255,255,0.2)',
+                  border: '2px solid rgba(255,255,255,0.2)',
+                  backdropFilter: 'blur(8px)',
+                }}
+              >
+                <img
+                  src={drNicolePhoto}
+                  alt="Dr. Nicole Faulkner, Chief Clinical Officer"
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                />
+              </div>
               <p className="text-xl font-playfair font-bold text-white mb-1">
                 Dr. Nicole Faulkner
               </p>

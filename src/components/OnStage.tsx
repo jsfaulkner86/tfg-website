@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import whisPanel from "@/assets/whis-boston-panel.png";
+import whisLogo from "@/assets/whis-logo.png";
 
 const OnStage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +36,7 @@ const OnStage = () => {
       />
 
       <div className="max-w-5xl mx-auto relative z-10">
-        {/* Label */}
+        {/* Label + WHIS Logo */}
         <div
           className={`text-center mb-10 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -52,11 +53,28 @@ const OnStage = () => {
             On Stage
           </p>
           <h2
-            className="font-playfair font-bold text-white text-3xl sm:text-4xl md:text-5xl"
+            className="font-playfair font-bold text-white text-3xl sm:text-4xl md:text-5xl mb-6"
             style={{ lineHeight: 1.15 }}
           >
             Shaping the Conversation
           </h2>
+          {/* WHIS Logo */}
+          <a
+            href="https://www.whisusa.com/events/whisusa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transition-opacity duration-300 hover:opacity-80"
+          >
+            <img
+              src={whisLogo}
+              alt="Women's Health Innovation Summit (WHIS)"
+              className="h-12 md:h-16 w-auto mx-auto rounded-md"
+              loading="lazy"
+              style={{
+                filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.3))",
+              }}
+            />
+          </a>
         </div>
 
         {/* Image */}
@@ -90,7 +108,15 @@ const OnStage = () => {
               lineHeight: 1.7,
             }}
           >
-            <span style={{ color: "hsl(45, 62%, 56%)" }}>WHIS Boston</span>{" "}
+            <a
+              href="https://www.whisusa.com/events/whisusa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity duration-300 hover:opacity-80 underline underline-offset-2"
+              style={{ color: "hsl(45, 62%, 56%)" }}
+            >
+              WHIS Boston
+            </a>{" "}
             — Dr. Nicole Faulkner on the{" "}
             <em>Emerging Technologies for Maternal Health Management</em> panel
             with leaders from Carrot Fertility, Axia Women's Health, and Marani

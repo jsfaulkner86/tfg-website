@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Brain, Cpu, Users, Shield, Lightbulb, Handshake } from "lucide-react";
 import BottomVideo from "@/components/BottomVideo";
+import StickyCTA from "@/components/StickyCTA";
 import { Link } from "react-router-dom";
 
 const handleBooking = () => {
@@ -138,6 +139,15 @@ const DualBrain = () =>
 
 /* ───────────────────────── 3. ENGAGEMENT MODELS ───────────────────────── */
 const engagements = [
+{
+  numeral: '0',
+  name: 'Clinical Clarity Session',
+  tagline: '90-Minute Diagnostic',
+  paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your 1–3 highest-risk failure points across clinical readiness &amp; governance, physician adoption, EHR integration &amp; training, and sales/CSM &amp; deployment — before your pilot, your deal, or your investor meeting depends on it.',
+  cta: 'Book a Clinical Clarity Session',
+  href: '/clinical-clarity-session',
+  external: false
+},
 {
   numeral: 'I',
   name: 'Sprint Starter',
@@ -397,6 +407,7 @@ const Services = () =>
     <Partnership />
     <IsThisYou />
     <BottomVideo />
+    <StickyCTA />
   </div>;
 
 

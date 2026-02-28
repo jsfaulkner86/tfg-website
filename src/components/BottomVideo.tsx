@@ -97,6 +97,25 @@ const BottomVideo = () => {
           <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
         </Button>
 
+        {/* Clinical Clarity Session entry point */}
+        <div className="mt-8 max-w-xl mx-auto text-center">
+          <div className="h-px w-16 mx-auto mb-6" style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }} />
+          <p className="text-sm font-inter font-semibold tracking-[0.12em] uppercase mb-2" style={{ color: '#F3DA73' }}>
+            Start with a Clinical Clarity Session
+          </p>
+          <p className="text-sm font-inter mb-4" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            A focused 90-minute diagnostic with a practicing OB/GYN and healthcare IT architect to find what's standing between your product and real adoption.
+          </p>
+          <a
+            href="/clinical-clarity-session"
+            className="inline-flex items-center gap-2 text-sm font-inter font-semibold transition-all duration-300 hover:gap-3"
+            style={{ color: '#F3DA73' }}
+          >
+            Learn More
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+
         {/* Contact info */}
         <div className="mt-10 space-y-6">
           <div
@@ -147,8 +166,17 @@ const BottomVideo = () => {
             </div>
           </div>
 
+          {/* Footer links */}
+          <div className="flex items-center justify-center gap-4 mt-6 flex-wrap">
+            <a href="/clinical-clarity-session" className="text-xs font-inter transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.5)' }}>Clinical Clarity Session</a>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>·</span>
+            <a href="/services" className="text-xs font-inter transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.5)' }}>Services</a>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>·</span>
+            <a href="/for-womens-health" className="text-xs font-inter transition-colors hover:text-white" style={{ color: 'rgba(255,255,255,0.5)' }}>For Women's Health</a>
+          </div>
+
           {/* Social channels */}
-          <div className="flex items-center justify-center gap-6 mt-8">
+          <div className="flex items-center justify-center gap-6 mt-6">
             <a
               href="https://www.linkedin.com/company/faulkner-group/"
               target="_blank"

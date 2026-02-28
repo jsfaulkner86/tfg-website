@@ -298,11 +298,10 @@ const ForWomensHealth = () => {
                     "Most women's health startups don't fail because of bad tech. They fail because the system is complicated. We know the system."
                   </blockquote>
                   <Button onClick={handleMeet}
-                    className="text-base sm:text-lg rounded-lg group/btn transition-all duration-300 font-semibold px-8 py-6 relative z-10"
+                    className="text-base font-semibold rounded-md px-8 py-5 border-0 group/btn transition-all duration-300 relative z-10"
                     style={{
-                      background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
-                      boxShadow: '0 8px 24px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)',
-                      border: '2px solid rgba(255,255,255,0.3)'
+                      backgroundColor: '#F3DA73',
+                      color: '#5882A1',
                     }}>
                     Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                   </Button>

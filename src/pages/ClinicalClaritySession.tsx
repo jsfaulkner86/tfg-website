@@ -424,16 +424,14 @@ const ClinicalClaritySession = () => {
               <div>
                 <Button
                   onClick={handleBooking}
-                  className="text-lg px-10 py-7 rounded-xl group transition-all duration-300 font-semibold"
+                  className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
                   style={{
-                    background: 'linear-gradient(135deg, #5A7D99 0%, #4A6B85 100%)',
-                    color: '#FFFFFF',
-                    boxShadow: '0 8px 32px rgba(90,125,153,0.3)',
-                    border: '2px solid rgba(243,218,115,0.4)',
+                    backgroundColor: '#F3DA73',
+                    color: '#5882A1',
                   }}
                 >
                   Book Your Clinical Clarity Session
-                  <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </div>
             </div>

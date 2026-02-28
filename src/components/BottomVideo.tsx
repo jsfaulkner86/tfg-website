@@ -152,7 +152,7 @@ const BottomVideo = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center transition-all duration-300 hover:opacity-80"
                   >
-                    <img src={panovaLogo} alt="Panova Health" className="h-[18px] w-auto" />
+                    <img src={panovaLogo} alt="Panova Health" className="h-[22px] w-auto brightness-0 invert" style={{ opacity: 0.9 }} />
                   </a>
                 </div>
               </div>

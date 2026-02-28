@@ -79,61 +79,74 @@ const ClinicalClaritySession = () => {
       />
       <Header />
       <main className="overflow-x-hidden">
-        {/* Hero */}
-        <section
-          className="relative px-4 sm:px-6 overflow-hidden"
-          style={{
-            paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))',
-            paddingBottom: '60px',
-            background: 'linear-gradient(180deg, #3A5A73 0%, #5A7D99 100%)',
-          }}
-        >
+        {/* Hero — matches homepage hero pattern */}
+        <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+          {/* Background Image */}
+          <img
+            src="/hero-boardroom.jpg"
+            alt="Healthcare leadership team collaboration"
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
+          {/* Dark overlay */}
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] pointer-events-none"
-            style={{
-              background: 'radial-gradient(ellipse at center, rgba(243,218,115,0.1) 0%, transparent 70%)',
-              filter: 'blur(80px)',
-            }}
+            className="absolute inset-0"
+            style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
 
-          <div className="max-w-4xl mx-auto relative z-10 text-center">
-            <p
-              className="text-xs sm:text-sm font-inter font-semibold tracking-[0.15em] uppercase mb-4"
-              style={{ color: 'rgba(243,218,115,0.9)' }}
-            >
-              90-Minute Diagnostic
-            </p>
-            <h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 sm:mb-8"
-              style={{
-                color: '#FFFFFF',
-                letterSpacing: '-0.03em',
-                lineHeight: '1.15',
-              }}
-            >
-              Find the Failure Points<br />Before Your Pilot Does
-            </h1>
+          {/* Content */}
+          <div className="relative z-10 flex items-center justify-center px-6 text-center">
+            <div className="max-w-[820px]">
+              {/* Small caps label */}
+              <p
+                className="mb-6 font-inter font-medium uppercase"
+                style={{
+                  fontSize: '13px',
+                  letterSpacing: '0.2em',
+                  color: 'hsl(45, 62%, 56%)',
+                }}
+              >
+                90-Minute Diagnostic
+              </p>
 
-            <p
-              className="text-base sm:text-lg md:text-xl font-inter font-light mb-8 sm:mb-10 max-w-3xl mx-auto px-2"
-              style={{ color: 'rgba(255,255,255,0.9)', lineHeight: '1.7' }}
-            >
-              A practicing OB/GYN and an enterprise healthcare IT architect diagnose your product's risks across clinical readiness, physician adoption, EHR integration, and deployment, in one session, before your next pilot, renewal, or investor conversation depends on it.
-            </p>
+              {/* Headline */}
+              <h1
+                className="mb-6 font-display font-bold text-white"
+                style={{
+                  fontSize: 'clamp(28px, 3.8vw, 52px)',
+                  lineHeight: 1.1,
+                }}
+              >
+                <span className="block md:whitespace-nowrap">Find the Failure Points</span>
+                <span className="block md:whitespace-nowrap">Before Your Pilot Does</span>
+              </h1>
 
-            <Button
-              onClick={handleBooking}
-              className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 rounded-xl group transition-all duration-300 font-semibold w-full sm:w-auto"
-              style={{
-                background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)',
-                color: '#1A2A3A',
-                boxShadow: '0 8px 32px rgba(243,218,115,0.4), 0 4px 12px rgba(0,0,0,0.2)',
-                border: '2px solid rgba(255,255,255,0.2)',
-              }}
-            >
-              Book Your Clinical Clarity Session
-              <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-300 group-hover:translate-x-2" />
-            </Button>
+              {/* Subheadline */}
+              <p
+                className="mb-10 font-inter"
+                style={{
+                  fontSize: 'clamp(16px, 1.6vw, 20px)',
+                  color: 'rgba(255, 255, 255, 0.85)',
+                  textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                }}
+              >
+                A practicing OB/GYN and an enterprise healthcare IT architect diagnose your product's risks across clinical readiness, physician adoption, EHR integration, and deployment—in one session.
+              </p>
+
+              {/* CTA */}
+              <Button
+                onClick={handleBooking}
+                className="text-base font-semibold rounded-md px-8 py-5 border-0 group transition-all duration-300"
+                style={{
+                  backgroundColor: '#F3DA73',
+                  color: '#5882A1',
+                }}
+              >
+                Book Your Clinical Clarity Session
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </div>
           </div>
         </section>
 

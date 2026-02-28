@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import backtableIcon from "@/assets/backtable-obgyn-icon.png";
 import drNicolePhoto from "@/assets/dr-nicole-faulkner.png";
+import panovaLogo from "@/assets/panova-health-logo.png";
 
 const BottomVideo = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -135,15 +136,25 @@ const BottomVideo = () => {
                 <p className="text-base font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   CEO & Co-Founder, Healthcare IT Architect
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/johnathonfaulkner/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-3 text-sm font-inter transition-all duration-300 hover:opacity-80"
-                  style={{ color: '#F3DA73' }}
-                >
-                  <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
-                </a>
+                <div className="flex items-center justify-center gap-4 mt-3">
+                  <a
+                    href="https://www.linkedin.com/in/johnathonfaulkner/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                    style={{ color: '#F3DA73' }}
+                  >
+                    <LinkedInIcon size={16} color="#F3DA73" /> Connect
+                  </a>
+                  <a
+                    href="https://www.panovahealth.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center transition-all duration-300 hover:opacity-80"
+                  >
+                    <img src={panovaLogo} alt="Panova Health" className="h-[18px] w-auto" />
+                  </a>
+                </div>
               </div>
 
               <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }} />

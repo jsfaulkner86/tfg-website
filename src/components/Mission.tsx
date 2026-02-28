@@ -4,7 +4,7 @@ import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import backtableIcon from "@/assets/backtable-obgyn-icon.png";
 import henryFordLogo from "@/assets/henry-ford-health-logo.svg";
 import johnHeadshot from "@/assets/john-headshot.jpg";
-
+import panovaLogo from "@/assets/panova-health-logo.png";
 const Mission = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -224,15 +224,25 @@ const Mission = () => {
                   }}>
                   CEO & Healthcare IT Architect, Co-Founder
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/johnathonfaulkner/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
-                  style={{ color: '#F3DA73' }}
-                >
-                  <LinkedInIcon size={16} color="#F3DA73" /> Connect
-                </a>
+                <div className="flex items-center justify-center gap-3 mt-2">
+                  <a
+                    href="https://www.linkedin.com/in/johnathonfaulkner/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                    style={{ color: '#F3DA73' }}
+                  >
+                    <LinkedInIcon size={16} color="#F3DA73" /> Connect
+                  </a>
+                  <a
+                    href="https://www.panovahealth.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center transition-all duration-300 hover:opacity-80"
+                  >
+                    <img src={panovaLogo} alt="Panova Health" className="h-[16px] w-auto" />
+                  </a>
+                </div>
               </div>
 
               {/* Nicole's Portrait */}

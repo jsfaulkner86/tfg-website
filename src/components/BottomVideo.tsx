@@ -127,39 +127,39 @@ const BottomVideo = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             {/* Left: founder info */}
-            <div className="flex flex-col items-center gap-8 sm:gap-10">
+            <div className="flex flex-col items-center gap-10 sm:gap-12 py-4">
               <div className="text-center">
-                <p className="text-xl font-playfair font-bold text-white mb-1">
+                <p className="text-2xl sm:text-3xl font-playfair font-bold text-white mb-2">
                   John Faulkner
                 </p>
-                <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
+                <p className="text-base font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   CEO & Co-Founder, Healthcare IT Architect
                 </p>
                 <a
                   href="https://www.linkedin.com/in/johnathonfaulkner/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  className="inline-flex items-center gap-1.5 mt-3 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   style={{ color: '#F3DA73' }}
                 >
                   <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
                 </a>
               </div>
 
-              <div className="h-px w-12" style={{ background: 'rgba(243,218,115,0.3)' }} />
+              <div className="h-px w-16" style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }} />
 
               <div className="text-center">
-                <p className="text-xl font-playfair font-bold text-white mb-1">
+                <p className="text-2xl sm:text-3xl font-playfair font-bold text-white mb-2">
                   Dr. Nicole Faulkner
                 </p>
-                <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
+                <p className="text-base font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   Co-Founder, Chief Clinical Officer
                 </p>
                 <a
                   href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  className="inline-flex items-center gap-1.5 mt-3 text-sm font-inter transition-all duration-300 hover:opacity-80"
                   style={{ color: '#F3DA73' }}
                 >
                   <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn

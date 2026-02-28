@@ -147,7 +147,7 @@ const BottomVideo = () => {
                     <LinkedInIcon size={16} color="#F3DA73" /> Connect
                   </a>
                   <a
-                    href="https://www.panovahealth.com"
+                    href="https://panova.ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center rounded-md border px-2 py-1 transition-all duration-300 hover:opacity-90"

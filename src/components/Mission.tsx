@@ -235,7 +235,7 @@ const Mission = () => {
                     <LinkedInIcon size={16} color="#F3DA73" /> Connect
                   </a>
                   <a
-                    href="https://www.panovahealth.com"
+                    href="https://panova.ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center transition-all duration-300 hover:opacity-80"

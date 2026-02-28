@@ -101,7 +101,7 @@ const ClinicalClaritySession = () => {
               className="text-xs sm:text-sm font-inter font-semibold tracking-[0.15em] uppercase mb-4"
               style={{ color: 'rgba(243,218,115,0.9)' }}
             >
-              90-Minute Diagnostic · $1,500
+              90-Minute Diagnostic
             </p>
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 sm:mb-8"

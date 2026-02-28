@@ -125,61 +125,63 @@ const BottomVideo = () => {
             style={{ background: 'linear-gradient(90deg, transparent, rgba(243,218,115,0.4), transparent)' }}
           />
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
-            <div className="text-center">
-              <p className="text-xl font-playfair font-bold text-white mb-1">
-                John Faulkner
-              </p>
-              <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                CEO & Co-Founder, Healthcare IT Architect
-              </p>
-              <a
-                href="https://www.linkedin.com/in/johnathonfaulkner/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
-                style={{ color: '#F3DA73' }}
-              >
-                <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
-              </a>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+            {/* Left: founder info */}
+            <div className="flex flex-col items-center gap-8 sm:gap-10">
+              <div className="text-center">
+                <p className="text-xl font-playfair font-bold text-white mb-1">
+                  John Faulkner
+                </p>
+                <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
+                  CEO & Co-Founder, Healthcare IT Architect
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/johnathonfaulkner/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  style={{ color: '#F3DA73' }}
+                >
+                  <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
+                </a>
+              </div>
+
+              <div className="h-px w-12" style={{ background: 'rgba(243,218,115,0.3)' }} />
+
+              <div className="text-center">
+                <p className="text-xl font-playfair font-bold text-white mb-1">
+                  Dr. Nicole Faulkner
+                </p>
+                <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
+                  Co-Founder, Chief Clinical Officer
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
+                  style={{ color: '#F3DA73' }}
+                >
+                  <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
+                </a>
+              </div>
             </div>
 
+            {/* Right: Dr. Nicole full photo */}
             <div
-              className="hidden sm:block w-px h-12"
-              style={{ background: 'rgba(243,218,115,0.3)' }}
-            />
-
-            <div className="text-center flex flex-col items-center">
-              <div
-                className="w-28 h-28 rounded-full overflow-hidden mb-3"
-                style={{
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.3), 0 2px 12px rgba(243,218,115,0.15), inset 0 1px 0 rgba(255,255,255,0.2)',
-                  border: '2px solid rgba(255,255,255,0.2)',
-                  backdropFilter: 'blur(8px)',
-                }}
-              >
-                <img
-                  src={drNicolePhoto}
-                  alt="Dr. Nicole Faulkner, Chief Clinical Officer"
-                  className="w-full h-full object-cover object-top"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-xl font-playfair font-bold text-white mb-1">
-                Dr. Nicole Faulkner
-              </p>
-              <p className="text-sm font-inter" style={{ color: 'rgba(255,255,255,0.65)' }}>
-                Co-Founder, Chief Clinical Officer
-              </p>
-              <a
-                href="https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-2 text-sm font-inter transition-all duration-300 hover:opacity-80"
-                style={{ color: '#F3DA73' }}
-              >
-                <LinkedInIcon size={16} color="#F3DA73" /> Connect on LinkedIn
-              </a>
+              className="w-[260px] sm:w-[300px] md:w-[320px] rounded-xl overflow-hidden flex-shrink-0"
+              style={{
+                boxShadow: '0 12px 40px rgba(0,0,0,0.35), 0 4px 16px rgba(243,218,115,0.1), inset 0 1px 0 rgba(255,255,255,0.15)',
+                border: '1px solid rgba(255,255,255,0.15)',
+                backdropFilter: 'blur(8px)',
+              }}
+            >
+              <img
+                src={drNicolePhoto}
+                alt="Dr. Nicole Faulkner, Chief Clinical Officer at Henry Ford Health"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 

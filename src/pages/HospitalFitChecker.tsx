@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, ArrowLeft, Building2, FlaskConical, UserCheck, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
 
 const questions = [
   { label: "Company Stage", question: "What is your current company stage?", options: ["Pre-seed", "Seed", "Series A", "Series B+"] },
@@ -48,6 +49,11 @@ const HospitalFitChecker = () => {
   if (showResults) {
     return (
       <>
+        <SEOHead
+          title="Hospital Partnership Fit Checker | Faulkner Group"
+          description="Free 6-question assessment to determine which type of health system partnership fits your women's health tech company's current stage."
+          canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/hospital-fit-checker"
+        />
         <Header />
         <main className="overflow-x-hidden">
           <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
@@ -97,6 +103,11 @@ const HospitalFitChecker = () => {
 
   return (
     <>
+      <SEOHead
+        title="Hospital Partnership Fit Checker | Faulkner Group"
+        description="Free 6-question assessment to determine which type of health system partnership fits your women's health tech company's current stage."
+        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/hospital-fit-checker"
+      />
       <Header />
       <main className="overflow-x-hidden">
         <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>

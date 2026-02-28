@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, ArrowLeft, TrendingUp, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import SEOHead from "@/components/SEOHead";
 
 const steps = [
   {
@@ -70,6 +71,11 @@ const FundingBenchmarker = () => {
   if (showResults) {
     return (
       <>
+        <SEOHead
+          title="Femtech Funding Gap Benchmarker | Faulkner Group"
+          description="Free benchmarking tool for women's health tech founders. Compare your raise to femtech peers by stage, team composition, and focus area."
+          canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/funding-benchmarker"
+        />
         <Header />
         <main className="overflow-x-hidden">
           <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>
@@ -147,6 +153,11 @@ const FundingBenchmarker = () => {
 
   return (
     <>
+      <SEOHead
+        title="Femtech Funding Gap Benchmarker | Faulkner Group"
+        description="Free benchmarking tool for women's health tech founders. Compare your raise to femtech peers by stage, team composition, and focus area."
+        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/funding-benchmarker"
+      />
       <Header />
       <main className="overflow-x-hidden">
         <section className="min-h-screen pb-20 px-4 sm:px-6 md:px-10 relative overflow-hidden bg-gradient-to-br from-primary via-dark-gray to-primary" style={{ paddingTop: 'calc(180px + env(safe-area-inset-top, 0px))' }}>

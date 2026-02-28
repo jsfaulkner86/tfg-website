@@ -356,12 +356,39 @@ const servicesFaqSchema = {
 
 };
 
+const serviceSchemas = [
+  servicesFaqSchema,
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Sprint Starter - Healthcare Advisory",
+    provider: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "48-hour focused diagnostic across product workflows, go-to-market operations, and clinical positioning with a clear roadmap.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Sprint Pro - Healthcare Advisory",
+    provider: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "Full strategy and execution engagement including EHR integration, clinical workflow design, and physician adoption strategy for women's health tech platforms.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Sprint Elite - Healthcare Advisory",
+    provider: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "End-to-end enterprise engagement from strategy through launch with AI readiness assessment and intelligent workflow integration for women's health technology.",
+  },
+];
+
 const Services = () =>
 <div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
     <SEOHead
-    title="Women's Health Tech Advisory Services | The Faulkner Group"
-    description="The Faulkner Group offers boutique advisory services for women's health tech founders. From 30-day diagnostics to enterprise partnerships, we align strategy, EHR integration, and clinical expertise to help your platform scale."
-    canonical="https://thrive-beacon-studio.lovable.app/services" />
+    title="Women's Health Tech Advisory Services | Faulkner Group"
+    description="Boutique advisory for women's health tech founders. From 48-hour diagnostics to enterprise partnerships with EHR integration and clinical expertise."
+    canonical="https://thrive-beacon-studio.lovable.app/services"
+    jsonLd={serviceSchemas}
+    />
 
     <Header />
     <ServicesHero />
@@ -370,10 +397,6 @@ const Services = () =>
     <Partnership />
     <IsThisYou />
     <BottomVideo />
-    <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesFaqSchema) }} />
-
   </div>;
 
 

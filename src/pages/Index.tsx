@@ -11,6 +11,7 @@ const Approach = lazy(() => import("@/components/Approach"));
 const Transformation = lazy(() => import("@/components/Transformation"));
 
 const Results = lazy(() => import("@/components/Results"));
+const OnStage = lazy(() => import("@/components/OnStage"));
 const FAQ = lazy(() => import("@/components/FAQ"));
 const BottomVideo = lazy(() => import("@/components/BottomVideo"));
 const Partners = lazy(() => import("@/components/Partners"));
@@ -70,6 +71,7 @@ const Index = () => {
           <Transformation />
           
           <Results />
+          <OnStage />
           <FAQ />
           <BottomVideo />
           <Partners />

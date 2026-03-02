@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Brain, Cpu, Users, Shield, Lightbulb, Handshake } from "lucide-react";
 import BottomVideo from "@/components/BottomVideo";
+import OnStage from "@/components/OnStage";
 import StickyCTA from "@/components/StickyCTA";
 import { Link } from "react-router-dom";
 
@@ -409,6 +410,7 @@ const Services = () =>
     <ServicesHero />
     <DualBrain />
     <EngagementModels />
+    <OnStage />
     <Partnership />
     <IsThisYou />
     <BottomVideo />

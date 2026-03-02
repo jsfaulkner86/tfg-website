@@ -65,13 +65,13 @@ const Index = () => {
       <main className="overflow-x-hidden">
         <Hero />
         <Suspense fallback={<div className="min-h-screen" />}>
+          <OnStage />
           <Mission />
           <Problem />
           <Approach />
           <Transformation />
           
           <Results />
-          <OnStage />
           <FAQ />
           <BottomVideo />
           <Partners />

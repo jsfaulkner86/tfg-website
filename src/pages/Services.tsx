@@ -146,40 +146,31 @@ const DualBrain = () =>
 /* ───────────────────────── 3. ENGAGEMENT MODELS ───────────────────────── */
 const engagements = [
 {
-  numeral: '0',
+  numeral: 'I',
   name: 'Clinical Clarity Session',
   tagline: '90-Minute Diagnostic',
-  paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your 1–3 highest-risk failure points across clinical readiness &amp; governance, physician adoption, EHR integration &amp; training, and sales/CSM &amp; deployment — before your pilot, your deal, or your investor meeting depends on it.',
+  paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your highest-risk failure points across clinical readiness and governance, physician adoption, EHR integration and training, and sales/CSM and deployment before your pilot, your deal, or your investor meeting depends on it.',
   cta: 'Book a Clinical Clarity Session',
   href: '/clinical-clarity-session',
   external: false
 },
 {
-  numeral: 'I',
-  name: 'Sprint Starter',
-  tagline: 'Clarity in 48 Hours',
-  paragraph: 'For founders who know something is not working but are not sure where to start. We conduct a focused 48-hour diagnostic across your product workflows, go-to-market operations, and clinical positioning, and deliver a single clear roadmap your team can act on immediately. Engagement includes a 90-minute strategy session with both co-founders.',
-  cta: 'Book Your Sprint Starter',
-  href: 'https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session',
-  external: true
-},
-{
   numeral: 'II',
-  name: 'Sprint Pro',
-  tagline: 'Build. Optimize. Operate.',
-  paragraph: 'For women\'s health tech companies in active build or optimization phases. We embed across your strategy and execution layers, leading EHR integration, clinical workflow design, and physician adoption strategy across your <a href="/for-womens-health" class="underline underline-offset-2 hover:opacity-80 transition-opacity" style="color: hsl(45, 62%, 46%)">women\'s health technology platform</a> and clinical partnerships. Includes clinical collaboration with our board-certified OB/GYN advisor and weekly advisory sessions throughout the engagement.',
-  cta: 'Schedule a Discovery Call',
-  href: 'https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner',
-  external: true
+  name: 'Clinical Readiness Assessment',
+  tagline: '14-Day Deep Engagement',
+  paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same two practitioners, deeper scope, comprehensive de-risking before your go-live date.',
+  cta: 'Learn About the Assessment',
+  href: '/clinical-readiness-assessment',
+  external: false
 },
 {
   numeral: 'III',
-  name: 'Sprint Elite',
-  tagline: 'End-to-End. Enterprise-Grade.',
-  paragraph: 'For women\'s health tech companies moving from pilot to enterprise deployment and ready to scale with confidence. We lead from strategy through launch, bringing deep EHR integration expertise, AI readiness assessment, and intelligent workflow integration built for women\'s health technology platforms. Both co-founders are engaged directly and continuously throughout.',
-  cta: 'Let\'s Talk',
-  href: 'https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner',
-  external: true
+  name: 'Strategic Advisory Partnership',
+  tagline: 'Equity-Based. Long-Term.',
+  paragraph: 'A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships.',
+  cta: 'Explore the Partnership',
+  href: '/advisory-partnership',
+  external: false
 }];
 
 
@@ -358,7 +349,7 @@ const servicesFaqSchema = {
     "name": "What advisory services does The Faulkner Group offer?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The Faulkner Group offers three engagement models: Sprint Starter, a 30-day diagnostic and roadmap engagement; Sprint Pro, a full strategy and execution engagement including EHR integration and clinical collaboration; and Sprint Elite, an end-to-end enterprise engagement from strategy through launch. We also offer a Partnership model for long-term embedded advisory relationships."
+      "text": "The Faulkner Group offers three engagement models: the Clinical Clarity Session, a 90-minute diagnostic that surfaces your highest-risk failure points; the Clinical Readiness Assessment, a structured 14-day deep engagement before your enterprise pilot goes live; and the Strategic Advisory Partnership, an equity-based long-term advisory relationship for early-stage companies. We also offer a Partnership model for companies who want us embedded in their work continuously."
     }
   },
   {
@@ -403,23 +394,23 @@ const serviceSchemas = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Sprint Starter - Healthcare Advisory",
+    name: "Clinical Clarity Session",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "48-hour focused diagnostic across product workflows, go-to-market operations, and clinical positioning with a clear roadmap.",
+    description: "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Sprint Pro - Healthcare Advisory",
+    name: "Clinical Readiness Assessment",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "Full strategy and execution engagement including EHR integration, clinical workflow design, and physician adoption strategy for women's health tech platforms.",
+    description: "A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Sprint Elite - Healthcare Advisory",
+    name: "Strategic Advisory Partnership",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "End-to-end enterprise engagement from strategy through launch with AI readiness assessment and intelligent workflow integration for women's health technology.",
+    description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
   },
 ];
 

@@ -50,17 +50,17 @@ const faqData = [
   {
     question: "What is the Operating Partner?",
     answer:
-      "An ongoing clinical and systems operating partnership that spans the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration.",
+      "An ongoing clinical and systems operating partnership that spans the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Our team embedded in your organization for the duration.",
   },
   {
     question: "Who runs this engagement?",
     answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic (EHR) - Women's Health. Both are embedded in your work, not consulting from the outside.",
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic (EHR) - Women's Health. Our team is embedded in your work, not consulting from the outside.",
   },
   {
     question: "How many partners do you take at a time?",
     answer:
-      "Two to four. That is not a sales line. It is how we protect the quality of what we deliver. If we are at capacity, we will tell you directly and help you find the right timing.",
+      "A small number. That is not a sales line. It is how we protect the quality of what we deliver. If we are at capacity, we will tell you directly and help you find the right timing.",
   },
   {
     question: "Do I need to complete a Clinical Clarity Session first?",
@@ -75,7 +75,7 @@ const faqData = [
   {
     question: "How is this different from a fractional CMO or advisor?",
     answer:
-      "Most fractional executives advise from the outside. We operate from the inside, joining sales calls, auditing workflows, managing governance documentation, and providing direct escalation support when adoption stalls or a safety question surfaces. Two practitioners, not one consultant.",
+      "Most fractional executives advise from the outside. We operate from the inside, joining sales calls, auditing workflows, managing governance documentation, and providing direct escalation support when adoption stalls or a safety question surfaces. A dedicated team, not one consultant.",
   },
 ];
 
@@ -208,13 +208,13 @@ const OperatingPartnerRetainer = () => {
               className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. Two practitioners who stay in it with you, a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
+              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. A team that stays in it with you, led by a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
             </p>
             <p
               className="text-base font-inter text-center mb-12 sm:mb-16"
               style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}
             >
-              We take two to four partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
+              We take a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
             </p>
 
             {/* What We Do */}
@@ -284,7 +284,7 @@ const OperatingPartnerRetainer = () => {
                   "Post-raise companies with signed enterprise pilots or health system contracts where a failed deployment is measured in relationship capital and investor confidence, not just dollars",
                   "Companies in OB/GYN, maternal health, reproductive care, or women's digital health where clinical trust, documentation accuracy, and physician adoption are non-negotiable",
                   "Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment, or can demonstrate equivalent preparation, because we do not step into active pilots that have not been de-risked",
-                  "Leadership teams who want two practitioners embedded in their corner for the duration, not a vendor relationship, an operating one",
+                  "Leadership teams who want our team embedded in their corner for the duration, not a vendor relationship, an operating one",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
@@ -332,7 +332,7 @@ const OperatingPartnerRetainer = () => {
                 The Offer Ladder
               </h3>
               <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                The <a href="/clinical-clarity-session" className="underline" style={{ color: '#718DA9' }}>Clinical Clarity Session</a> is where fast triage happens. The <a href="/clinical-readiness-assessment" className="underline" style={{ color: '#718DA9' }}>Clinical Readiness Assessment</a> is comprehensive de-risking before go-live. The Operating Partner is what you move into when the stakes are too high to navigate alone and you need two practitioners embedded in your organization for the duration. Same two people. Deeper commitment. Built for companies where getting this right is not optional.
+                The <a href="/clinical-clarity-session" className="underline" style={{ color: '#718DA9' }}>Clinical Clarity Session</a> is where fast triage happens. The <a href="/clinical-readiness-assessment" className="underline" style={{ color: '#718DA9' }}>Clinical Readiness Assessment</a> is comprehensive de-risking before go-live. The Operating Partner is what you move into when the stakes are too high to navigate alone and you need our team embedded in your organization for the duration. Same people. Deeper commitment. Built for companies where getting this right is not optional.
               </p>
             </div>
 

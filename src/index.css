@@ -6,6 +6,20 @@
 All colors MUST be HSL.
 */
 
+  p {
+    text-wrap: balance;
+    widows: 4;
+    orphans: 4;
+    text-align: left;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
 @layer base {
   :root {
     --background: 0 0% 100%;

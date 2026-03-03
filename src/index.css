@@ -10,10 +10,10 @@ All colors MUST be HSL.
     text-wrap: balance;
     widows: 4;
     orphans: 4;
-    text-align: left;
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .text-center p {
+    text-align: center;
   }
 
   h1, h2, h3 {

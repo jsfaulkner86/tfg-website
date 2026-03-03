@@ -372,8 +372,34 @@ const servicesFaqSchema = {
 
 };
 
+const johnFaulknerSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "John Faulkner",
+  alternateName: "Johnathon Faulkner",
+  jobTitle: "CEO & Healthcare IT Architect",
+  description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption.",
+  url: "https://thrive-beacon-studio.lovable.app",
+  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/"],
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+};
+
+const nicholeFaulknerSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dr. Nicole Faulkner",
+  alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
+  jobTitle: "Chief Clinical Officer",
+  description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at WHIS.",
+  url: "https://thrive-beacon-studio.lovable.app",
+  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+};
+
 const serviceSchemas = [
   servicesFaqSchema,
+  johnFaulknerSchema,
+  nicholeFaulknerSchema,
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -400,8 +426,8 @@ const serviceSchemas = [
 const Services = () =>
 <div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
     <SEOHead
-    title="Women's Health Tech Advisory Services | Faulkner Group"
-    description="Boutique advisory for women's health tech founders. From 48-hour diagnostics to enterprise partnerships with EHR integration and clinical expertise."
+    title="Women's Health Tech Advisory Services | John Faulkner & Dr. Nicole Faulkner"
+    description="John Faulkner and Dr. Nicole Faulkner offer boutique women's health tech advisory — from 48-hour diagnostics to enterprise partnerships with EHR integration and clinical expertise."
     canonical="https://thrive-beacon-studio.lovable.app/services"
     jsonLd={serviceSchemas}
     />

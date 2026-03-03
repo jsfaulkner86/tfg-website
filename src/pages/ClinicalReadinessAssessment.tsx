@@ -65,7 +65,7 @@ const faqData = [
 
 const ClinicalReadinessAssessment = () => {
   const handleBooking = () => {
-    window.open('https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session', '_blank');
+    window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
 
   return (

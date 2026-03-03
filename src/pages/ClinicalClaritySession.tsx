@@ -21,8 +21,7 @@ const sessionSchema = {
     "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
   offers: {
     "@type": "Offer",
-    price: "1500",
-    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
   },
 };
 
@@ -73,7 +72,7 @@ const ClinicalClaritySession = () => {
     <>
       <SEOHead
         title="Clinical Clarity Session | The Faulkner Group"
-        description="90-minute diagnostic with a board-certified OB/GYN and Healthcare IT Architect. Identify your top clinical adoption risks for $1,500."
+        description="90-minute diagnostic with a board-certified OB/GYN and Healthcare IT Architect. Identify your top clinical adoption risks before your next pilot."
         canonical="https://thefaulknergroupadvisors.com/clinical-clarity-session"
         jsonLd={sessionSchema}
       />
@@ -337,7 +336,7 @@ const ClinicalClaritySession = () => {
               Time-boxed. No hidden upsell. Designed to plug directly into your ongoing sales, product, and fundraising work.
             </p>
 
-            {/* Pricing & Risk Framing */}
+            {/* Risk Framing */}
             <div
               className="p-8 rounded-2xl mb-16"
               style={{
@@ -349,11 +348,8 @@ const ClinicalClaritySession = () => {
                 className="text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
-                The Clinical Clarity Session Is $1,500
+                What You're Protecting
               </h3>
-              <p className="text-base font-inter text-center mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
-                Consider what you are protecting:
-              </p>
               <div className="space-y-3 max-w-2xl mx-auto mb-6">
                 {[
                   "A failed or stalled pilot costs 6 to 12 months and the credibility needed to win the next one.",
@@ -369,7 +365,7 @@ const ClinicalClaritySession = () => {
                 ))}
               </div>
               <p className="text-base font-inter text-center" style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}>
-                $1,500 buys you 90 minutes with a clinician and a systems architect who will tell you what is actually at risk, and what to do about it, before the stakes get higher.
+                90 minutes with a clinician and a systems architect who will tell you what is actually at risk, and what to do about it, before the stakes get higher.
               </p>
             </div>
 

@@ -111,7 +111,7 @@ const Header = () => {
                     href="/clinical-readiness-assessment" 
                     className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
                   >
-                    Clinical Readiness Assessment
+                    Clinical Readiness
                   </a>
                   <a 
                     href="/operating-partner-retainer" 
@@ -220,7 +220,7 @@ const Header = () => {
               onClick={handleNavClick}
               className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
-              Clinical Readiness Assessment
+              Clinical Readiness
             </a>
             <a 
               href="/operating-partner-retainer"

@@ -96,6 +96,12 @@ const Header = () => {
                   }}
                 >
                   <a 
+                    href="/advisory-partnership" 
+                    className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
+                  >
+                    Strategic Advisory Partnership
+                  </a>
+                  <a 
                     href="/clinical-clarity-session" 
                     className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
                   >
@@ -188,6 +194,13 @@ const Header = () => {
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
               Services
+            </a>
+            <a 
+              href="/advisory-partnership"
+              onClick={handleNavClick}
+              className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Strategic Advisory Partnership
             </a>
             <a 
               href="/clinical-clarity-session"

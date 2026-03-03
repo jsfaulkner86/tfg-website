@@ -8,10 +8,7 @@ const ThankYou = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Track Lead event when page loads
-    if (window.fbq) {
-      window.fbq('track', 'Lead');
-    }
+    // Meta Pixel removed
   }, []);
 
   return (

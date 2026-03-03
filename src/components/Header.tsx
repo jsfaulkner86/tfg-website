@@ -75,20 +75,35 @@ const Header = () => {
               Our Approach
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
             </a>
-            <a 
-              href="/services" 
-              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
-            >
-              Services
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
-            </a>
-            <a 
-              href="/clinical-clarity-session" 
-              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
-            >
-              Clinical Clarity Session
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
-            </a>
+            <div className="relative group py-1">
+              <a 
+                href="/services" 
+                className="text-white font-playfair font-medium text-lg tracking-wide relative transition-all duration-300 flex items-center gap-1"
+              >
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+              </a>
+              {/* Dropdown */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div 
+                  className="rounded-lg border border-white/10 py-2 min-w-[260px]"
+                  style={{
+                    background: 'rgba(113,141,169,0.97)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  <a 
+                    href="/clinical-clarity-session" 
+                    className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
+                  >
+                    Clinical Clarity Session
+                  </a>
+                </div>
+              </div>
+            </div>
             <a 
               href="/#contact" 
               className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
@@ -171,9 +186,9 @@ const Header = () => {
             <a 
               href="/clinical-clarity-session"
               onClick={handleNavClick}
-              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+              className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
-              Clinical Clarity Session
+              — Clinical Clarity Session
             </a>
             <a 
               href="/#contact"

@@ -129,7 +129,7 @@ const ClinicalClaritySession = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                 }}
               >
-                Most health tech founders do not know what is going to kill their pilot until it is already dead.
+                You built something women actually need. That does not mean the health system is ready for it.
               </p>
 
               {/* CTA */}

@@ -50,12 +50,12 @@ const faqData = [
   {
     question: "What is the Operating Partner?",
     answer:
-      "An ongoing clinical and systems operating partnership that spans the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration.",
+      "An ongoing clinical and systems operating partnership that spans the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration.",
   },
   {
     question: "Who runs this engagement?",
     answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic Stork. Both are embedded in your work — not consulting from the outside.",
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic Stork. Both are embedded in your work, not consulting from the outside.",
   },
   {
     question: "How many partners do you take at a time?",
@@ -65,7 +65,7 @@ const faqData = [
   {
     question: "Do I need to complete a Clinical Clarity Session first?",
     answer:
-      "Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment — or can demonstrate equivalent preparation — are the right fit. We do not step into active pilots that have not been de-risked.",
+      "Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment, or can demonstrate equivalent preparation, are the right fit. We do not step into active pilots that have not been de-risked.",
   },
   {
     question: "Is there a public price?",
@@ -75,7 +75,7 @@ const faqData = [
   {
     question: "How is this different from a fractional CMO or advisor?",
     answer:
-      "Most fractional executives advise from the outside. We operate from the inside — joining sales calls, auditing workflows, managing governance documentation, and providing direct escalation support when adoption stalls or a safety question surfaces. Two practitioners, not one consultant.",
+      "Most fractional executives advise from the outside. We operate from the inside, joining sales calls, auditing workflows, managing governance documentation, and providing direct escalation support when adoption stalls or a safety question surfaces. Two practitioners, not one consultant.",
   },
 ];
 
@@ -176,7 +176,7 @@ const OperatingPartnerRetainer = () => {
               className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              There is a version of this that ends well. Your pilot converts to a full contract, utilization climbs, your clinical champion becomes a reference, and your next health system deal closes faster because the first one worked. There is another version where none of that happens — where a governance gap, a workflow misfit, or a physician adoption problem surfaces six months in and your team spends the next quarter managing a relationship that is quietly dying.
+              There is a version of this that ends well. Your pilot converts to a full contract, utilization climbs, your clinical champion becomes a reference, and your next health system deal closes faster because the first one worked. There is another version where none of that happens, where a governance gap, a workflow misfit, or a physician adoption problem surfaces six months in and your team spends the next quarter managing a relationship that is quietly dying.
             </p>
             <p
               className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
@@ -208,7 +208,7 @@ const OperatingPartnerRetainer = () => {
               className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. Two practitioners who stay in it with you — a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic Stork — until the pilot converts, the adoption holds, and the relationship is stable.
+              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. Two practitioners who stay in it with you, a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic Stork, until the pilot converts, the adoption holds, and the relationship is stable.
             </p>
             <p
               className="text-base font-inter text-center mb-12 sm:mb-16"
@@ -240,7 +240,7 @@ const OperatingPartnerRetainer = () => {
                 {
                   icon: Cpu,
                   label: "Implementation oversight",
-                  text: "EHR integration strategy, governance framework design, pilot structure, KPI definition, and adoption planning built around what your health system actually requires — not what your contract says you promised.",
+                  text: "EHR integration strategy, governance framework design, pilot structure, KPI definition, and adoption planning built around what your health system actually requires, not what your contract says you promised.",
                 },
                 {
                   icon: Users,
@@ -258,7 +258,7 @@ const OperatingPartnerRetainer = () => {
                   <div key={i} className="flex items-start gap-4">
                     <Icon size={22} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
                     <p className="text-base sm:text-lg font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                      <strong>{item.label}</strong> — {item.text}
+                      <strong>{item.label}:</strong> {item.text}
                     </p>
                   </div>
                 );
@@ -281,10 +281,10 @@ const OperatingPartnerRetainer = () => {
               </h3>
               <div className="space-y-3">
                 {[
-                  "Post-raise companies with signed enterprise pilots or health system contracts where a failed deployment is measured in relationship capital and investor confidence — not just dollars",
+                  "Post-raise companies with signed enterprise pilots or health system contracts where a failed deployment is measured in relationship capital and investor confidence, not just dollars",
                   "Companies in OB/GYN, maternal health, reproductive care, or women's digital health where clinical trust, documentation accuracy, and physician adoption are non-negotiable",
-                  "Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment — or can demonstrate equivalent preparation — because we do not step into active pilots that have not been de-risked",
-                  "Leadership teams who want two practitioners embedded in their corner for the duration — not a vendor relationship, an operating one",
+                  "Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment, or can demonstrate equivalent preparation, because we do not step into active pilots that have not been de-risked",
+                  "Leadership teams who want two practitioners embedded in their corner for the duration, not a vendor relationship, an operating one",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
@@ -307,7 +307,7 @@ const OperatingPartnerRetainer = () => {
               className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              This is not a transactional engagement and it does not start with a proposal. It starts with a conversation. If you are at the stage where this level of partnership makes sense — or if you are already inside a pilot that is showing early warning signs — reach out directly. We will tell you quickly whether this is the right fit, what the right scope looks like, and what working together actually means.
+              This is not a transactional engagement and it does not start with a proposal. It starts with a conversation. If you are at the stage where this level of partnership makes sense, or if you are already inside a pilot that is showing early warning signs, reach out directly. We will tell you quickly whether this is the right fit, what the right scope looks like, and what working together actually means.
             </p>
 
             <p

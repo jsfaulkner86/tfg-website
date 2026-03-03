@@ -9,21 +9,46 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const assessmentSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Clinical Readiness Assessment",
-  provider: {
-    "@type": "Organization",
-    name: "The Faulkner Group",
+const assessmentSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Clinical Readiness Assessment",
+    provider: {
+      "@type": "Organization",
+      name: "The Faulkner Group",
+      url: "https://thefaulknergroupadvisors.com",
+    },
+    description:
+      "A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
+    serviceType: "Healthcare Advisory",
+    areaServed: "US",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+    },
   },
-  description:
-    "A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
-  offers: {
-    "@type": "Offer",
-    availability: "https://schema.org/InStock",
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Nicole Faulkner",
+    honorificPrefix: "Dr.",
+    honorificSuffix: "D.O.",
+    jobTitle: "Chief Clinical Officer",
+    worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
+    sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
   },
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Johnathon Faulkner",
+    jobTitle: "CEO and Healthcare IT Architect",
+    worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
+    sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
+  },
+];
 
 const faqData = [
   {

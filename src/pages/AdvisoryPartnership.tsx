@@ -79,7 +79,7 @@ const AdvisoryPartnership = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+        <section className="relative w-full overflow-hidden pt-[140px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(140px, calc(140px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -92,8 +92,8 @@ const AdvisoryPartnership = () => {
             style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
 
-          <div className="relative z-10 flex items-center justify-center px-6 text-center">
-            <div className="max-w-[820px]">
+          <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
+            <div className="max-w-[820px] w-full">
               <p
                 className="mb-6 font-inter font-medium uppercase"
                 style={{
@@ -116,11 +116,12 @@ const AdvisoryPartnership = () => {
               </h1>
 
               <p
-                className="mb-10 font-inter"
+                className="mb-8 sm:mb-10 font-inter max-w-lg mx-auto"
                 style={{
-                  fontSize: 'clamp(16px, 1.6vw, 20px)',
+                  fontSize: 'clamp(15px, 1.6vw, 20px)',
                   color: 'rgba(255, 255, 255, 0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                  lineHeight: '1.6',
                 }}
               >
                 The right clinical and systems credibility at the table changes what gets taken seriously.
@@ -128,7 +129,7 @@ const AdvisoryPartnership = () => {
 
               <Button
                 onClick={handleBooking}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',
@@ -146,22 +147,22 @@ const AdvisoryPartnership = () => {
 
         {/* The Reality (expanded body) */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
-            paddingTop: '60px',
-            paddingBottom: '40px',
+            paddingTop: '48px',
+            paddingBottom: '32px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Why Early Alignment Matters
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
+              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               Most early-stage women's health tech companies don't fail because the idea was wrong. They fail because no one in their corner has ever actually built inside a health system, and by the time that gap becomes visible, the opportunity cost is already compounding. The right clinical and systems credibility at the table changes what deals get taken seriously, what pilots get structured correctly, and what investors believe is possible. This is not a monthly check-in. This is early alignment with two practitioners who intend to still be at the table when it matters most.
@@ -171,23 +172,23 @@ const AdvisoryPartnership = () => {
 
         {/* All remaining sections */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
             paddingTop: '20px',
-            paddingBottom: '60px',
+            paddingBottom: '48px',
             background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto">
             {/* What This Is */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What This Is
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
+              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential, and where our clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships. We choose based on mission alignment, founder quality, and our genuine belief that what you are building belongs inside health systems.
@@ -195,12 +196,12 @@ const AdvisoryPartnership = () => {
 
             {/* What We Bring */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What We Bring
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16">
               {[
                 {
                   title: "Monthly or Bi-Monthly Strategic Sessions",
@@ -225,7 +226,7 @@ const AdvisoryPartnership = () => {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-2xl"
+                  className="p-5 sm:p-6 rounded-2xl"
                   style={{
                     background: 'white',
                     border: '1.5px solid rgba(243,218,115,0.3)',
@@ -244,14 +245,14 @@ const AdvisoryPartnership = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-6"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-5 sm:mb-6"
                 style={{ color: '#1A2A3A' }}
               >
                 Who This Is For
@@ -274,14 +275,14 @@ const AdvisoryPartnership = () => {
 
             {/* How It Works */}
             <div
-              className="p-8 rounded-2xl mb-8"
+              className="p-5 sm:p-8 rounded-2xl mb-8"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-4 text-center"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
                 How It Works
@@ -294,13 +295,13 @@ const AdvisoryPartnership = () => {
             {/* What Comes Next */}
             <div className="mb-16 mt-8">
               <h2
-                className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+                className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
               >
                 What Comes Next
               </h2>
               <p
-                className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
+                className="text-sm sm:text-lg font-inter text-center sm:text-center text-left max-w-3xl mx-auto"
                 style={{ color: '#4A5568', lineHeight: '1.7' }}
               >
                 Strategic Advisory partnerships that reach scale convert into Operating Partner Retainer engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.
@@ -309,7 +310,7 @@ const AdvisoryPartnership = () => {
 
             {/* FAQ */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions
@@ -329,13 +330,13 @@ const AdvisoryPartnership = () => {
                     }}
                   >
                     <AccordionTrigger
-                      className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
                     >
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
-                      <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
+                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
+                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -347,21 +348,21 @@ const AdvisoryPartnership = () => {
             {/* Bottom CTA */}
             <div className="text-center">
               <div
-                className="inline-block p-6 rounded-2xl mb-10"
+                className="inline-block p-5 sm:p-6 rounded-2xl mb-8 sm:mb-10"
                 style={{
                   background: '#FBF8F1',
                   border: '2px solid #D4B65D',
                 }}
               >
-                <p className="text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
+                <p className="text-base sm:text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
                   The right alignment at the right stage. Before the high-stakes moments arrive, not after.
                 </p>
               </div>
 
               <div>
-                <Button
+              <Button
                   onClick={handleBooking}
-                  className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                  className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                   style={{
                     background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                     color: '#2A3B4F',

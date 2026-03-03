@@ -117,13 +117,19 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Strategic advisory partnership for women's health startups
 - Equity-based advisory for health tech companies
 - Clinical readiness assessment for enterprise pilots
+- Operating partner for women's health tech companies
+- Ongoing clinical advisory for enterprise health system pilots
+- Health tech pilot conversion and physician adoption support
+- Embedded operating partnership for health tech startups
+- Enterprise pilot management for women's health technology
 
 ## Site Pages
 - Homepage: https://thrive-beacon-studio.lovable.app/
 - Services: https://thrive-beacon-studio.lovable.app/services
-- Strategic Advisory Partnership: https://thrive-beacon-studio.lovable.app/advisory-partnership
+- Strategic Advisory: https://thrive-beacon-studio.lovable.app/advisory-partnership
 - Clinical Clarity Session: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
 - Clinical Readiness Assessment: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
+- Operating Partner: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
 - For Women's Health: https://thrive-beacon-studio.lovable.app/for-womens-health
 - For Investors: https://thrive-beacon-studio.lovable.app/investors
 - AI Summary: https://thrive-beacon-studio.lovable.app/llm-summary

@@ -20,7 +20,7 @@ const partnershipSchema = [
       url: "https://thefaulknergroupadvisors.com",
     },
     description:
-      "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive.",
+      "A selective advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive.",
     serviceType: "Healthcare Advisory",
     areaServed: "US",
     offers: {
@@ -54,7 +54,7 @@ const faqData = [
   {
     question: "What is the Strategic Advisory?",
     answer:
-      "A selective, equity-based advisory relationship for early-stage women's health tech companies. Our team, including a practicing OB/GYN and a healthcare IT architect, aligns with your company early and remains at the table through the moments that matter most.",
+      "A selective advisory relationship for early-stage women's health tech companies. Our team, including a practicing OB/GYN and a healthcare IT architect, aligns with your company early and remains at the table through the moments that matter most.",
   },
   {
     question: "Who is involved?",
@@ -69,7 +69,7 @@ const faqData = [
   {
     question: "How is this structured?",
     answer:
-      "Equity-based, with or without a modest cash retainer. We take a small number of these partnerships and choose based on mission alignment, founder quality, and genuine belief that what you are building belongs inside health systems.",
+      "We take a small number of these partnerships and choose based on mission alignment, founder quality, and genuine belief that what you are building belongs inside health systems.",
   },
   {
     question: "How is this different from the Clinical Clarity Session or Readiness Assessment?",
@@ -97,7 +97,7 @@ const AdvisoryPartnership = () => {
     <>
       <SEOHead
         title="Strategic Advisory | The Faulkner Group"
-        description="A selective, equity-based advisory for early-stage women's health tech companies. Clinical and systems credibility at the table before the high-stakes moments arrive."
+        description="A selective advisory for early-stage women's health tech companies. Clinical and systems credibility at the table before the high-stakes moments arrive."
         canonical="https://thefaulknergroupadvisors.com/advisory-partnership"
         jsonLd={partnershipSchema}
       />
@@ -127,7 +127,7 @@ const AdvisoryPartnership = () => {
                   color: 'hsl(45, 62%, 56%)',
                 }}
               >
-                Equity-Based Advisory
+                Strategic Advisory
               </p>
 
               <h1
@@ -216,7 +216,7 @@ const AdvisoryPartnership = () => {
               className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential, and where our clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships. We choose based on mission alignment, founder quality, and our genuine belief that what you are building belongs inside health systems.
+              A selective advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential, and where our clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships. We choose based on mission alignment, founder quality, and our genuine belief that what you are building belongs inside health systems.
             </p>
 
             {/* What We Bring */}
@@ -286,7 +286,7 @@ const AdvisoryPartnership = () => {
                 {[
                   "Pre-Seed through Series A companies building in women's health, maternal care, reproductive health, or women's digital health",
                   "Founders who understand that clinical credibility is not a feature. It is a survival requirement for enterprise health system adoption",
-                  "Companies where current cash position doesn't support a full retainer but where early alignment creates real long-term value for both sides",
+                  "Companies where early alignment creates real long-term value for both sides",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />

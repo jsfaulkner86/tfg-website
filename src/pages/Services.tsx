@@ -147,7 +147,7 @@ const DualBrain = () =>
 const engagements = [
 {
   numeral: 'I',
-  name: 'Strategic Advisory Partnership',
+  name: 'Strategic Advisory',
   tagline: 'Equity-Based. Long-Term.',
   paragraph: 'A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships.',
   cta: 'Explore the Partnership',
@@ -174,7 +174,7 @@ const engagements = [
 },
 {
   numeral: 'IV',
-  name: 'Operating Partner Retainer',
+  name: 'Operating Partner',
   tagline: 'Embedded. Ongoing. Operational.',
   paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration. We take two to four partners at a time.',
   cta: 'Start a Conversation',
@@ -358,7 +358,7 @@ const servicesFaqSchema = {
     "name": "What advisory services does The Faulkner Group offer?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The Faulkner Group offers three engagement models: the Clinical Clarity Session, a 90-minute diagnostic that surfaces your highest-risk failure points; the Clinical Readiness Assessment, a structured 14-day deep engagement before your enterprise pilot goes live; and the Strategic Advisory Partnership, an equity-based long-term advisory relationship for early-stage companies. We also offer a Partnership model for companies who want us embedded in their work continuously."
+      "text": "The Faulkner Group offers four engagement models: the Clinical Clarity Session, a 90-minute diagnostic that surfaces your highest-risk failure points; the Clinical Readiness Assessment, a structured 14-day deep engagement before your enterprise pilot goes live; the Strategic Advisory, an equity-based long-term advisory relationship for early-stage companies; and the Operating Partner, an ongoing clinical and systems operating partnership for companies navigating enterprise pilots."
     }
   },
   {
@@ -417,14 +417,14 @@ const serviceSchemas = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Strategic Advisory Partnership",
+    name: "Strategic Advisory",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Operating Partner Retainer",
+    name: "Operating Partner",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals.",
   },

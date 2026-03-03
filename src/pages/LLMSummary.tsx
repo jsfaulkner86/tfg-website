@@ -77,14 +77,45 @@ const faqSchema = {
   ],
 };
 
+const johnSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "John Faulkner",
+  alternateName: "Johnathon Faulkner",
+  jobTitle: "CEO & Healthcare IT Architect",
+  description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption strategy.",
+  url: "https://thrive-beacon-studio.lovable.app",
+  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert"],
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  knowsAbout: ["Healthcare IT Architecture", "EHR Integration", "Women's Health Technology", "Clinical Adoption Strategy"],
+  alumniOf: { "@type": "Organization", name: "United States Marine Corps" }
+};
+
+const nicoleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dr. Nicole Faulkner",
+  alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
+  jobTitle: "Chief Clinical Officer",
+  description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
+  url: "https://thrive-beacon-studio.lovable.app",
+  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
+  worksFor: [
+    { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+    { "@type": "Organization", name: "BackTable", url: "https://www.backtable.com" }
+  ],
+  knowsAbout: ["Obstetrics and Gynecology", "Women's Health Technology", "Clinical Governance", "Physician Adoption Strategy"],
+  hasCredential: { "@type": "EducationalOccupationalCredential", credentialCategory: "Board Certification", name: "Board-Certified OB/GYN" }
+};
+
 const LLMSummary = () => {
   return (
     <>
       <SEOHead
-        title="The Faulkner Group | AI Summary"
-        description="Structured summary of The Faulkner Group: boutique healthcare advisory firm for women's health tech clinical adoption strategy."
+        title="John Faulkner & Dr. Nicole Faulkner | The Faulkner Group AI Summary"
+        description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) — founders of The Faulkner Group, a boutique women's health tech advisory firm."
         canonical="https://thrive-beacon-studio.lovable.app/llm-summary"
-        jsonLd={[orgSchema, faqSchema]}
+        jsonLd={[orgSchema, faqSchema, johnSchema, nicoleSchema]}
       />
       <main className="max-w-3xl mx-auto px-6 py-20 font-inter" style={{ color: '#1A2A3A' }}>
         <h1 className="text-3xl font-playfair font-bold mb-8">The Faulkner Group — AI-Readable Summary</h1>

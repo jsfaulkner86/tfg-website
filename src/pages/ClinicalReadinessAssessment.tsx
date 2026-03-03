@@ -79,7 +79,7 @@ const ClinicalReadinessAssessment = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+        <section className="relative w-full overflow-hidden pt-[140px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(140px, calc(140px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -92,8 +92,8 @@ const ClinicalReadinessAssessment = () => {
             style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
 
-          <div className="relative z-10 flex items-center justify-center px-6 text-center">
-            <div className="max-w-[820px]">
+          <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
+            <div className="max-w-[820px] w-full">
               <p
                 className="mb-6 font-inter font-medium uppercase"
                 style={{
@@ -116,11 +116,12 @@ const ClinicalReadinessAssessment = () => {
               </h1>
 
               <p
-                className="mb-10 font-inter"
+                className="mb-8 sm:mb-10 font-inter max-w-lg mx-auto"
                 style={{
-                  fontSize: 'clamp(16px, 1.6vw, 20px)',
+                  fontSize: 'clamp(15px, 1.6vw, 20px)',
                   color: 'rgba(255, 255, 255, 0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                  lineHeight: '1.6',
                 }}
               >
                 Signing the LOI is not the hard part. What comes next is.
@@ -128,7 +129,7 @@ const ClinicalReadinessAssessment = () => {
 
               <Button
                 onClick={handleBooking}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',
@@ -146,22 +147,22 @@ const ClinicalReadinessAssessment = () => {
 
         {/* The Reality (expanded body) */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
-            paddingTop: '60px',
-            paddingBottom: '40px',
+            paddingTop: '48px',
+            paddingBottom: '32px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Why Pilots Fail
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
+              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               Most enterprise pilots do not fail because the product was wrong. They fail because no one mapped the product to actual clinical workflows, no one stress-tested the EHR integration before go-live, and no one built the governance infrastructure a health system needs to defend when something goes sideways. By the time those gaps surface, your champion is exposed and your relationship with the health system is already fragile. This assessment closes those gaps before you go live, in 14 days.
@@ -171,23 +172,23 @@ const ClinicalReadinessAssessment = () => {
 
         {/* What This Is + What We Evaluate + How It Works + Who It's For + Offer Ladder + What Comes Next + FAQ + CTA */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
             paddingTop: '20px',
-            paddingBottom: '60px',
+            paddingBottom: '48px',
             background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto">
             {/* What This Is */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What This Is
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
+              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get two practitioners who have been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic Stork, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
@@ -195,12 +196,12 @@ const ClinicalReadinessAssessment = () => {
 
             {/* What We Evaluate */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What We Evaluate
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16">
               {[
                 {
                   title: "Clinical Workflow Fit",
@@ -225,7 +226,7 @@ const ClinicalReadinessAssessment = () => {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="p-6 rounded-2xl"
+                  className="p-5 sm:p-6 rounded-2xl"
                   style={{
                     background: 'white',
                     border: '1.5px solid rgba(243,218,115,0.3)',
@@ -244,13 +245,13 @@ const ClinicalReadinessAssessment = () => {
 
             {/* How It Works */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               How It Works
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-6">
               {[
                 { step: "1", icon: ClipboardList, title: "Days 1 to 2: Structured Intake", text: "We review your product, pilot terms, and integration documentation before any assessment begins." },
                 { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains, with targeted async questions as findings develop." },
@@ -262,7 +263,7 @@ const ClinicalReadinessAssessment = () => {
                 return (
                   <div
                     key={i}
-                    className="p-6 rounded-2xl"
+                    className="p-5 sm:p-6 rounded-2xl"
                     style={{
                       background: 'white',
                       border: '1.5px solid rgba(243,218,115,0.3)',
@@ -298,14 +299,14 @@ const ClinicalReadinessAssessment = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-6"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-5 sm:mb-6"
                 style={{ color: '#1A2A3A' }}
               >
                 Who This Is For
@@ -329,14 +330,14 @@ const ClinicalReadinessAssessment = () => {
 
             {/* The Offer Ladder */}
             <div
-              className="p-8 rounded-2xl mb-8"
+              className="p-5 sm:p-8 rounded-2xl mb-8"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-4 text-center"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
                 The Offer Ladder
@@ -349,13 +350,13 @@ const ClinicalReadinessAssessment = () => {
             {/* What Comes Next */}
             <div className="mb-16 mt-8">
               <h2
-                className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+                className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
               >
                 What Comes Next
               </h2>
               <p
-                className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
+                className="text-sm sm:text-lg font-inter text-center sm:text-center text-left max-w-3xl mx-auto"
                 style={{ color: '#4A5568', lineHeight: '1.7' }}
               >
                 For companies whose assessment surfaces risks requiring ongoing oversight, across implementation, physician adoption, or clinical systems architecture, we offer a structured path to a deeper operating partnership. The Readiness Assessment is where that conversation begins.
@@ -364,7 +365,7 @@ const ClinicalReadinessAssessment = () => {
 
             {/* FAQ */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions
@@ -384,13 +385,13 @@ const ClinicalReadinessAssessment = () => {
                     }}
                   >
                     <AccordionTrigger
-                      className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
                     >
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
-                      <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
+                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
+                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -402,13 +403,13 @@ const ClinicalReadinessAssessment = () => {
             {/* Bottom CTA */}
             <div className="text-center">
               <div
-                className="inline-block p-6 rounded-2xl mb-10"
+                className="inline-block p-5 sm:p-6 rounded-2xl mb-8 sm:mb-10"
                 style={{
                   background: '#FBF8F1',
                   border: '2px solid #D4B65D',
                 }}
               >
-                <p className="text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
+                <p className="text-base sm:text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
                   Fourteen days to know exactly where your pilot is exposed. Before go-live, not after.
                 </p>
               </div>
@@ -416,7 +417,7 @@ const ClinicalReadinessAssessment = () => {
               <div>
                 <Button
                   onClick={handleBooking}
-                  className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                  className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                   style={{
                     background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                     color: '#2A3B4F',

@@ -129,7 +129,7 @@ const ClinicalClaritySession = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                 }}
               >
-                Most healthtech founders do not know what is going to kill their pilot until it is already dead. By then, the champion is frustrated, utilization is at 11%, and the health system is quietly building a case to walk away. You cannot fix that retroactively. You can fix it now.
+                Most health tech founders do not know what is going to kill their pilot until it is already dead.
               </p>
 
               {/* CTA */}

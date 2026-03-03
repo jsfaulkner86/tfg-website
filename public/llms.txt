@@ -66,6 +66,9 @@ A: A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare
 Q: What is the Clinical Readiness Assessment?
 A: A structured 14-day engagement evaluating clinical workflow fit, governance and risk infrastructure, physician adoption strategy, EHR integration reality, and trust and liability exposure. Includes a written Clinical Readiness Report and a 60-minute live findings presentation.
 
+Q: What is the Operating Partner?
+A: An ongoing clinical and systems operating partnership for women's health tech companies with signed enterprise pilots or health system contracts. Covers pre-sale credibility support, clinical readiness audits, EHR integration strategy, governance framework design, physician adoption and escalation, and governance operations including steering committee support and KPI monitoring. Scoped through direct conversation.
+
 Q: Why do most women's health tech pilots fail to scale?
 A: 90% of health tech pilots fail to convert to full-scale implementation without clinical alignment (Accenture Health, Digital Health Scaling Report). The gap between a promising women's health platform and real-world clinical adoption isn't about the technology. It's about trust, workflow fit, and physician buy-in.
 

@@ -59,7 +59,7 @@ const faqData = [
   {
     question: "Who runs the assessment?",
     answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations. Both are involved throughout the full 14-day engagement and present findings together.",
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations. Our team is involved throughout the full 14-day engagement and presents findings together.",
   },
   {
     question: "Who is this for?",

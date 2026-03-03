@@ -61,7 +61,7 @@ const faqData = [
   {
     question: "Who runs the session?",
     answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with deep experience in enterprise health system environments and EHR ecosystems. Both are in the room for the full 90 minutes.",
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with deep experience in enterprise health system environments and EHR ecosystems. Our team is in the room for the full 90 minutes.",
   },
   {
     question: "Who is this for?",
@@ -198,7 +198,7 @@ const ClinicalClaritySession = () => {
               className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              Every advisory firm will give you a strategy. We give you clinical truth. You get 90 minutes with a practicing Board-Certified OB/GYN who is a Medical Advisor for several startups and the Women's Health Medical Director for BackTable. You also get a Healthcare IT Architect with 14+ years and 40+ Epic implementations, including Epic Women's Health, the most clinically complex Women's Health workflow environment in enterprise healthcare, who has seen exactly how health systems respond when a new product tries to integrate into the systems your pilot depends on. Two people who have lived on both sides of the table you are about to sit across from, telling you exactly what they see.
+              Every advisory firm will give you a strategy. We give you clinical truth. You get 90 minutes with a practicing Board-Certified OB/GYN who is a Medical Advisor for several startups and the Women's Health Medical Director for BackTable. You also get a Healthcare IT Architect with 14+ years and 40+ Epic implementations, including Epic Women's Health, the most clinically complex Women's Health workflow environment in enterprise healthcare, who has seen exactly how health systems respond when a new product tries to integrate into the systems your pilot depends on. A team that has lived on both sides of the table you are about to sit across from, telling you exactly what they see.
             </p>
           </div>
         </section>

@@ -167,7 +167,7 @@ const engagements = [
   numeral: 'III',
   name: 'Clinical Readiness Assessment',
   tagline: '14-Day Deep Engagement',
-  paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same two practitioners, deeper scope, comprehensive de-risking before your go-live date.',
+  paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same team, deeper scope, comprehensive de-risking before your go-live date.',
   cta: 'Learn About the Assessment',
   href: '/clinical-readiness-assessment',
   external: false
@@ -176,7 +176,7 @@ const engagements = [
   numeral: 'IV',
   name: 'Operating Partner',
   tagline: 'Embedded. Ongoing. Operational.',
-  paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration. We take two to four partners at a time.',
+  paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Our team embedded in your organization for the duration. We take a small number of partners at a time.',
   cta: 'Start a Conversation',
   href: '/operating-partner-retainer',
   external: false

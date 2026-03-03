@@ -54,7 +54,7 @@ const faqData = [
   {
     question: "What is the Strategic Advisory?",
     answer:
-      "A selective, equity-based advisory relationship for early-stage women's health tech companies. Two practitioners, a practicing OB/GYN and a healthcare IT architect, align with your company early and remain at the table through the moments that matter most.",
+      "A selective, equity-based advisory relationship for early-stage women's health tech companies. Our team, including a practicing OB/GYN and a healthcare IT architect, aligns with your company early and remains at the table through the moments that matter most.",
   },
   {
     question: "Who is involved?",
@@ -74,7 +74,7 @@ const faqData = [
   {
     question: "How is this different from the Clinical Clarity Session or Readiness Assessment?",
     answer:
-      "The Clinical Clarity Session is a 90-minute diagnostic. The Readiness Assessment is a 14-day deep engagement. The Strategic Advisory is ongoing alignment with two practitioners who intend to still be at the table when it matters most. Different depth, different duration, same practitioners.",
+      "The Clinical Clarity Session is a 90-minute diagnostic. The Readiness Assessment is a 14-day deep engagement. The Strategic Advisory is ongoing alignment with a team who intends to still be at the table when it matters most. Different depth, different duration, same team.",
   },
   {
     question: "Is this an open offer?",
@@ -190,7 +190,7 @@ const AdvisoryPartnership = () => {
               className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              Most early-stage women's health tech companies don't fail because the idea was wrong. They fail because no one in their corner has ever actually built inside a health system, and by the time that gap becomes visible, the opportunity cost is already compounding. The right clinical and systems credibility at the table changes what deals get taken seriously, what pilots get structured correctly, and what investors believe is possible. This is not a monthly check-in. This is early alignment with two practitioners who intend to still be at the table when it matters most.
+              Most early-stage women's health tech companies don't fail because the idea was wrong. They fail because no one in their corner has ever actually built inside a health system, and by the time that gap becomes visible, the opportunity cost is already compounding. The right clinical and systems credibility at the table changes what deals get taken seriously, what pilots get structured correctly, and what investors believe is possible. This is not a monthly check-in. This is early alignment with a team that intends to still be at the table when it matters most.
             </p>
           </div>
         </section>
@@ -242,7 +242,7 @@ const AdvisoryPartnership = () => {
                 },
                 {
                   title: "Credibility Support",
-                  text: "Two practitioners who can be present when clinical or systems credibility affects what a partner, investor, or health system believes about you.",
+                  text: "A team that can be present when clinical or systems credibility affects what a partner, investor, or health system believes about you.",
                 },
                 {
                   title: "A Defined Path Forward",

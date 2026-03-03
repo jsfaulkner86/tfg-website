@@ -147,6 +147,15 @@ const DualBrain = () =>
 const engagements = [
 {
   numeral: 'I',
+  name: 'Strategic Advisory Partnership',
+  tagline: 'Equity-Based. Long-Term.',
+  paragraph: 'A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships.',
+  cta: 'Explore the Partnership',
+  href: '/advisory-partnership',
+  external: false
+},
+{
+  numeral: 'II',
   name: 'Clinical Clarity Session',
   tagline: '90-Minute Diagnostic',
   paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your highest-risk failure points across clinical readiness and governance, physician adoption, EHR integration and training, and sales/CSM and deployment before your pilot, your deal, or your investor meeting depends on it.',
@@ -155,21 +164,12 @@ const engagements = [
   external: false
 },
 {
-  numeral: 'II',
+  numeral: 'III',
   name: 'Clinical Readiness Assessment',
   tagline: '14-Day Deep Engagement',
   paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same two practitioners, deeper scope, comprehensive de-risking before your go-live date.',
   cta: 'Learn About the Assessment',
   href: '/clinical-readiness-assessment',
-  external: false
-},
-{
-  numeral: 'III',
-  name: 'Strategic Advisory Partnership',
-  tagline: 'Equity-Based. Long-Term.',
-  paragraph: 'A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships.',
-  cta: 'Explore the Partnership',
-  href: '/advisory-partnership',
   external: false
 }];
 

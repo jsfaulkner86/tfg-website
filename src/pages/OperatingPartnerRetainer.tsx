@@ -115,7 +115,7 @@ const OperatingPartnerRetainer = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+        <section className="relative w-full overflow-hidden pb-[60px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team in strategic planning session"
@@ -127,7 +127,7 @@ const OperatingPartnerRetainer = () => {
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
-          <div className="relative z-10 flex items-center justify-center px-6 text-center">
+          <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
             <div className="max-w-[820px]">
               <p
                 className="mb-6 font-inter font-medium uppercase"
@@ -160,7 +160,7 @@ const OperatingPartnerRetainer = () => {
               </p>
               <Button
                 onClick={handleBooking}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-7 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] min-h-[48px] w-full sm:w-auto"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',
@@ -178,28 +178,28 @@ const OperatingPartnerRetainer = () => {
 
         {/* The Reality — expanded */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
-            paddingTop: '60px',
-            paddingBottom: '40px',
+            paddingTop: '40px',
+            paddingBottom: '30px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               The Reality
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
+              className="text-sm sm:text-base md:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               There is a version of this that ends well. Your pilot converts to a full contract, utilization climbs, your clinical champion becomes a reference, and your next health system deal closes faster because the first one worked. There is another version where none of that happens, where a governance gap, a workflow misfit, or a physician adoption problem surfaces six months in and your team spends the next quarter managing a relationship that is quietly dying.
             </p>
             <p
-              className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
+              className="text-sm sm:text-base md:text-lg font-inter text-center max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               The difference between those two versions is almost never the product. It is whether the right clinical and systems expertise was embedded in your organization before the hard moments arrived.
@@ -209,7 +209,7 @@ const OperatingPartnerRetainer = () => {
 
         {/* What This Is + What We Do + Who This Is For + How It Works + Offer Ladder + FAQ + CTA */}
         <section
-          className="px-4 sm:px-6"
+          className="px-5 sm:px-6"
           style={{
             paddingTop: '20px',
             paddingBottom: '60px',
@@ -219,13 +219,13 @@ const OperatingPartnerRetainer = () => {
           <div className="max-w-4xl mx-auto">
             {/* What This Is */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What This Is
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
+              className="text-sm sm:text-base md:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. A team that stays in it with you, led by a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
@@ -239,13 +239,13 @@ const OperatingPartnerRetainer = () => {
 
             {/* What We Do */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-6 sm:mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What We Do
             </h2>
 
-            <div className="space-y-5 mb-16">
+            <div className="space-y-4 sm:space-y-5 mb-10 sm:mb-16">
               {[
                 {
                   icon: Handshake,
@@ -275,9 +275,9 @@ const OperatingPartnerRetainer = () => {
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <div key={i} className="flex items-start gap-4">
-                    <Icon size={22} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
-                    <p className="text-base sm:text-lg font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
+                  <div key={i} className="flex items-start gap-3 sm:gap-4">
+                    <Icon size={20} className="flex-shrink-0 mt-1 sm:w-[22px] sm:h-[22px]" style={{ color: '#D4B65D' }} />
+                    <p className="text-sm sm:text-base md:text-lg font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
                       <strong>{item.label}:</strong> {item.text}
                     </p>
                   </div>
@@ -287,14 +287,14 @@ const OperatingPartnerRetainer = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-10 sm:mb-16"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-6"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-4 sm:mb-6"
                 style={{ color: '#1A2A3A' }}
               >
                 Who This Is For
@@ -308,7 +308,7 @@ const OperatingPartnerRetainer = () => {
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                    <p className="text-sm sm:text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                       {item}
                     </p>
                   </div>
@@ -318,20 +318,20 @@ const OperatingPartnerRetainer = () => {
 
             {/* How It Works */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               How It Works
             </h2>
             <p
-              className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
+              className="text-sm sm:text-base md:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
               This is not a transactional engagement and it does not start with a proposal. It starts with a conversation. If you are at the stage where this level of partnership makes sense, or if you are already inside a pilot that is showing early warning signs, reach out directly. We will tell you quickly whether this is the right fit, what the right scope looks like, and what working together actually means.
             </p>
 
             <p
-              className="text-base font-inter text-center mb-16"
+              className="text-sm sm:text-base font-inter text-center mb-10 sm:mb-16"
               style={{ color: '#718DA9', lineHeight: '1.7' }}
             >
               No proposal deck. No discovery call gauntlet. One conversation to determine fit.
@@ -339,32 +339,32 @@ const OperatingPartnerRetainer = () => {
 
             {/* The Offer Ladder */}
             <div
-              className="p-8 rounded-2xl mb-8"
+              className="p-5 sm:p-8 rounded-2xl mb-8"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
               }}
             >
               <h3
-                className="text-2xl font-playfair font-bold mb-4 text-center"
+                className="text-xl sm:text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
                 The Offer Ladder
               </h3>
-              <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
+              <p className="text-sm sm:text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
                 The <a href="/clinical-clarity-session" className="underline" style={{ color: '#718DA9' }}>Clinical Clarity Session</a> is where fast triage happens. The <a href="/clinical-readiness-assessment" className="underline" style={{ color: '#718DA9' }}>Clinical Readiness Assessment</a> is comprehensive de-risking before go-live. The Operating Partner is what you move into when the stakes are too high to navigate alone and you need our team embedded in your organization for the duration. Same people. Deeper commitment. Built for companies where getting this right is not optional.
               </p>
             </div>
 
             {/* FAQ */}
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center mt-16"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-6 sm:mb-10 text-center mt-10 sm:mt-16"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-16">
+            <div className="mb-10 sm:mb-16">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem
@@ -378,13 +378,13 @@ const OperatingPartnerRetainer = () => {
                     }}
                   >
                     <AccordionTrigger
-                      className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-lg md:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
                     >
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
-                      <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
+                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
+                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -396,13 +396,13 @@ const OperatingPartnerRetainer = () => {
             {/* Bottom CTA */}
             <div className="text-center">
               <div
-                className="inline-block p-6 rounded-2xl mb-10"
+                className="inline-block p-4 sm:p-6 rounded-2xl mb-8 sm:mb-10"
                 style={{
                   background: '#FBF8F1',
                   border: '2px solid #D4B65D',
                 }}
               >
-                <p className="text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
+                <p className="text-base sm:text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
                   We do not just consult. We build with you until it works.
                 </p>
               </div>
@@ -410,7 +410,7 @@ const OperatingPartnerRetainer = () => {
               <div>
                 <Button
                   onClick={handleBooking}
-                  className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                  className="text-sm sm:text-base font-semibold rounded-lg px-7 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] min-h-[48px] w-full sm:w-auto"
                   style={{
                     background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                     color: '#2A3B4F',

@@ -29,7 +29,7 @@ const faqData = [
   {
     question: "What is the Clinical Clarity Session?",
     answer:
-      "A 90-minute virtual diagnostic that identifies the 1 to 3 highest-risk failure points in your health tech product's clinical adoption strategy. It covers clinical readiness, physician adoption, EHR integration, and sales/deployment readiness. You receive a written Clinical Clarity Summary within 48 hours.",
+      "A 90-minute live diagnostic led by a practicing OB/GYN and a Healthcare IT Architect designed to surface the highest-risk failure points before a pilot launches or stalls. It covers physician adoption, governance and risk exposure, EHR integration, trust and credibility gaps, and deployment readiness. You receive a written Clinical Clarity Summary within 48 hours.",
   },
   {
     question: "Who runs the session?",
@@ -117,8 +117,7 @@ const ClinicalClaritySession = () => {
                   lineHeight: 1.1,
                 }}
               >
-                <span className="block md:whitespace-nowrap">Find the Failure Points</span>
-                <span className="block md:whitespace-nowrap">Before Your Pilot Does</span>
+                The Reality
               </h1>
 
               {/* Subheadline */}
@@ -130,7 +129,7 @@ const ClinicalClaritySession = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                 }}
               >
-                A practicing OB/GYN and an enterprise healthcare IT architect diagnose your product's risks across clinical readiness, physician adoption, EHR integration, and deployment—in one session.
+                Most healthtech founders do not know what is going to kill their pilot until it is already dead. By then, the champion is frustrated, utilization is at 11%, and the health system is quietly building a case to walk away. You cannot fix that retroactively. You can fix it now.
               </p>
 
               {/* CTA */}
@@ -152,12 +151,12 @@ const ClinicalClaritySession = () => {
           </div>
         </section>
 
-        {/* Problem / Context */}
+        {/* What Makes This Different */}
         <section
           className="px-4 sm:px-6"
           style={{
             paddingTop: '60px',
-            paddingBottom: '60px',
+            paddingBottom: '40px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
@@ -166,32 +165,55 @@ const ClinicalClaritySession = () => {
               className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              Most Pilots Are Already Failing Before the First Physician Logs In
+              What Makes This Different
             </h2>
             <p
               className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              The gap between a product that works in demo and one that survives a real clinical environment is where most health tech companies lose. It shows up in four places.
+              Every advisory firm will give you a strategy. We give you clinical truth. You get 90 minutes with a practicing Board-Certified OB/GYN who is a Medical Advisor for several startups and the Women's Health Medical Director for BackTable. You also get a Healthcare IT Architect with 14+ years and 40+ Epic implementations, including Epic Women's Health, the most clinically complex Women's Health workflow environment in enterprise healthcare, who has seen exactly how health systems respond when a new product tries to integrate into the systems your pilot depends on. Two people who have lived on both sides of the table you are about to sit across from, telling you exactly what they see.
             </p>
+          </div>
+        </section>
 
+        {/* What We Cover + What You Walk Away With + Who It's For + How It Works + Risk + FAQ + CTA */}
+        <section
+          className="px-4 sm:px-6"
+          style={{
+            paddingTop: '20px',
+            paddingBottom: '60px',
+            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+          }}
+        >
+          <div className="max-w-4xl mx-auto">
+            {/* What We Cover */}
+            <h2
+              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+            >
+              What We Cover
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
               {[
                 {
-                  title: "Clinical Readiness & Governance",
-                  text: "No clinical champion identified. Decision rights are unclear. The health system's governance process will stall your timeline and no one on your team has mapped it.",
+                  title: "Physician Adoption Reality Check",
+                  text: "Where does your product actually fit in a physician's day? Have you tested it with tired, overwhelmed clinicians, not just enthusiastic champions?",
                 },
                 {
-                  title: "Physician Adoption",
-                  text: "Workflows that break clinic rhythm. No answer for \"what do I stop doing?\" Physicians are polite in the demo and absent after go-live.",
+                  title: "Governance and Risk Exposure",
+                  text: "If something goes wrong in your pilot, who owns it? Do you have escalation pathways, a kill-switch protocol, and KPIs the health system can defend?",
                 },
                 {
-                  title: "EHR Integration & Training",
-                  text: "A build that doesn't reflect real workflows. Fragile, one-off integrations. Training plans that assume physicians will learn on their own time.",
+                  title: "EHR Integration Truth",
+                  text: "Is your integration real, or is it a separate portal with SSO dressed up in contract language?",
                 },
                 {
-                  title: "Sales, CSM & Deployment",
-                  text: "Sales promises that operations cannot keep. Under-resourced launches. Success metrics that measure logins instead of clinical outcomes.",
+                  title: "Trust and Credibility Gaps",
+                  text: "Would a physician trust this tool with a patient they actually care about? Why or why not?",
+                },
+                {
+                  title: "The One Thing Most Likely to Kill Your Pilot",
+                  text: "We name it directly.",
                 },
               ].map((pain, i) => (
                 <div
@@ -213,13 +235,6 @@ const ClinicalClaritySession = () => {
               ))}
             </div>
 
-            <p
-              className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto mb-16"
-              style={{ color: '#4A5568', lineHeight: '1.7' }}
-            >
-              These risks are hard to see from inside the company or the health system. A neutral diagnostic, led by a clinician and a systems architect who have no stake in your internal politics, surfaces what internal teams cannot.
-            </p>
-
             {/* What You Walk Away With */}
             <h2
               className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
@@ -230,11 +245,11 @@ const ClinicalClaritySession = () => {
 
             <div className="space-y-5 mb-16">
               {[
-                { icon: FileText, text: "Pre-session product review, so the 90 minutes are spent on diagnosis and decision-making, not demo and orientation." },
-                { icon: Users, text: "Live diagnostic with Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (healthcare IT architect), so clinical truth and enterprise systems reality are in the same room, not in separate meetings." },
-                { icon: Shield, text: "Identification of your 1 to 3 highest-risk failure points, mapped across clinical readiness and governance, physician adoption, EHR integration and training, and sales/CSM/deployment." },
-                { icon: CheckCircle2, text: "Specific, prioritized next steps tied to your product and your pipeline, not generic frameworks or theoretical models." },
-                { icon: FileText, text: "Written Clinical Clarity Summary delivered within 48 hours: findings, risks, and recommended actions designed to be shared directly with your team, your board, or your investors." },
+                { icon: FileText, text: "Pre-session product review so we arrive informed, not orienting" },
+                { icon: Users, text: "90-minute live diagnostic with both clinical and systems perspective" },
+                { icon: Shield, text: "Unfiltered identification of your highest-risk failure points" },
+                { icon: CheckCircle2, text: "Specific, prioritized next steps tied to your product and your pilot, not generic frameworks" },
+                { icon: FileText, text: "Clinical Clarity Summary delivered within 48 hours: written findings, priority risks, and recommended next moves you can share with your team or investors" },
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
@@ -264,11 +279,11 @@ const ClinicalClaritySession = () => {
               </h3>
               <div className="space-y-3">
                 {[
-                  "Approaching your first or next health system pilot and need to know what will break before it does.",
-                  "Running an in-flight pilot that feels fragile, with adoption plateauing or stakeholders going quiet.",
-                  "Post-pilot, trying to recover credibility or redesign your approach before the next attempt.",
-                  "Preparing for investor due diligence or board conversations where clinical traction will be questioned.",
-                  "GTM or revenue leaders who own sales, CSM, or deployment into health systems and need a clinical reality check.",
+                  "Signed LOI or enterprise pilot starting in the next 30 to 90 days",
+                  "About to enter a health system sales conversation where a physician will be in the room",
+                  "Preparing for an enterprise conversation where clinical credibility will be tested",
+                  "Heard \"physicians just aren't adopting it\" and don't know why",
+                  "Want to walk into your pilot knowing the most predictable failure points are closed",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
@@ -278,8 +293,8 @@ const ClinicalClaritySession = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-base font-inter mt-5" style={{ color: '#718DA9', lineHeight: '1.7' }}>
-                This session is valuable even if your product works technically, you have early champions, or revenue numbers look okay but feel brittle. The risks we surface are the ones that compound quietly.
+              <p className="text-base font-inter mt-5" style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}>
+                This session is purpose-built for founders in women's health, reproductive care, maternal health, and women's digital health, the clinical environment we know most precisely and where the trust stakes are highest.
               </p>
             </div>
 
@@ -338,7 +353,7 @@ const ClinicalClaritySession = () => {
 
             {/* Risk Framing */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-8 rounded-2xl mb-8"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
@@ -348,24 +363,29 @@ const ClinicalClaritySession = () => {
                 className="text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
-                What You're Protecting
+                The Cost of Waiting
               </h3>
-              <div className="space-y-3 max-w-2xl mx-auto mb-6">
-                {[
-                  "A failed or stalled pilot costs 6 to 12 months and the credibility needed to win the next one.",
-                  "A lost health system deal costs the pipeline it took a year to build.",
-                  "A skeptical investor conversation costs leverage you cannot recover in the same round.",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <ArrowRight size={16} className="flex-shrink-0 mt-1.5" style={{ color: '#D4B65D' }} />
-                    <p className="text-base font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
+                One governance gap discovered after go-live costs your team ten times this in a single afternoon.
+              </p>
               <p className="text-base font-inter text-center" style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}>
-                90 minutes with a clinician and a systems architect who will tell you what is actually at risk, and what to do about it, before the stakes get higher.
+                This session exists so that does not happen to you.
+              </p>
+            </div>
+
+            {/* What Comes Next */}
+            <div className="mb-16">
+              <h2
+                className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+                style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+              >
+                What Comes Next
+              </h2>
+              <p
+                className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
+                style={{ color: '#4A5568', lineHeight: '1.7' }}
+              >
+                For founders whose session surfaces risks that require deeper engagement, across integration strategy, physician adoption planning, or ongoing clinical and systems oversight, we offer a structured path to partnership. The session is where that conversation starts.
               </p>
             </div>
 

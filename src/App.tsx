@@ -7,7 +7,7 @@ import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
 import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
-import MetaPixelTracker from "@/components/MetaPixelTracker";
+
 
 const ClinicalClaritySession = lazy(() => import("./pages/ClinicalClaritySession"));
 const Investors = lazy(() => import("./pages/Investors"));
@@ -26,7 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <MetaPixelTracker />
+        
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
             <Route path="/" element={<Index />} />

@@ -13,7 +13,7 @@ const partnershipSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Strategic Advisory Partnership",
+    name: "Strategic Advisory",
     provider: {
       "@type": "Organization",
       name: "The Faulkner Group",
@@ -52,7 +52,7 @@ const partnershipSchema = [
 
 const faqData = [
   {
-    question: "What is the Strategic Advisory Partnership?",
+    question: "What is the Strategic Advisory?",
     answer:
       "A selective, equity-based advisory relationship for early-stage women's health tech companies. Two practitioners, a practicing OB/GYN and a healthcare IT architect, align with your company early and remain at the table through the moments that matter most.",
   },
@@ -74,7 +74,7 @@ const faqData = [
   {
     question: "How is this different from the Clinical Clarity Session or Readiness Assessment?",
     answer:
-      "The Clinical Clarity Session is a 90-minute diagnostic. The Readiness Assessment is a 14-day deep engagement. The Strategic Advisory Partnership is ongoing alignment with two practitioners who intend to still be at the table when it matters most. Different depth, different duration, same practitioners.",
+      "The Clinical Clarity Session is a 90-minute diagnostic. The Readiness Assessment is a 14-day deep engagement. The Strategic Advisory is ongoing alignment with two practitioners who intend to still be at the table when it matters most. Different depth, different duration, same practitioners.",
   },
   {
     question: "Is this an open offer?",
@@ -84,7 +84,7 @@ const faqData = [
   {
     question: "What happens as the company scales?",
     answer:
-      "Strategic Advisory partnerships that reach scale convert into Operating Partner Retainer engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.",
+      "Strategic Advisory engagements that reach scale convert into Operating Partner engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.",
   },
 ];
 
@@ -96,8 +96,8 @@ const AdvisoryPartnership = () => {
   return (
     <>
       <SEOHead
-        title="Strategic Advisory Partnership | The Faulkner Group"
-        description="A selective, equity-based advisory partnership for early-stage women's health tech companies. Clinical and systems credibility at the table before the high-stakes moments arrive."
+        title="Strategic Advisory | The Faulkner Group"
+        description="A selective, equity-based advisory for early-stage women's health tech companies. Clinical and systems credibility at the table before the high-stakes moments arrive."
         canonical="https://thefaulknergroupadvisors.com/advisory-partnership"
         jsonLd={partnershipSchema}
       />
@@ -246,7 +246,7 @@ const AdvisoryPartnership = () => {
                 },
                 {
                   title: "A Defined Path Forward",
-                  text: "As your company scales and the stakes grow, this partnership has a clear structure to deepen into an Operating Partner Retainer.",
+                  text: "As your company scales and the stakes grow, this engagement has a clear structure to deepen into an Operating Partner engagement.",
                 },
               ].map((item, i) => (
                 <div
@@ -329,7 +329,7 @@ const AdvisoryPartnership = () => {
                 className="text-sm sm:text-lg font-inter text-center sm:text-center text-left max-w-3xl mx-auto"
                 style={{ color: '#4A5568', lineHeight: '1.7' }}
               >
-                Strategic Advisory partnerships that reach scale convert into Operating Partner Retainer engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.
+                Strategic Advisory engagements that reach scale convert into Operating Partner engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.
               </p>
             </div>
 

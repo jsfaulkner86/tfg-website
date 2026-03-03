@@ -13,7 +13,7 @@ const retainerSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Operating Partner Retainer",
+    name: "Operating Partner",
     provider: {
       "@type": "Organization",
       name: "The Faulkner Group",
@@ -48,7 +48,7 @@ const retainerSchema = [
 
 const faqData = [
   {
-    question: "What is the Operating Partner Retainer?",
+    question: "What is the Operating Partner?",
     answer:
       "An ongoing clinical and systems operating partnership that spans the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration.",
   },
@@ -87,7 +87,7 @@ const OperatingPartnerRetainer = () => {
   return (
     <>
       <SEOHead
-        title="Operating Partner Retainer | The Faulkner Group"
+        title="Operating Partner | The Faulkner Group"
         description="An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals."
         canonical="https://thefaulknergroupadvisors.com/operating-partner-retainer"
         jsonLd={retainerSchema}
@@ -332,7 +332,7 @@ const OperatingPartnerRetainer = () => {
                 The Offer Ladder
               </h3>
               <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                The <a href="/clinical-clarity-session" className="underline" style={{ color: '#718DA9' }}>Clinical Clarity Session</a> is where fast triage happens. The <a href="/clinical-readiness-assessment" className="underline" style={{ color: '#718DA9' }}>Clinical Readiness Assessment</a> is comprehensive de-risking before go-live. The Operating Partner Retainer is what you move into when the stakes are too high to navigate alone and you need two practitioners embedded in your organization for the duration. Same two people. Deeper commitment. Built for companies where getting this right is not optional.
+                The <a href="/clinical-clarity-session" className="underline" style={{ color: '#718DA9' }}>Clinical Clarity Session</a> is where fast triage happens. The <a href="/clinical-readiness-assessment" className="underline" style={{ color: '#718DA9' }}>Clinical Readiness Assessment</a> is comprehensive de-risking before go-live. The Operating Partner is what you move into when the stakes are too high to navigate alone and you need two practitioners embedded in your organization for the duration. Same two people. Deeper commitment. Built for companies where getting this right is not optional.
               </p>
             </div>
 

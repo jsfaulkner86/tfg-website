@@ -69,7 +69,7 @@ const faqData = [
   {
     question: "How is this different from the Clinical Clarity Session?",
     answer:
-      "The Clinical Clarity Session is a 90-minute diagnostic designed for fast triage. The Clinical Readiness Assessment is a 14-day deep engagement for companies whose stakes are too high for triage alone. Same two practitioners, deeper scope, comprehensive de-risking before your go-live date.",
+      "The Clinical Clarity Session is a 90-minute diagnostic designed for fast triage. The Clinical Readiness Assessment is a 14-day deep engagement for companies whose stakes are too high for triage alone. Same team, deeper scope, comprehensive de-risking before your go-live date.",
   },
   {
     question: "What do I receive at the end?",
@@ -216,7 +216,7 @@ const ClinicalReadinessAssessment = () => {
               className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get two practitioners who have been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic (EHR) - Women's Health, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
+              A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get a team that has been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic (EHR) - Women's Health, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
             </p>
 
             {/* What We Evaluate */}
@@ -368,7 +368,7 @@ const ClinicalReadinessAssessment = () => {
                 The Offer Ladder
               </h3>
               <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                The Clinical Clarity Session is where fast triage happens: 90 minutes in, findings in your hands within 48 hours. The Clinical Readiness Assessment is what comes next when the stakes are too high for triage alone. Same two practitioners. Deeper scope. Fourteen days to comprehensive de-risking before your go-live date arrives.
+                The Clinical Clarity Session is where fast triage happens: 90 minutes in, findings in your hands within 48 hours. The Clinical Readiness Assessment is what comes next when the stakes are too high for triage alone. Same team. Deeper scope. Fourteen days to comprehensive de-risking before your go-live date arrives.
               </p>
             </div>
 

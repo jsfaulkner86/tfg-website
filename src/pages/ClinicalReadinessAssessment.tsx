@@ -216,7 +216,7 @@ const ClinicalReadinessAssessment = () => {
               className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get two practitioners who have been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic Stork, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
+              A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get two practitioners who have been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic (EHR) - Women's Health, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
             </p>
 
             {/* What We Evaluate */}

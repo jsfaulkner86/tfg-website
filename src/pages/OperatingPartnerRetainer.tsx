@@ -55,7 +55,7 @@ const faqData = [
   {
     question: "Who runs this engagement?",
     answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic Stork. Both are embedded in your work, not consulting from the outside.",
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations including Epic (EHR) - Women's Health. Both are embedded in your work, not consulting from the outside.",
   },
   {
     question: "How many partners do you take at a time?",
@@ -208,7 +208,7 @@ const OperatingPartnerRetainer = () => {
               className="text-base sm:text-lg font-inter text-center mb-6 max-w-3xl mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7' }}
             >
-              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. Two practitioners who stay in it with you, a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic Stork, until the pilot converts, the adoption holds, and the relationship is stable.
+              An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. Two practitioners who stay in it with you, a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
             </p>
             <p
               className="text-base font-inter text-center mb-12 sm:mb-16"

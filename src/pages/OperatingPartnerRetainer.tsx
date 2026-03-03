@@ -20,9 +20,29 @@ const retainerSchema = [
       url: "https://thefaulknergroupadvisors.com",
     },
     description:
-      "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise health system pilots, physician adoption, and contract renewals.",
+      "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise health system pilots, physician adoption, EHR integration, and contract renewals.",
     serviceType: "Healthcare Advisory",
     areaServed: "US",
+    audience: {
+      "@type": "Audience",
+      audienceType: "Women's health tech founders with signed enterprise pilots or health system contracts",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "The Faulkner Group",
+    url: "https://thefaulknergroupadvisors.com",
+    description: "Boutique clinical and systems advisory firm for women's health technology companies. We embed directly inside organizations to drive physician adoption, build clinical governance, and convert pilots into enterprise-wide deployments.",
+    knowsAbout: [
+      "Women's health technology",
+      "Physician adoption strategy",
+      "EHR integration",
+      "Epic implementations",
+      "Clinical governance frameworks",
+      "Health system pilot management",
+      "Enterprise health tech deployment",
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -32,7 +52,7 @@ const retainerSchema = [
     honorificSuffix: "D.O.",
     jobTitle: "Chief Clinical Officer",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
+    description: "Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS). Clinical advisor to women's health tech startups navigating physician adoption and enterprise health system integration.",
     sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
   },
   {
@@ -41,7 +61,7 @@ const retainerSchema = [
     name: "Johnathon Faulkner",
     jobTitle: "CEO and Healthcare IT Architect",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
+    description: "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration, EHR workflow design, and clinical systems architecture.",
     sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
   },
 ];
@@ -87,8 +107,8 @@ const OperatingPartnerRetainer = () => {
   return (
     <>
       <SEOHead
-        title="Operating Partner | The Faulkner Group"
-        description="An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals."
+        title="Operating Partner for Women's Health Tech | The Faulkner Group"
+        description="Ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, EHR integration, and contract renewals."
         canonical="https://thefaulknergroupadvisors.com/operating-partner-retainer"
         jsonLd={retainerSchema}
       />

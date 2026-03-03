@@ -134,10 +134,8 @@ const Index = () => {
       <Header />
       <main className="overflow-x-hidden">
         <Hero />
-        <Suspense fallback={null}>
-          <OnStage />
-        </Suspense>
         <Suspense fallback={<div className="min-h-screen" />}>
+          <OnStage />
           <Mission />
           <Problem />
           <Approach />

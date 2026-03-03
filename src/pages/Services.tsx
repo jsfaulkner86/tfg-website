@@ -171,6 +171,15 @@ const engagements = [
   cta: 'Learn About the Assessment',
   href: '/clinical-readiness-assessment',
   external: false
+},
+{
+  numeral: 'IV',
+  name: 'Operating Partner Retainer',
+  tagline: 'Embedded. Ongoing. Operational.',
+  paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Two practitioners embedded in your organization for the duration. We take two to four partners at a time.',
+  cta: 'Start a Conversation',
+  href: '/operating-partner-retainer',
+  external: false
 }];
 
 

@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 import StickyCTA from "@/components/StickyCTA";
 import BottomVideo from "@/components/BottomVideo";
-import EmailGateModal, { isEmailCaptured } from "@/components/EmailGateModal";
+
 import {
   Accordion,
   AccordionContent,
@@ -45,7 +45,7 @@ const ForWomensHealth = () => {
   const [faqVisible, setFaqVisible] = useState(false);
   const [founderVisible, setFounderVisible] = useState(false);
   const [ctaVisible, setCtaVisible] = useState(false);
-  const [gateModal, setGateModal] = useState<{ toolName: string; href: string } | null>(null);
+  
 
   const heroRef = useRef<HTMLElement>(null);
   const valueRef = useRef<HTMLElement>(null);
@@ -74,9 +74,7 @@ const ForWomensHealth = () => {
   };
 
   const handleToolClick = useCallback((card: { title: string; href: string; external: boolean; gated?: boolean }) => {
-    if (card.gated && !isEmailCaptured()) {
-      setGateModal({ toolName: card.title, href: card.href });
-    } else if (card.external) {
+    if (card.external) {
       window.open(card.href, '_blank');
     } else {
       window.location.href = card.href;
@@ -615,18 +613,6 @@ const ForWomensHealth = () => {
         <BottomVideo />
         <StickyCTA />
 
-        {/* Email Gate Modal */}
-        {gateModal && (
-          <EmailGateModal
-            toolName={gateModal.toolName}
-            onUnlocked={() => {
-              const href = gateModal.href;
-              setGateModal(null);
-              window.location.href = href;
-            }}
-            onClose={() => setGateModal(null)}
-          />
-        )}
       </main>
     </>
   );

@@ -118,7 +118,7 @@ const PressSpeaking = () => {
         </section>
 
         {/* Speaking Events */}
-        <section className="w-full py-16 sm:py-20 bg-background">
+        <section className="w-full py-12 md:py-20 bg-background">
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
@@ -127,7 +127,7 @@ const PressSpeaking = () => {
               On Stage
             </p>
             <h2
-              className="text-center mb-12 font-display font-bold"
+              className="text-center mb-8 md:mb-12 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Speaking Engagements
@@ -136,16 +136,16 @@ const PressSpeaking = () => {
             {speakingEvents.map((event) => (
               <div
                 key={event.title}
-                className="rounded-xl border border-border bg-card overflow-hidden md:flex"
+                className="rounded-xl border border-border bg-card overflow-hidden flex flex-col md:flex-row"
               >
                 <div className="md:w-1/2">
                   <img
                     src={event.image}
                     alt={`${event.speaker} speaking at ${event.title}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-48 sm:h-64 md:h-full object-cover"
                   />
                 </div>
-                <div className="md:w-1/2 p-6 sm:p-10 flex flex-col justify-center">
+                <div className="md:w-1/2 p-5 sm:p-8 md:p-10 flex flex-col justify-center">
                   <span
                     className="inline-block mb-3 text-xs font-inter font-semibold uppercase tracking-widest px-3 py-1 rounded-full w-fit"
                     style={{
@@ -156,8 +156,8 @@ const PressSpeaking = () => {
                     {event.type}
                   </span>
                   <h3
-                    className="text-left mb-2 font-display font-bold"
-                    style={{ fontSize: "20px", color: "hsl(var(--foreground))" }}
+                    className="text-left mb-2 font-display font-bold text-base sm:text-lg md:text-xl"
+                    style={{ color: "hsl(var(--foreground))" }}
                   >
                     {event.title}
                   </h3>
@@ -168,8 +168,8 @@ const PressSpeaking = () => {
                     {event.speaker} — {event.role}
                   </p>
                   <p
-                    className="text-left mb-6 font-inter"
-                    style={{ fontSize: "15px", lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    className="text-left mb-4 sm:mb-6 font-inter text-sm sm:text-[15px]"
+                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
                   >
                     {event.description}
                   </p>
@@ -190,7 +190,7 @@ const PressSpeaking = () => {
         </section>
 
         {/* Media & Podcasts */}
-        <section className="w-full py-16 sm:py-20 bg-muted/50">
+        <section className="w-full py-12 md:py-20 bg-muted/50">
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
@@ -199,27 +199,27 @@ const PressSpeaking = () => {
               Media & Podcasts
             </p>
             <h2
-              className="text-center mb-12 font-display font-bold"
+              className="text-center mb-8 md:mb-12 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Regular Roles & Appearances
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {mediaRoles.map((role) => (
                 <div
                   key={role.title}
-                  className="rounded-xl border border-border bg-card p-6 sm:p-8 flex flex-col"
+                  className="rounded-xl border border-border bg-card p-5 sm:p-8 flex flex-col"
                 >
                   <div
-                    className="mb-4 inline-flex items-center justify-center w-11 h-11 rounded-lg"
+                    className="mb-3 sm:mb-4 inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-lg"
                     style={{ background: "hsl(var(--accent) / 0.12)" }}
                   >
-                    <role.icon className="w-5 h-5" style={{ color: "hsl(var(--accent))" }} />
+                    <role.icon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: "hsl(var(--accent))" }} />
                   </div>
                   <h3
-                    className="text-left mb-1 font-display font-semibold"
-                    style={{ fontSize: "18px", color: "hsl(var(--foreground))" }}
+                    className="text-left mb-1 font-display font-semibold text-base sm:text-lg"
+                    style={{ color: "hsl(var(--foreground))" }}
                   >
                     {role.title}
                   </h3>
@@ -230,8 +230,8 @@ const PressSpeaking = () => {
                     {role.person}
                   </p>
                   <p
-                    className="text-left mb-6 font-inter flex-1"
-                    style={{ fontSize: "15px", lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    className="text-left mb-4 sm:mb-6 font-inter flex-1 text-sm sm:text-[15px]"
+                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
                   >
                     {role.description}
                   </p>
@@ -252,10 +252,10 @@ const PressSpeaking = () => {
         </section>
 
         {/* Founders */}
-        <section className="w-full py-16 sm:py-20 bg-background">
+        <section className="w-full py-12 md:py-20 bg-background">
           <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
             <h2
-              className="mb-10 font-display font-bold"
+              className="mb-8 md:mb-10 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Meet the Voices
@@ -265,7 +265,7 @@ const PressSpeaking = () => {
                 <img
                   src={johnHeadshot}
                   alt="John Faulkner — CEO & Healthcare IT Architect"
-                  className="w-32 h-32 rounded-full object-cover mb-4 border-2"
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-4 border-2"
                   style={{ borderColor: "hsl(var(--accent))" }}
                 />
                 <h3 className="font-display font-semibold text-lg" style={{ color: "hsl(var(--foreground))" }}>
@@ -274,7 +274,7 @@ const PressSpeaking = () => {
                 <p className="font-inter text-sm mb-2" style={{ color: "hsl(var(--muted-foreground))" }}>
                   CEO & Healthcare IT Architect
                 </p>
-                <p className="font-inter text-sm mb-3" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
+                <p className="font-inter text-sm mb-3 max-w-xs" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
                   15+ years designing healthcare IT infrastructure. Host of the Smarter Systems, Better Care podcast.
                 </p>
               </div>
@@ -282,7 +282,7 @@ const PressSpeaking = () => {
                 <img
                   src={nicoleHeadshot}
                   alt="Dr. Nicole Faulkner — Chief Clinical Officer, Board-Certified OB/GYN"
-                  className="w-32 h-32 rounded-full object-cover mb-4 border-2"
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-4 border-2"
                   style={{ borderColor: "hsl(var(--accent))" }}
                 />
                 <h3 className="font-display font-semibold text-lg" style={{ color: "hsl(var(--foreground))" }}>
@@ -291,7 +291,7 @@ const PressSpeaking = () => {
                 <p className="font-inter text-sm mb-2" style={{ color: "hsl(var(--muted-foreground))" }}>
                   Chief Clinical Officer — Board-Certified OB/GYN
                 </p>
-                <p className="font-inter text-sm mb-3" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
+                <p className="font-inter text-sm mb-3 max-w-xs" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
                   WHIS speaker, BackTable Medical Director, and clinical governance expert for women's health tech.
                 </p>
               </div>
@@ -301,20 +301,20 @@ const PressSpeaking = () => {
 
         {/* Booking CTA */}
         <section
-          className="w-full py-16 sm:py-20"
+          className="w-full py-12 md:py-20"
           style={{ background: "linear-gradient(135deg, hsl(210 30% 14%) 0%, hsl(210 25% 22%) 100%)" }}
         >
           <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
-            <Newspaper className="mx-auto mb-4 w-8 h-8" style={{ color: "hsl(45, 62%, 56%)" }} />
+            <Newspaper className="mx-auto mb-4 w-7 h-7 sm:w-8 sm:h-8" style={{ color: "hsl(45, 62%, 56%)" }} />
             <h2
               className="mb-4 font-display font-bold text-white"
-              style={{ fontSize: "clamp(22px, 2.8vw, 32px)" }}
+              style={{ fontSize: "clamp(20px, 2.8vw, 32px)" }}
             >
-              Interested in Booking John or Dr. Nicole?
+              Interested in Booking John or Dr. Faulkner?
             </h2>
             <p
-              className="mb-8 font-inter"
-              style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)" }}
+              className="mb-6 sm:mb-8 font-inter text-sm sm:text-base"
+              style={{ color: "rgba(255,255,255,0.75)" }}
             >
               Available for keynotes, panels, podcast guest spots, and expert commentary on women's health technology adoption.
             </p>

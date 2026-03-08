@@ -21,6 +21,7 @@ const ClinicalReadinessAssessment = lazy(() => import("./pages/ClinicalReadiness
 const AdvisoryPartnership = lazy(() => import("./pages/AdvisoryPartnership"));
 const OperatingPartnerRetainer = lazy(() => import("./pages/OperatingPartnerRetainer"));
 const ClinicalReadinessRoadmap = lazy(() => import("./pages/ClinicalReadinessRoadmap"));
+const PressSpeaking = lazy(() => import("./pages/PressSpeaking"));
 
 const queryClient = new QueryClient();
 

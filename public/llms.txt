@@ -45,7 +45,7 @@ A structured 14-day readiness engagement that evaluates clinical workflow fit, g
 - URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
-### IV. Operating Partner — Ongoing Operating Partnership
+### V. Operating Partner — Ongoing Operating Partnership
 An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Our team is embedded in your organization for the duration. Covers pre-sale enterprise credibility, clinical and systems readiness audits, implementation oversight (EHR integration strategy, governance framework design, pilot structure, KPI definition), physician adoption and escalation support, and governance operations (steering committee support, kill-switch protocol management, risk register maintenance).
 - Best for: Post-raise companies with signed enterprise pilots or health system contracts in OB/GYN, maternal health, reproductive care, or women's digital health. Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment.
 - URL: https://thrive-beacon-studio.lovable.app/operating-partner-retainer

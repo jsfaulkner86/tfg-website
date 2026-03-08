@@ -384,7 +384,7 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* The Investment */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',

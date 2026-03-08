@@ -461,9 +461,9 @@ const Services = () =>
 
     <Header />
     <ServicesHero />
+    <OnStage />
     <DualBrain />
     <EngagementModels />
-    <OnStage />
     <Partnership />
     <IsThisYou />
     <BottomVideo />

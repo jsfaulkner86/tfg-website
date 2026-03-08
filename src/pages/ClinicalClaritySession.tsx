@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, FileText, Users, Shield, ClipboardList, Search, Video, Send } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileText, Users, Shield, ClipboardList, Search, Video, Send, MapPin, FileCheck, Briefcase } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 import {
@@ -105,9 +105,8 @@ const ClinicalClaritySession = () => {
       />
       <Header />
       <main className="overflow-x-hidden">
-        {/* Hero — matches homepage hero pattern */}
+        {/* Hero */}
         <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
-          {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -115,16 +114,13 @@ const ClinicalClaritySession = () => {
             fetchPriority="high"
             decoding="async"
           />
-          {/* Dark overlay */}
           <div
             className="absolute inset-0"
             style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
 
-          {/* Content */}
           <div className="relative z-10 flex items-center justify-center px-6 text-center">
             <div className="max-w-[820px]">
-              {/* Small caps label */}
               <p
                 className="mb-6 font-inter font-medium uppercase"
                 style={{
@@ -136,30 +132,33 @@ const ClinicalClaritySession = () => {
                 90-Minute Diagnostic
               </p>
 
-              {/* Headline */}
               <h1
                 className="mb-6 font-display font-bold text-white"
                 style={{
-                  fontSize: 'clamp(28px, 3.8vw, 52px)',
-                  lineHeight: 1.1,
+                  fontSize: 'clamp(22px, 3.2vw, 40px)',
+                  lineHeight: 1.2,
+                  textWrap: 'balance',
                 }}
               >
-                The Reality
+                Most women's health founders are more ready than they think. A few critical gaps are usually all that stands between a strong product and a confident health system conversation. This session finds them.
               </h1>
 
-              {/* Subheadline */}
               <p
                 className="mb-10 font-inter"
                 style={{
-                  fontSize: 'clamp(16px, 1.6vw, 20px)',
+                  fontSize: 'clamp(15px, 1.5vw, 18px)',
                   color: 'rgba(255, 255, 255, 0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                  lineHeight: 1.7,
+                  textWrap: 'balance',
+                  maxWidth: '680px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
                 }}
               >
-                You built something women actually need. That does not mean the health system is ready for it.
+                The Clinical Clarity Session is 90 minutes with the two people who have been inside the room where these decisions get made. A Board-Certified OB/GYN who still sees patients, and an EHR Women's Health Architect with 14 years and 40+ Epic implementations, including Epic Women's Health.
               </p>
 
-              {/* CTA */}
               <Button
                 onClick={handleBooking}
                 className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
@@ -178,7 +177,7 @@ const ClinicalClaritySession = () => {
           </div>
         </section>
 
-        {/* What Makes This Different */}
+        {/* This Is For You If */}
         <section
           className="px-4 sm:px-6"
           style={{
@@ -189,21 +188,34 @@ const ClinicalClaritySession = () => {
         >
           <div className="max-w-4xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              What Makes This Different
+              This Is For You If
             </h2>
-            <p
-              className="text-base sm:text-lg font-inter text-center mb-10 max-w-3xl mx-auto"
-              style={{ color: '#4A5568', lineHeight: '1.7' }}
-            >
-              Every advisory firm will give you a strategy. We give you clinical truth. You get 90 minutes with a practicing Board-Certified OB/GYN who is a Medical Advisor for several startups and the Women's Health Medical Director for BackTable. You also get a Healthcare IT Architect with 14+ years and 40+ Epic implementations, including Epic Women's Health, the most clinically complex Women's Health workflow environment in enterprise healthcare, who has seen exactly how health systems respond when a new product tries to integrate into the systems your pilot depends on. A team that has lived on both sides of the table you are about to sit across from, telling you exactly what they see.
-            </p>
+            <div className="space-y-3 mb-12 sm:mb-16">
+              {[
+                "You are in active conversations with a health system and want to walk in prepared, not reactive",
+                "You have heard \"not yet\" from a health system and do not fully know why",
+                "You are preparing your first pilot proposal and want it pressure-tested by people who know what is on the other side of that table",
+                "You have a go-live date approaching and need fast clarity on your most critical gaps",
+                "You are post-raise and building toward enterprise and you want to know what \"ready\" actually looks like before you are in the room",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
+                  <p
+                    className="text-base font-inter"
+                    style={{ color: '#4A5568', lineHeight: '1.7', textWrap: 'balance' }}
+                  >
+                    {item}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* What We Cover + What You Walk Away With + Who It's For + How It Works + Risk + FAQ + CTA */}
+        {/* What Happens in the Session + What Comes Next + The Investment + Why This Team + FAQ + CTA */}
         <section
           className="px-4 sm:px-6"
           style={{
@@ -213,70 +225,27 @@ const ClinicalClaritySession = () => {
           }}
         >
           <div className="max-w-4xl mx-auto">
-            {/* What We Cover */}
+            {/* What Happens in the Session */}
             <h2
               className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              What We Cover
+              What Happens in the Session
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
-              {[
-                {
-                  title: "Physician Adoption Reality Check",
-                  text: "Where does your product actually fit in a physician's day? Have you tested it with tired, overwhelmed clinicians, not just enthusiastic champions?",
-                },
-                {
-                  title: "Governance and Risk Exposure",
-                  text: "If something goes wrong in your pilot, who owns it? Do you have escalation pathways, a kill-switch protocol, and KPIs the health system can defend?",
-                },
-                {
-                  title: "EHR Integration Truth",
-                  text: "Is your integration real, or is it a separate portal with SSO dressed up in contract language?",
-                },
-                {
-                  title: "Trust and Credibility Gaps",
-                  text: "Would a physician trust this tool with a patient they actually care about? Why or why not?",
-                },
-                {
-                  title: "The One Thing Most Likely to Kill Your Pilot",
-                  text: "We name it directly.",
-                },
-              ].map((pain, i) => (
-                <div
-                  key={i}
-                  className="p-6 rounded-2xl"
-                  style={{
-                    background: 'white',
-                    border: '1.5px solid rgba(243,218,115,0.3)',
-                    boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
-                  }}
-                >
-                  <h3 className="text-base font-inter font-bold mb-2" style={{ color: '#1A2A3A' }}>
-                    {pain.title}
-                  </h3>
-                  <p className="text-base font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                    {pain.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* What You Walk Away With */}
-            <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
-              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+            <p
+              className="text-base sm:text-lg font-inter text-left mb-10 mx-auto"
+              style={{ color: '#4A5568', lineHeight: '1.7', maxWidth: '680px', textWrap: 'balance' }}
             >
-              What You Walk Away With
-            </h2>
+              You bring your product, your current health system conversations, and your biggest unknowns. We bring 90 minutes of focused, honest evaluation across the areas that determine whether a pilot succeeds or quietly fails.
+            </p>
 
-            <div className="space-y-5 mb-16">
+            <div className="space-y-5 mb-6 max-w-[680px] mx-auto">
               {[
-                { icon: FileText, text: "Pre-session product review so we arrive informed, not orienting" },
-                { icon: Users, text: "90-minute live diagnostic with both clinical and systems perspective" },
-                { icon: Shield, text: "Unfiltered identification of your highest-risk failure points" },
-                { icon: CheckCircle2, text: "Specific, prioritized next steps tied to your product and your pilot, not generic frameworks" },
-                { icon: FileText, text: "Clinical Clarity Summary delivered within 48 hours: written findings, priority risks, and recommended next moves you can share with your team or investors" },
+                { icon: Users, text: "Clinical workflow fit: where your product lives in a physician's actual day" },
+                { icon: Shield, text: "EHR integration reality: what you have versus what a contract will require" },
+                { icon: CheckCircle2, text: "Physician adoption risk: whether your champion strategy will hold" },
+                { icon: FileText, text: "Governance and liability exposure: the questions your health system's legal team will ask" },
+                { icon: ClipboardList, text: "Readiness gaps: what to fix first and in what order" },
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
@@ -290,57 +259,40 @@ const ClinicalClaritySession = () => {
               })}
             </div>
 
-            {/* Who It's For */}
-            <div
-              className="p-8 rounded-2xl mb-16"
-              style={{
-                background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
-                border: '1.5px solid rgba(113,141,169,0.2)',
-              }}
+            <p
+              className="text-base font-inter text-center mb-16"
+              style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}
             >
-              <h3
-                className="text-2xl font-playfair font-bold mb-6"
-                style={{ color: '#1A2A3A' }}
-              >
-                Who This Is For
-              </h3>
-              <div className="space-y-3">
-                {[
-                  "Signed LOI or enterprise pilot starting in the next 30 to 90 days",
-                  "About to enter a health system sales conversation where a physician will be in the room",
-                  "Preparing for an enterprise conversation where clinical credibility will be tested",
-                  "Heard \"physicians just aren't adopting it\" and don't know why",
-                  "Want to walk into your pilot knowing the most predictable failure points are closed",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-base font-inter mt-5" style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}>
-                This session is purpose-built for founders in women's health, reproductive care, maternal health, and women's digital health, the clinical environment we know most precisely and where the trust stakes are highest.
-              </p>
-            </div>
+              Within 48 hours of your session, findings are in your hands. Written. Prioritized. Actionable.
+            </p>
 
-            {/* How It Works */}
+            {/* What Comes Next */}
             <h2
               className="text-3xl sm:text-4xl font-playfair font-bold mb-10 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              How It Works
+              What Comes Next
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6">
               {[
-                { step: "1", icon: ClipboardList, title: "Short Intake Form", text: "Takes 5 minutes. Gives us signal on your product, pipeline, and current risks so we can prepare, not orient." },
-                { step: "2", icon: Search, title: "Pre-Session Product Review", text: "We review your materials before the call. When the session starts, we are already informed and ready to diagnose." },
-                { step: "3", icon: Video, title: "90-Minute Live Diagnostic", text: "Nicole (OB/GYN) and John (healthcare IT architect) interrogate your risks across clinical readiness, physician adoption, EHR integration, and deployment." },
-                { step: "4", icon: Send, title: "Clinical Clarity Summary", text: "Written findings, prioritized risks, and recommended actions delivered within 48 hours. Designed to share with your team, board, or investors." },
-              ].map((item, i) => {
-                const Icon = item.icon;
+                {
+                  icon: CheckCircle2,
+                  title: "You are closer than you think",
+                  body: "A few targeted adjustments and you are ready to move.",
+                },
+                {
+                  icon: MapPin,
+                  title: "You need a structured roadmap",
+                  body: "Our Clinical Readiness Roadmap is a focused written assessment that maps your exact gaps and sequenced remediation steps, built for founders 3 to 6 months from their first pilot.",
+                },
+                {
+                  icon: Briefcase,
+                  title: "Your stakes are too high for triage alone",
+                  body: "The Clinical Readiness Assessment is a 14-day engagement that produces a board-ready deliverable you can share with investors, your health system counterpart, and your leadership team before go-live.",
+                },
+              ].map((card, i) => {
+                const Icon = card.icon;
                 return (
                   <div
                     key={i}
@@ -352,19 +304,13 @@ const ClinicalClaritySession = () => {
                     }}
                   >
                     <div className="flex items-center gap-3 mb-3">
-                      <span
-                        className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-inter font-bold"
-                        style={{ background: 'rgba(243,218,115,0.2)', color: '#1A2A3A' }}
-                      >
-                        {item.step}
-                      </span>
-                      <Icon size={20} style={{ color: '#718DA9' }} />
+                      <Icon size={20} style={{ color: '#D4B65D' }} />
                       <h3 className="text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
-                        {item.title}
+                        {card.title}
                       </h3>
                     </div>
                     <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
-                      {item.text}
+                      {card.body}
                     </p>
                   </div>
                 );
@@ -373,14 +319,14 @@ const ClinicalClaritySession = () => {
 
             <p
               className="text-base font-inter text-center mb-16"
-              style={{ color: '#718DA9', lineHeight: '1.7' }}
+              style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}
             >
-              Time-boxed. No hidden upsell. Designed to plug directly into your ongoing sales, product, and fundraising work.
+              You do not have to know which path you are on before the session. That is what the session is for.
             </p>
 
-            {/* Risk Framing */}
+            {/* The Investment */}
             <div
-              className="p-8 rounded-2xl mb-8"
+              className="p-8 rounded-2xl mb-16"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
@@ -390,31 +336,38 @@ const ClinicalClaritySession = () => {
                 className="text-2xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A' }}
               >
-                The Cost of Waiting
+                The Investment
               </h3>
-              <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                One governance gap discovered after go-live costs your team ten times this in a single afternoon.
+              <p
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-4"
+                style={{ color: '#1A2A3A' }}
+              >
+                $1,500
               </p>
-              <p className="text-base font-inter text-center" style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}>
-                This session exists so that does not happen to you.
+              <p className="text-base font-inter text-center max-w-2xl mx-auto" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                90-minute live session with both practitioners, clinical and systems perspective in the same room. Written findings delivered within 48 hours.
               </p>
             </div>
 
-            {/* What Comes Next */}
-            <div className="mb-16">
-              <h2
-                className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
-                style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
-              >
-                What Comes Next
-              </h2>
-              <p
-                className="text-base sm:text-lg font-inter text-center max-w-3xl mx-auto"
-                style={{ color: '#4A5568', lineHeight: '1.7' }}
-              >
-                For founders whose session surfaces risks that require deeper engagement, across integration strategy, physician adoption planning, or ongoing clinical and systems oversight, we offer a structured path to partnership. The session is where that conversation starts.
-              </p>
-            </div>
+            {/* Why This Team */}
+            <h2
+              className="text-3xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+            >
+              Why This Team
+            </h2>
+            <p
+              className="text-base sm:text-lg font-inter text-left mb-4 mx-auto"
+              style={{ color: '#4A5568', lineHeight: '1.7', maxWidth: '680px', textWrap: 'balance' }}
+            >
+              There is no other advisory team in women's digital health that brings a practicing OB/GYN and an EHR Women's Health Architect to the same conversation. Nicole still sees patients. John has built and optimized the most clinically complex OB/GYN workflow environments in enterprise healthcare across 40+ Epic implementations. Together, they see what your product documentation does not show and what your health system counterpart will not tell you until it is too late.
+            </p>
+            <p
+              className="text-base sm:text-lg font-inter font-bold text-left mb-16 mx-auto"
+              style={{ color: '#1A2A3A', lineHeight: '1.7', maxWidth: '680px' }}
+            >
+              You are building for women. Build it so it actually reaches them.
+            </p>
 
             {/* FAQ */}
             <h2
@@ -455,34 +408,20 @@ const ClinicalClaritySession = () => {
 
             {/* Bottom CTA */}
             <div className="text-center">
-              <div
-                className="inline-block p-6 rounded-2xl mb-10"
+              <Button
+                onClick={handleBooking}
+                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
-                  background: '#FBF8F1',
-                  border: '2px solid #D4B65D',
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                  color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  backdropFilter: 'blur(8px)',
                 }}
               >
-                <p className="text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
-                  We guarantee to deliver a clinical adoption strategy that accelerates physician buy-in, or we keep working until we do.
-                </p>
-              </div>
-
-              <div>
-                <Button
-                  onClick={handleBooking}
-                  className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-                    color: '#2A3B4F',
-                    borderColor: 'rgba(255,255,255,0.25)',
-                    boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-                    backdropFilter: 'blur(8px)',
-                  }}
-                >
-                  Book Your Clinical Clarity Session
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
-              </div>
+                Book Your Clinical Clarity Session
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
             </div>
           </div>
         </section>

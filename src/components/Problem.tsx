@@ -203,7 +203,7 @@ const Problem = () => {
           style={{ transitionDelay: '1.2s' }}
         >
           <div 
-            className="relative py-12 px-12 rounded-[32px] overflow-hidden mx-auto"
+            className="relative py-8 px-6 sm:py-12 sm:px-12 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
             style={{
               background: '#FBF8F1',
               border: '2.5px solid #C9B882',

@@ -158,9 +158,8 @@ const Transformation = () => {
                     }} />
 
                   
-                  {/* Elevated card */}
-                  <div
-                    className="relative p-10 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden"
+                   <div
+                    className="relative p-6 sm:p-10 rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden"
                     style={{
                       background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
                       border: '2.5px solid #F3DA73',

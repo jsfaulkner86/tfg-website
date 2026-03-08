@@ -94,7 +94,7 @@ const Hero = () => {
           {trustLabels.map((label) => (
             <span
               key={label}
-              className="font-inter font-medium uppercase text-center md:px-8"
+              className="font-inter font-medium uppercase text-center md:px-8 text-[11px] sm:text-[13px]"
               style={{
                 fontSize: '13px',
                 letterSpacing: '0.1em',

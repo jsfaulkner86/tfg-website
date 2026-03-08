@@ -170,7 +170,7 @@ const Mission = () => {
               transitionDelay: '0.5s'
             }}>
 
-            <div className="flex flex-col gap-16 items-center">
+            <div className="flex flex-col gap-10 sm:gap-16 items-center">
               {/* John's Portrait */}
               <div
                 className="text-center group"

@@ -258,7 +258,10 @@ const PressSpeaking = () => {
         </section>
 
         {/* Founders */}
-        <section className="w-full py-12 md:py-20 bg-background">
+        <section
+          className="w-full py-12 md:py-20"
+          style={{ background: "hsl(210 14% 96%)" }}
+        >
           <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
             <h2
               className="mb-8 md:mb-10 font-display font-bold"

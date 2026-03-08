@@ -336,6 +336,12 @@ const ClinicalClaritySession = () => {
               <p className="text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                 90-minute live session with both practitioners, clinical and systems perspective in the same room. Written findings delivered within 48 hours.
               </p>
+              <p
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-8"
+                style={{ color: '#1A2A3A' }}
+              >
+                $1,500
+              </p>
               <div className="text-center">
                 <Button
                   onClick={handleBooking}

@@ -337,7 +337,7 @@ const ClinicalClaritySession = () => {
                 90-minute live session with both practitioners, clinical and systems perspective in the same room. Written findings delivered within 48 hours.
               </p>
               <p
-                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-8"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-6 sm:mb-8"
                 style={{ color: '#1A2A3A' }}
               >
                 $1,500

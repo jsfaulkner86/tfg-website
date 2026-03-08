@@ -136,7 +136,7 @@ const DualBrain = () =>
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
-            We get into the weeds: EHR integrations, clinical workflow build, AI-ready infrastructure, and the operational mechanics that make technology actually work at the bedside.
+            Great clinical vision fails without operational precision. We go deep on the mechanics: EHR integrations, clinical workflow architecture, AI-ready infrastructure, and the implementation details that determine whether your solution actually works at the bedside or collects dust in the portal. No handoffs to generalists. No learning on your timeline.
           </p>
         </div>
       </div>

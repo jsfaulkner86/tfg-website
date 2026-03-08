@@ -407,8 +407,8 @@ const ClinicalClaritySession = () => {
                     >
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
-                      <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
+                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
+                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
                         {faq.answer}
                       </p>
                     </AccordionContent>

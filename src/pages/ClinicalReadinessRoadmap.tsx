@@ -400,7 +400,7 @@ const ClinicalReadinessRoadmap = () => {
                 Structured intake, async Q&A, a 5 to 7 page written report, sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
               </p>
               <p
-                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-8"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-6 sm:mb-8"
                 style={{ color: '#1A2A3A' }}
               >
                 $5,000

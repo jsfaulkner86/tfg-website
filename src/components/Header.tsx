@@ -96,6 +96,12 @@ const Header = () => {
                   }}
                 >
                   <a 
+                    href="/services" 
+                    className="block px-5 py-3 text-white font-playfair text-base font-medium tracking-wide hover:bg-white/10 transition-all duration-200 border-b border-white/10"
+                  >
+                    Services Overview
+                  </a>
+                  <a 
                     href="/advisory-partnership" 
                     className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
                   >

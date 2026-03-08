@@ -33,7 +33,13 @@ A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT
 - URL: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
 - Booking: https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session
 
-### III. Clinical Readiness Assessment — 14-Day Deep Engagement
+### III. Clinical Readiness Roadmap — Structured Written Assessment
+A focused written readiness assessment built for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. Covers all five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Includes structured intake, async Q&A, a 5 to 7 page written Clinical Readiness Report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
+- Best for: Founders 3 to 6 months from a first pilot conversation, founders who have completed a Clinical Clarity Session and need a deeper structured plan, and founders who want a written document their leadership team, investors, or advisors can review and act on.
+- URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
+- Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
+
+### IV. Clinical Readiness Assessment — 14-Day Deep Engagement
 A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Includes a written Clinical Readiness Report with prioritized remediation roadmap and a 60-minute live findings presentation with both practitioners.
 - Best for: Founders and leadership teams with a signed enterprise pilot or health system contract approaching go-live, especially products in OB/GYN, maternal health, reproductive care, or women's digital health.
 - URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment

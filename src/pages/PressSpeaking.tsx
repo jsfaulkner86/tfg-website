@@ -190,7 +190,7 @@ const PressSpeaking = () => {
         </section>
 
         {/* Media & Podcasts */}
-        <section className="w-full py-16 sm:py-20 bg-muted/50">
+        <section className="w-full py-12 md:py-20 bg-muted/50">
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
@@ -199,27 +199,27 @@ const PressSpeaking = () => {
               Media & Podcasts
             </p>
             <h2
-              className="text-center mb-12 font-display font-bold"
+              className="text-center mb-8 md:mb-12 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Regular Roles & Appearances
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {mediaRoles.map((role) => (
                 <div
                   key={role.title}
-                  className="rounded-xl border border-border bg-card p-6 sm:p-8 flex flex-col"
+                  className="rounded-xl border border-border bg-card p-5 sm:p-8 flex flex-col"
                 >
                   <div
-                    className="mb-4 inline-flex items-center justify-center w-11 h-11 rounded-lg"
+                    className="mb-3 sm:mb-4 inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-lg"
                     style={{ background: "hsl(var(--accent) / 0.12)" }}
                   >
-                    <role.icon className="w-5 h-5" style={{ color: "hsl(var(--accent))" }} />
+                    <role.icon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: "hsl(var(--accent))" }} />
                   </div>
                   <h3
-                    className="text-left mb-1 font-display font-semibold"
-                    style={{ fontSize: "18px", color: "hsl(var(--foreground))" }}
+                    className="text-left mb-1 font-display font-semibold text-base sm:text-lg"
+                    style={{ color: "hsl(var(--foreground))" }}
                   >
                     {role.title}
                   </h3>
@@ -230,8 +230,8 @@ const PressSpeaking = () => {
                     {role.person}
                   </p>
                   <p
-                    className="text-left mb-6 font-inter flex-1"
-                    style={{ fontSize: "15px", lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    className="text-left mb-4 sm:mb-6 font-inter flex-1 text-sm sm:text-[15px]"
+                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
                   >
                     {role.description}
                   </p>

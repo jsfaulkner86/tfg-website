@@ -301,20 +301,20 @@ const PressSpeaking = () => {
 
         {/* Booking CTA */}
         <section
-          className="w-full py-16 sm:py-20"
+          className="w-full py-12 md:py-20"
           style={{ background: "linear-gradient(135deg, hsl(210 30% 14%) 0%, hsl(210 25% 22%) 100%)" }}
         >
           <div className="max-w-3xl mx-auto px-5 sm:px-6 text-center">
-            <Newspaper className="mx-auto mb-4 w-8 h-8" style={{ color: "hsl(45, 62%, 56%)" }} />
+            <Newspaper className="mx-auto mb-4 w-7 h-7 sm:w-8 sm:h-8" style={{ color: "hsl(45, 62%, 56%)" }} />
             <h2
               className="mb-4 font-display font-bold text-white"
-              style={{ fontSize: "clamp(22px, 2.8vw, 32px)" }}
+              style={{ fontSize: "clamp(20px, 2.8vw, 32px)" }}
             >
-              Interested in Booking John or Dr. Nicole?
+              Interested in Booking John or Dr. Faulkner?
             </h2>
             <p
-              className="mb-8 font-inter"
-              style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)" }}
+              className="mb-6 sm:mb-8 font-inter text-sm sm:text-base"
+              style={{ color: "rgba(255,255,255,0.75)" }}
             >
               Available for keynotes, panels, podcast guest spots, and expert commentary on women's health technology adoption.
             </p>

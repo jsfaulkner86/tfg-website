@@ -145,7 +145,7 @@ const DualBrain = () =>
         className="mt-10 md:mt-14 font-inter font-medium text-lg md:text-xl"
         style={{ color: 'hsl(210, 14%, 25%)', letterSpacing: '0.01em' }}
       >
-        Together, they eliminate the gap between vision and execution.
+        Together, they close the gap between what you built and what actually gets used.
       </p>
     </div>
   </section>;

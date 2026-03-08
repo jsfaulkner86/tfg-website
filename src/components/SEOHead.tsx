@@ -8,7 +8,7 @@ interface SEOHeadProps {
   jsonLd?: object | object[];
 }
 
-const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogImage, jsonLd }: SEOHeadProps) => {
   useEffect(() => {
     document.title = title;
 

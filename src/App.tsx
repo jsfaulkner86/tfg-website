@@ -47,6 +47,7 @@ const App = () => (
             <Route path="/operating-partner-retainer" element={<OperatingPartnerRetainer />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/llm-summary" element={<LLMSummary />} />
+            <Route path="/press-speaking" element={<PressSpeaking />} />
             <Route path="/thank-you" element={<ThankYou />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -108,6 +108,12 @@ const Header = () => {
                     Clinical Clarity Session
                   </a>
                   <a 
+                    href="/clinical-readiness-roadmap" 
+                    className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
+                  >
+                    Clinical Readiness Roadmap
+                  </a>
+                  <a 
                     href="/clinical-readiness-assessment" 
                     className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
                   >

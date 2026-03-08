@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, FileText, Users, Shield, ClipboardList, Search, Video, Send, MapPin, FileCheck, Briefcase } from "lucide-react";
 import Header from "@/components/Header";
+import OnStage from "@/components/OnStage";
 import SEOHead from "@/components/SEOHead";
 import {
   Accordion,

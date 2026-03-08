@@ -248,19 +248,19 @@ const ClinicalReadinessRoadmap = () => {
                       boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
                     }}
                   >
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-start sm:items-center gap-2 sm:gap-3 mb-3 flex-wrap">
                       <span
-                        className="flex items-center justify-center w-8 h-8 rounded-full text-sm font-inter font-bold"
+                        className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full text-xs sm:text-sm font-inter font-bold flex-shrink-0"
                         style={{ background: 'rgba(243,218,115,0.2)', color: '#1A2A3A' }}
                       >
                         {item.step}
                       </span>
-                      <Icon size={20} style={{ color: '#718DA9' }} />
-                      <h3 className="text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
+                      <Icon size={18} className="flex-shrink-0 hidden sm:block" style={{ color: '#718DA9' }} />
+                      <h3 className="text-sm sm:text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
                         {item.title}
                       </h3>
                     </div>
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                    <p className="text-sm sm:text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                       {item.text}
                     </p>
                   </div>
@@ -384,7 +384,7 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* The Investment */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
@@ -396,11 +396,11 @@ const ClinicalReadinessRoadmap = () => {
               >
                 The Investment
               </h3>
-              <p className="text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+              <p className="text-sm sm:text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                 Structured intake, async Q&A, a 5 to 7 page written report, sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
               </p>
               <p
-                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-8"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-6 sm:mb-8"
                 style={{ color: '#1A2A3A' }}
               >
                 $5,000
@@ -424,7 +424,7 @@ const ClinicalReadinessRoadmap = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="text-center">
+            <div className="text-center" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
               <Button
                 onClick={handleBooking}
                 className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"

@@ -210,8 +210,8 @@ const EngagementModels = () =>
         {engagements.map((eng) =>
       <div key={eng.numeral}>
             <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
-              <div className="py-8 md:py-16">
-              <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-12">
+              <div className="py-6 md:py-16">
+              <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-12">
                 <span
               className="font-display font-light flex-shrink-0"
               style={{ fontSize: '36px', lineHeight: 1, color: 'hsl(45, 62%, 56%)', minWidth: '60px' }}>
@@ -229,15 +229,15 @@ const EngagementModels = () =>
                     {eng.tagline}
                   </p>
                   <p
-                className="font-inter leading-relaxed mb-5 md:mb-6"
+                className="font-inter leading-relaxed mb-4 md:mb-6"
                 style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
                   </p>
                   {eng.price && (
                     <p
-                      className="font-playfair font-bold mb-5"
-                      style={{ fontSize: '20px', color: 'hsl(210, 14%, 19%)' }}
+                      className="font-playfair font-bold mb-4"
+                      style={{ fontSize: '18px', color: 'hsl(210, 14%, 19%)' }}
                     >
                       {eng.price}
                     </p>

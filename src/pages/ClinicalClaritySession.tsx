@@ -156,7 +156,7 @@ const ClinicalClaritySession = () => {
 
               <Button
                 onClick={handleBooking}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',
@@ -321,7 +321,7 @@ const ClinicalClaritySession = () => {
 
             {/* The Investment */}
             <div
-              className="p-8 rounded-2xl mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
@@ -333,11 +333,11 @@ const ClinicalClaritySession = () => {
               >
                 The Investment
               </h3>
-              <p className="text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+              <p className="text-sm sm:text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                 90-minute live session with both practitioners, clinical and systems perspective in the same room. Written findings delivered within 48 hours.
               </p>
               <p
-                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-8"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-6 sm:mb-8"
                 style={{ color: '#1A2A3A' }}
               >
                 $1,500
@@ -345,7 +345,7 @@ const ClinicalClaritySession = () => {
               <div className="text-center">
                 <Button
                   onClick={handleBooking}
-                  className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                  className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                   style={{
                     background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                     color: '#2A3B4F',
@@ -388,8 +388,8 @@ const ClinicalClaritySession = () => {
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-16">
-              <Accordion type="single" collapsible className="space-y-4">
+            <div className="mb-12 sm:mb-16">
+              <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem
                     key={index}
@@ -402,13 +402,13 @@ const ClinicalClaritySession = () => {
                     }}
                   >
                     <AccordionTrigger
-                      className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
                     >
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="px-8 pb-6">
-                      <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
+                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
+                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -418,10 +418,10 @@ const ClinicalClaritySession = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="text-center">
+            <div className="text-center" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
               <Button
                 onClick={handleBooking}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',

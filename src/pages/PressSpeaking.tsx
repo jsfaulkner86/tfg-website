@@ -111,7 +111,7 @@ const PressSpeaking = () => {
                 className="mb-10 font-inter"
                 style={{ fontSize: "clamp(16px, 1.6vw, 20px)", color: "rgba(255,255,255,0.85)", textShadow: "0 2px 8px rgba(0,0,0,0.5)" }}
               >
-                Conference stages, clinical podcasts, and industry media — where John and Dr. Nicole bring clinical adoption strategy to the forefront.
+                Conference stages, clinical podcasts, and industry media — where Dr. Faulkner brings clinical adoption strategy to the forefront.
               </p>
             </div>
           </div>

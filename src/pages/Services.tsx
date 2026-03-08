@@ -114,7 +114,7 @@ const DualBrain = () =>
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
-            We help women's health tech founders, operators, and product leaders align their people, processes, and vision before a single tool is selected or configured. We believe clinicians and physicians are crucial to your success.
+            Most women's health companies build the technology first and bring in clinicians last, then wonder why adoption stalls. We reverse that. Before a single tool is selected or a workflow is configured, we align your people, your processes, and your clinical vision with a board-certified OB/GYN who has actually practiced in the environments you are building for. Physicians and clinicians are not a rubber stamp. They are your most important infrastructure.
           </p>
         </div>
 

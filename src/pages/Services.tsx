@@ -178,7 +178,7 @@ const engagements = [
   numeral: 'IV',
   name: 'Clinical Readiness Assessment',
   tagline: '14-Day Deep Engagement',
-  paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same team, deeper scope, comprehensive de-risking before your go-live date.',
+  paragraph: 'A structured 14-day engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration reality, and liability exposure before your enterprise pilot goes live. You receive a written Clinical Readiness Report your board, investors, and health system counterpart can act on, delivered with a live 60-minute findings presentation from both practitioners.',
   price: 'Investment upon inquiry',
   cta: 'Learn About the Assessment',
   href: '/clinical-readiness-assessment',

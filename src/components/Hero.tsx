@@ -90,7 +90,7 @@ const Hero = () => {
 
       {/* Trust bar */}
       <div className="w-full bg-white border-b border-border">
-        <div className="max-w-5xl mx-auto px-6 py-5 grid grid-cols-2 gap-y-4 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-border">
+        <div className="max-w-5xl mx-auto px-5 sm:px-6 py-5 grid grid-cols-2 gap-y-3 gap-x-2 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-border">
           {trustLabels.map((label) => (
             <span
               key={label}

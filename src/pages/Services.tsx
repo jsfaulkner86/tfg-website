@@ -234,6 +234,14 @@ const EngagementModels = () =>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
                   </p>
+                  {eng.price && (
+                    <p
+                      className="font-playfair font-bold mb-5"
+                      style={{ fontSize: '20px', color: 'hsl(210, 14%, 19%)' }}
+                    >
+                      {eng.price}
+                    </p>
+                  )}
                   <a
                 href={eng.href}
                 target={eng.external ? '_blank' : undefined}

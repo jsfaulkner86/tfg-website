@@ -118,7 +118,10 @@ const PressSpeaking = () => {
         </section>
 
         {/* Speaking Events */}
-        <section className="w-full py-12 md:py-20 bg-background">
+        <section
+          className="w-full py-12 md:py-20"
+          style={{ background: "hsl(210 14% 96%)" }}
+        >
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
@@ -136,7 +139,8 @@ const PressSpeaking = () => {
             {speakingEvents.map((event) => (
               <div
                 key={event.title}
-                className="rounded-xl border border-border bg-card overflow-hidden flex flex-col md:flex-row"
+                className="rounded-xl overflow-hidden flex flex-col md:flex-row"
+                style={{ background: "hsl(210 14% 19%)" }}
               >
                 <div className="md:w-1/2">
                   <img
@@ -149,27 +153,26 @@ const PressSpeaking = () => {
                   <span
                     className="inline-block mb-3 text-xs font-inter font-semibold uppercase tracking-widest px-3 py-1 rounded-full w-fit"
                     style={{
-                      background: "hsl(var(--accent) / 0.12)",
-                      color: "hsl(var(--accent))",
+                      background: "hsl(45 62% 56% / 0.15)",
+                      color: "hsl(45, 62%, 56%)",
                     }}
                   >
                     {event.type}
                   </span>
                   <h3
-                    className="text-left mb-2 font-display font-bold text-base sm:text-lg md:text-xl"
-                    style={{ color: "hsl(var(--foreground))" }}
+                    className="text-left mb-2 font-display font-bold text-base sm:text-lg md:text-xl text-white"
                   >
                     {event.title}
                   </h3>
                   <p
                     className="text-left mb-1 font-inter font-semibold text-sm"
-                    style={{ color: "hsl(var(--accent))" }}
+                    style={{ color: "hsl(45, 62%, 56%)" }}
                   >
                     {event.speaker} — {event.role}
                   </p>
                   <p
                     className="text-left mb-4 sm:mb-6 font-inter text-sm sm:text-[15px]"
-                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    style={{ lineHeight: 1.65, color: "rgba(255,255,255,0.7)" }}
                   >
                     {event.description}
                   </p>
@@ -178,7 +181,7 @@ const PressSpeaking = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-sm font-semibold font-inter transition-colors duration-300 hover:opacity-80"
-                    style={{ color: "hsl(var(--accent))" }}
+                    style={{ color: "hsl(45, 62%, 56%)" }}
                   >
                     {event.linkLabel}
                     <ExternalLink className="ml-1.5 w-4 h-4" />
@@ -190,17 +193,20 @@ const PressSpeaking = () => {
         </section>
 
         {/* Media & Podcasts */}
-        <section className="w-full py-12 md:py-20 bg-muted/50">
+        <section
+          className="w-full py-12 md:py-20"
+          style={{ background: "linear-gradient(180deg, hsl(210 25% 18%) 0%, hsl(210 20% 24%) 100%)" }}
+        >
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
-              style={{ fontSize: "12px", letterSpacing: "0.18em", color: "hsl(var(--accent))" }}
+              style={{ fontSize: "12px", letterSpacing: "0.18em", color: "hsl(45, 62%, 56%)" }}
             >
               Media & Podcasts
             </p>
             <h2
-              className="text-center mb-8 md:mb-12 font-display font-bold"
-              style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
+              className="text-center mb-8 md:mb-12 font-display font-bold text-white"
+              style={{ fontSize: "clamp(22px, 2.8vw, 34px)" }}
             >
               Regular Roles & Appearances
             </h2>
@@ -209,29 +215,29 @@ const PressSpeaking = () => {
               {mediaRoles.map((role) => (
                 <div
                   key={role.title}
-                  className="rounded-xl border border-border bg-card p-5 sm:p-8 flex flex-col"
+                  className="rounded-xl p-5 sm:p-8 flex flex-col"
+                  style={{ background: "hsl(210 20% 15%)", border: "1px solid hsl(210 20% 28%)" }}
                 >
                   <div
                     className="mb-3 sm:mb-4 inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-lg"
-                    style={{ background: "hsl(var(--accent) / 0.12)" }}
+                    style={{ background: "hsl(45 62% 56% / 0.12)" }}
                   >
-                    <role.icon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: "hsl(var(--accent))" }} />
+                    <role.icon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: "hsl(45, 62%, 56%)" }} />
                   </div>
                   <h3
-                    className="text-left mb-1 font-display font-semibold text-base sm:text-lg"
-                    style={{ color: "hsl(var(--foreground))" }}
+                    className="text-left mb-1 font-display font-semibold text-base sm:text-lg text-white"
                   >
                     {role.title}
                   </h3>
                   <p
                     className="text-left mb-1 font-inter font-semibold text-sm"
-                    style={{ color: "hsl(var(--accent))" }}
+                    style={{ color: "hsl(45, 62%, 56%)" }}
                   >
                     {role.person}
                   </p>
                   <p
                     className="text-left mb-4 sm:mb-6 font-inter flex-1 text-sm sm:text-[15px]"
-                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    style={{ lineHeight: 1.65, color: "rgba(255,255,255,0.65)" }}
                   >
                     {role.description}
                   </p>
@@ -240,7 +246,7 @@ const PressSpeaking = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-sm font-semibold font-inter transition-colors duration-300 hover:opacity-80"
-                    style={{ color: "hsl(var(--accent))" }}
+                    style={{ color: "hsl(45, 62%, 56%)" }}
                   >
                     {role.linkLabel}
                     <ExternalLink className="ml-1.5 w-4 h-4" />
@@ -252,7 +258,10 @@ const PressSpeaking = () => {
         </section>
 
         {/* Founders */}
-        <section className="w-full py-12 md:py-20 bg-background">
+        <section
+          className="w-full py-12 md:py-20"
+          style={{ background: "hsl(210 14% 96%)" }}
+        >
           <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
             <h2
               className="mb-8 md:mb-10 font-display font-bold"

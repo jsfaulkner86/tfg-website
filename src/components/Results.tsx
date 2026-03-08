@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Clock,
     title: "25+ Years of Combined Experience",
-    description: "25+ years of combined expertise across healthcare IT architecture, EHR systems, clinical workflow design, and frontline OB/GYN leadership. From clinical environment audits to full deployment support, we cover the entire lifecycle."
+    description: "25+ years of combined expertise across healthcare IT architecture, EHR systems, clinical workflow design, and frontline Women's Health leadership. From clinical environment audits to full deployment support, we cover the entire lifecycle."
   },
   {
     icon: Users,

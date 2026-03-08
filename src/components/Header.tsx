@@ -281,6 +281,13 @@ const Header = () => {
             >
               Contact
             </a>
+            <a 
+              href="/press-speaking"
+              onClick={handleNavClick}
+              className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Press & Speaking
+            </a>
             <a
               href="https://www.linkedin.com/company/faulkner-group/"
               target="_blank"

@@ -103,7 +103,7 @@ const ForWomensHealth = () => {
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
 
           {/* Content */}
-          <div className={`relative z-10 flex items-center justify-center px-6 text-center transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className={`relative z-10 flex items-center justify-center px-5 sm:px-6 text-center transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="max-w-[820px]">
               {/* Eyebrow */}
               <p

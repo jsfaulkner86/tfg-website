@@ -149,7 +149,7 @@ const engagements = [
   numeral: 'I',
   name: 'Strategic Advisory',
   tagline: 'Equity-Based. Long-Term.',
-  paragraph: 'A selective, equity-based advisory partnership for early-stage companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships.',
+  paragraph: 'A selective, equity-based advisory partnership for early-stage women\'s health companies where we believe in the mission, the founders, and the long-term potential. We bring clinical and systems credibility that can materially change your trajectory before the high-stakes moments arrive. We take a small number of these partnerships each year.',
   cta: 'Explore the Partnership',
   href: '/advisory-partnership',
   external: false

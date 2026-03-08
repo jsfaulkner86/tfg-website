@@ -180,7 +180,7 @@ const Mission = () => {
 
                 <div className="relative">
                   <div
-                    className="relative w-64 h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
+                    className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
                     style={{
                       border: '3px solid #F3DA73',
                       boxShadow: '0 12px 30px rgba(0,0,0,0.05), inset 0 0 20px rgba(243,218,115,0.2)',

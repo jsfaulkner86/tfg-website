@@ -298,9 +298,9 @@ const ClinicalClaritySession = () => {
                       boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
                     }}
                   >
-                    <div className="flex flex-row items-center gap-3 mb-3">
-                      <Icon size={20} className="flex-shrink-0" style={{ color: '#D4B65D' }} />
-                      <h3 className="text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
+                    <div className="flex flex-row items-start gap-3 mb-3">
+                      <Icon size={20} className="flex-shrink-0 mt-0.5" style={{ color: '#D4B65D' }} />
+                      <h3 className="text-base font-inter font-bold text-left" style={{ color: '#1A2A3A' }}>
                         {card.title}
                       </h3>
                     </div>

@@ -229,7 +229,7 @@ const EngagementModels = () =>
                     {eng.tagline}
                   </p>
                   <p
-                className="font-inter leading-relaxed mb-5 md:mb-6"
+                className="font-inter leading-relaxed mb-4 md:mb-6"
                 style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />

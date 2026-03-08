@@ -173,6 +173,8 @@ const ClinicalClaritySession = () => {
           </div>
         </section>
 
+        <OnStage />
+
         {/* This Is For You If */}
         <section
           className="px-4 sm:px-6"

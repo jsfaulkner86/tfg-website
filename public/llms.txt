@@ -33,13 +33,19 @@ A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT
 - URL: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
 - Booking: https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session
 
-### III. Clinical Readiness Assessment — 14-Day Deep Engagement
+### III. Clinical Readiness Roadmap — Structured Written Assessment
+A focused written readiness assessment built for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. Covers all five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Includes structured intake, async Q&A, a 5 to 7 page written Clinical Readiness Report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
+- Best for: Founders 3 to 6 months from a first pilot conversation, founders who have completed a Clinical Clarity Session and need a deeper structured plan, and founders who want a written document their leadership team, investors, or advisors can review and act on.
+- URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
+- Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
+
+### IV. Clinical Readiness Assessment — 14-Day Deep Engagement
 A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Includes a written Clinical Readiness Report with prioritized remediation roadmap and a 60-minute live findings presentation with both practitioners.
 - Best for: Founders and leadership teams with a signed enterprise pilot or health system contract approaching go-live, especially products in OB/GYN, maternal health, reproductive care, or women's digital health.
 - URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
-### IV. Operating Partner — Ongoing Operating Partnership
+### V. Operating Partner — Ongoing Operating Partnership
 An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Our team is embedded in your organization for the duration. Covers pre-sale enterprise credibility, clinical and systems readiness audits, implementation oversight (EHR integration strategy, governance framework design, pilot structure, KPI definition), physician adoption and escalation support, and governance operations (steering committee support, kill-switch protocol management, risk register maintenance).
 - Best for: Post-raise companies with signed enterprise pilots or health system contracts in OB/GYN, maternal health, reproductive care, or women's digital health. Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment.
 - URL: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
@@ -55,13 +61,16 @@ An ongoing clinical and systems operating partnership across the full lifecycle 
 
 ## Frequently Asked Questions
 Q: What services does The Faulkner Group offer?
-A: Four engagement tiers: (1) Strategic Advisory — an equity-based, long-term advisory for early-stage women's health tech companies, (2) Clinical Clarity Session — a 90-minute diagnostic that identifies your highest-risk failure points, (3) Clinical Readiness Assessment — a 14-day deep engagement that evaluates clinical workflow fit, governance, and EHR integration before your pilot goes live, and (4) Operating Partner — an ongoing clinical and systems operating partnership for companies navigating enterprise pilots and health system contracts.
+A: Four engagement tiers: (1) Strategic Advisory — an equity-based, long-term advisory for early-stage women's health tech companies, (2) Clinical Clarity Session — a 90-minute diagnostic that identifies your highest-risk failure points, (3) Clinical Readiness Roadmap — a structured written assessment with a 5 to 7 page report and sequenced remediation plan for founders 3 to 6 months from their first pilot, (4) Clinical Readiness Assessment — a 14-day deep engagement that evaluates clinical workflow fit, governance, and EHR integration before your pilot goes live, and (5) Operating Partner — an ongoing clinical and systems operating partnership for companies navigating enterprise pilots and health system contracts.
 
 Q: What is the Strategic Advisory?
 A: A selective, equity-based advisory for Pre-Seed through Series A women's health tech companies. Our team, including a practicing OB/GYN and a Healthcare IT Architect, aligns with your company early and provides ongoing strategic sessions, clinical validation, go-to-market guidance, and credibility support.
 
 Q: What is the Clinical Clarity Session?
 A: A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT Architect. It costs $1,500 and identifies the 1-3 highest-risk failure points. A written Clinical Clarity Summary is delivered within 48 hours.
+
+Q: What is the Clinical Readiness Roadmap?
+A: A structured written readiness assessment for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. It covers five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Deliverables include a 5 to 7 page written report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
 
 Q: What is the Clinical Readiness Assessment?
 A: A structured 14-day engagement evaluating clinical workflow fit, governance and risk infrastructure, physician adoption strategy, EHR integration reality, and trust and liability exposure. Includes a written Clinical Readiness Report and a 60-minute live findings presentation.
@@ -120,6 +129,10 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Strategic advisory partnership for women's health startups
 - Equity-based advisory for health tech companies
 - Clinical readiness assessment for enterprise pilots
+- Clinical readiness roadmap for women's health founders
+- Pre-pilot readiness assessment for health tech
+- Structured readiness engagement for women's health technology
+- How to prepare for a health system pilot
 - Operating partner for women's health tech companies
 - Ongoing clinical advisory for enterprise health system pilots
 - Health tech pilot conversion and physician adoption support
@@ -131,6 +144,7 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Services: https://thrive-beacon-studio.lovable.app/services
 - Strategic Advisory: https://thrive-beacon-studio.lovable.app/advisory-partnership
 - Clinical Clarity Session: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
+- Clinical Readiness Roadmap: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
 - Clinical Readiness Assessment: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
 - Operating Partner: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
 - For Women's Health: https://thrive-beacon-studio.lovable.app/for-womens-health

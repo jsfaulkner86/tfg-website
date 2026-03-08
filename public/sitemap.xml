@@ -37,6 +37,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://thrive-beacon-studio.lovable.app/operating-partner-retainer</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>

@@ -14,9 +14,77 @@ const roadmapSchema = [
       url: "https://thefaulknergroupadvisors.com",
     },
     description:
-      "A structured written readiness assessment for women's health founders building toward their first enterprise conversation, covering clinical workflow fit, EHR integration, physician adoption, governance, and liability exposure.",
+      "A structured written readiness assessment for women's health founders 3 to 6 months from their first enterprise pilot. Covers clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Includes a 5 to 7 page written report, sequenced remediation roadmap, and 60-minute live findings call.",
     serviceType: "Healthcare Advisory",
     areaServed: "US",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Clinical Readiness Roadmap Deliverables",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Structured Intake and Product Review" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "5 to 7 Page Written Clinical Readiness Report" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sequenced Remediation Roadmap" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "60-Minute Live Findings Call" } },
+      ],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Nicole Faulkner",
+    honorificPrefix: "Dr.",
+    honorificSuffix: "D.O.",
+    jobTitle: "Chief Clinical Officer",
+    worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
+    sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Johnathon Faulkner",
+    jobTitle: "CEO and Healthcare IT Architect",
+    worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
+    sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
+  },
+];
+
+const faqData = [
+  {
+    question: "What is the Clinical Readiness Roadmap?",
+    answer:
+      "A structured written readiness assessment built for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. It covers clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. You receive a 5 to 7 page written report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.",
+  },
+  {
+    question: "Who runs the assessment?",
+    answer:
+      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility, and Johnathon Faulkner, a Healthcare IT Architect with 14+ years and 40+ Epic implementations including Epic Women's Health. Both practitioners are involved in the full engagement.",
+  },
+  {
+    question: "How is this different from the Clinical Clarity Session?",
+    answer:
+      "The Clinical Clarity Session is a 90-minute live triage diagnostic. The Clinical Readiness Roadmap is a deeper structured engagement that produces a written report and sequenced action plan. Many founders complete a Clinical Clarity Session first, then move to the Roadmap for a comprehensive remediation plan.",
+  },
+  {
+    question: "What do I receive at the end?",
+    answer:
+      "A 5 to 7 page Written Clinical Readiness Report covering all five readiness domains, a Sequenced Remediation Roadmap with prioritized next steps, and a 60-minute Live Findings Call with both practitioners for full Q&A.",
+  },
+  {
+    question: "When is the right time to do this?",
+    answer:
+      "When you are 3 to 6 months from your first enterprise pilot conversation and want a clear, sequenced path to readiness. Also ideal after completing a Clinical Clarity Session when deeper structured planning is needed.",
+  },
+  {
+    question: "What are the five readiness domains?",
+    answer:
+      "Clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. These are the same five areas health systems evaluate before approving a new clinical product.",
+  },
+  {
+    question: "Is this tied to a longer engagement?",
+    answer:
+      "No. The Clinical Readiness Roadmap is a standalone engagement with a clear deliverable. For founders whose roadmap surfaces risks requiring deeper evaluation before a go-live date, the Clinical Readiness Assessment is the natural next step.",
   },
 ];
 
@@ -334,6 +402,25 @@ const ClinicalReadinessRoadmap = () => {
           </div>
         </section>
       </main>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqData.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
     </>
   );
 };

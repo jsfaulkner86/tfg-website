@@ -260,7 +260,7 @@ const ClinicalReadinessRoadmap = () => {
                         {item.title}
                       </h3>
                     </div>
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                    <p className="text-sm sm:text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                       {item.text}
                     </p>
                   </div>

@@ -90,7 +90,7 @@ const ServicesHero = () =>
 
 /* ───────────────────────── 2. DUAL BRAIN ───────────────────────── */
 const DualBrain = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'hsl(210 14% 96%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
       <SectionHeading>      Clinical with Health Technology     
@@ -196,12 +196,12 @@ const engagements = [
 
 
 const EngagementModels = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, hsl(210 25% 18%) 0%, hsl(210 20% 22%) 100%)' }}>
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-10 md:mb-16">
         <Eyebrow>Engagement Models</Eyebrow>
-        <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
-        <p className="font-inter" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>
+        <SectionHeading light>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
+        <p className="font-inter" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px' }}>
           Choose the engagement that fits where you are and scale when you are ready.
         </p>
       </div>
@@ -209,7 +209,7 @@ const EngagementModels = () =>
       <div>
         {engagements.map((eng) =>
       <div key={eng.numeral}>
-            <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
+            <div className="h-px w-full" style={{ background: 'hsl(210 20% 30%)' }} />
               <div className="py-6 md:py-16">
               <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-12">
                 <span
@@ -220,8 +220,8 @@ const EngagementModels = () =>
                 </span>
                 <div className="flex-1">
                   <h3
-                className="font-display font-bold mb-1"
-                style={{ fontSize: 'clamp(22px, 2.4vw, 30px)', lineHeight: 1.2, color: 'hsl(210, 14%, 19%)' }}>
+                className="font-display font-bold mb-1 text-white"
+                style={{ fontSize: 'clamp(22px, 2.4vw, 30px)', lineHeight: 1.2 }}>
 
                     {eng.name}
                   </h3>
@@ -230,14 +230,14 @@ const EngagementModels = () =>
                   </p>
                   <p
                 className="font-inter leading-relaxed mb-4 md:mb-6"
-                style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}>
+                style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', maxWidth: '640px' }}>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
                   </p>
                   {eng.price && (
                     <p
-                      className="font-playfair font-bold mb-4"
-                      style={{ fontSize: '18px', color: 'hsl(210, 14%, 19%)' }}
+                      className="font-playfair font-bold mb-4 text-white"
+                      style={{ fontSize: '18px' }}
                     >
                       {eng.price}
                     </p>
@@ -247,7 +247,7 @@ const EngagementModels = () =>
                 target={eng.external ? '_blank' : undefined}
                 rel={eng.external ? 'noopener noreferrer' : undefined}
                 className="inline-flex items-center gap-2 font-inter font-semibold text-sm min-h-[44px] transition-all duration-300 hover:gap-3"
-                style={{ color: 'hsl(45, 62%, 46%)' }}>
+                style={{ color: 'hsl(45, 62%, 56%)' }}>
 
                     {eng.cta}
                     <ArrowRight className="h-4 w-4" />
@@ -257,7 +257,7 @@ const EngagementModels = () =>
             </div>
           </div>
       )}
-        <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
+        <div className="h-px w-full" style={{ background: 'hsl(210 20% 30%)' }} />
       </div>
     </div>
   </section>;
@@ -327,7 +327,7 @@ const fitChecks = [
 
 
 const IsThisYou = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'hsl(210 14% 96%)' }}>
     <div className="max-w-4xl mx-auto text-center">
       <Eyebrow>Who We Serve</Eyebrow>
       <SectionHeading>The Faulkner Group Is Right For You If...</SectionHeading>

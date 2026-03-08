@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ServicePathways from "@/components/ServicePathways";
 import StickyCTA from "@/components/StickyCTA";
 import SEOHead from "@/components/SEOHead";
 
@@ -129,11 +130,13 @@ const Index = () => {
         title="Women's Health Tech Adoption | John Faulkner & Dr. Nicole Faulkner"
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) help women's health tech founders drive physician adoption and scale from pilot to enterprise."
         canonical="https://thrive-beacon-studio.lovable.app/"
+        ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
         jsonLd={[orgSchema, johnFaulknerSchema, nicholeFaulknerSchema]}
       />
       <Header />
       <main className="overflow-x-hidden">
         <Hero />
+        <ServicePathways />
         <Suspense fallback={<div className="min-h-screen" />}>
           <OnStage />
           <Mission />

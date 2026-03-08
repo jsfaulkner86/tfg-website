@@ -31,11 +31,19 @@ const SEOHead = ({ title, description, canonical, ogImage, jsonLd }: SEOHeadProp
     setMeta("og:url", canonical, "property");
     setMeta("og:type", "website", "property");
     setMeta("og:site_name", "The Faulkner Group", "property");
+    if (ogImage) {
+      setMeta("og:image", ogImage, "property");
+      setMeta("og:image:width", "1200", "property");
+      setMeta("og:image:height", "630", "property");
+    }
 
     // Twitter
-    setMeta("twitter:card", "summary", "name");
+    setMeta("twitter:card", ogImage ? "summary_large_image" : "summary", "name");
     setMeta("twitter:title", title, "name");
     setMeta("twitter:description", description, "name");
+    if (ogImage) {
+      setMeta("twitter:image", ogImage, "name");
+    }
 
     // Canonical
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;

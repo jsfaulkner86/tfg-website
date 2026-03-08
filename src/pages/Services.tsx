@@ -90,53 +90,61 @@ const ServicesHero = () =>
 
 /* ───────────────────────── 2. DUAL BRAIN ───────────────────────── */
 const DualBrain = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, #FDFCF9 0%, #F7F3E8 100%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
-      <SectionHeading>      Clinical with Health Technology     
-
-    </SectionHeading>
+      <SectionHeading>Clinical with Health Technology</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
-        {/* Advisory Brain */}
-        <div className="rounded-lg p-5 md:p-8 text-left border border-border" style={{ background: 'hsl(0 0% 98%)' }}>
-
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-2 rounded-lg" style={{ backgroundColor: 'hsl(45, 62%, 56%, 0.15)' }}>
-              <Brain className="h-6 w-6" style={{ color: 'hsl(45, 62%, 56%)' }} />
+        {/* Medical Brain */}
+        <div
+          className="rounded-2xl p-6 md:p-9 text-left transition-all duration-300 hover:-translate-y-1"
+          style={{
+            background: 'hsl(0 0% 100%)',
+            border: '1.5px solid hsl(45, 50%, 82%)',
+            boxShadow: '0 8px 32px hsl(45 40% 50% / 0.08), 0 1px 3px hsl(0 0% 0% / 0.04)',
+          }}
+        >
+          <div className="flex items-center gap-3 mb-5">
+            <div className="p-2.5 rounded-xl" style={{ background: 'linear-gradient(135deg, hsl(45, 62%, 56%, 0.18), hsl(45, 62%, 56%, 0.08))' }}>
+              <Brain className="h-5 w-5" style={{ color: 'hsl(45, 55%, 46%)' }} />
             </div>
-            <h3 className="text-xl font-display font-bold" style={{ color: 'hsl(210, 14%, 19%)' }}>The Medical Brain
-
-          </h3>
+            <h3 className="text-lg md:text-xl font-display font-bold tracking-wide uppercase" style={{ color: 'hsl(210, 14%, 19%)', letterSpacing: '0.04em' }}>
+              The Medical Brain
+            </h3>
           </div>
-          <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px' }}>We help women's health tech founders, operators, and product leaders align their people, processes, and vision before a single tool is selected or configured. We believe clinicians and physicians are crucial to your success.
-
-        </p>
+          <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
+            We help women's health tech founders, operators, and product leaders align their people, processes, and vision before a single tool is selected or configured. We believe clinicians and physicians are crucial to your success.
+          </p>
         </div>
 
-        {/* MedTech Brain */}
+        {/* Health Technology Brain */}
         <div
-        className="rounded-lg p-5 md:p-8 text-left border border-border"
-        style={{ background: 'hsl(0 0% 98%)' }}>
-
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-2 rounded-lg" style={{ backgroundColor: 'hsl(45, 62%, 56%, 0.15)' }}>
-              <Cpu className="h-6 w-6" style={{ color: 'hsl(45, 62%, 56%)' }} />
+          className="rounded-2xl p-6 md:p-9 text-left transition-all duration-300 hover:-translate-y-1"
+          style={{
+            background: 'hsl(0 0% 100%)',
+            border: '1.5px solid hsl(45, 50%, 82%)',
+            boxShadow: '0 8px 32px hsl(45 40% 50% / 0.08), 0 1px 3px hsl(0 0% 0% / 0.04)',
+          }}
+        >
+          <div className="flex items-center gap-3 mb-5">
+            <div className="p-2.5 rounded-xl" style={{ background: 'linear-gradient(135deg, hsl(45, 62%, 56%, 0.18), hsl(45, 62%, 56%, 0.08))' }}>
+              <Cpu className="h-5 w-5" style={{ color: 'hsl(45, 55%, 46%)' }} />
             </div>
-            <h3 className="text-xl font-display font-bold" style={{ color: 'hsl(210, 14%, 19%)' }}>The Health Technology Brain
-
-          </h3>
+            <h3 className="text-lg md:text-xl font-display font-bold tracking-wide uppercase" style={{ color: 'hsl(210, 14%, 19%)', letterSpacing: '0.04em' }}>
+              The Health Technology Brain
+            </h3>
           </div>
-          <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px' }}>
+          <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
             We get into the weeds: EHR integrations, clinical workflow build, AI-ready infrastructure, and the operational mechanics that make technology actually work at the bedside.
           </p>
         </div>
       </div>
 
       <p
-      className="mt-10 font-inter font-medium text-lg"
-      style={{ color: 'hsl(210, 14%, 19%)' }}>
-
+        className="mt-10 md:mt-14 font-inter font-medium text-lg md:text-xl"
+        style={{ color: 'hsl(210, 14%, 25%)', letterSpacing: '0.01em' }}
+      >
         Together, they eliminate the gap between vision and execution.
       </p>
     </div>

@@ -69,6 +69,9 @@ A: A selective, equity-based advisory for Pre-Seed through Series A women's heal
 Q: What is the Clinical Clarity Session?
 A: A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT Architect. It costs $1,500 and identifies the 1-3 highest-risk failure points. A written Clinical Clarity Summary is delivered within 48 hours.
 
+Q: What is the Clinical Readiness Roadmap?
+A: A structured written readiness assessment for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. It covers five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Deliverables include a 5 to 7 page written report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
+
 Q: What is the Clinical Readiness Assessment?
 A: A structured 14-day engagement evaluating clinical workflow fit, governance and risk infrastructure, physician adoption strategy, EHR integration reality, and trust and liability exposure. Includes a written Clinical Readiness Report and a 60-minute live findings presentation.
 

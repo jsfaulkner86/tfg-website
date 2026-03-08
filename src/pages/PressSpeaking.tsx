@@ -82,32 +82,38 @@ const PressSpeaking = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section
-          className="relative w-full pt-[160px] pb-[60px] md:pt-[200px] md:pb-[80px]"
-          style={{
-            paddingTop: "max(160px, calc(160px + env(safe-area-inset-top, 0px)))",
-            background: "linear-gradient(135deg, hsl(210 30% 14%) 0%, hsl(210 25% 22%) 100%)",
-          }}
-        >
-          <div className="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 text-center">
-            <p
-              className="mb-4 font-inter font-medium uppercase"
-              style={{ fontSize: "13px", letterSpacing: "0.2em", color: "hsl(45, 62%, 56%)" }}
-            >
-              Press & Speaking
-            </p>
-            <h1
-              className="mb-5 font-display font-bold text-white"
-              style={{ fontSize: "clamp(28px, 3.5vw, 46px)", lineHeight: 1.15 }}
-            >
-              Shaping the Women's Health Conversation
-            </h1>
-            <p
-              className="font-inter"
-              style={{ fontSize: "clamp(16px, 1.5vw, 19px)", color: "rgba(255,255,255,0.8)" }}
-            >
-              Conference stages, clinical podcasts, and industry media — where John and Dr. Nicole bring clinical adoption strategy to the forefront.
-            </p>
+        <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
+          <img
+            src="/hero-boardroom.jpg"
+            alt="The Faulkner Group women's health tech advisory team in a strategy session"
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
+
+          <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
+            <div className="max-w-[820px] w-full">
+              <p
+                className="mb-6 font-inter font-medium uppercase"
+                style={{ fontSize: "13px", letterSpacing: "0.2em", color: "hsl(45, 62%, 56%)" }}
+              >
+                Press & Speaking
+              </p>
+              <h1
+                className="mb-6 font-display font-bold text-white"
+                style={{ fontSize: "clamp(28px, 3.8vw, 52px)", lineHeight: 1.1 }}
+              >
+                <span className="block">Shaping the Women's Health</span>
+                <span className="block">Conversation</span>
+              </h1>
+              <p
+                className="mb-10 font-inter"
+                style={{ fontSize: "clamp(16px, 1.6vw, 20px)", color: "rgba(255,255,255,0.85)", textShadow: "0 2px 8px rgba(0,0,0,0.5)" }}
+              >
+                Conference stages, clinical podcasts, and industry media — where John and Dr. Nicole bring clinical adoption strategy to the forefront.
+              </p>
+            </div>
           </div>
         </section>
 

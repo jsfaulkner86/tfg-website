@@ -144,6 +144,7 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Services: https://thrive-beacon-studio.lovable.app/services
 - Strategic Advisory: https://thrive-beacon-studio.lovable.app/advisory-partnership
 - Clinical Clarity Session: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
+- Clinical Readiness Roadmap: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
 - Clinical Readiness Assessment: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
 - Operating Partner: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
 - For Women's Health: https://thrive-beacon-studio.lovable.app/for-womens-health

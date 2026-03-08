@@ -154,10 +154,11 @@ const LLMSummary = () => {
         <section className="mb-10">
           <h2 className="text-xl font-playfair font-bold mb-3">Services</h2>
           <ul className="list-disc pl-6 space-y-2 leading-relaxed">
-            <li><strong>Sprint Starter</strong> — Clarity in 48 hours. Focused diagnostic across product workflows, go-to-market operations, and clinical positioning.</li>
-            <li><strong>Sprint Pro</strong> — Build. Optimize. Operate. EHR integration, clinical workflow design, and physician adoption strategy.</li>
-            <li><strong>Sprint Elite</strong> — End-to-end enterprise engagement from strategy through launch with AI readiness assessment and intelligent workflow integration.</li>
-            <li><strong>Partnership Model</strong> — Long-term embedded advisory for women's health tech companies.</li>
+            <li><strong>Strategic Advisory</strong> — Equity-based advisory for Pre-Seed through Series A women's health tech companies. Ongoing strategic sessions, clinical validation, and credibility support.</li>
+            <li><strong>Clinical Clarity Session</strong> — 90-minute live triage diagnostic identifying highest-risk failure points. Written findings within 48 hours.</li>
+            <li><strong>Clinical Readiness Roadmap</strong> — Structured written readiness assessment for founders 3 to 6 months from a first pilot. 5 to 7 page report, sequenced remediation roadmap, and 60-minute live findings call.</li>
+            <li><strong>Clinical Readiness Assessment</strong> — 14-day deep engagement evaluating all five readiness domains before go-live. Board-ready written report and live findings presentation.</li>
+            <li><strong>Operating Partner</strong> — Ongoing embedded clinical and systems operating partnership from sales through go-live, adoption, and contract renewal.</li>
           </ul>
         </section>
 

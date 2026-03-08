@@ -159,21 +159,33 @@ const engagements = [
   name: 'Clinical Clarity Session',
   tagline: '90-Minute Diagnostic',
   paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your highest-risk failure points across clinical readiness and governance, physician adoption, EHR integration and training, and sales/CSM and deployment before your pilot, your deal, or your investor meeting depends on it.',
+  price: '$1,500',
   cta: 'Book a Clinical Clarity Session',
   href: '/clinical-clarity-session',
   external: false
 },
 {
   numeral: 'III',
+  name: 'Clinical Readiness Roadmap',
+  tagline: 'Structured Readiness Engagement',
+  paragraph: 'A focused written assessment for women\'s health founders building toward their first enterprise conversation. Five readiness domains. A sequenced remediation roadmap. A 60-minute live findings call with both practitioners. Built for founders who need more than triage and less than a full 14-day engagement.',
+  price: '$5,000',
+  cta: 'Learn More',
+  href: '/clinical-readiness-roadmap',
+  external: false
+},
+{
+  numeral: 'IV',
   name: 'Clinical Readiness Assessment',
   tagline: '14-Day Deep Engagement',
   paragraph: 'A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Same team, deeper scope, comprehensive de-risking before your go-live date.',
+  price: 'Investment upon inquiry',
   cta: 'Learn About the Assessment',
   href: '/clinical-readiness-assessment',
   external: false
 },
 {
-  numeral: 'IV',
+  numeral: 'V',
   name: 'Operating Partner',
   tagline: 'Embedded. Ongoing. Operational.',
   paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Our team embedded in your organization for the duration. We take a small number of partners at a time.',
@@ -222,6 +234,14 @@ const EngagementModels = () =>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
                   </p>
+                  {eng.price && (
+                    <p
+                      className="font-playfair font-bold mb-5"
+                      style={{ fontSize: '20px', color: 'hsl(210, 14%, 19%)' }}
+                    >
+                      {eng.price}
+                    </p>
+                  )}
                   <a
                 href={eng.href}
                 target={eng.external ? '_blank' : undefined}

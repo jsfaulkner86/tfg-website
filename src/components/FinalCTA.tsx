@@ -55,7 +55,7 @@ const FinalCTA = () => {
         <div className="pt-4">
           <Button 
             onClick={handleBooking}
-            className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+            className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
             style={{ 
               background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
               color: '#2A3B4F',

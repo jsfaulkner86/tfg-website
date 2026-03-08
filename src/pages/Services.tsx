@@ -158,7 +158,7 @@ const engagements = [
   numeral: 'II',
   name: 'Clinical Clarity Session',
   tagline: '90-Minute Diagnostic',
-  paragraph: 'A 90-minute diagnostic led by Nicole Faulkner, D.O. (practicing OB/GYN) and Johnathon Faulkner (enterprise healthcare IT architect). We identify your highest-risk failure points across clinical readiness and governance, physician adoption, EHR integration and training, and sales/CSM and deployment before your pilot, your deal, or your investor meeting depends on it.',
+  paragraph: 'A 90-minute session with a practicing OB/GYN and an EHR Women\'s Health Architect. We identify your highest-risk failure points across clinical workflow fit, EHR integration, physician adoption, and governance before your pilot, your deal, or your investor meeting depends on it. Written findings in your hands within 48 hours.',
   price: '$1,500',
   cta: 'Book a Clinical Clarity Session',
   href: '/clinical-clarity-session',

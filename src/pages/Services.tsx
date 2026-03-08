@@ -93,7 +93,7 @@ const DualBrain = () =>
 <section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, #FDFCF9 0%, #F7F3E8 100%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
-      <SectionHeading>Clinical with Health Technology</SectionHeading>
+      <SectionHeading>Where Clinical Truth Meets Operational Reality</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
         {/* Medical Brain */}
@@ -114,7 +114,7 @@ const DualBrain = () =>
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
-            We help women's health tech founders, operators, and product leaders align their people, processes, and vision before a single tool is selected or configured. We believe clinicians and physicians are crucial to your success.
+            Most women's health companies build the technology first and bring in clinicians last, then wonder why adoption stalls. We reverse that. Before a single tool is selected or a workflow is configured, we align your people, your processes, and your clinical vision with a board-certified OB/GYN who has actually practiced in the environments you are building for. Physicians and clinicians are not a rubber stamp. They are your most important infrastructure.
           </p>
         </div>
 
@@ -136,7 +136,7 @@ const DualBrain = () =>
             </h3>
           </div>
           <p className="font-inter leading-relaxed" style={{ color: 'hsl(0, 0%, 35%)', fontSize: '15px', lineHeight: '1.7' }}>
-            We get into the weeds: EHR integrations, clinical workflow build, AI-ready infrastructure, and the operational mechanics that make technology actually work at the bedside.
+            Great clinical vision fails without operational precision. We go deep on the mechanics: EHR integrations, clinical workflow architecture, AI-ready infrastructure, and the implementation details that determine whether your solution actually works at the bedside or collects dust in the portal. No handoffs to generalists. No learning on your timeline.
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@ const DualBrain = () =>
         className="mt-10 md:mt-14 font-inter font-medium text-lg md:text-xl"
         style={{ color: 'hsl(210, 14%, 25%)', letterSpacing: '0.01em' }}
       >
-        Together, they eliminate the gap between vision and execution.
+        Together, they close the gap between what you built and what actually gets used.
       </p>
     </div>
   </section>;

@@ -31,8 +31,8 @@ const Hero = () => {
         />
 
         {/* Content */}
-        <div className="relative z-10 flex items-center justify-center px-6 text-center">
-          <div className="max-w-[820px]">
+        <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
+          <div className="max-w-[820px] w-full">
             {/* Small caps label */}
             <p
               className="mb-6 font-inter font-medium uppercase"

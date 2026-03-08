@@ -90,7 +90,7 @@ const ServicesHero = () =>
 
 /* ───────────────────────── 2. DUAL BRAIN ───────────────────────── */
 const DualBrain = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'hsl(210 14% 96%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
       <SectionHeading>      Clinical with Health Technology     

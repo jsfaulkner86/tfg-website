@@ -141,7 +141,7 @@ const Approach = () => {
                   background: 'radial-gradient(circle at 50% 0%, rgba(255,255,255,0.3) 0%, transparent 60%)'
                 }} />
                     
-                    <div className="relative p-8 sm:p-10 flex flex-col h-full">
+                    <div className="relative p-6 sm:p-8 md:p-10 flex flex-col h-full">
                       {/* Number badge */}
                       <div className="flex justify-center mb-8 relative">
                         <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{

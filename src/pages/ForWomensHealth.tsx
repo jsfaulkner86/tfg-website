@@ -92,7 +92,7 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"
@@ -103,7 +103,7 @@ const ForWomensHealth = () => {
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
 
           {/* Content */}
-          <div className={`relative z-10 flex items-center justify-center px-6 text-center transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className={`relative z-10 flex items-center justify-center px-5 sm:px-6 text-center transition-all duration-1000 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="max-w-[820px]">
               {/* Eyebrow */}
               <p
@@ -145,7 +145,7 @@ const ForWomensHealth = () => {
               {/* CTA */}
               <Button
                 onClick={handleMeet}
-                className="text-base font-semibold rounded-lg px-9 py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
                 style={{
                   background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
                   color: '#2A3B4F',

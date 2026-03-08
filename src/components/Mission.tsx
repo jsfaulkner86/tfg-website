@@ -60,7 +60,7 @@ const Mission = () => {
 
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-24 items-start relative">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start relative">
           {/* Vertical divider */}
           <div
             className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"
@@ -170,7 +170,7 @@ const Mission = () => {
               transitionDelay: '0.5s'
             }}>
 
-            <div className="flex flex-col gap-16 items-center">
+            <div className="flex flex-col gap-10 sm:gap-16 items-center">
               {/* John's Portrait */}
               <div
                 className="text-center group"
@@ -180,7 +180,7 @@ const Mission = () => {
 
                 <div className="relative">
                   <div
-                    className="relative w-64 h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
+                    className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
                     style={{
                       border: '3px solid #F3DA73',
                       boxShadow: '0 12px 30px rgba(0,0,0,0.05), inset 0 0 20px rgba(243,218,115,0.2)',
@@ -254,7 +254,7 @@ const Mission = () => {
 
                 <div className="relative">
                   <div
-                    className="relative w-64 h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
+                    className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden mx-auto mb-4 transition-all duration-500 group-hover:-translate-y-2"
                     style={{
                       border: '3px solid #F3DA73',
                       boxShadow: '0 12px 30px rgba(0,0,0,0.05), inset 0 0 20px rgba(243,218,115,0.2)',

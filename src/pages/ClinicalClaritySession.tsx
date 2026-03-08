@@ -106,7 +106,7 @@ const ClinicalClaritySession = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[160px] pb-[80px] md:pt-[200px] md:pb-[140px]">
+        <section className="relative w-full overflow-hidden pt-[180px] pb-[60px] md:pt-[240px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -119,8 +119,8 @@ const ClinicalClaritySession = () => {
             style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }}
           />
 
-          <div className="relative z-10 flex items-center justify-center px-6 text-center">
-            <div className="max-w-[820px]">
+          <div className="relative z-10 flex items-center justify-center px-5 sm:px-6 text-center">
+            <div className="max-w-[820px] w-full">
               <p
                 className="mb-6 font-inter font-medium uppercase"
                 style={{
@@ -129,34 +129,29 @@ const ClinicalClaritySession = () => {
                   color: 'hsl(45, 62%, 56%)',
                 }}
               >
-                90-Minute Diagnostic
+                90-Minute Triage Session
               </p>
 
               <h1
                 className="mb-6 font-display font-bold text-white"
                 style={{
-                  fontSize: 'clamp(22px, 3.2vw, 40px)',
-                  lineHeight: 1.2,
-                  textWrap: 'balance',
+                  fontSize: 'clamp(28px, 3.8vw, 52px)',
+                  lineHeight: 1.1,
                 }}
               >
-                Most women's health founders are more ready than they think. A few critical gaps are usually all that stands between a strong product and a confident health system conversation. This session finds them.
+                Find Your Gaps Before Your Health System Does
               </h1>
 
               <p
-                className="mb-10 font-inter"
+                className="mb-8 sm:mb-10 font-inter max-w-lg mx-auto"
                 style={{
-                  fontSize: 'clamp(15px, 1.5vw, 18px)',
+                  fontSize: 'clamp(15px, 1.6vw, 20px)',
                   color: 'rgba(255, 255, 255, 0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
-                  lineHeight: 1.7,
-                  textWrap: 'balance',
-                  maxWidth: '680px',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
+                  lineHeight: '1.6',
                 }}
               >
-                The Clinical Clarity Session is 90 minutes with the two people who have been inside the room where these decisions get made. A Board-Certified OB/GYN who still sees patients, and an EHR Women's Health Architect with 14 years and 40+ Epic implementations, including Epic Women's Health.
+                Most women's health founders are more ready than they think. This session finds the critical gaps standing between your product and a confident health system conversation.
               </p>
 
               <Button

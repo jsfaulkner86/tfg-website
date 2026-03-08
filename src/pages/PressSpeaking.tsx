@@ -252,10 +252,10 @@ const PressSpeaking = () => {
         </section>
 
         {/* Founders */}
-        <section className="w-full py-16 sm:py-20 bg-background">
+        <section className="w-full py-12 md:py-20 bg-background">
           <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
             <h2
-              className="mb-10 font-display font-bold"
+              className="mb-8 md:mb-10 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Meet the Voices
@@ -265,7 +265,7 @@ const PressSpeaking = () => {
                 <img
                   src={johnHeadshot}
                   alt="John Faulkner — CEO & Healthcare IT Architect"
-                  className="w-32 h-32 rounded-full object-cover mb-4 border-2"
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-4 border-2"
                   style={{ borderColor: "hsl(var(--accent))" }}
                 />
                 <h3 className="font-display font-semibold text-lg" style={{ color: "hsl(var(--foreground))" }}>
@@ -274,7 +274,7 @@ const PressSpeaking = () => {
                 <p className="font-inter text-sm mb-2" style={{ color: "hsl(var(--muted-foreground))" }}>
                   CEO & Healthcare IT Architect
                 </p>
-                <p className="font-inter text-sm mb-3" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
+                <p className="font-inter text-sm mb-3 max-w-xs" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
                   15+ years designing healthcare IT infrastructure. Host of the Smarter Systems, Better Care podcast.
                 </p>
               </div>
@@ -282,7 +282,7 @@ const PressSpeaking = () => {
                 <img
                   src={nicoleHeadshot}
                   alt="Dr. Nicole Faulkner — Chief Clinical Officer, Board-Certified OB/GYN"
-                  className="w-32 h-32 rounded-full object-cover mb-4 border-2"
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover mb-4 border-2"
                   style={{ borderColor: "hsl(var(--accent))" }}
                 />
                 <h3 className="font-display font-semibold text-lg" style={{ color: "hsl(var(--foreground))" }}>
@@ -291,7 +291,7 @@ const PressSpeaking = () => {
                 <p className="font-inter text-sm mb-2" style={{ color: "hsl(var(--muted-foreground))" }}>
                   Chief Clinical Officer — Board-Certified OB/GYN
                 </p>
-                <p className="font-inter text-sm mb-3" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
+                <p className="font-inter text-sm mb-3 max-w-xs" style={{ color: "hsl(var(--muted-foreground))", lineHeight: 1.6 }}>
                   WHIS speaker, BackTable Medical Director, and clinical governance expert for women's health tech.
                 </p>
               </div>

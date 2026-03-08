@@ -118,7 +118,7 @@ const PressSpeaking = () => {
         </section>
 
         {/* Speaking Events */}
-        <section className="w-full py-16 sm:py-20 bg-background">
+        <section className="w-full py-12 md:py-20 bg-background">
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
             <p
               className="text-center mb-3 font-inter font-medium uppercase"
@@ -127,7 +127,7 @@ const PressSpeaking = () => {
               On Stage
             </p>
             <h2
-              className="text-center mb-12 font-display font-bold"
+              className="text-center mb-8 md:mb-12 font-display font-bold"
               style={{ fontSize: "clamp(22px, 2.8vw, 34px)", color: "hsl(var(--foreground))" }}
             >
               Speaking Engagements
@@ -136,16 +136,16 @@ const PressSpeaking = () => {
             {speakingEvents.map((event) => (
               <div
                 key={event.title}
-                className="rounded-xl border border-border bg-card overflow-hidden md:flex"
+                className="rounded-xl border border-border bg-card overflow-hidden flex flex-col md:flex-row"
               >
                 <div className="md:w-1/2">
                   <img
                     src={event.image}
                     alt={`${event.speaker} speaking at ${event.title}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-48 sm:h-64 md:h-full object-cover"
                   />
                 </div>
-                <div className="md:w-1/2 p-6 sm:p-10 flex flex-col justify-center">
+                <div className="md:w-1/2 p-5 sm:p-8 md:p-10 flex flex-col justify-center">
                   <span
                     className="inline-block mb-3 text-xs font-inter font-semibold uppercase tracking-widest px-3 py-1 rounded-full w-fit"
                     style={{
@@ -156,8 +156,8 @@ const PressSpeaking = () => {
                     {event.type}
                   </span>
                   <h3
-                    className="text-left mb-2 font-display font-bold"
-                    style={{ fontSize: "20px", color: "hsl(var(--foreground))" }}
+                    className="text-left mb-2 font-display font-bold text-base sm:text-lg md:text-xl"
+                    style={{ color: "hsl(var(--foreground))" }}
                   >
                     {event.title}
                   </h3>
@@ -168,8 +168,8 @@ const PressSpeaking = () => {
                     {event.speaker} — {event.role}
                   </p>
                   <p
-                    className="text-left mb-6 font-inter"
-                    style={{ fontSize: "15px", lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
+                    className="text-left mb-4 sm:mb-6 font-inter text-sm sm:text-[15px]"
+                    style={{ lineHeight: 1.65, color: "hsl(var(--muted-foreground))" }}
                   >
                     {event.description}
                   </p>

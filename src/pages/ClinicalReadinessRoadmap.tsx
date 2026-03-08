@@ -424,7 +424,7 @@ const ClinicalReadinessRoadmap = () => {
             </div>
 
             {/* Bottom CTA */}
-            <div className="text-center">
+            <div className="text-center" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
               <Button
                 onClick={handleBooking}
                 className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"

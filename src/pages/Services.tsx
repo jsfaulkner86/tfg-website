@@ -141,12 +141,19 @@ const DualBrain = () =>
         </div>
       </div>
 
-      <p
-        className="mt-10 md:mt-14 font-inter font-medium text-lg md:text-xl"
-        style={{ color: 'hsl(210, 14%, 25%)', letterSpacing: '0.01em' }}
-      >
-        Together, they close the gap between what you built and what actually gets used.
-      </p>
+      <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl mt-10 md:mt-14" style={{
+        background: '#FBF8F1',
+        border: '2px solid #D4B65D',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
+      }}>
+        <p className="text-center text-base sm:text-xl md:text-2xl lg:text-3xl font-playfair font-bold" style={{
+          color: '#718DA9',
+          letterSpacing: '-0.02em',
+          lineHeight: '1.5'
+        }}>
+          Together, they close the gap between what you built and what actually gets used.
+        </p>
+      </div>
     </div>
   </section>;
 

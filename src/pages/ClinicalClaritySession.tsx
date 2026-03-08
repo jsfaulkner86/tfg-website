@@ -269,7 +269,7 @@ const ClinicalClaritySession = () => {
               What Comes Next
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 mb-6 items-stretch">
               {[
                 {
                   icon: CheckCircle2,
@@ -291,20 +291,20 @@ const ClinicalClaritySession = () => {
                 return (
                   <div
                     key={i}
-                    className="p-6 rounded-2xl"
+                    className="flex flex-col p-6 rounded-2xl"
                     style={{
                       background: 'white',
                       border: '1.5px solid rgba(243,218,115,0.3)',
                       boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
                     }}
                   >
-                    <div className="flex items-center gap-3 mb-3">
-                      <Icon size={20} style={{ color: '#D4B65D' }} />
+                    <div className="flex flex-row items-center gap-3 mb-3">
+                      <Icon size={20} className="flex-shrink-0" style={{ color: '#D4B65D' }} />
                       <h3 className="text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
                         {card.title}
                       </h3>
                     </div>
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                    <p className="text-base font-inter flex-1" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                       {card.body}
                     </p>
                   </div>

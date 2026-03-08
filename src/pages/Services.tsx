@@ -185,7 +185,7 @@ const engagements = [
   external: false
 },
 {
-  numeral: 'IV',
+  numeral: 'V',
   name: 'Operating Partner',
   tagline: 'Embedded. Ongoing. Operational.',
   paragraph: 'An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship — from the sales conversation through go-live, adoption, and contract renewal. Our team embedded in your organization for the duration. We take a small number of partners at a time.',

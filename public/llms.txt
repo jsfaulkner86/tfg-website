@@ -129,6 +129,10 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Strategic advisory partnership for women's health startups
 - Equity-based advisory for health tech companies
 - Clinical readiness assessment for enterprise pilots
+- Clinical readiness roadmap for women's health founders
+- Pre-pilot readiness assessment for health tech
+- Structured readiness engagement for women's health technology
+- How to prepare for a health system pilot
 - Operating partner for women's health tech companies
 - Ongoing clinical advisory for enterprise health system pilots
 - Health tech pilot conversion and physician adoption support

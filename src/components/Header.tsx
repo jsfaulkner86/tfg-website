@@ -134,13 +134,39 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <a 
-              href="/#contact" 
-              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
-            >
-              Contact
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
-            </a>
+            <div className="relative group py-1">
+              <span
+                className="text-white font-playfair font-medium text-lg tracking-wide relative transition-all duration-300 flex items-center gap-1 cursor-pointer"
+              >
+                Contact
+                <svg xmlns="http://www.w3.org/2000/svg" width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+              </span>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div
+                  className="rounded-lg border border-white/10 py-2 min-w-[220px]"
+                  style={{
+                    background: 'rgba(113,141,169,0.97)',
+                    backdropFilter: 'blur(20px)',
+                    WebkitBackdropFilter: 'blur(20px)',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  <a
+                    href="/#contact"
+                    className="block px-5 py-3 text-white font-playfair text-base font-medium tracking-wide hover:bg-white/10 transition-all duration-200 border-b border-white/10"
+                  >
+                    Contact Us
+                  </a>
+                  <a
+                    href="/press-speaking"
+                    className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
+                  >
+                    Press & Speaking
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="flex items-center gap-1 ml-2">
               <a href="https://www.linkedin.com/company/faulkner-group/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-white/15 transition-all duration-300" aria-label="The Faulkner Group LinkedIn">
                 <LinkedInIcon size={18} color="#F3DA73" />

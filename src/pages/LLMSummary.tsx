@@ -165,7 +165,14 @@ const LLMSummary = () => {
         <section className="mb-10">
           <h2 className="text-xl font-playfair font-bold mb-3">Clinical Clarity Session</h2>
           <p className="leading-relaxed">
-            A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect. Price: $1,500. Identifies the 1-3 highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust. Includes a written Clinical Clarity Summary delivered within 48 hours.
+            A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect. Identifies the highest-risk failure points across workflow fit, governance, adoption barriers, EHR integration, and clinical trust. Includes a written Clinical Clarity Summary delivered within 48 hours.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-xl font-playfair font-bold mb-3">Clinical Readiness Roadmap</h2>
+          <p className="leading-relaxed">
+            A structured written readiness assessment for women's health founders 3 to 6 months from their first enterprise pilot. Covers five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Deliverables include a 5 to 7 page written Clinical Readiness Report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
           </p>
         </section>
 

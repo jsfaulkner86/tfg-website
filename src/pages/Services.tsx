@@ -93,7 +93,7 @@ const DualBrain = () =>
 <section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, #FDFCF9 0%, #F7F3E8 100%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
-      <SectionHeading>Clinical with Health Technology</SectionHeading>
+      <SectionHeading>Where Clinical Truth Meets Operational Reality</SectionHeading>
 
       <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
         {/* Medical Brain */}

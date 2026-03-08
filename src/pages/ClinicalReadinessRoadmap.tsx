@@ -396,7 +396,7 @@ const ClinicalReadinessRoadmap = () => {
               >
                 The Investment
               </h3>
-              <p className="text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+              <p className="text-sm sm:text-base font-inter text-center max-w-2xl mx-auto mb-6" style={{ color: '#4A5568', lineHeight: '1.7' }}>
                 Structured intake, async Q&A, a 5 to 7 page written report, sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
               </p>
               <p

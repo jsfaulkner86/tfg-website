@@ -60,7 +60,7 @@ const Mission = () => {
 
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-24 items-start relative">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start relative">
           {/* Vertical divider */}
           <div
             className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"

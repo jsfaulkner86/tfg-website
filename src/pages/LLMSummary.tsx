@@ -199,6 +199,7 @@ const LLMSummary = () => {
           <ul className="list-disc pl-6 space-y-1 leading-relaxed">
             <li>Website: <a href="https://thrive-beacon-studio.lovable.app" className="underline">thrive-beacon-studio.lovable.app</a></li>
             <li>Clinical Clarity Session: <a href="https://thrive-beacon-studio.lovable.app/clinical-clarity-session" className="underline">Book here</a></li>
+            <li>Clinical Readiness Roadmap: <a href="https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap" className="underline">Learn more</a></li>
             <li>For Investors: <a href="https://thrive-beacon-studio.lovable.app/investors" className="underline">Investor page</a></li>
             <li>Services: <a href="https://thrive-beacon-studio.lovable.app/services" className="underline">View engagement models</a></li>
           </ul>

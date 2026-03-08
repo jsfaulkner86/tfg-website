@@ -402,7 +402,7 @@ const ClinicalClaritySession = () => {
                     }}
                   >
                     <AccordionTrigger
-                      className="px-8 py-6 text-left hover:no-underline font-playfair font-bold text-lg sm:text-xl"
+                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-xl"
                       style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
                     >
                       {faq.question}

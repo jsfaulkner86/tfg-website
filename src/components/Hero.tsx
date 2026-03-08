@@ -66,7 +66,7 @@ const Hero = () => {
                 textShadow: '0 2px 8px rgba(0,0,0,0.5)',
               }}
             >
-              Strategy and system fluency for women's health tech founders.
+              Where clinical strategy meets enterprise systems reality for women's health founders.
             </p>
 
             {/* CTA */}

@@ -20,6 +20,7 @@ const LLMSummary = lazy(() => import("./pages/LLMSummary"));
 const ClinicalReadinessAssessment = lazy(() => import("./pages/ClinicalReadinessAssessment"));
 const AdvisoryPartnership = lazy(() => import("./pages/AdvisoryPartnership"));
 const OperatingPartnerRetainer = lazy(() => import("./pages/OperatingPartnerRetainer"));
+const ClinicalReadinessRoadmap = lazy(() => import("./pages/ClinicalReadinessRoadmap"));
 
 const queryClient = new QueryClient();
 

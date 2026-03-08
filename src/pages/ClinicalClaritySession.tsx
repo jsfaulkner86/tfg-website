@@ -388,7 +388,7 @@ const ClinicalClaritySession = () => {
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-16">
+            <div className="mb-12 sm:mb-16">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem

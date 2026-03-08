@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import ServicePathways from "@/components/ServicePathways";
 import StickyCTA from "@/components/StickyCTA";
 import SEOHead from "@/components/SEOHead";
 

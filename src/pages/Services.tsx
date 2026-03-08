@@ -196,7 +196,7 @@ const engagements = [
 
 
 const EngagementModels = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, hsl(210 25% 18%) 0%, hsl(210 20% 22%) 100%)' }}>
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-10 md:mb-16">
         <Eyebrow>Engagement Models</Eyebrow>

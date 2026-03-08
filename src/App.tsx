@@ -20,6 +20,7 @@ const LLMSummary = lazy(() => import("./pages/LLMSummary"));
 const ClinicalReadinessAssessment = lazy(() => import("./pages/ClinicalReadinessAssessment"));
 const AdvisoryPartnership = lazy(() => import("./pages/AdvisoryPartnership"));
 const OperatingPartnerRetainer = lazy(() => import("./pages/OperatingPartnerRetainer"));
+const ClinicalReadinessRoadmap = lazy(() => import("./pages/ClinicalReadinessRoadmap"));
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/clinical-clarity-session" element={<ClinicalClaritySession />} />
             <Route path="/clinical-readiness-assessment" element={<ClinicalReadinessAssessment />} />
+            <Route path="/clinical-readiness-roadmap" element={<ClinicalReadinessRoadmap />} />
             <Route path="/advisory-partnership" element={<AdvisoryPartnership />} />
             <Route path="/operating-partner-retainer" element={<OperatingPartnerRetainer />} />
             <Route path="/investors" element={<Investors />} />

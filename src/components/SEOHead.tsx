@@ -4,6 +4,7 @@ interface SEOHeadProps {
   title: string;
   description: string;
   canonical: string;
+  ogImage?: string;
   jsonLd?: object | object[];
 }
 

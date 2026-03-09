@@ -92,7 +92,7 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
+        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[40px] md:pt-[180px] md:pb-[60px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"

@@ -197,11 +197,11 @@ const LLMSummary = () => {
         <section className="mb-10">
           <h2 className="text-xl font-playfair font-bold mb-3">Contact</h2>
           <ul className="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Website: <a href="https://thrive-beacon-studio.lovable.app" className="underline">thrive-beacon-studio.lovable.app</a></li>
-            <li>Clinical Clarity Session: <a href="https://thrive-beacon-studio.lovable.app/clinical-clarity-session" className="underline">Book here</a></li>
-            <li>Clinical Readiness Roadmap: <a href="https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap" className="underline">Learn more</a></li>
-            <li>For Investors: <a href="https://thrive-beacon-studio.lovable.app/investors" className="underline">Investor page</a></li>
-            <li>Services: <a href="https://thrive-beacon-studio.lovable.app/services" className="underline">View engagement models</a></li>
+            <li>Website: <a href="https://thefaulknergroupadvisors.com" className="underline">thefaulknergroupadvisors.com</a></li>
+            <li>Clinical Clarity Session: <a href="https://thefaulknergroupadvisors.com/clinical-clarity-session" className="underline">Book here</a></li>
+            <li>Clinical Readiness Roadmap: <a href="https://thefaulknergroupadvisors.com/clinical-readiness-roadmap" className="underline">Learn more</a></li>
+            <li>For Investors: <a href="https://thefaulknergroupadvisors.com/investors" className="underline">Investor page</a></li>
+            <li>Services: <a href="https://thefaulknergroupadvisors.com/services" className="underline">View engagement models</a></li>
           </ul>
         </section>
       </main>

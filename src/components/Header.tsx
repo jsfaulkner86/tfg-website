@@ -268,6 +268,13 @@ const Header = () => {
               Operating Partner
             </a>
             <a 
+              href="/for-womens-health"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Resources
+            </a>
+            <a 
               href="/#contact"
               onClick={handleNavClick}
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"

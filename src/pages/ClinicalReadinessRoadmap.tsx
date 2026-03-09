@@ -135,9 +135,9 @@ const ClinicalReadinessRoadmap = () => {
                 style={{
                   fontSize: 'clamp(28px, 3.8vw, 52px)',
                   lineHeight: 1.1
-                }}>You think you're ready 
-for a health system 
+                }}>You think you're ready
 Let's find out
+
               </h1>
 
               <p

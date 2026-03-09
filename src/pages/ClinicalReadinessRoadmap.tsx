@@ -234,9 +234,9 @@ const ClinicalReadinessRoadmap = () => {
 
             <Button
               onClick={handleBooking}
-              variant="accent"
+              variant="glassy"
               size="lg"
-              className="group h-auto w-full sm:w-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+              className="group h-auto w-full sm:w-auto px-8 py-5 text-base"
             >
               Get Your Roadmap
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

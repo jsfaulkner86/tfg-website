@@ -313,9 +313,8 @@ const Partnership = () =>
       </div>
 
       <blockquote
-      className="text-center font-display italic text-xl mb-10"
+      className="text-center font-display italic text-xl mb-6"
       style={{ color: 'hsl(45, 62%, 70%)' }}>
-
         "We do not just consult. We build with you until it works."
       </blockquote>
 

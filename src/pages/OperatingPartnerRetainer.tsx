@@ -46,7 +46,7 @@ const OperatingPartnerRetainer = () => {
           />
           <div className="absolute inset-0 bg-foreground/60" />
 
-          <div className="relative z-10 px-6 text-center">
+          <div className="relative z-10 px-5 sm:px-6 text-center">
             <div className="mx-auto max-w-[860px]">
               <p className="mb-6 font-inter text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                 Ongoing Operating Partnership

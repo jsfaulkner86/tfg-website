@@ -364,7 +364,7 @@ const OperatingPartnerRetainer = () => {
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-10 sm:mb-16">
+            <div className="mb-6 sm:mb-8">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem

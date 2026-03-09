@@ -162,7 +162,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Section 1 — Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
+        <section className="relative w-full overflow-hidden pb-12 md:pb-20" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="The Faulkner Group women's health tech advisory team in a strategy session"
@@ -174,19 +174,19 @@ const AdvisoryPartnership = () => {
 
           <div className="relative z-10 px-5 sm:px-6 text-center">
             <div className="mx-auto max-w-[860px]">
-              <p className="mb-6 font-inter text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              <p className="mb-4 md:mb-6 font-inter text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                 Strategic Advisory
               </p>
 
-              <h1 className="mb-4 font-display text-[clamp(28px,3.8vw,52px)] font-bold leading-[1.08] text-primary-foreground">
+              <h1 className="mb-3 md:mb-4 font-display text-[clamp(26px,5vw,52px)] font-bold leading-[1.1] text-primary-foreground">
                 Most femtech deals don't die in the demo
               </h1>
 
-              <p className="mb-8 font-display text-[clamp(20px,2.6vw,36px)] font-bold leading-[1.2] text-accent">
+              <p className="mb-6 md:mb-8 font-display text-[clamp(18px,3.5vw,36px)] font-bold leading-[1.2] text-accent">
                 They die in the decision meeting you weren't in
               </p>
 
-              <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>
+              <p className="mx-auto mb-8 md:mb-10 max-w-2xl font-inter text-[clamp(14px,2vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>
                 Strategic advisory isn't consulting. It's not fractional. It's not a retainer. It's access: to the right perspective, the right credibility, and the right voice at the exact moment it matters.
               </p>
 
@@ -194,7 +194,7 @@ const AdvisoryPartnership = () => {
                 onClick={handleBooking}
                 variant="glassy"
                 size="lg"
-                className="group h-auto w-full sm:w-auto px-8 py-5 text-base"
+                className="group h-auto w-full sm:w-auto px-8 py-4 md:py-5 text-base"
               >
                 Book Your Call
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -204,18 +204,18 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 2 — Qualification */}
-        <section className="bg-background px-6 py-6 md:py-8">
+        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <h2 className="mb-6 md:mb-8 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               You're in the right place if:
             </h2>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {qualificationBullets.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 sm:gap-4">
-                  <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
+                <li key={index} className="flex items-start gap-3">
+                  <span className="mt-[9px] h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p
-                    className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg"
+                    className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg"
                     style={{ textWrap: "balance" }}
                   >
                     {item}
@@ -227,24 +227,24 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Divider */}
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
           <div className="border-t border-border" />
         </div>
 
         {/* Section 3 — Offer Definition */}
-        <section className="bg-background px-6 py-6 md:py-8">
+        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
           <div className="mx-auto max-w-3xl">
-            <div className="mb-4 text-center">
-              <h2 className="mb-3 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <div className="mb-6 text-center">
+              <h2 className="mb-3 font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
                 What strategic advisory actually means.
               </h2>
-              <p className="font-inter text-lg italic text-muted-foreground">
+              <p className="font-inter text-base italic text-muted-foreground md:text-lg">
                 Not a consulting engagement. Not a fractional hire. Not a retainer.
               </p>
             </div>
 
             <p
-              className="mx-auto max-w-[680px] font-inter text-base leading-relaxed text-muted-foreground md:text-lg"
+              className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg"
               style={{ textWrap: "balance" }}
             >
               This is equity-based strategic advisory, designed specifically for early-stage women's health companies that need enterprise-grade expertise without enterprise-level overhead. We help you think more clearly, decide more confidently, and move through health systems without making the mistakes that cost you the deal.
@@ -253,15 +253,15 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Divider */}
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
           <div className="border-t border-border" />
         </div>
 
         {/* Section 4 — Service Pillars */}
-        <section className="bg-background px-6 py-6 md:py-8">
+        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-6 text-center">
-              <h2 className="font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <div className="mb-6 md:mb-8 text-center">
+              <h2 className="font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
                 Here's where we focus.
               </h2>
             </div>
@@ -270,15 +270,15 @@ const AdvisoryPartnership = () => {
               {servicePillars.map((card, index) => (
                 <div
                   key={index}
-                  className="rounded-2xl border border-accent/25 bg-card p-6 shadow-sm transition-shadow hover:shadow-md"
+                  className="rounded-2xl border border-accent/25 bg-card p-5 sm:p-6 shadow-sm transition-shadow hover:shadow-md"
                 >
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
-                    <card.icon className="h-6 w-6 text-accent" />
+                  <div className="mb-3 sm:mb-4 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-accent/10">
+                    <card.icon className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
                   </div>
-                  <h3 className="mb-3 font-playfair text-lg font-bold text-foreground">
+                  <h3 className="mb-2 sm:mb-3 font-playfair text-base font-bold text-foreground sm:text-lg">
                     {card.title}
                   </h3>
-                  <p className="font-inter text-sm leading-relaxed text-muted-foreground">
+                  <p className="font-inter text-[13px] leading-relaxed text-muted-foreground sm:text-sm">
                     {card.description}
                   </p>
                 </div>
@@ -288,25 +288,25 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Divider */}
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6">
           <div className="border-t border-border" />
         </div>
 
         {/* Section 5 — Credibility / Founder Bios */}
-        <section className="bg-background px-6 py-6 md:py-8">
+        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl" style={{ textWrap: 'balance' }}>
+            <h2 className="mb-6 md:mb-8 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl" style={{ textWrap: 'balance' }}>
               We've been where you're trying to go.
             </h2>
 
-            <div className="space-y-6">
-              <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+            <div className="space-y-5 sm:space-y-6">
+              <p className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
                 Dr. Nicole Faulkner spent years delivering care inside a major health system. She knows what gets dismissed in morning rounds and what earns a seat on the agenda.
               </p>
-              <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+              <p className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
                 John Faulkner spent 15+ years building the operational infrastructure those systems run on. He knows why pilots stall before they ever reach the CMO.
               </p>
-              <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+              <p className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
                 We don't advise from a slide deck. We've been inside the governance meetings, the clinical workflows, and the technology failures you're trying to fix right now.
               </p>
             </div>
@@ -314,10 +314,10 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 6 — Pull Quote */}
-        <section className="bg-muted/30 px-6 py-6 md:py-8">
+        <section className="bg-muted/30 px-5 sm:px-6 py-12 md:py-20">
           <div className="mx-auto max-w-4xl">
-            <blockquote className="border-l-4 border-accent pl-6 md:pl-8">
-              <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl italic" style={{ textWrap: 'balance' }}>
+            <blockquote className="border-l-4 border-accent pl-5 sm:pl-6 md:pl-8">
+              <p className="font-playfair text-lg font-bold leading-relaxed text-foreground italic sm:text-xl md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
                 "Women's health innovation isn't failing because the products are bad. It's failing because the infrastructure to support them doesn't exist yet. We build that infrastructure. That's the job."
               </p>
             </blockquote>
@@ -325,13 +325,13 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 7 — CTA Block */}
-        <section className="bg-background px-6 py-6 md:py-8">
+        <section className="bg-background px-5 sm:px-6 py-12 md:py-20" style={{ paddingBottom: 'max(48px, calc(48px + env(safe-area-inset-bottom, 0px)))' }}>
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <h2 className="mb-4 font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               Schedule Your Discovery Call
             </h2>
 
-            <p className="mx-auto mb-8 max-w-2xl font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+            <p className="mx-auto mb-6 md:mb-8 max-w-2xl font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
               30 minutes. No pitch. Just a direct conversation about where you are and what it actually takes to move forward inside a health system that wasn't built with your product, or your patient, in mind.
             </p>
 
@@ -339,7 +339,7 @@ const AdvisoryPartnership = () => {
               onClick={handleBooking}
               variant="glassy"
               size="lg"
-              className="group h-auto w-full sm:w-auto px-8 py-5 text-base"
+              className="group h-auto w-full sm:w-auto px-8 py-4 md:py-5 text-base"
             >
               Book Your Call
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

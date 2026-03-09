@@ -130,7 +130,9 @@ const Mission = () => {
               </p>
               
               <p className="text-base sm:text-lg">Together, we embed directly into your team, accelerating physician adoption, reducing implementation risk, and converting pilots into lasting, scalable outcomes that serve women and satisfy payers.
+              </p>
 
+              <p className="text-base sm:text-lg">The Faulkner Group operates as a team. Nicole and John lead every engagement, supported by clinical, operational, and governance specialists embedded at the client level.
               </p>
               
               <div

@@ -26,7 +26,7 @@ const Investors = () => {
       <SEOHead
         title="For VC & PE Firms | The Faulkner Group"
         description="Clinical adoption diligence for VC and PE firms with women's health tech portfolio companies. Identify adoption barriers before the next board meeting."
-        canonical="https://thrive-beacon-studio.lovable.app/investors"
+        canonical="https://thefaulknergroupadvisors.com/investors"
         jsonLd={investorSchema}
       />
       <Header />

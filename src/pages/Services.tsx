@@ -357,8 +357,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thrive-beacon-studio.lovable.app/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://thrive-beacon-studio.lovable.app/services" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thefaulknergroupadvisors.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://thefaulknergroupadvisors.com/services" }
   ]
 };
 
@@ -367,7 +367,7 @@ const professionalServiceSchema = {
   "@type": "ProfessionalService",
   "name": "The Faulkner Group",
   "description": "Boutique clinical strategy and advisory firm for women's health technology companies. Specializing in physician adoption, EHR integration, clinical governance, and enterprise pilot conversion.",
-  "url": "https://thrive-beacon-studio.lovable.app/services",
+  "url": "https://thefaulknergroupadvisors.com/services",
   "telephone": "",
   "areaServed": { "@type": "Country", "name": "United States" },
   "serviceType": ["Healthcare Advisory", "Clinical Strategy", "EHR Integration Consulting", "Physician Adoption Strategy", "Health Tech Consulting"],
@@ -460,9 +460,9 @@ const johnFaulknerSchema = {
   alternateName: "Johnathon Faulkner",
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/"],
-  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 
 const nicholeFaulknerSchema = {
@@ -472,9 +472,9 @@ const nicholeFaulknerSchema = {
   alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at WHIS.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
-  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 
 const serviceSchemas = [
@@ -489,7 +489,7 @@ const serviceSchemas = [
     name: "Strategic Advisory",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
-    url: "https://thrive-beacon-studio.lovable.app/advisory-partnership",
+    url: "https://thefaulknergroupadvisors.com/advisory-partnership",
     areaServed: { "@type": "Country", name: "United States" },
   },
   {
@@ -498,7 +498,7 @@ const serviceSchemas = [
     name: "Clinical Clarity Session",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-clarity-session",
+    url: "https://thefaulknergroupadvisors.com/clinical-clarity-session",
     areaServed: { "@type": "Country", name: "United States" },
     offers: { "@type": "Offer", price: "1500", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   },
@@ -508,7 +508,7 @@ const serviceSchemas = [
     name: "Clinical Readiness Roadmap",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A focused written readiness assessment for women's health founders 3 to 6 months from their first enterprise pilot conversation. Covers five readiness domains with a sequenced remediation roadmap and live findings presentation.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap",
+    url: "https://thefaulknergroupadvisors.com/clinical-readiness-roadmap",
     areaServed: { "@type": "Country", name: "United States" },
     offers: { "@type": "Offer", price: "5000", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   },
@@ -518,7 +518,7 @@ const serviceSchemas = [
     name: "Clinical Readiness Assessment",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A structured 14-day readiness engagement evaluating clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment",
+    url: "https://thefaulknergroupadvisors.com/clinical-readiness-assessment",
     areaServed: { "@type": "Country", name: "United States" },
   },
   {
@@ -527,7 +527,7 @@ const serviceSchemas = [
     name: "Operating Partner",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals.",
-    url: "https://thrive-beacon-studio.lovable.app/operating-partner-retainer",
+    url: "https://thefaulknergroupadvisors.com/operating-partner-retainer",
     areaServed: { "@type": "Country", name: "United States" },
   },
 ];
@@ -536,8 +536,8 @@ const Services = () =>
     <SEOHead
     title="Women's Health Tech Advisory | The Faulkner Group"
     description="Clinical strategy for women's health tech founders. EHR integration, physician adoption, and enterprise pilot conversion by John Faulkner & Dr. Nicole Faulkner."
-    canonical="https://thrive-beacon-studio.lovable.app/services"
-    ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
+    canonical="https://thefaulknergroupadvisors.com/services"
+    ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
     jsonLd={serviceSchemas}
     />
 

@@ -23,7 +23,7 @@ The Faulkner Group is a boutique healthcare advisory firm that serves as the str
 A selective, equity-based advisory for early-stage women's health tech companies (Pre-Seed through Series A). Our team, including a practicing OB/GYN and a Healthcare IT Architect, aligns with your company early and remains at the table through the moments that matter most. This is not consulting, not fractional work, and not a retainer. It's long-term access to the right perspective, the right credibility, and the right voice at the exact moment it matters.
 - Focus Areas: (1) Shape the Enterprise Narrative: framing solutions in the language health systems respond to, including clinical outcomes, governance, workflow fit, and risk reduction. (2) Pressure-Test Your Go-to-Market: identifying what's missing, misaligned, or will kill the deal before it starts. (3) Provide the Clinical Voice That Opens Doors: a Board-Certified OB/GYN signals legitimacy to CMOs, CNOs, and clinical committees. (4) De-Risk Decisions Before They Get Expensive: governance structures, pilot design, and physician adoption strategy built right the first time.
 - Best for: Pre-Seed through Series A companies building in women's health, maternal care, reproductive health, or women's digital health where clinical credibility is a survival requirement for enterprise adoption. Founders who need clinical credibility before they have runway to hire for it, who can't get past hospital procurement committees, or whose go-to-market assumes the patient is the buyer when the hospital has a different answer.
-- URL: https://thrive-beacon-studio.lovable.app/advisory-partnership
+- URL: https://thefaulknergroupadvisors.com/advisory-partnership
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
 ### II. Clinical Clarity Session — 90-Minute Diagnostic
@@ -31,34 +31,34 @@ A 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT
 - Price: $1,500
 - Format: 90 minutes, virtual
 - Best for: Founders in active health system conversations, approaching a pilot, preparing for investor due diligence, or recovering from a pilot that didn't go as planned.
-- URL: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
+- URL: https://thefaulknergroupadvisors.com/clinical-clarity-session
 - Booking: https://calendly.com/d/cx9r-9x8-gbf/clinical-clarity-session
 
 ### III. Clinical Readiness Roadmap — Structured Written Assessment
 A focused written readiness assessment built for women's health founders who are 3 to 6 months from their first enterprise pilot conversation. Covers all five readiness domains: clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure. Includes structured intake, async Q&A, a 5 to 7 page written Clinical Readiness Report, a sequenced remediation roadmap, and a 60-minute live findings call with both practitioners.
 - Best for: Founders 3 to 6 months from a first pilot conversation, founders who have completed a Clinical Clarity Session and need a deeper structured plan, and founders who want a written document their leadership team, investors, or advisors can review and act on.
-- URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
+- URL: https://thefaulknergroupadvisors.com/clinical-readiness-roadmap
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
 ### IV. Clinical Readiness Assessment — 14-Day Deep Engagement
 A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live. Includes a written Clinical Readiness Report with prioritized remediation roadmap and a 60-minute live findings presentation with both practitioners.
 - Best for: Founders and leadership teams with a signed enterprise pilot or health system contract approaching go-live, especially products in OB/GYN, maternal health, reproductive care, or women's digital health.
-- URL: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
+- URL: https://thefaulknergroupadvisors.com/clinical-readiness-assessment
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
 ### V. Operating Partner — Ongoing Operating Partnership
 An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Our team is embedded in your organization for the duration. Covers pre-sale enterprise credibility, clinical and systems readiness audits, implementation oversight (EHR integration strategy, governance framework design, pilot structure, KPI definition), physician adoption and escalation support, and governance operations (steering committee support, kill-switch protocol management, risk register maintenance).
 - Best for: Post-raise companies with signed enterprise pilots or health system contracts in OB/GYN, maternal health, reproductive care, or women's digital health. Founders who have completed a Clinical Clarity Session or Clinical Readiness Assessment.
-- URL: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
+- URL: https://thefaulknergroupadvisors.com/operating-partner-retainer
 - Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner
 
 ## Key Proof Point
 90% of health tech pilots fail to convert to full-scale implementation without clinical alignment (Accenture Health, Digital Health Scaling Report). The Faulkner Group guarantees to deliver a clinical adoption strategy that accelerates physician buy-in, or they keep working until they do.
 
 ## Free Interactive Tools
-- Reimbursement Readiness Scorecard: 10-question assessment across product readiness, payer strategy, and market access. URL: https://thrive-beacon-studio.lovable.app/for-womens-health/reimbursement-scorecard
-- Hospital Partnership Fit Checker: 6-question assessment to determine which type of health system partnership fits your stage. URL: https://thrive-beacon-studio.lovable.app/for-womens-health/hospital-fit-checker
-- Femtech Funding Gap Benchmarker: 6-question tool to benchmark your raise against femtech peers by stage and team composition. URL: https://thrive-beacon-studio.lovable.app/for-womens-health/funding-benchmarker
+- Reimbursement Readiness Scorecard: 10-question assessment across product readiness, payer strategy, and market access. URL: https://thefaulknergroupadvisors.com/for-womens-health/reimbursement-scorecard
+- Hospital Partnership Fit Checker: 6-question assessment to determine which type of health system partnership fits your stage. URL: https://thefaulknergroupadvisors.com/for-womens-health/hospital-fit-checker
+- Femtech Funding Gap Benchmarker: 6-question tool to benchmark your raise against femtech peers by stage and team composition. URL: https://thefaulknergroupadvisors.com/for-womens-health/funding-benchmarker
 
 ## Frequently Asked Questions
 Q: What services does The Faulkner Group offer?
@@ -141,19 +141,20 @@ A: Through clinical and operational diligence that evaluates physician sentiment
 - Enterprise pilot management for women's health technology
 
 ## Site Pages
-- Homepage: https://thrive-beacon-studio.lovable.app/
-- Services: https://thrive-beacon-studio.lovable.app/services
-- Strategic Advisory: https://thrive-beacon-studio.lovable.app/advisory-partnership
-- Clinical Clarity Session: https://thrive-beacon-studio.lovable.app/clinical-clarity-session
-- Clinical Readiness Roadmap: https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap
-- Clinical Readiness Assessment: https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment
-- Operating Partner: https://thrive-beacon-studio.lovable.app/operating-partner-retainer
-- For Women's Health: https://thrive-beacon-studio.lovable.app/for-womens-health
-- For Investors: https://thrive-beacon-studio.lovable.app/investors
-- AI Summary: https://thrive-beacon-studio.lovable.app/llm-summary
+- Homepage: https://thefaulknergroupadvisors.com/
+- Services: https://thefaulknergroupadvisors.com/services
+- Strategic Advisory: https://thefaulknergroupadvisors.com/advisory-partnership
+- Clinical Clarity Session: https://thefaulknergroupadvisors.com/clinical-clarity-session
+- Clinical Readiness Roadmap: https://thefaulknergroupadvisors.com/clinical-readiness-roadmap
+- Clinical Readiness Assessment: https://thefaulknergroupadvisors.com/clinical-readiness-assessment
+- Operating Partner: https://thefaulknergroupadvisors.com/operating-partner-retainer
+- For Women's Health: https://thefaulknergroupadvisors.com/for-womens-health
+- For Investors: https://thefaulknergroupadvisors.com/investors
+- Press & Speaking: https://thefaulknergroupadvisors.com/press-speaking
+- AI Summary: https://thefaulknergroupadvisors.com/llm-summary
 
 ## Contact
-Website: https://thrive-beacon-studio.lovable.app
+Website: https://thefaulknergroupadvisors.com
 LinkedIn: https://www.linkedin.com/company/faulkner-group/
 YouTube: https://www.youtube.com/@YourHealthcareITexpert
 Booking: https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner

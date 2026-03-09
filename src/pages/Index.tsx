@@ -21,8 +21,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "The Faulkner Group",
-  url: "https://thrive-beacon-studio.lovable.app",
-  logo: "https://thrive-beacon-studio.lovable.app/favicon.png",
+  url: "https://thefaulknergroupadvisors.com",
+  logo: "https://thefaulknergroupadvisors.com/favicon.png",
   description:
     "Boutique healthcare advisory firm specializing in clinical adoption strategy for women's health technology companies.",
   founder: [
@@ -60,7 +60,7 @@ const johnFaulknerSchema = {
   alternateName: "Johnathon Faulkner",
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing and optimizing healthcare IT infrastructure and EHR systems nationwide. Former Marine Corps Officer Candidate trained at Quantico, VA. Specializes in women's health technology clinical adoption strategy, EHR integration, and pilot-to-enterprise deployment.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: [
     "https://www.linkedin.com/in/johnathonfaulkner/",
     "https://www.youtube.com/@YourHealthcareITexpert"
@@ -68,7 +68,7 @@ const johnFaulknerSchema = {
   worksFor: {
     "@type": "Organization",
     name: "The Faulkner Group",
-    url: "https://thrive-beacon-studio.lovable.app"
+    url: "https://thefaulknergroupadvisors.com"
   },
   knowsAbout: [
     "Healthcare IT Architecture",
@@ -92,7 +92,7 @@ const nicholeFaulknerSchema = {
   alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, and featured speaker at the Women's Health Innovation Summit (WHIS). Expert in clinical governance frameworks, physician adoption strategy, and women's health technology advisory.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: [
     "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
   ],
@@ -100,7 +100,7 @@ const nicholeFaulknerSchema = {
     {
       "@type": "Organization",
       name: "The Faulkner Group",
-      url: "https://thrive-beacon-studio.lovable.app"
+      url: "https://thefaulknergroupadvisors.com"
     },
     {
       "@type": "Organization",
@@ -129,8 +129,8 @@ const Index = () => {
       <SEOHead
         title="Women's Health Tech Adoption | John Faulkner & Dr. Nicole Faulkner"
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) help women's health tech founders drive physician adoption and scale from pilot to enterprise."
-        canonical="https://thrive-beacon-studio.lovable.app/"
-        ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
+        canonical="https://thefaulknergroupadvisors.com/"
+        ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
         jsonLd={[orgSchema, johnFaulknerSchema, nicholeFaulknerSchema]}
       />
       <Header />

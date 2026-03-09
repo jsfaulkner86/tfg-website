@@ -4,8 +4,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "The Faulkner Group",
-  url: "https://thrive-beacon-studio.lovable.app",
-  logo: "https://thrive-beacon-studio.lovable.app/favicon.png",
+  url: "https://thefaulknergroupadvisors.com",
+  logo: "https://thefaulknergroupadvisors.com/favicon.png",
   description:
     "Boutique healthcare advisory firm specializing in clinical adoption strategy for women's health technology companies. We embed directly inside organizations to drive physician adoption, build clinical governance frameworks, and scale from pilot to enterprise deployment.",
   founder: [
@@ -84,9 +84,9 @@ const johnSchema = {
   alternateName: "Johnathon Faulkner",
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption strategy.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert"],
-  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
   knowsAbout: ["Healthcare IT Architecture", "EHR Integration", "Women's Health Technology", "Clinical Adoption Strategy"],
   alumniOf: { "@type": "Organization", name: "United States Marine Corps" }
 };
@@ -98,10 +98,10 @@ const nicoleSchema = {
   alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
   worksFor: [
-    { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+    { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
     { "@type": "Organization", name: "BackTable", url: "https://www.backtable.com" }
   ],
   knowsAbout: ["Obstetrics and Gynecology", "Women's Health Technology", "Clinical Governance", "Physician Adoption Strategy"],
@@ -114,7 +114,7 @@ const LLMSummary = () => {
       <SEOHead
         title="John Faulkner & Dr. Nicole Faulkner | The Faulkner Group AI Summary"
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) — founders of The Faulkner Group, a boutique women's health tech advisory firm."
-        canonical="https://thrive-beacon-studio.lovable.app/llm-summary"
+        canonical="https://thefaulknergroupadvisors.com/llm-summary"
         jsonLd={[orgSchema, faqSchema, johnSchema, nicoleSchema]}
       />
       <main className="max-w-3xl mx-auto px-6 py-20 font-inter" style={{ color: '#1A2A3A' }}>
@@ -197,11 +197,11 @@ const LLMSummary = () => {
         <section className="mb-10">
           <h2 className="text-xl font-playfair font-bold mb-3">Contact</h2>
           <ul className="list-disc pl-6 space-y-1 leading-relaxed">
-            <li>Website: <a href="https://thrive-beacon-studio.lovable.app" className="underline">thrive-beacon-studio.lovable.app</a></li>
-            <li>Clinical Clarity Session: <a href="https://thrive-beacon-studio.lovable.app/clinical-clarity-session" className="underline">Book here</a></li>
-            <li>Clinical Readiness Roadmap: <a href="https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap" className="underline">Learn more</a></li>
-            <li>For Investors: <a href="https://thrive-beacon-studio.lovable.app/investors" className="underline">Investor page</a></li>
-            <li>Services: <a href="https://thrive-beacon-studio.lovable.app/services" className="underline">View engagement models</a></li>
+            <li>Website: <a href="https://thefaulknergroupadvisors.com" className="underline">thefaulknergroupadvisors.com</a></li>
+            <li>Clinical Clarity Session: <a href="https://thefaulknergroupadvisors.com/clinical-clarity-session" className="underline">Book here</a></li>
+            <li>Clinical Readiness Roadmap: <a href="https://thefaulknergroupadvisors.com/clinical-readiness-roadmap" className="underline">Learn more</a></li>
+            <li>For Investors: <a href="https://thefaulknergroupadvisors.com/investors" className="underline">Investor page</a></li>
+            <li>Services: <a href="https://thefaulknergroupadvisors.com/services" className="underline">View engagement models</a></li>
           </ul>
         </section>
       </main>

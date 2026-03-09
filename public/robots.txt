@@ -40,4 +40,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://thrive-beacon-studio.lovable.app/sitemap.xml
+Sitemap: https://thefaulknergroupadvisors.com/sitemap.xml

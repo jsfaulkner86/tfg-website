@@ -333,7 +333,7 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* Section 5 — Why Us */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-3 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               A practicing OB/GYN and a Healthcare IT Architect. In the same room. On your engagement.

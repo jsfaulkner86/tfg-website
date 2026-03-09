@@ -210,7 +210,7 @@ const AdvisoryPartnership = () => {
               You're in the right place if:
             </h2>
 
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {qualificationBullets.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="mt-[9px] h-2 w-2 flex-shrink-0 rounded-full bg-accent" />

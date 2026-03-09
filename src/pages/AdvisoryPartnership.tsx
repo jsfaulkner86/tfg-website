@@ -222,7 +222,7 @@ const AdvisoryPartnership = () => {
         {/* The Bottom Line */}
         <section className="bg-muted/30 px-6 py-10 md:py-14">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-12 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
+            <p className="mb-8 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
               "Women's health innovation isn't failing because the products are bad. It's failing because the infrastructure to support them doesn't exist yet. We build that infrastructure. That's the job."
             </p>
 

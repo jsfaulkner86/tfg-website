@@ -518,7 +518,7 @@ const serviceSchemas = [
     name: "Clinical Readiness Assessment",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A structured 14-day readiness engagement evaluating clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment",
+    url: "https://thefaulknergroupadvisors.com/clinical-readiness-assessment",
     areaServed: { "@type": "Country", name: "United States" },
   },
   {

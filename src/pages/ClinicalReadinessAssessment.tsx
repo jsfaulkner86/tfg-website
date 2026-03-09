@@ -316,7 +316,7 @@ const ClinicalReadinessAssessment = () => {
             </div>
 
             <p
-              className="text-base font-inter text-center mb-16"
+              className="text-base font-inter text-center mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7' }}
             >
               Fourteen days. Five domains. A deliverable your entire leadership team can act on.

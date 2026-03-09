@@ -207,38 +207,6 @@ const ForWomensHealth = () => {
                 </div>
               </div>
 
-              {/* Right - Value prop cards (matches Problem section right column) */}
-              <div className={`relative transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ transitionDelay: '0.4s', marginTop: '0px' }}>
-                <div className="absolute left-6 top-0 bottom-0" style={{
-                  width: '1px', background: 'linear-gradient(180deg, transparent 0%, rgba(243,218,115,0.3) 15%, rgba(243,218,115,0.3) 85%, transparent 100%)'
-                }} />
-                <div className="space-y-6">
-                  {[
-                    { icon: Building2, text: "Hospital & Health System Fluency - Know exactly how to walk into a health system conversation and walk out with a partnership." },
-                    { icon: ClipboardCheck, text: "Reimbursement & Regulatory Roadmaps\n\n\n-Translate payer strategy, CPT coding, and FDA pathways into founder-ready action plans." },
-                    { icon: TrendingUp, text: "Funding Gap Intelligence\n- Benchmark your raise against femtech peers and close the knowledge gap before your next pitch." },
-                  ].map((item, index) => {
-                    const Icon = item.icon;
-                    return (
-                      <div key={index} className={`group relative transition-all duration-700 ${valueVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
-                        style={{ transitionDelay: `${index * 150 + 500}ms` }}>
-                        <div className="relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-1 bg-white"
-                          style={{ border: '1.5px solid #F3DA73', boxShadow: '0 8px 25px rgba(0,0,0,0.05)' }}>
-                          <div className="flex items-center gap-5 relative z-10">
-                            <div className="relative flex-shrink-0">
-                              <Icon size={28} strokeWidth={1.5} style={{ color: '#F3DA73' }}
-                                className="transition-transform duration-300 group-hover:scale-110" />
-                            </div>
-                            <p className="text-base sm:text-lg font-inter font-medium leading-relaxed whitespace-pre-line"
-                              style={{ color: '#2A3B4F', letterSpacing: '0.01em' }}>{item.text}</p>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
             </div>
 
             {/* Bottom callout */}

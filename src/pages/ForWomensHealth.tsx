@@ -541,11 +541,11 @@ const ForWomensHealth = () => {
 
         {/* ===== FAQ (matches FAQ section exactly) ===== */}
         <section ref={faqRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
         }}>
           <div className="max-w-4xl mx-auto relative z-10">
-            <div className={`text-center mb-16 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`text-center mb-8 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'

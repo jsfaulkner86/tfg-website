@@ -234,7 +234,7 @@ const AdvisoryPartnership = () => {
         {/* Section 3 — Offer Definition */}
         <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <div className="mb-6 text-center">
+            <div className="mb-4 text-center">
               <h2 className="mb-3 font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
                 What strategic advisory actually means.
               </h2>

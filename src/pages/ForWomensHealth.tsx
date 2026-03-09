@@ -219,7 +219,7 @@ const ForWomensHealth = () => {
                 <div className="absolute left-6 top-0 bottom-0" style={{
                   width: '1px', background: 'linear-gradient(180deg, transparent 0%, rgba(243,218,115,0.3) 15%, rgba(243,218,115,0.3) 85%, transparent 100%)'
                 }} />
-                <div className="space-y-10">
+                <div className="space-y-6">
                   {[
                     { icon: Building2, text: "Hospital & Health System Fluency - Know exactly how to walk into a health system conversation and walk out with a partnership." },
                     { icon: ClipboardCheck, text: "Reimbursement & Regulatory Roadmaps - We translate payer strategy, CPT coding, and FDA pathways into founder-ready action plans." },

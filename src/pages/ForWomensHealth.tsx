@@ -230,7 +230,7 @@ const ForWomensHealth = () => {
                               <Icon size={28} strokeWidth={1.5} style={{ color: '#F3DA73' }}
                                 className="transition-transform duration-300 group-hover:scale-110" />
                             </div>
-                            <p className="text-base sm:text-lg font-inter font-medium leading-relaxed"
+                            <p className="text-base sm:text-lg font-inter font-medium leading-relaxed whitespace-pre-line"
                               style={{ color: '#2A3B4F', letterSpacing: '0.01em' }}>{item.text}</p>
                           </div>
                         </div>

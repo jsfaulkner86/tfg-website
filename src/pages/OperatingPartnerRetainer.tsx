@@ -36,7 +36,7 @@ const OperatingPartnerRetainer = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-14">
+        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-14">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team in strategic planning session"
@@ -46,7 +46,7 @@ const OperatingPartnerRetainer = () => {
           />
           <div className="absolute inset-0 bg-foreground/60" />
 
-          <div className="relative z-10 px-6 text-center">
+          <div className="relative z-10 px-5 sm:px-6 text-center">
             <div className="mx-auto max-w-[860px]">
               <p className="mb-6 font-inter text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                 Ongoing Operating Partnership
@@ -66,7 +66,7 @@ const OperatingPartnerRetainer = () => {
                 onClick={handleBooking}
                 variant="accent"
                 size="lg"
-                className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                className="group h-auto w-full sm:w-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
               >
                 Start a Conversation
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -116,7 +116,7 @@ const OperatingPartnerRetainer = () => {
                 "You have completed a Clinical Clarity Session or Clinical Readiness Assessment — or can demonstrate equivalent preparation",
                 "You want our team embedded in your corner for the duration — not a vendor relationship, an operating one",
               ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                     {item}
@@ -143,7 +143,7 @@ const OperatingPartnerRetainer = () => {
               </h2>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   icon: Handshake,
@@ -251,7 +251,7 @@ const OperatingPartnerRetainer = () => {
               onClick={handleBooking}
               variant="accent"
               size="lg"
-              className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+              className="group h-auto w-full sm:w-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
             >
               Start a Conversation
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

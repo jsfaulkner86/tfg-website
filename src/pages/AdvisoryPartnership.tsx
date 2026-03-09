@@ -87,7 +87,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
+        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -97,7 +97,7 @@ const AdvisoryPartnership = () => {
           />
           <div className="absolute inset-0 bg-foreground/60" />
 
-          <div className="relative z-10 px-6 text-center">
+          <div className="relative z-10 px-5 sm:px-6 text-center">
             <div className="mx-auto max-w-[860px]">
               <p className="mb-6 font-inter text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                 Strategic Advisory
@@ -117,7 +117,7 @@ const AdvisoryPartnership = () => {
                 onClick={handleBooking}
                 variant="accent"
                 size="lg"
-                className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+                className="group h-auto w-full sm:w-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
               >
                 Book a Call
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -149,12 +149,10 @@ const AdvisoryPartnership = () => {
 
             <ul className="space-y-3">
               {whoThisIsFor.map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p
-                    className={`font-inter text-base leading-relaxed text-muted-foreground md:text-lg ${
-                      index === 0 ? "whitespace-nowrap" : ""
-                    }`}
+                    className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg"
                     style={{ textWrap: "balance" }}
                   >
                     {item}
@@ -182,7 +180,7 @@ const AdvisoryPartnership = () => {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
               {whatWeDoCards.map((card, index) => (
                 <div
                   key={index}
@@ -237,7 +235,7 @@ const AdvisoryPartnership = () => {
               onClick={handleBooking}
               variant="accent"
               size="lg"
-              className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+              className="group h-auto w-full sm:w-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
             >
               Schedule Your Discovery Call
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

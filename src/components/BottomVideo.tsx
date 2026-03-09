@@ -87,14 +87,8 @@ const BottomVideo = () => {
 
         <Button
           onClick={handleBooking}
-          className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
-          style={{
-            background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-            color: '#2A3B4F',
-            borderColor: 'rgba(255,255,255,0.25)',
-            boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-            backdropFilter: 'blur(8px)',
-          }}
+          variant="glassy"
+          className="text-sm sm:text-base px-6 sm:px-9 py-4 sm:py-5 group"
         >
           Let's Meet
           <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

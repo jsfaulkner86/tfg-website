@@ -145,14 +145,8 @@ const ForWomensHealth = () => {
               {/* CTA */}
               <Button
                 onClick={handleMeet}
-                className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-                  color: '#2A3B4F',
-                  borderColor: 'rgba(255,255,255,0.25)',
-                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-                  backdropFilter: 'blur(8px)',
-                }}
+                variant="glassy"
+                className="text-sm sm:text-base px-6 sm:px-9 py-4 sm:py-5 group"
               >
                 Let's Meet
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -311,14 +305,8 @@ const ForWomensHealth = () => {
                     "Most women's health startups don't fail because of bad tech. They fail because the system is complicated. We know the system."
                   </blockquote>
                   <Button onClick={handleMeet}
-                    className="text-base font-semibold rounded-lg px-9 py-5 border group/btn transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] relative z-10"
-                    style={{
-                      background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-                      color: '#2A3B4F',
-                      borderColor: 'rgba(255,255,255,0.25)',
-                      boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-                      backdropFilter: 'blur(8px)',
-                    }}>
+                    variant="glassy"
+                    className="text-base px-9 py-5 group/btn relative z-10">
                     Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                   </Button>
                   <div className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
@@ -421,13 +409,8 @@ const ForWomensHealth = () => {
                             <span style={{ color: '#F3DA73', fontWeight: 700 }}>What you get:</span>{' '}{card.result}
                           </p>
                           <Button onClick={() => handleToolClick(card)}
-                            className="w-full text-base rounded-lg group/btn transition-all duration-300 font-semibold py-5"
-                            style={{
-                              background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
-                              boxShadow: '0 4px 16px rgba(243,218,115,0.3)', border: 'none'
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.5)'; }}
-                            onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.3)'; }}
+                            variant="glassy"
+                            className="w-full text-base group/btn py-5"
                           >{card.cta} {card.external ? <ExternalLink className="ml-2 h-4 w-4" /> : <ArrowRight className="ml-2 h-4 w-4" />}</Button>
                         </div>
                       </div>
@@ -595,14 +578,8 @@ const ForWomensHealth = () => {
             </div>
             <Button
               onClick={handleMeet}
-              className="text-base font-semibold rounded-lg px-8 py-5 border group flex-shrink-0 transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
-              style={{
-                background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-                color: '#2A3B4F',
-                borderColor: 'rgba(255,255,255,0.25)',
-                boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-                backdropFilter: 'blur(8px)',
-              }}
+              variant="glassy"
+              className="text-base px-8 py-5 group flex-shrink-0"
             >
               Book the Call
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

@@ -162,7 +162,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Section 1 — Hero */}
-        <section className="relative w-full overflow-hidden pb-12 md:pb-20" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pb-8 md:pb-10" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="The Faulkner Group women's health tech advisory team in a strategy session"

@@ -104,7 +104,7 @@ const ClinicalReadinessAssessment = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[180px] pb-[60px] md:pt-[240px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"

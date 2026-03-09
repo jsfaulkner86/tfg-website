@@ -130,7 +130,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 1 — The Problem */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 pt-10 pb-8 sm:pt-14 sm:pb-10"
           style={{
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
@@ -167,7 +167,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 2 — Who This Is For */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto">
@@ -205,7 +205,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 3 — What We Evaluate */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-4xl mx-auto">
@@ -272,7 +272,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 4 — How It Works */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-4xl mx-auto">
@@ -325,7 +325,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 5 — Why Us */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto text-center">
@@ -354,7 +354,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 6 — How This Fits */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto">
@@ -383,7 +383,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 7 — Bottom CTA */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-24"
+          className="px-5 sm:px-6 pt-8 pb-16 sm:pt-10 sm:pb-20"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto text-center">

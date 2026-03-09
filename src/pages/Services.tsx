@@ -367,7 +367,7 @@ const professionalServiceSchema = {
   "@type": "ProfessionalService",
   "name": "The Faulkner Group",
   "description": "Boutique clinical strategy and advisory firm for women's health technology companies. Specializing in physician adoption, EHR integration, clinical governance, and enterprise pilot conversion.",
-  "url": "https://thrive-beacon-studio.lovable.app/services",
+  "url": "https://thefaulknergroupadvisors.com/services",
   "telephone": "",
   "areaServed": { "@type": "Country", "name": "United States" },
   "serviceType": ["Healthcare Advisory", "Clinical Strategy", "EHR Integration Consulting", "Physician Adoption Strategy", "Health Tech Consulting"],

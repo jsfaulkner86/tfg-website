@@ -182,7 +182,7 @@ const ClinicalClaritySession = () => {
                 We are not going to spend 90 minutes learning about you so we can pitch you a bigger engagement.
               </p>
               <p className="font-inter text-base leading-relaxed text-primary-foreground/85 md:text-lg">
-                This session is designed to give you something useful whether or not we ever work together again. You'll hear direct, clinical and operational perspective from a Board-Certified OB/GYN and a Healthcare IT Architect who have spent their careers inside health systems.
+                This session is designed to give you something useful whether or not we ever work together again. You'll hear direct, clinical and operational perspective from a Board-Certified OB/GYN and a Healthcare IT Architect, with a team built for enterprise health system deployments, who have spent their careers inside health systems.
               </p>
               <p className="font-inter text-base leading-relaxed text-primary-foreground/85 md:text-lg">
                 If there's a fit for deeper work after, we'll say so. If there isn't, we'll tell you that too.
@@ -213,7 +213,7 @@ const ClinicalClaritySession = () => {
             </Button>
 
             <p className="mt-6 font-inter text-sm text-muted-foreground">
-              90 minutes. A Board-Certified OB/GYN and a Healthcare IT Architect. Specific, honest, and no pitch.
+              90 minutes. A Board-Certified OB/GYN, a Healthcare IT Architect, and a team built for enterprise deployments. Specific, honest, and no pitch.
             </p>
           </div>
         </section>

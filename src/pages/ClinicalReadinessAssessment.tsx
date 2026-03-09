@@ -205,7 +205,7 @@ const ClinicalReadinessAssessment = () => {
                 { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains with targeted async questions as findings develop." },
                 { step: "3", icon: FileText, title: "Days 11 to 12: Report Preparation", text: "Written report and prioritized remediation roadmap prepared." },
                 { step: "4", icon: Send, title: "Days 12 to 14: Report Delivered", text: "A document you can share with your board, investors, or health system counterparts." },
-                { step: "5", icon: Video, title: "Within 48 Hours: Live Presentation", text: "60-minute findings call with both practitioners, clinical and operational perspective in the same conversation. Full Q&A. Zero ambiguity about next steps." },
+                { step: "5", icon: Video, title: "Within 48 Hours: Live Presentation", text: "60-minute findings call with our full clinical and operational team, clinical and operational perspective in the same conversation. Full Q&A. Zero ambiguity about next steps." },
               ].map((item, index) => (
                 <div
                   key={index}
@@ -238,7 +238,7 @@ const ClinicalReadinessAssessment = () => {
         <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
-              A Board-Certified OB/GYN and a Healthcare IT Architect who have been in the room where these decisions are made.
+              A Board-Certified OB/GYN, a Healthcare IT Architect, and a team built to operate inside enterprise health systems — in your corner.
             </h2>
 
             <div className="space-y-4 text-left">

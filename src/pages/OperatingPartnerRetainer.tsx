@@ -148,7 +148,7 @@ const OperatingPartnerRetainer = () => {
                 {
                   icon: Handshake,
                   title: "Enterprise Credibility",
-                  description: "We join key sales calls, enterprise negotiations, and investor meetings when clinical or operational credibility determines what gets believed and what gets signed.",
+                  description: "Our clinical and operational team joins key sales calls, enterprise negotiations, and investor meetings when clinical or operational credibility determines what gets believed and what gets signed.",
                 },
                 {
                   icon: Shield,
@@ -204,12 +204,12 @@ const OperatingPartnerRetainer = () => {
         <section className="bg-background px-6 py-5 md:py-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
-              A Board-Certified OB/GYN who still sees patients. A Healthcare IT Architect with 15+ years inside enterprise health systems.
+              A Board-Certified OB/GYN, a Healthcare IT Architect, and a team built to operate inside enterprise health systems — in your corner.
             </h2>
 
             <div className="space-y-4 text-left">
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
-                We take a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
+                Our team takes a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
               </p>
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                 We have been inside the governance meetings, the clinical workflows, and the technology failures you are trying to prevent. We do not advise from a slide deck.

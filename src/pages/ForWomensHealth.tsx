@@ -138,7 +138,7 @@ const ForWomensHealth = () => {
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                 }}
               >
-                Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale. <Link to="/services" className="underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: 'rgba(243,218,115,0.9)' }}>Explore our engagement models</Link>.
+                Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale.
               </p>
 
               {/* CTA */}

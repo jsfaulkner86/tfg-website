@@ -383,7 +383,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 7 — Bottom CTA */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-24"
+          className="px-5 sm:px-6 pt-8 pb-16 sm:pt-10 sm:pb-20"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto text-center">

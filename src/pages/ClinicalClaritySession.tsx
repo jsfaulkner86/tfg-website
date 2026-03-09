@@ -281,7 +281,7 @@ const ClinicalClaritySession = () => {
               className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6"
               style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
             >
-              "If something is stuck, let's figure out why."
+              "Something is stuck, let's figure out why."
             </h2>
 
             <Button

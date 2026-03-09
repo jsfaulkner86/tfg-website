@@ -6,17 +6,35 @@ import SEOHead from "@/components/SEOHead";
 const partnershipSchema = [
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Strategic Advisory",
+    "@type": "ProfessionalService",
+    name: "Strategic Advisory — The Faulkner Group",
     provider: {
       "@type": "Organization",
       name: "The Faulkner Group",
       url: "https://thefaulknergroupadvisors.com",
+      sameAs: [
+        "https://www.linkedin.com/company/faulkner-group/",
+        "https://www.youtube.com/@YourHealthcareITexpert",
+      ],
     },
     description:
-      "Equity-based strategic advisory for early-stage women's health tech companies navigating enterprise health systems.",
-    serviceType: "Healthcare Advisory",
-    areaServed: "US",
+      "Equity-based strategic advisory for pre-seed to Series A women's health tech companies. A Board-Certified OB/GYN and Healthcare IT Architect help femtech founders navigate enterprise health system sales, clinical governance, and physician adoption.",
+    serviceType: "Healthcare Strategic Advisory",
+    areaServed: { "@type": "Country", name: "US" },
+    audience: {
+      "@type": "Audience",
+      audienceType: "Women's health tech founders, femtech startups, pre-seed to Series A",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Strategic Advisory Focus Areas",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Shape the Enterprise Narrative", description: "Frame your solution in the language health systems respond to: clinical outcomes, governance, workflow fit, and risk reduction." } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pressure-Test Your Go-to-Market", description: "Identify what's missing, misaligned, or will kill the deal before it starts." } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Provide the Clinical Voice That Opens Doors", description: "A Board-Certified OB/GYN on your advisory team signals legitimacy to CMOs, CNOs, and clinical committees." } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "De-Risk Decisions Before They Get Expensive", description: "Governance structures, pilot design, and physician adoption strategy built right the first time." } },
+      ],
+    },
   },
   {
     "@context": "https://schema.org",
@@ -24,15 +42,65 @@ const partnershipSchema = [
     name: "Nicole Faulkner",
     honorificPrefix: "Dr.",
     honorificSuffix: "D.O.",
-    jobTitle: "Board-Certified OB/GYN",
+    jobTitle: "Board-Certified OB/GYN & Chief Clinical Officer",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
+    knowsAbout: ["Women's Health", "OB/GYN", "Clinical Governance", "Physician Adoption", "Femtech"],
   },
   {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Johnathon Faulkner",
-    jobTitle: "Healthcare IT Architect",
+    jobTitle: "CEO & Healthcare IT Architect",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
+    sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
+    knowsAbout: ["Healthcare IT", "EHR Integration", "Enterprise Health Systems", "Clinical Adoption"],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the Strategic Advisory from The Faulkner Group?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An equity-based strategic advisory designed for pre-seed to Series A women's health tech companies. A Board-Certified OB/GYN and Healthcare IT Architect provide enterprise narrative shaping, go-to-market pressure testing, clinical credibility, and governance de-risking.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is the Strategic Advisory for?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Femtech founders building in women's health, maternal care, reproductive health, or women's digital health who need clinical credibility to navigate enterprise health system sales, procurement committees, and physician adoption before they have the runway to hire for it.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is strategic advisory different from consulting or fractional work?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Strategic advisory is equity-based, not a consulting engagement, fractional hire, or retainer. The Faulkner Group aligns with your company long-term and provides ongoing access to clinical and operational expertise at the moments that matter most.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do femtech deals stall in enterprise health systems?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most femtech deals don't die in the demo. They die in the decision meeting the founder wasn't in. Without clinical credibility, governance documentation, and a narrative framed for health system procurement, promising products get stuck in committee indefinitely.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What areas does the Strategic Advisory cover?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Four focus areas: (1) Shaping the enterprise narrative for clinical outcomes and governance, (2) Pressure-testing go-to-market strategy, (3) Providing a clinical voice (Board-Certified OB/GYN) that opens doors with CMOs and clinical committees, (4) De-risking decisions around governance, pilot design, and physician adoption.",
+        },
+      },
+    ],
   },
 ];
 
@@ -83,9 +151,10 @@ const AdvisoryPartnership = () => {
   return (
     <>
       <SEOHead
-        title="Strategic Advisory | The Faulkner Group"
-        description="Equity-based strategic advisory for early-stage women's health tech companies navigating enterprise health systems."
+        title="Femtech Strategic Advisory | The Faulkner Group"
+        description="Equity-based advisory for pre-seed to Series A women's health tech founders. A Board-Certified OB/GYN and Healthcare IT Architect help you navigate enterprise health systems."
         canonical="https://thefaulknergroupadvisors.com/advisory-partnership"
+        ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
         jsonLd={partnershipSchema}
       />
 
@@ -96,7 +165,7 @@ const AdvisoryPartnership = () => {
         <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
           <img
             src="/hero-boardroom.jpg"
-            alt="Healthcare leadership team collaboration"
+            alt="The Faulkner Group women's health tech advisory team in a strategy session"
             className="absolute inset-0 h-full w-full object-cover"
             fetchPriority="high"
             decoding="async"

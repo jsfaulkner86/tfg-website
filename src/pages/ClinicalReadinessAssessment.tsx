@@ -276,7 +276,7 @@ const ClinicalReadinessAssessment = () => {
               How It Works
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
               {[
                 { step: "1", icon: ClipboardList, title: "Days 1 to 2: Structured Intake", text: "We review your product, pilot terms, and integration documentation before any assessment begins." },
                 { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains, with targeted async questions as findings develop." },

@@ -212,11 +212,11 @@ const Header = () => {
         >
           <nav className="flex flex-col py-2 pb-4">
             <a 
-              href="/for-womens-health"
+              href="/#mission"
               onClick={handleNavClick}
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
-              For Women's Health
+              About
             </a>
             <a 
               href="/#mission"

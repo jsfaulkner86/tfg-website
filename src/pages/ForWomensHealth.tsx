@@ -11,31 +11,31 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 
 const faqData = [
-  {
-    question: "Who is The Faulkner Group's For Women's Health program designed for?",
-    answer: "This program is built for women's health tech founders, operators, and innovators who are navigating the complexities of health system partnerships, payer strategy, and clinical adoption. Whether you are pre-seed or scaling post-Series A, if you are building technology that touches women's health, this is for you."
-  },
-  {
-    question: "How is this different from a typical accelerator or advisory firm?",
-    answer: "We are not a generic accelerator. We bring direct healthcare IT architecture experience, board-certified OB/GYN clinical credibility, and deep fluency in health system procurement, EHR integration, and payer strategy. We embed alongside your team - not from the outside looking in."
-  },
-  {
-    question: "What stage does my company need to be at to work with you?",
-    answer: "We work with companies from pre-seed through Series B and beyond. Our tools are designed to meet you where you are - whether you are preparing for your first health system conversation or scaling across multiple systems."
-  },
-  {
-    question: "Are the interactive tools really free?",
-    answer: "Yes. The Reimbursement Readiness Scorecard, Hospital Partnership Fit Checker, and Femtech Funding Gap Benchmarker are all free to use. They are designed to give you immediate, actionable clarity on where you stand and what to focus on next."
-  },
-  {
-    question: "What happens on a strategy call?",
-    answer: "A strategy call is a focused conversation with The Faulkner Group to understand your current challenges, assess your readiness across clinical adoption, payer strategy, and health system entry, and map out a clear path forward. No pitch decks. No fluff. Just a real conversation about what is working and what is not."
-  },
-];
+{
+  question: "Who is The Faulkner Group's For Women's Health program designed for?",
+  answer: "This program is built for women's health tech founders, operators, and innovators who are navigating the complexities of health system partnerships, payer strategy, and clinical adoption. Whether you are pre-seed or scaling post-Series A, if you are building technology that touches women's health, this is for you."
+},
+{
+  question: "How is this different from a typical accelerator or advisory firm?",
+  answer: "We are not a generic accelerator. We bring direct healthcare IT architecture experience, board-certified OB/GYN clinical credibility, and deep fluency in health system procurement, EHR integration, and payer strategy. We embed alongside your team - not from the outside looking in."
+},
+{
+  question: "What stage does my company need to be at to work with you?",
+  answer: "We work with companies from pre-seed through Series B and beyond. Our tools are designed to meet you where you are - whether you are preparing for your first health system conversation or scaling across multiple systems."
+},
+{
+  question: "Are the interactive tools really free?",
+  answer: "Yes. The Reimbursement Readiness Scorecard, Hospital Partnership Fit Checker, and Femtech Funding Gap Benchmarker are all free to use. They are designed to give you immediate, actionable clarity on where you stand and what to focus on next."
+},
+{
+  question: "What happens on a strategy call?",
+  answer: "A strategy call is a focused conversation with The Faulkner Group to understand your current challenges, assess your readiness across clinical adoption, payer strategy, and health system entry, and map out a clear path forward. No pitch decks. No fluff. Just a real conversation about what is working and what is not."
+}];
+
 
 const ForWomensHealth = () => {
   const [heroVisible, setHeroVisible] = useState(false);
@@ -45,7 +45,7 @@ const ForWomensHealth = () => {
   const [faqVisible, setFaqVisible] = useState(false);
   const [founderVisible, setFounderVisible] = useState(false);
   const [ctaVisible, setCtaVisible] = useState(false);
-  
+
 
   const heroRef = useRef<HTMLElement>(null);
   const valueRef = useRef<HTMLElement>(null);
@@ -58,22 +58,22 @@ const ForWomensHealth = () => {
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
     const pairs: [React.RefObject<HTMLElement>, (v: boolean) => void][] = [
-      [heroRef, setHeroVisible], [valueRef, setValueVisible], [calloutRef, setCalloutVisible],
-      [toolsRef, setToolsVisible], [faqRef, setFaqVisible], [founderRef, setFounderVisible], [ctaRef, setCtaVisible],
-    ];
+    [heroRef, setHeroVisible], [valueRef, setValueVisible], [calloutRef, setCalloutVisible],
+    [toolsRef, setToolsVisible], [faqRef, setFaqVisible], [founderRef, setFounderVisible], [ctaRef, setCtaVisible]];
+
     pairs.forEach(([ref, setter]) => {
-      const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setter(true); }, { threshold: 0.1, rootMargin: '50px' });
+      const obs = new IntersectionObserver(([e]) => {if (e.isIntersecting) setter(true);}, { threshold: 0.1, rootMargin: '50px' });
       if (ref.current) obs.observe(ref.current);
       observers.push(obs);
     });
-    return () => observers.forEach(o => o.disconnect());
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   const handleMeet = () => {
     window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank');
   };
 
-  const handleToolClick = useCallback((card: { title: string; href: string; external: boolean; gated?: boolean }) => {
+  const handleToolClick = useCallback((card: {title: string;href: string;external: boolean;gated?: boolean;}) => {
     if (card.external) {
       window.open(card.href, '_blank');
     } else {
@@ -86,19 +86,19 @@ const ForWomensHealth = () => {
       <SEOHead
         title="For Women's Health Tech Founders | The Faulkner Group"
         description="Strategy and system fluency for women's health tech founders ready to break through and scale. The Faulkner Group brings clinical depth and operational expertise to every engagement."
-        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health"
-      />
+        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health" />
+      
       <Header />
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[40px] md:pt-[180px] md:pb-[60px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
+        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"
             alt="The Faulkner Group women's health tech advisory team in a strategy session"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+            className="absolute inset-0 w-full h-full object-cover" />
+          
           {/* Dark overlay */}
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
 
@@ -111,9 +111,9 @@ const ForWomensHealth = () => {
                 style={{
                   fontSize: '13px',
                   letterSpacing: '0.2em',
-                  color: 'hsl(45, 62%, 56%)',
-                }}
-              >
+                  color: 'hsl(45, 62%, 56%)'
+                }}>
+                
                 For Women's Health Innovators
               </p>
 
@@ -123,10 +123,10 @@ const ForWomensHealth = () => {
                 style={{
                   fontSize: 'clamp(24px, 3.2vw, 44px)',
                   lineHeight: 1.15,
-                  maxWidth: '800px',
-                }}
-              >
-                For Women's Health.<br />
+                  maxWidth: '800px'
+                }}>For Women's Health
+Against Every Broken System
+                <br />
                 Against Every Broken System.
               </h1>
 
@@ -136,18 +136,24 @@ const ForWomensHealth = () => {
                 style={{
                   fontSize: 'clamp(16px, 1.6vw, 20px)',
                   color: 'rgba(255, 255, 255, 0.85)',
-                  textShadow: '0 2px 8px rgba(0,0,0,0.5)',
-                }}
-              >
-                Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale. <Link to="/services" className="underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: 'rgba(243,218,115,0.9)' }}>Explore our engagement models</Link>.
+                  textShadow: '0 2px 8px rgba(0,0,0,0.5)'
+                }}>Strategy, tools, and system fluency for women's health tech founders who are ready to break through and scale. 
+
+                <Link to="/services" className="underline underline-offset-2 hover:opacity-80 transition-opacity" style={{ color: 'rgba(243,218,115,0.9)' }}>Explore our engagement models</Link>.
               </p>
 
               {/* CTA */}
               <Button
                 onClick={handleMeet}
-                variant="glassy"
-                className="text-sm sm:text-base px-6 sm:px-9 py-4 sm:py-5 group"
-              >
+                className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                  color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  backdropFilter: 'blur(8px)'
+                }}>
+                
                 Let's Meet
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
@@ -157,7 +163,7 @@ const ForWomensHealth = () => {
 
         {/* ===== VALUE PROPS (matches Problem section layout) ===== */}
         <section ref={valueRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '32px', paddingBottom: '32px',
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
         }}>
           <div className="absolute top-0 left-0 right-0 pointer-events-none" style={{
@@ -167,56 +173,88 @@ const ForWomensHealth = () => {
             background: 'radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.03) 100%)'
           }} />
 
-          <div className="max-w-5xl mx-auto relative z-10">
-            {/* Centered headline */}
-            <div className={`text-center mb-10 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              style={{ transitionDelay: '0.2s' }}>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
-                color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
-              }}>Tools You Can Use Now</h2>
-              <p className="text-lg sm:text-xl font-inter font-light mb-6 max-w-3xl mx-auto" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                The tools, fluency, and clinical credibility to navigate the healthcare system on your terms.
-              </p>
-              <div className="relative overflow-hidden rounded-full mx-auto" style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }}>
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)', animation: 'shimmer 3s linear infinite' }} />
-              </div>
-            </div>
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
+              {/* Left - Headline */}
+              <div className={`space-y-8 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ maxWidth: '650px', transitionDelay: '0.2s' }}>
+                <div>
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
+                    color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                  }}>What We Give You That No One Else Does</h2>
+                  <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
+                    The tools, fluency, and clinical credibility to navigate the healthcare system on your terms.
+                  </p>
+                  <div className="relative overflow-hidden rounded-full" style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }}>
+                    <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)', animation: 'shimmer 3s linear infinite' }} />
+                  </div>
+                </div>
 
-            {/* Body text spread across full width */}
-            <div className={`grid md:grid-cols-2 gap-8 md:gap-12 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              style={{ transitionDelay: '0.4s' }}>
-              <div className="font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
-                <p className="text-base sm:text-lg">
-                  Most women's health startups don't fail because of bad tech. They fail because <strong style={{ color: '#718DA9', fontWeight: 600 }}>the system is complicated</strong> - procurement cycles, payer strategy, regulatory pathways, and clinical governance are all barriers that require a different kind of expertise.
-                </p>
-              </div>
-              <div className="font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
-                <p className="text-base sm:text-lg">
-                  We bring <strong style={{ color: '#718DA9', fontWeight: 600 }}>health system fluency, reimbursement intelligence, and funding strategy</strong> directly to founders who are too busy building to decode a system designed to slow them down.
-                </p>
-              </div>
-            </div>
+                <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
+                  <p className="text-base sm:text-lg">
+                    Most women's health startups don't fail because of bad tech. They fail because <strong style={{ color: '#718DA9', fontWeight: 600 }}>the system is complicated</strong> - procurement cycles, payer strategy, regulatory pathways, and clinical governance are all barriers that require a different kind of expertise.
+                  </p>
+                  <p className="text-base sm:text-lg">
+                    We bring <strong style={{ color: '#718DA9', fontWeight: 600 }}>health system fluency, reimbursement intelligence, and funding strategy</strong> directly to founders who are too busy building to decode a system designed to slow them down.
+                  </p>
 
-            {/* Stat callout full width */}
-            <div className={`mt-10 p-8 rounded-xl relative overflow-hidden transition-all duration-700 ${valueVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
-              style={{
-                background: 'linear-gradient(135deg, #FFFFFF 0%, #EAF0F6 100%)',
-                border: '2px solid #F3DA73', borderRadius: '16px',
-                boxShadow: '0 8px 25px rgba(0,0,0,0.05)', transitionDelay: '0.6s'
-              }}>
-              <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10 text-center" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
-                <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>Only 3% of venture funding goes to women's health</strong> - and the founders building in this space face a system that was not designed for them. <span className="text-base font-normal" style={{ color: '#718DA9' }}>(Rock Health, Femtech Funding Report)</span>
-              </p>
+                  <div className="w-full h-px my-6" style={{ background: 'rgba(243,218,115,0.3)' }} />
+
+                  <div className={`mt-8 p-8 rounded-xl relative overflow-hidden transition-all duration-700 ${valueVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+                  style={{
+                    background: 'linear-gradient(135deg, #FFFFFF 0%, #EAF0F6 100%)',
+                    border: '2px solid #F3DA73', borderRadius: '16px',
+                    boxShadow: '0 8px 25px rgba(0,0,0,0.05)', transitionDelay: '0.6s'
+                  }}>
+                    <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
+                      <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>Only 3% of venture funding goes to women's health</strong> - and the founders building in this space face a system that was not designed for them. <span className="text-base font-normal" style={{ color: '#718DA9' }}>(Rock Health, Femtech Funding Report)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right - Value prop cards (matches Problem section right column) */}
+              <div className={`relative transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: '0.4s', marginTop: '0px' }}>
+                <div className="absolute left-6 top-0 bottom-0" style={{
+                  width: '1px', background: 'linear-gradient(180deg, transparent 0%, rgba(243,218,115,0.3) 15%, rgba(243,218,115,0.3) 85%, transparent 100%)'
+                }} />
+                <div className="space-y-10">
+                  {[
+                  { icon: Building2, text: "Hospital & Health System Fluency - Know exactly how to walk into a health system conversation and walk out with a partnership." },
+                  { icon: ClipboardCheck, text: "Reimbursement & Regulatory Roadmaps - We translate payer strategy, CPT coding, and FDA pathways into founder-ready action plans." },
+                  { icon: TrendingUp, text: "Funding Gap Intelligence - Benchmark your raise against femtech peers and close the knowledge gap before your next pitch." }].
+                  map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={index} className={`group relative transition-all duration-700 ${valueVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                      style={{ transitionDelay: `${index * 150 + 500}ms` }}>
+                        <div className="relative p-6 rounded-xl transition-all duration-500 hover:-translate-y-1 bg-white"
+                        style={{ border: '1.5px solid #F3DA73', boxShadow: '0 8px 25px rgba(0,0,0,0.05)' }}>
+                          <div className="flex items-center gap-5 relative z-10">
+                            <div className="relative flex-shrink-0">
+                              <Icon size={28} strokeWidth={1.5} style={{ color: '#F3DA73' }}
+                              className="transition-transform duration-300 group-hover:scale-110" />
+                            </div>
+                            <p className="text-base sm:text-lg font-inter font-medium leading-relaxed"
+                            style={{ color: '#2A3B4F', letterSpacing: '0.01em' }}>{item.text}</p>
+                          </div>
+                        </div>
+                      </div>);
+
+                  })}
+                </div>
+              </div>
             </div>
 
             {/* Bottom callout */}
-            <div className={`mt-8 sm:mt-12 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-              style={{ transitionDelay: '1.2s' }}>
-              <div className="relative py-4 px-4 sm:py-6 sm:px-8 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
-                style={{ background: '#FBF8F1', border: '2.5px solid #C9B882', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', maxWidth: '1400px' }}>
+            <div className={`mt-12 sm:mt-24 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            style={{ transitionDelay: '1.2s' }}>
+              <div className="relative py-6 px-4 sm:py-12 sm:px-12 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
+              style={{ background: '#FBF8F1', border: '2.5px solid #C9B882', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', maxWidth: '1400px' }}>
                 <div className="relative z-10 text-center">
                   <p className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
-                    style={{ color: '#718DA9', letterSpacing: '-0.02em', lineHeight: '1.4' }}>
+                  style={{ color: '#718DA9', letterSpacing: '-0.02em', lineHeight: '1.4' }}>
                     We don't just identify the gaps. We give you the tools and strategy to close them.
                   </p>
                 </div>
@@ -227,7 +265,7 @@ const ForWomensHealth = () => {
 
         {/* ===== CALLOUT BAND (matches Approach section cards style) ===== */}
         <section ref={calloutRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '32px', paddingBottom: '32px',
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -273,8 +311,14 @@ const ForWomensHealth = () => {
                     "Most women's health startups don't fail because of bad tech. They fail because the system is complicated. We know the system."
                   </blockquote>
                   <Button onClick={handleMeet}
-                    variant="glassy"
-                    className="text-base px-9 py-5 group/btn relative z-10">
+                  className="text-base font-semibold rounded-lg px-9 py-5 border group/btn transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] relative z-10"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                    color: '#2A3B4F',
+                    borderColor: 'rgba(255,255,255,0.25)',
+                    boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                    backdropFilter: 'blur(8px)'
+                  }}>
                     Let's Meet <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
                   </Button>
                   <div className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
@@ -301,7 +345,7 @@ const ForWomensHealth = () => {
 
         {/* ===== RESOURCE TOOLS (matches Transformation section cards) ===== */}
         <section id="resources" ref={toolsRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '32px', paddingBottom: '32px',
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -309,14 +353,14 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className={`text-center mb-6 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="inline-block mb-4 px-6 py-2 rounded-full" style={{
+            <div className={`text-center mb-10 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
               }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>Free Resources</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold mb-8" style={{
                 color: '#1A2A3A', letterSpacing: '-0.04em', lineHeight: '1', textShadow: '0 2px 4px rgba(0,0,0,0.02)'
               }}>Tools Built for This Fight</h2>
               <div className="flex items-center justify-center gap-3">
@@ -326,73 +370,78 @@ const ForWomensHealth = () => {
               </div>
             </div>
 
-            <div className={`mb-8 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className={`mb-16 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {[
-                  { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false, gated: true },
-                  { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false, gated: true },
-                  { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker", external: false, gated: true },
-                  { micro: "Fundraising Pipeline", title: "Women's Health Fundraising Tracker", body: "Track your investor pipeline, get femtech-specific fit scores, and manage warm intros — all private and browser-based.", result: "Private pipeline tracker built for pre-seed and seed femtech founders.", cta: "Open Tracker", href: "https://womenshealthfundraisingtracker.lovable.app/", external: true, gated: false },
-                  { micro: "Market Intelligence", title: "The Global Femtech Directory", body: "Explore 887+ innovative companies transforming women's health across 27 categories — from fertility to precision medicine.", result: "Searchable directory of femtech companies, investors, and resources worldwide.", cta: "Explore Directory", href: "https://femtechdb.com/", external: true, gated: false },
-                ].map((card, index) => (
-                  <div key={index} className={`group relative transition-all duration-700 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
-                    style={{ transitionDelay: `${index * 150 + 400}ms` }}>
+                { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false, gated: true },
+                { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false, gated: true },
+                { micro: "Funding Intelligence", title: "Femtech Funding Gap Benchmarker", body: "See how your raise compares to peers by stage and founding team.", result: "6 questions. Benchmark data and gap analysis in seconds.", cta: "See Your Benchmark", href: "/for-womens-health/funding-benchmarker", external: false, gated: true },
+                { micro: "Fundraising Pipeline", title: "Women's Health Fundraising Tracker", body: "Track your investor pipeline, get femtech-specific fit scores, and manage warm intros — all private and browser-based.", result: "Private pipeline tracker built for pre-seed and seed femtech founders.", cta: "Open Tracker", href: "https://womenshealthfundraisingtracker.lovable.app/", external: true, gated: false },
+                { micro: "Market Intelligence", title: "The Global Femtech Directory", body: "Explore 887+ innovative companies transforming women's health across 27 categories — from fertility to precision medicine.", result: "Searchable directory of femtech companies, investors, and resources worldwide.", cta: "Explore Directory", href: "https://femtechdb.com/", external: true, gated: false }].
+                map((card, index) =>
+                <div key={index} className={`group relative transition-all duration-700 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
+                style={{ transitionDelay: `${index * 150 + 400}ms` }}>
                     <div className="absolute -inset-0.5 rounded-[20px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
-                      background: 'linear-gradient(135deg, #D4B65D, #718DA9)', filter: 'blur(8px)'
-                    }} />
+                    background: 'linear-gradient(135deg, #D4B65D, #718DA9)', filter: 'blur(8px)'
+                  }} />
                     <div className="relative p-6 sm:p-10 rounded-2xl sm:rounded-[24px] transition-all duration-300 group-hover:-translate-y-2 h-full flex flex-col overflow-hidden" style={{
-                      background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
-                      border: '2.5px solid #F3DA73',
-                      boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)',
-                      minHeight: '320px', backdropFilter: 'blur(10px)'
-                    }}>
+                    background: 'linear-gradient(180deg, #7A97B3 0%, #6A859E 100%)',
+                    border: '2.5px solid #F3DA73',
+                    boxShadow: '0 12px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.1)',
+                    minHeight: '320px', backdropFilter: 'blur(10px)'
+                  }}>
                       <div className="absolute inset-0 opacity-30 pointer-events-none" style={{
-                        background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
-                      }} />
+                      background: 'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.15) 0%, transparent 60%)'
+                    }} />
                       <div className="relative z-10 flex flex-col h-full">
                         <div className="flex items-center justify-between mb-4">
                           <p className="text-sm font-inter font-bold tracking-wider uppercase" style={{
-                            color: '#F3DA73', letterSpacing: '0.1em', textShadow: '0 2px 4px rgba(0,0,0,0.2)'
-                          }}>{card.micro}</p>
+                          color: '#F3DA73', letterSpacing: '0.1em', textShadow: '0 2px 4px rgba(0,0,0,0.2)'
+                        }}>{card.micro}</p>
                           <div className="flex items-center gap-2">
-                            {card.gated && (
-                              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-inter font-bold tracking-wider uppercase" style={{
-                                background: 'rgba(243,218,115,0.2)',
-                                color: '#F3DA73',
-                                border: '1px solid rgba(243,218,115,0.4)',
-                                letterSpacing: '0.08em',
-                              }}>Free Access</span>
-                            )}
+                            {card.gated &&
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-inter font-bold tracking-wider uppercase" style={{
+                            background: 'rgba(243,218,115,0.2)',
+                            color: '#F3DA73',
+                            border: '1px solid rgba(243,218,115,0.4)',
+                            letterSpacing: '0.08em'
+                          }}>Free Access</span>
+                          }
                             {card.external && <ExternalLink className="h-4 w-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />}
                           </div>
                         </div>
                         <h3 className="text-xl sm:text-2xl font-playfair font-bold mb-4" style={{
-                          color: 'rgba(255,255,255,0.98)', letterSpacing: '-0.01em', lineHeight: '1.3', textShadow: '0 2px 8px rgba(0,0,0,0.15)'
-                        }}>{card.title}</h3>
+                        color: 'rgba(255,255,255,0.98)', letterSpacing: '-0.01em', lineHeight: '1.3', textShadow: '0 2px 8px rgba(0,0,0,0.15)'
+                      }}>{card.title}</h3>
                         <p className="text-base font-inter mb-6 flex-grow" style={{
-                          color: 'rgba(248,248,248,0.85)', letterSpacing: '0.02em', lineHeight: '1.6'
-                        }}>{card.body}</p>
+                        color: 'rgba(248,248,248,0.85)', letterSpacing: '0.02em', lineHeight: '1.6'
+                      }}>{card.body}</p>
                         <div className="pt-4 mt-auto" style={{ borderTop: '1px solid rgba(243,218,115,0.3)' }}>
                           <p className="text-sm font-inter font-semibold mb-5" style={{ color: 'rgba(255,255,255,0.9)' }}>
                             <span style={{ color: '#F3DA73', fontWeight: 700 }}>What you get:</span>{' '}{card.result}
                           </p>
                           <Button onClick={() => handleToolClick(card)}
-                            variant="glassy"
-                            className="w-full text-base group/btn py-5"
-                          >{card.cta} {card.external ? <ExternalLink className="ml-2 h-4 w-4" /> : <ArrowRight className="ml-2 h-4 w-4" />}</Button>
+                        className="w-full text-base rounded-lg group/btn transition-all duration-300 font-semibold py-5"
+                        style={{
+                          background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
+                          boxShadow: '0 4px 16px rgba(243,218,115,0.3)', border: 'none'
+                        }}
+                        onMouseEnter={(e) => {e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.5)';}}
+                        onMouseLeave={(e) => {e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.3)';}}>
+                          {card.cta} {card.external ? <ExternalLink className="ml-2 h-4 w-4" /> : <ArrowRight className="ml-2 h-4 w-4" />}</Button>
                         </div>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{
-                        background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
-                      }} />
+                      background: 'linear-gradient(90deg, transparent, #F3DA73, transparent)'
+                    }} />
                     </div>
                   </div>
-                ))}
+                )}
               </div>
             </div>
 
             <div className={`transition-all duration-1000 delay-900 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="relative py-4 px-4 sm:py-6 sm:px-6 md:py-8 md:px-8 rounded-3xl mx-auto max-w-5xl" style={{
+              <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl" style={{
                 background: '#FBF8F1', border: '2px solid #D4B65D', boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
               }}>
                 <div className="text-center">
@@ -407,7 +456,7 @@ const ForWomensHealth = () => {
 
         {/* ===== FOUNDER IN THE ROOM ===== */}
         <section ref={founderRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '32px', paddingBottom: '32px',
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #F5F0E4 0%, #FDFCF9 100%)'
         }}>
           <div className="absolute inset-0 pointer-events-none opacity-30" style={{
@@ -415,10 +464,10 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Left Column — Text */}
               <div className={`space-y-4 sm:space-y-6 transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ transitionDelay: '0.2s' }}>
+              style={{ transitionDelay: '0.2s' }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.2em] uppercase" style={{ color: '#718DA9' }}>
                   LIVE MONTHLY SESSION
                 </span>
@@ -437,21 +486,21 @@ const ForWomensHealth = () => {
 
                 <div className="space-y-3 sm:space-y-4 pt-2">
                   {[
-                    "20 minutes, no fluff, no sales pitch",
-                    "Free live access with simple email registration",
-                    "Replay sent automatically to all registrants"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
+                  "20 minutes, no fluff, no sales pitch",
+                  "Free live access with simple email registration",
+                  "Replay sent automatically to all registrants"].
+                  map((item, i) =>
+                  <div key={i} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: '#D4B65D' }} />
                       <span className="text-base font-inter" style={{ color: '#2A3B4F' }}>{item}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
 
               {/* Right Column — Registration Card */}
               <div className={`transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ transitionDelay: '0.4s' }}>
+              style={{ transitionDelay: '0.4s' }}>
                 <div className="p-6 sm:p-8 md:p-10 rounded-2xl" style={{
                   background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F0E4 100%)',
                   border: '2px solid #D4B65D',
@@ -474,7 +523,7 @@ const ForWomensHealth = () => {
                     border: '1.5px solid rgba(243,218,115,0.25)'
                   }}>
                     <svg className="h-5 w-5 flex-shrink-0 mt-0.5 sm:mt-0" style={{ color: '#D4B65D' }} viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                     <p className="text-xs sm:text-sm font-inter text-center sm:text-left" style={{ color: '#4A5568' }}>
                       Details will be released on LinkedIn by{' '}
@@ -492,11 +541,11 @@ const ForWomensHealth = () => {
 
         {/* ===== FAQ (matches FAQ section exactly) ===== */}
         <section ref={faqRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '32px', paddingBottom: '32px',
+          paddingTop: '60px', paddingBottom: '60px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
         }}>
           <div className="max-w-4xl mx-auto relative z-10">
-            <div className={`text-center mb-8 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`text-center mb-16 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
@@ -514,16 +563,16 @@ const ForWomensHealth = () => {
             </div>
             <div className={`transition-all duration-1000 delay-200 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border-0 rounded-2xl overflow-hidden"
-                    style={{ background: 'white', border: '1.5px solid rgba(243,218,115,0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.03)' }}>
+                {faqData.map((faq, index) =>
+                <AccordionItem key={index} value={`item-${index}`} className="border-0 rounded-2xl overflow-hidden"
+                style={{ background: 'white', border: '1.5px solid rgba(243,218,115,0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.03)' }}>
                     <AccordionTrigger className="px-4 sm:px-8 py-4 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-lg md:text-xl"
-                      style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}>{faq.question}</AccordionTrigger>
+                  style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}>{faq.question}</AccordionTrigger>
                     <AccordionContent className="px-4 sm:px-8 pb-4 sm:pb-6">
                       <p className="text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>{faq.answer}</p>
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </div>
           </div>
@@ -531,9 +580,9 @@ const ForWomensHealth = () => {
 
         {/* ===== BOTTOM CTA BANNER ===== */}
         <section className="px-4 sm:px-6 relative" style={{
-          paddingTop: '24px', paddingBottom: '24px',
+          paddingTop: '40px', paddingBottom: '40px',
           background: '#0A1628',
-          borderTop: '3px solid #F3DA73',
+          borderTop: '3px solid #F3DA73'
         }}>
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
@@ -546,9 +595,15 @@ const ForWomensHealth = () => {
             </div>
             <Button
               onClick={handleMeet}
-              variant="glassy"
-              className="text-base px-8 py-5 group flex-shrink-0"
-            >
+              className="text-base font-semibold rounded-lg px-8 py-5 border group flex-shrink-0 transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+              style={{
+                background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                color: '#2A3B4F',
+                borderColor: 'rgba(255,255,255,0.25)',
+                boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                backdropFilter: 'blur(8px)'
+              }}>
+              
               Book the Call
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
@@ -559,8 +614,8 @@ const ForWomensHealth = () => {
         <StickyCTA />
 
       </main>
-    </>
-  );
+    </>);
+
 };
 
 export default ForWomensHealth;

@@ -105,7 +105,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 1 — THE PROMISE */}
         <section
-          className="px-4 sm:px-6 py-8 sm:py-10"
+          className="px-4 sm:px-6 py-5 sm:py-6"
           style={{ background: "linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)" }}
         >
           <div className="max-w-4xl mx-auto text-center">

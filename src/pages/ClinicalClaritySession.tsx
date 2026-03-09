@@ -66,7 +66,7 @@ const ClinicalClaritySession = () => {
                   lineHeight: 1.1,
                 }}
               >
-                90 minutes<br />A clear path forward.
+                90 minutes<br />A clear path forward
               </h1>
 
               <p

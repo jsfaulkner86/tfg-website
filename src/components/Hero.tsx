@@ -83,21 +83,33 @@ const Hero = () => {
       </section>
 
       {/* Trust bar */}
-      <div className="w-full bg-white border-b border-border">
-        <div className="max-w-5xl mx-auto px-5 sm:px-6 py-5 grid grid-cols-2 gap-y-3 gap-x-2 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-border">
-          {trustLabels.map((label) => (
-            <span
-              key={label}
-              className="font-inter font-medium uppercase text-center md:px-8 text-[11px] sm:text-[13px]"
-              style={{
-                fontSize: '13px',
-                letterSpacing: '0.1em',
-                color: 'hsl(210, 14%, 19%)',
-              }}
-            >
-              {label}
-            </span>
-          ))}
+      <div className="w-full py-4 md:py-5" style={{ background: 'linear-gradient(180deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.7) 100%)' }}>
+        <div className="max-w-5xl mx-auto px-5 sm:px-6">
+          <div
+            className="grid grid-cols-2 gap-y-3 gap-x-2 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-white/15 rounded-lg px-4 py-3 md:px-6 md:py-4"
+            style={{
+              background: 'rgba(255,255,255,0.06)',
+              border: '1px solid rgba(255,255,255,0.12)',
+              boxShadow: '0 4px 24px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.08)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+            }}
+          >
+            {trustLabels.map((label) => (
+              <span
+                key={label}
+                className="font-inter font-medium uppercase text-center md:px-8 text-[11px] sm:text-[13px]"
+                style={{
+                  fontSize: '13px',
+                  letterSpacing: '0.1em',
+                  color: 'rgba(255,255,255,0.9)',
+                  textShadow: '0 1px 4px rgba(0,0,0,0.3)',
+                }}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </>

@@ -26,7 +26,7 @@ const pathways = [
 
 const ServicePathways = () => {
   return (
-    <section className="w-full py-16 sm:py-20 bg-muted/50">
+    <section className="w-full py-8 sm:py-10 bg-muted/50">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <p
           className="text-center mb-3 font-inter font-medium uppercase"

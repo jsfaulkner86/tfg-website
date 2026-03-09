@@ -37,9 +37,9 @@ const ThankYou = () => {
 
           <Button
             onClick={() => navigate("/")}
-            variant="hero"
+            variant="glassy"
             size="lg"
-            className="mt-8"
+            className="mt-8 group"
           >
             Return to Home
           </Button>

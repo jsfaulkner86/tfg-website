@@ -329,13 +329,8 @@ const PressSpeaking = () => {
             </p>
             <Button
               onClick={handleBooking}
-              className="text-sm sm:text-base font-semibold rounded-lg px-6 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03]"
-              style={{
-                background: "linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)",
-                color: "#2A3B4F",
-                borderColor: "rgba(255,255,255,0.25)",
-                boxShadow: "0 4px 24px rgba(243,218,115,0.25)",
-              }}
+              variant="glassy"
+              className="text-sm sm:text-base px-6 sm:px-9 py-4 sm:py-5 group"
             >
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

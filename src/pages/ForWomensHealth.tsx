@@ -174,7 +174,7 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Left - Headline */}
               <div className={`space-y-8 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ maxWidth: '650px', transitionDelay: '0.2s' }}>

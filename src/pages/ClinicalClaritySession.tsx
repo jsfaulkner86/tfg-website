@@ -230,7 +230,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 4 — WHY THIS IS DIFFERENT */}
         <section
-          className="px-4 sm:px-6 py-10 sm:py-14 relative overflow-hidden"
+          className="px-4 sm:px-6 py-6 sm:py-8 relative overflow-hidden"
           style={{ background: "#1A2A3A" }}
         >
           <div

@@ -213,7 +213,7 @@ const ClinicalClaritySession = () => {
             </Button>
 
             <p className="mt-6 font-inter text-sm text-muted-foreground">
-              90 minutes. A Board-Certified OB/GYN and a Healthcare IT Architect. Specific, honest, and no pitch.
+              90 minutes. A Board-Certified OB/GYN, a Healthcare IT Architect, and a team built for enterprise deployments. Specific, honest, and no pitch.
             </p>
           </div>
         </section>

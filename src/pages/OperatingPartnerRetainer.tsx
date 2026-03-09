@@ -148,7 +148,7 @@ const OperatingPartnerRetainer = () => {
                 {
                   icon: Handshake,
                   title: "Enterprise Credibility",
-                  description: "We join key sales calls, enterprise negotiations, and investor meetings when clinical or operational credibility determines what gets believed and what gets signed.",
+                  description: "Our clinical and operational team joins key sales calls, enterprise negotiations, and investor meetings when clinical or operational credibility determines what gets believed and what gets signed.",
                 },
                 {
                   icon: Shield,

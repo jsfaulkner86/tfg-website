@@ -123,7 +123,7 @@ const ClinicalReadinessRoadmap = () => {
                 { step: "2", icon: MessageSquare, title: "Async Q&A", text: "Targeted questions from our team as findings develop, so the final report reflects your actual situation, not a generic framework." },
                 { step: "3", icon: FileText, title: "5 to 7 Page Written Report", text: "A prioritized assessment across all five readiness domains covering clinical workflow fit, EHR integration reality, physician adoption strategy, governance and risk infrastructure, and trust and liability exposure." },
                 { step: "4", icon: Search, title: "Sequenced Remediation Roadmap", text: "A clear, ordered action plan so you know what to fix first and why." },
-                { step: "5", icon: Phone, title: "60-Minute Live Findings Call", text: "Both practitioners on the call, clinical and systems perspective together, with full Q&A so you leave with zero ambiguity about next steps." },
+                { step: "5", icon: Phone, title: "60-Minute Live Findings Call", text: "Our full clinical and operational team on the call, clinical and systems perspective together, with full Q&A so you leave with zero ambiguity about next steps." },
               ].map((item, index) => (
                 <div
                   key={index}

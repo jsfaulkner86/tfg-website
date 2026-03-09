@@ -209,7 +209,7 @@ const OperatingPartnerRetainer = () => {
 
             <div className="space-y-4 text-left">
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
-                We take a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
+                Our team takes a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
               </p>
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                 We have been inside the governance meetings, the clinical workflows, and the technology failures you are trying to prevent. We do not advise from a slide deck.

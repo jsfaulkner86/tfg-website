@@ -353,8 +353,8 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className={`text-center mb-10 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+            <div className={`text-center mb-6 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className="inline-block mb-4 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
               }}>

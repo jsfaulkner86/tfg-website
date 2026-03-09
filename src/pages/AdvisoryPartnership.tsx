@@ -151,9 +151,10 @@ const AdvisoryPartnership = () => {
   return (
     <>
       <SEOHead
-        title="Strategic Advisory | The Faulkner Group"
-        description="Equity-based strategic advisory for early-stage women's health tech companies navigating enterprise health systems."
+        title="Femtech Strategic Advisory | The Faulkner Group"
+        description="Equity-based advisory for pre-seed to Series A women's health tech founders. A Board-Certified OB/GYN and Healthcare IT Architect help you navigate enterprise health systems."
         canonical="https://thefaulknergroupadvisors.com/advisory-partnership"
+        ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
         jsonLd={partnershipSchema}
       />
 

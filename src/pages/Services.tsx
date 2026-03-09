@@ -141,7 +141,7 @@ const DualBrain = () =>
         </div>
       </div>
 
-      <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl mt-10 md:mt-14" style={{
+      <div className="relative py-4 px-6 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-3xl mx-auto max-w-5xl mt-6 md:mt-8" style={{
         background: '#FBF8F1',
         border: '2px solid #D4B65D',
         boxShadow: '0 4px 16px rgba(0,0,0,0.04)'

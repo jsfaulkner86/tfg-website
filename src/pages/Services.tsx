@@ -289,13 +289,13 @@ const partnershipItems = [
 
 
 const Partnership = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
+<section className="py-6 md:py-10 px-5 md:px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
     <div className="absolute inset-0 opacity-10" style={{
     backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
     backgroundSize: '40px 40px'
   }} />
     <div className="relative z-10 max-w-5xl mx-auto">
-      <div className="text-center mb-12">
+      <div className="text-center mb-6 md:mb-8">
         <Eyebrow>For the Long Game</Eyebrow>
         <h2 className="font-display font-bold mb-6 text-white" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)', lineHeight: 1.15 }}>Partnership. Not a Retainer. A Relationship.</h2>
         <p className="font-inter text-white/85 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: '16px' }}>

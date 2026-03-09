@@ -39,7 +39,7 @@ const SectionHeading = ({ children, light = false }: {children: React.ReactNode;
 
 /* ───────────────────────── 1. HERO ───────────────────────── */
 const ServicesHero = () =>
-<section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
+<section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[180px] md:pb-[60px]">
     <img
     src="/hero-boardroom.jpg"
     alt="The Faulkner Group women's health tech advisory team in a strategy session"

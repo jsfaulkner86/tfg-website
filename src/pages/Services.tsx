@@ -183,7 +183,7 @@ const engagements = [
   numeral: 'III',
   name: 'Clinical Readiness Roadmap',
   tagline: 'Structured Readiness Engagement',
-  paragraph: 'A focused written assessment for women\'s health founders building toward their first enterprise conversation. We evaluate your product across five readiness domains, deliver a sequenced remediation roadmap, and present findings live with both practitioners in the room. Built for founders who need more than triage and less than a full 14-day engagement.',
+  paragraph: 'A focused written assessment for women\'s health founders building toward their first enterprise conversation. We evaluate your product across five readiness domains, deliver a sequenced remediation roadmap, and present findings live with our full clinical and operational team in the room. Built for founders who need more than triage and less than a full 14-day engagement.',
   price: '$5,000',
   cta: 'Learn More',
   href: '/clinical-readiness-roadmap',

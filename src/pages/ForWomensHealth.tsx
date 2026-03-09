@@ -409,13 +409,8 @@ const ForWomensHealth = () => {
                             <span style={{ color: '#F3DA73', fontWeight: 700 }}>What you get:</span>{' '}{card.result}
                           </p>
                           <Button onClick={() => handleToolClick(card)}
-                            className="w-full text-base rounded-lg group/btn transition-all duration-300 font-semibold py-5"
-                            style={{
-                              background: 'linear-gradient(135deg, #F3DA73 0%, #D4B65D 100%)', color: '#1A2A3A',
-                              boxShadow: '0 4px 16px rgba(243,218,115,0.3)', border: 'none'
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(243,218,115,0.5)'; }}
-                            onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(243,218,115,0.3)'; }}
+                            variant="glassy"
+                            className="w-full text-base group/btn py-5"
                           >{card.cta} {card.external ? <ExternalLink className="ml-2 h-4 w-4" /> : <ArrowRight className="ml-2 h-4 w-4" />}</Button>
                         </div>
                       </div>

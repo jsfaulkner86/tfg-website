@@ -390,7 +390,7 @@ const ClinicalReadinessAssessment = () => {
 
             {/* FAQ */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions

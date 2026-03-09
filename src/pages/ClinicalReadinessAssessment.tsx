@@ -205,7 +205,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 3 — What We Evaluate */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-4xl mx-auto">

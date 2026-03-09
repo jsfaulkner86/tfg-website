@@ -104,9 +104,9 @@ const AdvisoryPartnership = () => {
               </p>
 
               <h1 className="mb-6 font-display text-[clamp(28px,3.8vw,52px)] font-bold leading-[1.08] text-primary-foreground">
-                Your deployment is stalling.
+                Your deployment is stalling
                 <br />
-                We fix that.
+                We fix that
               </h1>
 
               <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>

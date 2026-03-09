@@ -127,6 +127,13 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            <a 
+              href="/for-womens-health" 
+              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
+            >
+              Resources
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+            </a>
             <div className="relative group py-1">
               <span
                 className="text-white font-playfair font-medium text-lg tracking-wide relative transition-all duration-300 flex items-center gap-1 cursor-pointer"

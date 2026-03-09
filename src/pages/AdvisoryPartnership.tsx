@@ -110,7 +110,7 @@ const AdvisoryPartnership = () => {
               </h1>
 
               <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>
-                Strategic advisory for women's health tech companies and health system leaders who are done watching good ideas die in committee.
+                Strategic advisory for women's health tech companies and health system leaders who are done watching good ideas die in committees.
               </p>
 
               <Button

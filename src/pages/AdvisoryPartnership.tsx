@@ -331,7 +331,7 @@ const AdvisoryPartnership = () => {
               Schedule Your Discovery Call
             </h2>
 
-            <p className="mx-auto mb-6 md:mb-8 max-w-2xl font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
+            <p className="mx-auto mb-6 max-w-2xl font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
               30 minutes. No pitch. Just a direct conversation about where you are and what it actually takes to move forward inside a health system that wasn't built with your product, or your patient, in mind.
             </p>
 

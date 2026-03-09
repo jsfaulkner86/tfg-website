@@ -45,7 +45,7 @@ const pressSchema = {
   "@type": "CollectionPage",
   name: "Press & Speaking — The Faulkner Group",
   description: "Speaking engagements, media appearances, and podcast roles featuring John Faulkner and Dr. Nicole Faulkner.",
-  url: "https://thrive-beacon-studio.lovable.app/press-speaking",
+  url: "https://thefaulknergroupadvisors.com/press-speaking",
   mainEntity: [
     {
       "@type": "Event",

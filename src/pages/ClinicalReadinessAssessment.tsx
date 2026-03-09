@@ -53,9 +53,9 @@ const ClinicalReadinessAssessment = () => {
               </p>
 
               <h1 className="mb-6 font-display text-[clamp(28px,3.8vw,52px)] font-bold leading-[1.08] text-primary-foreground">
-                Signing the LOI is not the hard part.
+                Signing the LOI is not the hard part
                 <br />
-                What comes next is.
+                What comes next is
               </h1>
 
               <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>

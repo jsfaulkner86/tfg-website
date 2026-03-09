@@ -163,7 +163,7 @@ const ForWomensHealth = () => {
 
         {/* ===== VALUE PROPS (matches Problem section layout) ===== */}
         <section ref={valueRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
         }}>
           <div className="absolute top-0 left-0 right-0 pointer-events-none" style={{

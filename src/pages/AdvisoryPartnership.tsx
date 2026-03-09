@@ -60,10 +60,10 @@ const whatWeDoCards = [
 ];
 
 const whoThisIsFor = [
-  "You're a health tech founder whose enterprise deal keeps stalling at the clinical validation stage",
-  "You're a CMIO or CMO who approved a pilot that never became a program",
-  "You're losing provider trust because your technology isn't fitting into real workflows",
-  "You need someone who has sat in both the boardroom and the exam room",
+  "Your deal is in the hospital. It just won't close.",
+  "You greenlit a pilot that quietly went nowhere.",
+  "Your providers are using the workaround, not the tool.",
+  "You need a clinical voice the C-suite will actually listen to.",
 ];
 
 const AdvisoryPartnership = () => {

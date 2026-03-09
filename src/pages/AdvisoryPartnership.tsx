@@ -171,10 +171,10 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* What We Do */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-8 text-center">
-              <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <div className="mb-6 text-center">
+              <h2 className="mb-3 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
                 What strategic advisory actually means.
               </h2>
               <p className="font-inter text-lg text-muted-foreground">

@@ -180,8 +180,8 @@ const OperatingPartnerRetainer = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '40px',
-            paddingBottom: '30px',
+            paddingTop: '24px',
+            paddingBottom: '16px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >

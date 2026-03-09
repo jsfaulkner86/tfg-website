@@ -489,7 +489,7 @@ const serviceSchemas = [
     name: "Strategic Advisory",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
-    url: "https://thrive-beacon-studio.lovable.app/advisory-partnership",
+    url: "https://thefaulknergroupadvisors.com/advisory-partnership",
     areaServed: { "@type": "Country", name: "United States" },
   },
   {

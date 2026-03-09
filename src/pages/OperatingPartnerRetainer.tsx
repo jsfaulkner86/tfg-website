@@ -239,7 +239,7 @@ const OperatingPartnerRetainer = () => {
 
             {/* What We Do */}
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-6 sm:mb-10 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What We Do

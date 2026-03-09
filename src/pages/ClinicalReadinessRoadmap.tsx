@@ -89,7 +89,7 @@ const ClinicalReadinessRoadmap = () => {
                 "You want a written document your leadership team, investors, or advisors can review and act on",
                 "You are done guessing at what \"ready\" means and want a credible answer from people who have been on both sides of the table",
               ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                     {item}

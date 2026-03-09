@@ -120,10 +120,10 @@ const ClinicalClaritySession = () => {
         </section>
 
         {/* SECTION 2 — WHO THIS IS FOR */}
-        <section className="px-4 sm:px-6 py-8 sm:py-10" style={{ background: "#F5F0E4" }}>
+        <section className="px-4 sm:px-6 py-5 sm:py-6" style={{ background: "#F5F0E4" }}>
           <div className="max-w-3xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
             >
               This session is built for you if:

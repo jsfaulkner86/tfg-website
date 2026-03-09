@@ -153,7 +153,7 @@ const FundingBenchmarker = () => {
       <SEOHead
         title="Femtech Funding Gap Benchmarker | Faulkner Group"
         description="Free benchmarking tool for women's health tech founders. Compare your raise to femtech peers by stage, team composition, and focus area."
-        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/funding-benchmarker"
+        canonical="https://thefaulknergroupadvisors.com/for-womens-health/funding-benchmarker"
       />
       <Header />
       <main className="overflow-x-hidden">

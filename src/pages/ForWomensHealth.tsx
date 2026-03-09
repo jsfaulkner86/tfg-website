@@ -86,7 +86,7 @@ const ForWomensHealth = () => {
       <SEOHead
         title="For Women's Health Tech Founders | The Faulkner Group"
         description="Strategy and system fluency for women's health tech founders ready to break through and scale. The Faulkner Group brings clinical depth and operational expertise to every engagement."
-        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health"
+        canonical="https://thefaulknergroupadvisors.com/for-womens-health"
       />
       <Header />
       <main className="overflow-x-hidden">

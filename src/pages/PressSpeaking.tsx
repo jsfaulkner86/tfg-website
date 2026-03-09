@@ -75,8 +75,8 @@ const PressSpeaking = () => {
       <SEOHead
         title="Press & Speaking | John Faulkner & Dr. Nicole Faulkner"
         description="Speaking engagements, podcast appearances, and media roles from John Faulkner and Dr. Nicole Faulkner — leaders in women's health tech advisory."
-        canonical="https://thrive-beacon-studio.lovable.app/press-speaking"
-        ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
+        canonical="https://thefaulknergroupadvisors.com/press-speaking"
+        ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
         jsonLd={pressSchema}
       />
       <Header />

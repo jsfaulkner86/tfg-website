@@ -129,8 +129,8 @@ const Index = () => {
       <SEOHead
         title="Women's Health Tech Adoption | John Faulkner & Dr. Nicole Faulkner"
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) help women's health tech founders drive physician adoption and scale from pilot to enterprise."
-        canonical="https://thrive-beacon-studio.lovable.app/"
-        ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
+        canonical="https://thefaulknergroupadvisors.com/"
+        ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
         jsonLd={[orgSchema, johnFaulknerSchema, nicholeFaulknerSchema]}
       />
       <Header />

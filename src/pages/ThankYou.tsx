@@ -16,7 +16,7 @@ const ThankYou = () => {
       <SEOHead
         title="Thank You | The Faulkner Group"
         description="Your consultation is booked. The Faulkner Group team will be in touch shortly."
-        canonical="https://thrive-beacon-studio.lovable.app/thank-you"
+        canonical="https://thefaulknergroupadvisors.com/thank-you"
       />
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4">
         <div className="max-w-2xl w-full text-center space-y-8 animate-fade-in">

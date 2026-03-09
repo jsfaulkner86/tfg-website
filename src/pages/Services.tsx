@@ -536,8 +536,8 @@ const Services = () =>
     <SEOHead
     title="Women's Health Tech Advisory | The Faulkner Group"
     description="Clinical strategy for women's health tech founders. EHR integration, physician adoption, and enterprise pilot conversion by John Faulkner & Dr. Nicole Faulkner."
-    canonical="https://thrive-beacon-studio.lovable.app/services"
-    ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
+    canonical="https://thefaulknergroupadvisors.com/services"
+    ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
     jsonLd={serviceSchemas}
     />
 

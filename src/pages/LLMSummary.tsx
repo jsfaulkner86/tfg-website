@@ -114,7 +114,7 @@ const LLMSummary = () => {
       <SEOHead
         title="John Faulkner & Dr. Nicole Faulkner | The Faulkner Group AI Summary"
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) — founders of The Faulkner Group, a boutique women's health tech advisory firm."
-        canonical="https://thrive-beacon-studio.lovable.app/llm-summary"
+        canonical="https://thefaulknergroupadvisors.com/llm-summary"
         jsonLd={[orgSchema, faqSchema, johnSchema, nicoleSchema]}
       />
       <main className="max-w-3xl mx-auto px-6 py-20 font-inter" style={{ color: '#1A2A3A' }}>

@@ -191,7 +191,7 @@ const ReimbursementScorecard = () => {
       <SEOHead
         title="Reimbursement Readiness Scorecard | Faulkner Group"
         description="Free 10-question assessment to evaluate your women's health tech product's payer readiness across clinical evidence, coding, and market access."
-        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/reimbursement-scorecard"
+        canonical="https://thefaulknergroupadvisors.com/for-womens-health/reimbursement-scorecard"
       />
       <Header />
       <main className="overflow-x-hidden">

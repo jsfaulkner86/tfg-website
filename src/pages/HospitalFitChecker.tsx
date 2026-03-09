@@ -103,7 +103,7 @@ const HospitalFitChecker = () => {
       <SEOHead
         title="Hospital Partnership Fit Checker | Faulkner Group"
         description="Free 6-question assessment to determine which type of health system partnership fits your women's health tech company's current stage."
-        canonical="https://thrive-beacon-studio.lovable.app/for-womens-health/hospital-fit-checker"
+        canonical="https://thefaulknergroupadvisors.com/for-womens-health/hospital-fit-checker"
       />
       <Header />
       <main className="overflow-x-hidden">

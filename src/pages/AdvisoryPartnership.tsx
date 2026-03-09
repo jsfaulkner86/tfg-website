@@ -202,7 +202,7 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Why Us */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-8 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
               A Board-Certified OB/GYN and a Healthcare IT Architect, in the room with you.

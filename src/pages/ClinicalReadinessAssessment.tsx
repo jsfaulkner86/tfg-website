@@ -373,7 +373,7 @@ const ClinicalReadinessAssessment = () => {
             </div>
 
             {/* What Comes Next */}
-            <div className="mb-16 mt-8">
+            <div className="mb-8 mt-4">
               <h2
                 className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}

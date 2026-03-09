@@ -339,7 +339,7 @@ const ClinicalReadinessRoadmap = () => {
               A practicing OB/GYN and a Healthcare IT Architect. In the same room. On your engagement.
             </h2>
             <p
-              className="text-sm sm:text-lg font-inter text-left mb-12 sm:mb-16 mx-auto"
+              className="text-sm sm:text-lg font-inter text-left mb-6 sm:mb-8 mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7', maxWidth: '680px', textWrap: 'balance' }}
             >
               There is no other advisory team in women's digital health that brings both perspectives to the same engagement. Nicole still sees patients. John has spent 15+ years building and optimizing the most clinically complex women's health workflow environments in enterprise healthcare. Together, they see what your product documentation doesn't show — and what your health system counterpart won't tell you until it's too late.

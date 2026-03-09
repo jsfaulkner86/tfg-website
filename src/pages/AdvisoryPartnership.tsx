@@ -38,16 +38,6 @@ const partnershipSchema = [
 
 const whatWeDoCards = [
   {
-    icon: DollarSign,
-    title: "Recover Hidden Revenue",
-    description: "We find the six- and seven-figure gaps hiding in broken workflows before they compound.",
-  },
-  {
-    icon: Heart,
-    title: "Stop Burnout Before It Kills Adoption",
-    description: "We cut documentation friction and give clinicians hours back every week.",
-  },
-  {
     icon: Shield,
     title: "Build Governance Your Board Can Defend",
     description: "Escalation protocols, decision rights, and KPI frameworks built for enterprise scrutiny.",
@@ -61,6 +51,11 @@ const whatWeDoCards = [
     icon: MessageSquare,
     title: "Translate Between Tech and Clinical Teams",
     description: "We speak both languages fluently so nothing gets lost in the handoff.",
+  },
+  {
+    icon: Heart,
+    title: "Sustain Deployments After Go-Live",
+    description: "We stay embedded after launch so utilization holds and client relationships stay strong.",
   },
 ];
 

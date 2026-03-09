@@ -245,7 +245,7 @@ const OperatingPartnerRetainer = () => {
               What We Do
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 mb-10 sm:mb-16">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               {[
                 {
                   icon: Handshake,

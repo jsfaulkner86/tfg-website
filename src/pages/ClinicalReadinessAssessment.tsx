@@ -199,7 +199,7 @@ const ClinicalReadinessAssessment = () => {
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
               {[
                 { step: "1", icon: ClipboardList, title: "Days 1 to 2: Structured Intake", text: "We review your product, pilot terms, and integration documentation before any assessment begins." },
                 { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains with targeted async questions as findings develop." },

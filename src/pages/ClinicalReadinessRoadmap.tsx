@@ -195,9 +195,9 @@ const ClinicalReadinessRoadmap = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '16px',
-            paddingBottom: '32px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '16px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">

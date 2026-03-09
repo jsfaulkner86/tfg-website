@@ -113,7 +113,7 @@ const ClinicalReadinessAssessment = () => {
                 "You are operating in OB/GYN, maternal health, reproductive care, or women's digital health where clinical trust is non-negotiable",
                 "Your leadership team needs to walk into go-live knowing the most predictable failure points have been found and addressed",
               ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                     {item}

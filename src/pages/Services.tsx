@@ -498,7 +498,7 @@ const serviceSchemas = [
     name: "Clinical Clarity Session",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-clarity-session",
+    url: "https://thefaulknergroupadvisors.com/clinical-clarity-session",
     areaServed: { "@type": "Country", name: "United States" },
     offers: { "@type": "Offer", price: "1500", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   },

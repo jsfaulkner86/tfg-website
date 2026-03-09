@@ -38,16 +38,6 @@ const partnershipSchema = [
 
 const whatWeDoCards = [
   {
-    icon: DollarSign,
-    title: "Recover Hidden Revenue",
-    description: "We find the six- and seven-figure gaps hiding in broken workflows before they compound.",
-  },
-  {
-    icon: Heart,
-    title: "Stop Burnout Before It Kills Adoption",
-    description: "We cut documentation friction and give clinicians hours back every week.",
-  },
-  {
     icon: Shield,
     title: "Build Governance Your Board Can Defend",
     description: "Escalation protocols, decision rights, and KPI frameworks built for enterprise scrutiny.",
@@ -61,6 +51,11 @@ const whatWeDoCards = [
     icon: MessageSquare,
     title: "Translate Between Tech and Clinical Teams",
     description: "We speak both languages fluently so nothing gets lost in the handoff.",
+  },
+  {
+    icon: Heart,
+    title: "Sustain Deployments After Go-Live",
+    description: "We stay embedded after launch so utilization holds and client relationships stay strong.",
   },
 ];
 
@@ -133,7 +128,7 @@ const AdvisoryPartnership = () => {
         <section className="bg-background px-6 py-16 md:py-24">
           <div className="mx-auto max-w-4xl text-center">
             <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
-              "We embed with your team — clinically and operationally — and get your women's health technology from pilot to permanent program."
+              "We embed with your team, clinically and operationally, and get your women's health technology from pilot to permanent program."
             </p>
           </div>
         </section>
@@ -180,7 +175,7 @@ const AdvisoryPartnership = () => {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2">
               {whatWeDoCards.map((card, index) => (
                 <div
                   key={index}
@@ -210,7 +205,7 @@ const AdvisoryPartnership = () => {
         <section className="bg-background px-6 py-16 md:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-8 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
-              A Board-Certified OB/GYN and a Healthcare IT Architect — in the room with you.
+              A Board-Certified OB/GYN and a Healthcare IT Architect, in the room with you.
             </h2>
 
             <div className="space-y-6 text-left">

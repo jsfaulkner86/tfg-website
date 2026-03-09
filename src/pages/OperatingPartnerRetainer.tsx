@@ -231,7 +231,7 @@ const OperatingPartnerRetainer = () => {
               An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. A team that stays in it with you, led by a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
             </p>
             <p
-              className="text-base font-inter text-center mb-12 sm:mb-16"
+              className="text-base font-inter text-center mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}
             >
               We take a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.

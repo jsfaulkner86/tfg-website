@@ -3,10 +3,10 @@ import { ArrowRight, Stethoscope, Calendar, FileCheck } from "lucide-react";
 const pathways = [
   {
     icon: Stethoscope,
-    title: "For Women's Health Founders",
+    title: "Resources",
     description: "Clinical strategy, physician adoption, and reimbursement clarity for your platform.",
     href: "/for-womens-health",
-    cta: "Explore the Hub",
+    cta: "Explore Resources",
   },
   {
     icon: Calendar,
@@ -17,7 +17,7 @@ const pathways = [
   },
   {
     icon: FileCheck,
-    title: "Engagement Models",
+    title: "Services We Offer",
     description: "From single assessments to embedded operating partnerships — find your fit.",
     href: "/services",
     cta: "View Services",

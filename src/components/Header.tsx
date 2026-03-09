@@ -55,13 +55,6 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-12">
             <a 
-              href="/for-womens-health" 
-              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
-            >
-              For Women's Health
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
-            </a>
-            <a 
               href="/#mission" 
               className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
             >
@@ -134,6 +127,13 @@ const Header = () => {
                 </div>
               </div>
             </div>
+            <a 
+              href="/for-womens-health" 
+              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
+            >
+              Resources
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+            </a>
             <div className="relative group py-1">
               <span
                 className="text-white font-playfair font-medium text-lg tracking-wide relative transition-all duration-300 flex items-center gap-1 cursor-pointer"
@@ -212,13 +212,6 @@ const Header = () => {
         >
           <nav className="flex flex-col py-2 pb-4">
             <a 
-              href="/for-womens-health"
-              onClick={handleNavClick}
-              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
-            >
-              For Women's Health
-            </a>
-            <a 
               href="/#mission"
               onClick={handleNavClick}
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
@@ -273,6 +266,13 @@ const Header = () => {
               className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
               Operating Partner
+            </a>
+            <a 
+              href="/for-womens-health"
+              onClick={handleNavClick}
+              className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Resources
             </a>
             <a 
               href="/#contact"

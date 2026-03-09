@@ -354,7 +354,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 6 — How This Fits */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 py-8 sm:py-10"
           style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-3xl mx-auto">

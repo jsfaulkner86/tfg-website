@@ -331,7 +331,7 @@ const OperatingPartnerRetainer = () => {
             </p>
 
             <p
-              className="text-sm sm:text-base font-inter text-center mb-10 sm:mb-16"
+              className="text-sm sm:text-base font-inter text-center mb-6 sm:mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7' }}
             >
               No proposal deck. No discovery call gauntlet. One conversation to determine fit.

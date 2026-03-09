@@ -164,7 +164,7 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* What We Do */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
               <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">

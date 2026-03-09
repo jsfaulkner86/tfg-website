@@ -211,9 +211,9 @@ const engagements = [
 
 
 const EngagementModels = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-6 md:py-10 px-5 md:px-6 bg-background">
     <div className="max-w-4xl mx-auto">
-      <div className="text-center mb-10 md:mb-16">
+      <div className="text-center mb-6 md:mb-10">
         <Eyebrow>Engagement Models</Eyebrow>
         <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
         <p className="font-inter" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>

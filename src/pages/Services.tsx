@@ -527,7 +527,7 @@ const serviceSchemas = [
     name: "Operating Partner",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals.",
-    url: "https://thrive-beacon-studio.lovable.app/operating-partner-retainer",
+    url: "https://thefaulknergroupadvisors.com/operating-partner-retainer",
     areaServed: { "@type": "Country", name: "United States" },
   },
 ];

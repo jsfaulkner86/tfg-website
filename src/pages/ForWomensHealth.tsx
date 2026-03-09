@@ -456,7 +456,7 @@ const ForWomensHealth = () => {
 
         {/* ===== FOUNDER IN THE ROOM ===== */}
         <section ref={founderRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #F5F0E4 0%, #FDFCF9 100%)'
         }}>
           <div className="absolute inset-0 pointer-events-none opacity-30" style={{

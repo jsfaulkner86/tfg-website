@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, DollarSign, Heart, Shield, Users, MessageSquare } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const partnershipSchema = [
   {
@@ -20,13 +14,9 @@ const partnershipSchema = [
       url: "https://thefaulknergroupadvisors.com",
     },
     description:
-      "A selective advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory before the high-stakes moments arrive.",
+      "Strategic advisory for women's health tech companies and health system leaders who are done watching good ideas die in committee.",
     serviceType: "Healthcare Advisory",
     areaServed: "US",
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-    },
   },
   {
     "@context": "https://schema.org",
@@ -34,60 +24,51 @@ const partnershipSchema = [
     name: "Nicole Faulkner",
     honorificPrefix: "Dr.",
     honorificSuffix: "D.O.",
-    jobTitle: "Chief Clinical Officer",
+    jobTitle: "Board-Certified OB/GYN",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
-    description:
-      "Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
-    sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
   },
   {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Johnathon Faulkner",
-    jobTitle: "CEO and Healthcare IT Architect",
+    jobTitle: "Healthcare IT Architect",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
-    description:
-      "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
-    sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
   },
 ];
 
-const faqData = [
+const whatWeDoCards = [
   {
-    question: "What is the Strategic Advisory?",
-    answer:
-      "A selective advisory relationship for early-stage women's health tech companies. Our team, including a practicing OB/GYN and a healthcare IT architect, aligns with your company early and remains at the table through the moments that matter most.",
+    icon: DollarSign,
+    title: "Recover Hidden Revenue",
+    description: "We find the six- and seven-figure gaps hiding in broken workflows before they compound.",
   },
   {
-    question: "Who is involved?",
-    answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations. Both participate in strategic sessions and are available for credibility support when it matters.",
+    icon: Heart,
+    title: "Stop Burnout Before It Kills Adoption",
+    description: "We cut documentation friction and give clinicians hours back every week.",
   },
   {
-    question: "Who is this for?",
-    answer:
-      "Pre-Seed through Series A companies building in women's health, maternal care, reproductive health, or women's digital health. Founders who understand that clinical credibility is a survival requirement for enterprise adoption, not a feature.",
+    icon: Shield,
+    title: "Build Governance Your Board Can Defend",
+    description: "Escalation protocols, decision rights, and KPI frameworks built for enterprise scrutiny.",
   },
   {
-    question: "How is this structured?",
-    answer:
-      "We take a small number of these partnerships and choose based on mission alignment, founder quality, and genuine belief that what you are building belongs inside health systems.",
+    icon: Users,
+    title: "Drive Physician Adoption That Sticks",
+    description: "Not a training event. A sustained change management strategy built around how clinicians actually work.",
   },
   {
-    question: "How is this different from the Clinical Clarity Session or Readiness Assessment?",
-    answer:
-      "The Clinical Clarity Session is a 90-minute diagnostic. The Readiness Assessment is a 14-day deep engagement. The Strategic Advisory is ongoing alignment with a team who intends to still be at the table when it matters most. Different depth, different duration, same team.",
+    icon: MessageSquare,
+    title: "Translate Between Tech and Clinical Teams",
+    description: "We speak both languages fluently so nothing gets lost in the handoff.",
   },
-  {
-    question: "Is this an open offer?",
-    answer:
-      "No. This is not an open offer. If you believe there is a fit, reach out directly. We will have a candid conversation about where you are, where you are going, and whether this partnership makes sense.",
-  },
-  {
-    question: "What happens as the company scales?",
-    answer:
-      "Strategic Advisory engagements that reach scale convert into Operating Partner engagements, where involvement deepens across sales, implementation, and adoption. We structure the path at the start so there are no surprises when the moment arrives.",
-  },
+];
+
+const whoThisIsFor = [
+  "You're a health tech founder whose enterprise deal keeps stalling at the clinical validation stage",
+  "You're a CMIO or CMO who approved a pilot that never became a program",
+  "You're losing provider trust because your technology isn't fitting into real workflows",
+  "You need someone who has sat in both the boardroom and the exam room",
 ];
 
 const AdvisoryPartnership = () => {
@@ -102,7 +83,7 @@ const AdvisoryPartnership = () => {
     <>
       <SEOHead
         title="Strategic Advisory | The Faulkner Group"
-        description="A selective advisory for early-stage women's health tech companies. Clinical and systems credibility at the table before the high-stakes moments arrive."
+        description="Strategic advisory for women's health tech companies and health system leaders who are done watching good ideas die in committee."
         canonical="https://thefaulknergroupadvisors.com/advisory-partnership"
         jsonLd={partnershipSchema}
       />
@@ -111,7 +92,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(180px+env(safe-area-inset-top,0px))] pb-16 md:pt-[240px] md:pb-36">
+        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-16 md:pt-[200px] md:pb-32">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -128,12 +109,11 @@ const AdvisoryPartnership = () => {
               </p>
 
               <h1 className="mb-6 font-display text-[clamp(28px,3.8vw,52px)] font-bold leading-[1.08] text-primary-foreground">
-                The Reality
+                Your deployment is stalling. We fix that.
               </h1>
 
-              <p className="mx-auto mb-10 max-w-xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85">
-                The right clinical and systems credibility at the table changes what gets taken
-                seriously.
+              <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>
+                Strategic advisory for women's health tech companies and health system leaders who are done watching good ideas die in committee.
               </p>
 
               <Button
@@ -142,203 +122,131 @@ const AdvisoryPartnership = () => {
                 size="lg"
                 className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
               >
-                Start the Conversation
+                Book a Call
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
         </section>
 
-        {/* Body */}
-        <section className="bg-background px-6 py-12 md:py-20">
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-12">
-              <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Why Early Alignment Matters
+        {/* The Promise */}
+        <section className="bg-background px-6 py-16 md:py-24">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
+              "We embed with your team — clinically and operationally — and get your women's health technology from pilot to permanent program."
+            </p>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="border-t border-border" />
+        </div>
+
+        {/* Who This Is For */}
+        <section className="bg-background px-6 py-16 md:py-24">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-10 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              You're in the right place if:
+            </h2>
+
+            <ul className="space-y-5">
+              {whoThisIsFor.map((item, index) => (
+                <li key={index} className="flex items-start gap-4">
+                  <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
+                  <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+                    {item}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Divider */}
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="border-t border-border" />
+        </div>
+
+        {/* What We Do */}
+        <section className="bg-background px-6 py-16 md:py-24">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-12 text-center">
+              <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                What strategic advisory actually means.
               </h2>
-              <p className="mx-auto max-w-3xl text-center font-inter text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Most early-stage women's health tech companies don't fail because the idea was wrong.
-                They fail because no one in their corner has ever actually built inside a health
-                system, and by the time that gap becomes visible, the opportunity cost is already
-                compounding. The right clinical and systems credibility at the table changes what
-                deals get taken seriously, what pilots get structured correctly, and what investors
-                believe is possible.
+              <p className="font-inter text-lg text-muted-foreground">
+                No retainer fluff. Here's what we do.
               </p>
             </div>
 
-            <div className="mb-12 border-t border-border" />
-
-            <div className="mb-12">
-              <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                What This Is
-              </h2>
-              <p className="mx-auto max-w-3xl text-center font-inter text-base leading-relaxed text-muted-foreground sm:text-lg">
-                A selective advisory partnership for early-stage companies where we believe in the
-                mission, the founders, and the long-term potential — and where our clinical and
-                systems credibility can materially change your trajectory before the high-stakes
-                moments arrive.
-              </p>
-            </div>
-
-            <div className="mb-12 border-t border-border" />
-
-            <div className="mb-12">
-              <h2 className="mb-8 text-center font-playfair text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                What We Bring
-              </h2>
-
-              <div className="space-y-4">
-                {[
-                  {
-                    title: "Monthly or Bi-Monthly Strategic Sessions",
-                    text: "Clinical and systems perspective on your most pressing decisions — not generic frameworks.",
-                  },
-                  {
-                    title: "Clinical and Workflow Validation",
-                    text: "Is this solving a problem a physician actually has? Would it survive contact with a real clinical environment?",
-                  },
-                  {
-                    title: "Go-to-Market Guidance",
-                    text: "How to position for health systems, what enterprise buyers actually evaluate, and where your current narrative breaks down in the room.",
-                  },
-                  {
-                    title: "Credibility Support",
-                    text: "A team that can be present when clinical or systems credibility affects what a partner, investor, or health system believes about you.",
-                  },
-                  {
-                    title: "A Defined Path Forward",
-                    text: "As your company scales and the stakes grow, this engagement has a clear structure to deepen into an Operating Partner engagement.",
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.title}
-                    className="grid gap-3 rounded-2xl border border-accent/25 bg-card p-6 shadow-sm md:grid-cols-[280px_1fr] md:gap-8"
-                  >
-                    <h3 className="font-inter text-sm font-bold leading-snug text-foreground sm:text-base">
-                      {item.title}
-                    </h3>
-                    <p className="font-inter text-sm leading-relaxed text-muted-foreground sm:text-base">
-                      {item.text}
-                    </p>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {whatWeDoCards.map((card, index) => (
+                <div
+                  key={index}
+                  className="rounded-2xl border border-accent/25 bg-card p-6 shadow-sm transition-shadow hover:shadow-md"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
+                    <card.icon className="h-6 w-6 text-accent" />
                   </div>
-                ))}
-              </div>
+                  <h3 className="mb-3 font-playfair text-lg font-bold text-foreground">
+                    {card.title}
+                  </h3>
+                  <p className="font-inter text-sm leading-relaxed text-muted-foreground">
+                    {card.description}
+                  </p>
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
 
-            <div className="mb-12 border-t border-border" />
+        {/* Divider */}
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="border-t border-border" />
+        </div>
 
-            <div className="mb-12 rounded-2xl border border-primary/20 bg-primary/5 p-6 shadow-sm sm:p-8">
-              <h3 className="mb-6 text-center font-playfair text-2xl font-bold tracking-tight text-foreground">
-                Who This Is For
-              </h3>
+        {/* Why Us */}
+        <section className="bg-background px-6 py-16 md:py-24">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="mb-8 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
+              A Board-Certified OB/GYN and a Healthcare IT Architect — in the room with you.
+            </h2>
 
-              <div className="space-y-4">
-                {[
-                  "Pre-Seed through Series A companies building in women's health, maternal care, reproductive health, or women's digital health",
-                  "Founders who understand that clinical credibility is not a feature — it is a survival requirement for enterprise adoption",
-                  "Companies where early alignment creates real long-term value for both sides",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-accent" />
-                    <p className="font-inter text-sm leading-relaxed text-muted-foreground sm:text-base">
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mb-12 rounded-2xl border-2 border-accent bg-accent/10 p-6 text-center shadow-sm sm:p-8">
-              <h3 className="mb-4 font-playfair text-2xl font-bold tracking-tight text-foreground">
-                How It Works
-              </h3>
-              <p className="mx-auto max-w-2xl font-inter text-sm leading-relaxed text-muted-foreground sm:text-base">
-                This is not an open offer. If you believe there is a fit, reach out directly. We will
-                have a candid conversation about where you are, where you are going, and whether this
-                partnership makes sense. If it does, we structure it simply and move quickly.
+            <div className="space-y-6 text-left">
+              <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+                Dr. Nicole Faulkner spent years delivering care inside a major health system. John Faulkner spent 15+ years building the operational infrastructure those health systems run on.
+              </p>
+              <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+                We don't advise from a slide deck. We've been inside the governance meetings, the clinical workflows, and the technology failures you're trying to fix right now.
               </p>
             </div>
+          </div>
+        </section>
 
-            <div className="mb-12">
-              <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                What Comes Next
-              </h2>
-              <p className="mx-auto max-w-3xl text-center font-inter text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Strategic Advisory engagements that reach scale convert into Operating Partner
-                engagements, where involvement deepens across sales, implementation, and adoption. We
-                structure the path at the start so there are no surprises when the moment arrives.
-              </p>
-            </div>
+        {/* The Bottom Line */}
+        <section className="bg-muted/30 px-6 py-16 md:py-24">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="mb-12 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
+              "Women's health innovation isn't failing because the products are bad. It's failing because the infrastructure to support them doesn't exist yet. We build that infrastructure. That's the job."
+            </p>
 
-            <div className="mb-12 border-t border-border" />
+            <Button
+              onClick={handleBooking}
+              variant="accent"
+              size="lg"
+              className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
+            >
+              Schedule Your Discovery Call
+              <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </Button>
 
-            {/* FAQ */}
-            <div className="mb-12">
-              <h2 className="mb-8 text-center font-playfair text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Frequently Asked Questions
-              </h2>
-
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="overflow-hidden rounded-2xl border border-accent/25 bg-card shadow-sm"
-                  >
-                    <AccordionTrigger className="px-6 py-6 text-left font-playfair text-lg font-bold tracking-tight text-foreground hover:no-underline sm:px-8 sm:text-xl">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-6 sm:px-8">
-                      <p className="font-inter text-sm leading-relaxed text-muted-foreground sm:text-base">
-                        {faq.answer}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-
-            {/* Bottom CTA */}
-            <div className="text-center">
-              <div className="mx-auto mb-10 max-w-3xl rounded-2xl border-2 border-accent bg-accent/10 p-6">
-                <p className="font-inter text-base font-medium italic leading-relaxed text-primary">
-                  The right alignment at the right stage. Before the high-stakes moments arrive, not
-                  after.
-                </p>
-              </div>
-
-              <Button
-                onClick={handleBooking}
-                variant="accent"
-                size="lg"
-                className="group h-auto rounded-lg px-8 py-5 text-base font-semibold shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl"
-              >
-                Start the Conversation
-                <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-            </div>
+            <p className="mt-6 font-inter text-sm text-muted-foreground">
+              30 minutes. No pitch. Just a direct conversation about where you are and what it takes to move forward.
+            </p>
           </div>
         </section>
       </main>
-
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqData.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          }),
-        }}
-      />
     </>
   );
 };

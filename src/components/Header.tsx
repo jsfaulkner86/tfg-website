@@ -265,7 +265,7 @@ const Header = () => {
               onClick={handleNavClick}
               className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
             >
-              Clinical Readiness
+              Clinical 14-Day Readiness
             </a>
             <a 
               href="/operating-partner-retainer"

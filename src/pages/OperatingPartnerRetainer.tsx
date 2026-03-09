@@ -204,7 +204,7 @@ const OperatingPartnerRetainer = () => {
         <section className="bg-background px-6 py-5 md:py-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
-              A Board-Certified OB/GYN who still sees patients. A Healthcare IT Architect with 15+ years inside enterprise health systems.
+              A Board-Certified OB/GYN, a Healthcare IT Architect, and a team built to operate inside enterprise health systems — in your corner.
             </h2>
 
             <div className="space-y-4 text-left">

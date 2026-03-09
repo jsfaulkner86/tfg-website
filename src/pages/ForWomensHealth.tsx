@@ -173,7 +173,7 @@ const ForWomensHealth = () => {
               style={{ transitionDelay: '0.2s' }}>
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
                 color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
-              }}>What We Give You That No One Else Does</h2>
+              }}>Tools You Can Use Now</h2>
               <p className="text-lg sm:text-xl font-inter font-light mb-6 max-w-3xl mx-auto" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
                 The tools, fluency, and clinical credibility to navigate the healthcare system on your terms.
               </p>

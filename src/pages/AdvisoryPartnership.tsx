@@ -165,7 +165,7 @@ const AdvisoryPartnership = () => {
         <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
           <img
             src="/hero-boardroom.jpg"
-            alt="Healthcare leadership team collaboration"
+            alt="The Faulkner Group women's health tech advisory team in a strategy session"
             className="absolute inset-0 h-full w-full object-cover"
             fetchPriority="high"
             decoding="async"

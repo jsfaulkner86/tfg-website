@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Users, Cpu, FileText, Handshake } from "lucide-react";
+import { ArrowRight, Shield, Users, Cpu, FileText, Handshake, Rocket } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 

@@ -226,12 +226,8 @@ const FundingBenchmarker = () => {
                 <ArrowLeft className="mr-2 h-4 w-4" /> Back
               </Button>
               <Button onClick={handleNext} disabled={answers[currentQuestion] === null}
-                className="px-8 py-5 text-base font-semibold rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-40"
-                style={{
-                  background: answers[currentQuestion] !== null ? 'linear-gradient(135deg, #F3DA73, #D4B65D)' : 'rgba(243,218,115,0.2)',
-                  color: '#1A2A3A', border: 'none',
-                  boxShadow: answers[currentQuestion] !== null ? '0 4px 16px rgba(243,218,115,0.3)' : 'none'
-                }}
+                variant="glassy"
+                className="px-8 py-5 text-base disabled:opacity-40"
               >{currentQuestion === allQuestions.length - 1 ? 'See Results' : 'Next'}<ArrowRight className="ml-2 h-4 w-4" /></Button>
             </div>
           </div>

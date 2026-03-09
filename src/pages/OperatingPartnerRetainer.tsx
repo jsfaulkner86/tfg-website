@@ -287,7 +287,7 @@ const OperatingPartnerRetainer = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-10 sm:mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-6 sm:mb-8"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',

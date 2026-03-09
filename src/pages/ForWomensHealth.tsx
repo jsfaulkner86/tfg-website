@@ -248,9 +248,9 @@ const ForWomensHealth = () => {
             </div>
 
             {/* Bottom callout */}
-            <div className={`mt-12 sm:mt-24 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            <div className={`mt-8 sm:mt-12 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: '1.2s' }}>
-              <div className="relative py-6 px-4 sm:py-12 sm:px-12 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
+              <div className="relative py-4 px-4 sm:py-6 sm:px-8 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
                 style={{ background: '#FBF8F1', border: '2.5px solid #C9B882', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', maxWidth: '1400px' }}>
                 <div className="relative z-10 text-center">
                   <p className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"

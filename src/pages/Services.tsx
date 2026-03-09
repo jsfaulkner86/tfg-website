@@ -508,7 +508,7 @@ const serviceSchemas = [
     name: "Clinical Readiness Roadmap",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A focused written readiness assessment for women's health founders 3 to 6 months from their first enterprise pilot conversation. Covers five readiness domains with a sequenced remediation roadmap and live findings presentation.",
-    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap",
+    url: "https://thefaulknergroupadvisors.com/clinical-readiness-roadmap",
     areaServed: { "@type": "Country", name: "United States" },
     offers: { "@type": "Offer", price: "5000", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   },

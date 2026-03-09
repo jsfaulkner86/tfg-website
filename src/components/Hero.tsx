@@ -83,7 +83,7 @@ const Hero = () => {
       </section>
 
       {/* Trust bar */}
-      <div className="w-full py-4 md:py-5" style={{ background: 'linear-gradient(180deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.7) 100%)' }}>
+      <div className="w-full py-0" style={{ background: 'linear-gradient(180deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.7) 100%)' }}>
         <div className="max-w-5xl mx-auto px-5 sm:px-6">
           <div
             className="grid grid-cols-2 gap-y-3 gap-x-2 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-white/15 rounded-lg px-4 py-3 md:px-6 md:py-4"

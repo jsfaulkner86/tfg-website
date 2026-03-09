@@ -81,17 +81,20 @@ const OperatingPartnerRetainer = () => {
             <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               There are two versions of how this goes.
             </h2>
-            <div className="space-y-4 text-left">
+            <div className="mx-auto space-y-4 text-left" style={{ maxWidth: '680px' }}>
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                 In one version, your pilot converts, utilization climbs, your champion becomes a reference, and your next health system deal closes faster because the first one worked.
               </p>
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                 In the other version, a governance gap, a workflow misfit, or a physician adoption problem surfaces six months in. Your team spends the next quarter managing a relationship that is quietly dying.
               </p>
-              <p className="font-inter text-base font-semibold leading-relaxed text-foreground md:text-lg">
-                The difference between those two versions is almost never the product. It is whether the right clinical and operational expertise was embedded before the hard moments arrived.
-              </p>
             </div>
+            <p 
+              className="mx-auto mt-4 font-inter font-semibold text-foreground"
+              style={{ maxWidth: '680px', fontSize: '20px', lineHeight: 1.6 }}
+            >
+              The difference between those two versions is almost never the product. It is whether the right clinical and operational expertise was embedded before the hard moments arrived.
+            </p>
           </div>
         </section>
 

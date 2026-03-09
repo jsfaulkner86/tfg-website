@@ -39,7 +39,7 @@ const SectionHeading = ({ children, light = false }: {children: React.ReactNode;
 
 /* ───────────────────────── 1. HERO ───────────────────────── */
 const ServicesHero = () =>
-<section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
+<section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[180px] md:pb-[60px]">
     <img
     src="/hero-boardroom.jpg"
     alt="The Faulkner Group women's health tech advisory team in a strategy session"
@@ -90,12 +90,12 @@ const ServicesHero = () =>
 
 /* ───────────────────────── 2. DUAL BRAIN ───────────────────────── */
 const DualBrain = () =>
-<section className="py-10 md:py-20 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, #FDFCF9 0%, #F7F3E8 100%)' }}>
+<section className="py-6 md:py-10 px-5 md:px-6" style={{ background: 'linear-gradient(180deg, #FDFCF9 0%, #F7F3E8 100%)' }}>
     <div className="max-w-5xl mx-auto text-center">
       <Eyebrow>Our Approach</Eyebrow>
       <SectionHeading>Where Clinical Truth Meets Operational Reality</SectionHeading>
 
-      <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-8">
         {/* Medical Brain */}
         <div
           className="rounded-2xl p-6 md:p-9 text-left transition-all duration-300 hover:-translate-y-1"
@@ -141,7 +141,7 @@ const DualBrain = () =>
         </div>
       </div>
 
-      <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl mt-10 md:mt-14" style={{
+      <div className="relative py-4 px-6 sm:py-6 sm:px-8 md:py-8 md:px-10 rounded-3xl mx-auto max-w-5xl mt-6 md:mt-8" style={{
         background: '#FBF8F1',
         border: '2px solid #D4B65D',
         boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
@@ -211,9 +211,9 @@ const engagements = [
 
 
 const EngagementModels = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-6 md:py-10 px-5 md:px-6 bg-background">
     <div className="max-w-4xl mx-auto">
-      <div className="text-center mb-10 md:mb-16">
+      <div className="text-center mb-6 md:mb-10">
         <Eyebrow>Engagement Models</Eyebrow>
         <SectionHeading>The Right Level of Support. No Fluff. No Bloat.</SectionHeading>
         <p className="font-inter" style={{ color: 'hsl(0,0%,35%)', fontSize: '16px' }}>
@@ -225,7 +225,7 @@ const EngagementModels = () =>
         {engagements.map((eng) =>
       <div key={eng.numeral}>
             <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
-              <div className="py-6 md:py-16">
+              <div className="py-4 md:py-8">
               <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-12">
                 <span
               className="font-display font-light flex-shrink-0"
@@ -244,7 +244,7 @@ const EngagementModels = () =>
                     {eng.tagline}
                   </p>
                   <p
-                className="font-inter leading-relaxed mb-4 md:mb-6"
+                className="font-inter leading-relaxed mb-3 md:mb-4"
                 style={{ fontSize: '14px', color: 'hsl(0, 0%, 35%)', maxWidth: '640px' }}>
 
                     <span dangerouslySetInnerHTML={{ __html: eng.paragraph }} />
@@ -289,13 +289,13 @@ const partnershipItems = [
 
 
 const Partnership = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
+<section className="py-6 md:py-10 px-5 md:px-6 relative overflow-hidden" style={{ background: 'hsl(210, 25%, 35%)' }}>
     <div className="absolute inset-0 opacity-10" style={{
     backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
     backgroundSize: '40px 40px'
   }} />
     <div className="relative z-10 max-w-5xl mx-auto">
-      <div className="text-center mb-12">
+      <div className="text-center mb-6 md:mb-8">
         <Eyebrow>For the Long Game</Eyebrow>
         <h2 className="font-display font-bold mb-6 text-white" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)', lineHeight: 1.15 }}>Partnership. Not a Retainer. A Relationship.</h2>
         <p className="font-inter text-white/85 max-w-3xl mx-auto leading-relaxed" style={{ fontSize: '16px' }}>
@@ -303,7 +303,7 @@ const Partnership = () =>
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-12">
+      <div className="grid sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
         {partnershipItems.map(({ icon: Icon, text }) =>
       <div key={text} className="flex items-start gap-3">
             <Icon className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />
@@ -313,9 +313,8 @@ const Partnership = () =>
       </div>
 
       <blockquote
-      className="text-center font-display italic text-xl mb-10"
+      className="text-center font-display italic text-xl mb-6"
       style={{ color: 'hsl(45, 62%, 70%)' }}>
-
         "We do not just consult. We build with you until it works."
       </blockquote>
 
@@ -342,12 +341,12 @@ const fitChecks = [
 
 
 const IsThisYou = () =>
-<section className="py-10 md:py-20 px-5 md:px-6 bg-background">
+<section className="py-6 md:py-10 px-5 md:px-6 bg-background">
     <div className="max-w-4xl mx-auto text-center">
       <Eyebrow>Who We Serve</Eyebrow>
       <SectionHeading>The Faulkner Group Is Right For You If...</SectionHeading>
 
-      <div className="mt-8 md:mt-10 space-y-4 md:space-y-5 text-left max-w-2xl mx-auto">
+      <div className="mt-6 md:mt-8 space-y-3 md:space-y-4 text-left max-w-2xl mx-auto">
         {fitChecks.map((item) =>
       <div key={item} className="flex items-start gap-3">
             <Check className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />

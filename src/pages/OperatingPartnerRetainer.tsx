@@ -115,7 +115,7 @@ const OperatingPartnerRetainer = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pb-[60px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pb-[40px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team in strategic planning session"
@@ -180,8 +180,8 @@ const OperatingPartnerRetainer = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '40px',
-            paddingBottom: '30px',
+            paddingTop: '24px',
+            paddingBottom: '16px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
@@ -211,9 +211,9 @@ const OperatingPartnerRetainer = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '20px',
-            paddingBottom: '60px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '32px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">
@@ -231,7 +231,7 @@ const OperatingPartnerRetainer = () => {
               An ongoing clinical and systems operating partnership across the full lifecycle of your enterprise health system relationship, from the sales conversation through go-live, adoption, and contract renewal. Not a monthly advisory call. Not a fractional CMO who has never touched Epic. A team that stays in it with you, led by a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations including Epic (EHR) - Women's Health, until the pilot converts, the adoption holds, and the relationship is stable.
             </p>
             <p
-              className="text-base font-inter text-center mb-12 sm:mb-16"
+              className="text-base font-inter text-center mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7', fontStyle: 'italic' }}
             >
               We take a small number of partners at a time. That is not a sales line. It is how we protect the quality of what we deliver.
@@ -239,13 +239,13 @@ const OperatingPartnerRetainer = () => {
 
             {/* What We Do */}
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-6 sm:mb-10 text-center"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               What We Do
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 mb-10 sm:mb-16">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               {[
                 {
                   icon: Handshake,
@@ -287,7 +287,7 @@ const OperatingPartnerRetainer = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-10 sm:mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-6 sm:mb-8"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',
@@ -331,7 +331,7 @@ const OperatingPartnerRetainer = () => {
             </p>
 
             <p
-              className="text-sm sm:text-base font-inter text-center mb-10 sm:mb-16"
+              className="text-sm sm:text-base font-inter text-center mb-6 sm:mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7' }}
             >
               No proposal deck. No discovery call gauntlet. One conversation to determine fit.
@@ -358,13 +358,13 @@ const OperatingPartnerRetainer = () => {
 
             {/* FAQ */}
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-6 sm:mb-10 text-center mt-10 sm:mt-16"
+              className="text-2xl sm:text-3xl md:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center mt-6 sm:mt-8"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-10 sm:mb-16">
+            <div className="mb-6 sm:mb-8">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem

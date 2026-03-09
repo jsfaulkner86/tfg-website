@@ -92,7 +92,7 @@ const ForWomensHealth = () => {
       <main className="overflow-x-hidden">
 
         {/* ===== HERO ===== */}
-        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[60px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
+        <section ref={heroRef} className="relative w-full overflow-hidden pt-[160px] pb-[40px] md:pt-[180px] md:pb-[60px]" style={{ paddingTop: 'max(160px, calc(160px + env(safe-area-inset-top, 0px)))' }}>
           {/* Background Image */}
           <img
             src="/hero-boardroom.jpg"
@@ -163,7 +163,7 @@ const ForWomensHealth = () => {
 
         {/* ===== VALUE PROPS (matches Problem section layout) ===== */}
         <section ref={valueRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
         }}>
           <div className="absolute top-0 left-0 right-0 pointer-events-none" style={{
@@ -174,7 +174,7 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
               {/* Left - Headline */}
               <div className={`space-y-8 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ maxWidth: '650px', transitionDelay: '0.2s' }}>
@@ -219,7 +219,7 @@ const ForWomensHealth = () => {
                 <div className="absolute left-6 top-0 bottom-0" style={{
                   width: '1px', background: 'linear-gradient(180deg, transparent 0%, rgba(243,218,115,0.3) 15%, rgba(243,218,115,0.3) 85%, transparent 100%)'
                 }} />
-                <div className="space-y-10">
+                <div className="space-y-6">
                   {[
                     { icon: Building2, text: "Hospital & Health System Fluency - Know exactly how to walk into a health system conversation and walk out with a partnership." },
                     { icon: ClipboardCheck, text: "Reimbursement & Regulatory Roadmaps - We translate payer strategy, CPT coding, and FDA pathways into founder-ready action plans." },
@@ -248,9 +248,9 @@ const ForWomensHealth = () => {
             </div>
 
             {/* Bottom callout */}
-            <div className={`mt-12 sm:mt-24 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+            <div className={`mt-8 sm:mt-12 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: '1.2s' }}>
-              <div className="relative py-6 px-4 sm:py-12 sm:px-12 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
+              <div className="relative py-4 px-4 sm:py-6 sm:px-8 rounded-2xl sm:rounded-[32px] overflow-hidden mx-auto"
                 style={{ background: '#FBF8F1', border: '2.5px solid #C9B882', boxShadow: '0 8px 30px rgba(0,0,0,0.08)', maxWidth: '1400px' }}>
                 <div className="relative z-10 text-center">
                   <p className="text-lg sm:text-xl md:text-2xl font-playfair font-bold"
@@ -265,7 +265,7 @@ const ForWomensHealth = () => {
 
         {/* ===== CALLOUT BAND (matches Approach section cards style) ===== */}
         <section ref={calloutRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -345,7 +345,7 @@ const ForWomensHealth = () => {
 
         {/* ===== RESOURCE TOOLS (matches Transformation section cards) ===== */}
         <section id="resources" ref={toolsRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
         }}>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] pointer-events-none" style={{
@@ -353,14 +353,14 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className={`text-center mb-10 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
+            <div className={`text-center mb-6 transition-all duration-1000 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className="inline-block mb-4 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
               }}>
                 <span className="text-xs font-inter font-semibold tracking-[0.15em] uppercase" style={{ color: '#718DA9' }}>Free Resources</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-playfair font-bold mb-8" style={{
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
                 color: '#1A2A3A', letterSpacing: '-0.04em', lineHeight: '1', textShadow: '0 2px 4px rgba(0,0,0,0.02)'
               }}>Tools Built for This Fight</h2>
               <div className="flex items-center justify-center gap-3">
@@ -370,8 +370,8 @@ const ForWomensHealth = () => {
               </div>
             </div>
 
-            <div className={`mb-16 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className={`mb-8 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {[
                   { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false, gated: true },
                   { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false, gated: true },
@@ -441,7 +441,7 @@ const ForWomensHealth = () => {
             </div>
 
             <div className={`transition-all duration-1000 delay-900 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl" style={{
+              <div className="relative py-4 px-4 sm:py-6 sm:px-6 md:py-8 md:px-8 rounded-3xl mx-auto max-w-5xl" style={{
                 background: '#FBF8F1', border: '2px solid #D4B65D', boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
               }}>
                 <div className="text-center">
@@ -456,7 +456,7 @@ const ForWomensHealth = () => {
 
         {/* ===== FOUNDER IN THE ROOM ===== */}
         <section ref={founderRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #F5F0E4 0%, #FDFCF9 100%)'
         }}>
           <div className="absolute inset-0 pointer-events-none opacity-30" style={{
@@ -464,7 +464,7 @@ const ForWomensHealth = () => {
           }} />
 
           <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-start">
               {/* Left Column — Text */}
               <div className={`space-y-4 sm:space-y-6 transition-all duration-1000 ${founderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: '0.2s' }}>
@@ -541,11 +541,11 @@ const ForWomensHealth = () => {
 
         {/* ===== FAQ (matches FAQ section exactly) ===== */}
         <section ref={faqRef} className="px-4 sm:px-6 relative overflow-hidden" style={{
-          paddingTop: '60px', paddingBottom: '60px',
+          paddingTop: '32px', paddingBottom: '32px',
           background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)'
         }}>
           <div className="max-w-4xl mx-auto relative z-10">
-            <div className={`text-center mb-16 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`text-center mb-8 transition-all duration-1000 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="inline-block mb-6 px-6 py-2 rounded-full" style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.12), rgba(113,141,169,0.06))',
                 border: '1.5px solid rgba(113,141,169,0.25)', boxShadow: '0 4px 12px rgba(113,141,169,0.08)'
@@ -580,7 +580,7 @@ const ForWomensHealth = () => {
 
         {/* ===== BOTTOM CTA BANNER ===== */}
         <section className="px-4 sm:px-6 relative" style={{
-          paddingTop: '40px', paddingBottom: '40px',
+          paddingTop: '24px', paddingBottom: '24px',
           background: '#0A1628',
           borderTop: '3px solid #F3DA73',
         }}>

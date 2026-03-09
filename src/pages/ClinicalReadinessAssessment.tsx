@@ -104,7 +104,7 @@ const ClinicalReadinessAssessment = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[180px] pb-[60px] md:pt-[240px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -174,8 +174,8 @@ const ClinicalReadinessAssessment = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '48px',
-            paddingBottom: '32px',
+            paddingTop: '24px',
+            paddingBottom: '16px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
@@ -199,9 +199,9 @@ const ClinicalReadinessAssessment = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '20px',
-            paddingBottom: '48px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '24px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">
@@ -226,7 +226,7 @@ const ClinicalReadinessAssessment = () => {
             >
               What We Evaluate
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
               {[
                 {
                   title: "Clinical Workflow Fit",
@@ -270,13 +270,13 @@ const ClinicalReadinessAssessment = () => {
 
             {/* How It Works */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               How It Works
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
               {[
                 { step: "1", icon: ClipboardList, title: "Days 1 to 2: Structured Intake", text: "We review your product, pilot terms, and integration documentation before any assessment begins." },
                 { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains, with targeted async questions as findings develop." },
@@ -316,7 +316,7 @@ const ClinicalReadinessAssessment = () => {
             </div>
 
             <p
-              className="text-base font-inter text-center mb-16"
+              className="text-base font-inter text-center mb-8"
               style={{ color: '#718DA9', lineHeight: '1.7' }}
             >
               Fourteen days. Five domains. A deliverable your entire leadership team can act on.
@@ -324,7 +324,7 @@ const ClinicalReadinessAssessment = () => {
 
             {/* Who This Is For */}
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16"
+              className="p-5 sm:p-8 rounded-2xl mb-6 sm:mb-8"
               style={{
                 background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
                 border: '1.5px solid rgba(113,141,169,0.2)',
@@ -373,7 +373,7 @@ const ClinicalReadinessAssessment = () => {
             </div>
 
             {/* What Comes Next */}
-            <div className="mb-16 mt-8">
+            <div className="mb-8 mt-4">
               <h2
                 className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
                 style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
@@ -390,13 +390,13 @@ const ClinicalReadinessAssessment = () => {
 
             {/* FAQ */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               Frequently Asked Questions
             </h2>
 
-            <div className="mb-16">
+            <div className="mb-8">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqData.map((faq, index) => (
                   <AccordionItem

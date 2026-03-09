@@ -127,7 +127,7 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* The Promise */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-4xl text-center">
             <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
               "We embed with your team, clinically and operationally, and get your women's health technology from pilot to full implementation."
@@ -141,9 +141,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Who This Is For */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               You're in the right place if:
             </h2>
 
@@ -171,10 +171,10 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* What We Do */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-8 text-center">
-              <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <div className="mb-6 text-center">
+              <h2 className="mb-3 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
                 What strategic advisory actually means.
               </h2>
               <p className="font-inter text-lg text-muted-foreground">
@@ -209,9 +209,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Why Us */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-6 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
+            <h2 className="mb-4 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
               A Board-Certified OB/GYN and a Healthcare IT Architect, in the room with you.
             </h2>
 
@@ -227,9 +227,9 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* The Bottom Line */}
-        <section className="bg-muted/30 px-6 py-10 md:py-14">
+        <section className="bg-muted/30 px-6 py-6 md:py-8">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-8 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
+            <p className="mb-6 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
               "Women's health innovation isn't failing because the products are bad. It's failing because the infrastructure to support them doesn't exist yet. We build that infrastructure. That's the job."
             </p>
 

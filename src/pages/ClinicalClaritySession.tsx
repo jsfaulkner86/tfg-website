@@ -40,7 +40,7 @@ const ClinicalClaritySession = () => {
       <main className="overflow-x-hidden">
         {/* HERO SECTION */}
         <section
-          className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[240px] md:pb-[80px]"
+          className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]"
           style={{
             paddingTop: "max(180px, calc(180px + env(safe-area-inset-top, 0px)))",
           }}
@@ -105,7 +105,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 1 — THE PROMISE */}
         <section
-          className="px-4 sm:px-6 py-8 sm:py-10"
+          className="px-4 sm:px-6 py-5 sm:py-6"
           style={{ background: "linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)" }}
         >
           <div className="max-w-4xl mx-auto text-center">
@@ -120,10 +120,10 @@ const ClinicalClaritySession = () => {
         </section>
 
         {/* SECTION 2 — WHO THIS IS FOR */}
-        <section className="px-4 sm:px-6 py-8 sm:py-10" style={{ background: "#F5F0E4" }}>
+        <section className="px-4 sm:px-6 py-5 sm:py-6" style={{ background: "#F5F0E4" }}>
           <div className="max-w-3xl mx-auto">
             <h2
-              className="text-3xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              className="text-3xl sm:text-4xl font-playfair font-bold mb-4 text-center"
               style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
             >
               This session is built for you if:
@@ -157,11 +157,11 @@ const ClinicalClaritySession = () => {
         </section>
 
         {/* SECTION 3 — WHAT HAPPENS IN THE SESSION */}
-        <section className="px-4 sm:px-6 py-10 sm:py-14" style={{ background: "#FDFCF9" }}>
+        <section className="px-4 sm:px-6 py-6 sm:py-8" style={{ background: "#FDFCF9" }}>
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-10">
+            <div className="text-center mb-6">
               <h2
-                className="text-3xl sm:text-4xl font-playfair font-bold mb-3"
+                className="text-3xl sm:text-4xl font-playfair font-bold mb-2"
                 style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
               >
                 Here's what we cover.
@@ -230,7 +230,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 4 — WHY THIS IS DIFFERENT */}
         <section
-          className="px-4 sm:px-6 py-10 sm:py-14 relative overflow-hidden"
+          className="px-4 sm:px-6 py-6 sm:py-8 relative overflow-hidden"
           style={{ background: "#1A2A3A" }}
         >
           <div
@@ -273,7 +273,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 5 — BOTTOM LINE CTA */}
         <section
-          className="px-4 sm:px-6 py-10 sm:py-14"
+          className="px-4 sm:px-6 py-6 sm:py-8"
           style={{ background: "#F5F0E4" }}
         >
           <div className="max-w-4xl mx-auto">

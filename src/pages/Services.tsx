@@ -352,51 +352,105 @@ const IsThisYou = () =>
 
 
 /* ───────────────────────── PAGE ───────────────────────── */
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thrive-beacon-studio.lovable.app/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://thrive-beacon-studio.lovable.app/services" }
+  ]
+};
+
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "The Faulkner Group",
+  "description": "Boutique clinical strategy and advisory firm for women's health technology companies. Specializing in physician adoption, EHR integration, clinical governance, and enterprise pilot conversion.",
+  "url": "https://thrive-beacon-studio.lovable.app/services",
+  "telephone": "",
+  "areaServed": { "@type": "Country", "name": "United States" },
+  "serviceType": ["Healthcare Advisory", "Clinical Strategy", "EHR Integration Consulting", "Physician Adoption Strategy", "Health Tech Consulting"],
+  "knowsAbout": [
+    "Women's health technology",
+    "Clinical adoption strategy",
+    "EHR integration",
+    "Physician adoption",
+    "Clinical governance frameworks",
+    "Health system partnerships",
+    "Enterprise pilot conversion"
+  ],
+  "founder": [
+    { "@type": "Person", "name": "John Faulkner", "jobTitle": "CEO & Healthcare IT Architect" },
+    { "@type": "Person", "name": "Dr. Nicole Faulkner", "jobTitle": "Chief Clinical Officer" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/faulkner-group/",
+    "https://www.youtube.com/@YourHealthcareITexpert"
+  ]
+};
+
 const servicesFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-  {
-    "@type": "Question",
-    "name": "What does The Faulkner Group do?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The Faulkner Group is a boutique advisory firm for women's health tech founders. We combine strategic advisory expertise with deep clinical and EHR integration knowledge to help women's health technology companies scale, achieve physician adoption, and build lasting clinical partnerships."
+    {
+      "@type": "Question",
+      "name": "What does The Faulkner Group do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group is a boutique advisory firm for women's health tech founders. We combine strategic advisory expertise with deep clinical and EHR integration knowledge to help women's health technology companies scale, achieve physician adoption, and build lasting clinical partnerships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who does The Faulkner Group serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve women's health tech founders and operators who are ready to move from traction to scale. Our clients are building technology platforms in women's health and need both strategic guidance and clinical credibility to succeed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Dual Brain model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Dual Brain model is The Faulkner Group's core approach. It combines a Medical Brain (a board-certified OB/GYN who has practiced in the clinical environments you are building for) with a Health Technology Brain (a Healthcare IT Architect with 15+ years of EHR and systems expertise). Together they eliminate the gap between clinical vision and operational execution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What advisory services does The Faulkner Group offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group offers five engagement models: (I) Strategic Advisory, an equity-based long-term advisory for early-stage companies; (II) Clinical Clarity Session, a $1,500 90-minute diagnostic; (III) Clinical Readiness Roadmap, a $5,000 structured written assessment; (IV) Clinical Readiness Assessment, a 14-day deep engagement; and (V) Operating Partner, an ongoing embedded clinical and systems operating partnership."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is The Faulkner Group different from other healthcare consultants?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Faulkner Group is exclusively focused on women's health technology. Our team includes both operational systems architects and board-certified OB/GYN clinical advisors, giving us a unique dual capability that most advisory firms cannot offer. We do not serve hospitals or general health systems. We work only with women's health tech companies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do most women's health tech pilots fail to scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "90% of health tech pilots fail to convert to full-scale implementation without clinical alignment. The gap between a promising women's health platform and real-world clinical adoption isn't about the technology — it's about trust, workflow fit, and physician buy-in. The Faulkner Group addresses all three through its 4 Pillars of Clinical Adoption framework."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you get physicians to adopt new health technology?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. The Faulkner Group builds physician adoption through peer-to-peer advocacy, KOL engagement, CMIO engagement strategies, and internal champion development that drives adoption from the inside out."
+      }
     }
-  },
-  {
-    "@type": "Question",
-    "name": "Who does The Faulkner Group serve?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We serve women's health tech founders and operators who are ready to move from traction to scale. Our clients are building technology platforms in women's health and need both strategic guidance and clinical credibility to succeed."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What is the Dual Brain model?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The Dual Brain model is The Faulkner Group's core approach. It combines an Advisory Brain focused on strategy, stakeholders, and go-to-market positioning with a MedTech Brain focused on EHR integration, clinical workflow design, and operational execution. Together they eliminate the gap between vision and execution."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "What advisory services does The Faulkner Group offer?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The Faulkner Group offers four engagement models: the Clinical Clarity Session, a 90-minute diagnostic that surfaces your highest-risk failure points; the Clinical Readiness Assessment, a structured 14-day deep engagement before your enterprise pilot goes live; the Strategic Advisory, an equity-based long-term advisory relationship for early-stage companies; and the Operating Partner, an ongoing clinical and systems operating partnership for companies navigating enterprise pilots."
-    }
-  },
-  {
-    "@type": "Question",
-    "name": "How is The Faulkner Group different from other healthcare consultants?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "The Faulkner Group is exclusively focused on women's health technology. Our team includes both operational systems architects and board-certified OB/GYN clinical advisors, giving us a unique dual capability that most advisory firms cannot offer. We do not serve hospitals or general health systems. We work only with women's health tech companies."
-    }
-  }]
-
+  ]
 };
 
 const johnFaulknerSchema = {
@@ -424,29 +478,48 @@ const nicholeFaulknerSchema = {
 };
 
 const serviceSchemas = [
+  breadcrumbSchema,
+  professionalServiceSchema,
   servicesFaqSchema,
   johnFaulknerSchema,
   nicholeFaulknerSchema,
   {
     "@context": "https://schema.org",
     "@type": "Service",
+    name: "Strategic Advisory",
+    provider: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
+    url: "https://thrive-beacon-studio.lovable.app/advisory-partnership",
+    areaServed: { "@type": "Country", name: "United States" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
     name: "Clinical Clarity Session",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "A 90-minute virtual diagnostic with a board-certified OB/GYN and Healthcare IT Architect that identifies the highest-risk failure points in your health tech product's clinical adoption strategy.",
+    url: "https://thrive-beacon-studio.lovable.app/clinical-clarity-session",
+    areaServed: { "@type": "Country", name: "United States" },
+    offers: { "@type": "Offer", price: "1500", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Clinical Readiness Roadmap",
+    provider: { "@type": "Organization", name: "The Faulkner Group" },
+    description: "A focused written readiness assessment for women's health founders 3 to 6 months from their first enterprise pilot conversation. Covers five readiness domains with a sequenced remediation roadmap and live findings presentation.",
+    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-roadmap",
+    areaServed: { "@type": "Country", name: "United States" },
+    offers: { "@type": "Offer", price: "5000", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Clinical Readiness Assessment",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "A structured 14-day readiness engagement that evaluates clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Strategic Advisory",
-    provider: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "A selective, equity-based advisory partnership for early-stage women's health tech companies where clinical and systems credibility can materially change your trajectory.",
+    description: "A structured 14-day readiness engagement evaluating clinical workflow fit, governance infrastructure, physician adoption strategy, EHR integration, and liability exposure before your enterprise pilot goes live.",
+    url: "https://thrive-beacon-studio.lovable.app/clinical-readiness-assessment",
+    areaServed: { "@type": "Country", name: "United States" },
   },
   {
     "@context": "https://schema.org",
@@ -454,28 +527,32 @@ const serviceSchemas = [
     name: "Operating Partner",
     provider: { "@type": "Organization", name: "The Faulkner Group" },
     description: "An ongoing clinical and systems operating partnership for women's health tech companies navigating enterprise pilots, physician adoption, and contract renewals.",
+    url: "https://thrive-beacon-studio.lovable.app/operating-partner-retainer",
+    areaServed: { "@type": "Country", name: "United States" },
   },
 ];
-
 const Services = () =>
-<div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
+<main className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
     <SEOHead
-    title="Women's Health Tech Advisory Services | John Faulkner & Dr. Nicole Faulkner"
-    description="John Faulkner and Dr. Nicole Faulkner offer boutique women's health tech advisory — from 48-hour diagnostics to enterprise partnerships with EHR integration and clinical expertise."
+    title="Women's Health Tech Advisory | The Faulkner Group"
+    description="Clinical strategy for women's health tech founders. EHR integration, physician adoption, and enterprise pilot conversion by John Faulkner & Dr. Nicole Faulkner."
     canonical="https://thrive-beacon-studio.lovable.app/services"
+    ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
     jsonLd={serviceSchemas}
     />
 
     <Header />
-    <ServicesHero />
-    <OnStage />
-    <DualBrain />
-    <EngagementModels />
-    <Partnership />
-    <IsThisYou />
+    <article>
+      <ServicesHero />
+      <OnStage />
+      <DualBrain />
+      <EngagementModels />
+      <Partnership />
+      <IsThisYou />
+    </article>
     <BottomVideo />
     <StickyCTA />
-  </div>;
+  </main>;
 
 
 export default Services;

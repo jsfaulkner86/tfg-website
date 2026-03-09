@@ -130,7 +130,7 @@ const AdvisoryPartnership = () => {
         <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-4xl text-center">
             <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
-              "We embed with your team, clinically and operationally, and get your women's health technology from pilot to permanent program."
+              "We embed with your team, clinically and operationally, and get your women's health technology from pilot to full implementation."
             </p>
           </div>
         </section>

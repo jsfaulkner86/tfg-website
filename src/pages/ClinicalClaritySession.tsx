@@ -273,39 +273,53 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 5 — BOTTOM LINE CTA */}
         <section
-          className="px-4 sm:px-6 py-10 sm:py-14 text-center"
+          className="px-4 sm:px-6 py-10 sm:py-14"
           style={{ background: "#F5F0E4" }}
         >
           <div className="max-w-4xl mx-auto">
-            <h2
-              className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6"
-              style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
-            >
-              "Something is stuck, let's figure out why."
-            </h2>
-
-            <Button
-              onClick={handleBooking}
-              className="text-sm sm:text-base font-semibold rounded-lg px-8 sm:px-12 py-5 sm:py-6 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)] mb-4"
+            <div
+              className="p-5 sm:p-8 rounded-2xl text-center"
               style={{
-                background:
-                  "linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)",
-                color: "#2A3B4F",
-                borderColor: "rgba(255,255,255,0.25)",
-                boxShadow:
-                  "0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)",
+                background: '#FBF8F1',
+                border: '2px solid #D4B65D',
               }}
             >
-              Book Your Clinical Clarity Session
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </Button>
+              <p
+                className="text-base sm:text-2xl font-inter font-bold text-center max-w-3xl mx-auto mb-6"
+                style={{ color: '#1A2A3A', lineHeight: '1.6', textWrap: 'balance' }}
+              >
+                "Something is stuck, let's figure out why."
+              </p>
 
-            <p
-              className="text-sm font-inter uppercase tracking-widest font-medium"
-              style={{ color: "#718DA9" }}
-            >
-              90 minutes. Specific. Honest. No pitch.
-            </p>
+              <p
+                className="text-3xl sm:text-4xl font-playfair font-bold text-center mb-6 sm:mb-8"
+                style={{ color: '#1A2A3A' }}
+              >
+                $1,500
+              </p>
+
+              <Button
+                onClick={handleBooking}
+                className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                  color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  backdropFilter: 'blur(8px)',
+                }}
+              >
+                Book Your Session
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+
+              <p
+                className="text-xs sm:text-sm font-inter text-center max-w-2xl mx-auto mt-5"
+                style={{ color: '#4A5568', lineHeight: '1.7' }}
+              >
+                90 minutes. A Board-Certified OB/GYN and a Healthcare IT Architect. Specific, honest, and no pitch.
+              </p>
+            </div>
           </div>
         </section>
       </main>

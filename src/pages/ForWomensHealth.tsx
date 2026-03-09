@@ -441,7 +441,7 @@ const ForWomensHealth = () => {
             </div>
 
             <div className={`transition-all duration-1000 delay-900 ${toolsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <div className="relative py-6 px-6 sm:py-8 sm:px-8 md:py-12 md:px-12 rounded-3xl mx-auto max-w-5xl" style={{
+              <div className="relative py-4 px-4 sm:py-6 sm:px-6 md:py-8 md:px-8 rounded-3xl mx-auto max-w-5xl" style={{
                 background: '#FBF8F1', border: '2px solid #D4B65D', boxShadow: '0 4px 16px rgba(0,0,0,0.04)'
               }}>
                 <div className="text-center">

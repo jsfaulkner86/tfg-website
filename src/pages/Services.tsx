@@ -303,7 +303,7 @@ const Partnership = () =>
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-12">
+      <div className="grid sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
         {partnershipItems.map(({ icon: Icon, text }) =>
       <div key={text} className="flex items-start gap-3">
             <Icon className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />

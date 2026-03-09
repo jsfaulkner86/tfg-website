@@ -293,7 +293,7 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Section 5 — Credibility / Founder Bios */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="mb-6 md:mb-8 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl" style={{ textWrap: 'balance' }}>
               We've been where you're trying to go.

@@ -211,9 +211,9 @@ const OperatingPartnerRetainer = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '20px',
-            paddingBottom: '60px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '32px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">

@@ -225,7 +225,7 @@ const EngagementModels = () =>
         {engagements.map((eng) =>
       <div key={eng.numeral}>
             <div className="h-px w-full" style={{ background: 'hsl(0, 0%, 85%)' }} />
-              <div className="py-6 md:py-16">
+              <div className="py-4 md:py-8">
               <div className="flex flex-col md:flex-row md:items-start gap-3 md:gap-12">
                 <span
               className="font-display font-light flex-shrink-0"

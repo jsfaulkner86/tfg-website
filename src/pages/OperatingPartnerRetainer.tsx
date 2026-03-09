@@ -36,7 +36,7 @@ const OperatingPartnerRetainer = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-14">
+        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-14">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team in strategic planning session"

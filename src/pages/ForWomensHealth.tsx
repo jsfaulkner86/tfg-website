@@ -370,8 +370,8 @@ const ForWomensHealth = () => {
               </div>
             </div>
 
-            <div className={`mb-16 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className={`mb-8 transition-all duration-1000 delay-300 ${toolsVisible ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {[
                   { micro: "Payer Readiness", title: "Reimbursement Readiness Scorecard", body: "Assess whether your product is payer-ready before entering costly sales cycles.", result: "10 questions. Instant clarity on your reimbursement readiness.", cta: "Take the Scorecard", href: "/for-womens-health/reimbursement-scorecard", external: false, gated: true },
                   { micro: "Health System Entry", title: "Hospital Partnership Fit Checker", body: "Map your startup's stage to realistic health system entry points.", result: "6 questions. Know which partnership type fits your stage.", cta: "Check Your Fit", href: "/for-womens-health/hospital-fit-checker", external: false, gated: true },

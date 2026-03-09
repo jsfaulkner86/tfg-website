@@ -532,24 +532,27 @@ const serviceSchemas = [
   },
 ];
 const Services = () =>
-<div className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
+<main className="min-h-screen bg-background" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
     <SEOHead
-    title="Women's Health Tech Advisory Services | John Faulkner & Dr. Nicole Faulkner"
-    description="John Faulkner and Dr. Nicole Faulkner offer boutique women's health tech advisory — from 48-hour diagnostics to enterprise partnerships with EHR integration and clinical expertise."
+    title="Women's Health Tech Advisory | The Faulkner Group"
+    description="Clinical strategy for women's health tech founders. EHR integration, physician adoption, and enterprise pilot conversion by John Faulkner & Dr. Nicole Faulkner."
     canonical="https://thrive-beacon-studio.lovable.app/services"
+    ogImage="https://thrive-beacon-studio.lovable.app/og-image.jpg"
     jsonLd={serviceSchemas}
     />
 
     <Header />
-    <ServicesHero />
-    <OnStage />
-    <DualBrain />
-    <EngagementModels />
-    <Partnership />
-    <IsThisYou />
+    <article>
+      <ServicesHero />
+      <OnStage />
+      <DualBrain />
+      <EngagementModels />
+      <Partnership />
+      <IsThisYou />
+    </article>
     <BottomVideo />
     <StickyCTA />
-  </div>;
+  </main>;
 
 
 export default Services;

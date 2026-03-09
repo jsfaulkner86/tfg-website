@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Users, Cpu, FileText, Handshake } from "lucide-react";
+import { ArrowRight, Shield, Users, Cpu, FileText, Handshake, Rocket } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 
@@ -166,6 +166,11 @@ const OperatingPartnerRetainer = () => {
                   icon: FileText,
                   title: "Governance Operations",
                   description: "Steering committee support, kill-switch protocol management, KPI monitoring, and risk register maintenance so your health system always has the documentation it needs.",
+                },
+                {
+                  icon: Rocket,
+                  title: "Deployment & Scale Readiness",
+                  description: "We build the standardized playbooks, SOPs, and training frameworks that turn your first successful deployment into a repeatable model — so your second and third health system deals move faster and close cleaner.",
                 },
               ].map((card, index) => (
                 <div

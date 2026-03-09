@@ -104,7 +104,7 @@ const ClinicalReadinessRoadmap = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[180px] pb-[60px] md:pt-[240px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -176,8 +176,8 @@ const ClinicalReadinessRoadmap = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '48px',
-            paddingBottom: '32px',
+            paddingTop: '24px',
+            paddingBottom: '16px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
@@ -195,14 +195,14 @@ const ClinicalReadinessRoadmap = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '16px',
-            paddingBottom: '32px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '16px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 sm:mb-10 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               This is built for you if:
@@ -229,9 +229,9 @@ const ClinicalReadinessRoadmap = () => {
         <section
           className="px-5 sm:px-6"
           style={{
-            paddingTop: '20px',
-            paddingBottom: '48px',
-            background: 'linear-gradient(180deg, #F5F0E4 0%, #F5F0E4 100%)',
+            paddingTop: '8px',
+            paddingBottom: '24px',
+            background: '#F5F0E4',
           }}
         >
           <div className="max-w-4xl mx-auto">
@@ -242,7 +242,7 @@ const ClinicalReadinessRoadmap = () => {
               A real deliverable. Not another call.
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 mt-4">
               {[
                 { step: "1", icon: ClipboardList, title: "Structured Intake", text: "You submit your product documentation, integration details, and current health system conversations before we begin." },
                 { step: "2", icon: MessageSquare, title: "Async Q&A", text: "Targeted questions from our team as findings develop, so the report reflects your actual situation — not a generic framework." },
@@ -289,7 +289,7 @@ const ClinicalReadinessRoadmap = () => {
               The five areas every health system evaluates before saying yes.
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 mt-4">
               {[
                 {
                   title: "Clinical Workflow Fit",
@@ -333,13 +333,13 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* Section 5 — Why Us */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-3 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
               A practicing OB/GYN and a Healthcare IT Architect. In the same room. On your engagement.
             </h2>
             <p
-              className="text-sm sm:text-lg font-inter text-left mb-12 sm:mb-16 mx-auto"
+              className="text-sm sm:text-lg font-inter text-left mb-6 sm:mb-8 mx-auto"
               style={{ color: '#4A5568', lineHeight: '1.7', maxWidth: '680px', textWrap: 'balance' }}
             >
               There is no other advisory team in women's digital health that brings both perspectives to the same engagement. Nicole still sees patients. John has spent 15+ years building and optimizing the most clinically complex women's health workflow environments in enterprise healthcare. Together, they see what your product documentation doesn't show — and what your health system counterpart won't tell you until it's too late.
@@ -347,7 +347,7 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* Section 6 — Bottom Line CTA */}
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16 text-center"
+              className="p-5 sm:p-8 rounded-2xl text-center"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',

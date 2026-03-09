@@ -347,7 +347,7 @@ const ClinicalReadinessRoadmap = () => {
 
             {/* Section 6 — Bottom Line CTA */}
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-12 sm:mb-16 text-center"
+              className="p-5 sm:p-8 rounded-2xl text-center"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',

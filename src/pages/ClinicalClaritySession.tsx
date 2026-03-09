@@ -40,7 +40,7 @@ const ClinicalClaritySession = () => {
       <main className="overflow-x-hidden">
         {/* HERO SECTION */}
         <section
-          className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[240px] md:pb-[80px]"
+          className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]"
           style={{
             paddingTop: "max(180px, calc(180px + env(safe-area-inset-top, 0px)))",
           }}

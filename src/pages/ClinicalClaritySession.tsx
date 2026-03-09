@@ -157,11 +157,11 @@ const ClinicalClaritySession = () => {
         </section>
 
         {/* SECTION 3 — WHAT HAPPENS IN THE SESSION */}
-        <section className="px-4 sm:px-6 py-10 sm:py-14" style={{ background: "#FDFCF9" }}>
+        <section className="px-4 sm:px-6 py-6 sm:py-8" style={{ background: "#FDFCF9" }}>
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-10">
+            <div className="text-center mb-6">
               <h2
-                className="text-3xl sm:text-4xl font-playfair font-bold mb-3"
+                className="text-3xl sm:text-4xl font-playfair font-bold mb-2"
                 style={{ color: "#1A2A3A", letterSpacing: "-0.02em" }}
               >
                 Here's what we cover.

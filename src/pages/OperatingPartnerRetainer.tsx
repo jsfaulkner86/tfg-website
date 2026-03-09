@@ -115,7 +115,7 @@ const OperatingPartnerRetainer = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pb-[60px] md:pb-[140px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pb-[40px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team in strategic planning session"

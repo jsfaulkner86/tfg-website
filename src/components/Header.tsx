@@ -123,7 +123,7 @@ const Header = () => {
                     href="/clinical-readiness-assessment" 
                     className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
                   >
-                    Clinical Readiness
+                    Clinical 14-Day Readiness
                   </a>
                   <a 
                     href="/operating-partner-retainer" 

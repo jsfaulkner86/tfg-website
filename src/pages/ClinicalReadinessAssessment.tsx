@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, FileText, Users, Shield, ClipboardList, Search, Video, Send } from "lucide-react";
+import { ArrowRight, CheckCircle2, Stethoscope, Shield, Users, Cpu, Scale, ClipboardList, Search, FileText, Send, Video } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const assessmentSchema = [
   {
@@ -45,46 +39,8 @@ const assessmentSchema = [
     name: "Johnathon Faulkner",
     jobTitle: "CEO and Healthcare IT Architect",
     worksFor: { "@type": "Organization", name: "The Faulkner Group" },
-    description: "Healthcare IT Architect with 14+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
+    description: "Healthcare IT Architect with 15+ years and 40+ Epic implementations specializing in women's health technology enterprise integration.",
     sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
-  },
-];
-
-const faqData = [
-  {
-    question: "What is the Clinical Readiness Assessment?",
-    answer:
-      "A structured 14-day engagement that evaluates your product across five domains: clinical workflow fit, governance and risk infrastructure, physician adoption strategy, EHR integration reality, and trust and liability exposure. You receive a written Clinical Readiness Report and a 60-minute live findings presentation with both practitioners.",
-  },
-  {
-    question: "Who runs the assessment?",
-    answer:
-      "Nicole Faulkner, D.O., a practicing OB/GYN who brings frontline clinical credibility. Johnathon Faulkner, a healthcare IT architect with 14+ years and 40+ Epic implementations. Our team is involved throughout the full 14-day engagement and presents findings together.",
-  },
-  {
-    question: "Who is this for?",
-    answer:
-      "Founders and leadership teams with a signed enterprise pilot or health system contract approaching go-live, especially products operating in OB/GYN, maternal health, reproductive care, or women's digital health where clinical trust and documentation accuracy are non-negotiable.",
-  },
-  {
-    question: "How is this different from the Clinical Clarity Session?",
-    answer:
-      "The Clinical Clarity Session is a 90-minute diagnostic designed for fast triage. The Clinical Readiness Assessment is a 14-day deep engagement for companies whose stakes are too high for triage alone. Same team, deeper scope, comprehensive de-risking before your go-live date.",
-  },
-  {
-    question: "What do I receive at the end?",
-    answer:
-      "A written Clinical Readiness Report with findings and a prioritized remediation roadmap, designed to share with your board, investors, or health system counterparts. Within 48 hours of delivery, you also receive a 60-minute live findings presentation with both practitioners and full Q&A.",
-  },
-  {
-    question: "When is the right time to book this?",
-    answer:
-      "When you have a signed pilot or enterprise contract with a go-live date on the calendar and the cost of failure is measured in relationship capital, not just dollars. This assessment is built to close gaps before they surface in production.",
-  },
-  {
-    question: "Is this tied to a longer engagement?",
-    answer:
-      "Not by default. The Clinical Readiness Assessment delivers a complete, standalone report. For companies whose assessment surfaces risks requiring ongoing oversight, we offer a structured path to a deeper operating partnership. The assessment is where that conversation begins.",
   },
 ];
 
@@ -104,7 +60,7 @@ const ClinicalReadinessAssessment = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[180px] pb-[40px] md:pt-[200px] md:pb-[60px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pt-[180px] pb-[60px] md:pt-[200px] md:pb-[80px]" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -137,19 +93,21 @@ const ClinicalReadinessAssessment = () => {
                   lineHeight: 1.1,
                 }}
               >
-                The Reality
+                Signing the LOI is not the hard part.<br />
+                What comes next is.
               </h1>
 
               <p
-                className="mb-8 sm:mb-10 font-inter max-w-lg mx-auto"
+                className="mb-8 sm:mb-10 font-inter max-w-2xl mx-auto"
                 style={{
                   fontSize: 'clamp(15px, 1.6vw, 20px)',
                   color: 'rgba(255, 255, 255, 0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                   lineHeight: '1.6',
+                  textWrap: 'balance',
                 }}
               >
-                Signing the LOI is not the hard part. What comes next is.
+                A structured 14-day readiness engagement built around your product, your integration, and your pilot before your go-live date arrives.
               </p>
 
               <Button
@@ -163,126 +121,174 @@ const ClinicalReadinessAssessment = () => {
                   backdropFilter: 'blur(8px)',
                 }}
               >
-                Book Your Clinical Readiness Assessment
+                Book Your Assessment
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
         </section>
 
-        {/* The Reality (expanded body) */}
+        {/* Section 1 — The Problem */}
         <section
-          className="px-5 sm:px-6"
+          className="px-5 sm:px-6 py-16 sm:py-20"
           style={{
-            paddingTop: '24px',
-            paddingBottom: '16px',
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}
         >
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-6 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              Why Pilots Fail
+              Most pilots don't fail because the product was wrong.
             </h2>
-            <p
-              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
-              style={{ color: '#4A5568', lineHeight: '1.7' }}
-            >
-              Most enterprise pilots do not fail because the product was wrong. They fail because no one mapped the product to actual clinical workflows, no one stress-tested the EHR integration before go-live, and no one built the governance infrastructure a health system needs to defend when something goes sideways. By the time those gaps surface, your champion is exposed and your relationship with the health system is already fragile. This assessment closes those gaps before you go live, in 14 days.
-            </p>
+            <div className="max-w-[680px] mx-auto">
+              <p
+                className="text-base sm:text-lg font-inter mb-6"
+                style={{ color: '#4A5568', lineHeight: '1.8', textWrap: 'balance' }}
+              >
+                They fail because no one mapped the product to actual clinical workflows. No one stress-tested the integration before go-live. No one built the governance a health system needs when something goes sideways.
+              </p>
+              <p
+                className="text-base sm:text-lg font-inter mb-6"
+                style={{ color: '#4A5568', lineHeight: '1.8', textWrap: 'balance' }}
+              >
+                By the time those gaps surface, your champion is exposed and the relationship is already fragile.
+              </p>
+              <p
+                className="text-base sm:text-lg font-inter font-semibold"
+                style={{ color: '#1A2A3A', lineHeight: '1.8' }}
+              >
+                This assessment closes those gaps. In 14 days.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* What This Is + What We Evaluate + How It Works + Who It's For + Offer Ladder + What Comes Next + FAQ + CTA */}
+        {/* Section 2 — Who This Is For */}
         <section
-          className="px-5 sm:px-6"
-          style={{
-            paddingTop: '8px',
-            paddingBottom: '24px',
-            background: '#F5F0E4',
-          }}
+          className="px-5 sm:px-6 py-16 sm:py-20"
+          style={{ background: '#F5F0E4' }}
+        >
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 text-center"
+              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+            >
+              This is built for you if:
+            </h2>
+            <div
+              className="p-6 sm:p-8 rounded-2xl"
+              style={{
+                background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
+                border: '1.5px solid rgba(113,141,169,0.2)',
+              }}
+            >
+              <div className="space-y-4">
+                {[
+                  "You have a signed pilot or LOI with a go-live date on the calendar",
+                  "This is your first enterprise deployment and a failed pilot costs more than money",
+                  "You are operating in OB/GYN, maternal health, reproductive care, or women's digital health where clinical trust is non-negotiable",
+                  "Your leadership team needs to walk into go-live knowing the most predictable failure points have been found and addressed",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 size={20} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
+                    <p className="text-base sm:text-lg font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3 — What We Evaluate */}
+        <section
+          className="px-5 sm:px-6 py-16 sm:py-20"
+          style={{ background: '#F5F0E4' }}
         >
           <div className="max-w-4xl mx-auto">
-            {/* What This Is */}
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              What This Is
+              Five domains. Every health system checks all of them.
             </h2>
-            <p
-              className="text-sm sm:text-lg font-inter text-center sm:text-center text-left mb-8 sm:mb-10 max-w-3xl mx-auto"
-              style={{ color: '#4A5568', lineHeight: '1.7' }}
-            >
-              A structured 14-day readiness engagement built specifically around your product, your integration architecture, and your pilot environment. Not a framework applied generically. Not a checklist downloaded from a consulting firm's website. You get a team that has been inside the room where these decisions are made: a Board-Certified OB/GYN who still sees patients and a Healthcare IT Architect with 14 years and 40+ Epic implementations, including Epic (EHR) - Women's Health, the most clinically complex OB/GYN workflow environment in enterprise healthcare. We do not assess in the abstract. We assess against what health systems actually require.
-            </p>
-
-            {/* What We Evaluate */}
-            <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
-              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
-            >
-              What We Evaluate
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 {
+                  icon: Stethoscope,
                   title: "Clinical Workflow Fit",
-                  text: "Where does your product live in a physician's actual day? What does that interaction look like at 6:47 AM when your champion is three charts behind and a nurse is waiting?",
+                  text: "Where your product lives in a physician's actual day at 6:47 AM when your champion is three charts behind and a nurse is waiting.",
                 },
                 {
-                  title: "Governance and Risk Infrastructure",
-                  text: "Do you have escalation pathways, a kill-switch protocol, defined KPIs, and incident reporting language your health system's legal and compliance teams can defend?",
+                  icon: Shield,
+                  title: "Governance & Risk Infrastructure",
+                  text: "Escalation pathways, kill-switch protocol, defined KPIs, and incident language your legal and compliance teams can defend.",
                 },
                 {
+                  icon: Users,
                   title: "Physician Adoption Strategy",
-                  text: "Is your champion plan realistic? How are you tracking utilization, identifying resistance early, and preventing quiet non-adoption from becoming a contract non-renewal?",
+                  text: "Whether your champion plan is realistic, how you track utilization, and how you catch quiet non-adoption before it becomes a contract non-renewal.",
                 },
                 {
-                  title: "EHR Integration Reality",
-                  text: "Is your integration real, or is it a separate portal with SSO dressed up in contract language? We evaluate what you have against what your pilot agreement likely requires.",
+                  icon: Cpu,
+                  title: "Technology Integration Reality",
+                  text: "What your integration actually is versus what your pilot agreement likely requires. Not what's in the deck, what's real.",
                 },
                 {
-                  title: "Trust and Liability Exposure",
-                  text: "If your product influences a clinical decision that leads to a bad outcome, who owns it? Does your current risk architecture reflect that answer?",
+                  icon: Scale,
+                  title: "Trust & Liability Exposure",
+                  text: "Who owns the outcome if your product influences a clinical decision that goes wrong and whether your current architecture reflects that answer.",
                 },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="p-5 sm:p-6 rounded-2xl"
-                  style={{
-                    background: 'white',
-                    border: '1.5px solid rgba(243,218,115,0.3)',
-                    boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
-                  }}
-                >
-                  <h3 className="text-base font-inter font-bold mb-2" style={{ color: '#1A2A3A' }}>
-                    {item.title}
-                  </h3>
-                  <p className="text-base font-inter" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                    {item.text}
-                  </p>
-                </div>
-              ))}
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="p-5 sm:p-6 rounded-2xl"
+                    style={{
+                      background: 'white',
+                      border: '1.5px solid rgba(243,218,115,0.3)',
+                      boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
+                    }}
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <Icon size={24} style={{ color: '#718DA9' }} />
+                      <h3 className="text-base font-inter font-bold" style={{ color: '#1A2A3A' }}>
+                        {item.title}
+                      </h3>
+                    </div>
+                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
+          </div>
+        </section>
 
-            {/* How It Works */}
+        {/* Section 4 — How It Works */}
+        <section
+          className="px-5 sm:px-6 py-16 sm:py-20"
+          style={{ background: '#F5F0E4' }}
+        >
+          <div className="max-w-4xl mx-auto">
             <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-8 text-center"
               style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
             >
-              How It Works
+              14 days. Five domains. One deliverable.
             </h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { step: "1", icon: ClipboardList, title: "Days 1 to 2: Structured Intake", text: "We review your product, pilot terms, and integration documentation before any assessment begins." },
-                { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains, with targeted async questions as findings develop." },
+                { step: "2", icon: Search, title: "Days 3 to 10: Active Evaluation", text: "Assessment across all five domains with targeted async questions as findings develop." },
                 { step: "3", icon: FileText, title: "Days 11 to 12: Report Preparation", text: "Written report and prioritized remediation roadmap prepared." },
-                { step: "4", icon: Send, title: "Days 12 to 14: Report Delivered", text: "Clinical Readiness Report delivered. A document you can share with your board, investors, or health system counterparts." },
-                { step: "5", icon: Video, title: "Within 48 Hours: Live Presentation", text: "60-minute live findings presentation with both practitioners, clinical and systems perspective in the same room, with full Q&A." },
+                { step: "4", icon: Send, title: "Days 12 to 14: Report Delivered", text: "A document you can share with your board, investors, or health system counterparts." },
+                { step: "5", icon: Video, title: "Within 48 Hours: Live Presentation", text: "60-minute findings call with both practitioners, clinical and operational perspective in the same conversation. Full Q&A. Zero ambiguity about next steps." },
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
@@ -314,170 +320,108 @@ const ClinicalReadinessAssessment = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
 
-            <p
-              className="text-base font-inter text-center mb-8"
-              style={{ color: '#718DA9', lineHeight: '1.7' }}
+        {/* Section 5 — Why Us */}
+        <section
+          className="px-5 sm:px-6 py-16 sm:py-20"
+          style={{ background: '#F5F0E4' }}
+        >
+          <div className="max-w-3xl mx-auto text-center">
+            <h2
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-6"
+              style={{ color: '#1A2A3A', letterSpacing: '-0.02em', textWrap: 'balance' }}
             >
-              Fourteen days. Five domains. A deliverable your entire leadership team can act on.
-            </p>
-
-            {/* Who This Is For */}
-            <div
-              className="p-5 sm:p-8 rounded-2xl mb-6 sm:mb-8"
-              style={{
-                background: 'linear-gradient(135deg, rgba(113,141,169,0.06), rgba(113,141,169,0.02))',
-                border: '1.5px solid rgba(113,141,169,0.2)',
-              }}
-            >
-              <h3
-                className="text-xl sm:text-2xl font-playfair font-bold mb-5 sm:mb-6"
-                style={{ color: '#1A2A3A' }}
+              A Board-Certified OB/GYN and a Healthcare IT Architect who have been in the room where these decisions are made.
+            </h2>
+            <div className="max-w-[680px] mx-auto">
+              <p
+                className="text-base sm:text-lg font-inter mb-4"
+                style={{ color: '#4A5568', lineHeight: '1.8', textWrap: 'balance' }}
               >
-                Who This Is For
-              </h3>
-              <div className="space-y-3">
-                {[
-                  "Signed enterprise pilot or health system contract with a go-live date on the calendar",
-                  "First enterprise deployment where the cost of a failed pilot is measured in relationship capital, not just dollars",
-                  "Product operating in OB/GYN, maternal health, reproductive care, or women's digital health, where clinical trust and documentation accuracy are non-negotiable",
-                  "Leadership team that needs to walk into go-live knowing the most predictable failure points have been identified and addressed",
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="flex-shrink-0 mt-1" style={{ color: '#D4B65D' }} />
-                    <p className="text-base font-inter" style={{ color: '#4A5568', lineHeight: '1.7' }}>
-                      {item}
-                    </p>
-                  </div>
-                ))}
-              </div>
+                Nicole still sees patients. John has spent 15+ years building and optimizing the most clinically complex women's health workflow environments in enterprise healthcare.
+              </p>
+              <p
+                className="text-base sm:text-lg font-inter font-semibold"
+                style={{ color: '#1A2A3A', lineHeight: '1.8' }}
+              >
+                We don't assess in the abstract. We assess against what health systems actually require.
+              </p>
             </div>
+          </div>
+        </section>
 
-            {/* The Offer Ladder */}
+        {/* Section 6 — How This Fits */}
+        <section
+          className="px-5 sm:px-6 py-16 sm:py-20"
+          style={{ background: '#F5F0E4' }}
+        >
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="text-2xl sm:text-4xl font-playfair font-bold mb-6 text-center"
+              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
+            >
+              Not sure where to start?
+            </h2>
             <div
-              className="p-5 sm:p-8 rounded-2xl mb-8"
+              className="p-6 sm:p-8 rounded-2xl"
               style={{
                 background: '#FBF8F1',
                 border: '2px solid #D4B65D',
               }}
             >
-              <h3
-                className="text-xl sm:text-2xl font-playfair font-bold mb-4 text-center"
-                style={{ color: '#1A2A3A' }}
-              >
-                The Offer Ladder
-              </h3>
-              <p className="text-base font-inter max-w-2xl mx-auto mb-6" style={{ color: '#2A3B4F', lineHeight: '1.7' }}>
-                The Clinical Clarity Session is where fast triage happens: 90 minutes in, findings in your hands within 48 hours. The Clinical Readiness Assessment is what comes next when the stakes are too high for triage alone. Same team. Deeper scope. Fourteen days to comprehensive de-risking before your go-live date arrives.
+              <p className="text-base sm:text-lg font-inter mb-4" style={{ color: '#4A5568', lineHeight: '1.8', textWrap: 'balance' }}>
+                The Clinical Clarity Session is where fast triage happens: 90 minutes in, findings within 48 hours. The Clinical Readiness Assessment is what comes next when the stakes are too high for triage alone.
               </p>
-            </div>
-
-            {/* What Comes Next */}
-            <div className="mb-8 mt-4">
-              <h2
-                className="text-2xl sm:text-4xl font-playfair font-bold mb-4 text-center"
-                style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
-              >
-                What Comes Next
-              </h2>
-              <p
-                className="text-sm sm:text-lg font-inter text-center sm:text-center text-left max-w-3xl mx-auto"
-                style={{ color: '#4A5568', lineHeight: '1.7' }}
-              >
-                For companies whose assessment surfaces risks requiring ongoing oversight, across implementation, physician adoption, or clinical systems architecture, we offer a structured path to a deeper operating partnership. The Readiness Assessment is where that conversation begins.
+              <p className="text-base sm:text-lg font-inter font-semibold" style={{ color: '#1A2A3A', lineHeight: '1.8' }}>
+                Same team. Deeper scope. 14 days to comprehensive de-risking before your go-live date arrives.
               </p>
-            </div>
-
-            {/* FAQ */}
-            <h2
-              className="text-2xl sm:text-4xl font-playfair font-bold mb-4 sm:mb-6 text-center"
-              style={{ color: '#1A2A3A', letterSpacing: '-0.02em' }}
-            >
-              Frequently Asked Questions
-            </h2>
-
-            <div className="mb-8">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border-0 rounded-2xl overflow-hidden"
-                    style={{
-                      background: 'white',
-                      border: '1.5px solid rgba(243,218,115,0.3)',
-                      boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
-                    }}
-                  >
-                    <AccordionTrigger
-                      className="px-5 sm:px-8 py-5 sm:py-6 text-left hover:no-underline font-playfair font-bold text-base sm:text-xl"
-                      style={{ color: '#1A2A3A', letterSpacing: '-0.01em' }}
-                    >
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="px-5 sm:px-8 pb-5 sm:pb-6">
-                      <p className="text-sm sm:text-base font-inter leading-relaxed" style={{ color: '#4A5568', lineHeight: '1.8' }}>
-                        {faq.answer}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-
-            {/* Bottom CTA */}
-            <div className="text-center">
-              <div
-                className="inline-block p-5 sm:p-6 rounded-2xl mb-8 sm:mb-10"
-                style={{
-                  background: '#FBF8F1',
-                  border: '2px solid #D4B65D',
-                }}
-              >
-                <p className="text-base sm:text-lg font-inter font-medium italic" style={{ color: '#718DA9', lineHeight: '1.7' }}>
-                  Fourteen days to know exactly where your pilot is exposed. Before go-live, not after.
-                </p>
-              </div>
-
-              <div>
-                <Button
-                  onClick={handleBooking}
-                  className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
-                  style={{
-                    background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-                    color: '#2A3B4F',
-                    borderColor: 'rgba(255,255,255,0.25)',
-                    boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-                    backdropFilter: 'blur(8px)',
-                  }}
-                >
-                  Book Your Clinical Readiness Assessment
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </Button>
-              </div>
             </div>
           </div>
         </section>
-      </main>
 
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqData.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          }),
-        }}
-      />
+        {/* Section 7 — Bottom CTA */}
+        <section
+          className="px-5 sm:px-6 py-16 sm:py-24"
+          style={{ background: '#F5F0E4' }}
+        >
+          <div className="max-w-3xl mx-auto text-center">
+            <div
+              className="inline-block p-6 sm:p-8 rounded-2xl mb-8"
+              style={{
+                background: '#FBF8F1',
+                border: '2px solid #D4B65D',
+              }}
+            >
+              <p className="text-lg sm:text-xl font-inter font-bold" style={{ color: '#1A2A3A', lineHeight: '1.6', textWrap: 'balance' }}>
+                "Fourteen days to know exactly where your pilot is exposed. Before go-live, not after."
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <Button
+                onClick={handleBooking}
+                className="text-sm sm:text-base font-semibold rounded-lg px-5 sm:px-9 py-4 sm:py-5 border group transition-all duration-500 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(243,218,115,0.35)]"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
+                  color: '#2A3B4F',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                  boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  backdropFilter: 'blur(8px)',
+                }}
+              >
+                Book Your Clinical Readiness Assessment
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </Button>
+            </div>
+
+            <p className="text-sm font-inter" style={{ color: '#718DA9' }}>
+              14 days. Five domains. A board-ready deliverable your entire team can act on.
+            </p>
+          </div>
+        </section>
+      </main>
     </>
   );
 };

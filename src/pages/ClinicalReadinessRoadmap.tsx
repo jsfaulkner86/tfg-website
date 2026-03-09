@@ -117,7 +117,7 @@ const ClinicalReadinessRoadmap = () => {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
               {[
                 { step: "1", icon: ClipboardList, title: "Structured Intake", text: "You submit your product documentation, integration details, and current health system conversations before the assessment begins." },
                 { step: "2", icon: MessageSquare, title: "Async Q&A", text: "Targeted questions from our team as findings develop, so the final report reflects your actual situation, not a generic framework." },

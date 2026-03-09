@@ -357,8 +357,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thrive-beacon-studio.lovable.app/" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://thrive-beacon-studio.lovable.app/services" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thefaulknergroupadvisors.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://thefaulknergroupadvisors.com/services" }
   ]
 };
 

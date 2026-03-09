@@ -130,7 +130,7 @@ const ClinicalReadinessAssessment = () => {
 
         {/* Section 1 — The Problem */}
         <section
-          className="px-5 sm:px-6 py-16 sm:py-20"
+          className="px-5 sm:px-6 pt-10 pb-8 sm:pt-14 sm:pb-10"
           style={{
             background: 'linear-gradient(180deg, #FDFCF9 0%, #F5F0E4 100%)',
           }}

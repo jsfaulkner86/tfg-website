@@ -230,7 +230,7 @@ const AdvisoryPartnership = () => {
               We've been where you're trying to go.
             </h2>
 
-            <div className="mx-auto max-w-[680px] space-y-6">
+            <div className="space-y-6">
               <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
                 Dr. Nicole Faulkner spent years delivering care inside a major health system. She knows what gets dismissed in morning rounds and what earns a seat on the agenda.
               </p>

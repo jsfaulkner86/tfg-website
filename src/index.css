@@ -121,4 +121,17 @@ All colors MUST be HSL.
   .animate-shimmer {
     animation: shimmer 5s ease-in-out infinite;
   }
+
+  /* Glassy gold CTA button */
+  .btn-glassy {
+    background: linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%);
+    color: #2A3B4F;
+    border-color: rgba(255,255,255,0.25);
+    box-shadow: 0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+  .btn-glassy:hover {
+    box-shadow: 0 8px 40px rgba(243,218,115,0.35), inset 0 1px 0 rgba(255,255,255,0.5);
+  }
 }

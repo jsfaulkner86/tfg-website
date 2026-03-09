@@ -17,6 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_30px_hsl(45_35%_60%/0.3)] hover:shadow-[0_0_50px_hsl(45_35%_60%/0.5)] transition-all duration-500 border border-accent/20",
         accent: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300",
+        glassy: "btn-glassy rounded-lg font-semibold border transition-all duration-500 hover:scale-[1.03]",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -95,7 +95,7 @@ const DualBrain = () =>
       <Eyebrow>Our Approach</Eyebrow>
       <SectionHeading>Where Clinical Truth Meets Operational Reality</SectionHeading>
 
-      <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-8 md:mt-12">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-8">
         {/* Medical Brain */}
         <div
           className="rounded-2xl p-6 md:p-9 text-left transition-all duration-300 hover:-translate-y-1"

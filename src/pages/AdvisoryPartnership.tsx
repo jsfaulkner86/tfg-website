@@ -149,12 +149,10 @@ const AdvisoryPartnership = () => {
 
             <ul className="space-y-3">
               {whoThisIsFor.map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
+                <li key={index} className="flex items-start gap-3 sm:gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                   <p
-                    className={`font-inter text-base leading-relaxed text-muted-foreground md:text-lg ${
-                      index === 0 ? "whitespace-nowrap" : ""
-                    }`}
+                    className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg"
                     style={{ textWrap: "balance" }}
                   >
                     {item}

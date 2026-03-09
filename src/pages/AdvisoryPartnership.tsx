@@ -151,7 +151,12 @@ const AdvisoryPartnership = () => {
               {whoThisIsFor.map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
-                  <p className="font-inter text-base leading-relaxed text-muted-foreground md:text-lg" style={{ textWrap: 'balance' }}>
+                  <p
+                    className={`font-inter text-base leading-relaxed text-muted-foreground md:text-lg ${
+                      index === 0 ? "whitespace-nowrap" : ""
+                    }`}
+                    style={{ textWrap: "balance" }}
+                  >
                     {item}
                   </p>
                 </li>

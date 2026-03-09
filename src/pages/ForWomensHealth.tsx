@@ -580,7 +580,7 @@ const ForWomensHealth = () => {
 
         {/* ===== BOTTOM CTA BANNER ===== */}
         <section className="px-4 sm:px-6 relative" style={{
-          paddingTop: '40px', paddingBottom: '40px',
+          paddingTop: '24px', paddingBottom: '24px',
           background: '#0A1628',
           borderTop: '3px solid #F3DA73',
         }}>

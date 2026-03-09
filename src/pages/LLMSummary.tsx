@@ -84,9 +84,9 @@ const johnSchema = {
   alternateName: "Johnathon Faulkner",
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption strategy.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert"],
-  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
   knowsAbout: ["Healthcare IT Architecture", "EHR Integration", "Women's Health Technology", "Clinical Adoption Strategy"],
   alumniOf: { "@type": "Organization", name: "United States Marine Corps" }
 };

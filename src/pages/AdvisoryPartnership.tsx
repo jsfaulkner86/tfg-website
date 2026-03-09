@@ -141,9 +141,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Who This Is For */}
-        <section className="bg-background px-6 py-10 md:py-14">
+        <section className="bg-background px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <h2 className="mb-4 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               You're in the right place if:
             </h2>
 

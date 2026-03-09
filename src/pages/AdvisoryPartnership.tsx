@@ -110,11 +110,11 @@ const AdvisoryPartnership = () => {
               </p>
 
               <h1 className="mb-4 font-display text-[clamp(28px,3.8vw,52px)] font-bold leading-[1.08] text-primary-foreground">
-                Most femtech deals don't die in the demo.
+                Most femtech deals don't die in the demo
               </h1>
 
               <p className="mb-8 font-display text-[clamp(20px,2.6vw,36px)] font-bold leading-[1.2] text-accent">
-                They die in the decision meeting you weren't in.
+                They die in the decision meeting you weren't in
               </p>
 
               <p className="mx-auto mb-10 max-w-2xl font-inter text-[clamp(15px,1.6vw,20px)] leading-relaxed text-primary-foreground/85" style={{ textWrap: 'balance' }}>

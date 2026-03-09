@@ -314,7 +314,7 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 6 — Pull Quote */}
-        <section className="bg-muted/30 px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-muted/30 px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-4xl">
             <blockquote className="border-l-4 border-accent pl-5 sm:pl-6 md:pl-8">
               <p className="font-playfair text-lg font-bold leading-relaxed text-foreground italic sm:text-xl md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>

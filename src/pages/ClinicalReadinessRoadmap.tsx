@@ -242,7 +242,7 @@ const ClinicalReadinessRoadmap = () => {
               A real deliverable. Not another call.
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6 mb-10 sm:mb-16 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 mt-4">
               {[
                 { step: "1", icon: ClipboardList, title: "Structured Intake", text: "You submit your product documentation, integration details, and current health system conversations before we begin." },
                 { step: "2", icon: MessageSquare, title: "Async Q&A", text: "Targeted questions from our team as findings develop, so the report reflects your actual situation — not a generic framework." },

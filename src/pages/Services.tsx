@@ -472,9 +472,9 @@ const nicholeFaulknerSchema = {
   alternateName: ["Nicole Faulkner DO", "Nicole Faulkner D.O."],
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at WHIS.",
-  url: "https://thrive-beacon-studio.lovable.app",
+  url: "https://thefaulknergroupadvisors.com",
   sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
-  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thrive-beacon-studio.lovable.app" },
+  worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 
 const serviceSchemas = [

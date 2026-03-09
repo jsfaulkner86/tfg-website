@@ -162,7 +162,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Section 1 — Hero */}
-        <section className="relative w-full overflow-hidden pb-12 md:pb-20" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
+        <section className="relative w-full overflow-hidden pb-8 md:pb-10" style={{ paddingTop: 'max(180px, calc(180px + env(safe-area-inset-top, 0px)))' }}>
           <img
             src="/hero-boardroom.jpg"
             alt="The Faulkner Group women's health tech advisory team in a strategy session"
@@ -204,13 +204,13 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 2 — Qualification */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 md:mb-8 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
+            <h2 className="mb-4 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               You're in the right place if:
             </h2>
 
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {qualificationBullets.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="mt-[9px] h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
@@ -232,9 +232,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Section 3 — Offer Definition */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <div className="mb-6 text-center">
+            <div className="mb-4 text-center">
               <h2 className="mb-3 font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
                 What strategic advisory actually means.
               </h2>
@@ -258,9 +258,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Section 4 — Service Pillars */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-6 md:mb-8 text-center">
+            <div className="mb-4 md:mb-6 text-center">
               <h2 className="font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
                 Here's where we focus.
               </h2>
@@ -293,13 +293,13 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Section 5 — Credibility / Founder Bios */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-6 md:mb-8 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl" style={{ textWrap: 'balance' }}>
+            <h2 className="mb-4 text-center font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl" style={{ textWrap: 'balance' }}>
               We've been where you're trying to go.
             </h2>
 
-            <div className="space-y-5 sm:space-y-6">
+            <div className="space-y-4">
               <p className="font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
                 Dr. Nicole Faulkner spent years delivering care inside a major health system. She knows what gets dismissed in morning rounds and what earns a seat on the agenda.
               </p>
@@ -314,7 +314,7 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 6 — Pull Quote */}
-        <section className="bg-muted/30 px-5 sm:px-6 py-12 md:py-20">
+        <section className="bg-muted/30 px-5 sm:px-6 py-6 md:py-8">
           <div className="mx-auto max-w-4xl">
             <blockquote className="border-l-4 border-accent pl-5 sm:pl-6 md:pl-8">
               <p className="font-playfair text-lg font-bold leading-relaxed text-foreground italic sm:text-xl md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
@@ -325,13 +325,13 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* Section 7 — CTA Block */}
-        <section className="bg-background px-5 sm:px-6 py-12 md:py-20" style={{ paddingBottom: 'max(48px, calc(48px + env(safe-area-inset-bottom, 0px)))' }}>
+        <section className="bg-background px-5 sm:px-6 py-6 md:py-8" style={{ paddingBottom: 'max(24px, calc(24px + env(safe-area-inset-bottom, 0px)))' }}>
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="mb-4 font-playfair text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
               Schedule Your Discovery Call
             </h2>
 
-            <p className="mx-auto mb-6 md:mb-8 max-w-2xl font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
+            <p className="mx-auto mb-6 max-w-2xl font-inter text-[15px] leading-relaxed text-muted-foreground sm:text-base md:text-lg" style={{ textWrap: 'balance' }}>
               30 minutes. No pitch. Just a direct conversation about where you are and what it actually takes to move forward inside a health system that wasn't built with your product, or your patient, in mind.
             </p>
 

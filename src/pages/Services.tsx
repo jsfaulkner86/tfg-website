@@ -346,7 +346,7 @@ const IsThisYou = () =>
       <Eyebrow>Who We Serve</Eyebrow>
       <SectionHeading>The Faulkner Group Is Right For You If...</SectionHeading>
 
-      <div className="mt-8 md:mt-10 space-y-4 md:space-y-5 text-left max-w-2xl mx-auto">
+      <div className="mt-6 md:mt-8 space-y-3 md:space-y-4 text-left max-w-2xl mx-auto">
         {fitChecks.map((item) =>
       <div key={item} className="flex items-start gap-3">
             <Check className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: 'hsl(45, 62%, 56%)' }} />

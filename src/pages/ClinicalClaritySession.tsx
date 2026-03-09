@@ -273,7 +273,7 @@ const ClinicalClaritySession = () => {
 
         {/* SECTION 5 — BOTTOM LINE CTA */}
         <section
-          className="px-4 sm:px-6 py-10 sm:py-14"
+          className="px-4 sm:px-6 py-6 sm:py-8"
           style={{ background: "#F5F0E4" }}
         >
           <div className="max-w-4xl mx-auto">

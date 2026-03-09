@@ -21,8 +21,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "The Faulkner Group",
-  url: "https://thrive-beacon-studio.lovable.app",
-  logo: "https://thrive-beacon-studio.lovable.app/favicon.png",
+  url: "https://thefaulknergroupadvisors.com",
+  logo: "https://thefaulknergroupadvisors.com/favicon.png",
   description:
     "Boutique healthcare advisory firm specializing in clinical adoption strategy for women's health technology companies.",
   founder: [

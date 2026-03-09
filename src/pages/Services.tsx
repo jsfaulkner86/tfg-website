@@ -315,9 +315,8 @@ const Partnership = () =>
       <div className="text-center">
         <Button
         onClick={handleBooking}
-        className="text-base font-semibold rounded-md px-8 py-5 min-h-[48px] border-0 group transition-all duration-300"
-        style={{ backgroundColor: '#F3DA73', color: '#5882A1' }}>
-
+        variant="glassy"
+        className="text-base px-8 py-5 min-h-[48px] group">
           Explore Partnership
           <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
         </Button>

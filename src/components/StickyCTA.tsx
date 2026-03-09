@@ -139,14 +139,8 @@ const StickyCTA = () => {
           </p>
           <Button
             onClick={handleBooking}
-            className="group font-semibold rounded-lg border transition-all duration-500 text-sm w-full py-2.5 mt-1 hover:scale-[1.02] hover:shadow-[0_6px_30px_rgba(243,218,115,0.3)]"
-            style={{
-              background: 'linear-gradient(135deg, rgba(243,218,115,0.95) 0%, rgba(212,182,93,0.9) 100%)',
-              color: '#2A3B4F',
-              borderColor: 'rgba(255,255,255,0.25)',
-              boxShadow: '0 4px 24px rgba(243,218,115,0.25), inset 0 1px 0 rgba(255,255,255,0.4)',
-              backdropFilter: 'blur(8px)',
-            }}
+            variant="glassy"
+            className="group text-sm w-full py-2.5 mt-1"
           >
             Book a Clinical Clarity Session
             <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

@@ -167,46 +167,46 @@ const ForWomensHealth = () => {
             background: 'radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.03) 100%)'
           }} />
 
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
-              {/* Left - Headline */}
-              <div className={`space-y-8 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-                style={{ maxWidth: '650px', transitionDelay: '0.2s' }}>
-                <div>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
-                    color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
-                  }}>What We Give You That No One Else Does</h2>
-                  <p className="text-lg sm:text-xl font-inter font-light mb-6" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
-                    The tools, fluency, and clinical credibility to navigate the healthcare system on your terms.
-                  </p>
-                  <div className="relative overflow-hidden rounded-full" style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }}>
-                    <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)', animation: 'shimmer 3s linear infinite' }} />
-                  </div>
-                </div>
-
-                <div className="space-y-6 font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
-                  <p className="text-base sm:text-lg">
-                    Most women's health startups don't fail because of bad tech. They fail because <strong style={{ color: '#718DA9', fontWeight: 600 }}>the system is complicated</strong> - procurement cycles, payer strategy, regulatory pathways, and clinical governance are all barriers that require a different kind of expertise.
-                  </p>
-                  <p className="text-base sm:text-lg">
-                    We bring <strong style={{ color: '#718DA9', fontWeight: 600 }}>health system fluency, reimbursement intelligence, and funding strategy</strong> directly to founders who are too busy building to decode a system designed to slow them down.
-                  </p>
-
-                  <div className="w-full h-px my-6" style={{ background: 'rgba(243,218,115,0.3)' }} />
-
-                  <div className={`mt-8 p-8 rounded-xl relative overflow-hidden transition-all duration-700 ${valueVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
-                    style={{
-                      background: 'linear-gradient(135deg, #FFFFFF 0%, #EAF0F6 100%)',
-                      border: '2px solid #F3DA73', borderRadius: '16px',
-                      boxShadow: '0 8px 25px rgba(0,0,0,0.05)', transitionDelay: '0.6s'
-                    }}>
-                    <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
-                      <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>Only 3% of venture funding goes to women's health</strong> - and the founders building in this space face a system that was not designed for them. <span className="text-base font-normal" style={{ color: '#718DA9' }}>(Rock Health, Femtech Funding Report)</span>
-                    </p>
-                  </div>
-                </div>
+          <div className="max-w-5xl mx-auto relative z-10">
+            {/* Centered headline */}
+            <div className={`text-center mb-10 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: '0.2s' }}>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4" style={{
+                color: '#2A3B4F', letterSpacing: '-0.02em', lineHeight: '1.1', textShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>What We Give You That No One Else Does</h2>
+              <p className="text-lg sm:text-xl font-inter font-light mb-6 max-w-3xl mx-auto" style={{ color: '#718DA9', letterSpacing: '0.03em' }}>
+                The tools, fluency, and clinical credibility to navigate the healthcare system on your terms.
+              </p>
+              <div className="relative overflow-hidden rounded-full mx-auto" style={{ width: '80px', height: '3px', background: 'linear-gradient(90deg, #F3DA73, #D4B65D)' }}>
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)', animation: 'shimmer 3s linear infinite' }} />
               </div>
+            </div>
 
+            {/* Body text spread across full width */}
+            <div className={`grid md:grid-cols-2 gap-8 md:gap-12 transition-all duration-1000 ${valueVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              style={{ transitionDelay: '0.4s' }}>
+              <div className="font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
+                <p className="text-base sm:text-lg">
+                  Most women's health startups don't fail because of bad tech. They fail because <strong style={{ color: '#718DA9', fontWeight: 600 }}>the system is complicated</strong> - procurement cycles, payer strategy, regulatory pathways, and clinical governance are all barriers that require a different kind of expertise.
+                </p>
+              </div>
+              <div className="font-inter" style={{ lineHeight: '1.75', color: '#222', letterSpacing: '0.01em' }}>
+                <p className="text-base sm:text-lg">
+                  We bring <strong style={{ color: '#718DA9', fontWeight: 600 }}>health system fluency, reimbursement intelligence, and funding strategy</strong> directly to founders who are too busy building to decode a system designed to slow them down.
+                </p>
+              </div>
+            </div>
+
+            {/* Stat callout full width */}
+            <div className={`mt-10 p-8 rounded-xl relative overflow-hidden transition-all duration-700 ${valueVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+              style={{
+                background: 'linear-gradient(135deg, #FFFFFF 0%, #EAF0F6 100%)',
+                border: '2px solid #F3DA73', borderRadius: '16px',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.05)', transitionDelay: '0.6s'
+              }}>
+              <p className="text-xl sm:text-2xl font-inter leading-relaxed relative z-10 text-center" style={{ color: '#2A3B4F', letterSpacing: '-0.01em' }}>
+                <strong className="font-bold" style={{ color: '#718DA9', fontSize: '1.15em' }}>Only 3% of venture funding goes to women's health</strong> - and the founders building in this space face a system that was not designed for them. <span className="text-base font-normal" style={{ color: '#718DA9' }}>(Rock Health, Femtech Funding Report)</span>
+              </p>
             </div>
 
             {/* Bottom callout */}

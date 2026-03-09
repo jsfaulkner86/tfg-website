@@ -124,8 +124,8 @@ const ForWomensHealth = () => {
                   fontSize: 'clamp(24px, 3.2vw, 44px)',
                   lineHeight: 1.15,
                   maxWidth: '800px'
-                }}>For Women's Health
-Against Every Broken System
+                }}>For Women's Health 
+
                 <br />
                 Against Every Broken System.
               </h1>

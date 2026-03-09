@@ -87,7 +87,7 @@ const AdvisoryPartnership = () => {
 
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(160px+env(safe-area-inset-top,0px))] pb-16 md:pt-[200px] md:pb-32">
+        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-10 md:pt-[180px] md:pb-16">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare leadership team collaboration"
@@ -125,7 +125,7 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* The Promise */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-4xl text-center">
             <p className="font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
               "We embed with your team, clinically and operationally, and get your women's health technology from pilot to permanent program."
@@ -139,13 +139,13 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Who This Is For */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-3xl">
-            <h2 className="mb-10 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            <h2 className="mb-6 text-center font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
               You're in the right place if:
             </h2>
 
-            <ul className="space-y-5">
+            <ul className="space-y-3">
               {whoThisIsFor.map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
@@ -164,9 +164,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* What We Do */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-12 text-center">
+            <div className="mb-8 text-center">
               <h2 className="mb-4 font-playfair text-3xl font-bold tracking-tight text-foreground md:text-4xl">
                 What strategic advisory actually means.
               </h2>
@@ -202,9 +202,9 @@ const AdvisoryPartnership = () => {
         </div>
 
         {/* Why Us */}
-        <section className="bg-background px-6 py-16 md:py-24">
+        <section className="bg-background px-6 py-10 md:py-14">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-8 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
+            <h2 className="mb-6 font-playfair text-2xl font-bold leading-snug tracking-tight text-foreground md:text-3xl" style={{ textWrap: 'balance' }}>
               A Board-Certified OB/GYN and a Healthcare IT Architect, in the room with you.
             </h2>
 
@@ -220,9 +220,9 @@ const AdvisoryPartnership = () => {
         </section>
 
         {/* The Bottom Line */}
-        <section className="bg-muted/30 px-6 py-16 md:py-24">
+        <section className="bg-muted/30 px-6 py-10 md:py-14">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-12 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
+            <p className="mb-8 font-playfair text-xl font-bold leading-relaxed text-foreground md:text-2xl lg:text-3xl" style={{ textWrap: 'balance' }}>
               "Women's health innovation isn't failing because the products are bad. It's failing because the infrastructure to support them doesn't exist yet. We build that infrastructure. That's the job."
             </p>
 

@@ -118,9 +118,9 @@ const Hero = () => {
       </div>
 
       {/* Client logo bar */}
-      <div className="w-full py-3" style={{ background: 'rgba(10,22,40,0.75)' }}>
+      <div className="w-full py-3 bg-white">
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
-          <p className="text-center font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-white/50 mb-3">
+          <p className="text-center font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-3">
             Trusted By
           </p>
           <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14">

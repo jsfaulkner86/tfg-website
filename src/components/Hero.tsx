@@ -120,7 +120,7 @@ const Hero = () => {
       {/* Client logo bar */}
       <div className="w-full py-3 bg-white">
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
-          <p className="text-center font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-3">
+          <p className="text-center font-inter text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3" style={{ color: 'hsl(45, 62%, 56%)' }}>
             Trusted By
           </p>
           <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14">
@@ -134,7 +134,7 @@ const Hero = () => {
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                className="h-9 sm:h-11 md:h-12 w-auto rounded-md opacity-80 hover:opacity-100 transition-opacity"
+                className="h-11 sm:h-14 md:h-16 w-auto rounded-md opacity-80 hover:opacity-100 transition-opacity"
                 loading="lazy"
               />
             ))}

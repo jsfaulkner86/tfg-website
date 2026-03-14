@@ -118,7 +118,7 @@ const Hero = () => {
       </div>
 
       {/* Client logo bar */}
-      <div className="w-full py-3" style={{ background: 'hsl(216, 25%, 57%)' }}>
+      <div className="w-full py-5" style={{ background: 'hsl(216, 25%, 57%)' }}>
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <p className="text-center font-inter text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3" style={{ color: 'hsl(45, 62%, 56%)' }}>
             Trusted By

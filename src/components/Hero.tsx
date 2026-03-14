@@ -121,7 +121,7 @@ const Hero = () => {
       <div className="w-full py-3" style={{ background: 'rgba(10,22,40,0.75)' }}>
         <div className="max-w-4xl mx-auto px-5 sm:px-6">
           <p className="text-center font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-white/50 mb-3">
-            Companies We Work With
+            Trusted By
           </p>
           <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14">
             {[
@@ -134,7 +134,7 @@ const Hero = () => {
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                className={`${logo.h} w-auto brightness-0 invert opacity-70 hover:opacity-100 transition-opacity`}
+                className={`${logo.h} w-auto rounded-md opacity-80 hover:opacity-100 transition-opacity`}
                 loading="lazy"
               />
             ))}

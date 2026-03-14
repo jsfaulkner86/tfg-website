@@ -138,10 +138,10 @@ const Index = () => {
         <Hero />
         <Suspense fallback={<div className="min-h-screen" />}>
           <OnStage />
+          <Mission />
         </Suspense>
         <ServicePathways />
         <Suspense fallback={<div className="min-h-screen" />}>
-          <Mission />
           <Problem />
           <Approach />
           <Transformation />

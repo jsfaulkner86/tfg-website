@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="max-w-[820px] w-full">
             {/* Small caps label */}
             <p
-              className="mb-6 font-inter font-medium uppercase"
+              className="mb-4 sm:mb-6 font-inter font-medium uppercase"
               style={{
                 fontSize: '13px',
                 letterSpacing: '0.2em',

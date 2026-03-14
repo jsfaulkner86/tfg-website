@@ -63,7 +63,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p
-              className="mb-10 font-inter"
+              className="mb-6 sm:mb-10 font-inter"
               style={{
                 fontSize: 'clamp(16px, 1.6vw, 20px)',
                 color: 'rgba(255, 255, 255, 0.85)',

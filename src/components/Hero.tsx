@@ -125,16 +125,16 @@ const Hero = () => {
           </p>
           <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14">
             {[
-              { src: logoPanova, alt: "Panova Health", h: "h-6 sm:h-7" },
-              { src: logoConceive, alt: "Conceive", h: "h-6 sm:h-7" },
-              { src: logoBacktable, alt: "BackTable", h: "h-5 sm:h-6" },
-              { src: logoAmie, alt: "Amie", h: "h-6 sm:h-7" },
+              { src: logoPanova, alt: "Panova Health" },
+              { src: logoConceive, alt: "Conceive" },
+              { src: logoBacktable, alt: "BackTable" },
+              { src: logoAmie, alt: "Amie" },
             ].map((logo) => (
               <img
                 key={logo.alt}
                 src={logo.src}
                 alt={logo.alt}
-                className={`${logo.h} w-auto rounded-md opacity-80 hover:opacity-100 transition-opacity`}
+                className="h-9 sm:h-11 md:h-12 w-auto rounded-md opacity-80 hover:opacity-100 transition-opacity"
                 loading="lazy"
               />
             ))}

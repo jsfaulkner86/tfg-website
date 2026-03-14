@@ -1,4 +1,6 @@
 import { lazy, Suspense } from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ServicePathways from "@/components/ServicePathways";

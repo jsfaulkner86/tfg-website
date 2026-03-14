@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import logoPanova from "@/assets/logo-panova.png";
+import logoConceive from "@/assets/logo-conceive.png";
+import logoBacktable from "@/assets/logo-backtable.png";
+import logoAmie from "@/assets/logo-amie.png";
 
 const trustLabels = [
   "Clinical Readiness & Governance",

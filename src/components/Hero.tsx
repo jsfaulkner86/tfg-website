@@ -125,19 +125,19 @@ const Hero = () => {
           </p>
           <div className="grid grid-cols-2 gap-4 sm:flex sm:items-center sm:justify-center sm:gap-10 md:gap-14">
             {[
-              { src: logoPanova, alt: "Panova Health" },
-              { src: logoConceive, alt: "Conceive" },
-              { src: logoBacktable, alt: "BackTable" },
-              { src: logoAmie, alt: "Amie" },
+              { src: logoPanova, alt: "Panova Health", href: "https://panova.ai/" },
+              { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },
+              { src: logoBacktable, alt: "BackTable OB/GYN", href: "https://www.backtable.com/shows/obgyn" },
+              { src: logoAmie, alt: "Amie", href: "https://www.askamie.co/" },
             ].map((logo) => (
-              <div key={logo.alt} className="flex items-center justify-center">
+              <a key={logo.alt} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
                   className="h-10 sm:h-14 md:h-16 w-auto max-w-[140px] sm:max-w-none rounded-md opacity-80 hover:opacity-100 transition-opacity"
                   loading="lazy"
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>

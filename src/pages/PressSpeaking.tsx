@@ -82,7 +82,7 @@ const PressSpeaking = () => {
       <Header />
       <main className="overflow-x-hidden">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[60px] md:pt-[200px] md:pb-[140px]">
+        <section className="relative w-full overflow-hidden pt-[calc(180px+env(safe-area-inset-top,0px))] pb-[80px] md:pt-[200px] md:pb-[140px]">
           <img
             src="/hero-boardroom.jpg"
             alt="The Faulkner Group women's health tech advisory team in a strategy session"

@@ -142,7 +142,10 @@ const Index = () => {
           <OnStage />
           <Mission />
         </Suspense>
-        <div className="flex justify-center py-10 sm:py-14" style={{ background: 'hsl(var(--muted))' }}>
+        <div className="flex flex-col items-center py-10 sm:py-14 gap-4" style={{ background: 'hsl(var(--muted))' }}>
+          <p className="text-lg sm:text-xl font-display font-semibold" style={{ color: 'hsl(var(--foreground))' }}>
+            Do you want a quick intro call?
+          </p>
           <Button
             onClick={() => window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank')}
             variant="glassy"

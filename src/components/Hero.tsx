@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import logoPanova from "@/assets/logo-panova.png";
+import logoConceive from "@/assets/logo-conceive.png";
+import logoBacktable from "@/assets/logo-backtable.png";
+import logoAmie from "@/assets/logo-amie.png";
 
 const trustLabels = [
   "Clinical Readiness & Governance",
@@ -108,6 +112,31 @@ const Hero = () => {
               >
                 {label}
               </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Client logo bar */}
+      <div className="w-full py-3" style={{ background: 'rgba(10,22,40,0.75)' }}>
+        <div className="max-w-4xl mx-auto px-5 sm:px-6">
+          <p className="text-center font-inter text-[10px] sm:text-[11px] uppercase tracking-[0.15em] text-white/50 mb-3">
+            Companies We Work With
+          </p>
+          <div className="flex items-center justify-center gap-6 sm:gap-10 md:gap-14">
+            {[
+              { src: logoPanova, alt: "Panova Health", h: "h-6 sm:h-7" },
+              { src: logoConceive, alt: "Conceive", h: "h-6 sm:h-7" },
+              { src: logoBacktable, alt: "BackTable", h: "h-5 sm:h-6" },
+              { src: logoAmie, alt: "Amie", h: "h-6 sm:h-7" },
+            ].map((logo) => (
+              <img
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                className={`${logo.h} w-auto brightness-0 invert opacity-70 hover:opacity-100 transition-opacity`}
+                loading="lazy"
+              />
             ))}
           </div>
         </div>

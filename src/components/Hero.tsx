@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden pt-[140px] pb-[40px] md:pt-[200px] md:pb-[140px]" style={{ paddingTop: 'max(140px, calc(140px + env(safe-area-inset-top, 0px)))' }}>
+      <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[calc(200px+env(safe-area-inset-top,0px))] md:pb-[140px]">
         {/* Background Image */}
         <img
           src="/hero-boardroom.jpg"

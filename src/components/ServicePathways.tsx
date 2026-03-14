@@ -35,7 +35,7 @@ const ServicePathways = () => {
           Where to Start
         </p>
         <h2
-          className="text-center mb-12 font-display font-bold"
+          className="text-center mb-6 sm:mb-12 font-display font-bold"
           style={{
             fontSize: "clamp(22px, 2.8vw, 32px)",
             color: "hsl(var(--foreground))",

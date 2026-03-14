@@ -159,6 +159,21 @@ const Index = () => {
         <Suspense fallback={<div className="min-h-screen" />}>
           <Problem />
           <Approach />
+        </Suspense>
+        <div className="flex flex-col items-center py-10 sm:py-14 gap-4" style={{ background: 'hsl(var(--muted))' }}>
+          <p className="text-lg sm:text-xl font-display font-semibold" style={{ color: 'hsl(var(--foreground))' }}>
+            Do you want a quick intro call?
+          </p>
+          <Button
+            onClick={() => window.open('https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner', '_blank')}
+            variant="glassy"
+            className="text-sm sm:text-base px-6 sm:px-9 py-4 sm:py-5 group"
+          >
+            Let's Meet
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
+        </div>
+        <Suspense fallback={<div className="min-h-screen" />}>
           <Transformation />
           
           <Results />

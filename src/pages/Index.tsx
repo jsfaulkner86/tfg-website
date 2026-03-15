@@ -125,6 +125,61 @@ const nicholeFaulknerSchema = {
   }
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Why do most women's health tech pilots fail to scale?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "90% of health tech pilots fail to convert to full-scale implementation without clinical alignment. The gap isn't about the technology — it's about trust, workflow fit, and physician buy-in. Without a clinical and operational strategy from day one, even the best platforms get stuck in endless pilots."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How do you get physicians to adopt new health technology?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Physicians don't adopt technology because it's good. They adopt it because a trusted colleague told them it works. The Faulkner Group builds physician adoption through peer-to-peer advocacy, KOL engagement, CMIO engagement strategies, and internal champion development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What clinical governance frameworks do health systems require before approving new tech?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Health systems and payers require governance and risk frameworks including clinical environment audits, integration barrier identification, controlled rollback protocols, escalation pathways, and compliance documentation."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What is The 4 Pillars of Clinical Adoption framework?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The four pillars are: (1) Clinical Readiness and Governance, (2) Physician Adoption and Champion Development, (3) Training, Education, and Change Management, (4) Sales, Customer Success, and Deployment."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What is a Clinical Clarity Session and who is it for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A Clinical Clarity Session is a 90-minute virtual diagnostic with a board-certified OB/GYN and a Healthcare IT Architect. It costs $1,500 and identifies the 1-3 highest-risk failure points in your clinical adoption strategy. A written Clinical Clarity Summary is delivered within 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How do VC and PE firms reduce clinical adoption risk in health tech portfolios?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Through clinical and operational diligence that evaluates physician sentiment, governance readiness, EHR integration viability, and workflow alignment before a Series B, add-on acquisition, or board review."
+      }
+    }
+  ]
+};
+
 const Index = () => {
   return (
     <>
@@ -133,7 +188,7 @@ const Index = () => {
         description="John Faulkner (Healthcare IT Architect) and Dr. Nicole Faulkner (Board-Certified OB/GYN) help women's health tech founders drive physician adoption and scale from pilot to enterprise."
         canonical="https://thefaulknergroupadvisors.com/"
         ogImage="https://thefaulknergroupadvisors.com/og-image.jpg"
-        jsonLd={[orgSchema, johnFaulknerSchema, nicholeFaulknerSchema]}
+        jsonLd={[orgSchema, johnFaulknerSchema, nicholeFaulknerSchema, faqSchema]}
       />
       <Header />
       <main className="overflow-x-hidden">

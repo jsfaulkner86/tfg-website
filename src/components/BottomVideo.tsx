@@ -31,7 +31,7 @@ const BottomVideo = () => {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative px-6 overflow-hidden py-12 md:py-20"
+      className="relative px-6 overflow-hidden py-6 md:py-10"
       style={{
         background: 'linear-gradient(180deg, #5A7D99 0%, #4A6B85 100%)'
       }}

@@ -44,7 +44,7 @@ const Problem = () => {
   return (
     <section 
       ref={sectionRef}
-      className="px-6 relative overflow-hidden py-12 md:py-20"
+      className="px-6 relative overflow-hidden py-6 md:py-10"
       style={{
         background: 'linear-gradient(180deg, #FDFCF9 0%, #E9EEF3 100%)'
       }}

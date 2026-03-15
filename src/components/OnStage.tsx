@@ -20,7 +20,7 @@ const OnStage = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 px-6 relative overflow-hidden"
+      className="py-8 md:py-12 px-6 relative overflow-hidden"
       style={{
         background: "linear-gradient(180deg, rgba(10,22,40,0.97) 0%, rgba(20,35,55,0.98) 100%)",
       }}

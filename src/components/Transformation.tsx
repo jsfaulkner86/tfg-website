@@ -47,7 +47,7 @@ const Transformation = () => {
     <section
       id="outcomes"
       ref={sectionRef}
-      className="px-6 relative overflow-hidden py-12 md:py-20"
+      className="px-6 relative overflow-hidden py-6 md:py-10"
       style={{
         background: 'linear-gradient(180deg, #FDFCF9 0%, #F9F6EC 100%)'
       }}>

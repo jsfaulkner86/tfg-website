@@ -160,7 +160,7 @@ const Index = () => {
           <Problem />
           <Approach />
         </Suspense>
-        <div className="flex flex-col items-center py-10 sm:py-14 gap-4" style={{ background: 'hsl(var(--muted))' }}>
+        <div className="flex flex-col items-center py-6 sm:py-8 gap-3" style={{ background: 'hsl(var(--muted))' }}>
           <p className="text-lg sm:text-xl font-display font-semibold" style={{ color: 'hsl(var(--foreground))' }}>
             Ready to get started?
           </p>

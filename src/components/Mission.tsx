@@ -32,7 +32,7 @@ const Mission = () => {
     <section
       id="mission"
       ref={sectionRef}
-      className="px-6 relative overflow-hidden py-12 md:py-20"
+      className="px-6 relative overflow-hidden py-6 md:py-10"
       style={{
         background: 'linear-gradient(180deg, rgba(255,255,255,0.97) 0%, rgba(113,141,169,0.04) 100%)'
       }}>

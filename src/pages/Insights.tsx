@@ -33,6 +33,83 @@ const defaultAuthor = {
 
 const articles: Article[] = [
   {
+    slug: "epic-stork-optimization-obgyn",
+    title: "Epic Stork Optimization: How OB/GYN Teams Reclaim Time at the Bedside",
+    excerpt:
+      "Your OB/GYN team did not choose medicine to spend their shift in a documentation queue. Here is how optimizing Epic Stork gives clinicians back the time they need at the bedside.",
+    category: "EHR Optimization",
+    date: "March 16, 2026",
+    readTime: "12 min read",
+    content: `
+      <p>Your OB/GYN team did not choose medicine to spend their shift in a documentation queue.</p>
+      <p>But for most labor and delivery units running Epic Stork, that is exactly what is happening.</p>
+      <p>Epic Stork is one of the most powerful obstetric care modules available in healthcare IT today. It is designed to manage the full continuum of women's health care, from the first prenatal visit through labor and delivery and into the postpartum period. When it is built well and configured to reflect how care actually happens, it reduces documentation burden, improves care coordination, and gives clinicians the time and focus they need to practice at the top of their license.</p>
+      <blockquote>When it is built poorly, it becomes the reason your best physicians are burning out.</blockquote>
+
+      <h2>What Epic Stork Actually Does</h2>
+      <p>Epic Stork is Epic's dedicated obstetric care module, built to support prenatal record management, labor and delivery workflows, fetal monitoring integration, newborn management, postnatal care tracking, and patient engagement through MyChart.</p>
+      <p>It integrates across the Epic ecosystem, connecting OB/GYN workflows with nursing, anesthesia, neonatology, laboratory, radiology, and revenue cycle in a single clinical environment. When those integrations are configured correctly, care teams operate from one shared source of truth. When they are not, teams resort to workarounds, verbal relays, and duplicate documentation that introduces both inefficiency and error.</p>
+      <p>The difference between those two outcomes is almost never the software. It is the build.</p>
+
+      <h2>The Hidden Cost of a Poor Stork Build</h2>
+      <p>Most health systems implement Epic Stork and then leave it largely untouched for years. They go live, they move on, and the clinical team adapts to whatever configuration was handed to them, even when that configuration was built for a generic workflow rather than their specific population, practice patterns, or staffing model.</p>
+      <p>The result is what clinicians describe as "note bloat": excessive mandatory fields, SmartForms that do not match how clinicians think, and Order Sets that require ten clicks to accomplish what should take two. Documentation that should take 8 minutes takes 22. Shift notes bleed into personal time. Cognitive load accumulates. And eventually, good clinicians leave.</p>
+      <blockquote>Physician burnout is estimated to cost the U.S. healthcare system $4.6 billion annually in turnover, recruitment, and reduced productivity.</blockquote>
+      <p>In OB/GYN, a specialty already facing a growing workforce shortage, the margin for documentation inefficiency is zero.</p>
+
+      <h2>What Optimized Epic Stork Looks Like</h2>
+      <p>An optimized Epic Stork environment is built around how your clinical team actually practices, not around a default configuration that Epic shipped with the implementation.</p>
+      <p>Optimization means:</p>
+      <ul>
+        <li>SmartForms designed to match the cognitive sequence of a real prenatal visit, not an administrative checklist</li>
+        <li>SmartPhrases that reduce free-text documentation without sacrificing clinical nuance</li>
+        <li>Flowsheets that capture labor progression intuitively, so nurses spend time at the bedside, not at the keyboard</li>
+        <li>Order Sets aligned with current ACOG guidelines, reviewed by actual OB/GYNs, and updated on a defined change control schedule</li>
+        <li>Fetal monitoring integration that displays heart rate and contraction patterns directly in the patient chart without requiring a separate login or manual data transfer</li>
+        <li>Role-based views so a labor and delivery nurse, a certified nurse midwife, and a perinatologist each see exactly what they need without sorting through what they do not</li>
+      </ul>
+      <p>When these elements are in place, Epic Stork does what it was designed to do. It removes friction from care delivery so clinicians can focus on the patient in the room.</p>
+
+      <h2>The Optimization Process: What It Involves</h2>
+      <p>Optimizing Epic Stork is not a one-time project. It is a discipline. But it starts with a clear-eyed audit of where your current build is creating friction and where the highest-value improvements live.</p>
+
+      <h2>Step 1: Workflow Discovery</h2>
+      <p>This means sitting with your clinical team, not just reviewing build documentation. Understanding how an OB hospitalist actually documents an emergent delivery is different from understanding the theoretical workflow in the system. Discovery surfaces the gap between what was built and what is actually used.</p>
+
+      <h2>Step 2: Gap Analysis</h2>
+      <p>Once workflows are mapped, the gaps become visible. Missing SmartPhrases. Order Sets that have not been touched since go-live. Flowsheets with redundant fields. Documentation requirements that exist because someone asked for them years ago and no one removed them. Gap analysis turns clinical frustration into an actionable build roadmap.</p>
+
+      <h2>Step 3: Clinician-Informed Build</h2>
+      <p>Every build decision should be validated by a clinician who practices in the specialty. This is the step most IT-led optimization projects skip. A technically correct build that does not reflect real clinical practice will not be adopted. Full stop.</p>
+
+      <h2>Step 4: Role-Specific Training</h2>
+      <p>Updated builds require updated training. And that training must be designed for the specific role, not the department. A postpartum nurse and a maternal fetal medicine specialist interact with Stork differently. Training that treats them the same produces adoption rates that reflect that lack of care.</p>
+
+      <h2>Step 5: Go-Live Support and Ongoing Governance</h2>
+      <p>The optimization is not complete at go-live. A monthly change control schedule, proactive Epic enhancement adoption, and Gold Stars program participation are what separate organizations that continuously improve from those that stagnate between implementations.</p>
+
+      <h2>Who This Is For</h2>
+      <p>Epic Stork optimization is the right investment if your health system is experiencing any of the following:</p>
+      <ul>
+        <li>OB/GYN providers reporting documentation fatigue or excessive after-hours charting</li>
+        <li>Low Epic adoption scores or usage rates in the women's health service line</li>
+        <li>A recent or upcoming Epic upgrade that requires workflow redesign</li>
+        <li>A new women's health service line or facility that needs a tailored Stork build</li>
+        <li>Post-go-live regret where the implementation delivered a technically functional system but clinical teams are not using it effectively</li>
+      </ul>
+      <p>If any of those sound familiar, the issue is almost certainly not your team. It is the build they were handed.</p>
+
+      <h2>The Faulkner Group Approach to Stork Optimization</h2>
+      <p>The Faulkner Group specializes exclusively in Epic optimization for Women's Health. Our work is led by an Epic-certified consultant with over 14 years of experience across Stork, ClinDoc, and Ambulatory, working in close partnership with a board-certified OB/GYN who brings 10 years of clinical practice to every build decision.</p>
+      <p>We do not optimize in the abstract. We build what your clinicians will actually use, designed around how care happens in your system, validated by someone who has delivered babies and documented in Epic at the same time.</p>
+      <p>The goal is simple: reduce the burden, give providers more time with their patients, and help them reconnect with why they became clinicians in the first place.</p>
+      <p>If your team is surviving Epic instead of thriving in it, that is the problem we solve.</p>
+      <p style="margin-top: 2rem;">
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Schedule a Discovery Call</a>
+      </p>
+    `,
+  },
+  {
     slug: "what-is-clinical-readiness-womens-health",
     title: "What Is Clinical Readiness in Women's Health and Why Most Health Systems Don't Have It",
     excerpt:

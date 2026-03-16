@@ -33,12 +33,88 @@ const defaultAuthor = {
 
 const articles: Article[] = [
   {
+    slug: "how-to-evaluate-femtech-vendor",
+    title: "How to Evaluate a Femtech Vendor: What Health Systems Need to Ask Before Signing",
+    excerpt:
+      "Most health systems evaluate femtech vendors the wrong way. They evaluate the product. They should be evaluating the partnership.",
+    category: "Health System Strategy",
+    date: "March 16, 2026",
+    readTime: "14 min read",
+    content: `
+      <p>Most health systems evaluate femtech vendors the wrong way.</p>
+      <p>They evaluate the product. They should be evaluating the partnership.</p>
+      <p>A femtech solution that performs beautifully in a controlled demo can fail completely in a live clinical environment. Not because the technology was misrepresented, but because the questions that determine real-world success were never asked during the evaluation process. By the time the gaps surface, the contract is signed, the go-live date is set, and the clinical team is already frustrated.</p>
+      <p>This is fixable. But it requires a different evaluation framework, one built around clinical deployment reality rather than feature lists and pitch decks.</p>
+
+      <h2>Why Standard Vendor Evaluation Falls Short in Women's Health</h2>
+      <p>Femtech occupies a unique position in the healthcare vendor landscape. It operates at the intersection of consumer health technology, clinical care, and a patient population that has historically been underserved by both. The solutions are often founder-led, mission-driven companies building products for conditions that established health IT vendors ignored entirely.</p>
+      <p>That is a strength. It is also a risk factor for health systems that apply generic SaaS procurement criteria to clinical deployment decisions.</p>
+      <p>Standard vendor evaluation focuses on security certifications, pricing, and feature parity. Those things matter. But they do not answer the questions that determine whether a femtech tool will actually be used by your clinical team, trusted by your patients, and sustainable inside your EHR environment 18 months after go-live.</p>
+      <p>The femtech sector is maturing fast. In 2026, health system buyers have more options, more data on what works, and more regulatory guidance than ever before. The evaluation process needs to mature at the same pace.</p>
+
+      <h2>The 7 Questions Every Health System Must Ask Before Signing</h2>
+
+      <h2>1. How does this solution integrate with our EHR, and who owns the integration work?</h2>
+      <p>This is the first question and the most important one. Femtech tools that exist outside the clinical workflow are tools that clinicians will not use. Ask specifically how the solution integrates with Epic, Oracle Health, or whatever platform your system runs. Ask who builds the integration, who tests it, who maintains it after go-live, and what happens when Epic releases an upgrade that breaks it.</p>
+      <blockquote>If the vendor cannot answer those questions with specificity, the integration is not ready. And an unintegrated femtech solution is a liability to your clinical team, not an asset.</blockquote>
+
+      <h2>2. What does your implementation process look like, and who is on your implementation team?</h2>
+      <p>Implementation is where femtech pilots fail. Ask for a detailed implementation timeline, the specific roles on the vendor's implementation team, and examples of comparable deployments at health systems of similar size and complexity. Ask what the vendor does if a go-live is delayed. Ask what the first 90 days of support look like.</p>
+      <p>A vendor that leads with product features and struggles to describe their implementation process with confidence is telling you something important.</p>
+
+      <h2>3. How was your clinical content developed, and by whom?</h2>
+      <p>Women's health is a clinical specialty with specific guidelines, nuanced symptom profiles, and an evidence base that evolves rapidly. ACOG published its first comprehensive endometriosis diagnostic guidance in February 2026. The clinical content inside your femtech solution needs to reflect current evidence, not the evidence base from the year the product was built.</p>
+      <p>Ask whether clinical content was developed with board-certified specialists. Ask how often it is reviewed and updated. Ask who holds clinical accountability for the guidance embedded in the platform.</p>
+
+      <h2>4. How does your solution address health equity?</h2>
+      <p>If a femtech tool was built primarily on data from one demographic, it will perform unevenly across your patient population. This is not a theoretical concern. AI models trained without race-disaggregated data produce recommendations that are less accurate for the populations that already face the worst outcomes.</p>
+      <blockquote>Ask for outcome data segmented by patient demographics. Ask whether the solution has been validated in racially and socioeconomically diverse populations. If the vendor does not have that data, that is your answer.</blockquote>
+
+      <h2>5. What does success look like at 6, 12, and 24 months, and how is it measured?</h2>
+      <p>Every vendor will tell you their solution improves outcomes. Ask them to define which outcomes, by how much, measured how, and over what time period. Ask for customer references at health systems that have used the solution for more than 12 months and ask those references whether the vendor's outcome claims matched reality.</p>
+      <p>Health systems that define success metrics before signing are the ones that generate the data they need to justify renewal and expansion. Vendors that resist defining metrics early are telling you something about what their data actually shows.</p>
+
+      <h2>6. What is your reimbursement strategy, and how does it apply to our payer mix?</h2>
+      <p>A femtech solution that cannot be reimbursed is a cost center, not a revenue driver. Reimbursement in women's health is complex, varies by payer, and in many cases is still being established for newer digital health modalities. Ask the vendor specifically how their solution generates or supports reimbursement in your market and with your payer contracts.</p>
+      <p>If the answer is "we are still working on it," factor that into your timeline and budget expectations accordingly.</p>
+
+      <h2>7. What does your post go-live support model look like?</h2>
+      <p>Go-live is not the end of the implementation. It is the beginning of the adoption phase, which is where most femtech deployments either succeed or quietly fail. Ask what dedicated support the vendor provides in the first 90 days. Ask how they handle workflow issues surfaced by clinical staff after go-live. Ask whether they have a customer success function or whether support is handled by a general helpdesk.</p>
+      <blockquote>A vendor that disappears after go-live has not delivered a clinical solution. They have delivered a product. Those are not the same thing.</blockquote>
+
+      <h2>Red Flags to Watch For</h2>
+      <p>Beyond the formal questions, health system evaluators should watch for the following patterns during vendor evaluation:</p>
+      <ul>
+        <li>The demo shows a polished UI but the vendor cannot describe the data model or clinical logic underneath it</li>
+        <li>The implementation timeline is described in weeks for a deployment that realistically requires months</li>
+        <li>References provided are all from direct-to-consumer or employer health contexts, with no health system deployments at scale</li>
+        <li>The vendor cannot name a specific clinical leader who holds accountability for the platform's evidence base</li>
+        <li>Equity and demographic validation data are described as "in development" or "coming soon"</li>
+        <li>The pricing model changes significantly between the initial conversation and the formal proposal without a clear explanation</li>
+      </ul>
+
+      <h2>Build a Clinical Readiness Evaluation Into Every Vendor Process</h2>
+      <p>The questions above evaluate the vendor. But they only work if your health system is also evaluating itself honestly.</p>
+      <p>A femtech solution can have excellent EHR integration, a rigorous implementation team, and peer-reviewed clinical content and still fail inside a health system that is not operationally ready to receive it. Clinical champion identification, workflow redesign, staff training, and outcome measurement frameworks are health system responsibilities, not vendor responsibilities.</p>
+      <blockquote>The most successful femtech partnerships in 2026 are the ones where both sides did their preparation work. The vendor arrived ready to implement and the health system arrived ready to integrate.</blockquote>
+      <p>That dual readiness is not accidental. It is built.</p>
+
+      <h2>How The Faulkner Group Supports Your Evaluation Process</h2>
+      <p>The Faulkner Group works with health systems at every stage of femtech vendor evaluation and deployment. We help clinical and operational leaders ask the right questions before signing, identify the internal readiness gaps that will determine deployment success, and build the workflow and training infrastructure that turns a vendor agreement into a clinical result.</p>
+      <p>If you have a femtech evaluation underway or a recent deployment that is not performing as expected, a Clinical Clarity Session is the fastest way to identify where the gap is and what to do about it.</p>
+      <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Assessment</a>
+      </p>
+    `,
+  },
+  {
     slug: "americas-maternal-health-crisis-2026",
     title: "America's Maternal Health Crisis in 2026: The Data, The Gaps, and What Must Change",
     excerpt:
       "A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago. That sentence should stop every health system leader in their tracks.",
     category: "Maternal Health",
-    date: "March 14, 2026",
+    date: "March 2, 2026",
     readTime: "16 min read",
     content: `
       <p>A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago.</p>
@@ -102,7 +178,7 @@ const articles: Article[] = [
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "February 18, 2026",
+    date: "January 27, 2026",
     readTime: "14 min read",
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>
@@ -179,7 +255,7 @@ const articles: Article[] = [
     excerpt:
       "Your OB/GYN team did not choose medicine to spend their shift in a documentation queue. Here is how optimizing Epic Stork gives clinicians back the time they need at the bedside.",
     category: "EHR Optimization",
-    date: "January 22, 2026",
+    date: "November 11, 2025",
     readTime: "12 min read",
     content: `
       <p>Your OB/GYN team did not choose medicine to spend their shift in a documentation queue.</p>
@@ -256,7 +332,7 @@ const articles: Article[] = [
     excerpt:
       "Health systems do not have a technology problem in women's health. They have a readiness problem. And most of them do not know it until a deployment fails.",
     category: "Clinical Strategy",
-    date: "December 5, 2025",
+    date: "September 23, 2025",
     readTime: "10 min read",
     content: `
       <p>Health systems do not have a technology problem in women's health.</p>
@@ -315,7 +391,7 @@ const articles: Article[] = [
     excerpt:
       "Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.",
     category: "Clinical Strategy",
-    date: "October 17, 2025",
+    date: "August 8, 2025",
     readTime: "8 min read",
     content: `
       <p>Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.</p>
@@ -370,7 +446,7 @@ const articles: Article[] = [
     excerpt:
       "Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy. Here is what separates winners from the rest.",
     category: "Clinical Strategy",
-    date: "September 2, 2025",
+    date: "July 15, 2025",
     readTime: "6 min read",
     content: `
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>
@@ -393,7 +469,7 @@ const articles: Article[] = [
     excerpt:
       "Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.",
     category: "Payer Strategy",
-    date: "July 28, 2025",
+    date: "June 29, 2025",
     readTime: "4 min read",
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>
@@ -416,7 +492,7 @@ const articles: Article[] = [
     excerpt:
       "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
-    date: "June 14, 2025",
+    date: "June 3, 2025",
     readTime: "5 min read",
     content: `
       <p>Selling to health systems is not like selling to startups or even enterprise SaaS. The sales cycle is longer, the stakeholders are more complex, and the consequences of getting it wrong are severe.</p>

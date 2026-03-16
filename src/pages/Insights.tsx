@@ -178,7 +178,7 @@ const articles: Article[] = [
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "February 18, 2026",
+    date: "January 27, 2026",
     readTime: "14 min read",
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>

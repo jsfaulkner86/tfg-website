@@ -8,6 +8,15 @@ import BottomVideo from "@/components/BottomVideo";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import defaultHeroImage from "@/assets/insights-hero-default.jpg";
+import articleFemtechVendor from "@/assets/article-femtech-vendor.jpg";
+import articleMaternalHealth from "@/assets/article-maternal-health.jpg";
+import articleMisdiagnosis from "@/assets/article-misdiagnosis.jpg";
+import articleEpicStork from "@/assets/article-epic-stork.jpg";
+import articleClinicalReadiness from "@/assets/article-clinical-readiness.jpg";
+import articleFemtechPilots from "@/assets/article-femtech-pilots.jpg";
+import articlePhysicianAdoption from "@/assets/article-physician-adoption.jpg";
+import articleReimbursement from "@/assets/article-reimbursement.jpg";
+import articleHealthSystemSales from "@/assets/article-health-system-sales.jpg";
 
 // ─── ARTICLE DATA ─────────────────────────────────────────────
 // To add a new article, simply add an object to this array.

@@ -1258,7 +1258,7 @@ const Insights = () => {
         </div>
 
         {/* Articles Grid */}
-        <div className="max-w-5xl mx-auto px-4 md:px-6 pb-16 md:pb-24 grid gap-5 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 pb-12 md:pb-24 grid gap-4 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((article) => (
             <button
               key={article.slug}

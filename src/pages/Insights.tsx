@@ -49,7 +49,7 @@ const articles: Article[] = [
     excerpt:
       "At least 1 in 8 women has PCOS. Most of them spent years being told something else was wrong. A multi-year diagnostic delay is not a clinical mystery. It is a system failure with a documented root cause and a clear set of solutions.",
     category: "Women's Health",
-    date: "March 14, 2026",
+    date: "March 10, 2026",
     readTime: "20 min read",
     image: articlePcosDiagnosis,
     content: `

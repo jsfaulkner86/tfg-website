@@ -27,7 +27,7 @@ export interface Article {
 const defaultAuthor = {
   name: "John Faulkner",
   title: "Founder & CEO, The Faulkner Group",
-  bio: "John brings over two decades of healthcare IT architecture and clinical strategy experience. He advises femtech founders and health systems on bridging the gap between technology and clinical adoption.",
+  bio: "John brings over 15 years of healthcare IT architecture and clinical strategy experience. He advises femtech founders and health systems on bridging the gap between technology and clinical adoption.",
   headshot: johnHeadshot,
 };
 

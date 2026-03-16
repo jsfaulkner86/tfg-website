@@ -469,7 +469,7 @@ const articles: Article[] = [
     excerpt:
       "Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.",
     category: "Payer Strategy",
-    date: "July 28, 2025",
+    date: "June 29, 2025",
     readTime: "4 min read",
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>

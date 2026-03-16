@@ -119,7 +119,7 @@ const articles: Article[] = [
     excerpt:
       "Women drive 80% of all household healthcare decisions. And health systems are still treating their care as a cost center. That disconnect is not just a health equity problem. It is a financial miscalculation of historic proportions.",
     category: "Health System Strategy",
-    date: "March 16, 2026",
+    date: "February 18, 2026",
     readTime: "18 min read",
     image: articleRoiWomensHealth,
     content: `

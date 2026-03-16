@@ -890,12 +890,13 @@ const Insights = () => {
               </h1>
 
               <p
-                className="mb-8 md:mb-10 font-inter px-2 max-w-2xl mx-auto"
+                className="mb-6 md:mb-10 font-inter px-2 max-w-2xl mx-auto"
                 style={{
-                  fontSize: 'clamp(15px, 1.6vw, 20px)',
+                  fontSize: 'clamp(14px, 1.6vw, 20px)',
                   color: 'rgba(255,255,255,0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                   textWrap: 'balance' as any,
+                  lineHeight: 1.6,
                 }}
               >
                 Expert perspectives on clinical strategy, health system partnerships, and building health tech that scales.

@@ -823,10 +823,11 @@ const Insights = () => {
                 setSelectedArticle(article);
                 window.scrollTo(0, 0);
               }}
-              className="group text-left rounded-xl overflow-hidden transition-all duration-300"
+              className="group text-left rounded-xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(201,168,76,0.15)]"
               style={{
                 background: "rgba(255,255,255,0.04)",
-                border: "1px solid rgba(255,255,255,0.08)",
+                border: "1px solid rgba(201,168,76,0.18)",
+                boxShadow: "0 0 12px rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.08)",
               }}
             >
               <div className="h-40 overflow-hidden">

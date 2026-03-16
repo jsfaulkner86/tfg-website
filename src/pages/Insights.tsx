@@ -257,7 +257,7 @@ const articles: Article[] = [
     excerpt:
       "A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago. That sentence should stop every health system leader in their tracks.",
     category: "Maternal Health",
-    date: "March 2, 2026",
+    date: "December 15, 2025",
     readTime: "16 min read",
     image: articleMaternalHealth,
     content: `

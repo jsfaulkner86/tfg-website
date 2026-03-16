@@ -17,6 +17,7 @@ import articleFemtechPilots from "@/assets/article-femtech-pilots.jpg";
 import articlePhysicianAdoption from "@/assets/article-physician-adoption.jpg";
 import articleReimbursement from "@/assets/article-reimbursement.jpg";
 import articleHealthSystemSales from "@/assets/article-health-system-sales.jpg";
+import articleRoiWomensHealth from "@/assets/article-roi-womens-health.jpg";
 
 // ─── ARTICLE DATA ─────────────────────────────────────────────
 // To add a new article, simply add an object to this array.

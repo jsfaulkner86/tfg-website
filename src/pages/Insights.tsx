@@ -463,6 +463,7 @@ const articles: Article[] = [
     category: "Clinical Strategy",
     date: "July 15, 2025",
     readTime: "6 min read",
+    image: articlePhysicianAdoption,
     content: `
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>
       <p>The assumption is simple: build a great product, show it to hospital leadership, and physicians will adopt it. But that is not how health systems work.</p>

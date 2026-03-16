@@ -49,6 +49,7 @@ const articles: Article[] = [
     category: "Health System Strategy",
     date: "March 16, 2026",
     readTime: "14 min read",
+    image: articleFemtechVendor,
     content: `
       <p>Most health systems evaluate femtech vendors the wrong way.</p>
       <p>They evaluate the product. They should be evaluating the partnership.</p>

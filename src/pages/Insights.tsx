@@ -192,7 +192,7 @@ const articles: Article[] = [
     excerpt:
       "Health systems do not have a technology problem in women's health. They have a readiness problem. And most of them do not know it until a deployment fails.",
     category: "Clinical Strategy",
-    date: "March 16, 2026",
+    date: "January 8, 2026",
     readTime: "10 min read",
     content: `
       <p>Health systems do not have a technology problem in women's health.</p>

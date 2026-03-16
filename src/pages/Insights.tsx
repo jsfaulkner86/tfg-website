@@ -191,6 +191,7 @@ const articles: Article[] = [
     category: "Women's Health",
     date: "January 27, 2026",
     readTime: "14 min read",
+    image: articleMisdiagnosis,
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>
       <p>And the healthcare system is paying a price it refuses to calculate.</p>

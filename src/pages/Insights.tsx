@@ -370,8 +370,20 @@ const ArticleView = ({
       />
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
+        {/* Back Navigation */}
+        <div className="pt-36 pb-4 px-6">
+          <div className="max-w-[720px] mx-auto">
+            <button
+              onClick={onBack}
+              className="text-[#C9A84C] font-inter text-sm hover:underline flex items-center gap-1"
+            >
+              ← Back to Insights
+            </button>
+          </div>
+        </div>
+
         {/* Hero Image */}
-        <div className="relative w-full" style={{ height: "420px" }}>
+        <div className="relative w-full" style={{ height: "380px" }}>
           <img
             src={heroImage}
             alt={article.title}
@@ -386,12 +398,6 @@ const ArticleView = ({
           />
           <div className="absolute bottom-0 left-0 right-0 px-6 pb-10">
             <div className="max-w-[720px] mx-auto">
-              <button
-                onClick={onBack}
-                className="text-[#C9A84C] font-inter text-sm mb-6 hover:underline flex items-center gap-1"
-              >
-                ← Back to Insights
-              </button>
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="bg-[#C9A84C]/20 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter">
                   {article.category}

@@ -371,7 +371,7 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="pt-36 pb-4 px-6">
+        <div className="pt-36 pb-6 px-6">
           <div className="max-w-[720px] mx-auto">
             <button
               onClick={onBack}

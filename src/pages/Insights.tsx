@@ -448,8 +448,8 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="px-6" style={{ paddingTop: "calc(9rem + 24px)", paddingBottom: "24px" }}>
-          <div className="max-w-[720px] mx-auto">
+        <div className="max-w-[1100px] mx-auto px-6 flex" style={{ paddingTop: "calc(9rem + 24px)", paddingBottom: "24px" }}>
+          <div className="flex-1 min-w-0 max-w-[720px] lg:mx-0 mx-auto">
             <button
               onClick={onBack}
               className="inline-flex items-center font-inter text-sm font-medium rounded-lg transition-all duration-300"
@@ -474,6 +474,8 @@ const ArticleView = ({
               ← Back to Insights
             </button>
           </div>
+          {/* Spacer to match TOC sidebar width on desktop */}
+          <div className="hidden lg:block w-[240px] flex-shrink-0" />
         </div>
 
         {/* Hero Image */}

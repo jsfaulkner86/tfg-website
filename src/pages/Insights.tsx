@@ -487,6 +487,7 @@ const articles: Article[] = [
     category: "Payer Strategy",
     date: "June 29, 2025",
     readTime: "4 min read",
+    image: articleReimbursement,
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>
       <h2>Why This Matters Now</h2>

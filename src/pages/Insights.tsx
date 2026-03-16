@@ -718,11 +718,11 @@ const Insights = () => {
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Hero */}
-        <section className="pt-44 pb-16 px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-playfair text-white mb-4">
+        <section className="px-4 md:px-6 text-center" style={{ paddingTop: "max(11rem, calc(160px + env(safe-area-inset-top, 0px)))", paddingBottom: "3rem" }}>
+          <h1 className="text-3xl md:text-5xl font-playfair text-white mb-4">
             Insights
           </h1>
-          <p className="text-white/70 font-inter text-lg max-w-2xl mx-auto">
+          <p className="text-white/70 font-inter text-base md:text-lg max-w-2xl mx-auto">
             Expert perspectives on clinical strategy, health system partnerships, and building health tech that scales.
           </p>
         </section>

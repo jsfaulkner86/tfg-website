@@ -859,7 +859,7 @@ const Insights = () => {
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[180px] md:pb-[60px]">
+        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-[32px] md:pt-[180px] md:pb-[60px]">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare strategy and clinical insights"

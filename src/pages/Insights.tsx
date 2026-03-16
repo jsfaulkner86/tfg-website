@@ -1273,7 +1273,7 @@ const Insights = () => {
                 boxShadow: "0 0 12px rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.08)",
               }}
             >
-              <div className="h-40 overflow-hidden relative">
+              <div className="h-32 sm:h-40 overflow-hidden relative">
                 <img
                   src={article.image || defaultHeroImage}
                   alt={article.title}

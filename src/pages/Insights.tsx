@@ -859,13 +859,49 @@ const Insights = () => {
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Hero */}
-        <section className="px-4 md:px-6 text-center" style={{ paddingTop: "max(11rem, calc(160px + env(safe-area-inset-top, 0px)))", paddingBottom: "3rem" }}>
-          <h1 className="text-3xl md:text-5xl font-playfair text-white mb-4">
-            Insights
-          </h1>
-          <p className="text-white/70 font-inter text-base md:text-lg max-w-2xl mx-auto">
-            Expert perspectives on clinical strategy, health system partnerships, and building health tech that scales.
-          </p>
+        <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[180px] md:pb-[60px]">
+          <img
+            src="/hero-boardroom.jpg"
+            alt="Healthcare strategy and clinical insights"
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(10, 22, 40, 0.6)' }} />
+
+          <div className="relative z-10 flex items-center justify-center px-6 text-center">
+            <div className="max-w-[820px]">
+              <p
+                className="mb-4 font-inter font-medium uppercase"
+                style={{
+                  fontSize: '13px',
+                  letterSpacing: '0.2em',
+                  color: 'hsl(45, 62%, 56%)'
+                }}
+              >
+                Expert Perspectives
+              </p>
+
+              <h1
+                className="mb-4 md:mb-6 font-display font-bold text-white"
+                style={{ fontSize: 'clamp(26px, 3.8vw, 52px)', lineHeight: 1.1 }}
+              >
+                <span className="block">Insights</span>
+              </h1>
+
+              <p
+                className="mb-8 md:mb-10 font-inter px-2 max-w-2xl mx-auto"
+                style={{
+                  fontSize: 'clamp(15px, 1.6vw, 20px)',
+                  color: 'rgba(255,255,255,0.85)',
+                  textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                  textWrap: 'balance' as any,
+                }}
+              >
+                Expert perspectives on clinical strategy, health system partnerships, and building health tech that scales.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Category Filter */}

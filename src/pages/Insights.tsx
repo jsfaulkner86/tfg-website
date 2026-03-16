@@ -400,7 +400,7 @@ const articles: Article[] = [
     excerpt:
       "Your OB/GYN team did not choose medicine to spend their shift in a documentation queue. Here is how optimizing Epic Stork gives clinicians back the time they need at the bedside.",
     category: "EHR Optimization",
-    date: "November 11, 2025",
+    date: "October 7, 2025",
     readTime: "12 min read",
     image: articleEpicStork,
     content: `

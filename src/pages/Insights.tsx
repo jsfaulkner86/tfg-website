@@ -449,7 +449,7 @@ const ArticleView = ({
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
         <div className="pt-36 pb-6 px-6">
-          <div className="max-w-[720px] mx-auto">
+          <div className="flex justify-center">
             <button
               onClick={onBack}
               className="text-[#C9A84C] font-inter text-sm hover:underline flex items-center gap-1"

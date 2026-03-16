@@ -173,6 +173,7 @@ All colors MUST be HSL.
     color: #C9A84C;
     text-decoration: underline;
     text-underline-offset: 3px;
+    word-break: break-word;
   }
 
   .article-content ul,
@@ -245,8 +246,39 @@ All colors MUST be HSL.
     margin-bottom: 0;
   }
 
-  /* Section divider between major h2 blocks */
-  .article-content h2 + p::after {
-    /* no auto-divider; handled manually with gold hr */
+  /* ─── Mobile overrides for articles ─── */
+  @media (max-width: 767px) {
+    .article-content h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      padding-left: 10px;
+    }
+
+    .article-content h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+    }
+
+    .article-content blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1rem 1rem 1.25rem;
+      font-size: 1.05rem;
+    }
+
+    .article-content blockquote::before {
+      font-size: 2.5rem;
+      top: -4px;
+      left: 4px;
+    }
+
+    /* Ensure inline CTA buttons stack on mobile */
+    .article-content p[style*="display: flex"] {
+      flex-direction: column !important;
+    }
+
+    .article-content p[style*="display: flex"] a {
+      text-align: center;
+    }
   }
 }

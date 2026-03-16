@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, Clock, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Clock, ChevronDown, ChevronUp } from "lucide-react";
 import Header from "@/components/Header";
 import SEOHead from "@/components/SEOHead";
 import StickyCTA from "@/components/StickyCTA";
 import BottomVideo from "@/components/BottomVideo";
+import johnHeadshot from "@/assets/john-headshot.jpg";
+import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
+import defaultHeroImage from "@/assets/insights-hero-default.jpg";
 
 // ─── ARTICLE DATA ─────────────────────────────────────────────
 // To add a new article, simply add an object to this array.
@@ -14,11 +17,19 @@ export interface Article {
   title: string;
   excerpt: string;
   category: string;
-  date: string; // e.g. "March 15, 2026"
-  readTime: string; // e.g. "5 min read"
-  image?: string; // optional hero image URL
-  content: string; // full article body (supports basic HTML)
+  date: string;
+  readTime: string;
+  image?: string;
+  author?: { name: string; title: string; bio: string; headshot: string };
+  content: string;
 }
+
+const defaultAuthor = {
+  name: "John Faulkner",
+  title: "Founder & CEO, The Faulkner Group",
+  bio: "John brings over two decades of healthcare IT architecture and clinical strategy experience. He advises femtech founders and health systems on bridging the gap between technology and clinical adoption.",
+  headshot: johnHeadshot,
+};
 
 const articles: Article[] = [
   {
@@ -36,7 +47,8 @@ const articles: Article[] = [
       <p>A pilot needs more than a supportive physician. It needs someone with the positional authority to change workflows, update documentation protocols, and hold teams accountable. Without that, even the best technology sits unused after the kickoff call.</p>
 
       <h2>2. EHR Integration Was Not Scoped Before the Agreement Was Signed</h2>
-      <p>Over 58% of healthcare IT professionals say EHR integration challenges are a primary cause of care delays. Femtech vendors often sign health system agreements without a confirmed integration pathway into Epic, Oracle Health, or whatever platform the system runs. The result is a disconnected solution that clinicians cannot trust and will not use.</p>
+      <blockquote>Over 58% of healthcare IT professionals say EHR integration challenges are a primary cause of care delays.</blockquote>
+      <p>Femtech vendors often sign health system agreements without a confirmed integration pathway into Epic, Oracle Health, or whatever platform the system runs. The result is a disconnected solution that clinicians cannot trust and will not use.</p>
 
       <h2>3. Clinical Workflows Were Not Mapped in Advance</h2>
       <p>Disruption to clinical workflow is one of the four primary barriers to digital health adoption in practice settings. When a new femtech tool requires clinicians to log into a separate portal, download reports manually, or reenter data, adoption drops immediately. Workflow design has to happen before go-live, not after.</p>
@@ -51,7 +63,7 @@ const articles: Article[] = [
       <p>Clinical readiness is not a buzzword. It is the operational state a health system must reach before a new digital health solution can be deployed safely and effectively.</p>
       <p>It includes workflow mapping, EHR integration planning, staff training, change management, and outcome measurement. When any one of those elements is missing, the pilot is already at risk before the first patient encounter.</p>
       <p>This is the gap The Faulkner Group was built to close. Our work sits at the intersection of clinical expertise and operational strategy. We assess whether a health system is truly ready to adopt, launch, and sustain women's health technology before the agreement is signed. And for femtech founders, we prepare the health system side of the equation so their solution has the environment it needs to perform.</p>
-      <p>More than 80% of women report feeling unheard by healthcare professionals. When a femtech tool is deployed into an unprepared system, that experience does not improve. It gets digitized and scaled.</p>
+      <blockquote>More than 80% of women report feeling unheard by healthcare professionals. When a femtech tool is deployed into an unprepared system, that experience does not improve. It gets digitized and scaled.</blockquote>
 
       <h2>What Clinical Readiness Actually Looks Like</h2>
       <p>A clinically ready health system can answer yes to all of the following before a femtech go-live:</p>
@@ -73,15 +85,11 @@ const articles: Article[] = [
       <h2>Work With The Faulkner Group</h2>
       <p>The Faulkner Group is a boutique advisory firm focused on clinical readiness and operational strategy for women's health technology adoption. We work with health systems to prepare their clinical environment, and with femtech founders to ensure their solution lands in a system that is ready to use it.</p>
       <p>If your pilot has stalled, or you want to make sure your next one does not, start with our Clinical Readiness Assessment. It is the fastest way to identify the gaps before they cost you the contract.</p>
-      <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #F3DA73; color: #1a2332; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Schedule a Clinical Clarity Session</a>
-        <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #F3DA73; color: #F3DA73; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
-      </p>
     `,
   },
   {
     slug: "why-physician-adoption-fails",
-    title: "Why Physician Adoption Fails — And What Founders Can Do About It",
+    title: "Why Physician Adoption Fails and What Founders Can Do About It",
     excerpt:
       "Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy. Here is what separates winners from the rest.",
     category: "Clinical Strategy",
@@ -91,15 +99,15 @@ const articles: Article[] = [
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>
       <p>The assumption is simple: build a great product, show it to hospital leadership, and physicians will adopt it. But that is not how health systems work.</p>
       <h2>The Real Barrier</h2>
-      <p>Physician adoption is not a feature problem — it is a workflow problem. Clinicians do not resist technology because they are luddites. They resist technology that adds friction to an already overwhelming day.</p>
+      <p>Physician adoption is not a feature problem, it is a workflow problem. Clinicians do not resist technology because they are luddites. They resist technology that adds friction to an already overwhelming day.</p>
       <p>The companies that win understand this. They design their implementation around existing clinical workflows, not against them.</p>
       <h2>Three Things Founders Can Do Today</h2>
       <ol>
-        <li><strong>Map the clinical workflow first.</strong> Before you pitch, understand exactly where your product fits in the physician's day. Not the IT team's day — the physician's day.</li>
+        <li><strong>Map the clinical workflow first.</strong> Before you pitch, understand exactly where your product fits in the physician's day. Not the IT team's day, the physician's day.</li>
         <li><strong>Get a clinical champion early.</strong> One physician who believes in your product is worth more than ten IT approvals. Find them, partner with them, and build your case study together.</li>
         <li><strong>Design for the 2-minute test.</strong> If a physician cannot see value within 2 minutes of interaction, adoption will fail. Period.</li>
       </ol>
-      <p>At The Faulkner Group, we help founders build physician adoption strategies that actually work — because we have sat on both sides of the table.</p>
+      <p>At The Faulkner Group, we help founders build physician adoption strategies that actually work, because our team has sat on both sides of the table.</p>
     `,
   },
   {
@@ -113,7 +121,7 @@ const articles: Article[] = [
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>
       <h2>Why This Matters Now</h2>
-      <p>Investors increasingly want to see a clear path to reimbursement before they write a check. Health systems want to know that your product will not become a cost center. And payers want evidence — real evidence — that your solution improves outcomes.</p>
+      <p>Investors increasingly want to see a clear path to reimbursement before they write a check. Health systems want to know that your product will not become a cost center. And payers want evidence, real evidence, that your solution improves outcomes.</p>
       <h2>The Checklist</h2>
       <ul>
         <li>Do you have a CPT or HCPCS code strategy?</li>
@@ -129,7 +137,7 @@ const articles: Article[] = [
     slug: "health-system-sales-mistakes",
     title: "5 Health System Sales Mistakes That Kill Deals Before They Start",
     excerpt:
-      "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make — and how to avoid them.",
+      "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
     date: "March 5, 2026",
     readTime: "5 min read",
@@ -149,10 +157,303 @@ const articles: Article[] = [
   },
 ];
 
-// ─── CATEGORIES ───────────────────────────────────────────────
+// ─── HELPERS ──────────────────────────────────────────────────
 const allCategories = ["All", ...Array.from(new Set(articles.map((a) => a.category)))];
 
-// ─── COMPONENT ────────────────────────────────────────────────
+function extractHeadings(html: string): { id: string; text: string }[] {
+  const regex = /<h2[^>]*>(.*?)<\/h2>/gi;
+  const headings: { id: string; text: string }[] = [];
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const text = match[1].replace(/<[^>]*>/g, "");
+    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    headings.push({ id, text });
+  }
+  return headings;
+}
+
+function injectHeadingIds(html: string): string {
+  return html.replace(/<h2([^>]*)>(.*?)<\/h2>/gi, (_match, attrs, inner) => {
+    const text = inner.replace(/<[^>]*>/g, "");
+    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    return `<h2${attrs} id="${id}">${inner}</h2>`;
+  });
+}
+
+// ─── ARTICLE VIEW ─────────────────────────────────────────────
+const ArticleView = ({
+  article,
+  onBack,
+}: {
+  article: Article;
+  onBack: () => void;
+}) => {
+  const [activeHeading, setActiveHeading] = useState("");
+  const [tocOpen, setTocOpen] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const headings = extractHeadings(article.content);
+  const processedContent = injectHeadingIds(article.content);
+  const author = article.author || defaultAuthor;
+  const heroImage = article.image || defaultHeroImage;
+
+  // Related articles (exclude current, max 3)
+  const related = articles.filter((a) => a.slug !== article.slug).slice(0, 3);
+
+  // Scroll spy for TOC
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveHeading(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-100px 0px -60% 0px", threshold: 0.1 }
+    );
+
+    const els = contentRef.current?.querySelectorAll("h2[id]");
+    els?.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [article.slug]);
+
+  const scrollToHeading = useCallback((id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTocOpen(false);
+    }
+  }, []);
+
+  return (
+    <>
+      <SEOHead
+        title={`${article.title} | The Faulkner Group Insights`}
+        description={article.excerpt}
+        canonical={`https://thefaulknergroupadvisors.com/insights#${article.slug}`}
+      />
+      <Header />
+      <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
+        {/* Hero Image */}
+        <div className="relative w-full" style={{ height: "420px" }}>
+          <img
+            src={heroImage}
+            alt={article.title}
+            className="w-full h-full object-cover"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(15,26,46,0.3) 0%, rgba(15,26,46,0.85) 70%, rgba(15,26,46,1) 100%)",
+            }}
+          />
+          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10">
+            <div className="max-w-[720px] mx-auto">
+              <button
+                onClick={onBack}
+                className="text-[#C9A84C] font-inter text-sm mb-6 hover:underline flex items-center gap-1"
+              >
+                ← Back to Insights
+              </button>
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <span className="bg-[#C9A84C]/20 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter">
+                  {article.category}
+                </span>
+                <span className="text-white/50 text-sm font-inter flex items-center gap-1">
+                  <Calendar size={14} /> {article.date}
+                </span>
+                <span className="text-white/50 text-sm font-inter flex items-center gap-1">
+                  <Clock size={14} /> {article.readTime}
+                </span>
+              </div>
+              <h1
+                className="text-3xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
+                style={{
+                  textShadow:
+                    "0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)",
+                }}
+              >
+                {article.title}
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile TOC */}
+        {headings.length > 0 && (
+          <div className="lg:hidden max-w-[720px] mx-auto px-6 mt-8">
+            <button
+              onClick={() => setTocOpen(!tocOpen)}
+              className="w-full flex items-center justify-between px-4 py-3 rounded-lg font-inter text-sm font-medium text-white/80"
+              style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)" }}
+            >
+              <span>Table of Contents</span>
+              {tocOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            </button>
+            {tocOpen && (
+              <nav className="mt-2 rounded-lg p-4 space-y-2" style={{ background: "rgba(255,255,255,0.04)" }}>
+                {headings.map((h) => (
+                  <button
+                    key={h.id}
+                    onClick={() => scrollToHeading(h.id)}
+                    className={`block w-full text-left text-sm font-inter py-1.5 px-3 rounded transition-colors duration-200 ${
+                      activeHeading === h.id
+                        ? "text-[#C9A84C] bg-[#C9A84C]/10"
+                        : "text-white/50 hover:text-white/80"
+                    }`}
+                  >
+                    {h.text}
+                  </button>
+                ))}
+              </nav>
+            )}
+          </div>
+        )}
+
+        {/* Content + Desktop TOC */}
+        <div className="max-w-[1100px] mx-auto px-6 pt-10 pb-16 flex gap-12">
+          {/* Article Content */}
+          <div className="flex-1 min-w-0 max-w-[720px] mx-auto lg:mx-0">
+            <div
+              ref={contentRef}
+              className="article-content font-inter"
+              style={{ fontSize: "17px", lineHeight: "1.8", color: "#D1D5DB" }}
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+
+            {/* Gold divider */}
+            <div className="my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
+
+            {/* Author Bio */}
+            <div
+              className="rounded-xl p-6 md:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6"
+              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+            >
+              <img
+                src={author.headshot}
+                alt={author.name}
+                className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                style={{ border: "2px solid #C9A84C" }}
+              />
+              <div>
+                <h3 className="text-white font-playfair text-lg font-bold mb-1 text-left">
+                  {author.name}
+                </h3>
+                <p className="text-[#C9A84C] font-inter text-sm mb-3">
+                  {author.title}
+                </p>
+                <p className="text-white/60 font-inter text-sm leading-relaxed">
+                  {author.bio}
+                </p>
+              </div>
+            </div>
+
+            {/* Gold divider */}
+            <div className="my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
+
+            {/* Continue Reading */}
+            {related.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-playfair text-white mb-8 text-left">
+                  Continue Reading
+                </h2>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {related.map((r) => (
+                    <button
+                      key={r.slug}
+                      onClick={() => {
+                        onBack();
+                        setTimeout(() => {
+                          window.scrollTo(0, 0);
+                          // We re-select from parent
+                        }, 0);
+                      }}
+                      className="group text-left rounded-xl p-5 transition-all duration-300 hover:border-[#C9A84C]/30"
+                      style={{
+                        background: "rgba(255,255,255,0.04)",
+                        border: "1px solid rgba(255,255,255,0.08)",
+                      }}
+                    >
+                      <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-2.5 py-0.5 rounded-full font-inter mb-3">
+                        {r.category}
+                      </span>
+                      <h3 className="text-white font-playfair text-base mb-2 group-hover:text-[#C9A84C] transition-colors text-left">
+                        {r.title}
+                      </h3>
+                      <span className="text-white/40 text-xs font-inter">
+                        {r.date}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            )}
+          </div>
+
+          {/* Desktop TOC Sidebar */}
+          {headings.length > 0 && (
+            <aside className="hidden lg:block w-[240px] flex-shrink-0 sticky top-36 self-start">
+              <p className="text-white/40 font-inter text-xs uppercase tracking-widest mb-4">
+                On this page
+              </p>
+              <nav className="space-y-1.5">
+                {headings.map((h) => (
+                  <button
+                    key={h.id}
+                    onClick={() => scrollToHeading(h.id)}
+                    className={`block w-full text-left text-[13px] font-inter py-1.5 pl-3 border-l-2 transition-all duration-200 ${
+                      activeHeading === h.id
+                        ? "border-[#C9A84C] text-[#C9A84C]"
+                        : "border-transparent text-white/40 hover:text-white/70 hover:border-white/20"
+                    }`}
+                  >
+                    {h.text}
+                  </button>
+                ))}
+              </nav>
+            </aside>
+          )}
+        </div>
+
+        {/* Full-width CTA Banner */}
+        <section
+          className="py-20 px-6"
+          style={{
+            background:
+              "linear-gradient(135deg, #0a1628 0%, #142238 50%, #0a1628 100%)",
+            borderTop: "1px solid rgba(201,168,76,0.15)",
+          }}
+        >
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-playfair text-white mb-4">
+              Ready to Close the Clinical Readiness Gap?
+            </h2>
+            <p className="text-white/60 font-inter text-lg mb-8 max-w-xl mx-auto">
+              Whether your pilot has stalled or you are preparing your first health system partnership, our team can help you build the clinical foundation for success.
+            </p>
+            <a
+              href="/clinical-clarity-session"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-inter font-semibold text-base transition-all duration-300 hover:scale-[1.03]"
+              style={{
+                background: "#C9A84C",
+                color: "#0f1a2e",
+                boxShadow: "0 0 30px rgba(201,168,76,0.25)",
+              }}
+            >
+              Schedule a Clinical Clarity Session
+              <ArrowRight size={18} />
+            </a>
+          </div>
+        </section>
+      </main>
+      <BottomVideo />
+      <StickyCTA />
+    </>
+  );
+};
+
+// ─── LISTING VIEW ─────────────────────────────────────────────
 const Insights = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
@@ -164,48 +465,10 @@ const Insights = () => {
 
   if (selectedArticle) {
     return (
-      <>
-        <SEOHead
-          title={`${selectedArticle.title} | The Faulkner Group Insights`}
-          description={selectedArticle.excerpt}
-          canonical={`https://thefaulknergroupadvisors.com/insights#${selectedArticle.slug}`}
-        />
-        <Header />
-        <main className="min-h-screen bg-gradient-to-b from-[#2C3E50] to-[#1a2332]">
-          <div className="max-w-3xl mx-auto px-6 pt-44 pb-24">
-            <button
-              onClick={() => setSelectedArticle(null)}
-              className="text-[#F3DA73] font-inter text-sm mb-8 hover:underline flex items-center gap-1"
-            >
-              ← Back to Insights
-            </button>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="bg-[#F3DA73]/15 text-[#F3DA73] text-xs font-semibold px-3 py-1 rounded-full font-inter">
-                {selectedArticle.category}
-              </span>
-              <span className="text-white/50 text-sm font-inter flex items-center gap-1">
-                <Calendar size={14} /> {selectedArticle.date}
-              </span>
-              <span className="text-white/50 text-sm font-inter flex items-center gap-1">
-                <Clock size={14} /> {selectedArticle.readTime}
-              </span>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-playfair text-white leading-tight mb-10 text-left">
-              {selectedArticle.title}
-            </h1>
-            <article
-              className="prose prose-invert prose-lg max-w-none font-inter
-                prose-headings:font-playfair prose-headings:text-[#F3DA73] prose-headings:text-left
-                prose-p:text-white/80 prose-li:text-white/80 prose-ol:text-white/80 prose-ul:text-white/80
-                prose-strong:text-white prose-a:text-[#F3DA73]
-                [&_*]:text-white/80 [&_h2]:text-[#F3DA73] [&_strong]:text-white"
-              dangerouslySetInnerHTML={{ __html: selectedArticle.content }}
-            />
-          </div>
-        </main>
-        <BottomVideo />
-        <StickyCTA />
-      </>
+      <ArticleView
+        article={selectedArticle}
+        onBack={() => setSelectedArticle(null)}
+      />
     );
   }
 
@@ -217,7 +480,7 @@ const Insights = () => {
         canonical="https://thefaulknergroupadvisors.com/insights"
       />
       <Header />
-      <main className="min-h-screen bg-gradient-to-b from-[#2C3E50] to-[#1a2332]">
+      <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Hero */}
         <section className="pt-44 pb-16 px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-playfair text-white mb-4">
@@ -236,9 +499,15 @@ const Insights = () => {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-inter font-medium transition-all duration-300 ${
                 selectedCategory === cat
-                  ? "bg-[#F3DA73] text-[#1a2332]"
-                  : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
+                  ? "text-[#0f1a2e]"
+                  : "text-white/70 hover:text-white"
               }`}
+              style={{
+                background:
+                  selectedCategory === cat
+                    ? "#C9A84C"
+                    : "rgba(255,255,255,0.08)",
+              }}
             >
               {cat}
             </button>
@@ -254,24 +523,37 @@ const Insights = () => {
                 setSelectedArticle(article);
                 window.scrollTo(0, 0);
               }}
-              className="group text-left bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-[#F3DA73]/30 transition-all duration-300"
+              className="group text-left rounded-xl overflow-hidden transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.04)",
+                border: "1px solid rgba(255,255,255,0.08)",
+              }}
             >
-              <span className="inline-block bg-[#F3DA73]/15 text-[#F3DA73] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-4">
-                {article.category}
-              </span>
-              <h2 className="text-xl font-playfair text-white mb-3 group-hover:text-[#F3DA73] transition-colors duration-300 text-left">
-                {article.title}
-              </h2>
-              <p className="text-white/60 font-inter text-sm mb-4 line-clamp-3">
-                {article.excerpt}
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-white/40 text-xs font-inter flex items-center gap-1">
-                  <Calendar size={12} /> {article.date}
+              <div className="h-40 overflow-hidden">
+                <img
+                  src={article.image || defaultHeroImage}
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">
+                  {article.category}
                 </span>
-                <span className="text-[#F3DA73] text-sm font-inter flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Read <ArrowRight size={14} />
-                </span>
+                <h2 className="text-lg font-playfair text-white mb-3 group-hover:text-[#C9A84C] transition-colors duration-300 text-left leading-snug">
+                  {article.title}
+                </h2>
+                <p className="text-white/50 font-inter text-sm mb-4 line-clamp-2">
+                  {article.excerpt}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-white/30 text-xs font-inter flex items-center gap-1">
+                    <Calendar size={12} /> {article.date}
+                  </span>
+                  <span className="text-[#C9A84C] text-sm font-inter flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Read <ArrowRight size={14} />
+                  </span>
+                </div>
               </div>
             </button>
           ))}

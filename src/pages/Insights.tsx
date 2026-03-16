@@ -1286,7 +1286,7 @@ const Insights = () => {
                 <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">
                   {article.category}
                 </span>
-                <h2 className="text-lg font-playfair text-white mb-3 group-hover:text-[#C9A84C] transition-colors duration-300 text-left leading-snug">
+                <h2 className="text-base md:text-lg font-playfair text-white mb-2 md:mb-3 group-hover:text-[#C9A84C] transition-colors duration-300 text-left leading-snug">
                   {article.title}
                 </h2>
                 <p className="text-white/50 font-inter text-sm mb-4 line-clamp-2">

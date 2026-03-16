@@ -352,7 +352,7 @@ const articles: Article[] = [
     excerpt:
       "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
-    date: "March 5, 2026",
+    date: "July 9, 2025",
     readTime: "5 min read",
     content: `
       <p>Selling to health systems is not like selling to startups or even enterprise SaaS. The sales cycle is longer, the stakeholders are more complex, and the consequences of getting it wrong are severe.</p>

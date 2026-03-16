@@ -917,14 +917,14 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="max-w-[1100px] mx-auto px-4 md:px-6 flex" style={{ paddingTop: "max(calc(9rem + 24px), calc(160px + env(safe-area-inset-top, 0px)))", paddingBottom: "24px" }}>
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 flex" style={{ paddingTop: "max(calc(7rem + 16px), calc(120px + env(safe-area-inset-top, 0px)))", paddingBottom: "16px" }}>
           <div className="flex-1 min-w-0 max-w-[720px] lg:mx-0 mx-auto">
             <button
               onClick={onBack}
-              className="inline-flex items-center font-inter text-sm font-medium rounded-lg transition-all duration-300"
+              className="inline-flex items-center font-inter text-xs md:text-sm font-medium rounded-lg transition-all duration-300"
               style={{
                 gap: "6px",
-                padding: "10px 16px",
+                padding: "8px 14px",
                 color: "#C9A84C",
                 background: "rgba(15, 26, 46, 0.4)",
                 border: "1px solid #C9A84C",
@@ -947,7 +947,7 @@ const ArticleView = ({
         </div>
 
         {/* Hero Image */}
-        <div className="relative w-full h-[260px] md:h-[380px]">
+        <div className="relative w-full h-[200px] sm:h-[260px] md:h-[380px]">
           <img
             src={heroImage}
             alt={article.title}
@@ -960,21 +960,21 @@ const ArticleView = ({
                 "linear-gradient(to bottom, rgba(15,26,46,0.3) 0%, rgba(15,26,46,0.85) 70%, rgba(15,26,46,1) 100%)",
             }}
           />
-          <div className="absolute bottom-0 left-0 right-0 px-4 md:px-6 pb-6 md:pb-10">
+          <div className="absolute bottom-0 left-0 right-0 px-4 md:px-6 pb-4 md:pb-10">
             <div className="max-w-[720px] mx-auto">
-              <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-3 md:mb-4">
-                <span className="bg-[#C9A84C]/20 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter">
+              <div className="flex flex-wrap items-center gap-1.5 md:gap-3 mb-2 md:mb-4">
+                <span className="bg-[#C9A84C]/20 text-[#C9A84C] text-[10px] md:text-xs font-semibold px-2.5 py-0.5 md:px-3 md:py-1 rounded-full font-inter">
                   {article.category}
                 </span>
-                <span className="text-white/50 text-xs md:text-sm font-inter flex items-center gap-1">
-                  <Calendar size={12} /> {article.date}
+                <span className="text-white/50 text-[10px] md:text-sm font-inter flex items-center gap-1">
+                  <Calendar size={10} className="md:w-3 md:h-3" /> {article.date}
                 </span>
-                <span className="text-white/50 text-xs md:text-sm font-inter flex items-center gap-1">
-                  <Clock size={12} /> {article.readTime}
+                <span className="text-white/50 text-[10px] md:text-sm font-inter flex items-center gap-1">
+                  <Clock size={10} className="md:w-3 md:h-3" /> {article.readTime}
                 </span>
               </div>
               <h1
-                className="text-2xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
+                className="text-xl sm:text-2xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
                 style={{
                   textShadow:
                     "0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)",
@@ -1018,13 +1018,13 @@ const ArticleView = ({
         )}
 
         {/* Content + Desktop TOC */}
-        <div className="max-w-[1100px] mx-auto px-4 md:px-6 pt-8 md:pt-10 pb-12 md:pb-16 flex gap-12">
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 pt-6 md:pt-10 pb-10 md:pb-16 flex gap-12">
           {/* Article Content */}
           <div className="flex-1 min-w-0 max-w-[720px] mx-auto lg:mx-0">
             <div
               ref={contentRef}
-              className="article-content font-inter"
-              style={{ fontSize: "17px", lineHeight: "1.8", color: "#D1D5DB" }}
+              className="article-content font-inter text-[15px] md:text-[17px]"
+              style={{ lineHeight: "1.8", color: "#D1D5DB" }}
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 
@@ -1258,7 +1258,7 @@ const Insights = () => {
         </div>
 
         {/* Articles Grid */}
-        <div className="max-w-5xl mx-auto px-4 md:px-6 pb-16 md:pb-24 grid gap-5 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 pb-12 md:pb-24 grid gap-4 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((article) => (
             <button
               key={article.slug}
@@ -1273,7 +1273,7 @@ const Insights = () => {
                 boxShadow: "0 0 12px rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.08)",
               }}
             >
-              <div className="h-40 overflow-hidden relative">
+              <div className="h-32 sm:h-40 overflow-hidden relative">
                 <img
                   src={article.image || defaultHeroImage}
                   alt={article.title}
@@ -1286,7 +1286,7 @@ const Insights = () => {
                 <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">
                   {article.category}
                 </span>
-                <h2 className="text-lg font-playfair text-white mb-3 group-hover:text-[#C9A84C] transition-colors duration-300 text-left leading-snug">
+                <h2 className="text-base md:text-lg font-playfair text-white mb-2 md:mb-3 group-hover:text-[#C9A84C] transition-colors duration-300 text-left leading-snug">
                   {article.title}
                 </h2>
                 <p className="text-white/50 font-inter text-sm mb-4 line-clamp-2">

@@ -906,7 +906,7 @@ const Insights = () => {
         </section>
 
         {/* Category Filter */}
-        <div className="max-w-5xl mx-auto px-4 md:px-6 pt-8 md:pt-10 mb-8 md:mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 pt-6 md:pt-10 mb-6 md:mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
           {allCategories.map((cat) => (
             <button
               key={cat}

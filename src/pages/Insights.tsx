@@ -126,6 +126,7 @@ const articles: Article[] = [
     category: "Maternal Health",
     date: "March 2, 2026",
     readTime: "16 min read",
+    image: articleMaternalHealth,
     content: `
       <p>A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago.</p>
       <p>That sentence should stop every health system leader in their tracks. It has not stopped enough of them.</p>

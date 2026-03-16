@@ -1018,13 +1018,13 @@ const ArticleView = ({
         )}
 
         {/* Content + Desktop TOC */}
-        <div className="max-w-[1100px] mx-auto px-4 md:px-6 pt-8 md:pt-10 pb-12 md:pb-16 flex gap-12">
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 pt-6 md:pt-10 pb-10 md:pb-16 flex gap-12">
           {/* Article Content */}
           <div className="flex-1 min-w-0 max-w-[720px] mx-auto lg:mx-0">
             <div
               ref={contentRef}
-              className="article-content font-inter"
-              style={{ fontSize: "17px", lineHeight: "1.8", color: "#D1D5DB" }}
+              className="article-content font-inter text-[15px] md:text-[17px]"
+              style={{ lineHeight: "1.8", color: "#D1D5DB" }}
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 

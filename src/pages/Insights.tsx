@@ -370,7 +370,7 @@ const articles: Article[] = [
     excerpt:
       "Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy. Here is what separates winners from the rest.",
     category: "Clinical Strategy",
-    date: "October 3, 2025",
+    date: "September 2, 2025",
     readTime: "6 min read",
     content: `
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>

@@ -269,6 +269,7 @@ const articles: Article[] = [
     category: "EHR Optimization",
     date: "November 11, 2025",
     readTime: "12 min read",
+    image: articleEpicStork,
     content: `
       <p>Your OB/GYN team did not choose medicine to spend their shift in a documentation queue.</p>
       <p>But for most labor and delivery units running Epic Stork, that is exactly what is happening.</p>

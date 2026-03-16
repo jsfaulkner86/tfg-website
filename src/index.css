@@ -275,10 +275,19 @@ All colors MUST be HSL.
     /* Ensure inline CTA buttons stack on mobile */
     .article-content p[style*="display: flex"] {
       flex-direction: column !important;
+      gap: 0.75rem !important;
     }
 
     .article-content p[style*="display: flex"] a {
       text-align: center;
+      padding: 10px 20px !important;
+      font-size: 14px !important;
+    }
+
+    .article-content ul li,
+    .article-content ol li {
+      font-size: 15px;
+      margin-bottom: 0.625rem;
     }
   }
 }

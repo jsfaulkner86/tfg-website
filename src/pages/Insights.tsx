@@ -951,7 +951,7 @@ const Insights = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-4 md:p-6">
                 <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">
                   {article.category}
                 </span>

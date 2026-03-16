@@ -38,7 +38,7 @@ const articles: Article[] = [
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "March 16, 2026",
+    date: "March 12, 2026",
     readTime: "14 min read",
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>
@@ -115,7 +115,7 @@ const articles: Article[] = [
     excerpt:
       "Your OB/GYN team did not choose medicine to spend their shift in a documentation queue. Here is how optimizing Epic Stork gives clinicians back the time they need at the bedside.",
     category: "EHR Optimization",
-    date: "March 16, 2026",
+    date: "February 4, 2026",
     readTime: "12 min read",
     content: `
       <p>Your OB/GYN team did not choose medicine to spend their shift in a documentation queue.</p>
@@ -192,7 +192,7 @@ const articles: Article[] = [
     excerpt:
       "Health systems do not have a technology problem in women's health. They have a readiness problem. And most of them do not know it until a deployment fails.",
     category: "Clinical Strategy",
-    date: "March 16, 2026",
+    date: "January 8, 2026",
     readTime: "10 min read",
     content: `
       <p>Health systems do not have a technology problem in women's health.</p>
@@ -251,7 +251,7 @@ const articles: Article[] = [
     excerpt:
       "Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.",
     category: "Clinical Strategy",
-    date: "March 16, 2026",
+    date: "November 19, 2025",
     readTime: "8 min read",
     content: `
       <p>Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.</p>
@@ -306,7 +306,7 @@ const articles: Article[] = [
     excerpt:
       "Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy. Here is what separates winners from the rest.",
     category: "Clinical Strategy",
-    date: "March 14, 2026",
+    date: "October 3, 2025",
     readTime: "6 min read",
     content: `
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>
@@ -329,7 +329,7 @@ const articles: Article[] = [
     excerpt:
       "Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.",
     category: "Payer Strategy",
-    date: "March 10, 2026",
+    date: "August 21, 2025",
     readTime: "4 min read",
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>
@@ -352,7 +352,7 @@ const articles: Article[] = [
     excerpt:
       "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
-    date: "March 5, 2026",
+    date: "July 9, 2025",
     readTime: "5 min read",
     content: `
       <p>Selling to health systems is not like selling to startups or even enterprise SaaS. The sales cycle is longer, the stakeholders are more complex, and the consequences of getting it wrong are severe.</p>

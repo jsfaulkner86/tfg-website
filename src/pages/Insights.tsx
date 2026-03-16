@@ -448,7 +448,7 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="max-w-[1100px] mx-auto px-6 flex" style={{ paddingTop: "calc(9rem + 24px)", paddingBottom: "24px" }}>
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 flex" style={{ paddingTop: "max(calc(9rem + 24px), calc(160px + env(safe-area-inset-top, 0px)))", paddingBottom: "24px" }}>
           <div className="flex-1 min-w-0 max-w-[720px] lg:mx-0 mx-auto">
             <button
               onClick={onBack}
@@ -474,12 +474,11 @@ const ArticleView = ({
               ← Back to Insights
             </button>
           </div>
-          {/* Spacer to match TOC sidebar width on desktop */}
           <div className="hidden lg:block w-[240px] flex-shrink-0" />
         </div>
 
         {/* Hero Image */}
-        <div className="relative w-full" style={{ height: "380px" }}>
+        <div className="relative w-full h-[260px] md:h-[380px]">
           <img
             src={heroImage}
             alt={article.title}
@@ -492,21 +491,21 @@ const ArticleView = ({
                 "linear-gradient(to bottom, rgba(15,26,46,0.3) 0%, rgba(15,26,46,0.85) 70%, rgba(15,26,46,1) 100%)",
             }}
           />
-          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10">
+          <div className="absolute bottom-0 left-0 right-0 px-4 md:px-6 pb-6 md:pb-10">
             <div className="max-w-[720px] mx-auto">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-3 md:mb-4">
                 <span className="bg-[#C9A84C]/20 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter">
                   {article.category}
                 </span>
-                <span className="text-white/50 text-sm font-inter flex items-center gap-1">
-                  <Calendar size={14} /> {article.date}
+                <span className="text-white/50 text-xs md:text-sm font-inter flex items-center gap-1">
+                  <Calendar size={12} /> {article.date}
                 </span>
-                <span className="text-white/50 text-sm font-inter flex items-center gap-1">
-                  <Clock size={14} /> {article.readTime}
+                <span className="text-white/50 text-xs md:text-sm font-inter flex items-center gap-1">
+                  <Clock size={12} /> {article.readTime}
                 </span>
               </div>
               <h1
-                className="text-3xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
+                className="text-2xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
                 style={{
                   textShadow:
                     "0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)",
@@ -520,7 +519,7 @@ const ArticleView = ({
 
         {/* Mobile TOC */}
         {headings.length > 0 && (
-          <div className="lg:hidden max-w-[720px] mx-auto px-6 mt-8">
+          <div className="lg:hidden max-w-[720px] mx-auto px-4 md:px-6 mt-6 md:mt-8">
             <button
               onClick={() => setTocOpen(!tocOpen)}
               className="w-full flex items-center justify-between px-4 py-3 rounded-lg font-inter text-sm font-medium text-white/80"
@@ -530,7 +529,7 @@ const ArticleView = ({
               {tocOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
             {tocOpen && (
-              <nav className="mt-2 rounded-lg p-4 space-y-2" style={{ background: "rgba(255,255,255,0.04)" }}>
+              <nav className="mt-2 rounded-lg p-3 md:p-4 space-y-1 md:space-y-2 max-h-[50vh] overflow-y-auto" style={{ background: "rgba(255,255,255,0.04)" }}>
                 {headings.map((h) => (
                   <button
                     key={h.id}
@@ -550,7 +549,7 @@ const ArticleView = ({
         )}
 
         {/* Content + Desktop TOC */}
-        <div className="max-w-[1100px] mx-auto px-6 pt-10 pb-16 flex gap-12">
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 pt-8 md:pt-10 pb-12 md:pb-16 flex gap-12">
           {/* Article Content */}
           <div className="flex-1 min-w-0 max-w-[720px] mx-auto lg:mx-0">
             <div
@@ -561,42 +560,42 @@ const ArticleView = ({
             />
 
             {/* Gold divider */}
-            <div className="my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
+            <div className="my-8 md:my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
 
             {/* Author Bio */}
             <div
-              className="rounded-xl p-6 md:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6"
+              className="rounded-xl p-5 md:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6"
               style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
             >
               <img
                 src={author.headshot}
                 alt={author.name}
-                className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-shrink-0"
                 style={{ border: "2px solid #C9A84C" }}
               />
-              <div>
-                <h3 className="text-white font-playfair text-lg font-bold mb-1 text-left">
+              <div className="text-center sm:text-left">
+                <h3 className="text-white font-playfair text-base md:text-lg font-bold mb-1 text-center sm:text-left">
                   {author.name}
                 </h3>
-                <p className="text-[#C9A84C] font-inter text-sm mb-3">
+                <p className="text-[#C9A84C] font-inter text-xs md:text-sm mb-2 md:mb-3">
                   {author.title}
                 </p>
-                <p className="text-white/60 font-inter text-sm leading-relaxed">
+                <p className="text-white/60 font-inter text-xs md:text-sm leading-relaxed">
                   {author.bio}
                 </p>
               </div>
             </div>
 
             {/* Gold divider */}
-            <div className="my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
+            <div className="my-8 md:my-12 h-px" style={{ background: "linear-gradient(to right, transparent, #C9A84C40, transparent)" }} />
 
             {/* Continue Reading */}
             {related.length > 0 && (
               <section>
-                <h2 className="text-2xl font-playfair text-white mb-8 text-left">
+                <h2 className="text-xl md:text-2xl font-playfair text-white mb-6 md:mb-8 text-left">
                   Continue Reading
                 </h2>
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                   {related.map((r) => (
                     <button
                       key={r.slug}
@@ -604,10 +603,9 @@ const ArticleView = ({
                         onBack();
                         setTimeout(() => {
                           window.scrollTo(0, 0);
-                          // We re-select from parent
                         }, 0);
                       }}
-                      className="group text-left rounded-xl p-5 transition-all duration-300 hover:border-[#C9A84C]/30"
+                      className="group text-left rounded-xl p-4 md:p-5 transition-all duration-300 hover:border-[#C9A84C]/30"
                       style={{
                         background: "rgba(255,255,255,0.04)",
                         border: "1px solid rgba(255,255,255,0.08)",
@@ -616,7 +614,7 @@ const ArticleView = ({
                       <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-2.5 py-0.5 rounded-full font-inter mb-3">
                         {r.category}
                       </span>
-                      <h3 className="text-white font-playfair text-base mb-2 group-hover:text-[#C9A84C] transition-colors text-left">
+                      <h3 className="text-white font-playfair text-sm md:text-base mb-2 group-hover:text-[#C9A84C] transition-colors text-left">
                         {r.title}
                       </h3>
                       <span className="text-white/40 text-xs font-inter">
@@ -656,7 +654,7 @@ const ArticleView = ({
 
         {/* Full-width CTA Banner */}
         <section
-          className="py-20 px-6"
+          className="py-12 md:py-20 px-4 md:px-6"
           style={{
             background:
               "linear-gradient(135deg, #0a1628 0%, #142238 50%, #0a1628 100%)",
@@ -664,15 +662,15 @@ const ArticleView = ({
           }}
         >
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-playfair text-white mb-4">
+            <h2 className="text-2xl md:text-4xl font-playfair text-white mb-3 md:mb-4">
               Ready to Close the Clinical Readiness Gap?
             </h2>
-            <p className="text-white/60 font-inter text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-white/60 font-inter text-base md:text-lg mb-6 md:mb-8 max-w-xl mx-auto">
               Whether your pilot has stalled or you are preparing your first health system partnership, our team can help you build the clinical foundation for success.
             </p>
             <a
               href="/clinical-clarity-session"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-inter font-semibold text-base transition-all duration-300 hover:scale-[1.03]"
+              className="inline-flex items-center gap-2 px-6 md:px-8 py-3.5 md:py-4 rounded-lg font-inter font-semibold text-sm md:text-base transition-all duration-300 hover:scale-[1.03]"
               style={{
                 background: "#C9A84C",
                 color: "#0f1a2e",

@@ -80,8 +80,14 @@
   </url>
   <url>
     <loc>https://thefaulknergroupadvisors.com/llm-summary</loc>
-    <lastmod>2026-03-09</lastmod>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thefaulknergroupadvisors.com/thank-you</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

@@ -33,6 +33,65 @@ const defaultAuthor = {
 
 const articles: Article[] = [
   {
+    slug: "what-is-clinical-readiness-womens-health",
+    title: "What Is Clinical Readiness in Women's Health and Why Most Health Systems Don't Have It",
+    excerpt:
+      "Health systems do not have a technology problem in women's health. They have a readiness problem. And most of them do not know it until a deployment fails.",
+    category: "Clinical Strategy",
+    date: "March 16, 2026",
+    readTime: "10 min read",
+    content: `
+      <p>Health systems do not have a technology problem in women's health.</p>
+      <p>They have a readiness problem. And most of them do not know it until a deployment fails.</p>
+      <p>The term "clinical readiness" gets used loosely in healthcare IT circles. It shows up in implementation timelines, vendor proposals, and go-live checklists. But it rarely gets defined with the specificity that women's health requires. That ambiguity is costing health systems real money, real time, and real trust from the clinicians they are trying to support.</p>
+
+      <h2>Defining Clinical Readiness</h2>
+      <blockquote>Clinical readiness is the operational and clinical state a health system must reach before a new technology, workflow, or care model can be deployed safely, sustainably, and effectively.</blockquote>
+      <p>It is not a checklist. It is not a go-live date. It is not IT approval.</p>
+      <p>Clinical readiness means your people know what they are doing, your systems are configured to support them, your workflows reflect how care actually happens, and your leadership is aligned on what success looks like before a single patient encounter occurs.</p>
+      <p>In women's health specifically, clinical readiness requires an additional layer of intentionality. OB/GYN workflows span prenatal, intrapartum, and postpartum care across multiple departments, multiple clinician types, and often multiple facilities. A gap in readiness at any one of those points creates a ripple effect that touches patient safety, provider satisfaction, and clinical outcomes.</p>
+
+      <h2>What Clinical Readiness Is Not</h2>
+      <p><strong>It is not a software upgrade.</strong> A new Epic module or a femtech integration does not make a health system clinically ready. It adds capability. Readiness is what determines whether that capability gets used.</p>
+      <p><strong>It is not a training session.</strong> A two-hour onboarding does not prepare a labor and delivery nurse for a new fetal monitoring workflow any more than a slideshow prepares a surgeon for a new OR. Role-specific, scenario-based preparation is what moves information into practice.</p>
+      <p><strong>It is not a signed contract.</strong> Agreements between health systems and technology vendors signal intent, not readiness. The gap between a signed agreement and a successful go-live is exactly where most implementations fall apart.</p>
+
+      <h2>The 5 Dimensions of Clinical Readiness in Women's Health</h2>
+      <p>A health system is clinically ready when it has addressed all five of the following dimensions before deployment begins.</p>
+
+      <h2>1. Workflow Alignment</h2>
+      <p>Every clinical workflow touched by the new technology must be mapped in its current state and redesigned in its future state before a single build is done. This means understanding how an OB/GYN documents a prenatal visit today, where the friction points are, and how the new solution reduces rather than adds to that burden.</p>
+
+      <h2>2. EHR Integration</h2>
+      <p>In women's health, this primarily means Epic (EHR) - Women's Health, ClinDoc, and Ambulatory. The integration must be scoped, tested, and validated before go-live. An unintegrated tool is a tool clinicians will not use. And a tool clinicians do not use is a liability, not an asset.</p>
+
+      <h2>3. Clinician Champions</h2>
+      <p>Not every physician who expresses interest in a new tool is a clinical champion. A true champion has positional authority, workflow credibility with their peers, and the capacity to drive adoption through example. Health systems that identify champions late in the process consistently see lower adoption rates.</p>
+
+      <h2>4. Staff Training by Role</h2>
+      <p>Training must be designed for specific clinical roles, not departments. A certified nurse midwife, a labor and delivery nurse, a perinatologist, and an OB/GYN hospitalist all interact with the same system differently. Generic training produces generic adoption, which in practice means minimal adoption.</p>
+
+      <h2>5. Outcome Measurement Framework</h2>
+      <p>Before go-live, every stakeholder must agree on what success looks like, how it will be measured, and at what intervals. Health systems that define this in advance are the ones that generate the data they need to justify continued investment and expansion.</p>
+
+      <h2>Why Most Health Systems Fall Short</h2>
+      <p>The honest answer is that clinical readiness is not resourced like a priority because it does not look like a line item. It lives in the space between IT and clinical operations, and both sides tend to assume the other is handling it.</p>
+      <p>IT assumes clinical leadership is preparing the teams. Clinical leadership assumes IT is managing the timeline. And the vendor assumes both are ready because the contract is signed.</p>
+      <p>This is not a failure of intelligence. It is a structural gap. Most health systems do not have a dedicated clinical readiness function, especially in women's health, where the specialization required to design workflows that reflect ACOG guidelines, address maternal health equity, and integrate into a complex EHR environment is genuinely rare.</p>
+      <p>Healthcare in 2026 is shifting from passive EHR adoption to proactive ownership. Health systems that treat EHR modernization as an ongoing discipline rather than a one-time initiative are the ones building the infrastructure for sustainable clinical performance.</p>
+
+      <h2>The Cost of Not Being Ready</h2>
+      <p>A failed implementation in women's health is not just an IT problem. It is a patient safety risk, a provider burnout accelerant, and a financial drain. Documentation fatigue in OB/GYN is one of the leading contributors to physician burnout in the specialty. When a new system adds clicks instead of reducing them, it does not just frustrate clinicians. It drives turnover, degrades care quality, and increases liability exposure.</p>
+      <blockquote>More than 80% of women report feeling unheard in the healthcare system. When health systems deploy technology that is not clinically ready, they digitize that experience at scale rather than improving it.</blockquote>
+
+      <h2>How The Faulkner Group Closes the Gap</h2>
+      <p>The Faulkner Group was built to be the clinical readiness function that most health systems do not have in-house. Led by an Epic-certified consultant with over 13 years of experience in Stork, ClinDoc, and Ambulatory, and co-led by a board-certified OB/GYN with 10 years of clinical practice, our team sits at the intersection of technical precision and real-world clinical judgment.</p>
+      <p>We do not hand health systems a framework and leave. We embed alongside your team, map your workflows, identify your gaps, design your training, and stay through go-live and beyond.</p>
+      <p>If you are not sure whether your organization is clinically ready, that uncertainty is your answer.</p>
+      <p>Start with our <a href="/clinical-readiness-assessment">Clinical Readiness Assessment</a> and find out exactly where you stand before it costs you a deployment.</p>
+    `,
+  },
+  {
     slug: "5-reasons-femtech-pilots-fail",
     title: "The 5 Reasons Femtech Pilots Fail",
     excerpt:

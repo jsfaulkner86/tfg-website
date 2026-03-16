@@ -642,7 +642,7 @@ const articles: Article[] = [
     excerpt:
       "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
-    date: "June 3, 2025",
+    date: "June 9, 2025",
     readTime: "5 min read",
     image: articleHealthSystemSales,
     content: `

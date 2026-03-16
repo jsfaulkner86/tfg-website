@@ -138,8 +138,9 @@ const Insights = () => {
             <article
               className="prose prose-invert prose-lg max-w-none font-inter
                 prose-headings:font-playfair prose-headings:text-[#F3DA73] prose-headings:text-left
-                prose-p:text-white/80 prose-li:text-white/80
-                prose-strong:text-white prose-a:text-[#F3DA73]"
+                prose-p:text-white/80 prose-li:text-white/80 prose-ol:text-white/80 prose-ul:text-white/80
+                prose-strong:text-white prose-a:text-[#F3DA73]
+                [&_*]:text-white/80 [&_h2]:text-[#F3DA73] [&_strong]:text-white"
               dangerouslySetInnerHTML={{ __html: selectedArticle.content }}
             />
           </div>

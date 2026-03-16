@@ -180,7 +180,7 @@ const articles: Article[] = [
     excerpt:
       "Most health systems evaluate femtech vendors the wrong way. They evaluate the product. They should be evaluating the partnership.",
     category: "Health System Strategy",
-    date: "March 16, 2026",
+    date: "January 22, 2026",
     readTime: "14 min read",
     image: articleFemtechVendor,
     content: `

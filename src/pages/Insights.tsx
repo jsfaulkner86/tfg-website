@@ -448,11 +448,28 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="pt-36 pb-5 px-6">
+        <div className="px-6" style={{ paddingTop: "calc(9rem + 24px)", paddingBottom: "24px" }}>
           <div className="max-w-[720px] mx-auto">
             <button
               onClick={onBack}
-              className="text-[#C9A84C] font-inter text-sm hover:underline flex items-center gap-1"
+              className="inline-flex items-center font-inter text-sm font-medium rounded-lg transition-all duration-300"
+              style={{
+                gap: "6px",
+                padding: "10px 16px",
+                color: "#C9A84C",
+                background: "rgba(15, 26, 46, 0.4)",
+                border: "1px solid #C9A84C",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "rgba(25, 40, 65, 0.6)";
+                e.currentTarget.style.boxShadow = "0 0 16px rgba(201, 168, 76, 0.25)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "rgba(15, 26, 46, 0.4)";
+                e.currentTarget.style.boxShadow = "none";
+              }}
             >
               ← Back to Insights
             </button>

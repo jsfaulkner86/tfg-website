@@ -669,10 +669,11 @@ const ArticleView = ({
                           window.scrollTo(0, 0);
                         }, 0);
                       }}
-                      className="group text-left rounded-xl p-4 md:p-5 transition-all duration-300 hover:border-[#C9A84C]/30"
+                      className="group text-left rounded-xl p-4 md:p-5 transition-all duration-300 hover:shadow-[0_0_20px_rgba(201,168,76,0.15)]"
                       style={{
                         background: "rgba(255,255,255,0.04)",
-                        border: "1px solid rgba(255,255,255,0.08)",
+                        border: "1px solid rgba(201,168,76,0.18)",
+                        boxShadow: "0 0 12px rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.08)",
                       }}
                     >
                       <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-2.5 py-0.5 rounded-full font-inter mb-3">

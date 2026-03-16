@@ -347,6 +347,7 @@ const articles: Article[] = [
     category: "Clinical Strategy",
     date: "September 23, 2025",
     readTime: "10 min read",
+    image: articleClinicalReadiness,
     content: `
       <p>Health systems do not have a technology problem in women's health.</p>
       <p>They have a readiness problem. And most of them do not know it until a deployment fails.</p>

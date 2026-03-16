@@ -22,6 +22,7 @@ const AdvisoryPartnership = lazy(() => import("./pages/AdvisoryPartnership"));
 const OperatingPartnerRetainer = lazy(() => import("./pages/OperatingPartnerRetainer"));
 const ClinicalReadinessRoadmap = lazy(() => import("./pages/ClinicalReadinessRoadmap"));
 const PressSpeaking = lazy(() => import("./pages/PressSpeaking"));
+const Insights = lazy(() => import("./pages/Insights"));
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/investors" element={<Investors />} />
             <Route path="/llm-summary" element={<LLMSummary />} />
             <Route path="/press-speaking" element={<PressSpeaking />} />
+            <Route path="/insights" element={<Insights />} />
             <Route path="/thank-you" element={<ThankYou />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

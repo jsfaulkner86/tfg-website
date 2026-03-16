@@ -511,6 +511,7 @@ const articles: Article[] = [
     category: "Health System Strategy",
     date: "June 3, 2025",
     readTime: "5 min read",
+    image: articleHealthSystemSales,
     content: `
       <p>Selling to health systems is not like selling to startups or even enterprise SaaS. The sales cycle is longer, the stakeholders are more complex, and the consequences of getting it wrong are severe.</p>
       <h2>Mistake #1: Leading With Features</h2>

@@ -859,7 +859,7 @@ const Insights = () => {
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Hero */}
-        <section className="relative w-full overflow-hidden pt-[calc(120px+env(safe-area-inset-top,0px))] pb-[40px] md:pt-[180px] md:pb-[60px]">
+        <section className="relative w-full overflow-hidden pt-[calc(140px+env(safe-area-inset-top,0px))] pb-[32px] md:pt-[180px] md:pb-[60px]">
           <img
             src="/hero-boardroom.jpg"
             alt="Healthcare strategy and clinical insights"
@@ -890,12 +890,13 @@ const Insights = () => {
               </h1>
 
               <p
-                className="mb-8 md:mb-10 font-inter px-2 max-w-2xl mx-auto"
+                className="mb-6 md:mb-10 font-inter px-2 max-w-2xl mx-auto"
                 style={{
-                  fontSize: 'clamp(15px, 1.6vw, 20px)',
+                  fontSize: 'clamp(14px, 1.6vw, 20px)',
                   color: 'rgba(255,255,255,0.85)',
                   textShadow: '0 2px 8px rgba(0,0,0,0.5)',
                   textWrap: 'balance' as any,
+                  lineHeight: 1.6,
                 }}
               >
                 Expert perspectives on clinical strategy, health system partnerships, and building health tech that scales.
@@ -905,12 +906,12 @@ const Insights = () => {
         </section>
 
         {/* Category Filter */}
-        <div className="max-w-5xl mx-auto px-4 md:px-6 pt-8 md:pt-10 mb-8 md:mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 pt-6 md:pt-10 mb-6 md:mb-12 flex flex-wrap justify-center gap-2 md:gap-3">
           {allCategories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-full text-sm font-inter font-medium transition-all duration-300 ${
+              className={`px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-inter font-medium transition-all duration-300 ${
                 selectedCategory === cat
                   ? "text-[#0f1a2e]"
                   : "text-white/70 hover:text-white"
@@ -950,7 +951,7 @@ const Insights = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-4 md:p-6">
                 <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">
                   {article.category}
                 </span>

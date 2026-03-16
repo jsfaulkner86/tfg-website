@@ -33,12 +33,76 @@ const defaultAuthor = {
 
 const articles: Article[] = [
   {
+    slug: "americas-maternal-health-crisis-2026",
+    title: "America's Maternal Health Crisis in 2026: The Data, The Gaps, and What Must Change",
+    excerpt:
+      "A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago. That sentence should stop every health system leader in their tracks.",
+    category: "Maternal Health",
+    date: "March 14, 2026",
+    readTime: "16 min read",
+    content: `
+      <p>A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago.</p>
+      <p>That sentence should stop every health system leader in their tracks. It has not stopped enough of them.</p>
+      <p>In March 2026, the CDC released its final maternal mortality data for 2024. The headline number was 17.9 deaths per 100,000 live births, a slight decrease from 18.6 in 2023. That marginal improvement was not statistically significant. And buried inside those numbers is a reality that no single headline captures: the United States maternal health crisis is not improving at a pace that reflects the resources, technology, and clinical knowledge available to us right now.</p>
+      <p>This is not a data problem. It is a will problem. And health systems are the ones with the authority to change it.</p>
+
+      <h2>The Numbers Health Systems Need to Own</h2>
+      <p>In 2024, 649 women died of maternal causes in the United States. That number, held up against the maternal mortality rates of peer nations, is not a statistical artifact. It is an indictment of how this country has chosen to fund, design, and deliver obstetric care.</p>
+      <blockquote>The United States has the highest maternal mortality rate among developed nations.</blockquote>
+      <p>Louisiana's maternal mortality rate is more than four times California's. Mississippi's infant mortality rate is nearly triple Massachusetts'. The variance is not genetic. It is structural. It is the product of state-level policy choices about Medicaid, reproductive health services, and social support infrastructure.</p>
+      <p>Women aged 40 and older face a maternal mortality rate of 62.3 per 100,000 live births, more than four times the rate for women under 25. As more women delay pregnancy for professional and financial reasons, and as the average age of first-time mothers in the United States continues to rise, this risk profile demands a clinical response that most health systems have not yet built.</p>
+
+      <h2>The Racial Disparity That Cannot Be Explained Away</h2>
+      <p>Black women in the United States die from maternal causes at a rate of 44.8 per 100,000 live births. White women die at a rate of 14.2. That is a 3x gap. It has persisted across decades of data, across income levels, across educational attainment, and across geography.</p>
+      <blockquote>Black maternal mortality in the United States resembles that of Grenada, Honduras, Vietnam, and Brazil. In Louisiana, outcomes for Black mothers mirror those of Mexico.</blockquote>
+      <p>These are not comparisons that reflect well on the most resourced healthcare system in the world.</p>
+      <p>The CDC's 2023 data showed that Black pregnancy was the only demographic group to see an increase in death rates year over year. The 2024 data showed a slight decrease that was not statistically significant. In a country with the infrastructure, the clinical evidence base, and the technology to prevent these deaths, a pattern this persistent is not a coincidence. It is a system design outcome.</p>
+      <p>Approximately 84% of pregnancy-related deaths in the United States are preventable, according to the CDC. Not addressable. Not reducible. Preventable. That word matters. It means the decisions that would change these outcomes already exist. They are just not being made consistently, equitably, or urgently enough.</p>
+
+      <h2>The Access Crisis Hiding Behind the Mortality Data</h2>
+      <p>Maternal mortality is the most visible edge of a much wider access failure. Maternity care deserts, defined as counties with no hospital-based obstetric care and no obstetric provider, affect millions of American women, concentrated in rural communities and low-income urban areas.</p>
+      <p>An estimated 24% of urban areas report having no clinical obstetrician. Rural maternal death rates surged 74% during the pandemic and have not fully recovered. The AMA reports that many rural hospitals are operating in the red, with inpatient obstetric units among the first services to be cut when financial pressure forces consolidation.</p>
+      <p>Persistent gaps in access to care, patient education, postpartum support, and mental health resources continue to shape women's maternal experiences in 2026. The postpartum window, specifically the 12 months following delivery, is where a significant portion of preventable deaths occur and where clinical follow-through remains systemically weak.</p>
+      <blockquote>A woman who delivers safely and then dies of a postpartum complication did not survive her pregnancy. She was failed by the infrastructure that should have caught her on the other side of it.</blockquote>
+
+      <h2>What Technology Can and Cannot Fix</h2>
+      <p>Femtech and digital health solutions targeting maternal care are advancing rapidly. Remote patient monitoring tools, AI-driven risk stratification platforms, and maternal health navigation apps are entering health system partnerships with the genuine potential to extend care into underserved geographies, identify high-risk pregnancies earlier, and close postpartum follow-up gaps.</p>
+      <p>But technology deployed into a clinically unprepared system does not close the maternal health gap. It adds a layer of complexity to an already strained environment. A remote monitoring platform that flags a postpartum hypertension alert only improves outcomes if the clinical workflow on the receiving end is designed to respond to that alert quickly and correctly.</p>
+      <p>The same logic applies to Epic Stork optimization. OB/GYN teams managing high volumes of maternal patients in under-resourced environments need documentation workflows that reduce cognitive burden, not add to it. Postpartum care checklists need to be embedded in the workflow, not filed in a separate module that requires a separate login at the end of a 12-hour shift.</p>
+
+      <h2>What Health Systems Must Do Right Now</h2>
+      <p>The data is not new. The interventions are not mysterious. What is missing is the operational commitment to implement them consistently across every patient, every demographic, and every zip code served.</p>
+      <p>Health systems that are serious about maternal health outcomes in 2026 must take the following steps:</p>
+      <ul>
+        <li>Audit postpartum follow-up rates by patient demographic and identify where Black and high-risk patients are falling out of care between delivery and the 6-week visit</li>
+        <li>Build structured postpartum depression and hypertension screening protocols directly into Epic Stork workflows so they are triggered automatically, not left to individual clinician discretion</li>
+        <li>Evaluate maternal health navigation and remote monitoring tools through a formal clinical readiness process before deployment, not after</li>
+        <li>Train every clinician who interacts with pregnant and postpartum women to recognize the early warning signs of hemorrhage, hypertension, and sepsis, the three leading causes of preventable maternal death in the United States</li>
+        <li>Establish race and ethnicity disaggregated maternal outcome data as a standing quality metric reviewed at the leadership level, not buried in an annual report</li>
+      </ul>
+
+      <h2>The System Is the Risk Factor</h2>
+      <p>The most important insight in the 2024 CDC maternal mortality data is not the number. It is what the number reveals about where responsibility sits.</p>
+      <p>Women aged 40 and older do not need to be told their pregnancy is high risk. They need a health system that is actually built to manage it. Black women do not need more awareness campaigns. They need obstetricians who listen to them, workflows that capture their symptoms accurately, and postpartum care that follows them home.</p>
+      <blockquote>The maternal health crisis is not a patient failure. It is a system failure. And the health system leaders reading this article have more influence over the next set of CDC numbers than any individual patient ever will.</blockquote>
+      <p>That is not a burden. It is an opportunity.</p>
+
+      <h2>How The Faulkner Group Helps</h2>
+      <p>The Faulkner Group works with health systems to build the clinical and operational infrastructure that maternal health demands. From Epic Stork workflow optimization to clinical readiness assessment for maternal health technology, we help health systems move from awareness to action.</p>
+      <p>If your organization is ready to take measurable steps toward better maternal outcomes, start with a Clinical Clarity Session.</p>
+      <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
+      </p>
+    `,
+  },
+  {
     slug: "real-cost-womens-health-misdiagnosis-2026",
     title: "The Real Cost of Women's Health Misdiagnosis in 2026",
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "March 12, 2026",
+    date: "February 18, 2026",
     readTime: "14 min read",
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>

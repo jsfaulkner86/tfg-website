@@ -322,7 +322,7 @@ const articles: Article[] = [
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "January 27, 2026",
+    date: "November 5, 2025",
     readTime: "14 min read",
     image: articleMisdiagnosis,
     content: `

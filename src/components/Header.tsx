@@ -301,6 +301,20 @@ const Header = () => {
               Resources
             </a>
             <a 
+              href="/for-womens-health"
+              onClick={handleNavClick}
+              className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              For Women's Health
+            </a>
+            <a 
+              href="/insights"
+              onClick={handleNavClick}
+              className="text-white/90 font-playfair text-base tracking-wide pl-10 pr-6 py-3 hover:bg-white/10 transition-all duration-300 border-b border-white/10"
+            >
+              Insights
+            </a>
+            <a 
               href="/#contact"
               onClick={handleNavClick}
               className="text-white font-playfair font-medium text-lg tracking-wide px-6 py-4 hover:bg-white/10 transition-all duration-300 border-b border-white/10"

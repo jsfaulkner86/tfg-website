@@ -18,6 +18,7 @@ import articlePhysicianAdoption from "@/assets/article-physician-adoption.jpg";
 import articleReimbursement from "@/assets/article-reimbursement.jpg";
 import articleHealthSystemSales from "@/assets/article-health-system-sales.jpg";
 import articleRoiWomensHealth from "@/assets/article-roi-womens-health.jpg";
+import articlePcosDiagnosis from "@/assets/article-pcos-diagnosis.jpg";
 
 // ─── ARTICLE DATA ─────────────────────────────────────────────
 // To add a new article, simply add an object to this array.
@@ -43,12 +44,82 @@ const defaultAuthor = {
 
 const articles: Article[] = [
   {
+    slug: "pcos-diagnosis-delay-health-systems",
+    title: "PCOS in 2026: Why It Takes 7 Years to Diagnose and What Health Systems Can Do About It",
+    excerpt:
+      "At least 1 in 8 women has PCOS. Most of them spent years being told something else was wrong. A multi-year diagnostic delay is not a clinical mystery. It is a system failure with a documented root cause and a clear set of solutions.",
+    category: "Women's Health",
+    date: "March 10, 2026",
+    readTime: "20 min read",
+    image: articlePcosDiagnosis,
+    content: `
+      <p>At least 1 in 8 women has PCOS.</p>
+      <p>Most of them spent years being told something else was wrong.</p>
+      <p>Polycystic ovary syndrome is the most common endocrine disorder in women of reproductive age, affecting between 6% and 20% of women globally depending on diagnostic criteria. In the United States alone, it generates $8 billion in annual healthcare costs. It is the leading cause of female infertility. It is directly associated with type 2 diabetes, cardiovascular disease, endometrial cancer, and metabolic syndrome.</p>
+      <p>And the average time from symptom onset to correct diagnosis is still 2 to 7 years.</p>
+      <p>In a condition this prevalent, this costly, and this consequential, a multi-year diagnostic delay is not a clinical mystery. It is a system failure with a documented root cause and a clear set of solutions. Health systems that understand both will be the ones that change these outcomes.</p>
+
+      <h2>Why PCOS Takes So Long to Diagnose</h2>
+      <p>PCOS is not difficult to diagnose once a clinician considers it. The Rotterdam Criteria, the most widely used diagnostic framework, requires only two of the following three findings: irregular or absent ovulation, clinical or biochemical signs of elevated androgens, and polycystic ovarian morphology on ultrasound. These are not rare or hard-to-obtain findings.</p>
+      <p>The delay is not diagnostic. It is structural.</p>
+      <p>PCOS is dramatically underfunded as a research priority. Average annual research funding for PCOS from 2016 to 2022 was approximately $32 million. Rheumatoid arthritis, which affects a comparable number of patients, received $262 million over the same period. Tuberculosis received $66 million. The research gap produces a clinical knowledge gap. Clinicians who were not trained to recognize PCOS do not diagnose it.</p>
+      <p>PCOS symptoms are routinely attributed to other conditions. Irregular periods get attributed to stress. Acne and hair growth are addressed as cosmetic concerns. Weight gain is addressed with lifestyle counseling. Anxiety and depression, which are significantly more prevalent in women with PCOS, are treated in isolation without investigating the underlying hormonal driver. Women with PCOS average multiple specialist referrals before anyone connects the pattern.</p>
+      <p>The diagnostic criteria themselves create confusion. PCOS presents differently across phenotypes, body types, and racial backgrounds. South Asian women are 2.5 times more likely to be diagnosed with PCOS than white women, and African-Caribbean women are 1.8 times more likely. Yet the clinical training and symptom awareness that exists disproportionately reflects the white, higher-weight phenotype. Women who do not match that presentation are more likely to be missed.</p>
+      <p>Access to care amplifies every gap. Women relying on Medicaid or charity care are 90% more likely to receive a missed PCOS diagnosis compared to women with private insurance. Rural access, cultural barriers, and socioeconomic inequality compound the diagnostic delay at every intersection.</p>
+
+      <h2>What the Delay Actually Costs</h2>
+      <p>PCOS-associated healthcare costs in the United States reached $8 billion in 2020. The majority of that cost is not concentrated in diagnosis or reproductive care. It is concentrated in the long-term management of metabolic complications that develop when PCOS goes unmanaged: type 2 diabetes, stroke, cardiovascular disease, and pregnancy complications including gestational diabetes and preeclampsia.</p>
+      <p>These are not inevitable outcomes of PCOS. They are the outcomes of PCOS diagnosed too late to intervene effectively.</p>
+      <p>A woman diagnosed with PCOS at 23 and placed on an appropriate management plan, including lifestyle support, hormonal regulation, and metabolic monitoring, has a materially different long-term health trajectory than a woman diagnosed at 30 after years of accumulating insulin resistance. The clinical literature is consistent on this point. Earlier diagnosis produces better outcomes across every major comorbidity associated with the condition.</p>
+      <p>The U.S. PCOS treatment market is projected to reach $7.5 billion by 2032, growing at a 7.2% CAGR. That growth reflects rising diagnosis rates, increasing adoption of holistic and personalized care models, and growing recognition of PCOS as a lifelong metabolic condition rather than a reproductive one. Health systems that build strong PCOS care pathways now are positioning themselves for the fastest-growing segment of women's health clinical demand.</p>
+
+      <h2>What a Strong PCOS Care Pathway Looks Like</h2>
+      <p>Health systems committed to closing the PCOS diagnostic gap need to address three layers: clinical recognition, workflow infrastructure, and ongoing management.</p>
+
+      <h2>Clinical Recognition</h2>
+      <p>Every primary care provider, internal medicine physician, and OB/GYN who sees women of reproductive age needs foundational PCOS training that goes beyond the reproductive phenotype. This means training clinicians to recognize the metabolic presentation, the dermatologic presentation, and the psychological presentation of PCOS, not just the classic irregular cycle plus polycystic ovaries picture.</p>
+      <p>It also means training clinicians to ask. Symptom-driven diagnostic workflows that include standardized PCOS screening questions during well-woman visits, annual physicals, and new patient intake for women aged 15 to 44 dramatically increase detection rates without adding significant clinical burden.</p>
+
+      <h2>Workflow Infrastructure</h2>
+      <p>PCOS detection does not require new technology. It requires existing technology configured correctly. In Epic, this means building PCOS screening prompts into well-woman visit templates, embedding Rotterdam Criteria documentation into OB/GYN SmartForms, and configuring Order Sets that bundle the appropriate hormonal and metabolic labs so that a PCOS workup can be initiated in a single click rather than requiring individual orders.</p>
+      <p>It means building a referral pathway that connects the diagnosing provider, whether primary care or OB/GYN, to endocrinology, nutrition, and behavioral health in a coordinated way rather than leaving the patient to navigate specialty care independently.</p>
+      <p>And it means configuring Epic Ambulatory workflows that track PCOS patients longitudinally, flagging overdue metabolic labs, missed follow-ups, and pregnancy planning conversations at the appropriate intervals.</p>
+
+      <h2>Ongoing Management</h2>
+      <p>PCOS is not a condition that resolves after a diagnosis and a prescription. It requires longitudinal management across the reproductive, metabolic, and psychological dimensions of the condition throughout a woman's lifespan. Health systems that build PCOS care programs, combining OB/GYN, endocrinology, nutrition, mental health, and patient education resources, produce meaningfully better outcomes and meaningfully lower long-term utilization than systems managing PCOS as a series of disconnected episodic encounters.</p>
+      <p>Femtech solutions designed specifically for PCOS management, including symptom tracking, cycle monitoring, nutrition guidance, and provider communication tools, are advancing rapidly. Deploying them effectively requires a clinically ready health system environment, clear integration into the EHR, and clinical champions who understand the condition well enough to trust the data the tools generate.</p>
+
+      <h2>The Equity Dimension Health Systems Cannot Ignore</h2>
+      <p>PCOS disproportionately affects women of color, women in low-income communities, and women in rural areas with limited access to specialist care. The diagnostic delay is not evenly distributed. Women with Medicaid or charity insurance are nearly twice as likely to receive a missed diagnosis as women with private coverage. Women from South Asian and African-Caribbean backgrounds present with higher PCOS prevalence and face greater barriers to culturally competent care.</p>
+      <p>A PCOS care strategy that does not explicitly address these disparities will not close the diagnostic gap. It will optimize care for the patients who were already getting it and leave the patients with the highest unmet need exactly where they were.</p>
+      <p>Health systems that track PCOS diagnosis rates, time to diagnosis, and management outcomes by race, ethnicity, insurance status, and geography are the ones building the data infrastructure to identify and close those gaps. It is the same discipline that drives maternal health equity improvement. And it is the same discipline that turns population health strategy from a slide deck into a measurable outcome.</p>
+
+      <h2>What Health Systems Must Do Now</h2>
+      <ul>
+        <li>Add structured PCOS screening to well-woman visit templates in Epic Ambulatory for all women aged 15 to 44</li>
+        <li>Train primary care providers to recognize all three PCOS phenotypes, not just the classic reproductive presentation</li>
+        <li>Build a coordinated PCOS referral pathway connecting OB/GYN, endocrinology, nutrition, and behavioral health in a single, navigable care model</li>
+        <li>Audit current PCOS diagnosis rates by demographic and compare against expected population prevalence to identify where patients are being missed</li>
+        <li>Evaluate femtech solutions designed for PCOS management through a formal clinical readiness process before deployment</li>
+        <li>Track time to diagnosis and metabolic complication rates for PCOS patients as standing quality metrics reported at the clinical leadership level</li>
+      </ul>
+
+      <h2>How The Faulkner Group Helps</h2>
+      <p>The Faulkner Group works with health systems to build the clinical readiness and workflow infrastructure that PCOS care demands. From Epic Ambulatory optimization to femtech vendor evaluation and clinical readiness assessment, we help health systems move from awareness of the problem to operational solutions that change outcomes.</p>
+      <p>If your system is ready to build a PCOS care pathway that actually works, start with a Clinical Clarity Session.</p>
+      <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Assessment</a>
+      </p>
+    `,
+  },
+  {
     slug: "roi-of-womens-health-business-case",
     title: "The ROI of Women's Health: How Health Systems Build the Business Case",
     excerpt:
       "Women drive 80% of all household healthcare decisions. And health systems are still treating their care as a cost center. That disconnect is not just a health equity problem. It is a financial miscalculation of historic proportions.",
     category: "Health System Strategy",
-    date: "March 16, 2026",
+    date: "February 18, 2026",
     readTime: "18 min read",
     image: articleRoiWomensHealth,
     content: `
@@ -109,7 +180,7 @@ const articles: Article[] = [
     excerpt:
       "Most health systems evaluate femtech vendors the wrong way. They evaluate the product. They should be evaluating the partnership.",
     category: "Health System Strategy",
-    date: "March 16, 2026",
+    date: "January 22, 2026",
     readTime: "14 min read",
     image: articleFemtechVendor,
     content: `
@@ -186,7 +257,7 @@ const articles: Article[] = [
     excerpt:
       "A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago. That sentence should stop every health system leader in their tracks.",
     category: "Maternal Health",
-    date: "March 2, 2026",
+    date: "December 15, 2025",
     readTime: "16 min read",
     image: articleMaternalHealth,
     content: `
@@ -251,7 +322,7 @@ const articles: Article[] = [
     excerpt:
       "Women are not getting sicker. They are getting ignored longer. And the healthcare system is paying a price it refuses to calculate.",
     category: "Women's Health",
-    date: "January 27, 2026",
+    date: "November 5, 2025",
     readTime: "14 min read",
     image: articleMisdiagnosis,
     content: `
@@ -329,7 +400,7 @@ const articles: Article[] = [
     excerpt:
       "Your OB/GYN team did not choose medicine to spend their shift in a documentation queue. Here is how optimizing Epic Stork gives clinicians back the time they need at the bedside.",
     category: "EHR Optimization",
-    date: "November 11, 2025",
+    date: "October 7, 2025",
     readTime: "12 min read",
     image: articleEpicStork,
     content: `
@@ -407,7 +478,7 @@ const articles: Article[] = [
     excerpt:
       "Health systems do not have a technology problem in women's health. They have a readiness problem. And most of them do not know it until a deployment fails.",
     category: "Clinical Strategy",
-    date: "September 23, 2025",
+    date: "September 12, 2025",
     readTime: "10 min read",
     image: articleClinicalReadiness,
     content: `
@@ -467,7 +538,7 @@ const articles: Article[] = [
     excerpt:
       "Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.",
     category: "Clinical Strategy",
-    date: "August 8, 2025",
+    date: "August 19, 2025",
     readTime: "8 min read",
     image: articleFemtechPilots,
     content: `
@@ -523,7 +594,7 @@ const articles: Article[] = [
     excerpt:
       "Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy. Here is what separates winners from the rest.",
     category: "Clinical Strategy",
-    date: "July 15, 2025",
+    date: "July 24, 2025",
     readTime: "6 min read",
     image: articlePhysicianAdoption,
     content: `
@@ -547,7 +618,7 @@ const articles: Article[] = [
     excerpt:
       "Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.",
     category: "Payer Strategy",
-    date: "June 29, 2025",
+    date: "July 1, 2025",
     readTime: "4 min read",
     image: articleReimbursement,
     content: `
@@ -571,7 +642,7 @@ const articles: Article[] = [
     excerpt:
       "Selling to health systems is not like selling to startups. Here are the five most common mistakes we see founders make, and how to avoid them.",
     category: "Health System Strategy",
-    date: "June 3, 2025",
+    date: "June 9, 2025",
     readTime: "5 min read",
     image: articleHealthSystemSales,
     content: `

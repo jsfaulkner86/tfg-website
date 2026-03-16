@@ -315,7 +315,7 @@ const articles: Article[] = [
     excerpt:
       "Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.",
     category: "Clinical Strategy",
-    date: "November 19, 2025",
+    date: "October 17, 2025",
     readTime: "8 min read",
     content: `
       <p>Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.</p>

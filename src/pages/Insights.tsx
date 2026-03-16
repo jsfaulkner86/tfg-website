@@ -8,6 +8,15 @@ import BottomVideo from "@/components/BottomVideo";
 import johnHeadshot from "@/assets/john-headshot.jpg";
 import nicoleHeadshot from "@/assets/nicole-headshot.jpeg";
 import defaultHeroImage from "@/assets/insights-hero-default.jpg";
+import articleFemtechVendor from "@/assets/article-femtech-vendor.jpg";
+import articleMaternalHealth from "@/assets/article-maternal-health.jpg";
+import articleMisdiagnosis from "@/assets/article-misdiagnosis.jpg";
+import articleEpicStork from "@/assets/article-epic-stork.jpg";
+import articleClinicalReadiness from "@/assets/article-clinical-readiness.jpg";
+import articleFemtechPilots from "@/assets/article-femtech-pilots.jpg";
+import articlePhysicianAdoption from "@/assets/article-physician-adoption.jpg";
+import articleReimbursement from "@/assets/article-reimbursement.jpg";
+import articleHealthSystemSales from "@/assets/article-health-system-sales.jpg";
 
 // ─── ARTICLE DATA ─────────────────────────────────────────────
 // To add a new article, simply add an object to this array.
@@ -40,6 +49,7 @@ const articles: Article[] = [
     category: "Health System Strategy",
     date: "March 16, 2026",
     readTime: "14 min read",
+    image: articleFemtechVendor,
     content: `
       <p>Most health systems evaluate femtech vendors the wrong way.</p>
       <p>They evaluate the product. They should be evaluating the partnership.</p>
@@ -116,6 +126,7 @@ const articles: Article[] = [
     category: "Maternal Health",
     date: "March 2, 2026",
     readTime: "16 min read",
+    image: articleMaternalHealth,
     content: `
       <p>A woman in the United States is more likely to die from pregnancy or childbirth today than her mother was a generation ago.</p>
       <p>That sentence should stop every health system leader in their tracks. It has not stopped enough of them.</p>
@@ -180,6 +191,7 @@ const articles: Article[] = [
     category: "Women's Health",
     date: "January 27, 2026",
     readTime: "14 min read",
+    image: articleMisdiagnosis,
     content: `
       <p>Women are not getting sicker. They are getting ignored longer.</p>
       <p>And the healthcare system is paying a price it refuses to calculate.</p>
@@ -257,6 +269,7 @@ const articles: Article[] = [
     category: "EHR Optimization",
     date: "November 11, 2025",
     readTime: "12 min read",
+    image: articleEpicStork,
     content: `
       <p>Your OB/GYN team did not choose medicine to spend their shift in a documentation queue.</p>
       <p>But for most labor and delivery units running Epic Stork, that is exactly what is happening.</p>
@@ -334,6 +347,7 @@ const articles: Article[] = [
     category: "Clinical Strategy",
     date: "September 23, 2025",
     readTime: "10 min read",
+    image: articleClinicalReadiness,
     content: `
       <p>Health systems do not have a technology problem in women's health.</p>
       <p>They have a readiness problem. And most of them do not know it until a deployment fails.</p>
@@ -393,6 +407,7 @@ const articles: Article[] = [
     category: "Clinical Strategy",
     date: "August 8, 2025",
     readTime: "8 min read",
+    image: articleFemtechPilots,
     content: `
       <p>Understanding failure at the system level is the first step toward preventing it. Here are the five most common reasons femtech pilots stall before they scale.</p>
 
@@ -448,6 +463,7 @@ const articles: Article[] = [
     category: "Clinical Strategy",
     date: "July 15, 2025",
     readTime: "6 min read",
+    image: articlePhysicianAdoption,
     content: `
       <p>Most health tech companies lose their first health system deal not because of bad technology, but because they never built a physician adoption strategy.</p>
       <p>The assumption is simple: build a great product, show it to hospital leadership, and physicians will adopt it. But that is not how health systems work.</p>
@@ -471,6 +487,7 @@ const articles: Article[] = [
     category: "Payer Strategy",
     date: "June 29, 2025",
     readTime: "4 min read",
+    image: articleReimbursement,
     content: `
       <p>Reimbursement is not a post-launch problem. If you are not building your payer strategy before you go to market, you are already behind.</p>
       <h2>Why This Matters Now</h2>
@@ -494,6 +511,7 @@ const articles: Article[] = [
     category: "Health System Strategy",
     date: "June 3, 2025",
     readTime: "5 min read",
+    image: articleHealthSystemSales,
     content: `
       <p>Selling to health systems is not like selling to startups or even enterprise SaaS. The sales cycle is longer, the stakeholders are more complex, and the consequences of getting it wrong are severe.</p>
       <h2>Mistake #1: Leading With Features</h2>
@@ -944,12 +962,14 @@ const Insights = () => {
                 boxShadow: "0 0 12px rgba(201,168,76,0.06), inset 0 1px 0 rgba(201,168,76,0.08)",
               }}
             >
-              <div className="h-40 overflow-hidden">
+              <div className="h-40 overflow-hidden relative">
                 <img
                   src={article.image || defaultHeroImage}
                   alt={article.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.2) 100%)" }} />
               </div>
               <div className="p-4 md:p-6">
                 <span className="inline-block bg-[#C9A84C]/15 text-[#C9A84C] text-xs font-semibold px-3 py-1 rounded-full font-inter mb-3">

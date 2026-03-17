@@ -1082,7 +1082,7 @@ const ArticleView = ({
                 </span>
               </div>
               <h1
-                className="text-xl sm:text-2xl md:text-[2.75rem] font-playfair text-white leading-tight text-left"
+                className="text-xl sm:text-2xl md:text-[2.75rem] font-playfair text-white leading-snug md:leading-[1.2] text-left"
                 style={{
                   textShadow:
                     "0 2px 12px rgba(0,0,0,0.8), 0 4px 24px rgba(0,0,0,0.6)",

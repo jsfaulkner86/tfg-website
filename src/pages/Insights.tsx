@@ -146,7 +146,7 @@ const articles: Article[] = [
       <p>The goal is not to build the technology. It is to make sure the technology lands in an environment ready to use it, and that the environment is prepared to use it safely.</p>
       <p>If you are a health system evaluating agentic AI for your women's health service line, or a femtech founder building autonomous AI capabilities into your platform, a Clinical Clarity Session is where this conversation begins.</p>
       <p style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: linear-gradient(135deg, rgba(243,218,115,0.95), rgba(212,182,93,0.9)); color: #2A3B4F; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: linear-gradient(135deg, rgba(243,218,115,0.95), rgba(212,182,93,0.9)); color: #2A3B4F; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1.5px solid rgba(201,168,76,0.5); color: #C9A84C; padding: 12px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -216,7 +216,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems to build the clinical readiness and workflow infrastructure that PCOS care demands. From Epic Ambulatory optimization to femtech vendor evaluation and clinical readiness assessment, we help health systems move from awareness of the problem to operational solutions that change outcomes.</p>
       <p>If your system is ready to build a PCOS care pathway that actually works, start with a Clinical Clarity Session.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Assessment</a>
       </p>
     `,
@@ -277,7 +277,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health system leaders to build the operational and clinical infrastructure that makes women's health investment perform. From Epic Stork optimization to femtech clinical readiness and advisory partnership, we help you close the gap between strategic intent and measurable financial outcomes.</p>
       <p>If you are ready to take the women's health business case to your leadership team, start with a Clinical Clarity Session and let us help you build the numbers.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -354,7 +354,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems at every stage of femtech vendor evaluation and deployment. We help clinical and operational leaders ask the right questions before signing, identify the internal readiness gaps that will determine deployment success, and build the workflow and training infrastructure that turns a vendor agreement into a clinical result.</p>
       <p>If you have a femtech evaluation underway or a recent deployment that is not performing as expected, a Clinical Clarity Session is the fastest way to identify where the gap is and what to do about it.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Assessment</a>
       </p>
     `,
@@ -419,7 +419,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems to build the clinical and operational infrastructure that maternal health demands. From Epic Stork workflow optimization to clinical readiness assessment for maternal health technology, we help health systems move from awareness to action.</p>
       <p>If your organization is ready to take measurable steps toward better maternal outcomes, start with a Clinical Clarity Session.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -497,7 +497,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems and femtech companies to build the operational and clinical infrastructure that women's health demands. From clinical readiness assessments to Epic Stork optimization to femtech adoption strategy, we close the gap between what health systems intend and what patients actually experience.</p>
       <p>If your organization is ready to treat women's health as the strategic priority it is, start with a Clinical Clarity Session.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -771,7 +771,7 @@ const articles: Article[] = [
       <p>For femtech founders, we help you build the physician adoption strategy before you walk into your first health system conversation. For health system leaders, we help you create the internal environment where adoption is the path of least resistance rather than an uphill battle.</p>
       <blockquote>Because the technology is rarely the problem. The strategy around the technology almost always is.</blockquote>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -873,7 +873,7 @@ const articles: Article[] = [
       <p>We also help health systems evaluate femtech solutions through a total cost of care lens, so that the commercial conversation between founders and health system buyers is grounded in financial reality on both sides of the table.</p>
       <p>If you answered no to more than two questions on the checklist above, it is time to get serious about your reimbursement strategy. A Clinical Clarity Session is where that conversation starts.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Roadmap</a>
       </p>
     `,
@@ -940,7 +940,7 @@ const articles: Article[] = [
       <p>Our sales and market access advisory work is built around one premise: you cannot shortcut operational rigor with pitch decks and hope. Health system deals close when the business case is clear, the integration is credible, the physicians are bought in, and the pilot is designed to win.</p>
       <p>If your deals are stalling, starting late, or dying in procurement, a Clinical Clarity Session is the fastest way to diagnose where the friction is and build a strategy that removes it.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,

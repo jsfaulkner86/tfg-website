@@ -1025,7 +1025,7 @@ const ArticleView = ({
       <Header />
       <main className="min-h-screen" style={{ background: "#0f1a2e" }}>
         {/* Back Navigation */}
-        <div className="max-w-[1100px] mx-auto px-4 md:px-6 flex" style={{ paddingTop: "max(calc(7rem + 16px), calc(120px + env(safe-area-inset-top, 0px)))", paddingBottom: "16px" }}>
+        <div className="max-w-[1100px] mx-auto px-4 md:px-6 flex" style={{ paddingTop: "max(calc(8rem + 24px), calc(140px + env(safe-area-inset-top, 0px)))", paddingBottom: "16px" }}>
           <div className="flex-1 min-w-0 max-w-[720px] lg:mx-0 mx-auto">
             <button
               onClick={onBack}

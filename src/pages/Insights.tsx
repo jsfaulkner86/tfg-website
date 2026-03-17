@@ -419,7 +419,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems to build the clinical and operational infrastructure that maternal health demands. From Epic Stork workflow optimization to clinical readiness assessment for maternal health technology, we help health systems move from awareness to action.</p>
       <p>If your organization is ready to take measurable steps toward better maternal outcomes, start with a Clinical Clarity Session.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,

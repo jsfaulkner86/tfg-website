@@ -146,7 +146,7 @@ const articles: Article[] = [
       <p>The goal is not to build the technology. It is to make sure the technology lands in an environment ready to use it, and that the environment is prepared to use it safely.</p>
       <p>If you are a health system evaluating agentic AI for your women's health service line, or a femtech founder building autonomous AI capabilities into your platform, a Clinical Clarity Session is where this conversation begins.</p>
       <p style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: linear-gradient(135deg, rgba(243,218,115,0.95), rgba(212,182,93,0.9)); color: #2A3B4F; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: linear-gradient(135deg, rgba(243,218,115,0.95), rgba(212,182,93,0.9)); color: #2A3B4F; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 15px;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1.5px solid rgba(201,168,76,0.5); color: #C9A84C; padding: 12px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,

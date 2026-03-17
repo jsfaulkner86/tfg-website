@@ -216,7 +216,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems to build the clinical readiness and workflow infrastructure that PCOS care demands. From Epic Ambulatory optimization to femtech vendor evaluation and clinical readiness assessment, we help health systems move from awareness of the problem to operational solutions that change outcomes.</p>
       <p>If your system is ready to build a PCOS care pathway that actually works, start with a Clinical Clarity Session.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Assessment</a>
       </p>
     `,

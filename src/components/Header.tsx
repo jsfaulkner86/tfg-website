@@ -147,19 +147,20 @@ const Header = () => {
                 >
                   <a
                     href="/for-womens-health"
-                    className="block px-5 py-3 text-white font-playfair text-base font-medium tracking-wide hover:bg-white/10 transition-all duration-200 border-b border-white/10"
+                    className="block px-5 py-3 text-white font-playfair text-base font-medium tracking-wide hover:bg-white/10 transition-all duration-200"
                   >
                     For Women's Health
-                  </a>
-                  <a
-                    href="/insights"
-                    className="block px-5 py-3 text-white font-playfair text-base tracking-wide hover:bg-white/10 transition-all duration-200"
-                  >
-                    Insights
                   </a>
                 </div>
               </div>
             </div>
+            <a 
+              href="/insights" 
+              className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
+            >
+              Insights
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#F3DA73] opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-all duration-300 origin-left" />
+            </a>
             <div className="relative group py-1">
               <span
                 className="text-white font-playfair font-medium text-lg tracking-wide relative transition-all duration-300 flex items-center gap-1 cursor-pointer"

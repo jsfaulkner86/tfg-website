@@ -940,7 +940,7 @@ const articles: Article[] = [
       <p>Our sales and market access advisory work is built around one premise: you cannot shortcut operational rigor with pitch decks and hope. Health system deals close when the business case is clear, the integration is credible, the physicians are bought in, and the pilot is designed to win.</p>
       <p>If your deals are stalling, starting late, or dying in procurement, a Clinical Clarity Session is the fastest way to diagnose where the friction is and build a strategy that removes it.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,

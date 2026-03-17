@@ -277,7 +277,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health system leaders to build the operational and clinical infrastructure that makes women's health investment perform. From Epic Stork optimization to femtech clinical readiness and advisory partnership, we help you close the gap between strategic intent and measurable financial outcomes.</p>
       <p>If you are ready to take the women's health business case to your leadership team, start with a Clinical Clarity Session and let us help you build the numbers.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Roadmap</a>
       </p>
     `,

@@ -771,7 +771,7 @@ const articles: Article[] = [
       <p>For femtech founders, we help you build the physician adoption strategy before you walk into your first health system conversation. For health system leaders, we help you create the internal environment where adoption is the path of least resistance rather than an uphill battle.</p>
       <blockquote>Because the technology is rarely the problem. The strategy around the technology almost always is.</blockquote>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-roadmap" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Explore the Clinical Readiness Roadmap</a>
       </p>
     `,

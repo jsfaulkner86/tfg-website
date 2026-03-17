@@ -354,7 +354,7 @@ const articles: Article[] = [
       <p>The Faulkner Group works with health systems at every stage of femtech vendor evaluation and deployment. We help clinical and operational leaders ask the right questions before signing, identify the internal readiness gaps that will determine deployment success, and build the workflow and training infrastructure that turns a vendor agreement into a clinical result.</p>
       <p>If you have a femtech evaluation underway or a recent deployment that is not performing as expected, a Clinical Clarity Session is the fastest way to identify where the gap is and what to do about it.</p>
       <p style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/clinical-clarity-session" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Book Your Clinical Clarity Session</a>
+        <a href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #C9A84C; color: #0f1a2e; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Let's Meet</a>
         <a href="/clinical-readiness-assessment" style="display: inline-block; border: 1px solid #C9A84C; color: #C9A84C; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none;">Download the Clinical Readiness Assessment</a>
       </p>
     `,

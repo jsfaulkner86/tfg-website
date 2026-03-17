@@ -1247,7 +1247,9 @@ const ArticleView = ({
               Whether your pilot has stalled or you are preparing your first health system partnership, our team can help you build the clinical foundation for success.
             </p>
             <a
-              href="/clinical-clarity-session"
+              href="https://calendly.com/d/cx9v-b5q-nhp/let-s-meet-john-dr-nicole-faulkner"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 md:px-8 py-3.5 md:py-4 rounded-lg font-inter font-semibold text-sm md:text-base transition-all duration-300 hover:scale-[1.03]"
               style={{
                 background: "#C9A84C",
@@ -1255,7 +1257,7 @@ const ArticleView = ({
                 boxShadow: "0 0 30px rgba(201,168,76,0.25)",
               }}
             >
-              Schedule a Clinical Clarity Session
+              Let's Meet
               <ArrowRight size={18} />
             </a>
           </div>

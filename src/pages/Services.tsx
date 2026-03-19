@@ -386,7 +386,11 @@ const professionalServiceSchema = {
   ],
   "sameAs": [
     "https://www.linkedin.com/company/faulkner-group/",
-    "https://www.youtube.com/@YourHealthcareITexpert"
+    "https://www.youtube.com/@YourHealthcareITexpert",
+    "https://podcasts.apple.com/us/podcast/smarter-systems-better-care-podcast/id1835554141",
+    "https://open.spotify.com/show/1vUfjTssusiFxzcjV80sDH",
+    "https://github.com/jsfaulkner86",
+    "https://www.backtable.com/shows/obgyn"
   ]
 };
 
@@ -461,7 +465,7 @@ const johnFaulknerSchema = {
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption.",
   url: "https://thefaulknergroupadvisors.com",
-  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/"],
+  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert", "https://github.com/jsfaulkner86", "https://panova.ai/"],
   worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 
@@ -473,7 +477,7 @@ const nicholeFaulknerSchema = {
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at WHIS.",
   url: "https://thefaulknergroupadvisors.com",
-  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
+  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/", "https://www.backtable.com/shows/obgyn"],
   worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 

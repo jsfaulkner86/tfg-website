@@ -13,13 +13,13 @@ const orgSchema = {
       "@type": "Person",
       name: "John Faulkner",
       jobTitle: "CEO, Healthcare IT Architect",
-      sameAs: "https://www.linkedin.com/in/johnathonfaulkner/",
+      sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://github.com/jsfaulkner86"],
     },
     {
       "@type": "Person",
       name: "Dr. Nicole Faulkner",
       jobTitle: "Chief Clinical Officer",
-      sameAs: "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
+      sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/", "https://www.backtable.com/shows/obgyn"],
     },
   ],
   areaServed: { "@type": "Country", name: "United States" },
@@ -35,6 +35,10 @@ const orgSchema = {
   sameAs: [
     "https://www.linkedin.com/company/faulkner-group/",
     "https://www.youtube.com/@YourHealthcareITexpert",
+    "https://podcasts.apple.com/us/podcast/smarter-systems-better-care-podcast/id1835554141",
+    "https://open.spotify.com/show/1vUfjTssusiFxzcjV80sDH",
+    "https://github.com/jsfaulkner86",
+    "https://www.backtable.com/shows/obgyn"
   ],
 };
 
@@ -85,7 +89,7 @@ const johnSchema = {
   jobTitle: "CEO & Healthcare IT Architect",
   description: "CEO of The Faulkner Group. 15+ years designing healthcare IT infrastructure and EHR systems. Former Marine Corps Officer Candidate. Specializes in women's health technology clinical adoption strategy.",
   url: "https://thefaulknergroupadvisors.com",
-  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert"],
+  sameAs: ["https://www.linkedin.com/in/johnathonfaulkner/", "https://www.youtube.com/@YourHealthcareITexpert", "https://github.com/jsfaulkner86", "https://panova.ai/"],
   worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
   knowsAbout: ["Healthcare IT Architecture", "EHR Integration", "Women's Health Technology", "Clinical Adoption Strategy"],
   alumniOf: { "@type": "Organization", name: "United States Marine Corps" }
@@ -99,7 +103,7 @@ const nicoleSchema = {
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at the Women's Health Innovation Summit (WHIS).",
   url: "https://thefaulknergroupadvisors.com",
-  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
+  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/", "https://www.backtable.com/shows/obgyn"],
   worksFor: [
     { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
     { "@type": "Organization", name: "BackTable", url: "https://www.backtable.com" }

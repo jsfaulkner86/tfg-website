@@ -477,7 +477,7 @@ const nicholeFaulknerSchema = {
   jobTitle: "Chief Clinical Officer",
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, featured speaker at WHIS.",
   url: "https://thefaulknergroupadvisors.com",
-  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"],
+  sameAs: ["https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/", "https://www.backtable.com/shows/obgyn"],
   worksFor: { "@type": "Organization", name: "The Faulkner Group", url: "https://thefaulknergroupadvisors.com" },
 };
 

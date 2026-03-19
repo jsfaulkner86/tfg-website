@@ -102,7 +102,8 @@ const nicholeFaulknerSchema = {
   description: "Chief Clinical Officer of The Faulkner Group. Board-certified OB/GYN, Medical Director at BackTable, and featured speaker at the Women's Health Innovation Summit (WHIS). Expert in clinical governance frameworks, physician adoption strategy, and women's health technology advisory.",
   url: "https://thefaulknergroupadvisors.com",
   sameAs: [
-    "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/"
+    "https://www.linkedin.com/in/nicole-faulkner-d-o-1136a4370/",
+    "https://www.backtable.com/shows/obgyn"
   ],
   worksFor: [
     {

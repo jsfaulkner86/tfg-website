@@ -69,7 +69,9 @@ const johnFaulknerSchema = {
   url: "https://thefaulknergroupadvisors.com",
   sameAs: [
     "https://www.linkedin.com/in/johnathonfaulkner/",
-    "https://www.youtube.com/@YourHealthcareITexpert"
+    "https://www.youtube.com/@YourHealthcareITexpert",
+    "https://github.com/jsfaulkner86",
+    "https://panova.ai/"
   ],
   worksFor: {
     "@type": "Organization",

@@ -35,6 +35,10 @@ const orgSchema = {
   sameAs: [
     "https://www.linkedin.com/company/faulkner-group/",
     "https://www.youtube.com/@YourHealthcareITexpert",
+    "https://podcasts.apple.com/us/podcast/smarter-systems-better-care-podcast/id1835554141",
+    "https://open.spotify.com/show/1vUfjTssusiFxzcjV80sDH",
+    "https://github.com/jsfaulkner86",
+    "https://www.backtable.com/shows/obgyn"
   ],
 };
 

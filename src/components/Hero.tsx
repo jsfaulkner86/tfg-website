@@ -126,11 +126,11 @@ const Hero = () => {
           </p>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:items-center lg:justify-center lg:gap-5 xl:gap-7">
             {[
-              { src: logoPanova, alt: "Panova Health", href: "https://panova.ai/" },
-              { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },
-              { src: logoBacktable, alt: "BackTable OB/GYN", href: "https://www.backtable.com/shows/obgyn" },
-              { src: logoAmie, alt: "Amie", href: "https://www.askamie.co/" },
               { src: logoNavo, alt: "Navo Health", href: "https://website.navo.health/" },
+              { src: logoBacktable, alt: "BackTable OB/GYN", href: "https://www.backtable.com/shows/obgyn" },
+              { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },
+              { src: logoPanova, alt: "Panova Health", href: "https://panova.ai/" },
+              { src: logoAmie, alt: "Amie", href: "https://www.askamie.co/" },
             ].map((logo) => (
               <a key={logo.alt} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                 <img

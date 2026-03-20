@@ -91,7 +91,7 @@ const Hero = () => {
       <div className="w-full py-0" style={{ background: 'linear-gradient(180deg, rgba(10,22,40,0.85) 0%, rgba(10,22,40,0.7) 100%)' }}>
         <div className="max-w-5xl mx-auto px-5 sm:px-6">
           <div
-            className="grid grid-cols-2 gap-y-3 gap-x-2 md:flex md:items-center md:justify-center md:gap-0 md:divide-x md:divide-white/15 rounded-lg px-4 py-3 md:px-6 md:py-4"
+            className="grid grid-cols-2 gap-y-3 gap-x-2 md:grid-cols-4 md:divide-x md:divide-white/15 rounded-lg px-4 py-3 md:px-6 md:py-4"
             style={{
               background: 'rgba(243,218,115,0.06)',
               border: '1px solid rgba(243,218,115,0.25)',
@@ -103,7 +103,7 @@ const Hero = () => {
             {trustLabels.map((label) => (
               <span
                 key={label}
-                className="font-inter font-medium uppercase text-center md:px-8 text-[11px] sm:text-[13px]"
+                className="font-inter font-medium uppercase text-center md:px-4 lg:px-8 text-[11px] sm:text-[12px] md:text-[13px]"
                 style={{
                   fontSize: '13px',
                   letterSpacing: '0.1em',
@@ -124,7 +124,7 @@ const Hero = () => {
           <p className="text-center font-inter text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3" style={{ color: 'hsl(45, 62%, 56%)' }}>
             Trusted By
           </p>
-          <div className="grid grid-cols-2 gap-4 sm:flex sm:items-center sm:justify-center sm:gap-10 md:gap-14">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:items-center lg:justify-center lg:gap-10 xl:gap-14">
             {[
               { src: logoPanova, alt: "Panova Health", href: "https://panova.ai/" },
               { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },
@@ -136,7 +136,7 @@ const Hero = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-10 sm:h-14 md:h-16 w-auto max-w-[140px] sm:max-w-none rounded-md opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-10 sm:h-12 lg:h-14 xl:h-16 w-auto max-w-[120px] sm:max-w-[160px] lg:max-w-none rounded-md opacity-80 hover:opacity-100 transition-opacity"
                   loading="lazy"
                 />
               </a>

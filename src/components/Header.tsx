@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[92%] md:w-[calc(100%-2rem)] max-w-none ${
-        isScrolled ? 'md:w-[calc(100%-1rem)]' : ''
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[92%] lg:w-[calc(100%-2rem)] max-w-none ${
+        isScrolled ? 'lg:w-[calc(100%-1rem)]' : ''
       }`}
     >
       <div 
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-12">
+          <nav className="hidden lg:flex items-center gap-12">
             <a 
               href="/#mission" 
               className="text-white font-playfair font-medium text-lg tracking-wide relative group transition-all duration-300 py-1"
@@ -219,7 +219,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-white/10 rounded-lg transition-all duration-300"
+            className="lg:hidden p-2 hover:bg-white/10 rounded-lg transition-all duration-300"
             aria-label="Toggle menu"
             style={{ color: '#F3DA73' }}
           >
@@ -231,7 +231,7 @@ const Header = () => {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div 
-          className="md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-y-auto animate-fade-in z-50"
+          className="lg:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-lg backdrop-blur-xl border border-white/10 overflow-y-auto animate-fade-in z-50"
           style={{
             background: 'rgba(113,141,169,0.98)',
             boxShadow: '0 8px 32px rgba(0,0,0,0.15)',

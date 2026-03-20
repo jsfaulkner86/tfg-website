@@ -4,6 +4,7 @@ import logoPanova from "@/assets/logo-panova.png";
 import logoConceive from "@/assets/logo-conceive.png";
 import logoBacktable from "@/assets/logo-backtable.png";
 import logoAmie from "@/assets/logo-amie.png";
+import logoNavo from "@/assets/logo-navo.png";
 
 const trustLabels = [
   "Clinical Readiness & Governance",

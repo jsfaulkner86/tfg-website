@@ -124,7 +124,7 @@ const Hero = () => {
           <p className="text-center font-inter text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] mb-3" style={{ color: 'hsl(45, 62%, 56%)' }}>
             Trusted By
           </p>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:items-center lg:justify-center lg:gap-10 xl:gap-14">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:flex lg:items-center lg:justify-center lg:gap-5 xl:gap-7">
             {[
               { src: logoPanova, alt: "Panova Health", href: "https://panova.ai/" },
               { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },

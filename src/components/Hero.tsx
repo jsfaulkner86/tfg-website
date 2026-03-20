@@ -130,6 +130,7 @@ const Hero = () => {
               { src: logoConceive, alt: "Conceive", href: "https://weconceive.com/" },
               { src: logoBacktable, alt: "BackTable OB/GYN", href: "https://www.backtable.com/shows/obgyn" },
               { src: logoAmie, alt: "Amie", href: "https://www.askamie.co/" },
+              { src: logoNavo, alt: "Navo Health", href: "https://website.navo.health/" },
             ].map((logo) => (
               <a key={logo.alt} href={logo.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                 <img

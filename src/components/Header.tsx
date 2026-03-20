@@ -219,7 +219,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 hover:bg-white/10 rounded-lg transition-all duration-300"
+            className="lg:hidden p-2 hover:bg-white/10 rounded-lg transition-all duration-300"
             aria-label="Toggle menu"
             style={{ color: '#F3DA73' }}
           >

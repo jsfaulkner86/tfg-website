@@ -136,7 +136,7 @@ const Hero = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-10 sm:h-14 md:h-16 w-auto max-w-[140px] sm:max-w-none rounded-md opacity-80 hover:opacity-100 transition-opacity"
+                  className="h-10 sm:h-12 lg:h-14 xl:h-16 w-auto max-w-[120px] sm:max-w-[160px] lg:max-w-none rounded-md opacity-80 hover:opacity-100 transition-opacity"
                   loading="lazy"
                 />
               </a>
